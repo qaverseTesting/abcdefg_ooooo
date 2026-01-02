@@ -2,6 +2,7 @@ import { test } from '../../src/fixtures/auth.fixture';
 import { UserRole } from '../../src/constants/roles';
 import { DashboardPage } from '../../src/pages/dashboard/DashboardPage';
 import { LoginPage } from '../../src/pages/auth/LoginPage';
+import { Logger } from '../../src/utils/Logger';
 
 const TEST_ROLE = process.env.TEST_ROLE;
 
@@ -20,6 +21,7 @@ test.describe('Login – Single User', () => {
         { type: 'severity', description: 'critical' }
       );
 
+      Logger.step('Logging in as Group Host');
       await loginAs(UserRole.GROUP_HOST);
 
      const dashboard = new DashboardPage(page);

@@ -1,7 +1,7 @@
 @echo off
 echo Running SMOKE tests...
 
-npm run smoke
-npm run allure:report
+call npm run clean:allure
+call npx playwright test --grep @smoke
 
 pause

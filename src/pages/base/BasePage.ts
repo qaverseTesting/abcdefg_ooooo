@@ -16,10 +16,6 @@ export abstract class BasePage {
     await locator.click({ timeout });
   }
 
-  async waitForVisible(locator: Locator, timeout = 10000) {
-    await locator.waitFor({ state: 'visible', timeout });
-  }
-
   /* ============================
      🔐 STABLE ENTERPRISE INPUT
   ============================ */
