@@ -2,6 +2,8 @@
 import { test } from '../../src/fixtures/auth.fixture';
 import { URLS } from '../../src/config/urls';
 import { DashboardPage } from '../../src/pages/dashboard/DashboardPage';
+import { GroupOnboardingPage } from '../../src/pages/group/GroupOnboardingPage';
+import { GroupProfilePage } from '../../src/pages/group/GroupProfilePage';
 import { CreateGroupPage } from '../../src/pages/group/CreateGroupPage';
 import { DataGenerator } from '../../src/utils/DataGenerator';
 import { Logger } from '../../src/utils/Logger';
@@ -12,6 +14,8 @@ test.describe('Group Creation', () => {
     { tag: ['@smoke', '@regression'] },
     async ({ page }) => {
       Logger.info('Starting Group Creation test');
+
+      const groupName = DataGenerator.groupName();
 
       // Step 1: Launch Dashboard URL (auth already applied via storageState)
       await page.goto(URLS.DASHBOARD);
@@ -26,17 +30,27 @@ test.describe('Group Creation', () => {
 
       // Step 4–6: Enter Group Details
       await createGroup.enterGroupDetails(
-        DataGenerator.groupName(),
+        groupName,
         DataGenerator.description(),
         'Weekly on Monday'
       );
 
+      Logger.step(`${groupName}:- group name is Created`);
+  
       // Step 7–9: Select Tags
       await createGroup.selectRandomTag();
 
       // Step 10: Submit
       await createGroup.submitGroup();
+      await createGroup.confirmSubmit();
 
+      //Step 11: Onboarding
+      const onboarding = new GroupOnboardingPage(page);
+      await onboarding.skipOnboarding();
+
+      //Step 12: Profile verification
+      const profile = new GroupProfilePage(page);
+      await profile.verifyGroupNameVisible(groupName);
       Logger.success('Group created successfully');
     }
   );
