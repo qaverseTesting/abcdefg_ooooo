@@ -1,4 +1,5 @@
 export const URLS = {
   LOGIN: '/login',
-  DASHBOARD: '/groups'
+  DASHBOARD: '/groups',
+  MYGROUP: '/groups/my'
 }; 

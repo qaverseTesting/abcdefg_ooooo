@@ -92,7 +92,7 @@ export class CreateGroupPage extends BasePage {
 
     const modal = this.page.getByRole('dialog');
 
-    // ✅ WAIT for accordion to be rendered
+    // WAIT for accordion to be rendered
     const accordionButtons = modal.locator(
       'button.chakra-accordion__button'
     );
@@ -104,13 +104,13 @@ export class CreateGroupPage extends BasePage {
       throw new Error('No tag categories found in modal');
     }
 
-    // 1️⃣ Open a random category
+    // 1. Open a random category
     const randomCategoryIndex = Math.floor(Math.random() * categoryCount);
     const selectedCategory = accordionButtons.nth(randomCategoryIndex);
 
     await selectedCategory.click();
 
-    // 2️⃣ Wait for panel content to appear
+    // 2. Wait for panel content to appear
     const visibleCheckboxes = modal.locator(
       'label.chakra-checkbox:visible'
     );
@@ -122,11 +122,11 @@ export class CreateGroupPage extends BasePage {
       throw new Error('No tags found inside selected category');
     }
 
-    // 3️⃣ Select a random checkbox
+    // 3. Select a random checkbox
     const randomCheckboxIndex = Math.floor(Math.random() * checkboxCount);
     await visibleCheckboxes.nth(randomCheckboxIndex).click();
 
-    // 4️⃣ Confirm selection
+    // 4. Confirm selection
     await this.doneButton.click();
   }
 

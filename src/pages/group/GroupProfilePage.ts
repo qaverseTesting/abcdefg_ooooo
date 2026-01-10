@@ -1,7 +1,7 @@
 import { Page, Locator, expect } from '@playwright/test';
 import { BasePage } from '../base/BasePage';
-import { Logger } from '../../utils/Logger';
-import { Wait } from '../../utils/Wait';
+import { Logger } from '../../utils/Logger';  
+import { Wait } from '../../utils/Wait'; 
 
 export class GroupProfilePage extends BasePage {
   private readonly groupDropdown: Locator;

@@ -12,10 +12,18 @@ export class DataGenerator {
      Basic Helpers
   ---------------------------- */
 
+    /** Returns a random index from 0 to max-1 */
+  static randomIndex(max: number): number {
+    if (max <= 0) {
+      throw new Error('randomIndex max must be greater than 0');
+    }
+    return Math.floor(Math.random() * max);
+  }
+
   private static randomNumber(length = 4): string {
     return Math.floor(
       Math.pow(10, length - 1) +
-        Math.random() * 9 * Math.pow(10, length - 1)
+      Math.random() * 9 * Math.pow(10, length - 1)
     ).toString();
   }
 
@@ -94,4 +102,21 @@ export class DataGenerator {
   static uniqueId(prefix = 'ID'): string {
     return `${prefix}_${Date.now()}_${this.randomString(4)}`;
   }
+
+   static randomStartTime(): string {
+    return ['10:00 AM', '11:00 AM', '12:00 PM'][this.randomIndex(3)];
+  }
+
+  static randomEndTime(): string {
+    return ['10:30 AM', '11:30 AM', '12:30 PM'][this.randomIndex(3)];
+  }
+
+  static randomTimezone(): string {
+    return ['Asia/Bangkok', 'Asia/Kolkata', 'Europe/London'][this.randomIndex(3)];
+  }
+
+  static sessionTitle(): string {
+    return `Session ${Date.now()}`;
+  }
+
 }
