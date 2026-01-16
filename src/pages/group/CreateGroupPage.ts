@@ -77,8 +77,7 @@ export class CreateGroupPage extends BasePage {
     await this.groupNameInput.fill(name);
     await this.groupDescriptionInput.click();
     await this.page.keyboard.type(description);
-    await this.groupScheduleInput.fill(schedule);
-
+    //await this.groupScheduleInput.fill(schedule);
   }
 
   /**

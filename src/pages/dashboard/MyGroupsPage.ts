@@ -3,99 +3,191 @@ import { Page, Locator } from '@playwright/test';
 import { BasePage } from '../base/BasePage';
 import { Logger } from '../../utils/Logger';
 import { Wait } from '../../utils/Wait';
+import { URLS } from '../../config/urls';
+import { ChatPage } from '../chat/ChatPage';
 
 /**
- * MyGroupsPage
- * ------------
- * Encapsulates behavior related to
- * the "My Groups" dashboard section.
- *
- * Responsibilities:
- * - Open My Groups page
- * - Iterate through active groups
- * - Find a group that supports session creation
+ * Result of searching for an inactive group
  */
+export type InactiveGroupResult =
+  | { status: 'FOUND'; groupName: string }
+  | { status: 'NOT_FOUND' };
+
 export class MyGroupsPage extends BasePage {
-  /* ---------------------------
-     Locators
-  ---------------------------- */
-
-  /** Navigation link to My Groups */
-  private readonly myGroupsLink: Locator;
-
-  /**
-   * Represents all active group cards.
-   * Each group card contains text ending with "Members"
-   * Example: "Test Group 5 Members"
-   */
-  private readonly activeGroups: Locator;
+  private readonly groupCards: Locator;
 
   constructor(page: Page) {
     super(page);
 
-    this.myGroupsLink = page.getByRole('link', { name: 'My Groups' });
+    this.groupCards = page.locator('[data-testid="group-card"]');
+  }
 
-    this.activeGroups = page.locator('div').filter({
-      hasText: /Members$/,
+  /**
+   * Navigates safely to My Groups page
+   */
+  private async openMyGroups(initial = false): Promise<void> {
+    Logger.step('Navigating to My Groups');
+
+    await this.page.goto(URLS.MYGROUP, {
+      waitUntil: 'domcontentloaded',
     });
-  }
 
-  /* ---------------------------
-     Actions
-  ---------------------------- */
-
-  /**
-   * Opens the My Groups page
-   * and waits for the content to stabilize
-   */
-
-  async open(): Promise<void> {
-    await Wait.pause(this.page, 20_000);
-    Logger.step('Opening My Groups');
-
-    await this.myGroupsLink.click();
-    await Wait.forNetworkIdle(this.page);
-  }
-
-  /**
-   * Iterates through active groups and opens
-   * the first group that contains
-   * the "Schedule a session" option.
-   *
-   * Handles:
-   * - Free groups
-   * - Paid groups (navigates back safely)
-   *
-   * Throws:
-   * - Error if no valid group is found
-   */
-  async openFirstGroupWithSessionOption(): Promise<void> {
-    Logger.step('Finding group with Schedule a session');
-
-    const count = await this.activeGroups.count();
-
-    for (let i = 0; i < count; i++) {
-      // Open group card
-      await this.activeGroups.nth(i).click();
-
-      // Check if "Schedule a session" option exists
-      const scheduleVisible = await this.page
-        .getByRole('menuitem', { name: /Schedule a session/i })
-        .isVisible()
-        .catch(() => false);
-
-      if (scheduleVisible) {
-        Logger.success('Found group with Schedule a session');
-        return;
-      }
-
-      // If session option not available (e.g., paid group),
-      // navigate back to My Groups safely
-      await this.page.getByRole('link', { name: 'My Groups' }).click();
-      await Wait.forNetworkIdle(this.page);
+    if (initial) {
+      await this.groupCards.first().waitFor({
+        state: 'visible',
+        timeout: 15_000,
+      });
     }
 
-    // No group supports session creation
-    throw new Error('No group found with Schedule a session option');
+    await this.page.waitForTimeout(500);
   }
+
+  /**
+   * SINGLE SOURCE OF TRUTH
+   * Finds a group that supports Create Session
+   */
+  async openAnyGroupSupportingCreateSession(): Promise<boolean> {
+    await this.openMyGroups(true);
+
+    const visitedGroups = new Set<string>();
+    const MAX_ATTEMPTS = 15;
+
+    for (let attempt = 0; attempt < MAX_ATTEMPTS; attempt++) {
+      const count = await this.groupCards.count();
+      Logger.info(`Scan ${attempt + 1}: ${count} groups found`);
+
+      let progressed = false;
+
+      for (let i = 0; i < count; i++) {
+        const card = this.groupCards.nth(i);
+
+        if (!(await card.isVisible().catch(() => false))) continue;
+
+        const snapshot = (await card.innerText().catch(() => '')).trim();
+        if (!snapshot || visitedGroups.has(snapshot)) continue;
+
+        visitedGroups.add(snapshot);
+        progressed = true;
+
+        Logger.step(`Evaluating group: ${snapshot}`);
+
+        //  Inactive
+        if (await card.getByText(/activate your group/i).isVisible().catch(() => false)) {
+          Logger.info('Inactive group → skipped');
+          continue;
+        }
+
+        //  Interest-only
+        if (await card.getByText(/i'm interested/i).isVisible().catch(() => false)) {
+          Logger.info('Interest-only group → skipped');
+          continue;
+        }
+
+        //  Paid
+        const isPaidGroup = await card
+          .locator('svg circle + line + line')
+          .isVisible()
+          .catch(() => false);
+
+        if (isPaidGroup) {
+          Logger.info('Paid group → skipped');
+          continue;
+        }
+
+        await card.scrollIntoViewIfNeeded();
+        await card.click();
+        await Wait.pause(this.page, 10_000);
+
+        const chatPage = new ChatPage(this.page);
+        const opened = await chatPage.tryOpenCreateSession();
+
+        if (opened) {
+          Logger.success('Create Session modal opened');
+          return true;
+        }
+
+        Logger.warn('Create Session not supported → returning to My Groups');
+        await this.openMyGroups(true);
+        break;
+      }
+
+      if (!progressed) {
+        Logger.warn('No new groups left to evaluate');
+        break;
+      }
+    }
+
+    Logger.warn('No subscribed group supports Create Session');
+    return false;
+  }
+
+  /**
+     * Finds an inactive group and navigates to activation / payment page.
+     * Returns FOUND or NOT_FOUND instead of throwing.
+     */
+  async openInactiveGroupAndRedirectToPayment(): Promise<InactiveGroupResult> {
+    await this.openMyGroups(true);
+
+    const visitedGroups = new Set<string>();
+    const MAX_ATTEMPTS = 15;
+
+    for (let attempt = 0; attempt < MAX_ATTEMPTS; attempt++) {
+      const count = await this.groupCards.count();
+      Logger.info(`Scan ${attempt + 1}: ${count} groups found`);
+
+      let progressed = false;
+
+      for (let i = 0; i < count; i++) {
+        const card = this.groupCards.nth(i);
+
+        if (!(await card.isVisible().catch(() => false))) continue;
+
+        const snapshot = (await card.innerText().catch(() => '')).trim();
+        if (!snapshot || visitedGroups.has(snapshot)) continue;
+
+        visitedGroups.add(snapshot);
+        progressed = true;
+
+        Logger.step(`Evaluating group: ${snapshot}`);
+
+        const isInactive = await card
+          .getByText(/activate your group/i)
+          .isVisible()
+          .catch(() => false);
+
+        if (!isInactive) {
+          Logger.info('Not an inactive group → skipped');
+          continue;
+        }
+
+        Logger.success(`Inactive group found: ${snapshot}`);
+
+        await card.scrollIntoViewIfNeeded();
+        await card.click();
+
+        const activated = await Promise.race([
+          this.page.locator('#payment-element').waitFor({ state: 'visible', timeout: 15_000 }).then(() => true).catch(() => false),
+          this.page.getByRole('button', { name: /pay and activate group/i }).waitFor({ state: 'visible', timeout: 15_000 }).then(() => true).catch(() => false),
+          this.page.waitForURL(/activate|subscription|payment/i, { timeout: 15_000 }).then(() => true).catch(() => false),
+        ]);
+
+        if (activated) {
+          Logger.success('Activation / Payment page detected');
+          return { status: 'FOUND', groupName: snapshot };
+        }
+
+        Logger.warn('Inactive group clicked but activation UI not detected');
+        return { status: 'NOT_FOUND' };
+      }
+
+      if (!progressed) {
+        Logger.warn('No new groups left to evaluate');
+        break;
+      }
+    }
+
+    Logger.warn('No inactive group found for activation');
+    return { status: 'NOT_FOUND' };
+  }
+
 }

@@ -3,7 +3,7 @@ import { test } from '../../src/fixtures/auth.fixture';
 import { URLS } from '../../src/config/urls';
 import { DashboardPage } from '../../src/pages/dashboard/DashboardPage';
 import { GroupOnboardingPage } from '../../src/pages/group/GroupOnboardingPage';
-import { GroupProfilePage } from '../../src/pages/group/GroupProfilePage';
+import { ProfilePaymentPage } from '../../src/pages/profile/ProfilePaymentPage';
 import { CreateGroupPage } from '../../src/pages/group/CreateGroupPage';
 import { DataGenerator } from '../../src/utils/DataGenerator';
 import { Logger } from '../../src/utils/Logger';
@@ -36,7 +36,7 @@ test.describe('Group Creation', () => {
       );
 
       Logger.step(`${groupName}:- group name is Created`);
-  
+
       // Step 7–9: Select Tags
       await createGroup.selectRandomTag();
 
@@ -49,7 +49,7 @@ test.describe('Group Creation', () => {
       await onboarding.skipOnboarding();
 
       //Step 12: Profile verification
-      const profile = new GroupProfilePage(page);
+      const profile = new ProfilePaymentPage(page);
       await profile.verifyGroupNameVisible(groupName);
       Logger.success('Group created successfully');
     }

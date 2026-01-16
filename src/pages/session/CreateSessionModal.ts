@@ -73,14 +73,15 @@ export class CreateSessionModal extends BasePage {
   }
 
   async expectSessionCreated(): Promise<void> {
-    Logger.step('Verifying session creation');
+    Logger.step('Verifying session creation (modal closed)');
 
     await expect(this.modalHeading).toBeHidden({
       timeout: 10_000,
     });
 
-    Logger.success('Session created successfully');
+    Logger.success('Create Session modal closed');
   }
+
 
   // --------------------------------------------------
   // INTERNAL HELPERS
@@ -90,28 +91,29 @@ export class CreateSessionModal extends BasePage {
    * CRITICAL FIX
    * Ensures date is always at least +1 day
    */
- private async setDateToNextDay(): Promise<void> {
-  Logger.step('Setting session date to next day');
+  private async setDateToNextDay(): Promise<void> {
+    Logger.step('Setting session date to next day');
 
-  const tomorrow = new Date();
-  tomorrow.setDate(tomorrow.getDate() + 1);
+    const tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate() + 1);
 
-  const day = String(tomorrow.getDate()).padStart(2, '0');
-  const month = tomorrow.toLocaleString('en-US', { month: 'long' });
-  const year = tomorrow.getFullYear();
+    const day = String(tomorrow.getDate()).padStart(2, '0');
+    const month = tomorrow.toLocaleString('en-US', { month: 'long' });
+    const year = tomorrow.getFullYear();
 
-  const formatted = `${day} ${month}, ${year}`;
+    const formatted = `${day} ${month}, ${year}`;
 
-  await this.dateInput.click();
-  await this.dateInput.press('Control+A');
-  await this.dateInput.press('Backspace');
+    await this.dateInput.click();
+    await this.dateInput.press('Control+A');
+    await this.dateInput.press('Backspace');
 
-  await this.dateInput.type(formatted, { delay: 50 });
-  await this.dateInput.press('Enter');
+    await this.dateInput.type(formatted, { delay: 50 });
+    await this.dateInput.press('Enter');
 
-  // HARD ASSERT — ensures UI actually updated
-  await expect(this.dateInput).toHaveValue(formatted);
+    // HARD ASSERT — ensures UI actually updated
+    await expect(this.dateInput).toHaveValue(formatted);
 
-  Logger.info(`Session date set to ${formatted}`);
-}
+    Logger.info(`Session date set to ${formatted}`);
+  }
+
 }
