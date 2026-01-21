@@ -6,21 +6,40 @@ export default defineConfig({
   timeout: 60_000,
   retries: 0,
 
-  reporter: [
+ reporter: [
     ['list'],
+
+    // 🔹 HTML Report (unchanged behavior)
     [
       'html',
       {
-        open: !process.env.CI ? 'always' : 'never', // open HTML report only on local runs
+        open: !process.env.CI ? 'always' : 'never',
       },
     ],
+
+    // 🔹 Allure Report (UNCHANGED – already correct)
     [
       'allure-playwright',
       {
         outputFolder: 'allure-results',
         detail: true,
         suiteTitle: true,
-        // open: false, // optional, prevents Allure from opening automatically
+      },
+    ],
+
+    // 🔹 ADD: JUnit (CI / GitHub Actions)
+    [
+      'junit',
+      {
+        outputFile: 'results/junit.xml',
+      },
+    ],
+
+    // 🔹 ADD: JSON (Optional, future dashboards)
+    [
+      'json',
+      {
+        outputFile: 'results/results.json',
       },
     ],
   ],
