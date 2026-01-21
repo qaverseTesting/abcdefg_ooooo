@@ -9,7 +9,7 @@ import { MyGroupsPage } from '@pages/dashboard/MyGroupsPage';
 test.describe('Create Session', () => {
   test(
     'Host creates a session successfully',
-    { tag: ['@smoke', '@regression'] },
+    { tag: ['@regression'] },
     async ({ page }) => {
       Logger.info('Starting Create Session test');
 

@@ -14,7 +14,7 @@ test.describe('Login – Single User', () => {
 
   test(
     'Group Host user can login successfully',
-    { tag: ['@smoke', '@regression'] },
+    { tag: ['@auth', '@regression'] },
     async ({ loginAs, page }, testInfo) => {
 
       testInfo.annotations.push(

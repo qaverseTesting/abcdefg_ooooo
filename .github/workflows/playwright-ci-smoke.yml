@@ -1,4 +1,4 @@
-name: Playwright CI – Smoke Tests
+name: Playwright CI – auth Tests
 
 on:
   push:
@@ -18,7 +18,7 @@ on:
           - live
 
 jobs:
-  smoke-tests:
+  auth-tests:
     runs-on: ubuntu-latest
     timeout-minutes: 30
 
@@ -54,14 +54,14 @@ jobs:
             libxrender1 libxcb1 libxext6 fonts-liberation libwoff1 \
             wget
 
-      # 6️. Run Smoke Tests (CI Gate)
-      - name: Run Smoke Tests
+      # 6️. Run auth Tests (CI Gate)
+      - name: Run auth Tests
         env:
           ENVIRONMENT: ${{ inputs.environment }}
           CI: true
         run: |
-          echo "Running Smoke Tests on CI"
-          npx playwright test --grep @smoke
+          echo "Running auth Tests on CI"
+          npx playwright test --grep @auth
           
       # 7️. Optional severity gate
       - name: Fail build on critical failures

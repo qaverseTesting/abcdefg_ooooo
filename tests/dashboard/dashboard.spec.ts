@@ -1,8 +1,15 @@
-import { test } from '@playwright/test';
+import { test } from '../../src/fixtures/auth.fixture';
+import { UserRole } from '../../src/constants/roles';
 import { DashboardPage } from '../../src/pages/dashboard/DashboardPage';
+import { Logger } from '../../src/utils/Logger';
 
-test.describe('Support Group', () => {
-  // test('User sees group load verify on dashboard after login', async ({ page }) => {
-  //   const dashboardPage = new DashboardPage(page);
-  // });
-});
+test('Dashboard loads after fresh login',
+    { tag: ['@smoke', '@regression'] }, async ({ page }) => {
+  Logger.step('Navigating to dashboard');
+
+const dashboard = new DashboardPage(page);
+await dashboard.open();
+await dashboard.verifyDashboardLoaded();
+}
+
+);

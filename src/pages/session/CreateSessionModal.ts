@@ -21,7 +21,6 @@ export class CreateSessionModal extends BasePage {
     });
 
     this.dateInput = this.modalRoot.locator('input[name="date"]');
-
     this.titleInput = this.modalRoot.locator('input[name="title"]');
 
     // STRICT-MODE SAFE (scoped to modal)

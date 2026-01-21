@@ -4,7 +4,8 @@ import { GroupActivationPaymentPage } from '../../src/pages/payment/GroupActivat
 import { ProfilePaymentPage } from '../../src/pages/profile/ProfilePaymentPage';
 import { Logger } from '../../src/utils/Logger';
 
-test('Host activates group successfully using payment', async ({ page }) => {
+test('Host activates group successfully using payment',
+    { tag: ['@regression'] }, async ({ page }) => {
   Logger.info('Starting Group Activation – Payment test');
 
   const myGroupsPage = new MyGroupsPage(page);

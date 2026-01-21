@@ -11,10 +11,10 @@ on:
       suite:
         description: "Test suite to run"
         required: true
-        default: "smoke"
+        default: "auth"
         type: choice
         options:
-          - smoke
+          - auth
           - regression
       environment:
         description: "Target environment"
@@ -69,8 +69,8 @@ jobs:
           CI: true
         run: |
           echo "Running ${{ inputs.suite }} suite on ${{ inputs.environment }}"
-          if [ "${{ inputs.suite }}" = "smoke" ]; then
-            npx playwright test --grep @smoke || true
+          if [ "${{ inputs.suite }}" = "auth" ]; then
+            npx playwright test --grep @auth || true
           else
             npx playwright test --grep @regression || true
           fi

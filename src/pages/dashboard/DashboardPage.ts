@@ -5,24 +5,31 @@ import { URLS } from '../../config/urls';
 import { Logger } from '../../utils/Logger';
 import { Assertions } from '../../utils/Assertions';
 import { Wait } from '../../utils/Wait';
+import { GroupListSection } from './GroupListSection';
 import { MyGroupsPage } from './MyGroupsPage';
 
 export class DashboardPage extends BasePage {
   private readonly startGroupLink: Locator;
-
+  readonly groups: GroupListSection;
 
   constructor(page: Page) {
     super(page);
+    this.groups = new GroupListSection(page);
     this.startGroupLink = page.getByRole('link', { name: 'Start a Group' });
+  }
 
+    async open(): Promise<void> {
+    Logger.step('Opening dashboard');
+    await this.page.goto(URLS.DASHBOARD);
   }
 
   // DO NOT REMOVE — AUTH DEPENDENCY
   async verifyDashboardLoaded(): Promise<void> {
     await Assertions.urlContains(this.page, URLS.DASHBOARD);
     Logger.success('Login successful');
-    //await Wait.pause(this.page, 10_000);
+    await Wait.pause(this.page, 10_000);
   }
+  
 
   async clickStartGroup(): Promise<void> {
     Logger.step('Clicking on Start a Group');
