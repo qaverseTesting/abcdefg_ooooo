@@ -17,7 +17,7 @@ export abstract class BasePage {
   }
 
   /* ============================
-     🔐 STABLE ENTERPRISE INPUT
+     STABLE ENTERPRISE INPUT
   ============================ */
   async stableFill(locator: Locator, value: string) {
     await locator.waitFor({ state: 'visible' });
