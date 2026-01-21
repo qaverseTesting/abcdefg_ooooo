@@ -82,7 +82,6 @@ $RECYCLE.BIN/
 *.cache
 
 # Node lock files (optional if you want to ignore)
-package-lock.json
 yarn.lock
 pnpm-lock.yaml
 
