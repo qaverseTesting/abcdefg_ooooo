@@ -71,7 +71,7 @@ jobs:
           CI: true
         run: |
           echo "Running Smoke Tests on ${{ inputs.environment }}"
-          npx playwright test --grep @smoke || true
+          npx playwright test --grep @auth || true
 
       # 7️⃣ Optional severity gate
       - name: Fail build on critical failures
