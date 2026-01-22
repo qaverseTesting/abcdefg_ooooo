@@ -1,0 +1,251 @@
+{
+  "config": {
+    "configFile": "D:\\Git\\mentalhappy-playwright\\playwright.config.ts",
+    "rootDir": "D:/Git/mentalhappy-playwright/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "open": "always"
+        }
+      ],
+      [
+        "D:\\Git\\mentalhappy-playwright\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        {
+          "outputFolder": "allure-results",
+          "detail": true,
+          "suiteTitle": true
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "results/junit.xml"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "results/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "D:/Git/mentalhappy-playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "prepare-auth",
+        "name": "prepare-auth",
+        "testDir": "D:/Git/mentalhappy-playwright/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "D:/Git/mentalhappy-playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "after-login",
+        "name": "after-login",
+        "testDir": "D:/Git/mentalhappy-playwright/tests",
+        "testIgnore": [
+          "/.*login\\.spec\\.ts/"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "D:/Git/mentalhappy-playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "before-login",
+        "name": "before-login",
+        "testDir": "D:/Git/mentalhappy-playwright/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*login\\.spec\\.ts/"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.57.0",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "setup\\auth.setup.ts",
+      "file": "setup/auth.setup.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "authenticate group host user",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "prepare-auth",
+              "projectName": "prepare-auth",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 24071,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "▶ Base URL project: https://staging.mentalhappy.com/\n"
+                    },
+                    {
+                      "text": "[2026-01-22T05:07:25.731Z] [SUCCESS] Login successful\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-22T05:07:12.403Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e717b06d8d484d1cd946-e02ffa9761a5a5bee13e",
+          "file": "setup/auth.setup.ts",
+          "line": 12,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "dashboard\\group-listing.spec.ts",
+      "file": "dashboard/group-listing.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Groups – Listing",
+          "file": "dashboard/group-listing.spec.ts",
+          "line": 9,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Group listing loads with correct visibility and status",
+              "ok": true,
+              "tags": [
+                "smoke",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "severity",
+                      "description": "critical"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "after-login",
+                  "projectName": "after-login",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 12427,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-01-22T05:07:39.928Z] [STEP] Opening My Groups page\n"
+                        },
+                        {
+                          "text": "[2026-01-22T05:07:39.929Z] [STEP] Navigating to My Groups\n"
+                        },
+                        {
+                          "text": "[2026-01-22T05:07:50.745Z] [STEP] Verifying group cards are visible\n"
+                        },
+                        {
+                          "text": "[2026-01-22T05:07:50.827Z] [SUCCESS] Group listing loaded successfully with 58 groups\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-22T05:07:38.793Z",
+                      "annotations": [
+                        {
+                          "type": "severity",
+                          "description": "critical"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7748b24550ddc1cd7659-75235c954d68d323fa47",
+              "file": "dashboard/group-listing.spec.ts",
+              "line": 11,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-01-22T05:07:11.028Z",
+    "duration": 41227.667,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

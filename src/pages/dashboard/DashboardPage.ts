@@ -10,11 +10,9 @@ import { MyGroupsPage } from './MyGroupsPage';
 
 export class DashboardPage extends BasePage {
   private readonly startGroupLink: Locator;
-  readonly groups: GroupListSection;
 
   constructor(page: Page) {
     super(page);
-    this.groups = new GroupListSection(page);
     this.startGroupLink = page.getByRole('link', { name: 'Start a Group' });
   }
 

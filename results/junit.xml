@@ -1,0 +1,26 @@
+<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="41.227667000000004">
+<testsuite name="setup\auth.setup.ts" timestamp="2026-01-22T05:07:11.328Z" hostname="prepare-auth" tests="1" failures="0" skipped="0" time="24.071" errors="0">
+<testcase name="authenticate group host user" classname="setup\auth.setup.ts" time="24.071">
+<system-out>
+<![CDATA[▶ Base URL project: https://staging.mentalhappy.com/
+[2026-01-22T05:07:25.731Z] [SUCCESS] Login successful
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="dashboard\group-listing.spec.ts" timestamp="2026-01-22T05:07:11.328Z" hostname="after-login" tests="1" failures="0" skipped="0" time="12.427" errors="0">
+<testcase name="Groups – Listing › Group listing loads with correct visibility and status" classname="dashboard\group-listing.spec.ts" time="12.427">
+<properties>
+<property name="severity" value="critical">
+</property>
+</properties>
+<system-out>
+<![CDATA[[2026-01-22T05:07:39.928Z] [STEP] Opening My Groups page
+[2026-01-22T05:07:39.929Z] [STEP] Navigating to My Groups
+[2026-01-22T05:07:50.745Z] [STEP] Verifying group cards are visible
+[2026-01-22T05:07:50.827Z] [SUCCESS] Group listing loaded successfully with 58 groups
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
