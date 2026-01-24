@@ -80,10 +80,6 @@ $RECYCLE.BIN/
 *.log
 *.cache
 
-# Node lock files (optional if you want to ignore)
-yarn.lock
-pnpm-lock.yaml
-
 allure-results/
 allure-report/
 storage/

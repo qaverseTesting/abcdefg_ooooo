@@ -5,6 +5,7 @@ import { Logger } from '../../utils/Logger';
 import { Wait } from '../../utils/Wait';
 import { URLS } from '../../config/urls';
 import { ChatPage } from '../chat/ChatPage';
+import { RuntimeStore } from '../../utils/RuntimeStore';
 
 /**
  * Result of searching for an inactive group
@@ -21,6 +22,89 @@ export class MyGroupsPage extends BasePage {
 
     this.groupCards = page.locator('[data-testid="group-card"]');
   }
+
+  /**
+ * Opens the saved group (from RuntimeStore) and checks
+ * if Create Session is supported.
+ *
+ * Loop behavior:
+ * - Iterate until saved group is found
+ * - Stop immediately when found
+ * - Continue if not matched
+ */
+async openSavedGroupSupportingCreateSession(): Promise<boolean> {
+  const targetGroupName = RuntimeStore.getGroupName();
+
+  Logger.step(`Searching for saved group for Create Session: ${targetGroupName}`);
+
+  await this.openMyGroups(true);
+
+  const count = await this.groupCards.count();
+
+  for (let i = 0; i < count; i++) {
+    const card = this.groupCards.nth(i);
+
+    if (!(await card.isVisible().catch(() => false))) continue;
+
+    const snapshot = (await card.innerText().catch(() => '')).trim();
+
+    // Skip until saved group is found
+    if (!snapshot.includes(targetGroupName)) continue;
+
+    Logger.success(`Saved group found: ${targetGroupName}`);
+
+    // Inactive groups cannot create sessions
+    if (
+      await card
+        .getByText(/activate your group/i)
+        .isVisible()
+        .catch(() => false)
+    ) {
+      Logger.warn('Saved group is inactive → cannot create session');
+      return false;
+    }
+
+    // Interest-only groups cannot create sessions
+    if (
+      await card
+        .getByText(/i'm interested/i)
+        .isVisible()
+        .catch(() => false)
+    ) {
+      Logger.warn('Saved group is interest-only → cannot create session');
+      return false;
+    }
+
+    // ❌ Paid groups cannot create sessions
+    const isPaidGroup = await card
+      .locator('svg circle + line + line')
+      .isVisible()
+      .catch(() => false);
+
+    if (isPaidGroup) {
+      Logger.warn('Saved group is paid → cannot create session');
+      return false;
+    }
+
+    await card.scrollIntoViewIfNeeded();
+    await card.click();
+    await Wait.pause(this.page, 10_000);
+
+    const chatPage = new ChatPage(this.page);
+    const opened = await chatPage.tryOpenCreateSession();
+
+    if (opened) {
+      Logger.success('Create Session modal opened for saved group');
+      return true;
+    }
+
+    Logger.warn('Saved group does not support Create Session');
+    return false;
+  }
+
+  Logger.warn('Saved group not found in My Groups listing');
+  return false;
+}
 
   /**
    * Navigates safely to My Groups page
@@ -126,7 +210,10 @@ export class MyGroupsPage extends BasePage {
      * Returns FOUND or NOT_FOUND instead of throwing.
      */
   async openInactiveGroupAndRedirectToPayment(): Promise<InactiveGroupResult> {
+      const targetGroupName = RuntimeStore.getGroupName();
+
     await this.openMyGroups(true);
+      const count = await this.groupCards.count();
 
     const visitedGroups = new Set<string>();
     const MAX_ATTEMPTS = 15;
@@ -143,6 +230,11 @@ export class MyGroupsPage extends BasePage {
         if (!(await card.isVisible().catch(() => false))) continue;
 
         const snapshot = (await card.innerText().catch(() => '')).trim();
+
+           // Continue loop if this is not our saved group
+        if (!snapshot.includes(targetGroupName)) continue;
+        Logger.success(`Saved group found: ${targetGroupName}`);
+
         if (!snapshot || visitedGroups.has(snapshot)) continue;
 
         visitedGroups.add(snapshot);

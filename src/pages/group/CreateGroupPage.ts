@@ -1,5 +1,5 @@
 // src/pages/group/CreateGroupPage.ts
-import { Page, Locator } from '@playwright/test';
+import { Page, Locator, expect } from '@playwright/test';
 import { BasePage } from '../base/BasePage';
 import { Wait } from '../../utils/Wait';
 import { Logger } from '../../utils/Logger';
@@ -137,11 +137,13 @@ export class CreateGroupPage extends BasePage {
     await this.submitButton.click();
   }
 
+
   /**
    * Confirms final group submission
    */
   async confirmSubmit(): Promise<void> {
     Logger.step('Confirming group submission');
-    await this.finalSubmitButton.click();
+      await this.robustClick(this.finalSubmitButton);
+
   }
 }

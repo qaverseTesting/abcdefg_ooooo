@@ -17,10 +17,18 @@ on:
           - staging
           - live
 
+# 🔐 REQUIRED PERMISSIONS FOR GH PAGES DEPLOY
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
   smoke-tests:
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    env:
+      ALLURE_PAGES_REPO: test-automation
 
     steps:
       # 1️⃣ Checkout repository
@@ -54,7 +62,7 @@ jobs:
             libxrender1 libxcb1 libxext6 fonts-liberation libwoff1 \
             wget || echo "Some packages failed, continuing..."
 
-       # 🌍 Resolve environment name
+      # 🌍 Resolve ENVIRONMENT
       - name: Resolve Environment
         run: |
           if [ -n "${{ inputs.environment }}" ]; then
@@ -63,15 +71,14 @@ jobs:
             echo "ENVIRONMENT=staging" >> $GITHUB_ENV
           fi
 
-
-      # 6️⃣ Run Smoke Tests (SAFE)
+      # 6️⃣ Run Smoke Tests
       - name: Run Smoke Tests
         env:
-          ENVIRONMENT: ${{ inputs.environment }}
+          ENVIRONMENT: ${{ env.ENVIRONMENT }}
           CI: true
         run: |
-          echo "Running Smoke Tests on ${{ inputs.environment }}"
-          npx playwright test --grep @auth || true
+          echo "Running Smoke Tests on $ENVIRONMENT"
+          npx playwright test --grep @smoke || true
 
       # 7️⃣ Optional severity gate
       - name: Fail build on critical failures
@@ -87,7 +94,7 @@ jobs:
         run: |
           npm install -g allure-commandline
           mkdir -p allure-report
-          allure generate --clean -o allure-report ./allure-results || true
+          npx allure generate --clean -o allure-report ./allure-results || true
 
       # 9️⃣ Upload Allure artifact
       - name: Upload Allure Report Artifact
@@ -108,23 +115,24 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./allure-report
           publish_branch: gh-pages
+          publish_dir: ./allure-report
           user_name: github-actions
           user_email: github-actions@github.com
 
       # 1️⃣2️⃣ CI Summary links
       - name: Add CI Summary Links
         run: |
+          ALLURE_URL="https://${GITHUB_REPOSITORY_OWNER}.github.io/${ALLURE_PAGES_REPO}/"
           echo "## 📊 Test Reports" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "### 🔵 Allure Report (Online)" >> $GITHUB_STEP_SUMMARY
-          echo "👉 https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}/" >> $GITHUB_STEP_SUMMARY
+          echo "👉 $ALLURE_URL" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "### 🟢 Playwright HTML Report" >> $GITHUB_STEP_SUMMARY
           echo "👉 Download from **Artifacts → playwright-html-report**" >> $GITHUB_STEP_SUMMARY
 
-            # 📊 Collect Playwright test statistics + failed test names (FINAL FIX)
+      # 📊 Collect Playwright test statistics
       - name: Collect Test Stats
         if: always()
         run: |
@@ -152,18 +160,10 @@ jobs:
 
           function walkSuites(suites = []) {
             for (const suite of suites) {
-              // Go deeper
-              if (suite.suites) {
-                walkSuites(suite.suites);
-              }
-
-              // Read specs at this level
+              if (suite.suites) walkSuites(suite.suites);
               for (const spec of suite.specs || []) {
                 for (const test of spec.tests || []) {
-                  const hasFailure = (test.results || [])
-                    .some(r => r.status === 'failed');
-
-                  if (hasFailure) {
+                  if ((test.results || []).some(r => r.status === 'failed')) {
                     failedTests.add(spec.title);
                   }
                 }
@@ -186,8 +186,7 @@ jobs:
           fs.appendFileSync(process.env.GITHUB_ENV, `FAILED_TESTS=${failedList}\n`);
           EOF
 
-
-      # 🔔 Slack Notification (with test names)
+      # 🔔 Slack Notification
       - name: Notify Slack
         if: always()
         env:
@@ -195,6 +194,7 @@ jobs:
         run: |
           STATUS="${{ job.status }}"
           COLOR="#36a64f"
+          ALLURE_URL="https://${GITHUB_REPOSITORY_OWNER}.github.io/${ALLURE_PAGES_REPO}/"
 
           if [ "$STATUS" != "success" ]; then
             COLOR="#ff0000"
@@ -205,6 +205,6 @@ jobs:
             \"attachments\": [{
               \"color\": \"$COLOR\",
               \"title\": \"Playwright Test Results\",
-              \"text\": \"*Workflow:* ${{ github.workflow }}\n*Status:* $STATUS\n*Environment:* $ENVIRONMENT\n\n*Test Summary*\n• Total: *$TOTAL*\n• Passed: *$PASSED*\n• Failed: *$FAILED*\n• Skipped: *$SKIPPED*\n• Flaky: *$FLAKY*\n\n*Failed Tests (Top 5)*\n• $FAILED_TESTS\n\n*Repository:* ${{ github.repository }}\n*Branch:* ${{ github.ref_name }}\n<${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|View CI Run>\"
+              \"text\": \"*Workflow:* ${{ github.workflow }}\n*Status:* $STATUS\n*Environment:* $ENVIRONMENT\n\n*Test Summary*\n• Total: *$TOTAL*\n• Passed: *$PASSED*\n• Failed: *$FAILED*\n• Skipped: *$SKIPPED*\n• Flaky: *$FLAKY*\n\n*Failed Tests (Top 5)*\n• $FAILED_TESTS\n\n*Allure Report:* $ALLURE_URL\n\n*Repository:* ${{ github.repository }}\n*Branch:* ${{ github.ref_name }}\n<${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|View CI Run>\"
             }]
           }" $SLACK_WEBHOOK_URL

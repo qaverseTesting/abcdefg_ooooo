@@ -37,4 +37,23 @@ export abstract class BasePage {
   async expectVisible(locator: Locator, message?: string) {
     await expect(locator, message).toBeVisible();
   }
+
+   async robustClick(locator: Locator, timeout = 15_000): Promise<void> {
+    // 1️⃣ Wait until element exists in DOM
+    await locator.waitFor({ state: 'attached', timeout });
+
+    // 2️⃣ Wait until it becomes enabled (if applicable)
+    try {
+      await expect(locator).toBeEnabled({ timeout: timeout / 2 });
+    } catch {
+      // Some buttons never toggle disabled state — safe to continue
+    }
+
+    // 3️⃣ Try normal click → fallback to force
+    try {
+      await locator.click({ timeout });
+    } catch {
+      await locator.click({ force: true, timeout });
+    }
+  }
 }

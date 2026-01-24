@@ -64,7 +64,23 @@
         "testDir": "D:/Git/mentalhappy-playwright/tests",
         "testIgnore": [],
         "testMatch": [
-          "/.*\\.setup\\.ts/"
+          "/tests\\/setup\\/auth\\.setup\\.ts/"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "D:/Git/mentalhappy-playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "create-group",
+        "name": "create-group",
+        "testDir": "D:/Git/mentalhappy-playwright/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/tests\\/group\\/create-group\\.spec\\.ts/"
         ],
         "timeout": 60000
       },
@@ -79,6 +95,10 @@
         "name": "after-login",
         "testDir": "D:/Git/mentalhappy-playwright/tests",
         "testIgnore": [
+          "/tests\\/setup\\/.*\\.ts/",
+          "/tests\\/group\\/create-group\\.spec\\.ts/",
+          "/tests\\/group\\/group-activation-payment\\.spec\\.ts/",
+          "/tests\\/session\\/create-session\\.spec\\.ts/",
           "/.*login\\.spec\\.ts/"
         ],
         "testMatch": [
@@ -134,19 +154,31 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 24071,
+                  "duration": 20874,
                   "errors": [],
                   "stdout": [
                     {
                       "text": "▶ Base URL project: https://staging.mentalhappy.com/\n"
                     },
                     {
-                      "text": "[2026-01-22T05:07:25.731Z] [SUCCESS] Login successful\n"
+                      "text": "[PW] Chat widget request blocked\n"
+                    },
+                    {
+                      "text": "[PW] Chat widget request blocked\n"
+                    },
+                    {
+                      "text": "[2026-01-23T18:53:31.471Z] [SUCCESS] Login successful\n"
+                    },
+                    {
+                      "text": "[PW] Chat widget request blocked\n"
+                    },
+                    {
+                      "text": "[PW] Chat widget request blocked\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-22T05:07:12.403Z",
+                  "startTime": "2026-01-23T18:53:20.837Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -162,20 +194,20 @@
       ]
     },
     {
-      "title": "dashboard\\group-listing.spec.ts",
-      "file": "dashboard/group-listing.spec.ts",
+      "title": "group\\create-group.spec.ts",
+      "file": "group/create-group.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Groups – Listing",
-          "file": "dashboard/group-listing.spec.ts",
-          "line": 9,
+          "title": "Group Creation",
+          "file": "group/create-group.spec.ts",
+          "line": 13,
           "column": 6,
           "specs": [
             {
-              "title": "Group listing loads with correct visibility and status",
+              "title": "Group Host can create a group successfully",
               "ok": true,
               "tags": [
                 "smoke",
@@ -184,54 +216,93 @@
               "tests": [
                 {
                   "timeout": 60000,
-                  "annotations": [
-                    {
-                      "type": "severity",
-                      "description": "critical"
-                    }
-                  ],
+                  "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "after-login",
-                  "projectName": "after-login",
+                  "projectId": "create-group",
+                  "projectName": "create-group",
                   "results": [
                     {
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 12427,
+                      "duration": 32892,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "[2026-01-22T05:07:39.928Z] [STEP] Opening My Groups page\n"
+                          "text": "[2026-01-23T18:53:47.246Z] [INFO] Starting Group Creation test\n"
                         },
                         {
-                          "text": "[2026-01-22T05:07:39.929Z] [STEP] Navigating to My Groups\n"
+                          "text": "[2026-01-23T18:53:50.480Z] [STEP] Clicking on Start a Group\n"
                         },
                         {
-                          "text": "[2026-01-22T05:07:50.745Z] [STEP] Verifying group cards are visible\n"
+                          "text": "[PW] Chat widget request blocked\n"
                         },
                         {
-                          "text": "[2026-01-22T05:07:50.827Z] [SUCCESS] Group listing loaded successfully with 58 groups\n"
+                          "text": "[PW] Chat widget request blocked\n"
+                        },
+                        {
+                          "text": "[2026-01-23T18:53:54.653Z] [ASSERT] Create Group page is loaded\n"
+                        },
+                        {
+                          "text": "[2026-01-23T18:53:56.074Z] [STEP] Filling group details\n"
+                        },
+                        {
+                          "text": "[2026-01-23T18:53:56.516Z] [STEP] Test Group 1769194427246:- group name is Created\n"
+                        },
+                        {
+                          "text": "[2026-01-23T18:53:56.516Z] [STEP] Selecting a random group tag\n"
+                        },
+                        {
+                          "text": "[2026-01-23T18:53:57.995Z] [STEP] Submitting group creation Preview\n"
+                        },
+                        {
+                          "text": "[2026-01-23T18:53:58.071Z] [STEP] Confirming group submission\n"
+                        },
+                        {
+                          "text": "[2026-01-23T18:53:59.034Z] [STEP] Checking if onboarding screen is present\n"
+                        },
+                        {
+                          "text": "[PW] Chat widget request blocked\n"
+                        },
+                        {
+                          "text": "[PW] Chat widget request blocked\n"
+                        },
+                        {
+                          "text": "[PW] Chat widget request blocked\n"
+                        },
+                        {
+                          "text": "[2026-01-23T18:54:09.067Z] [INFO] Onboarding not shown — continuing flow\n"
+                        },
+                        {
+                          "text": "[PW] Chat widget request blocked\n"
+                        },
+                        {
+                          "text": "[2026-01-23T18:54:19.114Z] [STEP] Checking activated group via URL ref (if present)\n"
+                        },
+                        {
+                          "text": "[2026-01-23T18:54:19.115Z] [INFO] Saving group name: Test Group 1769194427246\n"
+                        },
+                        {
+                          "text": "[2026-01-23T18:54:19.116Z] [SUCCESS] Group created successfully\n"
                         }
                       ],
-                      "stderr": [],
+                      "stderr": [
+                        {
+                          "text": "[2026-01-23T18:54:19.114Z] [WARN] URL ref parameter not present — skipping ref assertion\n"
+                        }
+                      ],
                       "retry": 0,
-                      "startTime": "2026-01-22T05:07:38.793Z",
-                      "annotations": [
-                        {
-                          "type": "severity",
-                          "description": "critical"
-                        }
-                      ],
+                      "startTime": "2026-01-23T18:53:46.477Z",
+                      "annotations": [],
                       "attachments": []
                     }
                   ],
                   "status": "expected"
                 }
               ],
-              "id": "7748b24550ddc1cd7659-75235c954d68d323fa47",
-              "file": "dashboard/group-listing.spec.ts",
-              "line": 11,
+              "id": "1ce1d1f7be5c27a12a08-458c54739217b24da6d5",
+              "file": "group/create-group.spec.ts",
+              "line": 14,
               "column": 7
             }
           ]
@@ -241,8 +312,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-22T05:07:11.028Z",
-    "duration": 41227.667,
+    "startTime": "2026-01-23T18:53:19.718Z",
+    "duration": 60290.028,
     "expected": 2,
     "skipped": 0,
     "unexpected": 0,

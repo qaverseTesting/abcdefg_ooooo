@@ -3,7 +3,13 @@ dotenv.config();
 
 type EnvironmentType = 'staging' | 'live';
 
-const CURRENT_ENV = (process.env.ENVIRONMENT as EnvironmentType) || 'live';
+const CURRENT_ENV = process.env.ENVIRONMENT as EnvironmentType;
+
+if (!CURRENT_ENV || !['staging', 'live'].includes(CURRENT_ENV)) {
+  throw new Error(
+    `❌ ENVIRONMENT not set or invalid. Received: "${process.env.ENVIRONMENT}"`
+  );
+}
 
 const ENV_CONFIG = {
   staging: {
@@ -36,3 +42,4 @@ const ENV_CONFIG = {
 };
 
 export const ENV = ENV_CONFIG[CURRENT_ENV];
+export const CURRENT_ENVIRONMENT = CURRENT_ENV;

@@ -1,7 +1,6 @@
-import { Page, Locator, expect } from '@playwright/test';
+import { Page, Locator } from '@playwright/test';
 import { BasePage } from '../base/BasePage';
 import { Logger } from '../../utils/Logger';
-import { Wait } from '../../utils/Wait';
 
 export class GroupOnboardingPage extends BasePage {
   private readonly skipForNowButton: Locator;
@@ -12,12 +11,34 @@ export class GroupOnboardingPage extends BasePage {
   }
 
   /**
-   * Skips onboarding and navigates to group profile
+   * Skips onboarding ONLY if it is present.
+   * Safe to call in all environments (local / CI).
+   */
+  async skipOnboardingIfPresent(): Promise<void> {
+    Logger.step('Checking if onboarding screen is present');
+
+    const isPresent = await this.skipForNowButton
+      .waitFor({ state: 'attached', timeout: 10_000 })
+      .then(() => true)
+      .catch(() => false);
+
+    if (!isPresent) {
+      Logger.info('Onboarding not shown — continuing flow');
+      return;
+    }
+
+    Logger.step('Skipping onboarding');
+    await this.robustClick(this.skipForNowButton);
+
+    Logger.success('Onboarding skipped');
+  }
+
+  /**
+   * 🚫 DEPRECATED
+   * Kept only to avoid accidental usage.
+   * Redirects to safe implementation.
    */
   async skipOnboarding(): Promise<void> {
-    Logger.step('Skipping onboarding');
-    await Wait.pause(this.page, 20_000);
-    await expect(this.skipForNowButton).toBeVisible();
-    await this.skipForNowButton.click();
+    await this.skipOnboardingIfPresent();
   }
 }

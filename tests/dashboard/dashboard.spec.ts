@@ -11,5 +11,4 @@ const dashboard = new DashboardPage(page);
 await dashboard.open();
 await dashboard.verifyDashboardLoaded();
 }
-
 );

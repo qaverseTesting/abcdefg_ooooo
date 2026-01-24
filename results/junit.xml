@@ -1,26 +1,45 @@
-<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="41.227667000000004">
-<testsuite name="setup\auth.setup.ts" timestamp="2026-01-22T05:07:11.328Z" hostname="prepare-auth" tests="1" failures="0" skipped="0" time="24.071" errors="0">
-<testcase name="authenticate group host user" classname="setup\auth.setup.ts" time="24.071">
+<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="60.290028">
+<testsuite name="setup\auth.setup.ts" timestamp="2026-01-23T18:53:19.889Z" hostname="prepare-auth" tests="1" failures="0" skipped="0" time="20.874" errors="0">
+<testcase name="authenticate group host user" classname="setup\auth.setup.ts" time="20.874">
 <system-out>
 <![CDATA[▶ Base URL project: https://staging.mentalhappy.com/
-[2026-01-22T05:07:25.731Z] [SUCCESS] Login successful
+[PW] Chat widget request blocked
+[PW] Chat widget request blocked
+[2026-01-23T18:53:31.471Z] [SUCCESS] Login successful
+[PW] Chat widget request blocked
+[PW] Chat widget request blocked
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="dashboard\group-listing.spec.ts" timestamp="2026-01-22T05:07:11.328Z" hostname="after-login" tests="1" failures="0" skipped="0" time="12.427" errors="0">
-<testcase name="Groups – Listing › Group listing loads with correct visibility and status" classname="dashboard\group-listing.spec.ts" time="12.427">
-<properties>
-<property name="severity" value="critical">
-</property>
-</properties>
+<testsuite name="group\create-group.spec.ts" timestamp="2026-01-23T18:53:19.889Z" hostname="create-group" tests="1" failures="0" skipped="0" time="32.892" errors="0">
+<testcase name="Group Creation › Group Host can create a group successfully" classname="group\create-group.spec.ts" time="32.892">
 <system-out>
-<![CDATA[[2026-01-22T05:07:39.928Z] [STEP] Opening My Groups page
-[2026-01-22T05:07:39.929Z] [STEP] Navigating to My Groups
-[2026-01-22T05:07:50.745Z] [STEP] Verifying group cards are visible
-[2026-01-22T05:07:50.827Z] [SUCCESS] Group listing loaded successfully with 58 groups
+<![CDATA[[2026-01-23T18:53:47.246Z] [INFO] Starting Group Creation test
+[2026-01-23T18:53:50.480Z] [STEP] Clicking on Start a Group
+[PW] Chat widget request blocked
+[PW] Chat widget request blocked
+[2026-01-23T18:53:54.653Z] [ASSERT] Create Group page is loaded
+[2026-01-23T18:53:56.074Z] [STEP] Filling group details
+[2026-01-23T18:53:56.516Z] [STEP] Test Group 1769194427246:- group name is Created
+[2026-01-23T18:53:56.516Z] [STEP] Selecting a random group tag
+[2026-01-23T18:53:57.995Z] [STEP] Submitting group creation Preview
+[2026-01-23T18:53:58.071Z] [STEP] Confirming group submission
+[2026-01-23T18:53:59.034Z] [STEP] Checking if onboarding screen is present
+[PW] Chat widget request blocked
+[PW] Chat widget request blocked
+[PW] Chat widget request blocked
+[2026-01-23T18:54:09.067Z] [INFO] Onboarding not shown — continuing flow
+[PW] Chat widget request blocked
+[2026-01-23T18:54:19.114Z] [STEP] Checking activated group via URL ref (if present)
+[2026-01-23T18:54:19.115Z] [INFO] Saving group name: Test Group 1769194427246
+[2026-01-23T18:54:19.116Z] [SUCCESS] Group created successfully
 ]]>
 </system-out>
+<system-err>
+<![CDATA[[2026-01-23T18:54:19.114Z] [WARN] URL ref parameter not present — skipping ref assertion
+]]>
+</system-err>
 </testcase>
 </testsuite>
 </testsuites>

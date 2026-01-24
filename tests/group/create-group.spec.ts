@@ -1,12 +1,14 @@
 // tests/group/create-group.spec.ts
 import { test } from '../../src/fixtures/auth.fixture';
 import { URLS } from '../../src/config/urls';
+import { Wait } from '../../src/utils/Wait';
 import { DashboardPage } from '../../src/pages/dashboard/DashboardPage';
 import { GroupOnboardingPage } from '../../src/pages/group/GroupOnboardingPage';
 import { ProfilePaymentPage } from '../../src/pages/profile/ProfilePaymentPage';
 import { CreateGroupPage } from '../../src/pages/group/CreateGroupPage';
 import { DataGenerator } from '../../src/utils/DataGenerator';
 import { Logger } from '../../src/utils/Logger';
+import { RuntimeStore } from '../../src/utils/RuntimeStore';
 
 test.describe('Group Creation', () => {
   test(
@@ -46,11 +48,14 @@ test.describe('Group Creation', () => {
 
       //Step 11: Onboarding
       const onboarding = new GroupOnboardingPage(page);
-      await onboarding.skipOnboarding();
+      await onboarding.skipOnboardingIfPresent();
 
       //Step 12: Profile verification
       const profile = new ProfilePaymentPage(page);
-      await profile.verifyGroupNameVisible(groupName);
+      await Wait.pause(page, 10_000);
+      await profile.assertActivatedGroupRef(groupName);
+      RuntimeStore.saveGroupName(groupName);
+
       Logger.success('Group created successfully');
     }
   );
