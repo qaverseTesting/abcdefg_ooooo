@@ -4,9 +4,17 @@ import { ENV } from './src/config/env';
 export default defineConfig({
   testDir: './tests',
   timeout: 60_000,
-  retries: 0,
 
- reporter: [
+
+  // 🔹 Keep your local behavior, add CI retries safely
+  retries: process.env.CI ? 2 : 0,
+
+  // 🔹 Optional but recommended for CI stability
+  workers: process.env.CI ? 4 : undefined,
+
+  globalSetup: './tests/setup/global-setup.ts',
+
+  reporter: [
     ['list'],
 
     // 🔹 HTML Report (unchanged behavior)
@@ -45,6 +53,7 @@ export default defineConfig({
   ],
 
   use: {
+    baseURL: ENV.BASE_URL,
     headless: process.env.CI === 'true',
     actionTimeout: 10_000,
     navigationTimeout: 15_000,
@@ -53,77 +62,77 @@ export default defineConfig({
     trace: 'retain-on-failure',
   },
 
-projects: [
-  // 1️⃣ LOGIN ONCE
-  {
-    name: 'prepare-auth',
-    testMatch: /tests\/setup\/auth\.setup\.ts/,
-    use: {
-      browserName: 'chromium',
-      channel: 'chrome',
-      baseURL: ENV.BASE_URL,
+  projects: [
+    // 1️⃣ LOGIN ONCE
+    {
+      name: 'prepare-auth',
+      testMatch: /tests\/setup\/auth\.setup\.ts/,
+      use: {
+        browserName: 'chromium',
+        channel: 'chrome',
+        baseURL: ENV.BASE_URL,
+      },
     },
-  },
 
-  // 2️⃣ CREATE GROUP (existing file)
-  {
-    name: 'create-group',
-    dependencies: ['prepare-auth'],
-    testMatch: /tests\/group\/create-group\.spec\.ts/,
-    use: {
-      baseURL: ENV.BASE_URL,
-      storageState: 'storage/user.auth.json',
+    // 2️⃣ CREATE GROUP (existing file)
+    {
+      name: 'create-group',
+      dependencies: ['prepare-auth'],
+      testMatch: /tests\/group\/create-group\.spec\.ts/,
+      use: {
+        baseURL: ENV.BASE_URL,
+        storageState: 'storage/user.auth.json',
+      },
     },
-  },
 
-  // 3️⃣ PAYMENT / ACTIVATION (existing file)
-  // {
-  //   name: 'group-payment',
-  //   dependencies: ['create-group'],
-  //   testMatch: /tests\/group\/group-activation-payment\.spec\.ts/,
-  //   use: {
-  //     baseURL: ENV.BASE_URL,
-  //     storageState: 'storage/user.auth.json',
-  //   },
-  // },
-
-  // 4️⃣ CREATE SESSION (existing file)
-  // {
-  //   name: 'create-session',
-  //   dependencies: ['group-payment'],
-  //   testMatch: /tests\/session\/create-session\.spec\.ts/,
-  //   use: {
-  //     baseURL: ENV.BASE_URL,
-  //     storageState: 'storage/user.auth.json',
-  //   },
-  // },
-
-  // 5️⃣ ALL OTHER AFTER-LOGIN TESTS
-  {
-    name: 'after-login',
-   // dependencies: ['create-session'],
-    testIgnore: [
-      /tests\/setup\/.*\.ts/,
-      /tests\/group\/create-group\.spec\.ts/,
-      /tests\/group\/group-activation-payment\.spec\.ts/,
-      /tests\/session\/create-session\.spec\.ts/,
-      /.*login\.spec\.ts/,
-    ],
-    use: {
-      baseURL: ENV.BASE_URL,
-      storageState: 'storage/user.auth.json',
+    // 3️⃣ PAYMENT / ACTIVATION (existing file)
+    {
+      name: 'group-payment',
+      dependencies: ['create-group'],
+      testMatch: /tests\/group\/group-activation-payment\.spec\.ts/,
+      use: {
+        baseURL: ENV.BASE_URL,
+        storageState: 'storage/user.auth.json',
+      },
     },
-  },
 
-  // 6️⃣ BEFORE LOGIN TESTS
-  {
-    name: 'before-login',
-    testMatch: /.*login\.spec\.ts/,
-    use: {
-      baseURL: ENV.BASE_URL,
-      storageState: undefined,
+    // 4️⃣ CREATE SESSION (existing file)
+    // {
+    //   name: 'create-session',
+    //   dependencies: ['group-payment'],
+    //   testMatch: /tests\/session\/create-session\.spec\.ts/,
+    //   use: {
+    //     baseURL: ENV.BASE_URL,
+    //     storageState: 'storage/user.auth.json',
+    //   },
+    // },
+
+    // 5️⃣ ALL OTHER AFTER-LOGIN TESTS
+    {
+      name: 'after-login',
+      // dependencies: ['create-session'],
+      testIgnore: [
+        /tests\/setup\/.*\.ts/,
+        /tests\/group\/create-group\.spec\.ts/,
+        /tests\/group\/group-activation-payment\.spec\.ts/,
+        /tests\/session\/create-session\.spec\.ts/,
+        /.*login\.spec\.ts/,
+      ],
+      use: {
+        baseURL: ENV.BASE_URL,
+        storageState: 'storage/user.auth.json',
+      },
     },
-  },
-]
+
+    // 6️⃣ BEFORE LOGIN TESTS
+    {
+      name: 'before-login',
+      testMatch: /.*login\.spec\.ts/,
+      use: {
+        baseURL: ENV.BASE_URL,
+        storageState: undefined,
+      },
+    },
+  ]
 });
 

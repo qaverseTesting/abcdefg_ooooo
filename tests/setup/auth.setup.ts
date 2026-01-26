@@ -10,8 +10,6 @@ import { DashboardPage } from '../../src/pages/dashboard/DashboardPage';
  * - Persist authenticated session
  */
 test('authenticate group host user', async ({ loginAs, page }, testInfo) => {
-   console.log('▶ Base URL project:', testInfo.project.use.baseURL);
-
   // Login using shared fixture
   await loginAs(UserRole.GROUP_HOST);
 
