@@ -1,9 +1,11 @@
 import { Page, Locator } from '@playwright/test';
 import { BasePage } from '../base/BasePage';
 import { Logger } from '../../utils/Logger';
+import { Wait } from '../../utils/Wait';
 import { CreateSessionModal } from '@pages/session/CreateSessionModal';
 
 export class ChatPage extends BasePage {
+  private readonly announcementBanner: Locator;
   private readonly announcementCloseBtn: Locator;
   private readonly plusButton: Locator;
   private readonly scheduleSessionMenu: Locator;
@@ -12,23 +14,20 @@ export class ChatPage extends BasePage {
   constructor(page: Page) {
     super(page);
 
-    this.announcementCloseBtn = page.getByRole('button', { name: /close/i });
+    // 🔥 Scope banner properly
+    this.announcementBanner = page.locator('[data-testid="announceView"]');
 
-    this.plusButton = page.locator(
-      'button[aria-haspopup="menu"]',
-      {
-        has: page.locator(
-          'svg line[x1="12"][y1="5"][x2="12"][y2="19"]'
-        ),
-      }
-    );
+    this.announcementCloseBtn = this.announcementBanner.getByRole('button', {
+      name: /close/i,
+    });
 
-    this.scheduleSessionMenu = page.locator(
-      'button[role="menuitem"]',
-      {
-        has: page.locator('p:has-text("Schedule a session")'),
-      }
-    );
+    this.plusButton = page.locator('button[aria-haspopup="menu"]', {
+      has: page.locator('svg line[x1="12"][y1="5"][x2="12"][y2="19"]'),
+    });
+
+    this.scheduleSessionMenu = page.locator('button[role="menuitem"]', {
+      has: page.locator('p:has-text("Schedule a session")'),
+    });
 
     this.createSessionModalIndicator = page.getByRole('heading', {
       name: /^schedule a session$/i,
@@ -80,10 +79,18 @@ export class ChatPage extends BasePage {
     return opened ? new CreateSessionModal(this.page) : null;
   }
 
+  /**
+   * Closes announcement banner if present
+   * (Prevents overlay from blocking + button)
+   */
   private async closeAnnouncementIfExists(): Promise<void> {
-    if (await this.announcementCloseBtn.isVisible().catch(() => false)) {
-      Logger.info('Closing announcement banner');
-      await this.announcementCloseBtn.click();
-    }
+    if (!(await this.announcementBanner.isVisible().catch(() => false))) return;
+
+    Logger.info('Announcement banner detected → closing');
+
+    await this.announcementCloseBtn.click();
+
+    // 🔥 Wait until banner is actually gone
+    await this.announcementBanner.waitFor({ state: 'hidden', timeout: 5000 }).catch(() => {});
   }
 }

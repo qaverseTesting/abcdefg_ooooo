@@ -9,7 +9,7 @@ export class ChatWidget {
     constructor(page: Page) {
         this.page = page;
 
-        // 🎯 Root widget container (most stable anchor)
+        // Root widget container (most stable anchor)
         this.launcher = page.locator('.bb-feedback-button.gl-block');
 
         // Clickable icon inside launcher

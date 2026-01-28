@@ -3,6 +3,8 @@ import { MyGroupsPage } from '../../src/pages/dashboard/MyGroupsPage';
 import { GroupActivationPaymentPage } from '../../src/pages/payment/GroupActivationPaymentPage';
 import { ProfilePaymentPage } from '../../src/pages/profile/ProfilePaymentPage';
 import { Logger } from '../../src/utils/Logger';
+import { Wait } from '../../src/utils/Wait';
+
 
 test('Host activates group successfully using payment',
     { tag: ['@regression'] }, async ({ page }) => {
@@ -29,6 +31,7 @@ test('Host activates group successfully using payment',
   await paymentPage.submitPayment();
 
   await profilePaymentPage.waitForProfilePaymentPage();
+  await profilePaymentPage.selectFreePaymentAndSave(); 
   await profilePaymentPage.assertActivatedGroupRef(activatedGroupName);
 
   Logger.success('Group Activation – Payment Flow completed successfully');

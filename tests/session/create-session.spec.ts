@@ -16,7 +16,7 @@ test.describe('Create Session', () => {
       await page.goto(URLS.DASHBOARD);
 
       const myGroups = new MyGroupsPage(page);
-      const canCreate = await myGroups.openAnyGroupSupportingCreateSession();
+      const canCreate = await myGroups.openSavedGroupSupportingCreateSession();
 
       if (!canCreate) {
         test.skip(true, 'No subscribed group supports Create Session');

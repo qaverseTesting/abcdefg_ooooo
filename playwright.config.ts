@@ -63,7 +63,7 @@ export default defineConfig({
   },
 
   projects: [
-    // 1️⃣ LOGIN ONCE
+    // 1️. LOGIN ONCE
     {
       name: 'prepare-auth',
       testMatch: /tests\/setup\/auth\.setup\.ts/,
@@ -74,7 +74,7 @@ export default defineConfig({
       },
     },
 
-    // 2️⃣ CREATE GROUP (existing file)
+    // 2️. CREATE GROUP (existing file)
     {
       name: 'create-group',
       dependencies: ['prepare-auth'],
@@ -85,7 +85,7 @@ export default defineConfig({
       },
     },
 
-    // 3️⃣ PAYMENT / ACTIVATION (existing file)
+    // 3️. PAYMENT / ACTIVATION (existing file)
     {
       name: 'group-payment',
       dependencies: ['create-group'],
@@ -96,27 +96,28 @@ export default defineConfig({
       },
     },
 
-    // 4️⃣ CREATE SESSION (existing file)
-    // {
-    //   name: 'create-session',
-    //   dependencies: ['group-payment'],
-    //   testMatch: /tests\/session\/create-session\.spec\.ts/,
-    //   use: {
-    //     baseURL: ENV.BASE_URL,
-    //     storageState: 'storage/user.auth.json',
-    //   },
-    // },
+    // 4️. CREATE SESSION (existing file)
+    {
+      name: 'create-session',
+      dependencies: ['group-payment'],
+      testMatch: /tests\/session\/create-session\.spec\.ts/,
+      use: {
+        baseURL: ENV.BASE_URL,
+        storageState: 'storage/user.auth.json',
+      },
+    },
 
-    // 5️⃣ ALL OTHER AFTER-LOGIN TESTS
+    // 5️. ALL OTHER AFTER-LOGIN TESTS
     {
       name: 'after-login',
-      // dependencies: ['create-session'],
+      dependencies: ['create-session'],
       testIgnore: [
         /tests\/setup\/.*\.ts/,
         /tests\/group\/create-group\.spec\.ts/,
         /tests\/group\/group-activation-payment\.spec\.ts/,
         /tests\/session\/create-session\.spec\.ts/,
         /.*login\.spec\.ts/,
+        /tests\/chat\/.*\.spec\.ts/, // Exclude chat tests (moved to public)
       ],
       use: {
         baseURL: ENV.BASE_URL,
@@ -124,13 +125,23 @@ export default defineConfig({
       },
     },
 
-    // 6️⃣ BEFORE LOGIN TESTS
+    // 6️. BEFORE LOGIN TESTS
     {
       name: 'before-login',
       testMatch: /.*login\.spec\.ts/,
       use: {
         baseURL: ENV.BASE_URL,
         storageState: undefined,
+      },
+    },
+
+    // 7. PUBLIC / INDEPENDENT TESTS
+    {
+      name: 'public',
+      testMatch: /tests\/chat\/.*\.spec\.ts/,
+      use: {
+        baseURL: ENV.BASE_URL,
+        storageState: undefined, // No auth needed
       },
     },
   ]

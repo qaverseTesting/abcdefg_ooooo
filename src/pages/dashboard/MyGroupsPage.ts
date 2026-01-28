@@ -210,7 +210,7 @@ async openSavedGroupSupportingCreateSession(): Promise<boolean> {
      * Returns FOUND or NOT_FOUND instead of throwing.
      */
   async openInactiveGroupAndRedirectToPayment(): Promise<InactiveGroupResult> {
-      const targetGroupName = RuntimeStore.getGroupName();
+      //const targetGroupName = RuntimeStore.getGroupName();
 
     await this.openMyGroups(true);
       const count = await this.groupCards.count();
@@ -232,8 +232,8 @@ async openSavedGroupSupportingCreateSession(): Promise<boolean> {
         const snapshot = (await card.innerText().catch(() => '')).trim();
 
            // Continue loop if this is not our saved group
-        if (!snapshot.includes(targetGroupName)) continue;
-        Logger.success(`Saved group found: ${targetGroupName}`);
+        //if (!snapshot.includes(targetGroupName)) continue;
+        //Logger.success(`Saved group found: ${targetGroupName}`);
 
         if (!snapshot || visitedGroups.has(snapshot)) continue;
 

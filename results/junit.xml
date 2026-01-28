@@ -1,36 +1,475 @@
-<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="70.88930400000001">
-<testsuite name="setup\auth.setup.ts" timestamp="2026-01-26T17:38:10.142Z" hostname="prepare-auth" tests="1" failures="0" skipped="0" time="23.295" errors="0">
-<testcase name="authenticate group host user" classname="setup\auth.setup.ts" time="23.295">
+<testsuites id="" name="" tests="9" failures="1" skipped="1" errors="0" time="189.95430599999997">
+<testsuite name="setup\auth.setup.ts" timestamp="2026-01-28T19:34:59.721Z" hostname="prepare-auth" tests="1" failures="0" skipped="0" time="28.011" errors="0">
+<testcase name="authenticate group host user" classname="setup\auth.setup.ts" time="28.011">
 <system-out>
 <![CDATA[[CHAT WIDGET] HIDDEN | Test: authenticate group host user
-[2026-01-26T17:38:24.343Z] [SUCCESS] Login successful
+[2026-01-28T19:35:18.429Z] [SUCCESS] Login successful
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="group\create-group.spec.ts" timestamp="2026-01-26T17:38:10.142Z" hostname="create-group" tests="1" failures="0" skipped="0" time="39.016" errors="0">
-<testcase name="Group Creation › Group Host can create a group successfully" classname="group\create-group.spec.ts" time="39.016">
+<testsuite name="group\create-group.spec.ts" timestamp="2026-01-28T19:34:59.721Z" hostname="create-group" tests="1" failures="0" skipped="0" time="38.223" errors="0">
+<testcase name="Group Creation › Group Host can create a group successfully" classname="group\create-group.spec.ts" time="38.223">
 <system-out>
 <![CDATA[[CHAT WIDGET] HIDDEN | Test: Group Host can create a group successfully
-[2026-01-26T17:38:42.250Z] [INFO] Starting Group Creation test
-[2026-01-26T17:38:45.577Z] [STEP] Clicking on Start a Group
-[2026-01-26T17:38:50.596Z] [ASSERT] Create Group page is loaded
-[2026-01-26T17:38:53.473Z] [STEP] Filling group details
-[2026-01-26T17:38:54.591Z] [STEP] Test Group 1769449122252:- group name is Created
-[2026-01-26T17:38:54.592Z] [STEP] Selecting a random group tag
-[2026-01-26T17:38:57.072Z] [STEP] Submitting group creation Preview
-[2026-01-26T17:38:57.171Z] [STEP] Confirming group submission
-[2026-01-26T17:38:57.813Z] [STEP] Checking if onboarding screen is present
-[2026-01-26T17:39:07.983Z] [INFO] Onboarding not shown — continuing flow
-[2026-01-26T17:39:18.158Z] [STEP] Checking activated group via URL ref (if present)
-[2026-01-26T17:39:18.160Z] [INFO] Saving group name: Test Group 1769449122252
-[2026-01-26T17:39:18.163Z] [SUCCESS] Group created successfully
+[2026-01-28T19:35:36.241Z] [INFO] Starting Group Creation test
+[2026-01-28T19:35:40.010Z] [STEP] Clicking on Start a Group
+[2026-01-28T19:35:45.670Z] [ASSERT] Create Group page is loaded
+[2026-01-28T19:35:47.772Z] [STEP] Filling group details
+[2026-01-28T19:35:48.866Z] [STEP] Test Group 1769628936241:- group name is Created
+[2026-01-28T19:35:48.867Z] [STEP] Selecting a random group tag
+[2026-01-28T19:35:51.570Z] [STEP] Submitting group creation Preview
+[2026-01-28T19:35:51.686Z] [STEP] Confirming group submission
+[2026-01-28T19:35:52.385Z] [STEP] Checking if onboarding screen is present
+[2026-01-28T19:36:02.428Z] [INFO] Onboarding not shown — continuing flow
+[2026-01-28T19:36:12.564Z] [STEP] Checking activated group via URL ref (if present)
+[2026-01-28T19:36:12.570Z] [INFO] Saving group name: Test Group 1769628936241
+[2026-01-28T19:36:12.578Z] [SUCCESS] Group created successfully
 ]]>
 </system-out>
 <system-err>
-<![CDATA[[2026-01-26T17:39:18.159Z] [WARN] URL ref parameter not present — skipping ref assertion
+<![CDATA[[2026-01-28T19:36:12.567Z] [WARN] URL ref parameter not present — skipping ref assertion
 ]]>
 </system-err>
+</testcase>
+</testsuite>
+<testsuite name="group\group-activation-payment.spec.ts" timestamp="2026-01-28T19:34:59.721Z" hostname="group-payment" tests="1" failures="0" skipped="0" time="53.833" errors="0">
+<testcase name="Host activates group successfully using payment" classname="group\group-activation-payment.spec.ts" time="53.833">
+<system-out>
+<![CDATA[[2026-01-28T19:36:17.277Z] [INFO] Starting Group Activation – Payment test
+[2026-01-28T19:36:17.284Z] [STEP] Navigating to My Groups
+[2026-01-28T19:36:30.019Z] [INFO] Scan 1: 172 groups found
+[2026-01-28T19:36:30.123Z] [STEP] Evaluating group: AM Test Group
+
+1 Member
+[2026-01-28T19:36:30.182Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:30.275Z] [STEP] Evaluating group: AM Test 02
+
+1 Member
+[2026-01-28T19:36:30.321Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:30.406Z] [STEP] Evaluating group: AM Test 03
+
+1 Member
+[2026-01-28T19:36:30.453Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:30.528Z] [STEP] Evaluating group: AM Test - Free
+
+4 Members
+[2026-01-28T19:36:30.565Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:30.656Z] [STEP] Evaluating group: qatestgroup2
+
+1 Member
+[2026-01-28T19:36:30.702Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:30.782Z] [STEP] Evaluating group: Test Payment
+
+1 Member
+[2026-01-28T19:36:30.817Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:30.893Z] [STEP] Evaluating group: New Free Group - Test
+
+1 Member
+[2026-01-28T19:36:30.937Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:31.020Z] [STEP] Evaluating group: Test in Active
+
+1 Member
+[2026-01-28T19:36:31.065Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:31.139Z] [STEP] Evaluating group: Free Group Testing
+
+1 Member
+[2026-01-28T19:36:31.178Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:31.250Z] [STEP] Evaluating group: Free Group Testing01
+
+1 Member
+[2026-01-28T19:36:31.288Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:31.367Z] [STEP] Evaluating group: Paid Group
+
+1 Member
+[2026-01-28T19:36:31.406Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:31.495Z] [STEP] Evaluating group: Test Group 1767605218880
+
+1 Member
+[2026-01-28T19:36:31.544Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:31.629Z] [STEP] Evaluating group: Test Group 1767605416868
+
+1 Member
+[2026-01-28T19:36:31.672Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:31.749Z] [STEP] Evaluating group: Test Group 1767605986431
+
+1 Member
+[2026-01-28T19:36:31.783Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:31.868Z] [STEP] Evaluating group: Test Group 1767606078309
+
+1 Member
+[2026-01-28T19:36:31.904Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:31.995Z] [STEP] Evaluating group: Test Group 1767607096188
+
+1 Member
+[2026-01-28T19:36:32.048Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:32.140Z] [STEP] Evaluating group: Test Group 1767607546239
+
+1 Member
+[2026-01-28T19:36:32.189Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:32.269Z] [STEP] Evaluating group: Test Group 1767607731929
+
+1 Member
+[2026-01-28T19:36:32.311Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:32.386Z] [STEP] Evaluating group: Test Group 1767607818610
+
+1 Member
+[2026-01-28T19:36:32.438Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:32.518Z] [STEP] Evaluating group: Test Group 1767607902511
+
+1 Member
+[2026-01-28T19:36:32.601Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:32.686Z] [STEP] Evaluating group: Test Group 1767608059128
+
+1 Member
+[2026-01-28T19:36:32.728Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:32.810Z] [STEP] Evaluating group: Test Group 1767609395795
+
+1 Member
+[2026-01-28T19:36:32.846Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:32.917Z] [STEP] Evaluating group: Test Group 1767629980512
+
+1 Member
+[2026-01-28T19:36:32.949Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:33.025Z] [STEP] Evaluating group: Test Group 1767630261322
+
+2 Members
+[2026-01-28T19:36:33.066Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:33.143Z] [STEP] Evaluating group: Test Group 1768365180854
+
+1 Member
+[2026-01-28T19:36:33.177Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:33.249Z] [STEP] Evaluating group: Test Group 1768476897741
+
+1 Member
+[2026-01-28T19:36:33.286Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:33.361Z] [STEP] Evaluating group: Test Group 1768553540974
+
+1 Member
+[2026-01-28T19:36:33.403Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:33.475Z] [STEP] Evaluating group: Test Group 1768582908759
+
+1 Member
+[2026-01-28T19:36:33.507Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:33.580Z] [STEP] Evaluating group: Test Group
+
+1 Member
+[2026-01-28T19:36:33.620Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:33.701Z] [STEP] Evaluating group: Test Group 1768583381588
+
+1 Member
+[2026-01-28T19:36:33.744Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:33.836Z] [STEP] Evaluating group: Test Group 1768985458911
+
+1 Member
+[2026-01-28T19:36:33.879Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:33.960Z] [STEP] Evaluating group: Test Group 1768985710788
+
+1 Member
+[2026-01-28T19:36:34.001Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:34.094Z] [STEP] Evaluating group: Test Group 1768986580099
+
+1 Member
+[2026-01-28T19:36:34.141Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:34.228Z] [STEP] Evaluating group: Test Group 1768986677110
+
+1 Member
+[2026-01-28T19:36:34.277Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:34.383Z] [STEP] Evaluating group: Test Group 1768986882115
+
+1 Member
+[2026-01-28T19:36:34.429Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:34.522Z] [STEP] Evaluating group: Test Group 1768987043874
+
+1 Member
+[2026-01-28T19:36:34.563Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:34.652Z] [STEP] Evaluating group: Test Group 1768987366633
+
+1 Member
+[2026-01-28T19:36:34.698Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:34.790Z] [STEP] Evaluating group: Test Group 1768990195343
+
+1 Member
+[2026-01-28T19:36:34.827Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:34.909Z] [STEP] Evaluating group: AM Test - 001
+
+1 Member
+[2026-01-28T19:36:34.952Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:35.028Z] [STEP] Evaluating group: Test Group 1769101204611
+
+1 Member
+[2026-01-28T19:36:35.075Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:35.157Z] [STEP] Evaluating group: Test Group 1769101488851
+
+1 Member
+[2026-01-28T19:36:35.193Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:35.268Z] [STEP] Evaluating group: Test Group 1769101877073
+
+1 Member
+[2026-01-28T19:36:35.304Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:35.375Z] [STEP] Evaluating group: Test Group 1769104308654
+
+1 Member
+[2026-01-28T19:36:35.415Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:35.493Z] [STEP] Evaluating group: Test Group 1769105443884
+
+1 Member
+[2026-01-28T19:36:35.532Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:35.607Z] [STEP] Evaluating group: Test Group 1769105558884
+
+1 Member
+[2026-01-28T19:36:35.638Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:35.715Z] [STEP] Evaluating group: Test Group 1769106113592
+
+1 Member
+[2026-01-28T19:36:35.753Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:35.822Z] [STEP] Evaluating group: Test Group 1769162556744
+
+1 Member
+[2026-01-28T19:36:35.857Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:35.933Z] [STEP] Evaluating group: Test Group 1769163007271
+
+1 Member
+[2026-01-28T19:36:35.979Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:36.061Z] [STEP] Evaluating group: Test Group 1769163094483
+
+1 Member
+[2026-01-28T19:36:36.102Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:36.183Z] [STEP] Evaluating group: Test Group 1769163712058
+
+1 Member
+[2026-01-28T19:36:36.219Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:36.312Z] [STEP] Evaluating group: Test Group 1769164067498
+
+1 Member
+[2026-01-28T19:36:36.350Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:36.427Z] [STEP] Evaluating group: Test Group 1769164440444
+
+1 Member
+[2026-01-28T19:36:36.468Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:36.547Z] [STEP] Evaluating group: Test Group 1769164672082
+
+1 Member
+[2026-01-28T19:36:36.584Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:36.656Z] [STEP] Evaluating group: Test Group 1769168525505
+
+1 Member
+[2026-01-28T19:36:36.698Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:36.776Z] [STEP] Evaluating group: Test Group 1769171065967
+
+1 Member
+[2026-01-28T19:36:36.814Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:36.886Z] [STEP] Evaluating group: Test session Group
+
+1 Member
+[2026-01-28T19:36:36.923Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:37.002Z] [STEP] Evaluating group: Test Group 1769177913158
+
+1 Member
+[2026-01-28T19:36:37.051Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:37.129Z] [STEP] Evaluating group: Test Group 1769178162393
+
+1 Member
+[2026-01-28T19:36:37.192Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:37.286Z] [STEP] Evaluating group: Test Group 1769178314630
+
+1 Member
+[2026-01-28T19:36:37.325Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:37.416Z] [STEP] Evaluating group: Test Group 1769178570769
+
+1 Member
+[2026-01-28T19:36:37.462Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:37.535Z] [STEP] Evaluating group: Test Group 1769180159031
+
+1 Member
+[2026-01-28T19:36:37.573Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:37.643Z] [STEP] Evaluating group: Test Group 1769180685632
+
+1 Member
+[2026-01-28T19:36:37.678Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:37.750Z] [STEP] Evaluating group: Test Group 1769181247785
+
+1 Member
+[2026-01-28T19:36:37.786Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:37.858Z] [STEP] Evaluating group: Test Group 1769181475012
+
+1 Member
+[2026-01-28T19:36:37.893Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:37.968Z] [STEP] Evaluating group: Test Group 1769181607081
+
+1 Member
+[2026-01-28T19:36:38.001Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:38.078Z] [STEP] Evaluating group: Test Group 1769181978107
+
+1 Member
+[2026-01-28T19:36:38.118Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:38.186Z] [STEP] Evaluating group: Test Group 1769182334663
+
+1 Member
+[2026-01-28T19:36:38.227Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:38.347Z] [STEP] Evaluating group: Test Group 1769182997727
+
+1 Member
+[2026-01-28T19:36:38.384Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:38.471Z] [STEP] Evaluating group: Test Group 1769183459026
+
+1 Member
+[2026-01-28T19:36:38.512Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:38.593Z] [STEP] Evaluating group: Test Group 1769185102767
+
+1 Member
+[2026-01-28T19:36:38.636Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:38.714Z] [STEP] Evaluating group: Test Group 1769188167801
+
+1 Member
+[2026-01-28T19:36:38.752Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:38.824Z] [STEP] Evaluating group: Test Group 1769188437804
+
+1 Member
+[2026-01-28T19:36:38.864Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:38.938Z] [STEP] Evaluating group: Test Group 1769189540042
+
+1 Member
+[2026-01-28T19:36:38.976Z] [INFO] Not an inactive group → skipped
+[2026-01-28T19:36:39.051Z] [STEP] Evaluating group: Test Group 1769190590257
+
+1 Member
+
+Activate your group
+[2026-01-28T19:36:39.092Z] [SUCCESS] Inactive group found: Test Group 1769190590257
+
+1 Member
+
+Activate your group
+[2026-01-28T19:36:39.983Z] [SUCCESS] Activation / Payment page detected
+[2026-01-28T19:36:39.984Z] [STEP] Waiting for Stripe payment iframe
+[2026-01-28T19:36:50.207Z] [SUCCESS] Stripe payment inputs are ready
+[2026-01-28T19:36:50.208Z] [STEP] Entering Stripe test card details
+[2026-01-28T19:36:53.979Z] [SUCCESS] Stripe payment details entered successfully
+[2026-01-28T19:36:53.979Z] [STEP] Submitting payment
+[2026-01-28T19:36:54.411Z] [SUCCESS] Payment submitted
+[2026-01-28T19:36:54.412Z] [STEP] Waiting for Profile Payments page
+[2026-01-28T19:37:07.156Z] [SUCCESS] Profile Payments page loaded successfully
+[2026-01-28T19:37:07.156Z] [STEP] Selecting Free payment type
+[2026-01-28T19:37:07.248Z] [STEP] Waiting for Save Payment Settings button to enable
+[2026-01-28T19:37:07.284Z] [STEP] Saving payment settings
+[2026-01-28T19:37:09.321Z] [STEP] *************** Payment settings saved and Members Count section loaded **************
+[2026-01-28T19:37:09.322Z] [STEP] Checking activated group via URL ref (if present)
+[2026-01-28T19:37:09.323Z] [INFO] Expected ref: "test-group-1769190590257"
+[2026-01-28T19:37:09.323Z] [INFO] Actual ref: "test-group-1769190590257"
+[2026-01-28T19:37:09.327Z] [SUCCESS] Activated group confirmed via URL ref: test-group-1769190590257
+[2026-01-28T19:37:09.327Z] [SUCCESS] Group Activation – Payment Flow completed successfully
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="session\create-session.spec.ts" timestamp="2026-01-28T19:34:59.721Z" hostname="create-session" tests="1" failures="0" skipped="1" time="25.424" errors="0">
+<testcase name="Create Session › Host creates a session successfully" classname="session\create-session.spec.ts" time="25.424">
+<properties>
+<property name="skip" value="No subscribed group supports Create Session">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="core\app-load.spec.ts" timestamp="2026-01-28T19:34:59.721Z" hostname="after-login" tests="1" failures="1" skipped="0" time="27.813" errors="0">
+<testcase name="App Load › Application loads successfully" classname="core\app-load.spec.ts" time="27.813">
+<failure message="app-load.spec.ts:14:7 Application loads successfully" type="FAILURE">
+<![CDATA[  [after-login] › core\app-load.spec.ts:14:7 › App Load › Application loads successfully @auth @smoke @regression 
+
+    TimeoutError: page.goto: Timeout 15000ms exceeded.
+    Call log:
+      - navigating to "https://staging.mentalhappy.com/groups", waiting until "load"
+
+
+       at ..\src\pages\dashboard\DashboardPage.ts:21
+
+      19 |     async open(): Promise<void> {
+      20 |     Logger.step('Opening dashboard');
+    > 21 |     await this.page.goto(URLS.DASHBOARD);
+         |                     ^
+      22 |   }
+      23 |
+      24 |   // DO NOT REMOVE — AUTH DEPENDENCY
+        at DashboardPage.open (D:\Git\mentalhappy-playwright\src\pages\dashboard\DashboardPage.ts:21:21)
+        at D:\Git\mentalhappy-playwright\tests\core\app-load.spec.ts:22:23
+
+    attachment #5: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\core-app-load-App-Load-Application-loads-successfully-after-login\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\core-app-load-App-Load-Application-loads-successfully-after-login\error-context.md
+
+    attachment #7: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\core-app-load-App-Load-Application-loads-successfully-after-login\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\core-app-load-App-Load-Application-loads-successfully-after-login\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[[CHAT WIDGET] HIDDEN | Test: Application loads successfully
+[2026-01-28T19:37:43.742Z] [STEP] Verifying application load
+[2026-01-28T19:37:43.746Z] [STEP] Opening dashboard
+
+[[ATTACHMENT|..\test-results\core-app-load-App-Load-Application-loads-successfully-after-login\video.webm]]
+
+[[ATTACHMENT|..\test-results\core-app-load-App-Load-Application-loads-successfully-after-login\error-context.md]]
+
+[[ATTACHMENT|..\test-results\core-app-load-App-Load-Application-loads-successfully-after-login\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="dashboard\dashboard.spec.ts" timestamp="2026-01-28T19:34:59.721Z" hostname="after-login" tests="1" failures="0" skipped="0" time="19.575" errors="0">
+<testcase name="Dashboard loads after fresh login" classname="dashboard\dashboard.spec.ts" time="19.575">
+<system-out>
+<![CDATA[[CHAT WIDGET] HIDDEN | Test: Dashboard loads after fresh login
+[2026-01-28T19:37:43.270Z] [STEP] Navigating to dashboard
+[2026-01-28T19:37:43.271Z] [STEP] Opening dashboard
+[2026-01-28T19:37:47.938Z] [SUCCESS] Login successful
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="dashboard\group-listing.spec.ts" timestamp="2026-01-28T19:34:59.721Z" hostname="after-login" tests="1" failures="0" skipped="0" time="20.735" errors="0">
+<testcase name="Groups – Listing › Group listing loads with correct visibility and status" classname="dashboard\group-listing.spec.ts" time="20.735">
+<properties>
+<property name="severity" value="critical">
+</property>
+</properties>
+<system-out>
+<![CDATA[[2026-01-28T19:37:43.120Z] [STEP] Opening My Groups page
+[2026-01-28T19:37:43.123Z] [STEP] Navigating to My Groups
+[2026-01-28T19:37:59.965Z] [STEP] Verifying group cards are visible
+[2026-01-28T19:38:00.158Z] [SUCCESS] Group listing loaded successfully with 172 groups
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="auth\login.spec.ts" timestamp="2026-01-28T19:34:59.721Z" hostname="before-login" tests="1" failures="0" skipped="0" time="29.863" errors="0">
+<testcase name="Login – Single User › Group Host user can login successfully" classname="auth\login.spec.ts" time="29.863">
+<properties>
+<property name="severity" value="critical">
+</property>
+</properties>
+<system-out>
+<![CDATA[[CHAT WIDGET] HIDDEN | Test: Group Host user can login successfully
+[2026-01-28T19:35:04.055Z] [STEP] Logging in as Group Host
+[2026-01-28T19:35:20.005Z] [SUCCESS] Login successful
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="chat\chat-widget.spec.ts" timestamp="2026-01-28T19:34:59.721Z" hostname="public" tests="1" failures="0" skipped="0" time="13.348" errors="0">
+<testcase name="@chat Chat widget is accessible to user" classname="chat\chat-widget.spec.ts" time="13.348">
+<system-out>
+<![CDATA[[CHAT WIDGET] ALLOWED | Test: @chat Chat widget is accessible to user
+]]>
+</system-out>
 </testcase>
 </testsuite>
 </testsuites>

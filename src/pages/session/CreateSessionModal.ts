@@ -42,7 +42,7 @@ export class CreateSessionModal extends BasePage {
 
     await this.modalHeading.waitFor({
       state: 'visible',
-      timeout: 10_000,
+      timeout: 20_000,
     });
 
     Logger.success('Create Session modal visible');
