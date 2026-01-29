@@ -4,52 +4,17 @@ import { ENV } from './src/config/env';
 export default defineConfig({
   testDir: './tests',
   timeout: 60_000,
-
-
-  // 🔹 Keep your local behavior, add CI retries safely
   retries: process.env.CI ? 2 : 0,
-
-  // 🔹 Optional but recommended for CI stability
   workers: process.env.CI ? 4 : undefined,
 
   globalSetup: './tests/setup/global-setup.ts',
 
   reporter: [
     ['list'],
-
-    // 🔹 HTML Report (unchanged behavior)
-    [
-      'html',
-      {
-        open: !process.env.CI ? 'always' : 'never',
-      },
-    ],
-
-    // 🔹 Allure Report (UNCHANGED – already correct)
-    [
-      'allure-playwright',
-      {
-        outputFolder: 'allure-results',
-        detail: true,
-        suiteTitle: true,
-      },
-    ],
-
-    // 🔹 ADD: JUnit (CI / GitHub Actions)
-    [
-      'junit',
-      {
-        outputFile: 'results/junit.xml',
-      },
-    ],
-
-    // 🔹 ADD: JSON (Optional, future dashboards)
-    [
-      'json',
-      {
-        outputFile: 'results/results.json',
-      },
-    ],
+    ['html', { open: !process.env.CI ? 'always' : 'never' }],
+    ['allure-playwright', { outputFolder: 'allure-results', detail: true, suiteTitle: true }],
+    ['junit', { outputFile: 'results/junit.xml' }],
+    ['json', { outputFile: 'results/results.json' }],
   ],
 
   use: {
@@ -63,7 +28,9 @@ export default defineConfig({
   },
 
   projects: [
-    // 1️. LOGIN ONCE
+    // -------------------------------------------------
+    // AUTHENTICATION SETUP (runs first)
+    // -------------------------------------------------
     {
       name: 'prepare-auth',
       testMatch: /tests\/setup\/auth\.setup\.ts/,
@@ -74,10 +41,28 @@ export default defineConfig({
       },
     },
 
-    // 2️. CREATE GROUP (existing file)
+    // -------------------------------------------------
+    // AFTER LOGIN – BASIC APP VERIFICATION
+    // -------------------------------------------------
+    {
+      name: 'post-login-core',
+      dependencies: ['prepare-auth'],
+      testMatch: [
+        /dashboard-load\.spec\.ts/,
+        /group-listing\.spec\.ts/,
+      ],
+      use: {
+        baseURL: ENV.BASE_URL,
+        storageState: 'storage/user.auth.json',
+      },
+    },
+
+    // -------------------------------------------------
+    // CREATE GROUP
+    // -------------------------------------------------
     {
       name: 'create-group',
-      dependencies: ['prepare-auth'],
+      dependencies: ['post-login-core'],
       testMatch: /tests\/group\/create-group\.spec\.ts/,
       use: {
         baseURL: ENV.BASE_URL,
@@ -85,9 +70,11 @@ export default defineConfig({
       },
     },
 
-    // 3️. PAYMENT / ACTIVATION (existing file)
+    // -------------------------------------------------
+    // GROUP MONETIZATION FLOW (YOUR SERIAL TEST)
+    // -------------------------------------------------
     {
-      name: 'group-payment',
+      name: 'group-monetization',
       dependencies: ['create-group'],
       testMatch: /tests\/group\/group-activation-payment\.spec\.ts/,
       use: {
@@ -96,10 +83,12 @@ export default defineConfig({
       },
     },
 
-    // 4️. CREATE SESSION (existing file)
+    // -------------------------------------------------
+    // CREATE SESSION
+    // -------------------------------------------------
     {
       name: 'create-session',
-      dependencies: ['group-payment'],
+      dependencies: ['group-monetization'],
       testMatch: /tests\/session\/create-session\.spec\.ts/,
       use: {
         baseURL: ENV.BASE_URL,
@@ -107,43 +96,20 @@ export default defineConfig({
       },
     },
 
-    // 5️. ALL OTHER AFTER-LOGIN TESTS
-    {
-      name: 'after-login',
-      dependencies: ['create-session'],
-      testIgnore: [
-        /tests\/setup\/.*\.ts/,
-        /tests\/group\/create-group\.spec\.ts/,
-        /tests\/group\/group-activation-payment\.spec\.ts/,
-        /tests\/session\/create-session\.spec\.ts/,
-        /.*login\.spec\.ts/,
-        /tests\/chat\/.*\.spec\.ts/, // Exclude chat tests (moved to public)
-      ],
-      use: {
-        baseURL: ENV.BASE_URL,
-        storageState: 'storage/user.auth.json',
-      },
-    },
-
-    // 6️. BEFORE LOGIN TESTS
+    // -------------------------------------------------
+    // BEFORE LOGIN TESTS (independent)
+    // -------------------------------------------------
     {
       name: 'before-login',
-      testMatch: /.*login\.spec\.ts/,
+      testMatch: [
+        /login\.spec\.ts/,
+        /tests\/chat\/.*\.spec\.ts/,
+        /tests\/core\/app-load\.spec\.ts/,
+      ],
       use: {
         baseURL: ENV.BASE_URL,
         storageState: undefined,
       },
     },
-
-    // 7. PUBLIC / INDEPENDENT TESTS
-    {
-      name: 'public',
-      testMatch: /tests\/chat\/.*\.spec\.ts/,
-      use: {
-        baseURL: ENV.BASE_URL,
-        storageState: undefined, // No auth needed
-      },
-    },
-  ]
+  ],
 });
-

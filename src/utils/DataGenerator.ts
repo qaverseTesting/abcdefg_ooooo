@@ -37,9 +37,38 @@ export class DataGenerator {
      Names & Titles
   ---------------------------- */
 
-  static groupName(prefix = 'Test Group'): string {
-    return `${prefix} ${Date.now()}`;
-  }
+  static groupName(prefix = 'Automation_Group'): string {
+  const now = new Date();
+
+  const pad = (n: number) => n.toString().padStart(2, '0');
+
+  const safeDateTime =
+    now.getFullYear().toString() +
+    pad(now.getMonth() + 1) +
+    pad(now.getDate()) + '_' +
+    pad(now.getHours()) +
+    pad(now.getMinutes()) +
+    pad(now.getSeconds());
+
+  return `${prefix}_${safeDateTime}`;
+}
+
+static SessionName(prefix = 'Automation_Session'): string {
+  const now = new Date();
+
+  const pad = (n: number) => n.toString().padStart(2, '0');
+
+  const safeDateTime =
+    now.getFullYear().toString() +
+    pad(now.getMonth() + 1) +
+    pad(now.getDate()) + '_' +
+    pad(now.getHours()) +
+    pad(now.getMinutes()) +
+    pad(now.getSeconds());
+
+  return `${prefix}_${safeDateTime}`;
+}
+
 
   static userName(prefix = 'User'): string {
     return `${prefix}_${this.randomString(5)}`;

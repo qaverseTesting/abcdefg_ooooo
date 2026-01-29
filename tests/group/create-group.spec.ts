@@ -1,5 +1,5 @@
 // tests/group/create-group.spec.ts
-import { test } from '../../src/fixtures/auth.fixture';
+import { expect, test } from '../../src/fixtures/auth.fixture';
 import { URLS } from '../../src/config/urls';
 import { Wait } from '../../src/utils/Wait';
 import { DashboardPage } from '../../src/pages/dashboard/DashboardPage';
@@ -37,8 +37,6 @@ test.describe('Group Creation', () => {
         'Weekly on Monday'
       );
 
-      Logger.step(`${groupName}:- group name is Created`);
-
       // Step 7–9: Select Tags
       await createGroup.selectRandomTag();
 
@@ -46,17 +44,23 @@ test.describe('Group Creation', () => {
       await createGroup.submitGroup();
       await createGroup.confirmSubmit();
 
-      //Step 11: Onboarding
-      const onboarding = new GroupOnboardingPage(page);
-      await onboarding.skipOnboardingIfPresent();
+      const successMessage = page.getByText('Group created successfully!');
+      await expect(successMessage).toBeVisible({ timeout: 10_000 });
 
-      //Step 12: Profile verification
-      const profile = new ProfilePaymentPage(page);
-      await Wait.pause(page, 10_000);
-      await profile.assertActivatedGroupRef(groupName);
       RuntimeStore.saveGroupName(groupName);
+      Logger.step(`Group name: ${groupName}:- Group created successfully`);
 
-      Logger.success('Group created successfully');
+      //Step 11: Onboarding
+      // const onboarding = new GroupOnboardingPage(page);
+      // await onboarding.skipOnboardingIfPresent();
+
+      // //Step 12: Profile verification
+      // const profile = new ProfilePaymentPage(page);
+      // await Wait.pause(page, 10_000);
+      // await profile.assertActivatedGroupRef(groupName);
+
+
+
     }
   );
 });

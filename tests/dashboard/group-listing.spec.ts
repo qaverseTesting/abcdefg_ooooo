@@ -6,7 +6,7 @@ import { Logger } from '../../src/utils/Logger';
    Group Listing Load – Groups
    Verifies groups are visible on My Groups page
 ========================================================= */
-test.describe('Groups – Listing', () => {
+ test.describe('Groups – Listing', () => {
 
   test(
     'Group listing loads with correct visibility and status',

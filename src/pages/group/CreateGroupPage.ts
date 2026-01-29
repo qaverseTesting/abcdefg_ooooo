@@ -143,7 +143,7 @@ export class CreateGroupPage extends BasePage {
    */
   async confirmSubmit(): Promise<void> {
     Logger.step('Confirming group submission');
-      await this.robustClick(this.finalSubmitButton);
+    await this.robustClick(this.finalSubmitButton);
 
   }
 }

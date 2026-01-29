@@ -1,26 +1,31 @@
 import { test } from '../../src/fixtures/auth.fixture';
-import { UserRole } from '../../src/constants/roles';
-import { DashboardPage } from '../../src/pages/dashboard/DashboardPage';
 import { Logger } from '../../src/utils/Logger';
-
-const TEST_ROLE = process.env.TEST_ROLE;
+import { LandingPage } from '../../src/pages/public/LandingPage';
 
 /* =========================================================
    App Load – Core
-   Verifies application loads successfully after auth
+   Verifies public application load and logo visibility.
+   This test ensures the landing page is accessible and 
+   the branding (logo) is correctly displayed.
 ========================================================= */
 test.describe('App Load', () => {
 
   test(
     'Application loads successfully',
-    { tag: ['@auth', '@smoke', '@regression'] },
-    async ({ page }, testInfo) => {
-        
-      Logger.step('Verifying application load');
+    { tag: ['@smoke', '@public'] },
+    async ({ page }) => {
+      const landingPage = new LandingPage(page);
 
-      const dashboard = new DashboardPage(page);
-      await dashboard.open();
-      await dashboard.verifyDashboardLoaded();
+      // 1. Navigate to the MentalHappy public URL
+      Logger.step('Navigating to landing page');
+      await landingPage.navigate();
+
+      // 2. Verify the "MentalHappy" logo is visible
+      Logger.step('Verifying "MentalHappy" logo visibility');
+      await landingPage.verifyLogoVisible();
+
+      // 3. Confirm App Load message
+      Logger.success('App Load › Application loads successfully');
     }
   );
 });

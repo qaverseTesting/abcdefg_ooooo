@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 3
+      "actualWorkers": 4
     },
     "preserveOutput": "always",
     "reporter": [
@@ -57,7 +57,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 3
+          "actualWorkers": 4
         },
         "id": "prepare-auth",
         "name": "prepare-auth",
@@ -73,7 +73,24 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 3
+          "actualWorkers": 4
+        },
+        "id": "post-login-core",
+        "name": "post-login-core",
+        "testDir": "D:/Git/mentalhappy-playwright/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/dashboard-load\\.spec\\.ts/",
+          "/group-listing\\.spec\\.ts/"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "D:/Git/mentalhappy-playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
         },
         "id": "create-group",
         "name": "create-group",
@@ -89,10 +106,10 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 3
+          "actualWorkers": 4
         },
-        "id": "group-payment",
-        "name": "group-payment",
+        "id": "group-monetization",
+        "name": "group-monetization",
         "testDir": "D:/Git/mentalhappy-playwright/tests",
         "testIgnore": [],
         "testMatch": [
@@ -105,7 +122,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 3
+          "actualWorkers": 4
         },
         "id": "create-session",
         "name": "create-session",
@@ -121,53 +138,16 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 3
-        },
-        "id": "after-login",
-        "name": "after-login",
-        "testDir": "D:/Git/mentalhappy-playwright/tests",
-        "testIgnore": [
-          "/tests\\/setup\\/.*\\.ts/",
-          "/tests\\/group\\/create-group\\.spec\\.ts/",
-          "/tests\\/group\\/group-activation-payment\\.spec\\.ts/",
-          "/tests\\/session\\/create-session\\.spec\\.ts/",
-          "/.*login\\.spec\\.ts/",
-          "/tests\\/chat\\/.*\\.spec\\.ts/"
-        ],
-        "testMatch": [
-          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
-        ],
-        "timeout": 60000
-      },
-      {
-        "outputDir": "D:/Git/mentalhappy-playwright/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "metadata": {
-          "actualWorkers": 3
+          "actualWorkers": 4
         },
         "id": "before-login",
         "name": "before-login",
         "testDir": "D:/Git/mentalhappy-playwright/tests",
         "testIgnore": [],
         "testMatch": [
-          "/.*login\\.spec\\.ts/"
-        ],
-        "timeout": 60000
-      },
-      {
-        "outputDir": "D:/Git/mentalhappy-playwright/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "metadata": {
-          "actualWorkers": 3
-        },
-        "id": "public",
-        "name": "public",
-        "testDir": "D:/Git/mentalhappy-playwright/tests",
-        "testIgnore": [],
-        "testMatch": [
-          "/tests\\/chat\\/.*\\.spec\\.ts/"
+          "/login\\.spec\\.ts/",
+          "/tests\\/chat\\/.*\\.spec\\.ts/",
+          "/tests\\/core\\/app-load\\.spec\\.ts/"
         ],
         "timeout": 60000
       }
@@ -203,19 +183,19 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 28011,
+                  "duration": 31266,
                   "errors": [],
                   "stdout": [
                     {
                       "text": "[CHAT WIDGET] HIDDEN | Test: authenticate group host user\n"
                     },
                     {
-                      "text": "[2026-01-28T19:35:18.429Z] [SUCCESS] Login successful\n"
+                      "text": "[2026-01-29T18:01:16.930Z] [SUCCESS] Login successful\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-28T19:35:01.786Z",
+                  "startTime": "2026-01-29T18:00:57.882Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -252,6 +232,83 @@
       ]
     },
     {
+      "title": "dashboard\\group-listing.spec.ts",
+      "file": "dashboard/group-listing.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Groups – Listing",
+          "file": "dashboard/group-listing.spec.ts",
+          "line": 9,
+          "column": 7,
+          "specs": [
+            {
+              "title": "Group listing loads with correct visibility and status",
+              "ok": true,
+              "tags": [
+                "smoke",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "severity",
+                      "description": "critical"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "post-login-core",
+                  "projectName": "post-login-core",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 18045,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-01-29T18:01:40.769Z] [STEP] Opening My Groups page\n"
+                        },
+                        {
+                          "text": "[2026-01-29T18:01:40.771Z] [STEP] Navigating to My Groups\n"
+                        },
+                        {
+                          "text": "[2026-01-29T18:01:56.873Z] [STEP] Verifying group cards are visible\n"
+                        },
+                        {
+                          "text": "[2026-01-29T18:01:56.990Z] [SUCCESS] Group listing loaded successfully with 205 groups\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-29T18:01:39.459Z",
+                      "annotations": [
+                        {
+                          "type": "severity",
+                          "description": "critical"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7748b24550ddc1cd7659-615f4aab1a3f17d8b83c",
+              "file": "dashboard/group-listing.spec.ts",
+              "line": 11,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
       "title": "group\\create-group.spec.ts",
       "file": "group/create-group.spec.ts",
       "column": 0,
@@ -280,62 +337,46 @@
                   "projectName": "create-group",
                   "results": [
                     {
-                      "workerIndex": 3,
+                      "workerIndex": 5,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 38223,
+                      "duration": 21572,
                       "errors": [],
                       "stdout": [
                         {
                           "text": "[CHAT WIDGET] HIDDEN | Test: Group Host can create a group successfully\n"
                         },
                         {
-                          "text": "[2026-01-28T19:35:36.241Z] [INFO] Starting Group Creation test\n"
+                          "text": "[2026-01-29T18:02:01.422Z] [INFO] Starting Group Creation test\n"
                         },
                         {
-                          "text": "[2026-01-28T19:35:40.010Z] [STEP] Clicking on Start a Group\n"
+                          "text": "[2026-01-29T18:02:05.938Z] [STEP] Clicking on Start a Group\n"
                         },
                         {
-                          "text": "[2026-01-28T19:35:45.670Z] [ASSERT] Create Group page is loaded\n"
+                          "text": "[2026-01-29T18:02:12.914Z] [ASSERT] Create Group page is loaded\n"
                         },
                         {
-                          "text": "[2026-01-28T19:35:47.772Z] [STEP] Filling group details\n"
+                          "text": "[2026-01-29T18:02:14.736Z] [STEP] Filling group details\n"
                         },
                         {
-                          "text": "[2026-01-28T19:35:48.866Z] [STEP] Test Group 1769628936241:- group name is Created\n"
+                          "text": "[2026-01-29T18:02:15.746Z] [STEP] Selecting a random group tag\n"
                         },
                         {
-                          "text": "[2026-01-28T19:35:48.867Z] [STEP] Selecting a random group tag\n"
+                          "text": "[2026-01-29T18:02:18.185Z] [STEP] Submitting group creation Preview\n"
                         },
                         {
-                          "text": "[2026-01-28T19:35:51.570Z] [STEP] Submitting group creation Preview\n"
+                          "text": "[2026-01-29T18:02:18.274Z] [STEP] Confirming group submission\n"
                         },
                         {
-                          "text": "[2026-01-28T19:35:51.686Z] [STEP] Confirming group submission\n"
+                          "text": "[2026-01-29T18:02:21.336Z] [INFO] Saving group name: Automation_Group_20260129_233201\n"
                         },
                         {
-                          "text": "[2026-01-28T19:35:52.385Z] [STEP] Checking if onboarding screen is present\n"
-                        },
-                        {
-                          "text": "[2026-01-28T19:36:02.428Z] [INFO] Onboarding not shown — continuing flow\n"
-                        },
-                        {
-                          "text": "[2026-01-28T19:36:12.564Z] [STEP] Checking activated group via URL ref (if present)\n"
-                        },
-                        {
-                          "text": "[2026-01-28T19:36:12.570Z] [INFO] Saving group name: Test Group 1769628936241\n"
-                        },
-                        {
-                          "text": "[2026-01-28T19:36:12.578Z] [SUCCESS] Group created successfully\n"
+                          "text": "[2026-01-29T18:02:21.339Z] [STEP] Group name: Automation_Group_20260129_233201:- Group created successfully\n"
                         }
                       ],
-                      "stderr": [
-                        {
-                          "text": "[2026-01-28T19:36:12.567Z] [WARN] URL ref parameter not present — skipping ref assertion\n"
-                        }
-                      ],
+                      "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-28T19:35:34.934Z",
+                      "startTime": "2026-01-29T18:01:59.974Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -356,7 +397,7 @@
                         {
                           "name": "Allure Metadata (metadata)",
                           "contentType": "application/vnd.allure.message+json",
-                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7InBhcmFtZXRlcnMiOlt7Im5hbWUiOiJXb3JrZXIiLCJ2YWx1ZSI6IjMifV19fQ=="
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7InBhcmFtZXRlcnMiOlt7Im5hbWUiOiJXb3JrZXIiLCJ2YWx1ZSI6IjUifV19fQ=="
                         }
                       ]
                     }
@@ -378,550 +419,172 @@
       "file": "group/group-activation-payment.spec.ts",
       "column": 0,
       "line": 0,
-      "specs": [
+      "specs": [],
+      "suites": [
         {
-          "title": "Host activates group successfully using payment",
-          "ok": true,
-          "tags": [
-            "regression"
-          ],
-          "tests": [
+          "title": "Host Group Monetization Setup Flow",
+          "file": "group/group-activation-payment.spec.ts",
+          "line": 8,
+          "column": 15,
+          "specs": [
             {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "group-payment",
-              "projectName": "group-payment",
-              "results": [
+              "title": "Host activates group by completing platform payment",
+              "ok": true,
+              "tags": [],
+              "tests": [
                 {
-                  "workerIndex": 4,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 53833,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "[2026-01-28T19:36:17.277Z] [INFO] Starting Group Activation – Payment test\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:17.284Z] [STEP] Navigating to My Groups\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:30.019Z] [INFO] Scan 1: 172 groups found\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:30.123Z] [STEP] Evaluating group: AM Test Group\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:30.182Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:30.275Z] [STEP] Evaluating group: AM Test 02\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:30.321Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:30.406Z] [STEP] Evaluating group: AM Test 03\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:30.453Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:30.528Z] [STEP] Evaluating group: AM Test - Free\n\n4 Members\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:30.565Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:30.656Z] [STEP] Evaluating group: qatestgroup2\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:30.702Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:30.782Z] [STEP] Evaluating group: Test Payment\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:30.817Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:30.893Z] [STEP] Evaluating group: New Free Group - Test\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:30.937Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:31.020Z] [STEP] Evaluating group: Test in Active\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:31.065Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:31.139Z] [STEP] Evaluating group: Free Group Testing\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:31.178Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:31.250Z] [STEP] Evaluating group: Free Group Testing01\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:31.288Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:31.367Z] [STEP] Evaluating group: Paid Group\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:31.406Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:31.495Z] [STEP] Evaluating group: Test Group 1767605218880\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:31.544Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:31.629Z] [STEP] Evaluating group: Test Group 1767605416868\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:31.672Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:31.749Z] [STEP] Evaluating group: Test Group 1767605986431\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:31.783Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:31.868Z] [STEP] Evaluating group: Test Group 1767606078309\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:31.904Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:31.995Z] [STEP] Evaluating group: Test Group 1767607096188\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:32.048Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:32.140Z] [STEP] Evaluating group: Test Group 1767607546239\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:32.189Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:32.269Z] [STEP] Evaluating group: Test Group 1767607731929\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:32.311Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:32.386Z] [STEP] Evaluating group: Test Group 1767607818610\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:32.438Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:32.518Z] [STEP] Evaluating group: Test Group 1767607902511\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:32.601Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:32.686Z] [STEP] Evaluating group: Test Group 1767608059128\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:32.728Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:32.810Z] [STEP] Evaluating group: Test Group 1767609395795\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:32.846Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:32.917Z] [STEP] Evaluating group: Test Group 1767629980512\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:32.949Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:33.025Z] [STEP] Evaluating group: Test Group 1767630261322\n\n2 Members\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:33.066Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:33.143Z] [STEP] Evaluating group: Test Group 1768365180854\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:33.177Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:33.249Z] [STEP] Evaluating group: Test Group 1768476897741\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:33.286Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:33.361Z] [STEP] Evaluating group: Test Group 1768553540974\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:33.403Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:33.475Z] [STEP] Evaluating group: Test Group 1768582908759\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:33.507Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:33.580Z] [STEP] Evaluating group: Test Group\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:33.620Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:33.701Z] [STEP] Evaluating group: Test Group 1768583381588\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:33.744Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:33.836Z] [STEP] Evaluating group: Test Group 1768985458911\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:33.879Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:33.960Z] [STEP] Evaluating group: Test Group 1768985710788\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:34.001Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:34.094Z] [STEP] Evaluating group: Test Group 1768986580099\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:34.141Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:34.228Z] [STEP] Evaluating group: Test Group 1768986677110\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:34.277Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:34.383Z] [STEP] Evaluating group: Test Group 1768986882115\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:34.429Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:34.522Z] [STEP] Evaluating group: Test Group 1768987043874\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:34.563Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:34.652Z] [STEP] Evaluating group: Test Group 1768987366633\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:34.698Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:34.790Z] [STEP] Evaluating group: Test Group 1768990195343\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:34.827Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:34.909Z] [STEP] Evaluating group: AM Test - 001\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:34.952Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:35.028Z] [STEP] Evaluating group: Test Group 1769101204611\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:35.075Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:35.157Z] [STEP] Evaluating group: Test Group 1769101488851\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:35.193Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:35.268Z] [STEP] Evaluating group: Test Group 1769101877073\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:35.304Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:35.375Z] [STEP] Evaluating group: Test Group 1769104308654\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:35.415Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:35.493Z] [STEP] Evaluating group: Test Group 1769105443884\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:35.532Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:35.607Z] [STEP] Evaluating group: Test Group 1769105558884\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:35.638Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:35.715Z] [STEP] Evaluating group: Test Group 1769106113592\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:35.753Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:35.822Z] [STEP] Evaluating group: Test Group 1769162556744\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:35.857Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:35.933Z] [STEP] Evaluating group: Test Group 1769163007271\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:35.979Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:36.061Z] [STEP] Evaluating group: Test Group 1769163094483\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:36.102Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:36.183Z] [STEP] Evaluating group: Test Group 1769163712058\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:36.219Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:36.312Z] [STEP] Evaluating group: Test Group 1769164067498\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:36.350Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:36.427Z] [STEP] Evaluating group: Test Group 1769164440444\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:36.468Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:36.547Z] [STEP] Evaluating group: Test Group 1769164672082\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:36.584Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:36.656Z] [STEP] Evaluating group: Test Group 1769168525505\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:36.698Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:36.776Z] [STEP] Evaluating group: Test Group 1769171065967\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:36.814Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:36.886Z] [STEP] Evaluating group: Test session Group\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:36.923Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:37.002Z] [STEP] Evaluating group: Test Group 1769177913158\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:37.051Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:37.129Z] [STEP] Evaluating group: Test Group 1769178162393\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:37.192Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:37.286Z] [STEP] Evaluating group: Test Group 1769178314630\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:37.325Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:37.416Z] [STEP] Evaluating group: Test Group 1769178570769\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:37.462Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:37.535Z] [STEP] Evaluating group: Test Group 1769180159031\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:37.573Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:37.643Z] [STEP] Evaluating group: Test Group 1769180685632\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:37.678Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:37.750Z] [STEP] Evaluating group: Test Group 1769181247785\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:37.786Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:37.858Z] [STEP] Evaluating group: Test Group 1769181475012\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:37.893Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:37.968Z] [STEP] Evaluating group: Test Group 1769181607081\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:38.001Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:38.078Z] [STEP] Evaluating group: Test Group 1769181978107\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:38.118Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:38.186Z] [STEP] Evaluating group: Test Group 1769182334663\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:38.227Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:38.347Z] [STEP] Evaluating group: Test Group 1769182997727\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:38.384Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:38.471Z] [STEP] Evaluating group: Test Group 1769183459026\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:38.512Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:38.593Z] [STEP] Evaluating group: Test Group 1769185102767\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:38.636Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:38.714Z] [STEP] Evaluating group: Test Group 1769188167801\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:38.752Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:38.824Z] [STEP] Evaluating group: Test Group 1769188437804\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:38.864Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:38.938Z] [STEP] Evaluating group: Test Group 1769189540042\n\n1 Member\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:38.976Z] [INFO] Not an inactive group → skipped\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:39.051Z] [STEP] Evaluating group: Test Group 1769190590257\n\n1 Member\n\nActivate your group\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:39.092Z] [SUCCESS] Inactive group found: Test Group 1769190590257\n\n1 Member\n\nActivate your group\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:39.983Z] [SUCCESS] Activation / Payment page detected\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:39.984Z] [STEP] Waiting for Stripe payment iframe\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:50.207Z] [SUCCESS] Stripe payment inputs are ready\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:50.208Z] [STEP] Entering Stripe test card details\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:53.979Z] [SUCCESS] Stripe payment details entered successfully\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:53.979Z] [STEP] Submitting payment\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:54.411Z] [SUCCESS] Payment submitted\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:36:54.412Z] [STEP] Waiting for Profile Payments page\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:37:07.156Z] [SUCCESS] Profile Payments page loaded successfully\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:37:07.156Z] [STEP] Selecting Free payment type\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:37:07.248Z] [STEP] Waiting for Save Payment Settings button to enable\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:37:07.284Z] [STEP] Saving payment settings\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:37:09.321Z] [STEP] *************** Payment settings saved and Members Count section loaded **************\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:37:09.322Z] [STEP] Checking activated group via URL ref (if present)\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:37:09.323Z] [INFO] Expected ref: \"test-group-1769190590257\"\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:37:09.323Z] [INFO] Actual ref: \"test-group-1769190590257\"\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:37:09.327Z] [SUCCESS] Activated group confirmed via URL ref: test-group-1769190590257\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:37:09.327Z] [SUCCESS] Group Activation – Payment Flow completed successfully\n"
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "group-monetization",
+                  "projectName": "group-monetization",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 47841,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-01-29T18:02:24.519Z] [INFO] Launching shared browser session for Group Monetization Flow\n"
+                        },
+                        {
+                          "text": "[2026-01-29T18:02:25.494Z] [INFO] STEP 1: Host begins group activation via platform payment\n"
+                        },
+                        {
+                          "text": "[2026-01-29T18:02:25.496Z] [STEP] Navigating to inactive group for activation: Automation_Group_20260129_233201\n"
+                        },
+                        {
+                          "text": "[2026-01-29T18:02:25.497Z] [STEP] Navigating to My Groups\n"
+                        },
+                        {
+                          "text": "[2026-01-29T18:02:39.405Z] [STEP] Priority scan for group: Automation_Group_20260129_233201\n"
+                        },
+                        {
+                          "text": "[2026-01-29T18:02:52.476Z] [SUCCESS] Priority group found: Automation_Group_20260129_233201\n\n1 Member\n\nActivate your group\n"
+                        },
+                        {
+                          "text": "[2026-01-29T18:02:52.549Z] [SUCCESS] Priority group is inactive → opening\n"
+                        },
+                        {
+                          "text": "[2026-01-29T18:02:53.502Z] [SUCCESS] Activation / Payment page detected for priority group\n"
+                        },
+                        {
+                          "text": "[2026-01-29T18:02:53.503Z] [STEP] Redirected to payment page for group: Automation_Group_20260129_233201\n\n1 Member\n\nActivate your group\n"
+                        },
+                        {
+                          "text": "[2026-01-29T18:02:53.503Z] [STEP] Filling payment details\n"
+                        },
+                        {
+                          "text": "[2026-01-29T18:02:53.504Z] [STEP] Waiting for Stripe payment iframe\n"
+                        },
+                        {
+                          "text": "[2026-01-29T18:03:04.091Z] [SUCCESS] Stripe payment inputs are ready\n"
+                        },
+                        {
+                          "text": "[2026-01-29T18:03:04.091Z] [STEP] Entering Stripe test card details\n"
+                        },
+                        {
+                          "text": "[2026-01-29T18:03:07.002Z] [SUCCESS] Stripe payment details entered successfully\n"
+                        },
+                        {
+                          "text": "[2026-01-29T18:03:07.002Z] [STEP] Submitting platform activation payment\n"
+                        },
+                        {
+                          "text": "[2026-01-29T18:03:07.002Z] [STEP] Submitting payment\n"
+                        },
+                        {
+                          "text": "[2026-01-29T18:03:07.213Z] [SUCCESS] Payment submitted\n"
+                        },
+                        {
+                          "text": "[2026-01-29T18:03:13.324Z] [SUCCESS] STEP 1 COMPLETE: Group successfully activated via platform payment\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-29T18:02:24.013Z",
+                      "annotations": [],
+                      "attachments": []
                     }
                   ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-01-28T19:36:15.891Z",
-                  "annotations": [],
-                  "attachments": []
+                  "status": "expected"
                 }
               ],
-              "status": "expected"
+              "id": "bb26be5865f053e466d4-2a9a0cfa7a5d3b5d7a62",
+              "file": "group/group-activation-payment.spec.ts",
+              "line": 28,
+              "column": 7
+            },
+            {
+              "title": "Host configures group payment type for member access",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "group-monetization",
+                  "projectName": "group-monetization",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 14162,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-01-29T18:03:13.465Z] [INFO] STEP 2: Host sets how members will pay to join the group\n"
+                        },
+                        {
+                          "text": "[2026-01-29T18:03:13.467Z] [STEP] Waiting for profile payment configuration page\n"
+                        },
+                        {
+                          "text": "[2026-01-29T18:03:13.468Z] [STEP] Waiting for Profile Payments page\n"
+                        },
+                        {
+                          "text": "[2026-01-29T18:03:25.454Z] [SUCCESS] Profile Payments page loaded successfully\n"
+                        },
+                        {
+                          "text": "[2026-01-29T18:03:25.454Z] [STEP] Selecting group payment type (Free / Subscription / Lifetime)\n"
+                        },
+                        {
+                          "text": "[2026-01-29T18:03:25.454Z] [STEP] Selecting Free payment type\n"
+                        },
+                        {
+                          "text": "[2026-01-29T18:03:25.539Z] [STEP] Waiting for Save Payment Settings button to enable\n"
+                        },
+                        {
+                          "text": "[2026-01-29T18:03:25.584Z] [STEP] Saving payment settings\n"
+                        },
+                        {
+                          "text": "[2026-01-29T18:03:27.583Z] [STEP] *************** Payment settings saved and Members Count section loaded **************\n"
+                        },
+                        {
+                          "text": "[2026-01-29T18:03:27.617Z] [SUCCESS] STEP 2 COMPLETE: Group membership payment type configured successfully\n"
+                        },
+                        {
+                          "text": "[2026-01-29T18:03:27.695Z] [INFO] Closing shared browser session\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-29T18:03:13.394Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bb26be5865f053e466d4-0eaee588a51c89fe0925",
+              "file": "group/group-activation-payment.spec.ts",
+              "line": 62,
+              "column": 7
             }
-          ],
-          "id": "bb26be5865f053e466d4-5f2737975331aafbf2d1",
-          "file": "group/group-activation-payment.spec.ts",
-          "line": 9,
-          "column": 5
+          ]
         }
       ]
     },
@@ -935,105 +598,13 @@
         {
           "title": "Create Session",
           "file": "session/create-session.spec.ts",
-          "line": 9,
+          "line": 11,
           "column": 6,
           "specs": [
             {
               "title": "Host creates a session successfully",
-              "ok": true,
-              "tags": [
-                "regression"
-              ],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [
-                    {
-                      "type": "skip",
-                      "description": "No subscribed group supports Create Session",
-                      "location": {
-                        "file": "D:\\Git\\mentalhappy-playwright\\tests\\session\\create-session.spec.ts",
-                        "line": 22,
-                        "column": 14
-                      }
-                    }
-                  ],
-                  "expectedStatus": "skipped",
-                  "projectId": "create-session",
-                  "projectName": "create-session",
-                  "results": [
-                    {
-                      "workerIndex": 5,
-                      "parallelIndex": 0,
-                      "status": "skipped",
-                      "duration": 25424,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "[2026-01-28T19:37:13.389Z] [INFO] Starting Create Session test\n"
-                        },
-                        {
-                          "text": "[2026-01-28T19:37:17.591Z] [STEP] Searching for saved group for Create Session: Test Group 1769628936241\n"
-                        },
-                        {
-                          "text": "[2026-01-28T19:37:17.592Z] [STEP] Navigating to My Groups\n"
-                        },
-                        {
-                          "text": "[2026-01-28T19:37:36.108Z] [SUCCESS] Saved group found: Test Group 1769628936241\n"
-                        }
-                      ],
-                      "stderr": [
-                        {
-                          "text": "[2026-01-28T19:37:36.143Z] [WARN] Saved group is inactive → cannot create session\n"
-                        }
-                      ],
-                      "retry": 0,
-                      "startTime": "2026-01-28T19:37:12.154Z",
-                      "annotations": [
-                        {
-                          "type": "skip",
-                          "description": "No subscribed group supports Create Session",
-                          "location": {
-                            "file": "D:\\Git\\mentalhappy-playwright\\tests\\session\\create-session.spec.ts",
-                            "line": 22,
-                            "column": 14
-                          }
-                        }
-                      ],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "3ccb75dba63c32c46689-3b0a9f0fcd8a153a7fa6",
-              "file": "session/create-session.spec.ts",
-              "line": 10,
-              "column": 7
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "core\\app-load.spec.ts",
-      "file": "core/app-load.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [],
-      "suites": [
-        {
-          "title": "App Load",
-          "file": "core/app-load.spec.ts",
-          "line": 12,
-          "column": 6,
-          "specs": [
-            {
-              "title": "Application loads successfully",
               "ok": false,
               "tags": [
-                "auth",
-                "smoke",
                 "regression"
               ],
               "tests": [
@@ -1041,255 +612,129 @@
                   "timeout": 60000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "after-login",
-                  "projectName": "after-login",
+                  "projectId": "create-session",
+                  "projectName": "create-session",
                   "results": [
                     {
-                      "workerIndex": 6,
+                      "workerIndex": 7,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 27813,
+                      "duration": 54553,
                       "error": {
-                        "message": "TimeoutError: page.goto: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://staging.mentalhappy.com/groups\", waiting until \"load\"\u001b[22m\n",
-                        "stack": "TimeoutError: page.goto: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://staging.mentalhappy.com/groups\", waiting until \"load\"\u001b[22m\n\n    at DashboardPage.open (D:\\Git\\mentalhappy-playwright\\src\\pages\\dashboard\\DashboardPage.ts:21:21)\n    at D:\\Git\\mentalhappy-playwright\\tests\\core\\app-load.spec.ts:22:23",
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('New Message')\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByText('New Message')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('New Message')\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByText('New Message')\u001b[22m\n\n    at D:\\Git\\mentalhappy-playwright\\tests\\session\\create-session.spec.ts:44:36",
                         "location": {
-                          "file": "D:\\Git\\mentalhappy-playwright\\src\\pages\\dashboard\\DashboardPage.ts",
-                          "column": 21,
-                          "line": 21
+                          "file": "D:\\Git\\mentalhappy-playwright\\tests\\session\\create-session.spec.ts",
+                          "column": 36,
+                          "line": 44
                         },
-                        "snippet": "\u001b[90m   at \u001b[39m..\\src\\pages\\dashboard\\DashboardPage.ts:21\n\n\u001b[0m \u001b[90m 19 |\u001b[39m     \u001b[36masync\u001b[39m open()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 20 |\u001b[39m     \u001b[33mLogger\u001b[39m\u001b[33m.\u001b[39mstep(\u001b[32m'Opening dashboard'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[33mURLS\u001b[39m\u001b[33m.\u001b[39m\u001b[33mDASHBOARD\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 22 |\u001b[39m   }\n \u001b[90m 23 |\u001b[39m\n \u001b[90m 24 |\u001b[39m   \u001b[90m// DO NOT REMOVE — AUTH DEPENDENCY\u001b[39m\u001b[0m"
+                        "snippet": "\u001b[0m \u001b[90m 42 |\u001b[39m\n \u001b[90m 43 |\u001b[39m       \u001b[36mconst\u001b[39m successMessage \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mgetByText(\u001b[32m'New Message'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 44 |\u001b[39m       \u001b[36mawait\u001b[39m expect(successMessage)\u001b[33m.\u001b[39mtoBeVisible({ timeout\u001b[33m:\u001b[39m \u001b[35m10\u001b[39m_000 })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 45 |\u001b[39m\n \u001b[90m 46 |\u001b[39m       \u001b[33mLogger\u001b[39m\u001b[33m.\u001b[39mstep(\u001b[32m`Session name: ${sessionTitle}:- Session created successfully`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 47 |\u001b[39m\u001b[0m"
                       },
                       "errors": [
                         {
                           "location": {
-                            "file": "D:\\Git\\mentalhappy-playwright\\src\\pages\\dashboard\\DashboardPage.ts",
-                            "column": 21,
-                            "line": 21
+                            "file": "D:\\Git\\mentalhappy-playwright\\tests\\session\\create-session.spec.ts",
+                            "column": 36,
+                            "line": 44
                           },
-                          "message": "TimeoutError: page.goto: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://staging.mentalhappy.com/groups\", waiting until \"load\"\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\src\\pages\\dashboard\\DashboardPage.ts:21\n\n\u001b[0m \u001b[90m 19 |\u001b[39m     \u001b[36masync\u001b[39m open()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 20 |\u001b[39m     \u001b[33mLogger\u001b[39m\u001b[33m.\u001b[39mstep(\u001b[32m'Opening dashboard'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[33mURLS\u001b[39m\u001b[33m.\u001b[39m\u001b[33mDASHBOARD\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 22 |\u001b[39m   }\n \u001b[90m 23 |\u001b[39m\n \u001b[90m 24 |\u001b[39m   \u001b[90m// DO NOT REMOVE — AUTH DEPENDENCY\u001b[39m\u001b[0m\n\u001b[2m    at DashboardPage.open (D:\\Git\\mentalhappy-playwright\\src\\pages\\dashboard\\DashboardPage.ts:21:21)\u001b[22m\n\u001b[2m    at D:\\Git\\mentalhappy-playwright\\tests\\core\\app-load.spec.ts:22:23\u001b[22m"
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('New Message')\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByText('New Message')\u001b[22m\n\n\n\u001b[0m \u001b[90m 42 |\u001b[39m\n \u001b[90m 43 |\u001b[39m       \u001b[36mconst\u001b[39m successMessage \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mgetByText(\u001b[32m'New Message'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 44 |\u001b[39m       \u001b[36mawait\u001b[39m expect(successMessage)\u001b[33m.\u001b[39mtoBeVisible({ timeout\u001b[33m:\u001b[39m \u001b[35m10\u001b[39m_000 })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 45 |\u001b[39m\n \u001b[90m 46 |\u001b[39m       \u001b[33mLogger\u001b[39m\u001b[33m.\u001b[39mstep(\u001b[32m`Session name: ${sessionTitle}:- Session created successfully`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 47 |\u001b[39m\u001b[0m\n\u001b[2m    at D:\\Git\\mentalhappy-playwright\\tests\\session\\create-session.spec.ts:44:36\u001b[22m"
                         }
                       ],
                       "stdout": [
                         {
-                          "text": "[CHAT WIDGET] HIDDEN | Test: Application loads successfully\n"
+                          "text": "[2026-01-29T18:03:31.743Z] [INFO] Starting Create Session test\n"
                         },
                         {
-                          "text": "[2026-01-28T19:37:43.742Z] [STEP] Verifying application load\n"
+                          "text": "[2026-01-29T18:03:35.919Z] [STEP] Searching for saved group for Create Session: Automation_Group_20260129_233201\n"
                         },
                         {
-                          "text": "[2026-01-28T19:37:43.746Z] [STEP] Opening dashboard\n"
+                          "text": "[2026-01-29T18:03:35.920Z] [STEP] Navigating to My Groups\n"
+                        },
+                        {
+                          "text": "[2026-01-29T18:03:58.883Z] [SUCCESS] Saved group found: Automation_Group_20260129_233201\n"
+                        },
+                        {
+                          "text": "[2026-01-29T18:04:06.486Z] [STEP] Opening session creation from Chat Menu\n"
+                        },
+                        {
+                          "text": "[2026-01-29T18:04:06.521Z] [INFO] Closing announcement banner\n"
+                        },
+                        {
+                          "text": "[2026-01-29T18:04:07.446Z] [SUCCESS] Chat menu visible (id=menu-list-:rer:)\n"
+                        },
+                        {
+                          "text": "[2026-01-29T18:04:07.654Z] [STEP] Clicked Schedule a Session menu item\n"
+                        },
+                        {
+                          "text": "[2026-01-29T18:04:09.497Z] [SUCCESS] Create Session modal opened\n"
+                        },
+                        {
+                          "text": "[2026-01-29T18:04:09.498Z] [SUCCESS] Create Session modal opened for saved group\n"
+                        },
+                        {
+                          "text": "[2026-01-29T18:04:09.498Z] [SUCCESS] Create Session modal opened successfully\n"
+                        },
+                        {
+                          "text": "[2026-01-29T18:04:09.499Z] [STEP] Waiting for Create Session modal\n"
+                        },
+                        {
+                          "text": "[2026-01-29T18:04:09.544Z] [SUCCESS] Create Session modal visible\n"
+                        },
+                        {
+                          "text": "[2026-01-29T18:04:09.545Z] [STEP] Filling Create Session form\n"
+                        },
+                        {
+                          "text": "[2026-01-29T18:04:09.545Z] [STEP] Setting session date to next day\n"
+                        },
+                        {
+                          "text": "[2026-01-29T18:04:11.437Z] [INFO] Session date set to 30 January, 2026\n"
+                        },
+                        {
+                          "text": "[2026-01-29T18:04:12.743Z] [SUCCESS] Required fields filled\n"
+                        },
+                        {
+                          "text": "[2026-01-29T18:04:12.743Z] [STEP] Submitting session\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-28T19:37:40.487Z",
+                      "startTime": "2026-01-29T18:03:30.509Z",
                       "annotations": [],
                       "attachments": [
                         {
-                          "name": "Allure Metadata (metadata)",
-                          "contentType": "application/vnd.allure.message+json",
-                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7InBhcmFtZXRlcnMiOlt7Im5hbWUiOiJQcm9qZWN0IiwidmFsdWUiOiJhZnRlci1sb2dpbiJ9XX19"
-                        },
-                        {
-                          "name": "Allure Metadata (metadata)",
-                          "contentType": "application/vnd.allure.message+json",
-                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7InBhcmFtZXRlcnMiOlt7Im5hbWUiOiJCcm93c2VyIiwidmFsdWUiOiJ1bmtub3duIn1dfX0="
-                        },
-                        {
-                          "name": "Allure Metadata (metadata)",
-                          "contentType": "application/vnd.allure.message+json",
-                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7InBhcmFtZXRlcnMiOlt7Im5hbWUiOiJCYXNlVVJMIiwidmFsdWUiOiJodHRwczovL3N0YWdpbmcubWVudGFsaGFwcHkuY29tLyJ9XX19"
-                        },
-                        {
-                          "name": "Allure Metadata (metadata)",
-                          "contentType": "application/vnd.allure.message+json",
-                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7InBhcmFtZXRlcnMiOlt7Im5hbWUiOiJXb3JrZXIiLCJ2YWx1ZSI6IjYifV19fQ=="
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\Git\\mentalhappy-playwright\\test-results\\session-create-session-Cre-a1fe7-ates-a-session-successfully-create-session\\test-failed-1.png"
                         },
                         {
                           "name": "video",
                           "contentType": "video/webm",
-                          "path": "D:\\Git\\mentalhappy-playwright\\test-results\\core-app-load-App-Load-Application-loads-successfully-after-login\\video.webm"
+                          "path": "D:\\Git\\mentalhappy-playwright\\test-results\\session-create-session-Cre-a1fe7-ates-a-session-successfully-create-session\\video.webm"
                         },
                         {
                           "name": "error-context",
                           "contentType": "text/markdown",
-                          "path": "D:\\Git\\mentalhappy-playwright\\test-results\\core-app-load-App-Load-Application-loads-successfully-after-login\\error-context.md"
+                          "path": "D:\\Git\\mentalhappy-playwright\\test-results\\session-create-session-Cre-a1fe7-ates-a-session-successfully-create-session\\error-context.md"
                         },
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "D:\\Git\\mentalhappy-playwright\\test-results\\core-app-load-App-Load-Application-loads-successfully-after-login\\trace.zip"
+                          "path": "D:\\Git\\mentalhappy-playwright\\test-results\\session-create-session-Cre-a1fe7-ates-a-session-successfully-create-session\\trace.zip"
                         }
                       ],
                       "errorLocation": {
-                        "file": "D:\\Git\\mentalhappy-playwright\\src\\pages\\dashboard\\DashboardPage.ts",
-                        "column": 21,
-                        "line": 21
+                        "file": "D:\\Git\\mentalhappy-playwright\\tests\\session\\create-session.spec.ts",
+                        "column": 36,
+                        "line": 44
                       }
                     }
                   ],
                   "status": "unexpected"
                 }
               ],
-              "id": "ed6411a7b521b7d47a26-4fe898f3ca4fea63c470",
-              "file": "core/app-load.spec.ts",
-              "line": 14,
-              "column": 7
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "dashboard\\dashboard.spec.ts",
-      "file": "dashboard/dashboard.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Dashboard loads after fresh login",
-          "ok": true,
-          "tags": [
-            "smoke",
-            "regression"
-          ],
-          "tests": [
-            {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "after-login",
-              "projectName": "after-login",
-              "results": [
-                {
-                  "workerIndex": 7,
-                  "parallelIndex": 1,
-                  "status": "passed",
-                  "duration": 19575,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "[CHAT WIDGET] HIDDEN | Test: Dashboard loads after fresh login\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:37:43.270Z] [STEP] Navigating to dashboard\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:37:43.271Z] [STEP] Opening dashboard\n"
-                    },
-                    {
-                      "text": "[2026-01-28T19:37:47.938Z] [SUCCESS] Login successful\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-01-28T19:37:40.540Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "Allure Metadata (metadata)",
-                      "contentType": "application/vnd.allure.message+json",
-                      "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7InBhcmFtZXRlcnMiOlt7Im5hbWUiOiJQcm9qZWN0IiwidmFsdWUiOiJhZnRlci1sb2dpbiJ9XX19"
-                    },
-                    {
-                      "name": "Allure Metadata (metadata)",
-                      "contentType": "application/vnd.allure.message+json",
-                      "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7InBhcmFtZXRlcnMiOlt7Im5hbWUiOiJCcm93c2VyIiwidmFsdWUiOiJ1bmtub3duIn1dfX0="
-                    },
-                    {
-                      "name": "Allure Metadata (metadata)",
-                      "contentType": "application/vnd.allure.message+json",
-                      "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7InBhcmFtZXRlcnMiOlt7Im5hbWUiOiJCYXNlVVJMIiwidmFsdWUiOiJodHRwczovL3N0YWdpbmcubWVudGFsaGFwcHkuY29tLyJ9XX19"
-                    },
-                    {
-                      "name": "Allure Metadata (metadata)",
-                      "contentType": "application/vnd.allure.message+json",
-                      "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7InBhcmFtZXRlcnMiOlt7Im5hbWUiOiJXb3JrZXIiLCJ2YWx1ZSI6IjcifV19fQ=="
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "747340cde928aa6c3216-49e65561a3c2683303ee",
-          "file": "dashboard/dashboard.spec.ts",
-          "line": 6,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "dashboard\\group-listing.spec.ts",
-      "file": "dashboard/group-listing.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [],
-      "suites": [
-        {
-          "title": "Groups – Listing",
-          "file": "dashboard/group-listing.spec.ts",
-          "line": 9,
-          "column": 6,
-          "specs": [
-            {
-              "title": "Group listing loads with correct visibility and status",
-              "ok": true,
-              "tags": [
-                "smoke",
-                "regression"
-              ],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [
-                    {
-                      "type": "severity",
-                      "description": "critical"
-                    }
-                  ],
-                  "expectedStatus": "passed",
-                  "projectId": "after-login",
-                  "projectName": "after-login",
-                  "results": [
-                    {
-                      "workerIndex": 8,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 20735,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "[2026-01-28T19:37:43.120Z] [STEP] Opening My Groups page\n"
-                        },
-                        {
-                          "text": "[2026-01-28T19:37:43.123Z] [STEP] Navigating to My Groups\n"
-                        },
-                        {
-                          "text": "[2026-01-28T19:37:59.965Z] [STEP] Verifying group cards are visible\n"
-                        },
-                        {
-                          "text": "[2026-01-28T19:38:00.158Z] [SUCCESS] Group listing loaded successfully with 172 groups\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-01-28T19:37:40.419Z",
-                      "annotations": [
-                        {
-                          "type": "severity",
-                          "description": "critical"
-                        }
-                      ],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "7748b24550ddc1cd7659-75235c954d68d323fa47",
-              "file": "dashboard/group-listing.spec.ts",
-              "line": 11,
+              "id": "3ccb75dba63c32c46689-3b0a9f0fcd8a153a7fa6",
+              "file": "session/create-session.spec.ts",
+              "line": 12,
               "column": 7
             }
           ]
@@ -1333,22 +778,22 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 29863,
+                      "duration": 34160,
                       "errors": [],
                       "stdout": [
                         {
                           "text": "[CHAT WIDGET] HIDDEN | Test: Group Host user can login successfully\n"
                         },
                         {
-                          "text": "[2026-01-28T19:35:04.055Z] [STEP] Logging in as Group Host\n"
+                          "text": "[2026-01-29T18:01:01.233Z] [STEP] Logging in as Group Host\n"
                         },
                         {
-                          "text": "[2026-01-28T19:35:20.005Z] [SUCCESS] Login successful\n"
+                          "text": "[2026-01-29T18:01:20.898Z] [SUCCESS] Login successful\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-28T19:35:01.759Z",
+                      "startTime": "2026-01-29T18:00:57.912Z",
                       "annotations": [
                         {
                           "type": "severity",
@@ -1409,14 +854,14 @@
               "timeout": 60000,
               "annotations": [],
               "expectedStatus": "passed",
-              "projectId": "public",
-              "projectName": "public",
+              "projectId": "before-login",
+              "projectName": "before-login",
               "results": [
                 {
                   "workerIndex": 2,
                   "parallelIndex": 2,
                   "status": "passed",
-                  "duration": 13348,
+                  "duration": 18013,
                   "errors": [],
                   "stdout": [
                     {
@@ -1425,13 +870,13 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-28T19:35:01.793Z",
+                  "startTime": "2026-01-29T18:00:57.908Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "Allure Metadata (metadata)",
                       "contentType": "application/vnd.allure.message+json",
-                      "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7InBhcmFtZXRlcnMiOlt7Im5hbWUiOiJQcm9qZWN0IiwidmFsdWUiOiJwdWJsaWMifV19fQ=="
+                      "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7InBhcmFtZXRlcnMiOlt7Im5hbWUiOiJQcm9qZWN0IiwidmFsdWUiOiJiZWZvcmUtbG9naW4ifV19fQ=="
                     },
                     {
                       "name": "Allure Metadata (metadata)",
@@ -1454,20 +899,108 @@
               "status": "expected"
             }
           ],
-          "id": "8f773a9f6f2e32745229-ccbca904fded65f42da9",
+          "id": "8f773a9f6f2e32745229-9127ef004e2cce423dcb",
           "file": "chat/chat-widget.spec.ts",
           "line": 4,
           "column": 5
+        }
+      ]
+    },
+    {
+      "title": "core\\app-load.spec.ts",
+      "file": "core/app-load.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "App Load",
+          "file": "core/app-load.spec.ts",
+          "line": 11,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Application loads successfully",
+              "ok": true,
+              "tags": [
+                "smoke",
+                "public"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "before-login",
+                  "projectName": "before-login",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 7483,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[CHAT WIDGET] HIDDEN | Test: Application loads successfully\n"
+                        },
+                        {
+                          "text": "[2026-01-29T18:01:01.180Z] [STEP] Navigating to landing page\n"
+                        },
+                        {
+                          "text": "[2026-01-29T18:01:04.460Z] [STEP] Verifying \"MentalHappy\" logo visibility\n"
+                        },
+                        {
+                          "text": "[2026-01-29T18:01:04.781Z] [SUCCESS] App Load › Application loads successfully\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-29T18:00:57.951Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7InBhcmFtZXRlcnMiOlt7Im5hbWUiOiJQcm9qZWN0IiwidmFsdWUiOiJiZWZvcmUtbG9naW4ifV19fQ=="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7InBhcmFtZXRlcnMiOlt7Im5hbWUiOiJCcm93c2VyIiwidmFsdWUiOiJ1bmtub3duIn1dfX0="
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7InBhcmFtZXRlcnMiOlt7Im5hbWUiOiJCYXNlVVJMIiwidmFsdWUiOiJodHRwczovL3N0YWdpbmcubWVudGFsaGFwcHkuY29tLyJ9XX19"
+                        },
+                        {
+                          "name": "Allure Metadata (metadata)",
+                          "contentType": "application/vnd.allure.message+json",
+                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7InBhcmFtZXRlcnMiOlt7Im5hbWUiOiJXb3JrZXIiLCJ2YWx1ZSI6IjMifV19fQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ed6411a7b521b7d47a26-dd15df2b951ddba01056",
+              "file": "core/app-load.spec.ts",
+              "line": 13,
+              "column": 7
+            }
+          ]
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-28T19:34:59.430Z",
-    "duration": 189954.30599999998,
-    "expected": 7,
-    "skipped": 1,
+    "startTime": "2026-01-29T18:00:55.349Z",
+    "duration": 211938.247,
+    "expected": 8,
+    "skipped": 0,
     "unexpected": 1,
     "flaky": 0
   }

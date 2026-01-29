@@ -23,8 +23,8 @@ test.describe('Login – Single User', () => {
       Logger.step('Logging in as Group Host');
       await loginAs(UserRole.GROUP_HOST);
 
-     const dashboard = new DashboardPage(page);
-     await dashboard.verifyDashboardLoaded();
+      const dashboard = new DashboardPage(page);
+      await dashboard.verifyDashboardLoaded();
     }
   );
 });
