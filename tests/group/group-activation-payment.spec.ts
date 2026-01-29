@@ -52,8 +52,6 @@ test.describe.serial('Host Group Monetization Setup Flow', () => {
     Logger.step('Submitting platform activation payment');
     await paymentPage.submitPayment();
 
-    await expect(page.getByText('Payment was successful!')).toBeVisible({ timeout: 10_000 });
-
     Logger.success('STEP 1 COMPLETE: Group successfully activated via platform payment');
   });
 
