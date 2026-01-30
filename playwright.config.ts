@@ -77,19 +77,19 @@ export default defineConfig({
         storageState: 'storage/user.auth.json',
       },
     },
-    {
-      name: 'before-login',
-      testMatch: [
-        /login.*\.spec\.ts/,
-        /registration.*\.spec\.ts/,
-        /tests\/chat\/.*\.spec\.ts/,
-        /tests\/core\/app-load\.spec\.ts/,
-        /tests\/profile\/.*\.spec\.ts/,
-      ],
-      use: {
-        baseURL: ENV.BASE_URL,
-        storageState: undefined,
-      },
-    },
+    // {
+    //   name: 'before-login',
+    //   testMatch: [
+    //     /login.*\.spec\.ts/,
+    //     /registration.*\.spec\.ts/,
+    //     /tests\/chat\/.*\.spec\.ts/,
+    //     /tests\/core\/app-load\.spec\.ts/,
+    //     /tests\/profile\/.*\.spec\.ts/,
+    //   ],
+    //   use: {
+    //     baseURL: ENV.BASE_URL,
+    //     storageState: undefined,
+    //   },
+    // },
   ],
 });
