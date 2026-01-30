@@ -161,10 +161,10 @@ export class ChatPage extends BasePage {
     } catch (error) {
       Logger.error('Failed to open Create Session from Chat menu', error);
 
-      await this.page.screenshot({
-        path: `chat-create-session-failure-${Date.now()}.png`,
-        fullPage: true,
-      });
+      // await this.page.screenshot({
+      //   path: `chat-create-session-failure-${Date.now()}.png`,
+      //   fullPage: true,
+      // });
 
       return null;
     }

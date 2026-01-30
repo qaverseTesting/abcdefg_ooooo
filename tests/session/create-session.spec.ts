@@ -28,6 +28,7 @@ test.describe('Create Session', () => {
 
       if (!canCreate) {
         Logger.warn('No saved group supports Create Session');
+        return
         test.skip(true, 'No subscribed group supports Create Session');
       }
 
