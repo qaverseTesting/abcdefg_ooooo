@@ -8,7 +8,7 @@ import { ChatPage } from '../chat/ChatPage';
 import { RuntimeStore } from '../../utils/RuntimeStore';
 
 /**
- * Result of searching for an inactive group
+ * Result returned when searching for an inactive group
  */
 export type InactiveGroupResult =
   | { status: 'FOUND'; groupName: string }
@@ -19,27 +19,29 @@ export class MyGroupsPage extends BasePage {
 
   constructor(page: Page) {
     super(page);
-
     this.groupCards = page.locator('[data-testid="group-card"]');
   }
 
   /**
- * Opens the saved group (from RuntimeStore) and checks
- * if Create Session is supported.
- *
- * Loop behavior:
- * - Iterate until saved group is found
- * - Stop immediately when found
- * - Continue if not matched
- */
+   * Opens the saved group (from RuntimeStore) and determines
+   * whether Create Session is supported.
+   *
+   * Loop behavior:
+   * - Iterates through all group cards
+   * - Stops immediately once the saved group is found
+   * - Returns false for unsupported group states
+   */
   async openSavedGroupSupportingCreateSession(): Promise<boolean> {
     const targetGroupName = RuntimeStore.getGroupName();
 
-    Logger.step(`Searching for saved group for Create Session: ${targetGroupName}`);
+    Logger.step(
+      `Searching for saved group to create session: ${targetGroupName}`
+    );
 
     await this.openMyGroups(true);
 
     const count = await this.groupCards.count();
+    Logger.info(`Total groups detected: ${count}`);
 
     for (let i = 0; i < count; i++) {
       const card = this.groupCards.nth(i);
@@ -48,10 +50,10 @@ export class MyGroupsPage extends BasePage {
 
       const snapshot = (await card.innerText().catch(() => '')).trim();
 
-      // Skip until saved group is found
+      // Continue until the saved group is found
       if (!snapshot.includes(targetGroupName)) continue;
 
-      Logger.success(`Saved group found: ${targetGroupName}`);
+      Logger.success(`Saved group matched: ${targetGroupName}`);
 
       // Inactive groups cannot create sessions
       if (
@@ -60,7 +62,9 @@ export class MyGroupsPage extends BasePage {
           .isVisible()
           .catch(() => false)
       ) {
-        Logger.warn('Saved group is inactive → cannot create session');
+        Logger.warn(
+          'Saved group is inactive and does not support Create Session'
+        );
         return false;
       }
 
@@ -71,53 +75,58 @@ export class MyGroupsPage extends BasePage {
           .isVisible()
           .catch(() => false)
       ) {
-        Logger.warn('Saved group is interest-only → cannot create session');
+        Logger.warn(
+          'Saved group is interest-only and does not support Create Session'
+        );
         return false;
       }
 
-      // ❌ Paid groups cannot create sessions
+      // Paid groups cannot create sessions
       const isPaidGroup = await card
         .locator('svg circle + line + line')
         .isVisible()
         .catch(() => false);
 
       if (isPaidGroup) {
-        Logger.warn('Saved group is paid → cannot create session');
+        Logger.warn('Saved group is paid and does not support Create Session');
         return false;
       }
 
-       const chatPage = new ChatPage(this.page);
+      Logger.step('Opening saved group chat');
+      const chatPage = new ChatPage(this.page);
+
       await card.scrollIntoViewIfNeeded();
       await card.click();
-      await Wait.pause(this.page, 7_000);
 
-     
       const opened = await chatPage.openCreateSessionFromChatMenu();
 
       if (opened) {
-        Logger.success('Create Session modal opened for saved group');
+        Logger.success(
+          'Create Session modal successfully opened for saved group'
+        );
         return true;
       }
 
-      Logger.warn('Saved group does not support Create Session');
+      Logger.warn('Saved group does not expose Create Session action');
       return false;
     }
 
-    Logger.warn('Saved group not found in My Groups listing');
+    Logger.warn('Saved group was not found in My Groups listing');
     return false;
   }
 
   /**
-   * Navigates safely to My Groups page
+   * Navigates to My Groups page and waits for group cards to load.
    */
   private async openMyGroups(initial = false): Promise<void> {
-    Logger.step('Navigating to My Groups');
+    Logger.step('Navigating to My Groups page');
 
     await this.page.goto(URLS.MYGROUP, {
       waitUntil: 'domcontentloaded',
     });
 
     if (initial) {
+      Logger.step('Waiting for group cards to render');
       await this.groupCards.first().waitFor({
         state: 'visible',
         timeout: 15_000,
@@ -128,8 +137,8 @@ export class MyGroupsPage extends BasePage {
   }
 
   /**
-   * SINGLE SOURCE OF TRUTH
-   * Finds a group that supports Create Session
+   * Fallback logic to locate any group that supports Create Session.
+   * Acts as a single source of truth for dynamic group selection.
    */
   async openAnyGroupSupportingCreateSession(): Promise<boolean> {
     await this.openMyGroups(true);
@@ -139,7 +148,7 @@ export class MyGroupsPage extends BasePage {
 
     for (let attempt = 0; attempt < MAX_ATTEMPTS; attempt++) {
       const count = await this.groupCards.count();
-      Logger.info(`Scan ${attempt + 1}: ${count} groups found`);
+      Logger.info(`Scan ${attempt + 1}: ${count} groups available`);
 
       let progressed = false;
 
@@ -154,31 +163,40 @@ export class MyGroupsPage extends BasePage {
         visitedGroups.add(snapshot);
         progressed = true;
 
-        //Logger.step(`Evaluating group: ${snapshot}`);
-
-        //  Inactive
-        if (await card.getByText(/activate your group/i).isVisible().catch(() => false)) {
-          Logger.info('Inactive group → skipped');
+        // Skip inactive groups
+        if (
+          await card
+            .getByText(/activate your group/i)
+            .isVisible()
+            .catch(() => false)
+        ) {
+          Logger.info('Inactive group detected and skipped');
           continue;
         }
 
-        //  Interest-only
-        if (await card.getByText(/i'm interested/i).isVisible().catch(() => false)) {
-          Logger.info('Interest-only group → skipped');
+        // Skip interest-only groups
+        if (
+          await card
+            .getByText(/i'm interested/i)
+            .isVisible()
+            .catch(() => false)
+        ) {
+          Logger.info('Interest-only group detected and skipped');
           continue;
         }
 
-        //  Paid
+        // Skip paid groups
         const isPaidGroup = await card
           .locator('svg circle + line + line')
           .isVisible()
           .catch(() => false);
 
         if (isPaidGroup) {
-          Logger.info('Paid group → skipped');
+          Logger.info('Paid group detected and skipped');
           continue;
         }
 
+        Logger.step(`Opening group chat: ${snapshot}`);
         await card.scrollIntoViewIfNeeded();
         await card.click();
         await Wait.pause(this.page, 5_000);
@@ -187,185 +205,40 @@ export class MyGroupsPage extends BasePage {
         const opened = await chatPage.openCreateSessionFromChatMenu();
 
         if (opened) {
-          Logger.success('Create Session modal opened');
+          Logger.success('Create Session modal opened successfully');
           return true;
         }
 
-        Logger.warn('Create Session not supported → returning to My Groups');
+        Logger.warn(
+          'Create Session not supported for this group, returning to My Groups'
+        );
         await this.openMyGroups(true);
         break;
       }
 
       if (!progressed) {
-        Logger.warn('No new groups left to evaluate');
+        Logger.warn('No additional groups left to evaluate');
         break;
       }
     }
 
-    Logger.warn('No subscribed group supports Create Session');
+    Logger.warn('No group found that supports Create Session');
     return false;
   }
 
   /**
-     * Finds an inactive group and navigates to activation / payment page.
-     * Returns FOUND or NOT_FOUND instead of throwing.
-     */
+   * Finds an inactive group and attempts to navigate to its
+   * activation or payment page.
+   */
   async openInactiveGroupAndRedirectToPayment(): Promise<InactiveGroupResult> {
-    //const targetGroupName = RuntimeStore.getGroupName();
-
     await this.openMyGroups(true);
-    const count = await this.groupCards.count();
 
     const visitedGroups = new Set<string>();
     const MAX_ATTEMPTS = 15;
 
     for (let attempt = 0; attempt < MAX_ATTEMPTS; attempt++) {
       const count = await this.groupCards.count();
-      Logger.info(`Scan ${attempt + 1}: ${count} groups found`);
-
-      let progressed = false;
-
-      for (let i = 0; i < count; i++) {
-        const card = this.groupCards.nth(i);
-
-        if (!(await card.isVisible().catch(() => false))) continue;
-
-        const snapshot = (await card.innerText().catch(() => '')).trim();
-
-        // Continue loop if this is not our saved group
-        //if (!snapshot.includes(targetGroupName)) continue;
-        //Logger.success(`Saved group found: ${targetGroupName}`);
-
-        if (!snapshot || visitedGroups.has(snapshot)) continue;
-
-        visitedGroups.add(snapshot);
-        progressed = true;
-
-        //Logger.step(`Evaluating group: ${snapshot}`);
-
-        const isInactive = await card
-          .getByText(/activate your group/i)
-          .isVisible()
-          .catch(() => false);
-
-        if (!isInactive) {
-         // Logger.info('Not an inactive group → skipped');
-          continue;
-        }
-
-        Logger.success(`Inactive group found: ${snapshot}`);
-
-        await card.scrollIntoViewIfNeeded();
-        await card.click();
-
-        const activated = await Promise.race([
-          this.page.locator('#payment-element').waitFor({ state: 'visible', timeout: 15_000 }).then(() => true).catch(() => false),
-          this.page.getByRole('button', { name: /pay and activate group/i }).waitFor({ state: 'visible', timeout: 15_000 }).then(() => true).catch(() => false),
-          this.page.waitForURL(/activate|subscription|payment/i, { timeout: 15_000 }).then(() => true).catch(() => false),
-        ]);
-
-        if (activated) {
-          Logger.success('Activation / Payment page detected');
-          return { status: 'FOUND', groupName: snapshot };
-        }
-
-        Logger.warn('Inactive group clicked but activation UI not detected');
-        return { status: 'NOT_FOUND' };
-      }
-
-      if (!progressed) {
-        Logger.warn('No new groups left to evaluate');
-        break;
-      }
-    }
-
-    Logger.warn('No inactive group found for activation');
-    return { status: 'NOT_FOUND' };
-  }
-
-  async openPriorityInactiveGroupAndRedirectToPayment(
-    priorityGroupName: string
-  ): Promise<InactiveGroupResult> {
-
-    await this.openMyGroups(true);
-
-    const visitedGroups = new Set<string>();
-    const MAX_ATTEMPTS = 15;
-
-    let priorityGroupHandled = false;
-
-    // ==================================================
-    // PHASE 1: Priority group scan (safe)
-    // ==================================================
-    Logger.step(`Priority scan for group: ${priorityGroupName}`);
-
-    const initialCount = await this.groupCards.count();
-
-    for (let i = 0; i < initialCount; i++) {
-      const card = this.groupCards.nth(i);
-
-      if (!(await card.isVisible().catch(() => false))) continue;
-
-      const snapshot = (await card.innerText().catch(() => '')).trim();
-      if (!snapshot || !snapshot.includes(priorityGroupName)) continue;
-
-      priorityGroupHandled = true;
-      visitedGroups.add(snapshot);
-
-      Logger.success(`Priority group found: ${snapshot}`);
-
-      const isInactive = await card
-        .getByText(/activate your group/i)
-        .isVisible()
-        .catch(() => false);
-
-      if (!isInactive) {
-        Logger.info('Priority group is active → fallback scan');
-        break;
-      }
-
-      Logger.success('Priority group is inactive → opening');
-      await card.scrollIntoViewIfNeeded();
-      await card.click();
-
-      const activated = await Promise.race([
-        this.page
-          .locator('#payment-element')
-          .waitFor({ state: 'visible', timeout: 15_000 })
-          .then(() => true)
-          .catch(() => false),
-
-        this.page
-          .getByRole('button', { name: /pay and activate group/i })
-          .waitFor({ state: 'visible', timeout: 15_000 })
-          .then(() => true)
-          .catch(() => false),
-
-        this.page
-          .waitForURL(/activate|subscription|payment/i, { timeout: 15_000 })
-          .then(() => true)
-          .catch(() => false),
-      ]);
-
-      if (activated) {
-        Logger.success('Activation / Payment page detected for priority group');
-        return { status: 'FOUND', groupName: snapshot };
-      }
-
-      Logger.warn('Priority group clicked but activation UI not detected');
-      return { status: 'NOT_FOUND' };
-    }
-
-    if (!priorityGroupHandled) {
-      Logger.info('Priority group not found → fallback scan');
-    }
-
-    // ==================================================
-    // PHASE 2: ORIGINAL WORKING LOGIC (UNCHANGED)
-    // ==================================================
-    for (let attempt = 0; attempt < MAX_ATTEMPTS; attempt++) {
-      const count = await this.groupCards.count();
-      Logger.info(`Scan ${attempt + 1}: ${count} groups found`);
+      Logger.info(`Scan ${attempt + 1}: ${count} groups available`);
 
       let progressed = false;
 
@@ -380,19 +253,17 @@ export class MyGroupsPage extends BasePage {
         visitedGroups.add(snapshot);
         progressed = true;
 
-        //Logger.step(`Evaluating group: ${snapshot}`);
-
         const isInactive = await card
           .getByText(/activate your group/i)
           .isVisible()
           .catch(() => false);
 
         if (!isInactive) {
-          //Logger.info('Not an inactive group → skipped');
           continue;
         }
 
-        Logger.success(`Inactive group found: ${snapshot}`);
+        Logger.success(`Inactive group identified: ${snapshot}`);
+
         await card.scrollIntoViewIfNeeded();
         await card.click();
 
@@ -416,26 +287,180 @@ export class MyGroupsPage extends BasePage {
         ]);
 
         if (activated) {
-          Logger.success('Activation / Payment page detected');
+          Logger.success('Activation or payment page detected');
           return { status: 'FOUND', groupName: snapshot };
         }
 
-        Logger.warn('Inactive group clicked but activation UI not detected');
+        Logger.warn(
+          'Inactive group selected but activation or payment UI was not detected'
+        );
         return { status: 'NOT_FOUND' };
       }
 
       if (!progressed) {
-        Logger.warn('No new groups left to evaluate');
+        Logger.warn('No new inactive groups remaining to evaluate');
         break;
       }
     }
 
-    // ==================================================
-    // FINAL GUARANTEED RETURN (TS SAFE)
-    // ==================================================
     Logger.warn('No inactive group found for activation');
     return { status: 'NOT_FOUND' };
   }
 
+  /**
+   * Attempts to activate a priority inactive group first.
+   * Falls back to scanning all inactive groups if needed.
+   */
+  async openPriorityInactiveGroupAndRedirectToPayment(
+    priorityGroupName: string
+  ): Promise<InactiveGroupResult> {
+    await this.openMyGroups(true);
 
+    const visitedGroups = new Set<string>();
+    const MAX_ATTEMPTS = 15;
+    let priorityGroupHandled = false;
+
+    // --------------------------------------------------
+    // Phase 1: Priority group scan
+    // --------------------------------------------------
+    Logger.step(`Priority scan initiated for group: ${priorityGroupName}`);
+
+    const initialCount = await this.groupCards.count();
+
+    for (let i = 0; i < initialCount; i++) {
+      const card = this.groupCards.nth(i);
+
+      if (!(await card.isVisible().catch(() => false))) continue;
+
+      const snapshot = (await card.innerText().catch(() => '')).trim();
+      if (!snapshot || !snapshot.includes(priorityGroupName)) continue;
+
+      priorityGroupHandled = true;
+      visitedGroups.add(snapshot);
+
+      Logger.success(`Priority group found: ${snapshot}`);
+
+      const isInactive = await card
+        .getByText(/activate your group/i)
+        .isVisible()
+        .catch(() => false);
+
+      if (!isInactive) {
+        Logger.info('Priority group is already active, falling back to scan');
+        break;
+      }
+
+      Logger.success('Priority group is inactive, opening activation flow');
+      await card.scrollIntoViewIfNeeded();
+      await card.click();
+
+      const activated = await Promise.race([
+        this.page
+          .locator('#payment-element')
+          .waitFor({ state: 'visible', timeout: 15_000 })
+          .then(() => true)
+          .catch(() => false),
+
+        this.page
+          .getByRole('button', { name: /pay and activate group/i })
+          .waitFor({ state: 'visible', timeout: 15_000 })
+          .then(() => true)
+          .catch(() => false),
+
+        this.page
+          .waitForURL(/activate|subscription|payment/i, { timeout: 15_000 })
+          .then(() => true)
+          .catch(() => false),
+      ]);
+
+      if (activated) {
+        Logger.success(
+          'Activation or payment page detected for priority group'
+        );
+        return { status: 'FOUND', groupName: snapshot };
+      }
+
+      Logger.warn(
+        'Priority group selected but activation or payment UI was not detected'
+      );
+      return { status: 'NOT_FOUND' };
+    }
+
+    if (!priorityGroupHandled) {
+      Logger.info('Priority group not found, proceeding with fallback scan');
+    }
+
+    // --------------------------------------------------
+    // Phase 2: Fallback scan using original logic
+    // --------------------------------------------------
+    for (let attempt = 0; attempt < MAX_ATTEMPTS; attempt++) {
+      const count = await this.groupCards.count();
+      Logger.info(`Scan ${attempt + 1}: ${count} groups available`);
+
+      let progressed = false;
+
+      for (let i = 0; i < count; i++) {
+        const card = this.groupCards.nth(i);
+
+        if (!(await card.isVisible().catch(() => false))) continue;
+
+        const snapshot = (await card.innerText().catch(() => '')).trim();
+        if (!snapshot || visitedGroups.has(snapshot)) continue;
+
+        visitedGroups.add(snapshot);
+        progressed = true;
+
+        const isInactive = await card
+          .getByText(/activate your group/i)
+          .isVisible()
+          .catch(() => false);
+
+        if (!isInactive) {
+          continue;
+        }
+
+        Logger.success(`Inactive group found during fallback scan: ${snapshot}`);
+
+        await card.scrollIntoViewIfNeeded();
+        await card.click();
+
+        const activated = await Promise.race([
+          this.page
+            .locator('#payment-element')
+            .waitFor({ state: 'visible', timeout: 15_000 })
+            .then(() => true)
+            .catch(() => false),
+
+          this.page
+            .getByRole('button', { name: /pay and activate group/i })
+            .waitFor({ state: 'visible', timeout: 15_000 })
+            .then(() => true)
+            .catch(() => false),
+
+          this.page
+            .waitForURL(/activate|subscription|payment/i, { timeout: 15_000 })
+            .then(() => true)
+            .catch(() => false),
+        ]);
+
+        if (activated) {
+          Logger.success('Activation or payment page detected');
+          return { status: 'FOUND', groupName: snapshot };
+        }
+
+        Logger.warn(
+          'Inactive group selected but activation or payment UI was not detected'
+        );
+        return { status: 'NOT_FOUND' };
+      }
+
+      if (!progressed) {
+        Logger.warn('No additional inactive groups left to evaluate');
+        break;
+      }
+    }
+
+    Logger.warn('No inactive group found for activation');
+    return { status: 'NOT_FOUND' };
+  }
 }

@@ -2,144 +2,171 @@ import { Page, Locator, expect } from '@playwright/test';
 import { BasePage } from '../base/BasePage';
 import { Logger } from '../../utils/Logger';
 import { CreateSessionModal } from '@pages/session/CreateSessionModal';
+import { RuntimeStore } from '@utils/RuntimeStore';
 
 export class ChatPage extends BasePage {
-  // Announcement banner shown at top of chat page
-  private readonly announcementBanner: Locator;
+  /* =========================================================
+   * LOCATORS
+   * ========================================================= */
 
-  // Close button inside announcement banner
+  // Announcement banner displayed at the top of the chat page
+  private readonly announcementBanner: Locator;
   private readonly announcementCloseBtn: Locator;
 
-  // Button that opens the Chat action menu (3-dot / kebab menu)
+  // Chat page anchors used to confirm correct page and group context
+  private readonly chatHeaderGroupName: Locator;
+  private readonly chatTopBar: Locator;
+
+  // Button that opens the chat action (kebab) menu
   private readonly chatMenuButton: Locator;
 
-  // Chakra modal body container (used to confirm modal is open)
+  // Create Session modal elements
   private readonly createSessionModalBody: Locator;
-
-  // Heading inside Create Session modal — strong signal modal loaded correctly
   private readonly createSessionModalHeading: Locator;
 
   constructor(page: Page) {
     super(page);
 
-    // Banner container
+    /* ---------- Announcement ---------- */
     this.announcementBanner = page.locator('[data-testid="announceView"]');
-
-    // Close button inside the banner
     this.announcementCloseBtn = this.announcementBanner.getByRole('button', {
       name: /close/i,
     });
 
-    // Chat action menu button in header
+    /* ---------- Chat Page Anchors ---------- */
+    // Group name displayed in the chat header
+    this.chatHeaderGroupName = page.locator(
+      'p.chakra-text.css-722v25'
+    );
+
+    // Top bar container that appears only when the chat page is fully loaded
+    this.chatTopBar = page.locator('div.css-79elbk');
+
+    /* ---------- Chat Menu ---------- */
     this.chatMenuButton = page.getByRole('button', {
       name: /chat box action menu/i,
     });
 
-    // Chakra modal body wrapper
+    /* ---------- Create Session Modal ---------- */
     this.createSessionModalBody = page.locator('div.chakra-modal__body');
+    this.createSessionModalHeading =
+      this.createSessionModalBody.getByRole('heading', {
+        name: /schedule a session/i,
+      });
+  }
 
-    // Modal heading to verify correct modal opened
-    this.createSessionModalHeading = this.createSessionModalBody.getByRole(
-      'heading',
-      { name: /schedule a session/i }
+  /* =========================================================
+   * COMMON INTERACTION GUARD
+   * Ensures elements are attached, visible, and enabled
+   * ========================================================= */
+  private async waitUntilInteractable(
+    locator: Locator,
+    timeout = 20_000
+  ): Promise<void> {
+    await locator.waitFor({ state: 'attached', timeout });
+    await expect(locator).toBeVisible({ timeout });
+    await expect(locator).toBeEnabled({ timeout });
+  }
+
+  /* =========================================================
+   * PAGE STATE ASSERTION
+   * Confirms chat page is loaded and correct group is opened
+   * ========================================================= */
+  private async assertChatPageOpenedCorrectly(): Promise<void> {
+    const expectedGroupName = RuntimeStore.getGroupName();
+
+    Logger.step('Verifying chat page has loaded correctly');
+
+    // Validate chat layout is rendered
+    await expect(this.chatTopBar).toBeVisible({ timeout: 20_000 });
+    Logger.success('Chat page layout is visible');
+
+    // Validate correct group chat is opened
+    const groupHeader = this.page.getByText(expectedGroupName, { exact: true });
+    await expect(groupHeader.first()).toBeVisible({ timeout: 20_000 });
+
+    Logger.success(
+      `Chat page opened for expected group: ${expectedGroupName}`
     );
   }
 
-  // =========================================================
-  // FULL FLOW — OPEN CREATE SESSION FROM CHAT MENU
-  // =========================================================
+  /* =========================================================
+   * ANNOUNCEMENT HANDLER
+   * Closes announcement banner if it blocks interactions
+   * ========================================================= */
+  private async closeAnnouncementIfExists(): Promise<void> {
+    try {
+      const appeared = await this.announcementBanner
+        .waitFor({ state: 'attached', timeout: 2_000 })
+        .then(() => true)
+        .catch(() => false);
+
+      if (!appeared) {
+        Logger.info('No announcement banner present');
+        return;
+      }
+
+      Logger.info('Announcement banner detected, attempting to close');
+
+      await this.waitUntilInteractable(this.announcementCloseBtn);
+      await this.announcementCloseBtn.click();
+
+      // Ensure banner is fully removed or hidden before continuing
+      await Promise.race([
+        this.announcementBanner.waitFor({ state: 'detached', timeout: 10_000 }),
+        this.announcementBanner.waitFor({ state: 'hidden', timeout: 10_000 }),
+      ]);
+
+      Logger.success('Announcement banner closed successfully');
+    } catch (err) {
+      Logger.warn(`Announcement close skipped due to error: ${err}`);
+    }
+  }
+
+  /* =========================================================
+   * MAIN FLOW
+   * Opens Create Session modal from chat action menu
+   * ========================================================= */
   async openCreateSessionFromChatMenu(): Promise<CreateSessionModal | null> {
     try {
-      Logger.step('Opening session creation from Chat Menu');
+      Logger.step('Initiating Create Session flow from Chat menu');
 
-      // Ensure announcement banner is not blocking clicks
+      // Step 1: Ensure chat page and group context are correct
+      await this.assertChatPageOpenedCorrectly();
+
+      // Step 2: Close announcement banner if present
       await this.closeAnnouncementIfExists();
 
-      // 1️⃣ Open Chat Menu
-      await this.chatMenuButton.waitFor({ state: 'visible', timeout: 10_000 });
+      // Step 3: Open chat action menu
+      await this.waitUntilInteractable(this.chatMenuButton);
       await this.chatMenuButton.click();
+      Logger.success('Chat action menu opened');
 
-      // Confirm menu actually opened (Chakra sets aria-expanded)
-      await expect(this.chatMenuButton).toHaveAttribute('aria-expanded', 'true');
-
-      // 2️⃣ Resolve EXACT menu container using aria-controls linkage
-      const menuId = await this.chatMenuButton.getAttribute('aria-controls');
-      if (!menuId) throw new Error('aria-controls missing on chat menu button');
-
-      const menu = this.page.locator(`[id="${menuId}"]`);
-      await menu.waitFor({ state: 'visible', timeout: 5_000 });
-
-      Logger.success(`Chat menu visible (id=${menuId})`);
-
-      // 3️⃣ Click the menu item using ARIA role (correct for Chakra menus)
-      const scheduleItem = menu.getByRole('menuitem', {
+      // Step 4: Select "Schedule a Session" option
+      const scheduleItem = this.page.getByRole('menuitem', {
         name: /schedule a session/i,
       });
 
-      await scheduleItem.waitFor({ state: 'visible', timeout: 5_000 });
+      await this.waitUntilInteractable(scheduleItem);
+      await scheduleItem.click();
+      Logger.success('"Schedule a Session" menu item selected');
 
-      // Force click avoids rare animation/pointer interception issues
-      await scheduleItem.click({ force: true });
+      // Step 5: Verify Create Session modal is displayed
+      await this.waitUntilInteractable(this.createSessionModalBody);
+      await expect(this.createSessionModalHeading).toBeVisible();
 
-      Logger.step('Clicked Schedule a Session menu item');
+      Logger.success('Create Session modal displayed successfully');
 
-      // 4️⃣ Wait for Create Session modal to appear
-      await this.createSessionModalBody.waitFor({
-        state: 'visible',
-        timeout: 10_000,
-      });
-
-      await this.createSessionModalHeading.waitFor({
-        state: 'visible',
-        timeout: 5_000,
-      });
-
-      Logger.success('Create Session modal opened');
-
-      // Return modal object for next test steps
       return new CreateSessionModal(this.page);
     } catch (error) {
       Logger.error('Failed to open Create Session from Chat menu', error);
 
-      // Screenshot helps debugging flaky UI state
-      await this.page.screenshot({ path: 'session-from-menu-failure.png' });
+      await this.page.screenshot({
+        path: `chat-create-session-failure-${Date.now()}.png`,
+        fullPage: true,
+      });
 
       return null;
     }
   }
-
-  // =========================================================
-  // ANNOUNCEMENT HANDLER
-  // =========================================================
-  /**
-   * Closes the announcement banner if it is present.
-   * Prevents it from blocking header interactions.
-   */
-private async closeAnnouncementIfExists(): Promise<void> {
-  try {
-    const appeared = await this.announcementBanner
-      .waitFor({ state: 'visible', timeout: 2000 })
-      .then(() => true)
-      .catch(() => false);
-
-    if (!appeared) {
-      Logger.info('Announcement banner not present');
-      return;
-    }
-
-    Logger.info('Closing announcement banner');
-
-    await this.announcementCloseBtn.click({ timeout: 3000 });
-
-    await Promise.race([
-      this.announcementBanner.waitFor({ state: 'detached', timeout: 5000 }),
-      this.announcementBanner.waitFor({ state: 'hidden', timeout: 5000 }),
-    ]).catch(() => this.page.waitForTimeout(500));
-
-    Logger.success('Announcement banner closed');
-  } catch (err) {
-    Logger.warn(`Announcement close skipped: ${err}`);
-  }
-}
-
 }

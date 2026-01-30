@@ -28,9 +28,6 @@ export default defineConfig({
   },
 
   projects: [
-    // -------------------------------------------------
-    // AUTHENTICATION SETUP (runs first)
-    // -------------------------------------------------
     {
       name: 'prepare-auth',
       testMatch: /tests\/setup\/auth\.setup\.ts/,
@@ -40,26 +37,19 @@ export default defineConfig({
         baseURL: ENV.BASE_URL,
       },
     },
-
-    // -------------------------------------------------
-    // AFTER LOGIN – BASIC APP VERIFICATION
-    // -------------------------------------------------
     {
       name: 'post-login-core',
       dependencies: ['prepare-auth'],
       testMatch: [
         /dashboard-load\.spec\.ts/,
         /group-listing\.spec\.ts/,
+        /group-search\.spec\.ts/,
       ],
       use: {
         baseURL: ENV.BASE_URL,
         storageState: 'storage/user.auth.json',
       },
     },
-
-    // -------------------------------------------------
-    // CREATE GROUP
-    // -------------------------------------------------
     {
       name: 'create-group',
       dependencies: ['post-login-core'],
@@ -69,10 +59,6 @@ export default defineConfig({
         storageState: 'storage/user.auth.json',
       },
     },
-
-    // -------------------------------------------------
-    // GROUP MONETIZATION FLOW (YOUR SERIAL TEST)
-    // -------------------------------------------------
     {
       name: 'group-monetization',
       dependencies: ['create-group'],
@@ -82,10 +68,6 @@ export default defineConfig({
         storageState: 'storage/user.auth.json',
       },
     },
-
-    // -------------------------------------------------
-    // CREATE SESSION
-    // -------------------------------------------------
     {
       name: 'create-session',
       dependencies: ['group-monetization'],
@@ -95,17 +77,14 @@ export default defineConfig({
         storageState: 'storage/user.auth.json',
       },
     },
-
-    // -------------------------------------------------
-    // BEFORE LOGIN TESTS (independent)
-    // -------------------------------------------------
     {
       name: 'before-login',
       testMatch: [
-        /login\.spec\.ts/,
+        /login.*\.spec\.ts/,
         /registration.*\.spec\.ts/,
         /tests\/chat\/.*\.spec\.ts/,
         /tests\/core\/app-load\.spec\.ts/,
+        /tests\/profile\/.*\.spec\.ts/,
       ],
       use: {
         baseURL: ENV.BASE_URL,

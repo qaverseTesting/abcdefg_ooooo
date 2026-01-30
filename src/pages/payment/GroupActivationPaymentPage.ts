@@ -9,20 +9,23 @@ export class GroupActivationPaymentPage extends BasePage {
   constructor(page: Page) {
     super(page);
 
+    // Stripe-hosted iframe containing secure payment inputs
     this.stripeFrame = page.frameLocator(
       'iframe[title="Secure payment input frame"]'
     );
 
+    // Primary CTA to submit payment and activate the group
     this.submitButton = page.getByRole('button', {
       name: /pay and activate group/i,
     });
   }
 
   /**
-   * Wait until Stripe Elements are fully mounted and interactive
+   * Waits until Stripe Elements are fully mounted and ready for interaction.
+   * This ensures card inputs are visible and editable before filling data.
    */
   async waitForVisible(): Promise<void> {
-    Logger.step('Waiting for Stripe payment iframe');
+    Logger.step('Waiting for Stripe payment iframe to become interactive');
 
     const cardNumber = this.stripeFrame.locator(
       'input[autocomplete="cc-number"]'
@@ -31,11 +34,12 @@ export class GroupActivationPaymentPage extends BasePage {
     await cardNumber.waitFor({ state: 'visible', timeout: 30_000 });
     await expect(cardNumber).toBeEditable({ timeout: 10_000 });
 
-    Logger.success('Stripe payment inputs are ready');
+    Logger.success('Stripe payment iframe and card inputs are ready');
   }
 
   /**
-   * Fill Stripe test card details reliably
+   * Fills Stripe test card details in a stable and repeatable way.
+   * Uses typing with delay to mimic real user input and avoid Stripe flakiness.
    */
   async fillPaymentDetails(): Promise<void> {
     Logger.step('Entering Stripe test card details');
@@ -47,25 +51,29 @@ export class GroupActivationPaymentPage extends BasePage {
     const cvc = frame.locator('input[autocomplete="cc-csc"]');
     const zip = frame.locator('input[autocomplete="postal-code"]');
 
-    // CARD NUMBER
+    // Card number
+    Logger.step('Entering card number');
     await cardNumber.click({ force: true });
     await cardNumber.type('4242424242424242', { delay: 50 });
 
-    // EXPIRY
+    // Expiry date
+    Logger.step('Entering expiry date');
     await expiry.click({ force: true });
-    await expiry.type('1234', { delay: 50 }); // Stripe formats to 12 / 34
+    await expiry.type('1234', { delay: 50 }); // Stripe auto-formats
 
     // CVC
+    Logger.step('Entering CVC');
     await cvc.click({ force: true });
     await cvc.type('123', { delay: 50 });
 
-    // ZIP (optional)
+    // ZIP / Postal code (optional field)
     if (await zip.isVisible().catch(() => false)) {
+      Logger.step('Entering ZIP / postal code');
       await zip.click({ force: true });
       await zip.type('12345', { delay: 50 });
     }
 
-    // Final sanity check (prevents silent failures)
+    // Final sanity checks to avoid silent Stripe failures
     await expect(cardNumber).not.toBeEmpty();
     await expect(expiry).not.toBeEmpty();
     await expect(cvc).not.toBeEmpty();
@@ -74,15 +82,30 @@ export class GroupActivationPaymentPage extends BasePage {
   }
 
   /**
-   * Submit payment
+   * Submits the payment and validates that the success toast appears.
+   * This method asserts that the payment submission completed successfully.
    */
   async submitPayment(): Promise<void> {
-    Logger.step('Submitting payment');
+    Logger.step('Submitting group activation payment');
 
     await expect(this.submitButton).toBeEnabled({ timeout: 15_000 });
+
+    const successToast = this.page.getByText('Payment was successful!');
+
+    // Start waiting for success toast before clicking submit
+    const toastAppeared = successToast
+      .waitFor({ state: 'visible', timeout: 20_000 })
+      .then(() => true)
+      .catch(() => false);
+
+    Logger.step('Clicking Pay and Activate Group button');
     await this.submitButton.click();
-   const successMessage = this.page.getByText('Payment was successful!');
-    await expect(successMessage).toBeVisible({ timeout: 10_000 });
-    Logger.success('Payment submitted');
+
+    const appeared = await toastAppeared;
+
+    // Assertion ensures payment confirmation was shown
+    expect(appeared).toBe(true);
+
+    Logger.success('Payment submitted and confirmed successfully');
   }
 }

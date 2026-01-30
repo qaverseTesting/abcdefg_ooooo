@@ -23,7 +23,7 @@ test.describe('Registration Process', () => {
             firstName: DataGenerator.firstName(),
             lastName: DataGenerator.lastName(),
             email: DataGenerator.email(),
-            username: DataGenerator.userName('User'),
+            username: DataGenerator.userName('Auto_'),
             password: password,
         };
 
