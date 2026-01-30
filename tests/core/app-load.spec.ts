@@ -1,12 +1,10 @@
-import { test } from '../../src/fixtures/auth.fixture';
+import { test } from '@playwright/test';
 import { Logger } from '../../src/utils/Logger';
-import { LandingPage } from '../../src/pages/public/LandingPage';
+import { LoginPage } from '../../src/pages/auth/LoginPage';
 
 /* =========================================================
    App Load – Core
-   Verifies public application load and logo visibility.
-   This test ensures the landing page is accessible and 
-   the branding (logo) is correctly displayed.
+   Verifies staging application load and Login page visibility.
 ========================================================= */
 test.describe('App Load', () => {
 
@@ -14,18 +12,18 @@ test.describe('App Load', () => {
     'Application loads successfully',
     { tag: ['@smoke', '@public'] },
     async ({ page }) => {
-      const landingPage = new LandingPage(page);
+      const loginPage = new LoginPage(page);
 
-      // 1. Navigate to the MentalHappy public URL
-      Logger.step('Navigating to landing page');
-      await landingPage.navigate();
+      // 1. Navigate to the Staging/Base URL
+      Logger.step('Navigating to Login page');
+      await loginPage.openLoginPage();
 
-      // 2. Verify the "MentalHappy" logo is visible
-      Logger.step('Verifying "MentalHappy" logo visibility');
-      await landingPage.verifyLogoVisible();
+      // 2. Verify the "Login" heading is visible
+      Logger.step('Verifying "Login" text visibility');
+      await loginPage.verifyLoginPageVisible();
 
-      // 3. Confirm App Load message
-      Logger.success('App Load › Application loads successfully');
+      // 3. Confirm App Load success
+      Logger.success('App Load › Application loads successfully (Login page visible)');
     }
   );
 });

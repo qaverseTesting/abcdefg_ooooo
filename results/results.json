@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 4
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "reporter": [
@@ -22,7 +22,7 @@
       [
         "html",
         {
-          "open": "always"
+          "open": "never"
         }
       ],
       [
@@ -55,9 +55,9 @@
       {
         "outputDir": "D:/Git/mentalhappy-playwright/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 2,
         "metadata": {
-          "actualWorkers": 4
+          "actualWorkers": 1
         },
         "id": "prepare-auth",
         "name": "prepare-auth",
@@ -71,9 +71,9 @@
       {
         "outputDir": "D:/Git/mentalhappy-playwright/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 2,
         "metadata": {
-          "actualWorkers": 4
+          "actualWorkers": 1
         },
         "id": "post-login-core",
         "name": "post-login-core",
@@ -88,9 +88,9 @@
       {
         "outputDir": "D:/Git/mentalhappy-playwright/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 2,
         "metadata": {
-          "actualWorkers": 4
+          "actualWorkers": 1
         },
         "id": "create-group",
         "name": "create-group",
@@ -104,9 +104,9 @@
       {
         "outputDir": "D:/Git/mentalhappy-playwright/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 2,
         "metadata": {
-          "actualWorkers": 4
+          "actualWorkers": 1
         },
         "id": "group-monetization",
         "name": "group-monetization",
@@ -120,9 +120,9 @@
       {
         "outputDir": "D:/Git/mentalhappy-playwright/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 2,
         "metadata": {
-          "actualWorkers": 4
+          "actualWorkers": 1
         },
         "id": "create-session",
         "name": "create-session",
@@ -136,9 +136,9 @@
       {
         "outputDir": "D:/Git/mentalhappy-playwright/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 2,
         "metadata": {
-          "actualWorkers": 4
+          "actualWorkers": 1
         },
         "id": "before-login",
         "name": "before-login",
@@ -146,6 +146,7 @@
         "testIgnore": [],
         "testMatch": [
           "/login\\.spec\\.ts/",
+          "/registration.*\\.spec\\.ts/",
           "/tests\\/chat\\/.*\\.spec\\.ts/",
           "/tests\\/core\\/app-load\\.spec\\.ts/"
         ],
@@ -162,586 +163,6 @@
   },
   "suites": [
     {
-      "title": "setup\\auth.setup.ts",
-      "file": "setup/auth.setup.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "authenticate group host user",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "prepare-auth",
-              "projectName": "prepare-auth",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 31266,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "[CHAT WIDGET] HIDDEN | Test: authenticate group host user\n"
-                    },
-                    {
-                      "text": "[2026-01-29T18:01:16.930Z] [SUCCESS] Login successful\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-01-29T18:00:57.882Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "Allure Metadata (metadata)",
-                      "contentType": "application/vnd.allure.message+json",
-                      "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7InBhcmFtZXRlcnMiOlt7Im5hbWUiOiJQcm9qZWN0IiwidmFsdWUiOiJwcmVwYXJlLWF1dGgifV19fQ=="
-                    },
-                    {
-                      "name": "Allure Metadata (metadata)",
-                      "contentType": "application/vnd.allure.message+json",
-                      "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7InBhcmFtZXRlcnMiOlt7Im5hbWUiOiJCcm93c2VyIiwidmFsdWUiOiJjaHJvbWl1bSJ9XX19"
-                    },
-                    {
-                      "name": "Allure Metadata (metadata)",
-                      "contentType": "application/vnd.allure.message+json",
-                      "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7InBhcmFtZXRlcnMiOlt7Im5hbWUiOiJCYXNlVVJMIiwidmFsdWUiOiJodHRwczovL3N0YWdpbmcubWVudGFsaGFwcHkuY29tLyJ9XX19"
-                    },
-                    {
-                      "name": "Allure Metadata (metadata)",
-                      "contentType": "application/vnd.allure.message+json",
-                      "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7InBhcmFtZXRlcnMiOlt7Im5hbWUiOiJXb3JrZXIiLCJ2YWx1ZSI6IjAifV19fQ=="
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "e717b06d8d484d1cd946-e02ffa9761a5a5bee13e",
-          "file": "setup/auth.setup.ts",
-          "line": 12,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "dashboard\\group-listing.spec.ts",
-      "file": "dashboard/group-listing.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [],
-      "suites": [
-        {
-          "title": "Groups – Listing",
-          "file": "dashboard/group-listing.spec.ts",
-          "line": 9,
-          "column": 7,
-          "specs": [
-            {
-              "title": "Group listing loads with correct visibility and status",
-              "ok": true,
-              "tags": [
-                "smoke",
-                "regression"
-              ],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [
-                    {
-                      "type": "severity",
-                      "description": "critical"
-                    }
-                  ],
-                  "expectedStatus": "passed",
-                  "projectId": "post-login-core",
-                  "projectName": "post-login-core",
-                  "results": [
-                    {
-                      "workerIndex": 4,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 18045,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "[2026-01-29T18:01:40.769Z] [STEP] Opening My Groups page\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:01:40.771Z] [STEP] Navigating to My Groups\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:01:56.873Z] [STEP] Verifying group cards are visible\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:01:56.990Z] [SUCCESS] Group listing loaded successfully with 205 groups\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-01-29T18:01:39.459Z",
-                      "annotations": [
-                        {
-                          "type": "severity",
-                          "description": "critical"
-                        }
-                      ],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "7748b24550ddc1cd7659-615f4aab1a3f17d8b83c",
-              "file": "dashboard/group-listing.spec.ts",
-              "line": 11,
-              "column": 7
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "group\\create-group.spec.ts",
-      "file": "group/create-group.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [],
-      "suites": [
-        {
-          "title": "Group Creation",
-          "file": "group/create-group.spec.ts",
-          "line": 13,
-          "column": 6,
-          "specs": [
-            {
-              "title": "Group Host can create a group successfully",
-              "ok": true,
-              "tags": [
-                "smoke",
-                "regression"
-              ],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "create-group",
-                  "projectName": "create-group",
-                  "results": [
-                    {
-                      "workerIndex": 5,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 21572,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "[CHAT WIDGET] HIDDEN | Test: Group Host can create a group successfully\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:02:01.422Z] [INFO] Starting Group Creation test\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:02:05.938Z] [STEP] Clicking on Start a Group\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:02:12.914Z] [ASSERT] Create Group page is loaded\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:02:14.736Z] [STEP] Filling group details\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:02:15.746Z] [STEP] Selecting a random group tag\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:02:18.185Z] [STEP] Submitting group creation Preview\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:02:18.274Z] [STEP] Confirming group submission\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:02:21.336Z] [INFO] Saving group name: Automation_Group_20260129_233201\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:02:21.339Z] [STEP] Group name: Automation_Group_20260129_233201:- Group created successfully\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-01-29T18:01:59.974Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "Allure Metadata (metadata)",
-                          "contentType": "application/vnd.allure.message+json",
-                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7InBhcmFtZXRlcnMiOlt7Im5hbWUiOiJQcm9qZWN0IiwidmFsdWUiOiJjcmVhdGUtZ3JvdXAifV19fQ=="
-                        },
-                        {
-                          "name": "Allure Metadata (metadata)",
-                          "contentType": "application/vnd.allure.message+json",
-                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7InBhcmFtZXRlcnMiOlt7Im5hbWUiOiJCcm93c2VyIiwidmFsdWUiOiJ1bmtub3duIn1dfX0="
-                        },
-                        {
-                          "name": "Allure Metadata (metadata)",
-                          "contentType": "application/vnd.allure.message+json",
-                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7InBhcmFtZXRlcnMiOlt7Im5hbWUiOiJCYXNlVVJMIiwidmFsdWUiOiJodHRwczovL3N0YWdpbmcubWVudGFsaGFwcHkuY29tLyJ9XX19"
-                        },
-                        {
-                          "name": "Allure Metadata (metadata)",
-                          "contentType": "application/vnd.allure.message+json",
-                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7InBhcmFtZXRlcnMiOlt7Im5hbWUiOiJXb3JrZXIiLCJ2YWx1ZSI6IjUifV19fQ=="
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "1ce1d1f7be5c27a12a08-458c54739217b24da6d5",
-              "file": "group/create-group.spec.ts",
-              "line": 14,
-              "column": 7
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "group\\group-activation-payment.spec.ts",
-      "file": "group/group-activation-payment.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [],
-      "suites": [
-        {
-          "title": "Host Group Monetization Setup Flow",
-          "file": "group/group-activation-payment.spec.ts",
-          "line": 8,
-          "column": 15,
-          "specs": [
-            {
-              "title": "Host activates group by completing platform payment",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "group-monetization",
-                  "projectName": "group-monetization",
-                  "results": [
-                    {
-                      "workerIndex": 6,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 47841,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "[2026-01-29T18:02:24.519Z] [INFO] Launching shared browser session for Group Monetization Flow\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:02:25.494Z] [INFO] STEP 1: Host begins group activation via platform payment\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:02:25.496Z] [STEP] Navigating to inactive group for activation: Automation_Group_20260129_233201\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:02:25.497Z] [STEP] Navigating to My Groups\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:02:39.405Z] [STEP] Priority scan for group: Automation_Group_20260129_233201\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:02:52.476Z] [SUCCESS] Priority group found: Automation_Group_20260129_233201\n\n1 Member\n\nActivate your group\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:02:52.549Z] [SUCCESS] Priority group is inactive → opening\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:02:53.502Z] [SUCCESS] Activation / Payment page detected for priority group\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:02:53.503Z] [STEP] Redirected to payment page for group: Automation_Group_20260129_233201\n\n1 Member\n\nActivate your group\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:02:53.503Z] [STEP] Filling payment details\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:02:53.504Z] [STEP] Waiting for Stripe payment iframe\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:03:04.091Z] [SUCCESS] Stripe payment inputs are ready\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:03:04.091Z] [STEP] Entering Stripe test card details\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:03:07.002Z] [SUCCESS] Stripe payment details entered successfully\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:03:07.002Z] [STEP] Submitting platform activation payment\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:03:07.002Z] [STEP] Submitting payment\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:03:07.213Z] [SUCCESS] Payment submitted\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:03:13.324Z] [SUCCESS] STEP 1 COMPLETE: Group successfully activated via platform payment\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-01-29T18:02:24.013Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "bb26be5865f053e466d4-2a9a0cfa7a5d3b5d7a62",
-              "file": "group/group-activation-payment.spec.ts",
-              "line": 28,
-              "column": 7
-            },
-            {
-              "title": "Host configures group payment type for member access",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "group-monetization",
-                  "projectName": "group-monetization",
-                  "results": [
-                    {
-                      "workerIndex": 6,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 14162,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "[2026-01-29T18:03:13.465Z] [INFO] STEP 2: Host sets how members will pay to join the group\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:03:13.467Z] [STEP] Waiting for profile payment configuration page\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:03:13.468Z] [STEP] Waiting for Profile Payments page\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:03:25.454Z] [SUCCESS] Profile Payments page loaded successfully\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:03:25.454Z] [STEP] Selecting group payment type (Free / Subscription / Lifetime)\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:03:25.454Z] [STEP] Selecting Free payment type\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:03:25.539Z] [STEP] Waiting for Save Payment Settings button to enable\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:03:25.584Z] [STEP] Saving payment settings\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:03:27.583Z] [STEP] *************** Payment settings saved and Members Count section loaded **************\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:03:27.617Z] [SUCCESS] STEP 2 COMPLETE: Group membership payment type configured successfully\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:03:27.695Z] [INFO] Closing shared browser session\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-01-29T18:03:13.394Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "bb26be5865f053e466d4-0eaee588a51c89fe0925",
-              "file": "group/group-activation-payment.spec.ts",
-              "line": 62,
-              "column": 7
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "session\\create-session.spec.ts",
-      "file": "session/create-session.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [],
-      "suites": [
-        {
-          "title": "Create Session",
-          "file": "session/create-session.spec.ts",
-          "line": 11,
-          "column": 6,
-          "specs": [
-            {
-              "title": "Host creates a session successfully",
-              "ok": false,
-              "tags": [
-                "regression"
-              ],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "create-session",
-                  "projectName": "create-session",
-                  "results": [
-                    {
-                      "workerIndex": 7,
-                      "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 54553,
-                      "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('New Message')\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByText('New Message')\u001b[22m\n",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('New Message')\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByText('New Message')\u001b[22m\n\n    at D:\\Git\\mentalhappy-playwright\\tests\\session\\create-session.spec.ts:44:36",
-                        "location": {
-                          "file": "D:\\Git\\mentalhappy-playwright\\tests\\session\\create-session.spec.ts",
-                          "column": 36,
-                          "line": 44
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 42 |\u001b[39m\n \u001b[90m 43 |\u001b[39m       \u001b[36mconst\u001b[39m successMessage \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mgetByText(\u001b[32m'New Message'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 44 |\u001b[39m       \u001b[36mawait\u001b[39m expect(successMessage)\u001b[33m.\u001b[39mtoBeVisible({ timeout\u001b[33m:\u001b[39m \u001b[35m10\u001b[39m_000 })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 45 |\u001b[39m\n \u001b[90m 46 |\u001b[39m       \u001b[33mLogger\u001b[39m\u001b[33m.\u001b[39mstep(\u001b[32m`Session name: ${sessionTitle}:- Session created successfully`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 47 |\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "D:\\Git\\mentalhappy-playwright\\tests\\session\\create-session.spec.ts",
-                            "column": 36,
-                            "line": 44
-                          },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('New Message')\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByText('New Message')\u001b[22m\n\n\n\u001b[0m \u001b[90m 42 |\u001b[39m\n \u001b[90m 43 |\u001b[39m       \u001b[36mconst\u001b[39m successMessage \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mgetByText(\u001b[32m'New Message'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 44 |\u001b[39m       \u001b[36mawait\u001b[39m expect(successMessage)\u001b[33m.\u001b[39mtoBeVisible({ timeout\u001b[33m:\u001b[39m \u001b[35m10\u001b[39m_000 })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 45 |\u001b[39m\n \u001b[90m 46 |\u001b[39m       \u001b[33mLogger\u001b[39m\u001b[33m.\u001b[39mstep(\u001b[32m`Session name: ${sessionTitle}:- Session created successfully`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 47 |\u001b[39m\u001b[0m\n\u001b[2m    at D:\\Git\\mentalhappy-playwright\\tests\\session\\create-session.spec.ts:44:36\u001b[22m"
-                        }
-                      ],
-                      "stdout": [
-                        {
-                          "text": "[2026-01-29T18:03:31.743Z] [INFO] Starting Create Session test\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:03:35.919Z] [STEP] Searching for saved group for Create Session: Automation_Group_20260129_233201\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:03:35.920Z] [STEP] Navigating to My Groups\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:03:58.883Z] [SUCCESS] Saved group found: Automation_Group_20260129_233201\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:04:06.486Z] [STEP] Opening session creation from Chat Menu\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:04:06.521Z] [INFO] Closing announcement banner\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:04:07.446Z] [SUCCESS] Chat menu visible (id=menu-list-:rer:)\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:04:07.654Z] [STEP] Clicked Schedule a Session menu item\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:04:09.497Z] [SUCCESS] Create Session modal opened\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:04:09.498Z] [SUCCESS] Create Session modal opened for saved group\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:04:09.498Z] [SUCCESS] Create Session modal opened successfully\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:04:09.499Z] [STEP] Waiting for Create Session modal\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:04:09.544Z] [SUCCESS] Create Session modal visible\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:04:09.545Z] [STEP] Filling Create Session form\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:04:09.545Z] [STEP] Setting session date to next day\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:04:11.437Z] [INFO] Session date set to 30 January, 2026\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:04:12.743Z] [SUCCESS] Required fields filled\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:04:12.743Z] [STEP] Submitting session\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-01-29T18:03:30.509Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "D:\\Git\\mentalhappy-playwright\\test-results\\session-create-session-Cre-a1fe7-ates-a-session-successfully-create-session\\test-failed-1.png"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "D:\\Git\\mentalhappy-playwright\\test-results\\session-create-session-Cre-a1fe7-ates-a-session-successfully-create-session\\video.webm"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "D:\\Git\\mentalhappy-playwright\\test-results\\session-create-session-Cre-a1fe7-ates-a-session-successfully-create-session\\error-context.md"
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "D:\\Git\\mentalhappy-playwright\\test-results\\session-create-session-Cre-a1fe7-ates-a-session-successfully-create-session\\trace.zip"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "D:\\Git\\mentalhappy-playwright\\tests\\session\\create-session.spec.ts",
-                        "column": 36,
-                        "line": 44
-                      }
-                    }
-                  ],
-                  "status": "unexpected"
-                }
-              ],
-              "id": "3ccb75dba63c32c46689-3b0a9f0fcd8a153a7fa6",
-              "file": "session/create-session.spec.ts",
-              "line": 12,
-              "column": 7
-            }
-          ]
-        }
-      ]
-    },
-    {
       "title": "auth\\login.spec.ts",
       "file": "auth/login.spec.ts",
       "column": 0,
@@ -751,244 +172,315 @@
         {
           "title": "Login – Single User",
           "file": "auth/login.spec.ts",
-          "line": 12,
+          "line": 13,
           "column": 6,
-          "specs": [
+          "specs": [],
+          "suites": [
             {
-              "title": "Group Host user can login successfully",
-              "ok": true,
-              "tags": [
-                "auth",
-                "regression"
-              ],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [
-                    {
-                      "type": "severity",
-                      "description": "critical"
-                    }
-                  ],
-                  "expectedStatus": "passed",
-                  "projectId": "before-login",
-                  "projectName": "before-login",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 34160,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "[CHAT WIDGET] HIDDEN | Test: Group Host user can login successfully\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:01:01.233Z] [STEP] Logging in as Group Host\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:01:20.898Z] [SUCCESS] Login successful\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-01-29T18:00:57.912Z",
-                      "annotations": [
-                        {
-                          "type": "severity",
-                          "description": "critical"
-                        }
-                      ],
-                      "attachments": [
-                        {
-                          "name": "Allure Metadata (metadata)",
-                          "contentType": "application/vnd.allure.message+json",
-                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7InBhcmFtZXRlcnMiOlt7Im5hbWUiOiJQcm9qZWN0IiwidmFsdWUiOiJiZWZvcmUtbG9naW4ifV19fQ=="
-                        },
-                        {
-                          "name": "Allure Metadata (metadata)",
-                          "contentType": "application/vnd.allure.message+json",
-                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7InBhcmFtZXRlcnMiOlt7Im5hbWUiOiJCcm93c2VyIiwidmFsdWUiOiJ1bmtub3duIn1dfX0="
-                        },
-                        {
-                          "name": "Allure Metadata (metadata)",
-                          "contentType": "application/vnd.allure.message+json",
-                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7InBhcmFtZXRlcnMiOlt7Im5hbWUiOiJCYXNlVVJMIiwidmFsdWUiOiJodHRwczovL3N0YWdpbmcubWVudGFsaGFwcHkuY29tLyJ9XX19"
-                        },
-                        {
-                          "name": "Allure Metadata (metadata)",
-                          "contentType": "application/vnd.allure.message+json",
-                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7InBhcmFtZXRlcnMiOlt7Im5hbWUiOiJXb3JrZXIiLCJ2YWx1ZSI6IjEifV19fQ=="
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "231ca1f0f4db3e4958c3-8aa2db16c7b7c1abea0a",
+              "title": "Auth - Invalid Login",
               "file": "auth/login.spec.ts",
-              "line": 14,
-              "column": 7
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "chat\\chat-widget.spec.ts",
-      "file": "chat/chat-widget.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "@chat Chat widget is accessible to user",
-          "ok": true,
-          "tags": [
-            "chat",
-            "chat"
-          ],
-          "tests": [
-            {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "before-login",
-              "projectName": "before-login",
-              "results": [
+              "line": 32,
+              "column": 8,
+              "specs": [
                 {
-                  "workerIndex": 2,
-                  "parallelIndex": 2,
-                  "status": "passed",
-                  "duration": 18013,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "[CHAT WIDGET] ALLOWED | Test: @chat Chat widget is accessible to user\n"
-                    }
+                  "title": "Invalid Login Error: Verify error message appears with incorrect credentials",
+                  "ok": false,
+                  "tags": [
+                    "auth",
+                    "security",
+                    "negative"
                   ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-01-29T18:00:57.908Z",
-                  "annotations": [],
-                  "attachments": [
+                  "tests": [
                     {
-                      "name": "Allure Metadata (metadata)",
-                      "contentType": "application/vnd.allure.message+json",
-                      "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7InBhcmFtZXRlcnMiOlt7Im5hbWUiOiJQcm9qZWN0IiwidmFsdWUiOiJiZWZvcmUtbG9naW4ifV19fQ=="
-                    },
-                    {
-                      "name": "Allure Metadata (metadata)",
-                      "contentType": "application/vnd.allure.message+json",
-                      "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7InBhcmFtZXRlcnMiOlt7Im5hbWUiOiJCcm93c2VyIiwidmFsdWUiOiJ1bmtub3duIn1dfX0="
-                    },
-                    {
-                      "name": "Allure Metadata (metadata)",
-                      "contentType": "application/vnd.allure.message+json",
-                      "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7InBhcmFtZXRlcnMiOlt7Im5hbWUiOiJCYXNlVVJMIiwidmFsdWUiOiJodHRwczovL3N0YWdpbmcubWVudGFsaGFwcHkuY29tLyJ9XX19"
-                    },
-                    {
-                      "name": "Allure Metadata (metadata)",
-                      "contentType": "application/vnd.allure.message+json",
-                      "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7InBhcmFtZXRlcnMiOlt7Im5hbWUiOiJXb3JrZXIiLCJ2YWx1ZSI6IjIifV19fQ=="
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "8f773a9f6f2e32745229-9127ef004e2cce423dcb",
-          "file": "chat/chat-widget.spec.ts",
-          "line": 4,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "core\\app-load.spec.ts",
-      "file": "core/app-load.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [],
-      "suites": [
-        {
-          "title": "App Load",
-          "file": "core/app-load.spec.ts",
-          "line": 11,
-          "column": 6,
-          "specs": [
-            {
-              "title": "Application loads successfully",
-              "ok": true,
-              "tags": [
-                "smoke",
-                "public"
-              ],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "before-login",
-                  "projectName": "before-login",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 7483,
-                      "errors": [],
-                      "stdout": [
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "before-login",
+                      "projectName": "before-login",
+                      "results": [
                         {
-                          "text": "[CHAT WIDGET] HIDDEN | Test: Application loads successfully\n"
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 14918,
+                          "error": {
+                            "message": "Error: Invalid login error message should be visible\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('The username/email or password you\\'ve entered is incorrect.', { exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Invalid login error message should be visible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('The username/email or password you\\'ve entered is incorrect.', { exact: true })\u001b[22m\n",
+                            "stack": "Error: Invalid login error message should be visible\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('The username/email or password you\\'ve entered is incorrect.', { exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Invalid login error message should be visible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('The username/email or password you\\'ve entered is incorrect.', { exact: true })\u001b[22m\n\n    at LoginPage.expectVisible (D:\\Git\\mentalhappy-playwright\\src\\pages\\base\\BasePage.ts:148:36)\n    at LoginPage.verifyInvalidLoginError (D:\\Git\\mentalhappy-playwright\\src\\pages\\auth\\LoginPage.ts:31:16)\n    at D:\\Git\\mentalhappy-playwright\\tests\\auth\\login.spec.ts:52:29",
+                            "location": {
+                              "file": "D:\\Git\\mentalhappy-playwright\\src\\pages\\base\\BasePage.ts",
+                              "column": 36,
+                              "line": 148
+                            },
+                            "snippet": "\u001b[90m   at \u001b[39m..\\src\\pages\\base\\BasePage.ts:148\n\n\u001b[0m \u001b[90m 146 |\u001b[39m \u001b[90m   */\u001b[39m\n \u001b[90m 147 |\u001b[39m   \u001b[36masync\u001b[39m expectVisible(locator\u001b[33m:\u001b[39m \u001b[33mLocator\u001b[39m\u001b[33m,\u001b[39m message\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m string) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 148 |\u001b[39m     \u001b[36mawait\u001b[39m expect(locator\u001b[33m,\u001b[39m message)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 149 |\u001b[39m   }\n \u001b[90m 150 |\u001b[39m }\n \u001b[90m 151 |\u001b[39m\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "D:\\Git\\mentalhappy-playwright\\src\\pages\\base\\BasePage.ts",
+                                "column": 36,
+                                "line": 148
+                              },
+                              "message": "Error: Invalid login error message should be visible\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('The username/email or password you\\'ve entered is incorrect.', { exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Invalid login error message should be visible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('The username/email or password you\\'ve entered is incorrect.', { exact: true })\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\src\\pages\\base\\BasePage.ts:148\n\n\u001b[0m \u001b[90m 146 |\u001b[39m \u001b[90m   */\u001b[39m\n \u001b[90m 147 |\u001b[39m   \u001b[36masync\u001b[39m expectVisible(locator\u001b[33m:\u001b[39m \u001b[33mLocator\u001b[39m\u001b[33m,\u001b[39m message\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m string) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 148 |\u001b[39m     \u001b[36mawait\u001b[39m expect(locator\u001b[33m,\u001b[39m message)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 149 |\u001b[39m   }\n \u001b[90m 150 |\u001b[39m }\n \u001b[90m 151 |\u001b[39m\u001b[0m\n\u001b[2m    at LoginPage.expectVisible (D:\\Git\\mentalhappy-playwright\\src\\pages\\base\\BasePage.ts:148:36)\u001b[22m\n\u001b[2m    at LoginPage.verifyInvalidLoginError (D:\\Git\\mentalhappy-playwright\\src\\pages\\auth\\LoginPage.ts:31:16)\u001b[22m\n\u001b[2m    at D:\\Git\\mentalhappy-playwright\\tests\\auth\\login.spec.ts:52:29\u001b[22m"
+                            }
+                          ],
+                          "stdout": [
+                            {
+                              "text": "[CHAT WIDGET] HIDDEN | Test: Invalid Login Error: Verify error message appears with incorrect credentials\n"
+                            },
+                            {
+                              "text": "[2026-01-30T10:46:41.401Z] [STEP] Navigating to Login page\n"
+                            },
+                            {
+                              "text": "[2026-01-30T10:46:48.815Z] [STEP] Attempting login with invalid credentials: user_lsvoZP@testmail.com\n"
+                            },
+                            {
+                              "text": "[2026-01-30T10:46:50.329Z] [STEP] Verifying error message visibility\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-30T10:46:40.916Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "Allure Metadata (metadata)",
+                              "contentType": "application/vnd.allure.message+json",
+                              "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7InBhcmFtZXRlcnMiOlt7Im5hbWUiOiJQcm9qZWN0IiwidmFsdWUiOiJiZWZvcmUtbG9naW4ifV19fQ=="
+                            },
+                            {
+                              "name": "Allure Metadata (metadata)",
+                              "contentType": "application/vnd.allure.message+json",
+                              "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7InBhcmFtZXRlcnMiOlt7Im5hbWUiOiJCcm93c2VyIiwidmFsdWUiOiJ1bmtub3duIn1dfX0="
+                            },
+                            {
+                              "name": "Allure Metadata (metadata)",
+                              "contentType": "application/vnd.allure.message+json",
+                              "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7InBhcmFtZXRlcnMiOlt7Im5hbWUiOiJCYXNlVVJMIiwidmFsdWUiOiJodHRwczovL3N0YWdpbmcubWVudGFsaGFwcHkuY29tLyJ9XX19"
+                            },
+                            {
+                              "name": "Allure Metadata (metadata)",
+                              "contentType": "application/vnd.allure.message+json",
+                              "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7InBhcmFtZXRlcnMiOlt7Im5hbWUiOiJXb3JrZXIiLCJ2YWx1ZSI6IjAifV19fQ=="
+                            },
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "D:\\Git\\mentalhappy-playwright\\test-results\\auth-login-Login-–-Single--3aba7--with-incorrect-credentials-before-login\\test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "D:\\Git\\mentalhappy-playwright\\test-results\\auth-login-Login-–-Single--3aba7--with-incorrect-credentials-before-login\\video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "D:\\Git\\mentalhappy-playwright\\test-results\\auth-login-Login-–-Single--3aba7--with-incorrect-credentials-before-login\\error-context.md"
+                            },
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "D:\\Git\\mentalhappy-playwright\\test-results\\auth-login-Login-–-Single--3aba7--with-incorrect-credentials-before-login\\trace.zip"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "D:\\Git\\mentalhappy-playwright\\src\\pages\\base\\BasePage.ts",
+                            "column": 36,
+                            "line": 148
+                          }
                         },
                         {
-                          "text": "[2026-01-29T18:01:01.180Z] [STEP] Navigating to landing page\n"
+                          "workerIndex": 1,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 12686,
+                          "error": {
+                            "message": "Error: Invalid login error message should be visible\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('The username/email or password you\\'ve entered is incorrect.', { exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Invalid login error message should be visible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('The username/email or password you\\'ve entered is incorrect.', { exact: true })\u001b[22m\n",
+                            "stack": "Error: Invalid login error message should be visible\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('The username/email or password you\\'ve entered is incorrect.', { exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Invalid login error message should be visible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('The username/email or password you\\'ve entered is incorrect.', { exact: true })\u001b[22m\n\n    at LoginPage.expectVisible (D:\\Git\\mentalhappy-playwright\\src\\pages\\base\\BasePage.ts:148:36)\n    at LoginPage.verifyInvalidLoginError (D:\\Git\\mentalhappy-playwright\\src\\pages\\auth\\LoginPage.ts:31:16)\n    at D:\\Git\\mentalhappy-playwright\\tests\\auth\\login.spec.ts:52:29",
+                            "location": {
+                              "file": "D:\\Git\\mentalhappy-playwright\\src\\pages\\base\\BasePage.ts",
+                              "column": 36,
+                              "line": 148
+                            },
+                            "snippet": "\u001b[90m   at \u001b[39m..\\src\\pages\\base\\BasePage.ts:148\n\n\u001b[0m \u001b[90m 146 |\u001b[39m \u001b[90m   */\u001b[39m\n \u001b[90m 147 |\u001b[39m   \u001b[36masync\u001b[39m expectVisible(locator\u001b[33m:\u001b[39m \u001b[33mLocator\u001b[39m\u001b[33m,\u001b[39m message\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m string) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 148 |\u001b[39m     \u001b[36mawait\u001b[39m expect(locator\u001b[33m,\u001b[39m message)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 149 |\u001b[39m   }\n \u001b[90m 150 |\u001b[39m }\n \u001b[90m 151 |\u001b[39m\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "D:\\Git\\mentalhappy-playwright\\src\\pages\\base\\BasePage.ts",
+                                "column": 36,
+                                "line": 148
+                              },
+                              "message": "Error: Invalid login error message should be visible\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('The username/email or password you\\'ve entered is incorrect.', { exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Invalid login error message should be visible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('The username/email or password you\\'ve entered is incorrect.', { exact: true })\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\src\\pages\\base\\BasePage.ts:148\n\n\u001b[0m \u001b[90m 146 |\u001b[39m \u001b[90m   */\u001b[39m\n \u001b[90m 147 |\u001b[39m   \u001b[36masync\u001b[39m expectVisible(locator\u001b[33m:\u001b[39m \u001b[33mLocator\u001b[39m\u001b[33m,\u001b[39m message\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m string) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 148 |\u001b[39m     \u001b[36mawait\u001b[39m expect(locator\u001b[33m,\u001b[39m message)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 149 |\u001b[39m   }\n \u001b[90m 150 |\u001b[39m }\n \u001b[90m 151 |\u001b[39m\u001b[0m\n\u001b[2m    at LoginPage.expectVisible (D:\\Git\\mentalhappy-playwright\\src\\pages\\base\\BasePage.ts:148:36)\u001b[22m\n\u001b[2m    at LoginPage.verifyInvalidLoginError (D:\\Git\\mentalhappy-playwright\\src\\pages\\auth\\LoginPage.ts:31:16)\u001b[22m\n\u001b[2m    at D:\\Git\\mentalhappy-playwright\\tests\\auth\\login.spec.ts:52:29\u001b[22m"
+                            }
+                          ],
+                          "stdout": [
+                            {
+                              "text": "[CHAT WIDGET] HIDDEN | Test: Invalid Login Error: Verify error message appears with incorrect credentials\n"
+                            },
+                            {
+                              "text": "[2026-01-30T10:46:58.111Z] [STEP] Navigating to Login page\n"
+                            },
+                            {
+                              "text": "[2026-01-30T10:47:03.373Z] [STEP] Attempting login with invalid credentials: user_MuHkmY@testmail.com\n"
+                            },
+                            {
+                              "text": "[2026-01-30T10:47:04.855Z] [STEP] Verifying error message visibility\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 1,
+                          "startTime": "2026-01-30T10:46:57.736Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "Allure Metadata (metadata)",
+                              "contentType": "application/vnd.allure.message+json",
+                              "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7InBhcmFtZXRlcnMiOlt7Im5hbWUiOiJQcm9qZWN0IiwidmFsdWUiOiJiZWZvcmUtbG9naW4ifV19fQ=="
+                            },
+                            {
+                              "name": "Allure Metadata (metadata)",
+                              "contentType": "application/vnd.allure.message+json",
+                              "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7InBhcmFtZXRlcnMiOlt7Im5hbWUiOiJCcm93c2VyIiwidmFsdWUiOiJ1bmtub3duIn1dfX0="
+                            },
+                            {
+                              "name": "Allure Metadata (metadata)",
+                              "contentType": "application/vnd.allure.message+json",
+                              "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7InBhcmFtZXRlcnMiOlt7Im5hbWUiOiJCYXNlVVJMIiwidmFsdWUiOiJodHRwczovL3N0YWdpbmcubWVudGFsaGFwcHkuY29tLyJ9XX19"
+                            },
+                            {
+                              "name": "Allure Metadata (metadata)",
+                              "contentType": "application/vnd.allure.message+json",
+                              "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7InBhcmFtZXRlcnMiOlt7Im5hbWUiOiJXb3JrZXIiLCJ2YWx1ZSI6IjEifV19fQ=="
+                            },
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "D:\\Git\\mentalhappy-playwright\\test-results\\auth-login-Login-–-Single--3aba7--with-incorrect-credentials-before-login-retry1\\test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "D:\\Git\\mentalhappy-playwright\\test-results\\auth-login-Login-–-Single--3aba7--with-incorrect-credentials-before-login-retry1\\video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "D:\\Git\\mentalhappy-playwright\\test-results\\auth-login-Login-–-Single--3aba7--with-incorrect-credentials-before-login-retry1\\error-context.md"
+                            },
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "D:\\Git\\mentalhappy-playwright\\test-results\\auth-login-Login-–-Single--3aba7--with-incorrect-credentials-before-login-retry1\\trace.zip"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "D:\\Git\\mentalhappy-playwright\\src\\pages\\base\\BasePage.ts",
+                            "column": 36,
+                            "line": 148
+                          }
                         },
                         {
-                          "text": "[2026-01-29T18:01:04.460Z] [STEP] Verifying \"MentalHappy\" logo visibility\n"
-                        },
-                        {
-                          "text": "[2026-01-29T18:01:04.781Z] [SUCCESS] App Load › Application loads successfully\n"
+                          "workerIndex": 2,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 12632,
+                          "error": {
+                            "message": "Error: Invalid login error message should be visible\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('The username/email or password you\\'ve entered is incorrect.', { exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Invalid login error message should be visible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('The username/email or password you\\'ve entered is incorrect.', { exact: true })\u001b[22m\n\u001b[2m    - waiting for\" https://staging.mentalhappy.com/login?returnUrl=https%3A%2F%2Fstaging.mentalhappy.com%2Fgroups&auth_error=1\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"https://staging.mentalhappy.com/login?returnUrl=https%3A%2F%2Fstaging.mentalhappy.com%2Fgroups&auth_error=1\"\u001b[22m\n",
+                            "stack": "Error: Invalid login error message should be visible\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('The username/email or password you\\'ve entered is incorrect.', { exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Invalid login error message should be visible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('The username/email or password you\\'ve entered is incorrect.', { exact: true })\u001b[22m\n\u001b[2m    - waiting for\" https://staging.mentalhappy.com/login?returnUrl=https%3A%2F%2Fstaging.mentalhappy.com%2Fgroups&auth_error=1\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"https://staging.mentalhappy.com/login?returnUrl=https%3A%2F%2Fstaging.mentalhappy.com%2Fgroups&auth_error=1\"\u001b[22m\n\n    at LoginPage.expectVisible (D:\\Git\\mentalhappy-playwright\\src\\pages\\base\\BasePage.ts:148:36)\n    at LoginPage.verifyInvalidLoginError (D:\\Git\\mentalhappy-playwright\\src\\pages\\auth\\LoginPage.ts:31:16)\n    at D:\\Git\\mentalhappy-playwright\\tests\\auth\\login.spec.ts:52:29",
+                            "location": {
+                              "file": "D:\\Git\\mentalhappy-playwright\\src\\pages\\base\\BasePage.ts",
+                              "column": 36,
+                              "line": 148
+                            },
+                            "snippet": "\u001b[90m   at \u001b[39m..\\src\\pages\\base\\BasePage.ts:148\n\n\u001b[0m \u001b[90m 146 |\u001b[39m \u001b[90m   */\u001b[39m\n \u001b[90m 147 |\u001b[39m   \u001b[36masync\u001b[39m expectVisible(locator\u001b[33m:\u001b[39m \u001b[33mLocator\u001b[39m\u001b[33m,\u001b[39m message\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m string) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 148 |\u001b[39m     \u001b[36mawait\u001b[39m expect(locator\u001b[33m,\u001b[39m message)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 149 |\u001b[39m   }\n \u001b[90m 150 |\u001b[39m }\n \u001b[90m 151 |\u001b[39m\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "D:\\Git\\mentalhappy-playwright\\src\\pages\\base\\BasePage.ts",
+                                "column": 36,
+                                "line": 148
+                              },
+                              "message": "Error: Invalid login error message should be visible\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('The username/email or password you\\'ve entered is incorrect.', { exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Invalid login error message should be visible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('The username/email or password you\\'ve entered is incorrect.', { exact: true })\u001b[22m\n\u001b[2m    - waiting for\" https://staging.mentalhappy.com/login?returnUrl=https%3A%2F%2Fstaging.mentalhappy.com%2Fgroups&auth_error=1\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"https://staging.mentalhappy.com/login?returnUrl=https%3A%2F%2Fstaging.mentalhappy.com%2Fgroups&auth_error=1\"\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\src\\pages\\base\\BasePage.ts:148\n\n\u001b[0m \u001b[90m 146 |\u001b[39m \u001b[90m   */\u001b[39m\n \u001b[90m 147 |\u001b[39m   \u001b[36masync\u001b[39m expectVisible(locator\u001b[33m:\u001b[39m \u001b[33mLocator\u001b[39m\u001b[33m,\u001b[39m message\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m string) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 148 |\u001b[39m     \u001b[36mawait\u001b[39m expect(locator\u001b[33m,\u001b[39m message)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 149 |\u001b[39m   }\n \u001b[90m 150 |\u001b[39m }\n \u001b[90m 151 |\u001b[39m\u001b[0m\n\u001b[2m    at LoginPage.expectVisible (D:\\Git\\mentalhappy-playwright\\src\\pages\\base\\BasePage.ts:148:36)\u001b[22m\n\u001b[2m    at LoginPage.verifyInvalidLoginError (D:\\Git\\mentalhappy-playwright\\src\\pages\\auth\\LoginPage.ts:31:16)\u001b[22m\n\u001b[2m    at D:\\Git\\mentalhappy-playwright\\tests\\auth\\login.spec.ts:52:29\u001b[22m"
+                            }
+                          ],
+                          "stdout": [
+                            {
+                              "text": "[CHAT WIDGET] HIDDEN | Test: Invalid Login Error: Verify error message appears with incorrect credentials\n"
+                            },
+                            {
+                              "text": "[2026-01-30T10:47:12.815Z] [STEP] Navigating to Login page\n"
+                            },
+                            {
+                              "text": "[2026-01-30T10:47:18.037Z] [STEP] Attempting login with invalid credentials: user_GHnalm@testmail.com\n"
+                            },
+                            {
+                              "text": "[2026-01-30T10:47:19.594Z] [STEP] Verifying error message visibility\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 2,
+                          "startTime": "2026-01-30T10:47:12.419Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "Allure Metadata (metadata)",
+                              "contentType": "application/vnd.allure.message+json",
+                              "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7InBhcmFtZXRlcnMiOlt7Im5hbWUiOiJQcm9qZWN0IiwidmFsdWUiOiJiZWZvcmUtbG9naW4ifV19fQ=="
+                            },
+                            {
+                              "name": "Allure Metadata (metadata)",
+                              "contentType": "application/vnd.allure.message+json",
+                              "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7InBhcmFtZXRlcnMiOlt7Im5hbWUiOiJCcm93c2VyIiwidmFsdWUiOiJ1bmtub3duIn1dfX0="
+                            },
+                            {
+                              "name": "Allure Metadata (metadata)",
+                              "contentType": "application/vnd.allure.message+json",
+                              "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7InBhcmFtZXRlcnMiOlt7Im5hbWUiOiJCYXNlVVJMIiwidmFsdWUiOiJodHRwczovL3N0YWdpbmcubWVudGFsaGFwcHkuY29tLyJ9XX19"
+                            },
+                            {
+                              "name": "Allure Metadata (metadata)",
+                              "contentType": "application/vnd.allure.message+json",
+                              "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7InBhcmFtZXRlcnMiOlt7Im5hbWUiOiJXb3JrZXIiLCJ2YWx1ZSI6IjIifV19fQ=="
+                            },
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "D:\\Git\\mentalhappy-playwright\\test-results\\auth-login-Login-–-Single--3aba7--with-incorrect-credentials-before-login-retry2\\test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "D:\\Git\\mentalhappy-playwright\\test-results\\auth-login-Login-–-Single--3aba7--with-incorrect-credentials-before-login-retry2\\video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "D:\\Git\\mentalhappy-playwright\\test-results\\auth-login-Login-–-Single--3aba7--with-incorrect-credentials-before-login-retry2\\error-context.md"
+                            },
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "D:\\Git\\mentalhappy-playwright\\test-results\\auth-login-Login-–-Single--3aba7--with-incorrect-credentials-before-login-retry2\\trace.zip"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "D:\\Git\\mentalhappy-playwright\\src\\pages\\base\\BasePage.ts",
+                            "column": 36,
+                            "line": 148
+                          }
                         }
                       ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-01-29T18:00:57.951Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "Allure Metadata (metadata)",
-                          "contentType": "application/vnd.allure.message+json",
-                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7InBhcmFtZXRlcnMiOlt7Im5hbWUiOiJQcm9qZWN0IiwidmFsdWUiOiJiZWZvcmUtbG9naW4ifV19fQ=="
-                        },
-                        {
-                          "name": "Allure Metadata (metadata)",
-                          "contentType": "application/vnd.allure.message+json",
-                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7InBhcmFtZXRlcnMiOlt7Im5hbWUiOiJCcm93c2VyIiwidmFsdWUiOiJ1bmtub3duIn1dfX0="
-                        },
-                        {
-                          "name": "Allure Metadata (metadata)",
-                          "contentType": "application/vnd.allure.message+json",
-                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7InBhcmFtZXRlcnMiOlt7Im5hbWUiOiJCYXNlVVJMIiwidmFsdWUiOiJodHRwczovL3N0YWdpbmcubWVudGFsaGFwcHkuY29tLyJ9XX19"
-                        },
-                        {
-                          "name": "Allure Metadata (metadata)",
-                          "contentType": "application/vnd.allure.message+json",
-                          "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7InBhcmFtZXRlcnMiOlt7Im5hbWUiOiJXb3JrZXIiLCJ2YWx1ZSI6IjMifV19fQ=="
-                        }
-                      ]
+                      "status": "unexpected"
                     }
                   ],
-                  "status": "expected"
+                  "id": "231ca1f0f4db3e4958c3-0a2dfd3290b3088140e4",
+                  "file": "auth/login.spec.ts",
+                  "line": 33,
+                  "column": 9
                 }
-              ],
-              "id": "ed6411a7b521b7d47a26-dd15df2b951ddba01056",
-              "file": "core/app-load.spec.ts",
-              "line": 13,
-              "column": 7
+              ]
             }
           ]
         }
@@ -997,9 +489,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-29T18:00:55.349Z",
-    "duration": 211938.247,
-    "expected": 8,
+    "startTime": "2026-01-30T10:46:39.456Z",
+    "duration": 46189.490999999995,
+    "expected": 0,
     "skipped": 0,
     "unexpected": 1,
     "flaky": 0

@@ -12,7 +12,7 @@ export class DataGenerator {
      Basic Helpers
   ---------------------------- */
 
-    /** Returns a random index from 0 to max-1 */
+  /** Returns a random index from 0 to max-1 */
   static randomIndex(max: number): number {
     if (max <= 0) {
       throw new Error('randomIndex max must be greater than 0');
@@ -33,45 +33,62 @@ export class DataGenerator {
       .substring(2, 2 + length);
   }
 
+  private static randomLetters(length = 6): string {
+    const letters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let result = '';
+    for (let i = 0; i < length; i++) {
+      result += letters.charAt(Math.floor(Math.random() * letters.length));
+    }
+    return result;
+  }
+
   /* ---------------------------
      Names & Titles
   ---------------------------- */
 
   static groupName(prefix = 'Automation_Group'): string {
-  const now = new Date();
+    const now = new Date();
 
-  const pad = (n: number) => n.toString().padStart(2, '0');
+    const pad = (n: number) => n.toString().padStart(2, '0');
 
-  const safeDateTime =
-    now.getFullYear().toString() +
-    pad(now.getMonth() + 1) +
-    pad(now.getDate()) + '_' +
-    pad(now.getHours()) +
-    pad(now.getMinutes()) +
-    pad(now.getSeconds());
+    const safeDateTime =
+      now.getFullYear().toString() +
+      pad(now.getMonth() + 1) +
+      pad(now.getDate()) + '_' +
+      pad(now.getHours()) +
+      pad(now.getMinutes()) +
+      pad(now.getSeconds());
 
-  return `${prefix}_${safeDateTime}`;
-}
+    return `${prefix}_${safeDateTime}`;
+  }
 
-static SessionName(prefix = 'Automation_Session'): string {
-  const now = new Date();
+  static SessionName(prefix = 'Automation_Session'): string {
+    const now = new Date();
 
-  const pad = (n: number) => n.toString().padStart(2, '0');
+    const pad = (n: number) => n.toString().padStart(2, '0');
 
-  const safeDateTime =
-    now.getFullYear().toString() +
-    pad(now.getMonth() + 1) +
-    pad(now.getDate()) + '_' +
-    pad(now.getHours()) +
-    pad(now.getMinutes()) +
-    pad(now.getSeconds());
+    const safeDateTime =
+      now.getFullYear().toString() +
+      pad(now.getMonth() + 1) +
+      pad(now.getDate()) + '_' +
+      pad(now.getHours()) +
+      pad(now.getMinutes()) +
+      pad(now.getSeconds());
 
-  return `${prefix}_${safeDateTime}`;
-}
+    return `${prefix}_${safeDateTime}`;
+  }
 
 
   static userName(prefix = 'User'): string {
     return `${prefix}_${this.randomString(5)}`;
+  }
+
+  static firstName(): string {
+    return `First${this.randomLetters(5)}`;
+  }
+
+  static lastName(): string {
+    return `Last${this.randomLetters(5)}`;
   }
 
   static title(prefix = 'Title'): string {
@@ -107,7 +124,7 @@ static SessionName(prefix = 'Automation_Session'): string {
   ---------------------------- */
 
   static email(domain = 'testmail.com'): string {
-    return `user_${this.randomString(6)}@${domain}`;
+    return `user_${this.randomLetters(6)}@${domain}`;
   }
 
   /* ---------------------------
@@ -132,7 +149,7 @@ static SessionName(prefix = 'Automation_Session'): string {
     return `${prefix}_${Date.now()}_${this.randomString(4)}`;
   }
 
-   static randomStartTime(): string {
+  static randomStartTime(): string {
     return ['10:00 AM', '11:00 AM', '12:00 PM'][this.randomIndex(3)];
   }
 

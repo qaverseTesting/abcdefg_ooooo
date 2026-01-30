@@ -119,26 +119,20 @@ export abstract class BasePage {
    * Reliable input method for enterprise apps.
    * Handles:
    * - Clearing existing text
-   * - Slow typing to avoid missed keystrokes
+   * - Typing text
    * - Value verification
    *
    * @param locator - Input field
    * @param value - Text to enter
    */
   async stableFill(locator: Locator, value: string) {
-    await locator.waitFor({ state: 'attached' });
+    await locator.waitFor({ state: 'visible' });
 
-    // Focus the field
-    await locator.click();
+    // Clear the field first
+    await locator.clear();
 
-    // Select all existing text
-    await locator.press(process.platform === 'darwin' ? 'Meta+A' : 'Control+A');
-
-    // Delete previous value
-    await locator.press('Backspace');
-
-    // Type text slowly for stability
-    await locator.pressSequentially(value, { delay: 80 });
+    // Fill the value
+    await locator.fill(value);
 
     // Verify value was set correctly
     await expect(locator).toHaveValue(value, { timeout: 5000 });
@@ -151,6 +145,7 @@ export abstract class BasePage {
    * @param message - Optional custom error message
    */
   async expectVisible(locator: Locator, message?: string) {
+    await locator.waitFor({ state: 'visible' });
     await expect(locator, message).toBeVisible();
   }
 }

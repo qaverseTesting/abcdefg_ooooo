@@ -1,199 +1,188 @@
-<testsuites id="" name="" tests="9" failures="1" skipped="0" errors="0" time="211.938247">
-<testsuite name="setup\auth.setup.ts" timestamp="2026-01-29T18:00:55.493Z" hostname="prepare-auth" tests="1" failures="0" skipped="0" time="31.266" errors="0">
-<testcase name="authenticate group host user" classname="setup\auth.setup.ts" time="31.266">
-<system-out>
-<![CDATA[[CHAT WIDGET] HIDDEN | Test: authenticate group host user
-[2026-01-29T18:01:16.930Z] [SUCCESS] Login successful
-]]>
-</system-out>
-</testcase>
-</testsuite>
-<testsuite name="dashboard\group-listing.spec.ts" timestamp="2026-01-29T18:00:55.493Z" hostname="post-login-core" tests="1" failures="0" skipped="0" time="18.045" errors="0">
-<testcase name="Groups – Listing › Group listing loads with correct visibility and status" classname="dashboard\group-listing.spec.ts" time="18.045">
-<properties>
-<property name="severity" value="critical">
-</property>
-</properties>
-<system-out>
-<![CDATA[[2026-01-29T18:01:40.769Z] [STEP] Opening My Groups page
-[2026-01-29T18:01:40.771Z] [STEP] Navigating to My Groups
-[2026-01-29T18:01:56.873Z] [STEP] Verifying group cards are visible
-[2026-01-29T18:01:56.990Z] [SUCCESS] Group listing loaded successfully with 205 groups
-]]>
-</system-out>
-</testcase>
-</testsuite>
-<testsuite name="group\create-group.spec.ts" timestamp="2026-01-29T18:00:55.493Z" hostname="create-group" tests="1" failures="0" skipped="0" time="21.572" errors="0">
-<testcase name="Group Creation › Group Host can create a group successfully" classname="group\create-group.spec.ts" time="21.572">
-<system-out>
-<![CDATA[[CHAT WIDGET] HIDDEN | Test: Group Host can create a group successfully
-[2026-01-29T18:02:01.422Z] [INFO] Starting Group Creation test
-[2026-01-29T18:02:05.938Z] [STEP] Clicking on Start a Group
-[2026-01-29T18:02:12.914Z] [ASSERT] Create Group page is loaded
-[2026-01-29T18:02:14.736Z] [STEP] Filling group details
-[2026-01-29T18:02:15.746Z] [STEP] Selecting a random group tag
-[2026-01-29T18:02:18.185Z] [STEP] Submitting group creation Preview
-[2026-01-29T18:02:18.274Z] [STEP] Confirming group submission
-[2026-01-29T18:02:21.336Z] [INFO] Saving group name: Automation_Group_20260129_233201
-[2026-01-29T18:02:21.339Z] [STEP] Group name: Automation_Group_20260129_233201:- Group created successfully
-]]>
-</system-out>
-</testcase>
-</testsuite>
-<testsuite name="group\group-activation-payment.spec.ts" timestamp="2026-01-29T18:00:55.493Z" hostname="group-monetization" tests="2" failures="0" skipped="0" time="62.003" errors="0">
-<testcase name="Host Group Monetization Setup Flow › Host activates group by completing platform payment" classname="group\group-activation-payment.spec.ts" time="47.841">
-<system-out>
-<![CDATA[[2026-01-29T18:02:24.519Z] [INFO] Launching shared browser session for Group Monetization Flow
-[2026-01-29T18:02:25.494Z] [INFO] STEP 1: Host begins group activation via platform payment
-[2026-01-29T18:02:25.496Z] [STEP] Navigating to inactive group for activation: Automation_Group_20260129_233201
-[2026-01-29T18:02:25.497Z] [STEP] Navigating to My Groups
-[2026-01-29T18:02:39.405Z] [STEP] Priority scan for group: Automation_Group_20260129_233201
-[2026-01-29T18:02:52.476Z] [SUCCESS] Priority group found: Automation_Group_20260129_233201
+<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="46.189491">
+<testsuite name="auth\login.spec.ts" timestamp="2026-01-30T10:46:39.675Z" hostname="before-login" tests="1" failures="1" skipped="0" time="40.236" errors="0">
+<testcase name="Login – Single User › Auth - Invalid Login › Invalid Login Error: Verify error message appears with incorrect credentials" classname="auth\login.spec.ts" time="40.236">
+<failure message="login.spec.ts:33:9 Invalid Login Error: Verify error message appears with incorrect credentials" type="FAILURE">
+<![CDATA[  [before-login] › auth\login.spec.ts:33:9 › Login – Single User › Auth - Invalid Login › Invalid Login Error: Verify error message appears with incorrect credentials @auth @security @negative 
 
-1 Member
+    Error: Invalid login error message should be visible
 
-Activate your group
-[2026-01-29T18:02:52.549Z] [SUCCESS] Priority group is inactive → opening
-[2026-01-29T18:02:53.502Z] [SUCCESS] Activation / Payment page detected for priority group
-[2026-01-29T18:02:53.503Z] [STEP] Redirected to payment page for group: Automation_Group_20260129_233201
+    expect(locator).toBeVisible() failed
 
-1 Member
-
-Activate your group
-[2026-01-29T18:02:53.503Z] [STEP] Filling payment details
-[2026-01-29T18:02:53.504Z] [STEP] Waiting for Stripe payment iframe
-[2026-01-29T18:03:04.091Z] [SUCCESS] Stripe payment inputs are ready
-[2026-01-29T18:03:04.091Z] [STEP] Entering Stripe test card details
-[2026-01-29T18:03:07.002Z] [SUCCESS] Stripe payment details entered successfully
-[2026-01-29T18:03:07.002Z] [STEP] Submitting platform activation payment
-[2026-01-29T18:03:07.002Z] [STEP] Submitting payment
-[2026-01-29T18:03:07.213Z] [SUCCESS] Payment submitted
-[2026-01-29T18:03:13.324Z] [SUCCESS] STEP 1 COMPLETE: Group successfully activated via platform payment
-]]>
-</system-out>
-</testcase>
-<testcase name="Host Group Monetization Setup Flow › Host configures group payment type for member access" classname="group\group-activation-payment.spec.ts" time="14.162">
-<system-out>
-<![CDATA[[2026-01-29T18:03:13.465Z] [INFO] STEP 2: Host sets how members will pay to join the group
-[2026-01-29T18:03:13.467Z] [STEP] Waiting for profile payment configuration page
-[2026-01-29T18:03:13.468Z] [STEP] Waiting for Profile Payments page
-[2026-01-29T18:03:25.454Z] [SUCCESS] Profile Payments page loaded successfully
-[2026-01-29T18:03:25.454Z] [STEP] Selecting group payment type (Free / Subscription / Lifetime)
-[2026-01-29T18:03:25.454Z] [STEP] Selecting Free payment type
-[2026-01-29T18:03:25.539Z] [STEP] Waiting for Save Payment Settings button to enable
-[2026-01-29T18:03:25.584Z] [STEP] Saving payment settings
-[2026-01-29T18:03:27.583Z] [STEP] *************** Payment settings saved and Members Count section loaded **************
-[2026-01-29T18:03:27.617Z] [SUCCESS] STEP 2 COMPLETE: Group membership payment type configured successfully
-[2026-01-29T18:03:27.695Z] [INFO] Closing shared browser session
-]]>
-</system-out>
-</testcase>
-</testsuite>
-<testsuite name="session\create-session.spec.ts" timestamp="2026-01-29T18:00:55.493Z" hostname="create-session" tests="1" failures="1" skipped="0" time="54.553" errors="0">
-<testcase name="Create Session › Host creates a session successfully" classname="session\create-session.spec.ts" time="54.553">
-<failure message="create-session.spec.ts:12:7 Host creates a session successfully" type="FAILURE">
-<![CDATA[  [create-session] › session\create-session.spec.ts:12:7 › Create Session › Host creates a session successfully @regression 
-
-    Error: expect(locator).toBeVisible() failed
-
-    Locator: getByText('New Message')
+    Locator: getByText('The username/email or password you\'ve entered is incorrect.', { exact: true })
     Expected: visible
-    Timeout: 10000ms
+    Timeout: 5000ms
     Error: element(s) not found
 
     Call log:
-      - Expect "toBeVisible" with timeout 10000ms
-      - waiting for getByText('New Message')
+      - Invalid login error message should be visible with timeout 5000ms
+      - waiting for getByText('The username/email or password you\'ve entered is incorrect.', { exact: true })
 
 
-      42 |
-      43 |       const successMessage = page.getByText('New Message');
-    > 44 |       await expect(successMessage).toBeVisible({ timeout: 10_000 });
-         |                                    ^
-      45 |
-      46 |       Logger.step(`Session name: ${sessionTitle}:- Session created successfully`);
-      47 |
-        at D:\Git\mentalhappy-playwright\tests\session\create-session.spec.ts:44:36
+       at ..\src\pages\base\BasePage.ts:148
 
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\test-results\session-create-session-Cre-a1fe7-ates-a-session-successfully-create-session\test-failed-1.png
+      146 |    */
+      147 |   async expectVisible(locator: Locator, message?: string) {
+    > 148 |     await expect(locator, message).toBeVisible();
+          |                                    ^
+      149 |   }
+      150 | }
+      151 |
+        at LoginPage.expectVisible (D:\Git\mentalhappy-playwright\src\pages\base\BasePage.ts:148:36)
+        at LoginPage.verifyInvalidLoginError (D:\Git\mentalhappy-playwright\src\pages\auth\LoginPage.ts:31:16)
+        at D:\Git\mentalhappy-playwright\tests\auth\login.spec.ts:52:29
+
+    attachment #5: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\auth-login-Login-–-Single--3aba7--with-incorrect-credentials-before-login\test-failed-1.png
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\test-results\session-create-session-Cre-a1fe7-ates-a-session-successfully-create-session\video.webm
+    attachment #6: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\auth-login-Login-–-Single--3aba7--with-incorrect-credentials-before-login\video.webm
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-    Error Context: ..\test-results\session-create-session-Cre-a1fe7-ates-a-session-successfully-create-session\error-context.md
+    Error Context: ..\test-results\auth-login-Login-–-Single--3aba7--with-incorrect-credentials-before-login\error-context.md
 
-    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
-    ..\test-results\session-create-session-Cre-a1fe7-ates-a-session-successfully-create-session\trace.zip
+    attachment #8: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\auth-login-Login-–-Single--3aba7--with-incorrect-credentials-before-login\trace.zip
     Usage:
 
-        npx playwright show-trace ..\test-results\session-create-session-Cre-a1fe7-ates-a-session-successfully-create-session\trace.zip
+        npx playwright show-trace ..\test-results\auth-login-Login-–-Single--3aba7--with-incorrect-credentials-before-login\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: Invalid login error message should be visible
+
+    expect(locator).toBeVisible() failed
+
+    Locator: getByText('The username/email or password you\'ve entered is incorrect.', { exact: true })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Invalid login error message should be visible with timeout 5000ms
+      - waiting for getByText('The username/email or password you\'ve entered is incorrect.', { exact: true })
+
+
+       at ..\src\pages\base\BasePage.ts:148
+
+      146 |    */
+      147 |   async expectVisible(locator: Locator, message?: string) {
+    > 148 |     await expect(locator, message).toBeVisible();
+          |                                    ^
+      149 |   }
+      150 | }
+      151 |
+        at LoginPage.expectVisible (D:\Git\mentalhappy-playwright\src\pages\base\BasePage.ts:148:36)
+        at LoginPage.verifyInvalidLoginError (D:\Git\mentalhappy-playwright\src\pages\auth\LoginPage.ts:31:16)
+        at D:\Git\mentalhappy-playwright\tests\auth\login.spec.ts:52:29
+
+    attachment #5: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\auth-login-Login-–-Single--3aba7--with-incorrect-credentials-before-login-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #6: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\auth-login-Login-–-Single--3aba7--with-incorrect-credentials-before-login-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\auth-login-Login-–-Single--3aba7--with-incorrect-credentials-before-login-retry1\error-context.md
+
+    attachment #8: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\auth-login-Login-–-Single--3aba7--with-incorrect-credentials-before-login-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\auth-login-Login-–-Single--3aba7--with-incorrect-credentials-before-login-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: Invalid login error message should be visible
+
+    expect(locator).toBeVisible() failed
+
+    Locator: getByText('The username/email or password you\'ve entered is incorrect.', { exact: true })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Invalid login error message should be visible with timeout 5000ms
+      - waiting for getByText('The username/email or password you\'ve entered is incorrect.', { exact: true })
+        - waiting for" https://staging.mentalhappy.com/login?returnUrl=https%3A%2F%2Fstaging.mentalhappy.com%2Fgroups&auth_error=1" navigation to finish...
+        - navigated to "https://staging.mentalhappy.com/login?returnUrl=https%3A%2F%2Fstaging.mentalhappy.com%2Fgroups&auth_error=1"
+
+
+       at ..\src\pages\base\BasePage.ts:148
+
+      146 |    */
+      147 |   async expectVisible(locator: Locator, message?: string) {
+    > 148 |     await expect(locator, message).toBeVisible();
+          |                                    ^
+      149 |   }
+      150 | }
+      151 |
+        at LoginPage.expectVisible (D:\Git\mentalhappy-playwright\src\pages\base\BasePage.ts:148:36)
+        at LoginPage.verifyInvalidLoginError (D:\Git\mentalhappy-playwright\src\pages\auth\LoginPage.ts:31:16)
+        at D:\Git\mentalhappy-playwright\tests\auth\login.spec.ts:52:29
+
+    attachment #5: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\auth-login-Login-–-Single--3aba7--with-incorrect-credentials-before-login-retry2\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #6: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\auth-login-Login-–-Single--3aba7--with-incorrect-credentials-before-login-retry2\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\auth-login-Login-–-Single--3aba7--with-incorrect-credentials-before-login-retry2\error-context.md
+
+    attachment #8: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\auth-login-Login-–-Single--3aba7--with-incorrect-credentials-before-login-retry2\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\auth-login-Login-–-Single--3aba7--with-incorrect-credentials-before-login-retry2\trace.zip
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 ]]>
 </failure>
 <system-out>
-<![CDATA[[2026-01-29T18:03:31.743Z] [INFO] Starting Create Session test
-[2026-01-29T18:03:35.919Z] [STEP] Searching for saved group for Create Session: Automation_Group_20260129_233201
-[2026-01-29T18:03:35.920Z] [STEP] Navigating to My Groups
-[2026-01-29T18:03:58.883Z] [SUCCESS] Saved group found: Automation_Group_20260129_233201
-[2026-01-29T18:04:06.486Z] [STEP] Opening session creation from Chat Menu
-[2026-01-29T18:04:06.521Z] [INFO] Closing announcement banner
-[2026-01-29T18:04:07.446Z] [SUCCESS] Chat menu visible (id=menu-list-:rer:)
-[2026-01-29T18:04:07.654Z] [STEP] Clicked Schedule a Session menu item
-[2026-01-29T18:04:09.497Z] [SUCCESS] Create Session modal opened
-[2026-01-29T18:04:09.498Z] [SUCCESS] Create Session modal opened for saved group
-[2026-01-29T18:04:09.498Z] [SUCCESS] Create Session modal opened successfully
-[2026-01-29T18:04:09.499Z] [STEP] Waiting for Create Session modal
-[2026-01-29T18:04:09.544Z] [SUCCESS] Create Session modal visible
-[2026-01-29T18:04:09.545Z] [STEP] Filling Create Session form
-[2026-01-29T18:04:09.545Z] [STEP] Setting session date to next day
-[2026-01-29T18:04:11.437Z] [INFO] Session date set to 30 January, 2026
-[2026-01-29T18:04:12.743Z] [SUCCESS] Required fields filled
-[2026-01-29T18:04:12.743Z] [STEP] Submitting session
+<![CDATA[[CHAT WIDGET] HIDDEN | Test: Invalid Login Error: Verify error message appears with incorrect credentials
+[2026-01-30T10:46:41.401Z] [STEP] Navigating to Login page
+[2026-01-30T10:46:48.815Z] [STEP] Attempting login with invalid credentials: user_lsvoZP@testmail.com
+[2026-01-30T10:46:50.329Z] [STEP] Verifying error message visibility
 
-[[ATTACHMENT|..\test-results\session-create-session-Cre-a1fe7-ates-a-session-successfully-create-session\test-failed-1.png]]
+[[ATTACHMENT|..\test-results\auth-login-Login-–-Single--3aba7--with-incorrect-credentials-before-login\test-failed-1.png]]
 
-[[ATTACHMENT|..\test-results\session-create-session-Cre-a1fe7-ates-a-session-successfully-create-session\video.webm]]
+[[ATTACHMENT|..\test-results\auth-login-Login-–-Single--3aba7--with-incorrect-credentials-before-login\video.webm]]
 
-[[ATTACHMENT|..\test-results\session-create-session-Cre-a1fe7-ates-a-session-successfully-create-session\error-context.md]]
+[[ATTACHMENT|..\test-results\auth-login-Login-–-Single--3aba7--with-incorrect-credentials-before-login\error-context.md]]
 
-[[ATTACHMENT|..\test-results\session-create-session-Cre-a1fe7-ates-a-session-successfully-create-session\trace.zip]]
-]]>
-</system-out>
-</testcase>
-</testsuite>
-<testsuite name="auth\login.spec.ts" timestamp="2026-01-29T18:00:55.493Z" hostname="before-login" tests="1" failures="0" skipped="0" time="34.16" errors="0">
-<testcase name="Login – Single User › Group Host user can login successfully" classname="auth\login.spec.ts" time="34.16">
-<properties>
-<property name="severity" value="critical">
-</property>
-</properties>
-<system-out>
-<![CDATA[[CHAT WIDGET] HIDDEN | Test: Group Host user can login successfully
-[2026-01-29T18:01:01.233Z] [STEP] Logging in as Group Host
-[2026-01-29T18:01:20.898Z] [SUCCESS] Login successful
-]]>
-</system-out>
-</testcase>
-</testsuite>
-<testsuite name="chat\chat-widget.spec.ts" timestamp="2026-01-29T18:00:55.493Z" hostname="before-login" tests="1" failures="0" skipped="0" time="18.013" errors="0">
-<testcase name="@chat Chat widget is accessible to user" classname="chat\chat-widget.spec.ts" time="18.013">
-<system-out>
-<![CDATA[[CHAT WIDGET] ALLOWED | Test: @chat Chat widget is accessible to user
-]]>
-</system-out>
-</testcase>
-</testsuite>
-<testsuite name="core\app-load.spec.ts" timestamp="2026-01-29T18:00:55.493Z" hostname="before-login" tests="1" failures="0" skipped="0" time="7.483" errors="0">
-<testcase name="App Load › Application loads successfully" classname="core\app-load.spec.ts" time="7.483">
-<system-out>
-<![CDATA[[CHAT WIDGET] HIDDEN | Test: Application loads successfully
-[2026-01-29T18:01:01.180Z] [STEP] Navigating to landing page
-[2026-01-29T18:01:04.460Z] [STEP] Verifying "MentalHappy" logo visibility
-[2026-01-29T18:01:04.781Z] [SUCCESS] App Load › Application loads successfully
+[[ATTACHMENT|..\test-results\auth-login-Login-–-Single--3aba7--with-incorrect-credentials-before-login\trace.zip]]
+[CHAT WIDGET] HIDDEN | Test: Invalid Login Error: Verify error message appears with incorrect credentials
+[2026-01-30T10:46:58.111Z] [STEP] Navigating to Login page
+[2026-01-30T10:47:03.373Z] [STEP] Attempting login with invalid credentials: user_MuHkmY@testmail.com
+[2026-01-30T10:47:04.855Z] [STEP] Verifying error message visibility
+
+[[ATTACHMENT|..\test-results\auth-login-Login-–-Single--3aba7--with-incorrect-credentials-before-login-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\auth-login-Login-–-Single--3aba7--with-incorrect-credentials-before-login-retry1\video.webm]]
+
+[[ATTACHMENT|..\test-results\auth-login-Login-–-Single--3aba7--with-incorrect-credentials-before-login-retry1\error-context.md]]
+
+[[ATTACHMENT|..\test-results\auth-login-Login-–-Single--3aba7--with-incorrect-credentials-before-login-retry1\trace.zip]]
+[CHAT WIDGET] HIDDEN | Test: Invalid Login Error: Verify error message appears with incorrect credentials
+[2026-01-30T10:47:12.815Z] [STEP] Navigating to Login page
+[2026-01-30T10:47:18.037Z] [STEP] Attempting login with invalid credentials: user_GHnalm@testmail.com
+[2026-01-30T10:47:19.594Z] [STEP] Verifying error message visibility
+
+[[ATTACHMENT|..\test-results\auth-login-Login-–-Single--3aba7--with-incorrect-credentials-before-login-retry2\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\auth-login-Login-–-Single--3aba7--with-incorrect-credentials-before-login-retry2\video.webm]]
+
+[[ATTACHMENT|..\test-results\auth-login-Login-–-Single--3aba7--with-incorrect-credentials-before-login-retry2\error-context.md]]
+
+[[ATTACHMENT|..\test-results\auth-login-Login-–-Single--3aba7--with-incorrect-credentials-before-login-retry2\trace.zip]]
 ]]>
 </system-out>
 </testcase>

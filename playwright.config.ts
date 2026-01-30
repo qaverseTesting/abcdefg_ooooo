@@ -103,6 +103,7 @@ export default defineConfig({
       name: 'before-login',
       testMatch: [
         /login\.spec\.ts/,
+        /registration.*\.spec\.ts/,
         /tests\/chat\/.*\.spec\.ts/,
         /tests\/core\/app-load\.spec\.ts/,
       ],
