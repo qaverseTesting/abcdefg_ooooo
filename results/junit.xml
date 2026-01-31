@@ -1,160 +1,23 @@
-<testsuites id="" name="" tests="6" failures="0" skipped="0" errors="0" time="198.29233499999998">
-<testsuite name="setup\auth.setup.ts" timestamp="2026-01-30T13:48:17.611Z" hostname="prepare-auth" tests="1" failures="0" skipped="0" time="28.299" errors="0">
-<testcase name="authenticate group host user" classname="setup\auth.setup.ts" time="28.299">
+<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="47.959589">
+<testsuite name="setup\auth.setup.ts" timestamp="2026-01-31T15:08:16.526Z" hostname="setup" tests="1" failures="0" skipped="0" time="27.32" errors="0">
+<testcase name="authenticate group host user" classname="setup\auth.setup.ts" time="27.32">
 <system-out>
 <![CDATA[[CHAT WIDGET] HIDDEN | Test: authenticate group host user
-[2026-01-30T13:48:36.352Z] [SUCCESS] Login successful
+[2026-01-31T15:08:34.659Z] [SUCCESS] Login successful
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="dashboard\group-listing.spec.ts" timestamp="2026-01-30T13:48:17.611Z" hostname="post-login-core" tests="1" failures="0" skipped="0" time="15.66" errors="0">
-<testcase name="Groups – Listing › Group listing loads with correct visibility and status" classname="dashboard\group-listing.spec.ts" time="15.66">
-<properties>
-<property name="severity" value="critical">
-</property>
-</properties>
+<testsuite name="group\group-membership-setup.spec.ts" timestamp="2026-01-31T15:08:16.526Z" hostname="e2e" tests="1" failures="0" skipped="0" time="15.53" errors="0">
+<testcase name="Host configures group membership settings @regression @membership" classname="group\group-membership-setup.spec.ts" time="15.53">
 <system-out>
-<![CDATA[[2026-01-30T13:48:53.052Z] [STEP] Opening My Groups page
-[2026-01-30T13:48:53.053Z] [STEP] Navigating to My Groups page
-[2026-01-30T13:48:56.882Z] [STEP] Waiting for group cards to render
-[2026-01-30T13:49:06.614Z] [STEP] Verifying group cards are visible
-[2026-01-30T13:49:06.765Z] [SUCCESS] Group listing loaded successfully with 234 groups
-]]>
-</system-out>
-</testcase>
-</testsuite>
-<testsuite name="group\create-group.spec.ts" timestamp="2026-01-30T13:48:17.611Z" hostname="create-group" tests="1" failures="0" skipped="0" time="20.273" errors="0">
-<testcase name="Group Creation › Group Host can create a group successfully" classname="group\create-group.spec.ts" time="20.273">
-<system-out>
-<![CDATA[[CHAT WIDGET] HIDDEN | Test: Group Host can create a group successfully
-[2026-01-30T13:49:11.616Z] [INFO] Starting Group Creation test
-[2026-01-30T13:49:11.617Z] [STEP] Generated group name: Automation_Group_20260130_191911
-[2026-01-30T13:49:11.617Z] [STEP] Navigating to Dashboard
-[2026-01-30T13:49:15.387Z] [SUCCESS] Dashboard loaded
-[2026-01-30T13:49:15.388Z] [STEP] Clicking "Start Group" from Dashboard
-[2026-01-30T13:49:15.392Z] [STEP] Clicking on Start a Group
-[2026-01-30T13:49:21.832Z] [SUCCESS] "Start Group" clicked
-[2026-01-30T13:49:21.833Z] [STEP] Verifying Create Group page loaded
-[2026-01-30T13:49:21.835Z] [ASSERT] Create Group page is loaded
-[2026-01-30T13:49:23.599Z] [SUCCESS] Create Group page loaded
-[2026-01-30T13:49:23.599Z] [STEP] Entering group details
-[2026-01-30T13:49:23.599Z] [STEP] Filling group details
-[2026-01-30T13:49:24.711Z] [SUCCESS] Group details entered
-[2026-01-30T13:49:24.711Z] [STEP] Selecting random group tag
-[2026-01-30T13:49:24.711Z] [STEP] Selecting a random group tag
-[2026-01-30T13:49:27.129Z] [SUCCESS] Group tag selected
-[2026-01-30T13:49:27.130Z] [STEP] Submitting Create Group form
-[2026-01-30T13:49:27.130Z] [STEP] Submitting group creation Preview
-[2026-01-30T13:49:27.250Z] [STEP] Confirming group submission
-[2026-01-30T13:49:28.352Z] [SUCCESS] Create Group submitted
-[2026-01-30T13:49:28.352Z] [STEP] Verifying group creation success message
-[2026-01-30T13:49:30.352Z] [SUCCESS] Group created successfully (confirmation visible)
-[2026-01-30T13:49:30.352Z] [INFO] Saving group name: Automation_Group_20260130_191911
-[2026-01-30T13:49:30.354Z] [SUCCESS] Group name stored for reuse: Automation_Group_20260130_191911
-[2026-01-30T13:49:30.354Z] [INFO] Group Creation test completed successfully
-]]>
-</system-out>
-</testcase>
-</testsuite>
-<testsuite name="group\group-activation-payment.spec.ts" timestamp="2026-01-30T13:48:17.611Z" hostname="group-monetization" tests="2" failures="0" skipped="0" time="60.361" errors="0">
-<testcase name="Host Group Monetization Setup Flow › Host activates group by completing platform payment" classname="group\group-activation-payment.spec.ts" time="47.573">
-<system-out>
-<![CDATA[[2026-01-30T13:49:33.735Z] [INFO] Initializing shared browser session for Host Group Monetization flow
-[2026-01-30T13:49:34.678Z] [SUCCESS] Shared browser context and page created
-[2026-01-30T13:49:34.904Z] [INFO] STEP 1 STARTED: Group activation via platform payment
-[2026-01-30T13:49:34.908Z] [STEP] Target group for activation: Automation_Group_20260130_191911
-[2026-01-30T13:49:34.909Z] [STEP] Navigating to inactive group and initiating activation flow
-[2026-01-30T13:49:34.910Z] [STEP] Navigating to My Groups page
-[2026-01-30T13:49:38.650Z] [STEP] Waiting for group cards to render
-[2026-01-30T13:49:48.605Z] [STEP] Priority scan initiated for group: Automation_Group_20260130_191911
-[2026-01-30T13:50:04.392Z] [SUCCESS] Priority group found: Automation_Group_20260130_191911
-
-1 Member
-
-Activate your group
-[2026-01-30T13:50:04.433Z] [SUCCESS] Priority group is inactive, opening activation flow
-[2026-01-30T13:50:06.042Z] [SUCCESS] Activation or payment page detected for priority group
-[2026-01-30T13:50:06.042Z] [SUCCESS] Redirected to payment page for group: Automation_Group_20260130_191911
-
-1 Member
-
-Activate your group
-[2026-01-30T13:50:06.043Z] [STEP] Waiting for group activation payment page to load
-[2026-01-30T13:50:06.043Z] [STEP] Waiting for Stripe payment iframe to become interactive
-[2026-01-30T13:50:16.124Z] [SUCCESS] Stripe payment iframe and card inputs are ready
-[2026-01-30T13:50:16.124Z] [STEP] Entering platform payment details
-[2026-01-30T13:50:16.124Z] [STEP] Entering Stripe test card details
-[2026-01-30T13:50:16.124Z] [STEP] Entering card number
-[2026-01-30T13:50:17.881Z] [STEP] Entering expiry date
-[2026-01-30T13:50:18.402Z] [STEP] Entering CVC
-[2026-01-30T13:50:19.178Z] [SUCCESS] Stripe payment details entered successfully
-[2026-01-30T13:50:19.178Z] [STEP] Submitting platform activation payment
-[2026-01-30T13:50:19.179Z] [STEP] Submitting group activation payment
-[2026-01-30T13:50:19.241Z] [STEP] Clicking Pay and Activate Group button
-[2026-01-30T13:50:22.464Z] [SUCCESS] Payment submitted and confirmed successfully
-[2026-01-30T13:50:22.464Z] [SUCCESS] STEP 1 COMPLETED: Group successfully activated via platform payment
-]]>
-</system-out>
-</testcase>
-<testcase name="Host Group Monetization Setup Flow › Host configures group payment type for member access" classname="group\group-activation-payment.spec.ts" time="12.788">
-<system-out>
-<![CDATA[[2026-01-30T13:50:22.640Z] [INFO] STEP 2 STARTED: Configuring group membership payment type
-[2026-01-30T13:50:22.641Z] [STEP] Waiting for profile payment configuration page to be visible
-[2026-01-30T13:50:22.641Z] [STEP] Waiting for Profile Payments page
-[2026-01-30T13:50:26.178Z] [STEP] Waiting for payment settings form to mount
-[2026-01-30T13:50:33.173Z] [SUCCESS] Profile Payments page loaded successfully
-[2026-01-30T13:50:33.173Z] [STEP] Selecting Free payment type and saving configuration
-[2026-01-30T13:50:33.173Z] [STEP] Selecting FREE payment type
-[2026-01-30T13:50:33.260Z] [STEP] Waiting for Save Payment Settings button to be enabled
-[2026-01-30T13:50:33.296Z] [STEP] Saving payment settings
-[2026-01-30T13:50:35.379Z] [SUCCESS] Payment settings saved successfully and Members Count section loaded
-[2026-01-30T13:50:35.379Z] [STEP] Verifying payment type configuration success message
-[2026-01-30T13:50:35.421Z] [SUCCESS] STEP 2 COMPLETED: Group membership payment type configured successfully
-[2026-01-30T13:50:35.500Z] [INFO] Tearing down shared browser session for Host Group Monetization flow
-[2026-01-30T13:50:35.966Z] [SUCCESS] Browser context closed successfully
-]]>
-</system-out>
-</testcase>
-</testsuite>
-<testsuite name="session\create-session.spec.ts" timestamp="2026-01-30T13:48:17.611Z" hostname="create-session" tests="1" failures="0" skipped="0" time="55.979" errors="0">
-<testcase name="Create Session › Host creates a session successfully" classname="session\create-session.spec.ts" time="55.979">
-<system-out>
-<![CDATA[[CHAT WIDGET] HIDDEN | Test: Host creates a session successfully
-[2026-01-30T13:50:40.030Z] [INFO] Starting Create Session test
-[2026-01-30T13:50:40.030Z] [STEP] Navigating to Dashboard
-[2026-01-30T13:50:43.862Z] [SUCCESS] Dashboard loaded
-[2026-01-30T13:50:43.864Z] [STEP] Searching for a group that supports Create Session
-[2026-01-30T13:50:43.867Z] [STEP] Searching for saved group to create session: Automation_Group_20260130_191911
-[2026-01-30T13:50:43.868Z] [STEP] Navigating to My Groups page
-[2026-01-30T13:50:47.135Z] [STEP] Waiting for group cards to render
-[2026-01-30T13:50:56.882Z] [INFO] Total groups detected: 235
-[2026-01-30T13:51:13.628Z] [SUCCESS] Saved group matched: Automation_Group_20260130_191911
-[2026-01-30T13:51:13.766Z] [STEP] Opening saved group chat
-[2026-01-30T13:51:14.160Z] [STEP] Initiating Create Session flow from Chat menu
-[2026-01-30T13:51:14.161Z] [STEP] Verifying chat page has loaded correctly
-[2026-01-30T13:51:21.795Z] [SUCCESS] Chat page layout is visible
-[2026-01-30T13:51:21.886Z] [SUCCESS] Chat page opened for expected group: Automation_Group_20260130_191911
-[2026-01-30T13:51:22.653Z] [INFO] Announcement banner detected, attempting to close
-[2026-01-30T13:51:23.369Z] [SUCCESS] Announcement banner closed successfully
-[2026-01-30T13:51:23.728Z] [SUCCESS] Chat action menu opened
-[2026-01-30T13:51:24.179Z] [SUCCESS] "Schedule a Session" menu item selected
-[2026-01-30T13:51:26.696Z] [SUCCESS] Create Session modal displayed successfully
-[2026-01-30T13:51:26.697Z] [SUCCESS] Create Session modal successfully opened for saved group
-[2026-01-30T13:51:26.697Z] [SUCCESS] Create Session modal opened successfully
-[2026-01-30T13:51:26.697Z] [STEP] Generated session title: Automation_Group_20260130_192126
-[2026-01-30T13:51:26.697Z] [STEP] Waiting for Create Session modal to be visible
-[2026-01-30T13:51:26.697Z] [STEP] Waiting for Create Session modal
-[2026-01-30T13:51:26.749Z] [SUCCESS] Create Session modal visible
-[2026-01-30T13:51:26.749Z] [STEP] Filling required fields in Create Session modal
-[2026-01-30T13:51:26.750Z] [STEP] Filling Create Session form
-[2026-01-30T13:51:26.750Z] [STEP] Setting session date to next day
-[2026-01-30T13:51:28.931Z] [INFO] Session date set to 31 January, 2026
-[2026-01-30T13:51:30.534Z] [SUCCESS] Required fields filled
-[2026-01-30T13:51:30.534Z] [STEP] Submitting Create Session form
-[2026-01-30T13:51:30.534Z] [STEP] Submitting session
-[2026-01-30T13:51:30.876Z] [STEP] Verifying session creation success indicator
-[2026-01-30T13:51:34.121Z] [SUCCESS] Session created successfully with title: Automation_Group_20260130_192126
+<![CDATA[[CHAT WIDGET] HIDDEN | Test: Host configures group membership settings @regression @membership
+[2026-01-31T15:08:49.110Z] [INFO] Starting Group Membership Setup test
+[2026-01-31T15:08:49.112Z] [STEP] Opening Profile → Payments page
+[2026-01-31T15:08:59.774Z] [SUCCESS] Profile Payments page ready
+[2026-01-31T15:08:59.774Z] [STEP] Selecting group: qatestgroup2
+[2026-01-31T15:09:02.235Z] [SUCCESS] Group switched successfully to: qatestgroup2
+[2026-01-31T15:09:02.236Z] [SUCCESS] Group membership selection completed
 ]]>
 </system-out>
 </testcase>

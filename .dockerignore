@@ -64,3 +64,5 @@ README.md
 # Other common excludes
 .nyc_output
 .cache
+
+.env
