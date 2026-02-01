@@ -49,86 +49,72 @@ export class ProfilePaymentPage extends BasePage {
     Logger.success('Profile Payments page ready');
   }
 
-async selectGroup(groupName: string): Promise<void> {
-  Logger.step(`Selecting group: ${groupName}`);
+  async selectGroup(groupName: string): Promise<void> {
+    Logger.step(`Selecting group: ${groupName}`);
+
+    const label = this.groupSwitcherButton.locator('span').first();
+    const current = (await label.textContent())?.trim();
+
+    if (current === groupName) {
+      Logger.info(`Group already selected: ${groupName}`);
+      return;
+    }
+
+    await this.groupSwitcherButton.click();
+
+    const menu = await this.getGroupMenu();
+    await expect(menu).toBeVisible({ timeout: 10_000 });
+
+    Logger.step('Selecting group from Chakra virtualized menu');
+
+    const option = menu.getByRole('menuitem', { name: groupName, exact: true });
+
+    // Ensure it exists in DOM (virtualized list handling)
+    await expect(option).toHaveCount(1, { timeout: 10_000 });
+
+    // Scroll container so React marks it "in view"
+    await menu.evaluate((el, text) => {
+      const items = Array.from(el.querySelectorAll('[role="menuitem"]'));
+      const target = items.find(i => i.textContent?.trim() === text);
+      if (target) target.scrollIntoView({ block: 'center' });
+    }, groupName);
+
+    // 🔥 DOM-level click bypasses viewport & overlay issues
+    await option.evaluate(el => (el as HTMLElement).click());
+
+    if (current) {
+      await expect(label).not.toHaveText(current, { timeout: 10_000 });
+    }
+
+    await expect(label).toHaveText(groupName, { timeout: 10_000 });
+
+    Logger.success(`Group switched successfully to: ${groupName}`);
+  }
+
+ async selectFreePaymentAndSave(groupName: string): Promise<void> {
+  Logger.step('Preparing to configure payment settings');
 
   const label = this.groupSwitcherButton.locator('span').first();
-  const current = (await label.textContent())?.trim();
 
-  if (current === groupName) {
-    Logger.info(`Group already selected: ${groupName}`);
-    return;
-  }
+  // 🧠 Wait until correct group context is active
+  await expect(label).toHaveText(groupName, { timeout: 30_000 });
 
-  await this.groupSwitcherButton.click();
+  Logger.step('Group context ready, waiting for payment section');
 
-  const menu = await this.getGroupMenu();
-  await expect(menu).toBeVisible({ timeout: 10_000 });
+  // Payment section loads after group context resolves
+  await expect(this.paymentTypeDropdown).toBeVisible({ timeout: 30_000 });
 
-  Logger.step('Selecting group from Chakra virtualized menu');
-
-  const option = menu.getByRole('menuitem', { name: groupName, exact: true });
-
-  // Ensure it exists in DOM (virtualized list handling)
-  await expect(option).toHaveCount(1, { timeout: 10_000 });
-
-  // Scroll container so React marks it "in view"
-  await menu.evaluate((el, text) => {
-    const items = Array.from(el.querySelectorAll('[role="menuitem"]'));
-    const target = items.find(i => i.textContent?.trim() === text);
-    if (target) target.scrollIntoView({ block: 'center' });
-  }, groupName);
-
-  // 🔥 DOM-level click bypasses viewport & overlay issues
-  await option.evaluate(el => (el as HTMLElement).click());
-
-  if (current) {
-    await expect(label).not.toHaveText(current, { timeout: 10_000 });
-  }
-
-  await expect(label).toHaveText(groupName, { timeout: 10_000 });
-
-  Logger.success(`Group switched successfully to: ${groupName}`);
-}
-
-
-
-
-async selectFreePaymentAndSave(): Promise<void> {
   Logger.step('Selecting FREE payment type');
+  await this.paymentTypeDropdown.selectOption('FREE');
 
-  // 🔥 Ensure payment section actually exists
-  await expect(
-    this.page.getByRole('heading', { name: /payment settings/i })
-  ).toBeVisible({ timeout: 15_000 });
-
-  // Sometimes CI renders slower inside tabs/accordions
-  await this.page.waitForTimeout(500);
-
-  // Wait for dropdown OR detect missing section
-  const dropdown = this.paymentTypeDropdown;
-
-  if (!(await dropdown.isVisible().catch(() => false))) {
-    Logger.error('Payment type dropdown not visible. Dumping page state...');
-
-    console.log('URL:', this.page.url());
-    console.log('Visible text:', await this.page.locator('body').innerText());
-
-    throw new Error(
-      'Payment section not rendered — likely wrong group selected or group not fully initialized.'
-    );
-  }
-
-  await dropdown.selectOption('FREE');
-
-  await expect(this.savePaymentSettingsButton).toBeEnabled({ timeout: 70_000 });
-
-  Logger.step('Saving payment settings');
+  await expect(this.savePaymentSettingsButton).toBeEnabled({ timeout: 30_000 });
 
   const successToast = this.page.getByText(/payment type set successfully/i);
 
+  Logger.step('Saving payment settings');
+
   await Promise.all([
-    successToast.waitFor({ state: 'visible', timeout: 15_000 }),
+    successToast.waitFor({ state: 'visible', timeout: 20_000 }),
     this.savePaymentSettingsButton.click(),
   ]);
 

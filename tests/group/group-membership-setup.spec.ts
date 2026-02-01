@@ -16,7 +16,7 @@ test(
         Logger.step(`Target group for configures member access: ${targetGroupName}`);
         await profilePaymentPage.selectGroup(targetGroupName);
 
-        await profilePaymentPage.selectFreePaymentAndSave();
+        await profilePaymentPage.selectFreePaymentAndSave(targetGroupName);
 
         Logger.success('Group membership selection completed');
     }
