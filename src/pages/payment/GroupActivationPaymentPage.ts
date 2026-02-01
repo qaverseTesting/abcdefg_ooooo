@@ -5,25 +5,24 @@ import { Logger } from '../../utils/Logger';
 export class GroupActivationPaymentPage extends BasePage {
   private readonly stripeFrame: FrameLocator;
   private readonly submitButton: Locator;
+  private readonly postalCodeInput: Locator;
 
   constructor(page: Page) {
     super(page);
 
-    // Stripe-hosted iframe containing secure payment inputs
+    // Stripe secure iframe
     this.stripeFrame = page.frameLocator(
       'iframe[title="Secure payment input frame"]'
     );
 
-    // Primary CTA to submit payment and activate the group
+    // Postal code lives OUTSIDE Stripe iframe
+    this.postalCodeInput = page.locator('#payment-postalCodeInput');
+
     this.submitButton = page.getByRole('button', {
       name: /pay and activate group/i,
     });
   }
 
-  /**
-   * Waits until Stripe Elements are fully mounted and ready for interaction.
-   * This ensures card inputs are visible and editable before filling data.
-   */
   async waitForVisible(): Promise<void> {
     Logger.step('Waiting for Stripe payment iframe to become interactive');
 
@@ -34,13 +33,9 @@ export class GroupActivationPaymentPage extends BasePage {
     await cardNumber.waitFor({ state: 'visible', timeout: 30_000 });
     await expect(cardNumber).toBeEditable({ timeout: 10_000 });
 
-    Logger.success('Stripe payment iframe and card inputs are ready');
+    Logger.success('Stripe payment iframe ready');
   }
 
-  /**
-   * Fills Stripe test card details in a stable and repeatable way.
-   * Uses typing with delay to mimic real user input and avoid Stripe flakiness.
-   */
   async fillPaymentDetails(): Promise<void> {
     Logger.step('Entering Stripe test card details');
 
@@ -49,41 +44,37 @@ export class GroupActivationPaymentPage extends BasePage {
     const cardNumber = frame.locator('input[autocomplete="cc-number"]');
     const expiry = frame.locator('input[autocomplete="cc-exp"]');
     const cvc = frame.locator('input[autocomplete="cc-csc"]');
-    const zip = frame.locator('input[autocomplete="postal-code"]');
 
-    // Card number
-    Logger.step('Entering card number');
-    await cardNumber.click({ force: true });
-    await cardNumber.type('4242424242424242', { delay: 50 });
+    // ---- CARD NUMBER ----
+    await cardNumber.click();
+    await cardNumber.type('4242424242424242', { delay: 40 });
 
-    // Expiry date
-    Logger.step('Entering expiry date');
-    await expiry.click({ force: true });
-    await expiry.type('1234', { delay: 50 }); // Stripe auto-formats
+    // ---- EXPIRY ----
+    await expiry.click();
+    await expiry.type('1234', { delay: 40 });
 
-    // CVC
-    Logger.step('Entering CVC');
-    await cvc.click({ force: true });
-    await cvc.type('123', { delay: 50 });
+    // ---- CVC ----
+    await cvc.click();
+    await cvc.type('123', { delay: 40 });
 
-    // Final sanity checks to avoid silent Stripe failures
+    // ---- POSTAL CODE (MAIN DOM, NOT IFRAME) ----
+    if (await this.postalCodeInput.isVisible()) {
+      Logger.step('Entering postal / ZIP code');
+      await this.postalCodeInput.fill('12345');
+    }
+
+    // Final checks
     await expect(cardNumber).not.toBeEmpty();
     await expect(expiry).not.toBeEmpty();
     await expect(cvc).not.toBeEmpty();
 
-    Logger.success('Stripe payment details entered successfully');
+    Logger.success('Payment details entered successfully');
   }
 
-  /**
-   * Submits the payment and validates that the success toast appears.
-   * This method asserts that the payment submission completed successfully.
-   */
   async submitPayment(): Promise<void> {
     Logger.step('Submitting group activation payment');
 
     await expect(this.submitButton).toBeEnabled({ timeout: 15_000 });
-
-    Logger.step('Clicking Pay and Activate Group button');
 
     await this.submitButton.click();
 
@@ -93,6 +84,4 @@ export class GroupActivationPaymentPage extends BasePage {
 
     Logger.success('Payment submitted and group activation confirmed');
   }
-
-
 }
