@@ -22,7 +22,7 @@
       [
         "html",
         {
-          "open": "always"
+          "open": "never"
         }
       ],
       [
@@ -55,7 +55,7 @@
       {
         "outputDir": "D:/Git/mentalhappy-playwright/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 2,
         "metadata": {
           "actualWorkers": 1
         },
@@ -71,7 +71,7 @@
       {
         "outputDir": "D:/Git/mentalhappy-playwright/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 2,
         "metadata": {
           "actualWorkers": 1
         },
@@ -87,7 +87,7 @@
       {
         "outputDir": "D:/Git/mentalhappy-playwright/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 2,
         "metadata": {
           "actualWorkers": 1
         },
@@ -103,7 +103,7 @@
       {
         "outputDir": "D:/Git/mentalhappy-playwright/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 2,
         "metadata": {
           "actualWorkers": 1
         },
@@ -119,7 +119,7 @@
       {
         "outputDir": "D:/Git/mentalhappy-playwright/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 2,
         "metadata": {
           "actualWorkers": 1
         },
@@ -164,19 +164,19 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 28120,
+                  "duration": 11223,
                   "errors": [],
                   "stdout": [
                     {
                       "text": "[CHAT WIDGET] HIDDEN | Test: authenticate group host user\n"
                     },
                     {
-                      "text": "[2026-02-01T13:13:41.644Z] [SUCCESS] Login successful\n"
+                      "text": "[2026-02-01T13:29:22.892Z] [SUCCESS] Login successful\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-02-01T13:13:24.804Z",
+                  "startTime": "2026-02-01T13:29:14.016Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -244,91 +244,91 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 17294,
+                      "duration": 15717,
                       "errors": [],
                       "stdout": [
                         {
                           "text": "[CHAT WIDGET] HIDDEN | Test: Group Host can create a group successfully\n"
                         },
                         {
-                          "text": "[2026-02-01T13:13:56.861Z] [INFO] Starting Group Creation test\n"
+                          "text": "[2026-02-01T13:29:27.629Z] [INFO] Starting Group Creation test\n"
                         },
                         {
-                          "text": "[2026-02-01T13:13:56.862Z] [STEP] Generated group name: Automation_Group_20260201_184356\n"
+                          "text": "[2026-02-01T13:29:27.629Z] [STEP] Generated group name: Automation_Group_20260201_185927\n"
                         },
                         {
-                          "text": "[2026-02-01T13:13:56.862Z] [STEP] Navigating to Dashboard\n"
+                          "text": "[2026-02-01T13:29:27.629Z] [STEP] Navigating to Dashboard\n"
                         },
                         {
-                          "text": "[2026-02-01T13:14:00.314Z] [SUCCESS] Dashboard loaded\n"
+                          "text": "[2026-02-01T13:29:31.637Z] [SUCCESS] Dashboard loaded\n"
                         },
                         {
-                          "text": "[2026-02-01T13:14:00.314Z] [STEP] Clicking \"Start Group\" from Dashboard\n"
+                          "text": "[2026-02-01T13:29:31.637Z] [STEP] Clicking \"Start Group\" from Dashboard\n"
                         },
                         {
-                          "text": "[2026-02-01T13:14:00.316Z] [STEP] Clicking on Start a Group\n"
+                          "text": "[2026-02-01T13:29:31.638Z] [STEP] Clicking on Start a Group\n"
                         },
                         {
-                          "text": "[2026-02-01T13:14:04.301Z] [SUCCESS] \"Start Group\" clicked\n"
+                          "text": "[2026-02-01T13:29:35.455Z] [SUCCESS] \"Start Group\" clicked\n"
                         },
                         {
-                          "text": "[2026-02-01T13:14:04.302Z] [STEP] Verifying Create Group page loaded\n"
+                          "text": "[2026-02-01T13:29:35.456Z] [STEP] Verifying Create Group page loaded\n"
                         },
                         {
-                          "text": "[2026-02-01T13:14:04.303Z] [ASSERT] Create Group page is loaded\n"
+                          "text": "[2026-02-01T13:29:35.457Z] [ASSERT] Create Group page is loaded\n"
                         },
                         {
-                          "text": "[2026-02-01T13:14:06.258Z] [SUCCESS] Create Group page loaded\n"
+                          "text": "[2026-02-01T13:29:37.178Z] [SUCCESS] Create Group page loaded\n"
                         },
                         {
-                          "text": "[2026-02-01T13:14:06.259Z] [STEP] Entering group details\n"
+                          "text": "[2026-02-01T13:29:37.179Z] [STEP] Entering group details\n"
                         },
                         {
-                          "text": "[2026-02-01T13:14:06.260Z] [STEP] Filling group details\n"
+                          "text": "[2026-02-01T13:29:37.179Z] [STEP] Filling group details\n"
                         },
                         {
-                          "text": "[2026-02-01T13:14:07.199Z] [SUCCESS] Group details entered\n"
+                          "text": "[2026-02-01T13:29:37.914Z] [SUCCESS] Group details entered\n"
                         },
                         {
-                          "text": "[2026-02-01T13:14:07.199Z] [STEP] Selecting random group tag\n"
+                          "text": "[2026-02-01T13:29:37.915Z] [STEP] Selecting random group tag\n"
                         },
                         {
-                          "text": "[2026-02-01T13:14:07.200Z] [STEP] Selecting a random group tag\n"
+                          "text": "[2026-02-01T13:29:37.915Z] [STEP] Selecting a random group tag\n"
                         },
                         {
-                          "text": "[2026-02-01T13:14:09.423Z] [SUCCESS] Group tag selected\n"
+                          "text": "[2026-02-01T13:29:39.605Z] [SUCCESS] Group tag selected\n"
                         },
                         {
-                          "text": "[2026-02-01T13:14:09.423Z] [STEP] Submitting Create Group form\n"
+                          "text": "[2026-02-01T13:29:39.605Z] [STEP] Submitting Create Group form\n"
                         },
                         {
-                          "text": "[2026-02-01T13:14:09.423Z] [STEP] Submitting group creation Preview\n"
+                          "text": "[2026-02-01T13:29:39.605Z] [STEP] Submitting group creation Preview\n"
                         },
                         {
-                          "text": "[2026-02-01T13:14:09.538Z] [STEP] Confirming group submission\n"
+                          "text": "[2026-02-01T13:29:39.683Z] [STEP] Confirming group submission\n"
                         },
                         {
-                          "text": "[2026-02-01T13:14:10.619Z] [SUCCESS] Create Group submitted\n"
+                          "text": "[2026-02-01T13:29:40.704Z] [SUCCESS] Create Group submitted\n"
                         },
                         {
-                          "text": "[2026-02-01T13:14:10.620Z] [STEP] Verifying group creation success message\n"
+                          "text": "[2026-02-01T13:29:40.704Z] [STEP] Verifying group creation success message\n"
                         },
                         {
-                          "text": "[2026-02-01T13:14:12.606Z] [SUCCESS] Group created successfully (confirmation visible)\n"
+                          "text": "[2026-02-01T13:29:42.637Z] [SUCCESS] Group created successfully (confirmation visible)\n"
                         },
                         {
-                          "text": "[2026-02-01T13:14:12.607Z] [INFO] Saving group name: Automation_Group_20260201_184356\n"
+                          "text": "[2026-02-01T13:29:42.638Z] [INFO] Saving group name: Automation_Group_20260201_185927\n"
                         },
                         {
-                          "text": "[2026-02-01T13:14:12.608Z] [SUCCESS] Group name stored for reuse: Automation_Group_20260201_184356\n"
+                          "text": "[2026-02-01T13:29:42.639Z] [SUCCESS] Group name stored for reuse: Automation_Group_20260201_185927\n"
                         },
                         {
-                          "text": "[2026-02-01T13:14:12.608Z] [INFO] Group Creation test completed successfully\n"
+                          "text": "[2026-02-01T13:29:42.639Z] [INFO] Group Creation test completed successfully\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-01T13:13:55.427Z",
+                      "startTime": "2026-02-01T13:29:27.052Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -390,85 +390,88 @@
                   "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 25675,
+                  "duration": 29958,
                   "errors": [],
                   "stdout": [
                     {
                       "text": "[CHAT WIDGET] HIDDEN | Test: Host activates group by completing platform payment @activation\n"
                     },
                     {
-                      "text": "[2026-02-01T13:14:16.841Z] [INFO] TEST STARTED: Host group activation via platform payment\n"
+                      "text": "[2026-02-01T13:29:45.635Z] [INFO] TEST STARTED: Host group activation via platform payment\n"
                     },
                     {
-                      "text": "[2026-02-01T13:14:16.843Z] [STEP] Target group for activation: Automation_Group_20260201_184356\n"
+                      "text": "[2026-02-01T13:29:45.637Z] [STEP] Target group for activation: Automation_Group_20260201_185927\n"
                     },
                     {
-                      "text": "[2026-02-01T13:14:16.843Z] [STEP] Opening inactive group and redirecting to payment flow\n"
+                      "text": "[2026-02-01T13:29:45.637Z] [STEP] Opening inactive group and redirecting to payment flow\n"
                     },
                     {
-                      "text": "[2026-02-01T13:14:16.846Z] [STEP] Navigating to My Groups page\n"
+                      "text": "[2026-02-01T13:29:45.638Z] [STEP] Navigating to My Groups page\n"
                     },
                     {
-                      "text": "[2026-02-01T13:14:20.522Z] [STEP] Waiting for group cards to render\n"
+                      "text": "[2026-02-01T13:29:50.083Z] [STEP] Waiting for group cards to render\n"
                     },
                     {
-                      "text": "[2026-02-01T13:14:25.465Z] [STEP] Priority scan initiated for group: Automation_Group_20260201_184356\n"
+                      "text": "[2026-02-01T13:29:54.929Z] [STEP] Priority scan initiated for group: Automation_Group_20260201_185927\n"
                     },
                     {
-                      "text": "[2026-02-01T13:14:28.187Z] [SUCCESS] Priority group found: Automation_Group_20260201_184356\n\n1 Member\n\nActivate your group\n"
+                      "text": "[2026-02-01T13:29:57.249Z] [SUCCESS] Priority group found: Automation_Group_20260201_185927\n\n1 Member\n\nActivate your group\n"
                     },
                     {
-                      "text": "[2026-02-01T13:14:28.209Z] [SUCCESS] Priority group is inactive, opening activation flow\n"
+                      "text": "[2026-02-01T13:29:57.269Z] [SUCCESS] Priority group is inactive, opening activation flow\n"
                     },
                     {
-                      "text": "[2026-02-01T13:14:29.017Z] [SUCCESS] Activation or payment page detected for priority group\n"
+                      "text": "[2026-02-01T13:29:58.755Z] [SUCCESS] Activation or payment page detected for priority group\n"
                     },
                     {
-                      "text": "[2026-02-01T13:14:29.018Z] [SUCCESS] Redirected to payment page for group: Automation_Group_20260201_184356\n\n1 Member\n\nActivate your group\n"
+                      "text": "[2026-02-01T13:29:58.756Z] [SUCCESS] Redirected to payment page for group: Automation_Group_20260201_185927\n\n1 Member\n\nActivate your group\n"
                     },
                     {
-                      "text": "[2026-02-01T13:14:29.018Z] [STEP] Waiting for activation payment page to load\n"
+                      "text": "[2026-02-01T13:29:58.756Z] [STEP] Waiting for activation payment page to load\n"
                     },
                     {
-                      "text": "[2026-02-01T13:14:29.019Z] [STEP] Waiting for Stripe payment iframe to become interactive\n"
+                      "text": "[2026-02-01T13:29:58.756Z] [STEP] Waiting for Stripe payment iframe to become interactive\n"
                     },
                     {
-                      "text": "[2026-02-01T13:14:37.206Z] [SUCCESS] Stripe payment iframe and card inputs are ready\n"
+                      "text": "[2026-02-01T13:30:06.673Z] [SUCCESS] Stripe payment iframe and card inputs are ready\n"
                     },
                     {
-                      "text": "[2026-02-01T13:14:37.206Z] [STEP] Entering platform payment details\n"
+                      "text": "[2026-02-01T13:30:06.673Z] [STEP] Entering platform payment details\n"
                     },
                     {
-                      "text": "[2026-02-01T13:14:37.207Z] [STEP] Entering Stripe test card details\n"
+                      "text": "[2026-02-01T13:30:06.673Z] [STEP] Entering Stripe test card details\n"
                     },
                     {
-                      "text": "[2026-02-01T13:14:37.207Z] [STEP] Entering card number\n"
+                      "text": "[2026-02-01T13:30:06.673Z] [STEP] Entering card number\n"
                     },
                     {
-                      "text": "[2026-02-01T13:14:39.159Z] [STEP] Entering expiry date\n"
+                      "text": "[2026-02-01T13:30:08.323Z] [STEP] Entering expiry date\n"
                     },
                     {
-                      "text": "[2026-02-01T13:14:39.646Z] [STEP] Entering CVC\n"
+                      "text": "[2026-02-01T13:30:08.751Z] [STEP] Entering CVC\n"
                     },
                     {
-                      "text": "[2026-02-01T13:14:40.355Z] [SUCCESS] Stripe payment details entered successfully\n"
+                      "text": "[2026-02-01T13:30:09.267Z] [SUCCESS] Stripe payment details entered successfully\n"
                     },
                     {
-                      "text": "[2026-02-01T13:14:40.355Z] [STEP] Submitting platform activation payment\n"
+                      "text": "[2026-02-01T13:30:09.267Z] [STEP] Submitting platform activation payment\n"
                     },
                     {
-                      "text": "[2026-02-01T13:14:40.356Z] [STEP] Submitting payment\n"
+                      "text": "[2026-02-01T13:30:09.267Z] [STEP] Submitting group activation payment\n"
                     },
                     {
-                      "text": "[2026-02-01T13:14:40.565Z] [SUCCESS] Payment submitted\n"
+                      "text": "[2026-02-01T13:30:09.310Z] [STEP] Clicking Pay and Activate Group button\n"
                     },
                     {
-                      "text": "[2026-02-01T13:14:40.565Z] [SUCCESS] TEST COMPLETED: Group activated successfully via platform payment\n"
+                      "text": "[2026-02-01T13:30:14.848Z] [SUCCESS] Payment submitted and success message confirmed\n"
+                    },
+                    {
+                      "text": "[2026-02-01T13:30:14.848Z] [SUCCESS] TEST COMPLETED: Group activated successfully via platform payment\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-02-01T13:14:15.387Z",
+                  "startTime": "2026-02-01T13:29:45.005Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -526,55 +529,55 @@
                   "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 13106,
+                  "duration": 11986,
                   "errors": [],
                   "stdout": [
                     {
                       "text": "[CHAT WIDGET] HIDDEN | Test: Host configures group payment type for member access\n"
                     },
                     {
-                      "text": "[2026-02-01T13:14:44.893Z] [INFO] Starting Group Membership Setup test\n"
+                      "text": "[2026-02-01T13:30:17.547Z] [INFO] Starting Group Membership Setup test\n"
                     },
                     {
-                      "text": "[2026-02-01T13:14:44.896Z] [STEP] Opening Profile → Payments page\n"
+                      "text": "[2026-02-01T13:30:17.548Z] [STEP] Opening Profile → Payments page\n"
                     },
                     {
-                      "text": "[2026-02-01T13:14:52.771Z] [SUCCESS] Profile Payments page ready\n"
+                      "text": "[2026-02-01T13:30:25.924Z] [SUCCESS] Profile Payments page ready\n"
                     },
                     {
-                      "text": "[2026-02-01T13:14:52.772Z] [STEP] Target group for configures member access: Automation_Group_20260201_184356\n"
+                      "text": "[2026-02-01T13:30:25.924Z] [STEP] Target group for configures member access: Automation_Group_20260201_185927\n"
                     },
                     {
-                      "text": "[2026-02-01T13:14:52.773Z] [STEP] Selecting group: Automation_Group_20260201_184356\n"
+                      "text": "[2026-02-01T13:30:25.925Z] [STEP] Selecting group: Automation_Group_20260201_185927\n"
                     },
                     {
-                      "text": "[2026-02-01T13:14:53.465Z] [STEP] Selecting group from Chakra virtualized menu\n"
+                      "text": "[2026-02-01T13:30:26.302Z] [STEP] Selecting group from Chakra virtualized menu\n"
                     },
                     {
-                      "text": "[2026-02-01T13:14:54.851Z] [SUCCESS] Group switched successfully to: Automation_Group_20260201_184356\n"
+                      "text": "[2026-02-01T13:30:27.180Z] [SUCCESS] Group switched successfully to: Automation_Group_20260201_185927\n"
                     },
                     {
-                      "text": "[2026-02-01T13:14:54.852Z] [STEP] Preparing to configure payment settings\n"
+                      "text": "[2026-02-01T13:30:27.181Z] [STEP] Preparing to configure payment settings\n"
                     },
                     {
-                      "text": "[2026-02-01T13:14:54.897Z] [STEP] Group context ready, waiting for payment section\n"
+                      "text": "[2026-02-01T13:30:27.235Z] [STEP] Waiting for payment section\n"
                     },
                     {
-                      "text": "[2026-02-01T13:14:54.932Z] [STEP] Selecting FREE payment type\n"
+                      "text": "[2026-02-01T13:30:27.263Z] [STEP] Selecting FREE payment type\n"
                     },
                     {
-                      "text": "[2026-02-01T13:14:55.037Z] [STEP] Saving payment settings\n"
+                      "text": "[2026-02-01T13:30:27.348Z] [STEP] Saving payment settings\n"
                     },
                     {
-                      "text": "[2026-02-01T13:14:56.468Z] [SUCCESS] Payment type saved successfully\n"
+                      "text": "[2026-02-01T13:30:28.811Z] [SUCCESS] Payment type saved successfully\n"
                     },
                     {
-                      "text": "[2026-02-01T13:14:56.468Z] [SUCCESS] Group membership selection completed\n"
+                      "text": "[2026-02-01T13:30:28.811Z] [SUCCESS] Group membership selection completed\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-02-01T13:14:43.552Z",
+                  "startTime": "2026-02-01T13:30:16.937Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -625,7 +628,7 @@
           "specs": [
             {
               "title": "Host creates a session successfully",
-              "ok": false,
+              "ok": true,
               "tags": [
                 "regression"
               ],
@@ -640,42 +643,119 @@
                     {
                       "workerIndex": 4,
                       "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 3452,
-                      "error": {
-                        "message": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://staging.mentalhappy.com/groups\", waiting until \"load\"\u001b[22m\n",
-                        "stack": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://staging.mentalhappy.com/groups\", waiting until \"load\"\u001b[22m\n\n    at D:\\Git\\mentalhappy-playwright\\tests\\session\\create-session.spec.ts:19:18",
-                        "location": {
-                          "file": "D:\\Git\\mentalhappy-playwright\\tests\\session\\create-session.spec.ts",
-                          "column": 18,
-                          "line": 19
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 17 |\u001b[39m       \u001b[90m// ---------------------------------------------------------\u001b[39m\n \u001b[90m 18 |\u001b[39m       \u001b[33mLogger\u001b[39m\u001b[33m.\u001b[39mstep(\u001b[32m'Navigating to Dashboard'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 19 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[33mURLS\u001b[39m\u001b[33m.\u001b[39m\u001b[33mDASHBOARD\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 20 |\u001b[39m       \u001b[33mLogger\u001b[39m\u001b[33m.\u001b[39msuccess(\u001b[32m'Dashboard loaded'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 21 |\u001b[39m\n \u001b[90m 22 |\u001b[39m       \u001b[90m// ---------------------------------------------------------\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "D:\\Git\\mentalhappy-playwright\\tests\\session\\create-session.spec.ts",
-                            "column": 18,
-                            "line": 19
-                          },
-                          "message": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://staging.mentalhappy.com/groups\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 17 |\u001b[39m       \u001b[90m// ---------------------------------------------------------\u001b[39m\n \u001b[90m 18 |\u001b[39m       \u001b[33mLogger\u001b[39m\u001b[33m.\u001b[39mstep(\u001b[32m'Navigating to Dashboard'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 19 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[33mURLS\u001b[39m\u001b[33m.\u001b[39m\u001b[33mDASHBOARD\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 20 |\u001b[39m       \u001b[33mLogger\u001b[39m\u001b[33m.\u001b[39msuccess(\u001b[32m'Dashboard loaded'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 21 |\u001b[39m\n \u001b[90m 22 |\u001b[39m       \u001b[90m// ---------------------------------------------------------\u001b[39m\u001b[0m\n\u001b[2m    at D:\\Git\\mentalhappy-playwright\\tests\\session\\create-session.spec.ts:19:18\u001b[22m"
-                        }
-                      ],
+                      "status": "passed",
+                      "duration": 26640,
+                      "errors": [],
                       "stdout": [
                         {
                           "text": "[CHAT WIDGET] HIDDEN | Test: Host creates a session successfully\n"
                         },
                         {
-                          "text": "[2026-02-01T13:15:00.504Z] [INFO] Starting Create Session test\n"
+                          "text": "[2026-02-01T13:30:31.587Z] [INFO] Starting Create Session test\n"
                         },
                         {
-                          "text": "[2026-02-01T13:15:00.505Z] [STEP] Navigating to Dashboard\n"
+                          "text": "[2026-02-01T13:30:31.587Z] [STEP] Navigating to Dashboard\n"
+                        },
+                        {
+                          "text": "[2026-02-01T13:30:35.944Z] [SUCCESS] Dashboard loaded\n"
+                        },
+                        {
+                          "text": "[2026-02-01T13:30:35.944Z] [STEP] Searching for a group that supports Create Session\n"
+                        },
+                        {
+                          "text": "[2026-02-01T13:30:35.946Z] [STEP] Searching for saved group to create session: Automation_Group_20260201_185927\n"
+                        },
+                        {
+                          "text": "[2026-02-01T13:30:35.946Z] [STEP] Navigating to My Groups page\n"
+                        },
+                        {
+                          "text": "[2026-02-01T13:30:39.014Z] [STEP] Waiting for group cards to render\n"
+                        },
+                        {
+                          "text": "[2026-02-01T13:30:43.673Z] [INFO] Total groups detected: 65\n"
+                        },
+                        {
+                          "text": "[2026-02-01T13:30:46.173Z] [SUCCESS] Saved group matched: Automation_Group_20260201_185927\n"
+                        },
+                        {
+                          "text": "[2026-02-01T13:30:46.245Z] [STEP] Opening saved group chat\n"
+                        },
+                        {
+                          "text": "[2026-02-01T13:30:46.470Z] [STEP] Initiating Create Session flow from Chat menu\n"
+                        },
+                        {
+                          "text": "[2026-02-01T13:30:46.471Z] [STEP] Verifying chat page has loaded correctly\n"
+                        },
+                        {
+                          "text": "[2026-02-01T13:30:50.467Z] [SUCCESS] Chat page layout is visible\n"
+                        },
+                        {
+                          "text": "[2026-02-01T13:30:50.514Z] [SUCCESS] Chat page opened for expected group: Automation_Group_20260201_185927\n"
+                        },
+                        {
+                          "text": "[2026-02-01T13:30:50.765Z] [INFO] Announcement banner detected, attempting to close\n"
+                        },
+                        {
+                          "text": "[2026-02-01T13:30:51.024Z] [SUCCESS] Announcement banner closed successfully\n"
+                        },
+                        {
+                          "text": "[2026-02-01T13:30:51.244Z] [SUCCESS] Chat action menu opened\n"
+                        },
+                        {
+                          "text": "[2026-02-01T13:30:51.459Z] [SUCCESS] \"Schedule a Session\" menu item selected\n"
+                        },
+                        {
+                          "text": "[2026-02-01T13:30:52.797Z] [SUCCESS] Create Session modal displayed successfully\n"
+                        },
+                        {
+                          "text": "[2026-02-01T13:30:52.797Z] [SUCCESS] Create Session modal successfully opened for saved group\n"
+                        },
+                        {
+                          "text": "[2026-02-01T13:30:52.797Z] [SUCCESS] Create Session modal opened successfully\n"
+                        },
+                        {
+                          "text": "[2026-02-01T13:30:52.798Z] [STEP] Generated session title: Automation_Group_20260201_190052\n"
+                        },
+                        {
+                          "text": "[2026-02-01T13:30:52.798Z] [STEP] Waiting for Create Session modal to be visible\n"
+                        },
+                        {
+                          "text": "[2026-02-01T13:30:52.798Z] [STEP] Waiting for Create Session modal\n"
+                        },
+                        {
+                          "text": "[2026-02-01T13:30:52.828Z] [SUCCESS] Create Session modal visible\n"
+                        },
+                        {
+                          "text": "[2026-02-01T13:30:52.828Z] [STEP] Filling required fields in Create Session modal\n"
+                        },
+                        {
+                          "text": "[2026-02-01T13:30:52.828Z] [STEP] Filling Create Session form\n"
+                        },
+                        {
+                          "text": "[2026-02-01T13:30:52.829Z] [STEP] Setting session date to next day\n"
+                        },
+                        {
+                          "text": "[2026-02-01T13:30:54.571Z] [INFO] Session date set to 02 February, 2026\n"
+                        },
+                        {
+                          "text": "[2026-02-01T13:30:55.337Z] [SUCCESS] Required fields filled\n"
+                        },
+                        {
+                          "text": "[2026-02-01T13:30:55.338Z] [STEP] Submitting Create Session form\n"
+                        },
+                        {
+                          "text": "[2026-02-01T13:30:55.338Z] [STEP] Submitting session\n"
+                        },
+                        {
+                          "text": "[2026-02-01T13:30:55.562Z] [STEP] Verifying session creation success indicator\n"
+                        },
+                        {
+                          "text": "[2026-02-01T13:30:57.505Z] [SUCCESS] Session created successfully with title: Automation_Group_20260201_190052\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-01T13:14:59.080Z",
+                      "startTime": "2026-02-01T13:30:30.977Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -697,26 +777,11 @@
                           "name": "Allure Metadata (metadata)",
                           "contentType": "application/vnd.allure.message+json",
                           "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7InBhcmFtZXRlcnMiOlt7Im5hbWUiOiJXb3JrZXIiLCJ2YWx1ZSI6IjQifV19fQ=="
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "D:\\Git\\mentalhappy-playwright\\test-results\\session-create-session-Cre-a1fe7-ates-a-session-successfully-04-create-session\\video.webm"
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "D:\\Git\\mentalhappy-playwright\\test-results\\session-create-session-Cre-a1fe7-ates-a-session-successfully-04-create-session\\trace.zip"
                         }
-                      ],
-                      "errorLocation": {
-                        "file": "D:\\Git\\mentalhappy-playwright\\tests\\session\\create-session.spec.ts",
-                        "column": 18,
-                        "line": 19
-                      }
+                      ]
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
               "id": "3ccb75dba63c32c46689-174db25c2b2423592884",
@@ -731,11 +796,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-02-01T13:13:23.103Z",
-    "duration": 100490.28600000001,
-    "expected": 4,
+    "startTime": "2026-02-01T13:29:12.181Z",
+    "duration": 105923.88399999999,
+    "expected": 5,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }
