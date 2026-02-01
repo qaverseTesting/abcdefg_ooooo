@@ -11,6 +11,10 @@ export class CreateSessionModal extends BasePage {
   private readonly descriptionEditor: Locator;
   private readonly submitButton: Locator;
 
+  // Timezone (React-Select)
+  private readonly timezoneCombobox: Locator;
+  private readonly selectedTimezoneLabel: Locator;
+
   constructor(page: Page) {
     super(page);
 
@@ -23,7 +27,6 @@ export class CreateSessionModal extends BasePage {
     this.dateInput = this.modalRoot.locator('input[name="date"]');
     this.titleInput = this.modalRoot.locator('input[name="title"]');
 
-    // STRICT-MODE SAFE (scoped to modal)
     this.descriptionEditor = this.modalRoot
       .locator('[data-lexical-editor="true"]')
       .first();
@@ -31,10 +34,16 @@ export class CreateSessionModal extends BasePage {
     this.submitButton = this.modalRoot.getByRole('button', {
       name: /^schedule a session$/i,
     });
+
+    // React-Select timezone field
+    this.timezoneCombobox = this.modalRoot.locator('input[role="combobox"]');
+    this.selectedTimezoneLabel = this.modalRoot.locator(
+      '.react-select__single-value'
+    );
   }
 
   // --------------------------------------------------
-  // PUBLIC API (USED BY TESTS)
+  // PUBLIC API
   // --------------------------------------------------
 
   async waitForVisible(): Promise<void> {
@@ -55,6 +64,7 @@ export class CreateSessionModal extends BasePage {
     Logger.step('Filling Create Session form');
 
     await this.setDateToNextDay();
+    await this.selectDefaultTimezone();
 
     await this.titleInput.fill(data.title);
 
@@ -81,15 +91,10 @@ export class CreateSessionModal extends BasePage {
     Logger.success('Create Session modal closed');
   }
 
-
   // --------------------------------------------------
   // INTERNAL HELPERS
   // --------------------------------------------------
 
-  /**
-   * CRITICAL FIX
-   * Ensures date is always at least +1 day
-   */
   private async setDateToNextDay(): Promise<void> {
     Logger.step('Setting session date to next day');
 
@@ -109,10 +114,36 @@ export class CreateSessionModal extends BasePage {
     await this.dateInput.type(formatted, { delay: 50 });
     await this.dateInput.press('Enter');
 
-    // HARD ASSERT — ensures UI actually updated
     await expect(this.dateInput).toHaveValue(formatted);
 
     Logger.info(`Session date set to ${formatted}`);
   }
 
+  /**
+   * React-Select stable timezone selection
+   */
+  private async selectDefaultTimezone(): Promise<void> {
+    Logger.step('Selecting default timezone');
+
+    // Read currently displayed timezone (source of truth)
+    const defaultTz = (await this.selectedTimezoneLabel.textContent())?.trim();
+
+    if (!defaultTz) {
+      throw new Error('No default timezone visible in UI');
+    }
+
+    Logger.info(`Default timezone detected: ${defaultTz}`);
+
+    await this.timezoneCombobox.click();
+
+    await this.page.keyboard.press('Control+A');
+    await this.page.keyboard.press('Backspace');
+
+    await this.page.keyboard.type(defaultTz, { delay: 40 });
+    await this.page.keyboard.press('Enter');
+
+    await expect(this.selectedTimezoneLabel).toHaveText(defaultTz);
+
+    Logger.success(`Timezone confirmed: ${defaultTz}`);
+  }
 }
