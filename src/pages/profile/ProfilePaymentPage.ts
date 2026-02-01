@@ -94,22 +94,45 @@ async selectGroup(groupName: string): Promise<void> {
 
 
 
-  async selectFreePaymentAndSave(): Promise<void> {
-    Logger.step('Selecting FREE payment type');
+async selectFreePaymentAndSave(): Promise<void> {
+  Logger.step('Selecting FREE payment type');
 
-    await this.paymentTypeDropdown.waitFor({ state: 'visible' });
-    await this.paymentTypeDropdown.selectOption('FREE');
+  // 🔥 Ensure payment section actually exists
+  await expect(
+    this.page.getByRole('heading', { name: /payment settings/i })
+  ).toBeVisible({ timeout: 15_000 });
 
-    await expect(this.savePaymentSettingsButton).toBeEnabled({ timeout: 70_000 });
+  // Sometimes CI renders slower inside tabs/accordions
+  await this.page.waitForTimeout(500);
 
-    Logger.step('Saving payment settings');
+  // Wait for dropdown OR detect missing section
+  const dropdown = this.paymentTypeDropdown;
 
-    // 🔥 Start waiting for toast BEFORE clicking (prevents race condition)
-    await Promise.all([
-      this.savePaymentSettingsButton.click(),
-      expect(this.successToast).toBeVisible({ timeout: 15_000 }),
-    ]);
+  if (!(await dropdown.isVisible().catch(() => false))) {
+    Logger.error('Payment type dropdown not visible. Dumping page state...');
 
-    Logger.success('Payment type saved successfully (success message visible)');
+    console.log('URL:', this.page.url());
+    console.log('Visible text:', await this.page.locator('body').innerText());
+
+    throw new Error(
+      'Payment section not rendered — likely wrong group selected or group not fully initialized.'
+    );
   }
+
+  await dropdown.selectOption('FREE');
+
+  await expect(this.savePaymentSettingsButton).toBeEnabled({ timeout: 70_000 });
+
+  Logger.step('Saving payment settings');
+
+  const successToast = this.page.getByText(/payment type set successfully/i);
+
+  await Promise.all([
+    successToast.waitFor({ state: 'visible', timeout: 15_000 }),
+    this.savePaymentSettingsButton.click(),
+  ]);
+
+  Logger.success('Payment type saved successfully');
+}
+
 }
