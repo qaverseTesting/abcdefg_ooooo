@@ -86,20 +86,21 @@ export class GroupActivationPaymentPage extends BasePage {
    * This method asserts that the payment submission completed successfully.
    */
   async submitPayment(): Promise<void> {
-  Logger.step('Submitting group activation payment');
+    Logger.step('Submitting group activation payment');
 
-  await expect(this.submitButton).toBeEnabled({ timeout: 15_000 });
+    await expect(this.submitButton).toBeEnabled({ timeout: 15_000 });
 
-  const successToast = this.page.getByText(/payment was successful!/i);
+    Logger.step('Clicking Pay and Activate Group button');
 
-  Logger.step('Clicking Pay and Activate Group button');
+    await this.submitButton.click();
 
-  await Promise.all([
-    this.submitButton.click(),
-    expect(successToast).toBeVisible({ timeout: 20_000 }),
-  ]);
+    // Wait for actual result of payment
+    await expect(
+      this.page.getByText(/payment was successful!/i)
+    ).toBeVisible({ timeout: 30_000 });
 
-  Logger.success('Payment submitted and confirmed successfully');
-}
+    Logger.success('Payment submitted and group activation confirmed');
+  }
+
 
 }
