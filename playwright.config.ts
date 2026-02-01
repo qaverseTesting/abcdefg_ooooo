@@ -31,22 +31,36 @@ export default defineConfig({
 
   /* ================= ENTERPRISE PROJECT ARCHITECTURE ================= */
 
-  projects: [
+projects: [
   {
     name: 'setup',
     testMatch: /tests\/setup\/.*\.ts/,
   },
   {
-    name: 'e2e',
+    name: '01-create-group',
     dependencies: ['setup'],
-    testMatch: /tests\/(core|group|session|profile)\/.*\.spec\.ts/,
+    testMatch: /tests\/group\/create-group\.spec\.ts/,
     use: { storageState: 'storage/user.auth.json' },
   },
   {
-    name: 'public',
-    testMatch: /tests\/public\/.*\.spec\.ts/,
-    use: { storageState: undefined },
+    name: '02-group-activation',
+    dependencies: ['01-create-group'],
+    testMatch: /tests\/group\/group-activation-payment\.spec\.ts/,
+    use: { storageState: 'storage/user.auth.json' },
+  },
+  {
+    name: '03-group-membership',
+    dependencies: ['02-group-activation'],
+    testMatch: /tests\/group\/group-membership-setup\.spec\.ts/,
+    use: { storageState: 'storage/user.auth.json' },
+  },
+  {
+    name: '04-create-session',
+    dependencies: ['03-group-membership'],
+    testMatch: /tests\/session\/create-session\.spec\.ts/,
+    use: { storageState: 'storage/user.auth.json' },
   },
 ]
+
 
 });

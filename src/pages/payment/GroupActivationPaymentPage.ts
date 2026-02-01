@@ -96,7 +96,7 @@ export class GroupActivationPaymentPage extends BasePage {
     const toastAppeared = successToast
       .waitFor({ state: 'visible', timeout: 20_000 })
       .then(() => true)
-      .catch(() => true);
+      .catch(() => false);
 
     Logger.step('Clicking Pay and Activate Group button');
     await this.submitButton.click();
