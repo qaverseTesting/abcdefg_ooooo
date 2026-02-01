@@ -37,7 +37,7 @@ test.describe('Create Session', () => {
       // ---------------------------------------------------------
       // Step 3: Fill Create Session details
       // ---------------------------------------------------------
-      const sessionTitle = DataGenerator.groupName();
+      const sessionTitle = DataGenerator.SessionName();
       Logger.step(`Generated session title: ${sessionTitle}`);
 
       // Explicit modal ownership

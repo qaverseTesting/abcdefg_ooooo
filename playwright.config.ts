@@ -6,7 +6,7 @@ export default defineConfig({
   timeout: 60_000,
   expect: { timeout: 10_000 },
 
-  retries: process.env.CI ? 2 : 0,
+  retries: process.env.CI ? 0 : 0,
   workers: process.env.CI ? 4 : undefined,
 
   globalSetup: './tests/setup/global-setup.ts',
