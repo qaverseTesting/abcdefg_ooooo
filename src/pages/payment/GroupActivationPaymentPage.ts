@@ -94,10 +94,9 @@ export class GroupActivationPaymentPage extends BasePage {
 
     await this.submitButton.click();
 
-    // Wait for actual result of payment
-    // await expect(
-    //   this.page.getByText(/payment was successful!/i)
-    // ).toBeVisible({ timeout: 20_000 });
+    await expect(
+      this.page.getByText(/payment was successful!/i)
+    ).toBeVisible({ timeout: 20_000 });
 
     Logger.success('Payment submitted and group activation confirmed');
   }
