@@ -1,41 +1,32 @@
-import { test } from '../../src/fixtures/auth.fixture';
+import { expect, test } from '@playwright/test';
 import { MyGroupsPage } from '../../src/pages/dashboard/MyGroupsPage';
 import { GroupActivationPaymentPage } from '../../src/pages/payment/GroupActivationPaymentPage';
+import { ProfilePaymentPage } from '../../src/pages/profile/ProfilePaymentPage';
 import { Logger } from '../../src/utils/Logger';
-import { RuntimeStore } from '@utils/RuntimeStore';
 
-test('Host activates group by completing platform payment @activation', async ({ page }) => {
-  Logger.info('TEST STARTED: Host group activation via platform payment');
+test('Host activates group successfully using payment',
+    { tag: ['@regression'] }, async ({ page }) => {
+  Logger.info('Starting Group Activation – Payment test');
 
   const myGroupsPage = new MyGroupsPage(page);
   const paymentPage = new GroupActivationPaymentPage(page);
+  const profilePaymentPage = new ProfilePaymentPage(page);
 
-  const targetGroupName = RuntimeStore.getGroupName();
-  Logger.step(`Target group for activation: ${targetGroupName}`);
-
-  Logger.step('Opening inactive group and redirecting to payment flow');
+  //  Find inactive group and go to payment
   const result =
-    await myGroupsPage.openPriorityInactiveGroupAndRedirectToPayment(
-      targetGroupName
-    );
+    await myGroupsPage.openInactiveGroupAndRedirectToPayment();
 
   if (result.status === 'NOT_FOUND') {
-    Logger.warn('No inactive group found that supports activation');
-    test.skip(true, 'No inactive group available for activation');
-    return;
+    test.skip(true, 'No inactive group available for activation test');
+    return; //  REQUIRED for TypeScript narrowing
   }
 
   const activatedGroupName = result.groupName;
-  Logger.success(`Redirected to payment page for group: ${activatedGroupName}`);
 
-  Logger.step('Waiting for activation payment page to load');
+  //  Complete payment
   await paymentPage.waitForVisible();
-
-  Logger.step('Entering platform payment details');
   await paymentPage.fillPaymentDetails();
-
-  Logger.step('Submitting platform activation payment');
   await paymentPage.submitPayment();
 
-  Logger.success('TEST COMPLETED: Group activated successfully via platform payment');
+  Logger.success('Group Activation – Payment Flow completed successfully');
 });
