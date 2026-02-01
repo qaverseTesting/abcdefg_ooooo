@@ -50,46 +50,48 @@ export class ProfilePaymentPage extends BasePage {
   }
 
   async selectGroup(groupName: string): Promise<void> {
-  Logger.step(`Selecting group: ${groupName}`);
+    Logger.step(`Selecting group: ${groupName}`);
 
-  const label = this.groupSwitcherButton.locator('span').first();
+    const label = this.groupSwitcherButton.locator('span').first();
+    const current = (await label.textContent())?.trim();
 
-  const current = (await label.textContent())?.trim();
-  if (current === groupName) {
-    Logger.info(`Group already selected: ${groupName}`);
-    return;
+    if (current === groupName) {
+      Logger.info(`Group already selected: ${groupName}`);
+      return;
+    }
+
+    // Open dropdown
+    await this.groupSwitcherButton.click();
+
+    const menu = await this.getGroupMenu();
+    await expect(menu).toBeVisible({ timeout: 10_000 });
+
+    // 🔍 Find ONLY the visible correct option
+    const option = menu
+      .getByRole('menuitem', { name: groupName, exact: true })
+      .locator(':visible');
+
+    await expect(option).toBeVisible({ timeout: 10_000 });
+
+    // Bring into view and focus (Chakra needs hover sometimes)
+    await option.scrollIntoViewIfNeeded();
+    await option.hover();
+
+    Logger.step(`Clicking group option: ${groupName}`);
+
+    await option.click({ force: true });
+
+    // 🧠 Wait until label changes from previous value
+    if (current) {
+      await expect(label).not.toHaveText(current, { timeout: 10_000 });
+    }
+
+    // ✅ Final confirmation
+    await expect(label).toHaveText(groupName, { timeout: 10_000 });
+
+    Logger.success(`Group switched successfully to: ${groupName}`);
   }
 
-  // Open dropdown
-  await this.groupSwitcherButton.click();
-
-  const menu = await this.getGroupMenu();
-  await expect(menu).toBeVisible({ timeout: 10_000 });
-
-  const option = menu.getByRole('menuitem', {
-    name: groupName,
-    exact: true,
-  });
-
-  // Wait until option is actually attached & visible
-  await expect(option).toBeVisible({ timeout: 10_000 });
-
-  // Ensure it is in view inside scroll container
-  await option.scrollIntoViewIfNeeded();
-
-  // Force stable click sequence
-  await option.hover(); // triggers Chakra focus logic
-
-  await Promise.all([
-    // Wait for the REAL outcome
-    expect(label).toHaveText(groupName, { timeout: 15_000 }),
-
-    // Use force click to bypass overlay/focus traps
-    option.click({ force: true }),
-  ]);
-
-  Logger.success(`Group switched successfully to: ${groupName}`);
-}
 
 
   async selectFreePaymentAndSave(): Promise<void> {
