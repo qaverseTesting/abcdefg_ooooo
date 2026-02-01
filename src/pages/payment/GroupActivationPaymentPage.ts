@@ -67,17 +67,19 @@ export class GroupActivationPaymentPage extends BasePage {
   }
 
   async submitPayment(): Promise<void> {
-    Logger.step('Submitting payment');
+  Logger.step('Submitting payment');
 
-    await this.page.waitForLoadState('networkidle');
+  // Wait until Stripe validation enables the button
+  await expect(this.submitButton).toBeEnabled({ timeout: 20_000 });
 
-    await expect(this.submitButton).toBeEnabled();
-    await this.submitButton.click();
+  Logger.step('Clicking Pay button');
+  await this.submitButton.click();
 
-    await expect(
-      this.page.getByText(/payment was successful!/i)
-    ).toBeVisible({ timeout: 20_000 });
+  await expect(
+    this.page.getByText(/payment was successful!/i)
+  ).toBeVisible({ timeout: 20_000 });
 
-    Logger.success('Payment success confirmed');
-  }
+  Logger.success('Payment success confirmed');
+}
+
 }
