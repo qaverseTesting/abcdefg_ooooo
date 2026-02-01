@@ -49,48 +49,48 @@ export class ProfilePaymentPage extends BasePage {
     Logger.success('Profile Payments page ready');
   }
 
-  async selectGroup(groupName: string): Promise<void> {
-    Logger.step(`Selecting group: ${groupName}`);
+async selectGroup(groupName: string): Promise<void> {
+  Logger.step(`Selecting group: ${groupName}`);
 
-    const label = this.groupSwitcherButton.locator('span').first();
-    const current = (await label.textContent())?.trim();
+  const label = this.groupSwitcherButton.locator('span').first();
+  const current = (await label.textContent())?.trim();
 
-    if (current === groupName) {
-      Logger.info(`Group already selected: ${groupName}`);
-      return;
-    }
-
-    // Open dropdown
-    await this.groupSwitcherButton.click();
-
-    const menu = await this.getGroupMenu();
-    await expect(menu).toBeVisible({ timeout: 10_000 });
-
-    // 🔍 Find ONLY the visible correct option
-    const option = menu
-      .getByRole('menuitem', { name: groupName, exact: true })
-      .locator(':visible');
-
-    await expect(option).toBeVisible({ timeout: 10_000 });
-
-    // Bring into view and focus (Chakra needs hover sometimes)
-    await option.scrollIntoViewIfNeeded();
-    await option.hover();
-
-    Logger.step(`Clicking group option: ${groupName}`);
-
-    await option.click({ force: true });
-
-    // 🧠 Wait until label changes from previous value
-    if (current) {
-      await expect(label).not.toHaveText(current, { timeout: 10_000 });
-    }
-
-    // ✅ Final confirmation
-    await expect(label).toHaveText(groupName, { timeout: 10_000 });
-
-    Logger.success(`Group switched successfully to: ${groupName}`);
+  if (current === groupName) {
+    Logger.info(`Group already selected: ${groupName}`);
+    return;
   }
+
+  await this.groupSwitcherButton.click();
+
+  const menu = await this.getGroupMenu();
+  await expect(menu).toBeVisible({ timeout: 10_000 });
+
+  Logger.step('Selecting group from Chakra virtualized menu');
+
+  const option = menu.getByRole('menuitem', { name: groupName, exact: true });
+
+  // Ensure it exists in DOM (virtualized list handling)
+  await expect(option).toHaveCount(1, { timeout: 10_000 });
+
+  // Scroll container so React marks it "in view"
+  await menu.evaluate((el, text) => {
+    const items = Array.from(el.querySelectorAll('[role="menuitem"]'));
+    const target = items.find(i => i.textContent?.trim() === text);
+    if (target) target.scrollIntoView({ block: 'center' });
+  }, groupName);
+
+  // 🔥 DOM-level click bypasses viewport & overlay issues
+  await option.evaluate(el => (el as HTMLElement).click());
+
+  if (current) {
+    await expect(label).not.toHaveText(current, { timeout: 10_000 });
+  }
+
+  await expect(label).toHaveText(groupName, { timeout: 10_000 });
+
+  Logger.success(`Group switched successfully to: ${groupName}`);
+}
+
 
 
 
