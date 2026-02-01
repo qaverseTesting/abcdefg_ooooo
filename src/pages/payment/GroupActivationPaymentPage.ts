@@ -66,13 +66,6 @@ export class GroupActivationPaymentPage extends BasePage {
     await cvc.click({ force: true });
     await cvc.type('123', { delay: 50 });
 
-    // ZIP / Postal code (optional field)
-    if (await zip.isVisible().catch(() => false)) {
-      Logger.step('Entering ZIP / postal code');
-      await zip.click({ force: true });
-      await zip.type('12345', { delay: 50 });
-    }
-
     // Final sanity checks to avoid silent Stripe failures
     await expect(cardNumber).not.toBeEmpty();
     await expect(expiry).not.toBeEmpty();
