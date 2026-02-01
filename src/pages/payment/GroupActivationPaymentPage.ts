@@ -9,7 +9,7 @@ export class GroupActivationPaymentPage extends BasePage {
   constructor(page: Page) {
     super(page);
 
-    // Stripe Payment Element iframe
+    // ONE Stripe iframe containing ENTIRE form
     this.stripeFrame = page.frameLocator(
       'iframe[title="Secure payment input frame"]'
     );
@@ -20,37 +20,35 @@ export class GroupActivationPaymentPage extends BasePage {
   }
 
   async waitForVisible(): Promise<void> {
-    Logger.step('Waiting for Stripe Payment Element');
+    Logger.step('Waiting for Stripe full form');
 
-    const cardNumber = this.stripeFrame.locator(
-      'input[autocomplete="cc-number"]'
-    );
+    const cardNumber = this.stripeFrame.locator('#payment-numberInput');
 
     await cardNumber.waitFor({ state: 'visible', timeout: 30_000 });
-    await expect(cardNumber).toBeEditable({ timeout: 10_000 });
+    await expect(cardNumber).toBeEditable();
 
-    Logger.success('Stripe Payment Element ready');
+    Logger.success('Stripe form ready');
   }
 
   async fillPaymentDetails(): Promise<void> {
-    Logger.step('Filling Stripe payment details');
+    Logger.step('Filling Stripe full payment form');
 
     const frame = this.stripeFrame;
 
-    const cardNumber = frame.locator('input[autocomplete="cc-number"]');
-    const expiry = frame.locator('input[autocomplete="cc-exp"]');
-    const cvc = frame.locator('input[autocomplete="cc-csc"]');
-    const postal = frame.locator('input[autocomplete="postal-code"]');
+    // All fields live INSIDE iframe
+    const country = frame.locator('#payment-countryInput');
+    const postal = frame.locator('#payment-postalCodeInput');
+    const cardNumber = frame.locator('#payment-numberInput');
+    const expiry = frame.locator('#payment-expiryInput');
+    const cvc = frame.locator('#payment-cvcInput');
 
-    // Country field (Payment Element)
-    const country = frame.locator('input[autocomplete="country"]');
+    // ---- COUNTRY ----
+    Logger.step('Selecting country');
+    await country.selectOption('US');
 
-    // ---- COUNTRY (INDIA) ----
-    if (await country.isVisible({ timeout: 5000 }).catch(() => false)) {
-      Logger.step('Selecting country: India');
-      await country.click();
-      await country.type('India', { delay: 40 });
-      await country.press('Enter');
+    // ---- POSTAL ----
+    if (await postal.count()) {
+      await postal.fill('560001');
     }
 
     // ---- CARD NUMBER ----
@@ -65,27 +63,15 @@ export class GroupActivationPaymentPage extends BasePage {
     await cvc.click();
     await cvc.type('123', { delay: 40 });
 
-    // ---- POSTAL CODE ----
-    if (await postal.isVisible({ timeout: 3000 }).catch(() => false)) {
-      Logger.step('Entering postal code');
-      await postal.click();
-      await postal.type('560001', { delay: 40 }); // Indian PIN code format
-    }
-
-    // Validation checks
-    await expect(cardNumber).not.toBeEmpty();
-    await expect(expiry).not.toBeEmpty();
-    await expect(cvc).not.toBeEmpty();
-
-    Logger.success('Stripe payment details entered');
+    Logger.success('Stripe form filled');
   }
 
   async submitPayment(): Promise<void> {
     Logger.step('Submitting payment');
 
-    await this.page.waitForLoadState('networkidle'); // Stripe validation calls
+    await this.page.waitForLoadState('networkidle');
 
-    await expect(this.submitButton).toBeEnabled({ timeout: 15_000 });
+    await expect(this.submitButton).toBeEnabled();
     await this.submitButton.click();
 
     await expect(
