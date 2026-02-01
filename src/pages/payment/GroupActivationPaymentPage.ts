@@ -85,38 +85,49 @@ export class GroupActivationPaymentPage extends BasePage {
    * Submits the payment and validates that the success toast appears.
    * This method asserts that the payment submission completed successfully.
    */
- async submitPayment(): Promise<void> {
+async submitPayment(): Promise<void> {
   Logger.step('Submitting group activation payment');
 
   await expect(this.submitButton).toBeEnabled({ timeout: 15_000 });
 
   await this.submitButton.click();
 
-  // Wait for either success OR detect payment didn't load
-  const activationHeader = this.page.getByText(/activate .* group/i);
+  const successToast = this.page.getByText(/payment was successful!/i);
+
+  const activationHeader = this.page.getByRole('heading', {
+    level: 2,
+    name: /^Activate ".+" Group$/i,
+  });
 
   try {
-    await expect(
-      this.page.getByText(/payment was successful!/i)
-    ).toBeVisible({ timeout: 20_000 });
-
-    Logger.success('Toast success detected');
+    await expect(successToast).toBeVisible({ timeout: 15_000 });
+    Logger.success('Payment success toast detected');
+    return;
   } catch {
-    Logger.warn('Toast missing — checking if still on activation page');
-
-    if (await activationHeader.isVisible()) {
-      throw new Error(
-        'Payment did not complete in CI environment — external payment provider likely blocked.'
-      );
-    }
-
-    // fallback if UI shows activated state
-    await expect(
-      this.page.getByText(/active|activated|manage group/i)
-    ).toBeVisible({ timeout: 15_000 });
-
-    Logger.success('Group activated via fallback UI state');
+    Logger.warn('Toast not shown — verifying page state');
   }
+
+  // If still on activation page, payment never completed
+  if (await activationHeader.isVisible()) {
+    Logger.error('Still on activation page — Stripe flow did not complete');
+
+    const url = this.page.url();
+    const html = await this.page.content();
+
+    Logger.error(`URL: ${url}`);
+    Logger.error('Stripe likely blocked in CI environment');
+
+    throw new Error(
+      'Payment provider flow did not complete in CI. Stripe UI cannot finish in headless environment.'
+    );
+  }
+
+  // Fallback: check if group already activated
+  await expect(
+    this.page.getByText(/group (active|activated|manage)/i)
+  ).toBeVisible({ timeout: 15_000 });
+
+  Logger.success('Group activation detected via UI state');
 }
 
 
