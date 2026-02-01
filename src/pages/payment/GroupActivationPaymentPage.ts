@@ -85,53 +85,37 @@ export class GroupActivationPaymentPage extends BasePage {
    * Submits the payment and validates that the success toast appears.
    * This method asserts that the payment submission completed successfully.
    */
-  async submitPayment(): Promise<void> {
+ async submitPayment(): Promise<void> {
   Logger.step('Submitting group activation payment');
 
   await expect(this.submitButton).toBeEnabled({ timeout: 15_000 });
 
-  const successToast = this.page.getByText(/payment was successful!/i);
-
-  // Log console errors
-  this.page.on('console', msg => {
-    console.log('[BROWSER LOG]', msg.type(), msg.text());
-  });
-
-  // Log failed requests
-  this.page.on('response', res => {
-    if (res.status() >= 400) {
-      console.log('[API ERROR]', res.url(), res.status());
-    }
-  });
-
-  Logger.step('Clicking Pay and Activate Group button');
-
   await this.submitButton.click();
 
+  // Wait for either success OR detect payment didn't load
+  const activationHeader = this.page.getByText(/activate .* group/i);
+
   try {
-    await expect(successToast).toBeVisible({ timeout: 30_000 });
-    Logger.success('Success toast appeared');
-    return;
-  } catch (e) {
-    Logger.warn('Toast not found — capturing debug info');
-
-    const html = await this.page.content();
-    console.log('------ PAGE HTML START ------');
-    console.log(html.slice(0, 5000)); // avoid log overflow
-    console.log('------ PAGE HTML END ------');
-
-    const url = this.page.url();
-    console.log('Current URL:', url);
-
-    const texts = await this.page.locator('body').innerText();
-    console.log('Visible page text snapshot:', texts.slice(0, 2000));
-
-    // Fallback success signals
     await expect(
-      this.page.getByText(/active|activated|manage group|payment complete/i)
-    ).toBeVisible({ timeout: 10_000 });
+      this.page.getByText(/payment was successful!/i)
+    ).toBeVisible({ timeout: 20_000 });
 
-    Logger.success('Payment confirmed via fallback UI state');
+    Logger.success('Toast success detected');
+  } catch {
+    Logger.warn('Toast missing — checking if still on activation page');
+
+    if (await activationHeader.isVisible()) {
+      throw new Error(
+        'Payment did not complete in CI environment — external payment provider likely blocked.'
+      );
+    }
+
+    // fallback if UI shows activated state
+    await expect(
+      this.page.getByText(/active|activated|manage group/i)
+    ).toBeVisible({ timeout: 15_000 });
+
+    Logger.success('Group activated via fallback UI state');
   }
 }
 
