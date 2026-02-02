@@ -31,7 +31,7 @@ jobs:
       ALLURE_PAGES_REPO: abcdefg_ooooo
 
     steps:
-      # 1️⃣ Checkout repository
+      # 1️. Checkout repository
       - name: Checkout repository
         uses: actions/checkout@v4
 
