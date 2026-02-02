@@ -164,19 +164,19 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 26470,
+                  "duration": 27169,
                   "errors": [],
                   "stdout": [
                     {
                       "text": "[CHAT WIDGET] HIDDEN | Test: authenticate group host user\n"
                     },
                     {
-                      "text": "[2026-02-01T18:32:00.837Z] [SUCCESS] Login successful\n"
+                      "text": "[2026-02-02T15:17:04.670Z] [SUCCESS] Login successful\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-02-01T18:31:45.103Z",
+                  "startTime": "2026-02-02T15:16:48.569Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -244,91 +244,91 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 15647,
+                      "duration": 18033,
                       "errors": [],
                       "stdout": [
                         {
                           "text": "[CHAT WIDGET] HIDDEN | Test: Group Host can create a group successfully\n"
                         },
                         {
-                          "text": "[2026-02-01T18:32:14.074Z] [INFO] Starting Group Creation test\n"
+                          "text": "[2026-02-02T15:17:19.541Z] [INFO] Starting Group Creation test\n"
                         },
                         {
-                          "text": "[2026-02-01T18:32:14.076Z] [STEP] Generated group name: Automation_Group_20260202_000214\n"
+                          "text": "[2026-02-02T15:17:19.542Z] [STEP] Generated group name: Automation_Group_20260202_204719\n"
                         },
                         {
-                          "text": "[2026-02-01T18:32:14.077Z] [STEP] Navigating to Dashboard\n"
+                          "text": "[2026-02-02T15:17:19.542Z] [STEP] Navigating to Dashboard\n"
                         },
                         {
-                          "text": "[2026-02-01T18:32:17.801Z] [SUCCESS] Dashboard loaded\n"
+                          "text": "[2026-02-02T15:17:22.526Z] [SUCCESS] Dashboard loaded\n"
                         },
                         {
-                          "text": "[2026-02-01T18:32:17.802Z] [STEP] Clicking \"Start Group\" from Dashboard\n"
+                          "text": "[2026-02-02T15:17:22.527Z] [STEP] Clicking \"Start Group\" from Dashboard\n"
                         },
                         {
-                          "text": "[2026-02-01T18:32:17.802Z] [STEP] Clicking on Start a Group\n"
+                          "text": "[2026-02-02T15:17:22.528Z] [STEP] Clicking on Start a Group\n"
                         },
                         {
-                          "text": "[2026-02-01T18:32:22.013Z] [SUCCESS] \"Start Group\" clicked\n"
+                          "text": "[2026-02-02T15:17:27.784Z] [SUCCESS] \"Start Group\" clicked\n"
                         },
                         {
-                          "text": "[2026-02-01T18:32:22.013Z] [STEP] Verifying Create Group page loaded\n"
+                          "text": "[2026-02-02T15:17:27.785Z] [STEP] Verifying Create Group page loaded\n"
                         },
                         {
-                          "text": "[2026-02-01T18:32:22.014Z] [ASSERT] Create Group page is loaded\n"
+                          "text": "[2026-02-02T15:17:27.786Z] [ASSERT] Create Group page is loaded\n"
                         },
                         {
-                          "text": "[2026-02-01T18:32:23.490Z] [SUCCESS] Create Group page loaded\n"
+                          "text": "[2026-02-02T15:17:29.788Z] [SUCCESS] Create Group page loaded\n"
                         },
                         {
-                          "text": "[2026-02-01T18:32:23.490Z] [STEP] Entering group details\n"
+                          "text": "[2026-02-02T15:17:29.795Z] [STEP] Entering group details\n"
                         },
                         {
-                          "text": "[2026-02-01T18:32:23.490Z] [STEP] Filling group details\n"
+                          "text": "[2026-02-02T15:17:29.796Z] [STEP] Filling group details\n"
                         },
                         {
-                          "text": "[2026-02-01T18:32:24.114Z] [SUCCESS] Group details entered\n"
+                          "text": "[2026-02-02T15:17:30.959Z] [SUCCESS] Group details entered\n"
                         },
                         {
-                          "text": "[2026-02-01T18:32:24.114Z] [STEP] Selecting random group tag\n"
+                          "text": "[2026-02-02T15:17:30.959Z] [STEP] Selecting random group tag\n"
                         },
                         {
-                          "text": "[2026-02-01T18:32:24.115Z] [STEP] Selecting a random group tag\n"
+                          "text": "[2026-02-02T15:17:30.960Z] [STEP] Selecting a random group tag\n"
                         },
                         {
-                          "text": "[2026-02-01T18:32:25.738Z] [SUCCESS] Group tag selected\n"
+                          "text": "[2026-02-02T15:17:33.393Z] [SUCCESS] Group tag selected\n"
                         },
                         {
-                          "text": "[2026-02-01T18:32:25.739Z] [STEP] Submitting Create Group form\n"
+                          "text": "[2026-02-02T15:17:33.393Z] [STEP] Submitting Create Group form\n"
                         },
                         {
-                          "text": "[2026-02-01T18:32:25.739Z] [STEP] Submitting group creation Preview\n"
+                          "text": "[2026-02-02T15:17:33.393Z] [STEP] Submitting group creation Preview\n"
                         },
                         {
-                          "text": "[2026-02-01T18:32:25.821Z] [STEP] Confirming group submission\n"
+                          "text": "[2026-02-02T15:17:33.510Z] [STEP] Confirming group submission\n"
                         },
                         {
-                          "text": "[2026-02-01T18:32:26.828Z] [SUCCESS] Create Group submitted\n"
+                          "text": "[2026-02-02T15:17:34.135Z] [SUCCESS] Create Group submitted\n"
                         },
                         {
-                          "text": "[2026-02-01T18:32:26.828Z] [STEP] Verifying group creation success message\n"
+                          "text": "[2026-02-02T15:17:34.136Z] [STEP] Verifying group creation success message\n"
                         },
                         {
-                          "text": "[2026-02-01T18:32:28.756Z] [SUCCESS] Group created successfully (confirmation visible)\n"
+                          "text": "[2026-02-02T15:17:36.098Z] [SUCCESS] Group created successfully (confirmation visible)\n"
                         },
                         {
-                          "text": "[2026-02-01T18:32:28.756Z] [INFO] Saving group name: Automation_Group_20260202_000214\n"
+                          "text": "[2026-02-02T15:17:36.099Z] [INFO] Saving group name: Automation_Group_20260202_204719\n"
                         },
                         {
-                          "text": "[2026-02-01T18:32:28.757Z] [SUCCESS] Group name stored for reuse: Automation_Group_20260202_000214\n"
+                          "text": "[2026-02-02T15:17:36.100Z] [SUCCESS] Group name stored for reuse: Automation_Group_20260202_204719\n"
                         },
                         {
-                          "text": "[2026-02-01T18:32:28.758Z] [INFO] Group Creation test completed successfully\n"
+                          "text": "[2026-02-02T15:17:36.100Z] [INFO] Group Creation test completed successfully\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-01T18:32:13.158Z",
+                      "startTime": "2026-02-02T15:17:18.164Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -390,82 +390,82 @@
                   "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 28237,
+                  "duration": 35409,
                   "errors": [],
                   "stdout": [
                     {
                       "text": "[CHAT WIDGET] HIDDEN | Test: Host activates group by completing platform payment @activation\n"
                     },
                     {
-                      "text": "[2026-02-01T18:32:31.373Z] [INFO] TEST STARTED: Host group activation via platform payment\n"
+                      "text": "[2026-02-02T15:17:39.974Z] [INFO] TEST STARTED: Host group activation via platform payment\n"
                     },
                     {
-                      "text": "[2026-02-01T18:32:31.376Z] [STEP] Target group for activation: Automation_Group_20260202_000214\n"
+                      "text": "[2026-02-02T15:17:39.977Z] [STEP] Target group for activation: Automation_Group_20260202_204719\n"
                     },
                     {
-                      "text": "[2026-02-01T18:32:31.376Z] [STEP] Opening inactive group and redirecting to payment flow\n"
+                      "text": "[2026-02-02T15:17:39.978Z] [STEP] Opening inactive group and redirecting to payment flow\n"
                     },
                     {
-                      "text": "[2026-02-01T18:32:31.377Z] [STEP] Navigating to My Groups page\n"
+                      "text": "[2026-02-02T15:17:39.979Z] [STEP] Navigating to My Groups page\n"
                     },
                     {
-                      "text": "[2026-02-01T18:32:35.121Z] [STEP] Waiting for group cards to render\n"
+                      "text": "[2026-02-02T15:17:43.018Z] [STEP] Waiting for group cards to render\n"
                     },
                     {
-                      "text": "[2026-02-01T18:32:40.168Z] [STEP] Priority scan initiated for group: Automation_Group_20260202_000214\n"
+                      "text": "[2026-02-02T15:17:48.947Z] [STEP] Priority scan initiated for group: Automation_Group_20260202_204719\n"
                     },
                     {
-                      "text": "[2026-02-01T18:32:43.733Z] [SUCCESS] Priority group found: Automation_Group_20260202_000214\n\n1 Member\n\nActivate your group\n"
+                      "text": "[2026-02-02T15:17:54.608Z] [SUCCESS] Priority group found: Automation_Group_20260202_204719\n\n1 Member\n\nActivate your group\n"
                     },
                     {
-                      "text": "[2026-02-01T18:32:43.751Z] [SUCCESS] Priority group is inactive, opening activation flow\n"
+                      "text": "[2026-02-02T15:17:54.637Z] [SUCCESS] Priority group is inactive, opening activation flow\n"
                     },
                     {
-                      "text": "[2026-02-01T18:32:44.485Z] [SUCCESS] Activation or payment page detected for priority group\n"
+                      "text": "[2026-02-02T15:17:55.499Z] [SUCCESS] Activation or payment page detected for priority group\n"
                     },
                     {
-                      "text": "[2026-02-01T18:32:44.486Z] [SUCCESS] Redirected to payment page for group: Automation_Group_20260202_000214\n\n1 Member\n\nActivate your group\n"
+                      "text": "[2026-02-02T15:17:55.500Z] [SUCCESS] Redirected to payment page for group: Automation_Group_20260202_204719\n\n1 Member\n\nActivate your group\n"
                     },
                     {
-                      "text": "[2026-02-01T18:32:44.486Z] [STEP] Waiting for activation payment page to load\n"
+                      "text": "[2026-02-02T15:17:55.500Z] [STEP] Waiting for activation payment page to load\n"
                     },
                     {
-                      "text": "[2026-02-01T18:32:44.486Z] [STEP] Waiting for Stripe full form\n"
+                      "text": "[2026-02-02T15:17:55.500Z] [STEP] Waiting for Stripe full form\n"
                     },
                     {
-                      "text": "[2026-02-01T18:32:52.956Z] [SUCCESS] Stripe form ready\n"
+                      "text": "[2026-02-02T15:18:04.624Z] [SUCCESS] Stripe form ready\n"
                     },
                     {
-                      "text": "[2026-02-01T18:32:52.956Z] [STEP] Entering platform payment details\n"
+                      "text": "[2026-02-02T15:18:04.624Z] [STEP] Entering platform payment details\n"
                     },
                     {
-                      "text": "[2026-02-01T18:32:52.956Z] [STEP] Filling Stripe full payment form\n"
+                      "text": "[2026-02-02T15:18:04.625Z] [STEP] Filling Stripe full payment form\n"
                     },
                     {
-                      "text": "[2026-02-01T18:32:52.956Z] [STEP] Selecting country\n"
+                      "text": "[2026-02-02T15:18:04.625Z] [STEP] Selecting country\n"
                     },
                     {
-                      "text": "[2026-02-01T18:32:55.458Z] [SUCCESS] Stripe form filled\n"
+                      "text": "[2026-02-02T15:18:09.284Z] [SUCCESS] Stripe form filled\n"
                     },
                     {
-                      "text": "[2026-02-01T18:32:55.458Z] [STEP] Submitting platform activation payment\n"
+                      "text": "[2026-02-02T15:18:09.284Z] [STEP] Submitting platform activation payment\n"
                     },
                     {
-                      "text": "[2026-02-01T18:32:55.458Z] [STEP] Submitting payment\n"
+                      "text": "[2026-02-02T15:18:09.284Z] [STEP] Submitting payment\n"
                     },
                     {
-                      "text": "[2026-02-01T18:32:55.491Z] [STEP] Clicking Pay button\n"
+                      "text": "[2026-02-02T15:18:09.386Z] [STEP] Clicking Pay button\n"
                     },
                     {
-                      "text": "[2026-02-01T18:32:58.576Z] [SUCCESS] Payment success confirmed\n"
+                      "text": "[2026-02-02T15:18:13.675Z] [SUCCESS] Payment success confirmed\n"
                     },
                     {
-                      "text": "[2026-02-01T18:32:58.576Z] [SUCCESS] TEST COMPLETED: Group activated successfully via platform payment\n"
+                      "text": "[2026-02-02T15:18:13.675Z] [SUCCESS] TEST COMPLETED: Group activated successfully via platform payment\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-02-01T18:32:30.491Z",
+                  "startTime": "2026-02-02T15:17:38.530Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -523,55 +523,55 @@
                   "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 16797,
+                  "duration": 15530,
                   "errors": [],
                   "stdout": [
                     {
                       "text": "[CHAT WIDGET] HIDDEN | Test: Host configures group payment type for member access\n"
                     },
                     {
-                      "text": "[2026-02-01T18:33:01.389Z] [INFO] Starting Group Membership Setup test\n"
+                      "text": "[2026-02-02T15:18:18.518Z] [INFO] Starting Group Membership Setup test\n"
                     },
                     {
-                      "text": "[2026-02-01T18:33:01.390Z] [STEP] Opening Profile → Payments page\n"
+                      "text": "[2026-02-02T15:18:18.521Z] [STEP] Opening Profile → Payments page\n"
                     },
                     {
-                      "text": "[2026-02-01T18:33:14.317Z] [SUCCESS] Profile Payments page ready\n"
+                      "text": "[2026-02-02T15:18:27.635Z] [SUCCESS] Profile Payments page ready\n"
                     },
                     {
-                      "text": "[2026-02-01T18:33:14.318Z] [STEP] Target group for configures member access: Automation_Group_20260202_000214\n"
+                      "text": "[2026-02-02T15:18:27.636Z] [STEP] Target group for configures member access: Automation_Group_20260202_204719\n"
                     },
                     {
-                      "text": "[2026-02-01T18:33:14.318Z] [STEP] Selecting group: Automation_Group_20260202_000214\n"
+                      "text": "[2026-02-02T15:18:27.637Z] [STEP] Selecting group: Automation_Group_20260202_204719\n"
                     },
                     {
-                      "text": "[2026-02-01T18:33:14.802Z] [STEP] Selecting group from Chakra virtualized menu\n"
+                      "text": "[2026-02-02T15:18:28.657Z] [STEP] Selecting group from Chakra virtualized menu\n"
                     },
                     {
-                      "text": "[2026-02-01T18:33:15.724Z] [SUCCESS] Group switched successfully to: Automation_Group_20260202_000214\n"
+                      "text": "[2026-02-02T15:18:30.537Z] [SUCCESS] Group switched successfully to: Automation_Group_20260202_204719\n"
                     },
                     {
-                      "text": "[2026-02-01T18:33:15.725Z] [STEP] Preparing to configure payment settings\n"
+                      "text": "[2026-02-02T15:18:30.539Z] [STEP] Preparing to configure payment settings\n"
                     },
                     {
-                      "text": "[2026-02-01T18:33:15.746Z] [STEP] Waiting for payment section\n"
+                      "text": "[2026-02-02T15:18:30.572Z] [STEP] Waiting for payment section\n"
                     },
                     {
-                      "text": "[2026-02-01T18:33:15.762Z] [STEP] Selecting FREE payment type\n"
+                      "text": "[2026-02-02T15:18:30.613Z] [STEP] Selecting FREE payment type\n"
                     },
                     {
-                      "text": "[2026-02-01T18:33:15.833Z] [STEP] Saving payment settings\n"
+                      "text": "[2026-02-02T15:18:30.759Z] [STEP] Saving payment settings\n"
                     },
                     {
-                      "text": "[2026-02-01T18:33:17.234Z] [SUCCESS] Payment type saved successfully\n"
+                      "text": "[2026-02-02T15:18:32.244Z] [SUCCESS] Payment type saved successfully\n"
                     },
                     {
-                      "text": "[2026-02-01T18:33:17.234Z] [SUCCESS] Group membership selection completed\n"
+                      "text": "[2026-02-02T15:18:32.245Z] [SUCCESS] Group membership selection completed\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-02-01T18:33:00.524Z",
+                  "startTime": "2026-02-02T15:18:16.874Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -638,127 +638,127 @@
                       "workerIndex": 4,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 39850,
+                      "duration": 34484,
                       "errors": [],
                       "stdout": [
                         {
                           "text": "[CHAT WIDGET] HIDDEN | Test: Host creates a session successfully\n"
                         },
                         {
-                          "text": "[2026-02-01T18:33:20.130Z] [INFO] Starting Create Session test\n"
+                          "text": "[2026-02-02T15:18:36.305Z] [INFO] Starting Create Session test\n"
                         },
                         {
-                          "text": "[2026-02-01T18:33:20.130Z] [STEP] Navigating to Dashboard\n"
+                          "text": "[2026-02-02T15:18:36.305Z] [STEP] Navigating to Dashboard\n"
                         },
                         {
-                          "text": "[2026-02-01T18:33:27.371Z] [SUCCESS] Dashboard loaded\n"
+                          "text": "[2026-02-02T15:18:39.277Z] [SUCCESS] Dashboard loaded\n"
                         },
                         {
-                          "text": "[2026-02-01T18:33:27.371Z] [STEP] Searching for a group that supports Create Session\n"
+                          "text": "[2026-02-02T15:18:39.278Z] [STEP] Searching for a group that supports Create Session\n"
                         },
                         {
-                          "text": "[2026-02-01T18:33:27.372Z] [STEP] Searching for saved group to create session: Automation_Group_20260202_000214\n"
+                          "text": "[2026-02-02T15:18:39.281Z] [STEP] Searching for saved group to create session: Automation_Group_20260202_204719\n"
                         },
                         {
-                          "text": "[2026-02-01T18:33:27.372Z] [STEP] Navigating to My Groups page\n"
+                          "text": "[2026-02-02T15:18:39.282Z] [STEP] Navigating to My Groups page\n"
                         },
                         {
-                          "text": "[2026-02-01T18:33:33.011Z] [STEP] Waiting for group cards to render\n"
+                          "text": "[2026-02-02T15:18:41.529Z] [STEP] Waiting for group cards to render\n"
                         },
                         {
-                          "text": "[2026-02-01T18:33:39.702Z] [INFO] Total groups detected: 98\n"
+                          "text": "[2026-02-02T15:18:47.458Z] [INFO] Total groups detected: 111\n"
                         },
                         {
-                          "text": "[2026-02-01T18:33:43.684Z] [SUCCESS] Saved group matched: Automation_Group_20260202_000214\n"
+                          "text": "[2026-02-02T15:18:53.074Z] [SUCCESS] Saved group matched: Automation_Group_20260202_204719\n"
                         },
                         {
-                          "text": "[2026-02-01T18:33:43.747Z] [STEP] Opening saved group chat\n"
+                          "text": "[2026-02-02T15:18:53.160Z] [STEP] Opening saved group chat\n"
                         },
                         {
-                          "text": "[2026-02-01T18:33:43.932Z] [STEP] Initiating Create Session flow from Chat menu\n"
+                          "text": "[2026-02-02T15:18:53.407Z] [STEP] Initiating Create Session flow from Chat menu\n"
                         },
                         {
-                          "text": "[2026-02-01T18:33:43.932Z] [STEP] Verifying chat page has loaded correctly\n"
+                          "text": "[2026-02-02T15:18:53.408Z] [STEP] Verifying chat page has loaded correctly\n"
                         },
                         {
-                          "text": "[2026-02-01T18:33:49.926Z] [SUCCESS] Chat page layout is visible\n"
+                          "text": "[2026-02-02T15:18:58.487Z] [SUCCESS] Chat page layout is visible\n"
                         },
                         {
-                          "text": "[2026-02-01T18:33:49.959Z] [SUCCESS] Chat page opened for expected group: Automation_Group_20260202_000214\n"
+                          "text": "[2026-02-02T15:18:58.548Z] [SUCCESS] Chat page opened for expected group: Automation_Group_20260202_204719\n"
                         },
                         {
-                          "text": "[2026-02-01T18:33:50.091Z] [INFO] Announcement banner detected, attempting to close\n"
+                          "text": "[2026-02-02T15:18:58.909Z] [INFO] Announcement banner detected, attempting to close\n"
                         },
                         {
-                          "text": "[2026-02-01T18:33:50.318Z] [SUCCESS] Announcement banner closed successfully\n"
+                          "text": "[2026-02-02T15:18:59.345Z] [SUCCESS] Announcement banner closed successfully\n"
                         },
                         {
-                          "text": "[2026-02-01T18:33:50.567Z] [SUCCESS] Chat action menu opened\n"
+                          "text": "[2026-02-02T15:18:59.752Z] [SUCCESS] Chat action menu opened\n"
                         },
                         {
-                          "text": "[2026-02-01T18:33:50.860Z] [SUCCESS] \"Schedule a Session\" menu item selected\n"
+                          "text": "[2026-02-02T15:19:00.084Z] [SUCCESS] \"Schedule a Session\" menu item selected\n"
                         },
                         {
-                          "text": "[2026-02-01T18:33:52.187Z] [SUCCESS] Create Session modal displayed successfully\n"
+                          "text": "[2026-02-02T15:19:02.013Z] [SUCCESS] Create Session modal displayed successfully\n"
                         },
                         {
-                          "text": "[2026-02-01T18:33:52.188Z] [SUCCESS] Create Session modal successfully opened for saved group\n"
+                          "text": "[2026-02-02T15:19:02.014Z] [SUCCESS] Create Session modal successfully opened for saved group\n"
                         },
                         {
-                          "text": "[2026-02-01T18:33:52.188Z] [SUCCESS] Create Session modal opened successfully\n"
+                          "text": "[2026-02-02T15:19:02.014Z] [SUCCESS] Create Session modal opened successfully\n"
                         },
                         {
-                          "text": "[2026-02-01T18:33:52.189Z] [STEP] Generated session title: Automation_Session_20260202_000352\n"
+                          "text": "[2026-02-02T15:19:02.014Z] [STEP] Generated session title: Automation_Session_20260202_204902\n"
                         },
                         {
-                          "text": "[2026-02-01T18:33:52.189Z] [STEP] Waiting for Create Session modal to be visible\n"
+                          "text": "[2026-02-02T15:19:02.014Z] [STEP] Waiting for Create Session modal to be visible\n"
                         },
                         {
-                          "text": "[2026-02-01T18:33:52.189Z] [STEP] Waiting for Create Session modal\n"
+                          "text": "[2026-02-02T15:19:02.015Z] [STEP] Waiting for Create Session modal\n"
                         },
                         {
-                          "text": "[2026-02-01T18:33:52.268Z] [SUCCESS] Create Session modal visible\n"
+                          "text": "[2026-02-02T15:19:02.065Z] [SUCCESS] Create Session modal visible\n"
                         },
                         {
-                          "text": "[2026-02-01T18:33:52.268Z] [STEP] Filling required fields in Create Session modal\n"
+                          "text": "[2026-02-02T15:19:02.065Z] [STEP] Filling required fields in Create Session modal\n"
                         },
                         {
-                          "text": "[2026-02-01T18:33:52.268Z] [STEP] Filling Create Session form\n"
+                          "text": "[2026-02-02T15:19:02.065Z] [STEP] Filling Create Session form\n"
                         },
                         {
-                          "text": "[2026-02-01T18:33:52.268Z] [STEP] Setting session date to next day\n"
+                          "text": "[2026-02-02T15:19:02.066Z] [STEP] Setting session date to next day\n"
                         },
                         {
-                          "text": "[2026-02-01T18:33:53.935Z] [INFO] Session date set to 03 February, 2026\n"
+                          "text": "[2026-02-02T15:19:04.046Z] [INFO] Session date set to 03 February, 2026\n"
                         },
                         {
-                          "text": "[2026-02-01T18:33:53.935Z] [STEP] Selecting default timezone\n"
+                          "text": "[2026-02-02T15:19:04.046Z] [STEP] Selecting default timezone\n"
                         },
                         {
-                          "text": "[2026-02-01T18:33:53.951Z] [INFO] Default timezone detected: Asia/Kolkata\n"
+                          "text": "[2026-02-02T15:19:04.075Z] [INFO] Default timezone detected: Asia/Kolkata\n"
                         },
                         {
-                          "text": "[2026-02-01T18:33:55.036Z] [SUCCESS] Timezone confirmed: Asia/Kolkata\n"
+                          "text": "[2026-02-02T15:19:05.319Z] [SUCCESS] Timezone confirmed: Asia/Kolkata\n"
                         },
                         {
-                          "text": "[2026-02-01T18:33:55.860Z] [SUCCESS] Required fields filled\n"
+                          "text": "[2026-02-02T15:19:06.621Z] [SUCCESS] Required fields filled\n"
                         },
                         {
-                          "text": "[2026-02-01T18:33:55.860Z] [STEP] Submitting Create Session form\n"
+                          "text": "[2026-02-02T15:19:06.621Z] [STEP] Submitting Create Session form\n"
                         },
                         {
-                          "text": "[2026-02-01T18:33:55.860Z] [STEP] Submitting session\n"
+                          "text": "[2026-02-02T15:19:06.622Z] [STEP] Submitting session\n"
                         },
                         {
-                          "text": "[2026-02-01T18:33:56.008Z] [STEP] Verifying session creation success indicator\n"
+                          "text": "[2026-02-02T15:19:06.898Z] [STEP] Verifying session creation success indicator\n"
                         },
                         {
-                          "text": "[2026-02-01T18:33:59.004Z] [SUCCESS] Session created successfully with title: Automation_Session_20260202_000352\n"
+                          "text": "[2026-02-02T15:19:09.068Z] [SUCCESS] Session created successfully with title: Automation_Session_20260202_204902\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-01T18:33:19.216Z",
+                      "startTime": "2026-02-02T15:18:34.910Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -799,8 +799,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-02-01T18:31:44.012Z",
-    "duration": 135781.67899999997,
+    "startTime": "2026-02-02T15:16:46.865Z",
+    "duration": 143709.894,
     "expected": 5,
     "skipped": 0,
     "unexpected": 0,
