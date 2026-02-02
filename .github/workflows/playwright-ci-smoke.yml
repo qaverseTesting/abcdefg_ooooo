@@ -27,9 +27,7 @@ jobs:
   smoke-tests:
     runs-on: ubuntu-latest
     timeout-minutes: 30
-    env:
-     
-
+    
     steps:
       # 1️⃣ Checkout repository
       - name: Checkout repository
