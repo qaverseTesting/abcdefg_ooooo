@@ -1,0 +1,35 @@
+[CHAT WIDGET] HIDDEN | Test: Host activates group by completing platform payment @activation
+[2026-02-02T15:22:14.082Z] [INFO] TEST STARTED: Host group activation via platform payment
+[2026-02-02T15:22:14.083Z] [STEP] Target group for activation: Automation_Group_20260202_152206
+[2026-02-02T15:22:14.083Z] [STEP] Opening inactive group and redirecting to payment flow
+[2026-02-02T15:22:14.083Z] [STEP] Navigating to My Groups page
+[2026-02-02T15:22:14.636Z] [STEP] Waiting for group cards to render
+[2026-02-02T15:22:18.015Z] [STEP] Priority scan initiated for group: Automation_Group_20260202_152206
+[2026-02-02T15:22:20.562Z] [SUCCESS] Priority group found: Automation_Group_20260202_152206
+
+1 Member
+
+Loading...
+
+Activate your group
+[2026-02-02T15:22:20.575Z] [SUCCESS] Priority group is inactive, opening activation flow
+[2026-02-02T15:22:20.951Z] [SUCCESS] Activation or payment page detected for priority group
+[2026-02-02T15:22:20.951Z] [SUCCESS] Redirected to payment page for group: Automation_Group_20260202_152206
+
+1 Member
+
+Loading...
+
+Activate your group
+[2026-02-02T15:22:20.951Z] [STEP] Waiting for activation payment page to load
+[2026-02-02T15:22:20.951Z] [STEP] Waiting for Stripe full form
+[2026-02-02T15:22:27.012Z] [SUCCESS] Stripe form ready
+[2026-02-02T15:22:27.012Z] [STEP] Entering platform payment details
+[2026-02-02T15:22:27.012Z] [STEP] Filling Stripe full payment form
+[2026-02-02T15:22:27.012Z] [STEP] Selecting country
+[2026-02-02T15:22:28.756Z] [SUCCESS] Stripe form filled
+[2026-02-02T15:22:28.756Z] [STEP] Submitting platform activation payment
+[2026-02-02T15:22:28.757Z] [STEP] Submitting payment
+[2026-02-02T15:22:28.788Z] [STEP] Clicking Pay button
+[2026-02-02T15:22:31.798Z] [SUCCESS] Payment success confirmed
+[2026-02-02T15:22:31.798Z] [SUCCESS] TEST COMPLETED: Group activated successfully via platform payment

@@ -1,0 +1,31 @@
+[CHAT WIDGET] HIDDEN | Test: Host creates a session successfully
+[2026-02-02T15:22:39.011Z] [INFO] Starting Create Session test
+[2026-02-02T15:22:39.012Z] [STEP] Navigating to Dashboard
+[2026-02-02T15:22:39.558Z] [SUCCESS] Dashboard loaded
+[2026-02-02T15:22:39.558Z] [STEP] Searching for a group that supports Create Session
+[2026-02-02T15:22:39.559Z] [STEP] Searching for saved group to create session: Automation_Group_20260202_152206
+[2026-02-02T15:22:39.559Z] [STEP] Navigating to My Groups page
+[2026-02-02T15:22:40.048Z] [STEP] Waiting for group cards to render
+[2026-02-02T15:22:43.393Z] [INFO] Total groups detected: 112
+[2026-02-02T15:22:46.068Z] [SUCCESS] Saved group matched: Automation_Group_20260202_152206
+[2026-02-02T15:22:46.103Z] [STEP] Opening saved group chat
+[2026-02-02T15:22:46.271Z] [STEP] Initiating Create Session flow from Chat menu
+[2026-02-02T15:22:46.271Z] [STEP] Verifying chat page has loaded correctly
+[2026-02-02T15:22:48.193Z] [SUCCESS] Chat page layout is visible
+[2026-02-02T15:22:48.216Z] [SUCCESS] Chat page opened for expected group: Automation_Group_20260202_152206
+[2026-02-02T15:22:48.322Z] [INFO] Announcement banner detected, attempting to close
+[2026-02-02T15:22:48.469Z] [SUCCESS] Announcement banner closed successfully
+[2026-02-02T15:22:48.576Z] [SUCCESS] Chat action menu opened
+[2026-02-02T15:22:48.894Z] [SUCCESS] "Schedule a Session" menu item selected
+[2026-02-02T15:22:49.506Z] [SUCCESS] Create Session modal displayed successfully
+[2026-02-02T15:22:49.506Z] [SUCCESS] Create Session modal successfully opened for saved group
+[2026-02-02T15:22:49.506Z] [SUCCESS] Create Session modal opened successfully
+[2026-02-02T15:22:49.506Z] [STEP] Generated session title: Automation_Session_20260202_152249
+[2026-02-02T15:22:49.507Z] [STEP] Waiting for Create Session modal to be visible
+[2026-02-02T15:22:49.507Z] [STEP] Waiting for Create Session modal
+[2026-02-02T15:22:49.518Z] [SUCCESS] Create Session modal visible
+[2026-02-02T15:22:49.518Z] [STEP] Filling required fields in Create Session modal
+[2026-02-02T15:22:49.518Z] [STEP] Filling Create Session form
+[2026-02-02T15:22:49.518Z] [STEP] Setting session date to next day
+[2026-02-02T15:22:50.784Z] [INFO] Session date set to 03 February, 2026
+[2026-02-02T15:22:50.785Z] [STEP] Selecting default timezone
