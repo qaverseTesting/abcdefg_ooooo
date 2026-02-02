@@ -28,7 +28,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     env:
-      ALLURE_PAGES_REPO: playwright-enterprise-framework
+      ALLURE_PAGES_REPO: abcdefg_ooooo
 
     steps:
       # 1️⃣ Checkout repository
