@@ -11,9 +11,11 @@ export class CreateSessionModal extends BasePage {
   private readonly descriptionEditor: Locator;
   private readonly submitButton: Locator;
 
-  // Timezone (React-Select)
-  private readonly timezoneCombobox: Locator;
+  // React-Select (Timezone)
+  private readonly timezoneControl: Locator;
   private readonly selectedTimezoneLabel: Locator;
+  private readonly timezonePlaceholder: Locator;
+  private readonly timezoneOptions: Locator;
 
   constructor(page: Page) {
     super(page);
@@ -35,11 +37,13 @@ export class CreateSessionModal extends BasePage {
       name: /^schedule a session$/i,
     });
 
-    // React-Select timezone field
-    this.timezoneCombobox = this.modalRoot.locator('input[role="combobox"]');
-    this.selectedTimezoneLabel = this.modalRoot.locator(
-      '.react-select__single-value'
-    );
+    // Timezone React-Select
+    this.timezoneControl = this.modalRoot.locator('.react-select__control');
+    this.selectedTimezoneLabel = this.modalRoot.locator('.react-select__single-value');
+    this.timezonePlaceholder = this.modalRoot.locator('.react-select__placeholder');
+
+    // 🔥 Portal menu (outside modal)
+    this.timezoneOptions = page.locator('.react-select__menu .react-select__option');
   }
 
   // --------------------------------------------------
@@ -64,7 +68,7 @@ export class CreateSessionModal extends BasePage {
     Logger.step('Filling Create Session form');
 
     await this.setDateToNextDay();
-    await this.selectDefaultTimezone();
+    await this.ensureTimezoneSelected();
 
     await this.titleInput.fill(data.title);
 
@@ -110,8 +114,7 @@ export class CreateSessionModal extends BasePage {
     await this.dateInput.click();
     await this.dateInput.press('Control+A');
     await this.dateInput.press('Backspace');
-
-    await this.dateInput.type(formatted, { delay: 50 });
+    await this.dateInput.type(formatted, { delay: 40 });
     await this.dateInput.press('Enter');
 
     await expect(this.dateInput).toHaveValue(formatted);
@@ -120,30 +123,37 @@ export class CreateSessionModal extends BasePage {
   }
 
   /**
-   * React-Select stable timezone selection
+   * Ensures a timezone is selected in React-Select
+   * Handles:
+   * - Already selected value
+   * - Empty placeholder state
+   * - Portal dropdown rendering
    */
-  private async selectDefaultTimezone(): Promise<void> {
-    Logger.step('Selecting default timezone');
+  private async ensureTimezoneSelected(): Promise<void> {
+    Logger.step('Ensuring timezone is selected');
 
-    // Read currently displayed timezone (source of truth)
-    const defaultTz = (await this.selectedTimezoneLabel.textContent())?.trim();
-
-    if (!defaultTz) {
-      throw new Error('No default timezone visible in UI');
+    // If value already exists → do nothing
+    if (await this.selectedTimezoneLabel.isVisible()) {
+      const tz = (await this.selectedTimezoneLabel.textContent())?.trim();
+      Logger.info(`Timezone already selected: ${tz}`);
+      return;
     }
 
-    Logger.info(`Default timezone detected: ${defaultTz}`);
+    Logger.info('No timezone selected — picking one');
 
-    await this.timezoneCombobox.click();
+    await this.timezoneControl.click();
 
-    await this.page.keyboard.press('Control+A');
-    await this.page.keyboard.press('Backspace');
+    // Wait for portal menu
+    const menu = this.page.locator('.react-select__menu');
+    await menu.waitFor({ state: 'visible' });
 
-    await this.page.keyboard.type(defaultTz, { delay: 40 });
-    await this.page.keyboard.press('Enter');
+    const firstOption = this.timezoneOptions.first();
+    const tzToSelect = (await firstOption.textContent())?.trim();
 
-    await expect(this.selectedTimezoneLabel).toHaveText(defaultTz);
+    await firstOption.click();
 
-    Logger.success(`Timezone confirmed: ${defaultTz}`);
+    await expect(this.selectedTimezoneLabel).toHaveText(tzToSelect!);
+
+    Logger.success(`Timezone selected: ${tzToSelect}`);
   }
 }
