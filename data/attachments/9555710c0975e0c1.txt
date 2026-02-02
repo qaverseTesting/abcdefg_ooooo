@@ -1,0 +1,26 @@
+[CHAT WIDGET] HIDDEN | Test: Group Host can create a group successfully
+[2026-02-02T15:28:07.850Z] [INFO] Starting Group Creation test
+[2026-02-02T15:28:07.850Z] [STEP] Generated group name: Automation_Group_20260202_152807
+[2026-02-02T15:28:07.851Z] [STEP] Navigating to Dashboard
+[2026-02-02T15:28:08.981Z] [SUCCESS] Dashboard loaded
+[2026-02-02T15:28:08.981Z] [STEP] Clicking "Start Group" from Dashboard
+[2026-02-02T15:28:08.982Z] [STEP] Clicking on Start a Group
+[2026-02-02T15:28:12.021Z] [SUCCESS] "Start Group" clicked
+[2026-02-02T15:28:12.022Z] [STEP] Verifying Create Group page loaded
+[2026-02-02T15:28:12.023Z] [ASSERT] Create Group page is loaded
+[2026-02-02T15:28:12.447Z] [SUCCESS] Create Group page loaded
+[2026-02-02T15:28:12.447Z] [STEP] Entering group details
+[2026-02-02T15:28:12.447Z] [STEP] Filling group details
+[2026-02-02T15:28:12.706Z] [SUCCESS] Group details entered
+[2026-02-02T15:28:12.706Z] [STEP] Selecting random group tag
+[2026-02-02T15:28:12.707Z] [STEP] Selecting a random group tag
+[2026-02-02T15:28:14.213Z] [SUCCESS] Group tag selected
+[2026-02-02T15:28:14.213Z] [STEP] Submitting Create Group form
+[2026-02-02T15:28:14.213Z] [STEP] Submitting group creation Preview
+[2026-02-02T15:28:14.264Z] [STEP] Confirming group submission
+[2026-02-02T15:28:14.662Z] [SUCCESS] Create Group submitted
+[2026-02-02T15:28:14.662Z] [STEP] Verifying group creation success message
+[2026-02-02T15:28:15.537Z] [SUCCESS] Group created successfully (confirmation visible)
+[2026-02-02T15:28:15.537Z] [INFO] Saving group name: Automation_Group_20260202_152807
+[2026-02-02T15:28:15.537Z] [SUCCESS] Group name stored for reuse: Automation_Group_20260202_152807
+[2026-02-02T15:28:15.537Z] [INFO] Group Creation test completed successfully
