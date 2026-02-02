@@ -28,7 +28,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     env:
-      ALLURE_PAGES_REPO: abcdefg_ooooo
+     
 
     steps:
       # 1️⃣ Checkout repository
@@ -123,7 +123,7 @@ jobs:
       # 1️⃣2️⃣ CI Summary links
       - name: Add CI Summary Links
         run: |
-          ALLURE_URL="https://${GITHUB_REPOSITORY_OWNER}.github.io/${ALLURE_PAGES_REPO}/"
+          ALLURE_URL="https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}/"
           echo "## 📊 Test Reports" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "### 🔵 Allure Report (Online)" >> $GITHUB_STEP_SUMMARY
