@@ -1,0 +1,10 @@
+[2026-02-19T16:47:54.262Z] [STEP] Navigate to Login Page
+[2026-02-19T16:47:56.814Z] [STEP] Verify password is initially hidden
+[2026-02-19T16:47:57.275Z] [INFO] Password visibility verified as hidden (type="password")
+[2026-02-19T16:47:57.275Z] [STEP] Toggle password visibility to Show
+[2026-02-19T16:47:57.730Z] [STEP] Verify password is now visible
+[2026-02-19T16:47:57.769Z] [INFO] Password visibility verified as visible (type="text")
+[2026-02-19T16:47:57.770Z] [STEP] Toggle password visibility to Hide
+[2026-02-19T16:47:57.905Z] [STEP] Verify password is hidden again
+[2026-02-19T16:47:57.962Z] [INFO] Password visibility verified as hidden (type="password")
+[2026-02-19T16:47:57.963Z] [SUCCESS] Password Visibility Toggle test passed successfully

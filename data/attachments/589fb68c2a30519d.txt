@@ -1,0 +1,12 @@
+[2026-02-19T16:49:19.060Z] [INFO] Starting Step 1: Group Creation
+[2026-02-19T16:49:19.060Z] [STEP] Creating group: PW_Group_20260219_164919_w5r00607g4
+[2026-02-19T16:49:19.063Z] [NAV] Navigating to Dashboard
+[2026-02-19T16:49:19.624Z] [STEP] Clicking on Start a Group
+[2026-02-19T16:49:27.512Z] [ASSERT] Create Group page is loaded
+[2026-02-19T16:49:28.815Z] [STEP] Filling group details
+[2026-02-19T16:49:29.823Z] [STEP] Selecting a random group tag
+[2026-02-19T16:49:32.164Z] [STEP] Submitting group creation Preview
+[2026-02-19T16:49:32.219Z] [STEP] Confirming group submission
+[2026-02-19T16:49:32.557Z] [SUCCESS] Group creation flow initiated for: PW_Group_20260219_164919_w5r00607g4
+[2026-02-19T16:49:32.557Z] [ASSERT] Verifying toast message: Group created successfully!
+[2026-02-19T16:49:37.516Z] [SUCCESS] Step 1 Completed: Group PW_Group_20260219_164919_w5r00607g4 created.
