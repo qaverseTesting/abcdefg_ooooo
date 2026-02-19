@@ -1,0 +1,19 @@
+[2026-02-19T18:03:19.082Z] [INFO] Using existing user email from store: em_191801w2r0z@mailinator.com
+[2026-02-19T18:03:19.083Z] [INFO] [PREREQUISITE] Checking user registration status for: em_191801w2r0z@mailinator.com
+[2026-02-19T18:03:19.084Z] [INFO] [PREREQUISITE] Cache hit — validating real application state.
+[2026-02-19T18:03:20.464Z] [INFO] Logging in user: em_191801w2r0z@mailinator.com
+[2026-02-19T18:03:22.608Z] [INFO] [PREREQUISITE] Registering user on-the-fly.
+[2026-02-19T18:03:22.608Z] [INFO] Prerequisite missing — registering user: em_191801w2r0z@mailinator.com
+[2026-02-19T18:03:26.358Z] [INFO] Submitting registration form
+[2026-02-19T18:03:26.976Z] [INFO] Registration stayed on register route — assuming existing user.
+[2026-02-19T18:03:26.976Z] [SUCCESS] Prerequisite satisfied — user already exists.
+[2026-02-19T18:03:26.976Z] [INFO] Saving user email: em_191801w2r0z@mailinator.com
+[2026-02-19T18:03:26.981Z] [INFO] Saving user verification status: true
+[2026-02-19T18:03:26.984Z] [NAV] Navigating to Login
+[2026-02-19T18:03:28.054Z] [STEP] Navigating to Forgot Password page
+[2026-02-19T18:03:29.993Z] [STEP] Requesting password reset for: em_191801w2r0z@mailinator.com
+[2026-02-19T18:03:30.255Z] [ASSERT] Verifying toast message: Password reset sent successfully
+[2026-02-19T18:03:30.696Z] [STEP] Processing reset link via Mailinator
+[2026-02-19T18:03:30.818Z] [STEP] Opening Mailinator inbox: https://www.mailinator.com/v4/public/inboxes.jsp?to=em_191801w2r0z
+[2026-02-19T18:03:32.861Z] [SUCCESS] Mailinator inbox loaded
+[2026-02-19T18:03:32.868Z] [STEP] Searching for keywords: reset, password, forgot in Inbox: https://www.mailinator.com/v4/public/inboxes.jsp?to=em_191801w2r0z (Timeout: 60000ms)
