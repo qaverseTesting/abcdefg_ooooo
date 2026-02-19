@@ -1,9 +1,0 @@
-[2026-02-19T08:20:25.072Z] [WARN] [PREREQUISITE] Cache stale: User pw_email_20260219081858w2r0309r@mailinator.com proof found but verification failed. Re-registering.
-[2026-02-19T08:20:57.648Z] [WARN] Attempt 1 failed: locator.waitFor: Timeout 20000ms exceeded.
-Call log:
-  - waiting for locator('.table-striped tbody tr').first() to be visible
-. Refreshing inbox...
-[2026-02-19T08:21:19.480Z] [WARN] Attempt 2 failed: locator.waitFor: Timeout 20000ms exceeded.
-Call log:
-  - waiting for locator('.table-striped tbody tr').first() to be visible
-. Refreshing inbox...

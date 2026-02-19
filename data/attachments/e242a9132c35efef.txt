@@ -1,0 +1,9 @@
+[2026-02-19T08:29:57.548Z] [NAV] Navigating to Dashboard
+[2026-02-19T08:29:59.380Z] [ASSERT] Verifying dashboard is loaded
+[2026-02-19T08:30:04.186Z] [SUCCESS] Dashboard load verified
+[2026-02-19T08:30:04.186Z] [STEP] User is logging out...
+[2026-02-19T08:30:04.186Z] [STEP] Clicking on Profile Icon
+[2026-02-19T08:30:04.854Z] [STEP] Clicking on Logout Button in Menu
+[2026-02-19T08:30:05.397Z] [STEP] Clicking on Confirm Logout Button in Popup
+[2026-02-19T08:30:06.229Z] [SUCCESS] Logout action completed
+[2026-02-19T08:30:06.663Z] [SUCCESS] Logout test case passed: User successfully logged out
