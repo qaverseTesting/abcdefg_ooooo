@@ -1,8 +1,0 @@
-[2026-02-19T17:08:59.730Z] [WARN] Attempt 1 failed: locator.waitFor: Timeout 20000ms exceeded.
-Call log:
-  - waiting for locator('.table-striped tbody tr').first() to be visible
-. Refreshing inbox...
-[2026-02-19T17:09:21.713Z] [WARN] Attempt 2 failed: locator.waitFor: Timeout 20000ms exceeded.
-Call log:
-  - waiting for locator('.table-striped tbody tr').first() to be visible
-. Refreshing inbox...
