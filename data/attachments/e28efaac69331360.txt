@@ -1,0 +1,11 @@
+[2026-02-19T08:21:07.649Z] [STEP] Step: Navigation to My Groups
+[2026-02-19T08:21:07.649Z] [STEP] Navigating to My Groups page
+[2026-02-19T08:21:08.811Z] [STEP] Waiting for My Groups page content
+[2026-02-19T08:21:16.075Z] [STEP] Step: Clicking on group "AM Test - Free"
+[2026-02-19T08:21:16.076Z] [STEP] Clicking on group: AM Test - Free
+[2026-02-19T08:21:16.218Z] [SUCCESS] Group "AM Test - Free" clicked
+[2026-02-19T08:21:16.218Z] [STEP] Step: Entering chat message and verifying input content
+[2026-02-19T08:21:16.218Z] [STEP] Entering chat message: PW_Chat_20260219_082107_w3r0649uxx
+[2026-02-19T08:21:24.077Z] [STEP] Clicking on Send button
+[2026-02-19T08:21:24.198Z] [STEP] Verifying chat message is visible: PW_Chat_20260219_082107_w3r0649uxx
+[2026-02-19T08:21:25.467Z] [SUCCESS] Chat message is visible
