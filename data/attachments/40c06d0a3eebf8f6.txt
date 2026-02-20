@@ -1,0 +1,12 @@
+[2026-02-20T06:00:31.028Z] [NAV] Navigating to Registration
+[2026-02-20T06:00:31.827Z] [STEP] Generated test email: em_200600w3r0w@mailinator.com
+[2026-02-20T06:00:31.827Z] [INFO] Saving user email: em_200600w3r0w@mailinator.com
+[2026-02-20T06:00:35.015Z] [INFO] Submitting registration form
+[2026-02-20T06:00:48.272Z] [STEP] Opening Mailinator inbox: https://www.mailinator.com/v4/public/inboxes.jsp?to=em_200600w3r0w
+[2026-02-20T06:00:50.315Z] [SUCCESS] Mailinator inbox loaded
+[2026-02-20T06:00:50.315Z] [STEP] Searching for keywords: confirm, email, verify, otp, code in Inbox: https://www.mailinator.com/v4/public/inboxes.jsp?to=em_200600w3r0w (Timeout: 60000ms)
+[2026-02-20T06:00:50.407Z] [SUCCESS] Matched email: "	MentalHappy	Confirm your email address	just now..."
+[2026-02-20T06:00:53.483Z] [STEP] Extracting OTP
+[2026-02-20T06:00:55.736Z] [SUCCESS] OTP found: 469908
+[2026-02-20T06:00:56.803Z] [ASSERT] Verifying toast message: /Email confirmed!/i
+[2026-02-20T06:00:57.325Z] [INFO] Saving user verification status: true

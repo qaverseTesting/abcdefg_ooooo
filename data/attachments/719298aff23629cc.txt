@@ -1,5 +1,0 @@
-[2026-02-19T18:32:01.498Z] [STEP] Navigate to Login Page
-[2026-02-19T18:32:02.720Z] [STEP] Attempt login with invalid credentials: em_191832w3r05@mailinator.com
-[2026-02-19T18:32:02.725Z] [INFO] Logging in user: em_191832w3r05@mailinator.com
-[2026-02-19T18:32:05.143Z] [STEP] Verify error message visibility
-[2026-02-19T18:32:07.807Z] [SUCCESS] Invalid Login test passed successfully

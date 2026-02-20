@@ -1,0 +1,44 @@
+[2026-02-20T05:59:23.900Z] [WARN] Attempt 1/5 failed: locator.waitFor: Timeout 12000ms exceeded.
+Call log:
+  - waiting for locator('.table-striped tbody tr').first() to be visible
+. Refreshing inbox...
+[2026-02-20T05:59:38.544Z] [WARN] Attempt 2/5 failed: locator.waitFor: Timeout 12000ms exceeded.
+Call log:
+  - waiting for locator('.table-striped tbody tr').first() to be visible
+. Refreshing inbox...
+[2026-02-20T05:59:54.160Z] [WARN] Attempt 3/5 failed: locator.waitFor: Timeout 12000ms exceeded.
+Call log:
+  - waiting for locator('.table-striped tbody tr').first() to be visible
+. Refreshing inbox...
+[2026-02-20T06:00:08.837Z] [WARN] Attempt 4/5 failed: locator.waitFor: Timeout 12000ms exceeded.
+Call log:
+  - waiting for locator('.table-striped tbody tr').first() to be visible
+. Refreshing inbox...
+[2026-02-20T06:00:23.940Z] [ERROR] Mailinator Failure after 5 attempts. Page Content Snippet: Home
+Email
+Pricing
+Documentation
+FAQ
+Login
+ Recent Inboxes
+em_200558w2r0...
+
+
+Request Trial
+
+
+Mailinator + AI
+Give Your AI Assistant the Power of Mailinator
+
+System Status
+Terms
+Privacy
+Accessibility
+Security
+
+Copyright 2025 Manybrain, LLC,
+All Rights Reserved
+
+Public Messages
+GO
+From	Subject	Receiv
