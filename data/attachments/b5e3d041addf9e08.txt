@@ -1,6 +1,0 @@
-[2026-02-20T09:49:58.377Z] [STEP] Performing login via helper to check widget persistence
-[2026-02-20T09:49:58.377Z] [STEP] Logging in as leader
-[2026-02-20T09:49:58.382Z] [NAV] Navigating to Login
-[2026-02-20T09:50:00.066Z] [INFO] Logging in user: aeshumangukiya099@gmail.com
-[2026-02-20T09:50:02.979Z] [STEP] Verifying chat widget visibility in Authenticated state
-[2026-02-20T09:50:03.048Z] [SUCCESS] Chat widget is visible to Authenticated users
