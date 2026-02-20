@@ -1,0 +1,13 @@
+[2026-02-20T08:51:06.590Z] [STEP] Phase A: Logging in as Leader to send a message
+[2026-02-20T08:51:06.590Z] [STEP] Navigating to My Groups page
+[2026-02-20T08:51:07.964Z] [STEP] Waiting for My Groups page content
+[2026-02-20T08:51:17.849Z] [STEP] Clicking on Joined Groups tab
+[2026-02-20T08:51:18.712Z] [SUCCESS] Joined Groups tab clicked
+[2026-02-20T08:51:18.712Z] [STEP] Clicking on group: AM Test - Free
+[2026-02-20T08:51:19.261Z] [SUCCESS] Group "AM Test - Free" clicked
+[2026-02-20T08:51:19.261Z] [STEP] Step: Verifying last message from User is visible
+[2026-02-20T08:51:19.261Z] [STEP] Verifying chat message is visible: PW_Chat_20260220_085042_w2r0016ne3
+[2026-02-20T08:51:31.577Z] [SUCCESS] Chat message is visible
+[2026-02-20T08:51:31.577Z] [STEP] Entering chat message: PW_Chat_20260220_085106_w2r059002v
+[2026-02-20T08:51:33.369Z] [STEP] Clicking on Send button
+[2026-02-20T08:51:33.765Z] [SUCCESS] Leader sent the message
