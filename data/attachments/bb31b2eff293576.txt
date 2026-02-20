@@ -1,0 +1,6 @@
+[2026-02-20T06:29:51.582Z] [STEP] Logging in as Leader
+[2026-02-20T06:29:51.583Z] [STEP] Logging in as leader
+[2026-02-20T06:29:51.585Z] [NAV] Navigating to Login
+[2026-02-20T06:29:52.418Z] [INFO] Logging in user: aeshumangukiya099@gmail.com
+[2026-02-20T06:29:56.136Z] [ASSERT] Verifying dashboard is loaded
+[2026-02-20T06:30:03.517Z] [SUCCESS] Dashboard load verified
