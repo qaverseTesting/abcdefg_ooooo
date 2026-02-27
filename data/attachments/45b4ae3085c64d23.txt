@@ -1,0 +1,12 @@
+[2026-02-27T16:15:14.933Z] [STEP] Creating group: PW_Group_20260227_161425_w4r0389ds0
+[2026-02-27T16:15:14.934Z] [NAV] Navigating to Dashboard
+[2026-02-27T16:15:15.300Z] [STEP] Clicking on Start a Group
+[2026-02-27T16:15:17.269Z] [ASSERT] Create Group page is loaded
+[2026-02-27T16:15:17.269Z] [INFO] Checking for generic support popups to dismiss...
+[2026-02-27T16:15:17.875Z] [STEP] Filling group details
+[2026-02-27T16:15:18.395Z] [STEP] Selecting a random group tag
+[2026-02-27T16:15:19.999Z] [STEP] Submitting group creation Preview
+[2026-02-27T16:15:20.086Z] [STEP] Confirming group submission
+[2026-02-27T16:15:22.099Z] [INFO] Checking for generic support popups to dismiss...
+[2026-02-27T16:15:22.175Z] [INFO] Handling intermediate Bio/Profile step for new users
+[2026-02-27T16:15:22.175Z] [STEP] Uploading professional photo
