@@ -1,0 +1,36 @@
+[2026-02-27T19:14:40.945Z] [STEP] Navigating to Registration Page
+[2026-02-27T19:14:41.834Z] [INFO] Checking for generic support popups to dismiss...
+[2026-02-27T19:14:41.995Z] [SUCCESS] Registration Page loaded
+[2026-02-27T19:14:41.996Z] [STEP] Filling registration form for: mh_27191440w5r0z6cd@mailinator.com
+[2026-02-27T19:14:43.841Z] [INFO] Checking for generic support popups to dismiss...
+[2026-02-27T19:14:44.082Z] [STEP] Submitting registration form
+[2026-02-27T19:14:44.284Z] [SUCCESS] Registration form submitted
+[2026-02-27T19:14:44.376Z] [STEP] Opening Mailinator inbox: https://www.mailinator.com/v4/public/inboxes.jsp?to=mh_27191440w5r0z6cd
+[2026-02-27T19:14:46.018Z] [SUCCESS] Mailinator inbox loaded
+[2026-02-27T19:14:46.019Z] [STEP] Searching for keywords: confirm, email, verify, otp, code in Inbox: https://www.mailinator.com/v4/public/inboxes.jsp?to=mh_27191440w5r0z6cd (Timeout: 60000ms)
+[2026-02-27T19:14:46.106Z] [SUCCESS] Matched email: "	MentalHappy	Confirm your email address	just now..."
+[2026-02-27T19:14:49.269Z] [STEP] Extracting OTP
+[2026-02-27T19:14:52.298Z] [INFO] OTP extraction attempt 1/5
+[2026-02-27T19:14:52.365Z] [SUCCESS] OTP found in iframe #html_msg_body: 342092
+[2026-02-27T19:14:52.399Z] [STEP] Entering OTP: 342092
+[2026-02-27T19:14:52.401Z] [INFO] Checking for generic support popups to dismiss...
+[2026-02-27T19:14:52.740Z] [INFO] Checking for generic support popups to dismiss...
+[2026-02-27T19:14:53.051Z] [SUCCESS] OTP entered
+[2026-02-27T19:14:53.184Z] [INFO] Waiting for redirect to /welcome...
+[2026-02-27T19:14:53.846Z] [STEP] Verifying Welcome Page is displayed
+[2026-02-27T19:14:53.847Z] [INFO] Checking for generic support popups to dismiss...
+[2026-02-27T19:14:54.142Z] [SUCCESS] Welcome Page verification successful (Role buttons visible)
+[2026-02-27T19:14:54.142Z] [STEP] Selecting path: Explore support groups
+[2026-02-27T19:14:54.142Z] [INFO] Checking for generic support popups to dismiss...
+[2026-02-27T19:14:54.492Z] [INFO] Clicked Explore support groups
+[2026-02-27T19:14:54.519Z] [SUCCESS] Explore Support Groups path selected
+[2026-02-27T19:14:54.519Z] [STEP] Clicking Welcome Continue button
+[2026-02-27T19:14:54.520Z] [INFO] Checking for generic support popups to dismiss...
+[2026-02-27T19:14:54.809Z] [SUCCESS] Welcome Continue clicked
+[2026-02-27T19:14:54.819Z] [STEP] Completing Member onboarding via SKIP
+[2026-02-27T19:14:54.819Z] [STEP] Clicking Onboarding Skip button
+[2026-02-27T19:14:54.819Z] [INFO] Checking for generic support popups to dismiss...
+[2026-02-27T19:14:55.863Z] [SUCCESS] Redirected to Dashboard via Skip
+[2026-02-27T19:14:55.863Z] [ASSERT] Verifying dashboard is loaded
+[2026-02-27T19:14:57.456Z] [SUCCESS] Dashboard load verified
+[2026-02-27T19:14:57.456Z] [SUCCESS] MEMBER-LIFECYCLE-02: COMPLETED SUCCESSFULLY

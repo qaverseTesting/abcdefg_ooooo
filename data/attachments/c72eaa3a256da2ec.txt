@@ -1,0 +1,19 @@
+[2026-02-27T19:16:10.368Z] [NAV] Navigating to Registration
+[2026-02-27T19:16:11.200Z] [STEP] Generated test email: mh_27191611w6r05co1@mailinator.com
+[2026-02-27T19:16:11.205Z] [INFO] Saving user email: mh_27191611w6r05co1@mailinator.com
+[2026-02-27T19:16:11.206Z] [STEP] Filling registration form for: mh_27191611w6r05co1@mailinator.com
+[2026-02-27T19:16:13.144Z] [INFO] Checking for generic support popups to dismiss...
+[2026-02-27T19:16:13.399Z] [STEP] Submitting registration form
+[2026-02-27T19:16:13.712Z] [SUCCESS] Registration form submitted
+[2026-02-27T19:16:19.185Z] [STEP] Waiting for OTP entry page to be ready
+[2026-02-27T19:16:19.211Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-02-27T19:16:19.310Z] [STEP] Opening Mailinator inbox: https://www.mailinator.com/v4/public/inboxes.jsp?to=mh_27191611w6r05co1
+[2026-02-27T19:16:20.706Z] [SUCCESS] Mailinator inbox loaded
+[2026-02-27T19:16:20.706Z] [STEP] Searching for keywords: confirm, email, verify, otp, code in Inbox: https://www.mailinator.com/v4/public/inboxes.jsp?to=mh_27191611w6r05co1 (Timeout: 60000ms)
+[2026-02-27T19:16:20.761Z] [SUCCESS] Matched email: "	MentalHappy	Confirm your email address	just now..."
+[2026-02-27T19:16:23.812Z] [STEP] Extracting OTP
+[2026-02-27T19:16:26.826Z] [INFO] OTP extraction attempt 1/5
+[2026-02-27T19:16:31.042Z] [INFO] OTP extraction attempt 2/5
+[2026-02-27T19:16:35.117Z] [INFO] OTP extraction attempt 3/5
+[2026-02-27T19:16:43.735Z] [INFO] OTP extraction attempt 4/5
+[2026-02-27T19:16:48.003Z] [INFO] OTP extraction attempt 5/5

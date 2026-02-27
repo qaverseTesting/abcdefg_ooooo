@@ -1,0 +1,10 @@
+[2026-02-27T19:12:00.418Z] [STEP] Opening Mailinator inbox: https://www.mailinator.com/v4/public/inboxes.jsp?to=mh_27191147w2r0e8fu
+[2026-02-27T19:12:01.681Z] [SUCCESS] Mailinator inbox loaded
+[2026-02-27T19:12:01.682Z] [STEP] Searching for keywords: confirm, email, verify, otp, code in Inbox: https://www.mailinator.com/v4/public/inboxes.jsp?to=mh_27191147w2r0e8fu (Timeout: 60000ms)
+[2026-02-27T19:12:01.739Z] [SUCCESS] Matched email: "	MentalHappy	Confirm your email address	just now..."
+[2026-02-27T19:12:04.795Z] [STEP] Extracting OTP
+[2026-02-27T19:12:07.803Z] [INFO] OTP extraction attempt 1/5
+[2026-02-27T19:12:11.889Z] [INFO] OTP extraction attempt 2/5
+[2026-02-27T19:12:15.958Z] [INFO] OTP extraction attempt 3/5
+[2026-02-27T19:12:24.553Z] [INFO] OTP extraction attempt 4/5
+[2026-02-27T19:12:28.657Z] [INFO] OTP extraction attempt 5/5

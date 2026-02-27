@@ -1,6 +1,0 @@
-[2026-02-27T19:11:17.329Z] [INFO] [leader] Debug - CI: true, Skip: false, File: false at /home/runner/work/playwright-enterprise-framework/playwright-enterprise-framework/storage/auth/leader.json
-[2026-02-27T19:11:17.329Z] [STEP] Logging in as leader
-[2026-02-27T19:11:17.330Z] [NAV] Navigating to Login
-[2026-02-27T19:11:18.357Z] [INFO] Logging in user: aeshumangukiya099@gmail.com
-[2026-02-27T19:11:32.050Z] [SUCCESS] Login successful and dashboard loaded
-[2026-02-27T19:11:37.104Z] [SUCCESS] leader session captured and cached.
