@@ -1,9 +1,0 @@
-[2026-02-27T17:19:54.567Z] [STEP] Navigating to Registration Page
-[2026-02-27T17:19:55.675Z] [INFO] Checking for generic support popups to dismiss...
-[2026-02-27T17:19:55.789Z] [SUCCESS] Registration Page loaded
-[2026-02-27T17:19:55.790Z] [STEP] Filling registration form for: mh_27171954w2r0v0ms@mailinator.com
-[2026-02-27T17:19:57.521Z] [INFO] Checking for generic support popups to dismiss...
-[2026-02-27T17:19:57.668Z] [STEP] Submitting registration form
-[2026-02-27T17:19:58.028Z] [SUCCESS] Registration form submitted
-[2026-02-27T17:20:03.940Z] [STEP] Waiting for OTP entry page to be ready
-[2026-02-27T17:20:05.242Z] [SUCCESS] OTP entry page is ready — registration email was sent
