@@ -1,0 +1,10 @@
+[2026-02-27T16:41:59.288Z] [STEP] Verifying Welcome Page is displayed
+[2026-02-27T16:41:59.288Z] [INFO] Checking for generic support popups to dismiss...
+[2026-02-27T16:41:59.527Z] [SUCCESS] Welcome Page verification successful (Role buttons visible)
+[2026-02-27T16:41:59.528Z] [STEP] Selecting path: Continue as a Group Leader
+[2026-02-27T16:41:59.528Z] [INFO] Checking for generic support popups to dismiss...
+[2026-02-27T16:41:59.803Z] [INFO] Clicked Continue as a Group Leader
+[2026-02-27T16:41:59.832Z] [SUCCESS] Group Leader path selected
+[2026-02-27T16:41:59.833Z] [STEP] Clicking Welcome Continue button
+[2026-02-27T16:41:59.833Z] [INFO] Checking for generic support popups to dismiss...
+[2026-02-27T16:42:00.104Z] [SUCCESS] Welcome Continue clicked

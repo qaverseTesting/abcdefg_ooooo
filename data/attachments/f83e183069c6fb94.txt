@@ -1,0 +1,9 @@
+[2026-02-27T16:43:31.089Z] [NAV] Navigating to Registration
+[2026-02-27T16:43:32.220Z] [STEP] Generated email for Resend OTP test: mh_27164332w4r0q8su@mailinator.com
+[2026-02-27T16:43:32.220Z] [STEP] Filling registration form for: mh_27164332w4r0q8su@mailinator.com
+[2026-02-27T16:43:34.015Z] [INFO] Checking for generic support popups to dismiss...
+[2026-02-27T16:43:34.155Z] [STEP] Submitting registration form
+[2026-02-27T16:43:34.587Z] [SUCCESS] Registration form submitted
+[2026-02-27T16:43:40.682Z] [STEP] Waiting for OTP entry page to be ready
+[2026-02-27T16:43:40.691Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-02-27T16:43:40.691Z] [STEP] Handling Resend Code button logic

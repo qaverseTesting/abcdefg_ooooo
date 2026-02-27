@@ -1,0 +1,12 @@
+[2026-02-27T16:42:00.146Z] [STEP] Completing Leader onboarding via 3-step CONTINUE sequence
+[2026-02-27T16:42:00.146Z] [STEP] Clicking Onboarding Continue button
+[2026-02-27T16:42:00.146Z] [INFO] Checking for generic support popups to dismiss...
+[2026-02-27T16:42:00.405Z] [INFO] Leader Onboarding: Step 1 Continue clicked
+[2026-02-27T16:42:01.411Z] [STEP] Clicking Onboarding Continue button
+[2026-02-27T16:42:01.411Z] [INFO] Checking for generic support popups to dismiss...
+[2026-02-27T16:42:01.573Z] [INFO] Leader Onboarding: Step 2 Continue clicked
+[2026-02-27T16:42:02.579Z] [STEP] Clicking Onboarding Continue button
+[2026-02-27T16:42:02.580Z] [INFO] Checking for generic support popups to dismiss...
+[2026-02-27T16:42:02.687Z] [INFO] Leader Onboarding: Step 3 Continue clicked
+[2026-02-27T16:42:04.873Z] [SUCCESS] Redirected to /hosting-plan
+[2026-02-27T16:42:04.999Z] [SUCCESS] Onboarding completed. Pricing page loaded.

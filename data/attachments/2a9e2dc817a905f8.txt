@@ -1,0 +1,10 @@
+[2026-02-27T16:42:10.686Z] [STEP] Verifying Stripe form visibility
+[2026-02-27T16:42:11.706Z] [SUCCESS] Stripe form verified
+[2026-02-27T16:42:11.706Z] [STEP] Filling Stripe payment details
+[2026-02-27T16:42:11.756Z] [STEP] Selecting country: US
+[2026-02-27T16:42:15.824Z] [SUCCESS] Stripe payment details filled
+[2026-02-27T16:42:15.824Z] [STEP] Submitting payment
+[2026-02-27T16:42:19.320Z] [SUCCESS] Payment submitted
+[2026-02-27T16:42:19.320Z] [STEP] Verifying Payment Success popup visibility
+[2026-02-27T16:42:20.255Z] [SUCCESS] Payment Success popup verified
+[2026-02-27T16:42:20.255Z] [SUCCESS] Payment completed successfully.
