@@ -1,0 +1,12 @@
+[2026-03-04T12:51:41.552Z] [STEP] Selecting Member role on Welcome page
+[2026-03-04T12:51:41.553Z] [STEP] Verifying Welcome Page is displayed
+[2026-03-04T12:51:41.553Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-04T12:51:41.763Z] [SUCCESS] Welcome Page verification successful (Role buttons visible)
+[2026-03-04T12:51:41.764Z] [STEP] Selecting path: Explore support groups
+[2026-03-04T12:51:41.764Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-04T12:51:41.991Z] [INFO] Clicked Explore support groups
+[2026-03-04T12:51:42.017Z] [SUCCESS] Explore Support Groups path selected
+[2026-03-04T12:51:42.017Z] [STEP] Clicking Welcome Continue button
+[2026-03-04T12:51:42.017Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-04T12:51:42.305Z] [SUCCESS] Welcome Continue clicked
+[2026-03-04T12:51:42.305Z] [SUCCESS] Role selection completed

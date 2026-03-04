@@ -1,0 +1,29 @@
+[2026-03-04T12:55:21.822Z] [INFO] Starting Step 1: Group Creation
+[2026-03-04T12:55:21.822Z] [STEP] Creating group: PW_Group_20260304_125521_w4r08223vl
+[2026-03-04T12:55:21.822Z] [NAV] Navigating to Dashboard
+[2026-03-04T12:55:22.926Z] [STEP] Clicking on Start a Group
+[2026-03-04T12:55:31.308Z] [ASSERT] Create Group page is loaded
+[2026-03-04T12:55:31.311Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-04T12:55:32.583Z] [STEP] Filling Group Name
+[2026-03-04T12:55:32.701Z] [STEP] Filling Group Description
+[2026-03-04T12:55:33.863Z] [STEP] Uploading Cover Image
+[2026-03-04T12:55:33.946Z] [SUCCESS] Cover image uploaded
+[2026-03-04T12:55:33.946Z] [STEP] Opening Select Tags dropdown
+[2026-03-04T12:55:34.129Z] [STEP] Selecting tag (second option — first real option)
+[2026-03-04T12:55:34.308Z] [SUCCESS] Tag selected
+[2026-03-04T12:55:34.309Z] [STEP] Clicking Continue
+[2026-03-04T12:55:34.735Z] [INFO] Professional Background tab detected — completing required fields
+[2026-03-04T12:55:34.738Z] [STEP] Filling Professional Background tab
+[2026-03-04T12:55:34.738Z] [STEP] Uploading Profile Photo
+[2026-03-04T12:55:34.789Z] [SUCCESS] Profile photo uploaded
+[2026-03-04T12:55:34.813Z] [INFO] Display name already set: "Aesha Mangukiya" — skipping
+[2026-03-04T12:55:34.813Z] [STEP] Selecting Professional Role
+[2026-03-04T12:55:34.853Z] [SUCCESS] Professional Role selected
+[2026-03-04T12:55:34.853Z] [STEP] Filling Professional Bio
+[2026-03-04T12:55:35.276Z] [SUCCESS] Professional Bio filled
+[2026-03-04T12:55:35.277Z] [STEP] Clicking Continue
+[2026-03-04T12:55:40.499Z] [INFO] Pricing Model tab not present
+[2026-03-04T12:55:40.499Z] [STEP] Clicking Launch Group
+[2026-03-04T12:55:40.885Z] [SUCCESS] Group creation flow completed for: PW_Group_20260304_125521_w4r08223vl
+[2026-03-04T12:55:40.885Z] [ASSERT] Verifying toast message: Group created successfully!
+[2026-03-04T12:55:41.861Z] [SUCCESS] Step 1 Completed: Group PW_Group_20260304_125521_w4r08223vl created.
