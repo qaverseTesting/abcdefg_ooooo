@@ -1,0 +1,25 @@
+[2026-03-06T17:09:08.920Z] [STEP] Registering new leader with email: mh_06170908w2r0mogl@mailinator.com
+[2026-03-06T17:09:08.920Z] [STEP] Navigating to Registration Page
+[2026-03-06T17:09:09.748Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-06T17:09:09.908Z] [SUCCESS] Registration Page loaded
+[2026-03-06T17:09:09.909Z] [STEP] Filling registration form for: mh_06170908w2r0mogl@mailinator.com
+[2026-03-06T17:09:11.725Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-06T17:09:11.925Z] [STEP] Submitting registration form
+[2026-03-06T17:09:12.165Z] [SUCCESS] Registration form submitted
+[2026-03-06T17:09:12.165Z] [STEP] Waiting for OTP entry page to be ready
+[2026-03-06T17:09:16.712Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-03-06T17:09:16.713Z] [INFO] [OTP] Requesting real verification code for mh_06170908w2r0mogl@mailinator.com via Mailinator
+[2026-03-06T17:09:16.803Z] [STEP] Opening Mailinator inbox: https://www.mailinator.com/v4/public/inboxes.jsp?to=mh_06170908w2r0mogl
+[2026-03-06T17:09:17.993Z] [SUCCESS] Mailinator inbox loaded
+[2026-03-06T17:09:17.993Z] [STEP] Searching for keywords: confirm, email, verify, otp, code in Inbox: https://www.mailinator.com/v4/public/inboxes.jsp?to=mh_06170908w2r0mogl (Timeout: 60000ms)
+[2026-03-06T17:09:18.044Z] [SUCCESS] Matched email: "	MentalHappy	Confirm your email address	just now..."
+[2026-03-06T17:09:21.097Z] [STEP] Extracting OTP
+[2026-03-06T17:09:24.112Z] [INFO] OTP extraction attempt 1/5
+[2026-03-06T17:09:24.164Z] [SUCCESS] OTP found in iframe #html_msg_body: 323974
+[2026-03-06T17:09:24.189Z] [STEP] Entering OTP: 323974
+[2026-03-06T17:09:24.189Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-06T17:09:24.499Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-06T17:09:24.837Z] [SUCCESS] OTP entered
+[2026-03-06T17:09:24.952Z] [INFO] Waiting for redirect to /welcome...
+[2026-03-06T17:09:25.672Z] [ASSERT] Verifying toast message: /Email confirmed!/i
+[2026-03-06T17:09:25.716Z] [SUCCESS] Leader registration and OTP verification completed

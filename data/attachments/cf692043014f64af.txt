@@ -1,0 +1,31 @@
+[2026-03-06T17:12:15.058Z] [STEP] Creating group: PW_Group_20260306_171129_w2r0232b11
+[2026-03-06T17:12:15.058Z] [NAV] Navigating to Dashboard
+[2026-03-06T17:12:15.444Z] [STEP] Clicking on Start a Group
+[2026-03-06T17:12:17.173Z] [ASSERT] Create Group page is loaded
+[2026-03-06T17:12:17.174Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-06T17:12:17.798Z] [STEP] Filling Group Name
+[2026-03-06T17:12:17.839Z] [STEP] Filling Group Description
+[2026-03-06T17:12:18.483Z] [STEP] Uploading Cover Image
+[2026-03-06T17:12:18.561Z] [SUCCESS] Cover image uploaded
+[2026-03-06T17:12:18.561Z] [STEP] Opening Select Tags dropdown
+[2026-03-06T17:12:18.677Z] [STEP] Selecting tag (second option — first real option)
+[2026-03-06T17:12:18.789Z] [SUCCESS] Tag selected
+[2026-03-06T17:12:18.789Z] [STEP] Clicking Continue
+[2026-03-06T17:12:19.144Z] [INFO] Professional Background tab detected — completing required fields
+[2026-03-06T17:12:19.144Z] [STEP] Filling Professional Background tab
+[2026-03-06T17:12:19.144Z] [STEP] Uploading Profile Photo
+[2026-03-06T17:12:19.199Z] [SUCCESS] Profile photo uploaded
+[2026-03-06T17:12:19.228Z] [INFO] Display name already set: "Pixel Perfect" — skipping
+[2026-03-06T17:12:19.228Z] [STEP] Selecting Professional Role
+[2026-03-06T17:12:19.262Z] [SUCCESS] Professional Role selected
+[2026-03-06T17:12:19.262Z] [STEP] Filling Professional Bio
+[2026-03-06T17:12:19.707Z] [SUCCESS] Professional Bio filled
+[2026-03-06T17:12:19.707Z] [STEP] Clicking Continue
+[2026-03-06T17:12:19.874Z] [INFO] Pricing Model tab detected — selecting "Free"
+[2026-03-06T17:12:19.874Z] [STEP] Selecting "Free" Pricing Model
+[2026-03-06T17:12:19.919Z] [SUCCESS] Free pricing model selected
+[2026-03-06T17:12:19.919Z] [STEP] Clicking Continue
+[2026-03-06T17:12:20.081Z] [STEP] Clicking Launch Group
+[2026-03-06T17:12:20.218Z] [SUCCESS] Group creation flow completed for: PW_Group_20260306_171129_w2r0232b11
+[2026-03-06T17:12:20.218Z] [ASSERT] Verifying toast message: /Group created successfully!/i
+[2026-03-06T17:12:24.107Z] [SUCCESS] Full Gold Standard Cycle Complete: Group "PW_Group_20260306_171129_w2r0232b11" created.

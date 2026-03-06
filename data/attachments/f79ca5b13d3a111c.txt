@@ -1,0 +1,14 @@
+[2026-03-06T17:11:37.223Z] [INFO] [OTP] Requesting real verification code for mh_06171129w2r0vsf6@mailinator.com via Mailinator
+[2026-03-06T17:11:37.299Z] [STEP] Opening Mailinator inbox: https://www.mailinator.com/v4/public/inboxes.jsp?to=mh_06171129w2r0vsf6
+[2026-03-06T17:11:38.484Z] [SUCCESS] Mailinator inbox loaded
+[2026-03-06T17:11:38.484Z] [STEP] Searching for keywords: confirm, email, verify, otp, code in Inbox: https://www.mailinator.com/v4/public/inboxes.jsp?to=mh_06171129w2r0vsf6 (Timeout: 60000ms)
+[2026-03-06T17:11:43.880Z] [SUCCESS] Matched email: "	MentalHappy	Confirm your email address	just now..."
+[2026-03-06T17:11:47.018Z] [STEP] Extracting OTP
+[2026-03-06T17:11:50.039Z] [INFO] OTP extraction attempt 1/5
+[2026-03-06T17:11:50.087Z] [SUCCESS] OTP found in iframe #html_msg_body: 427067
+[2026-03-06T17:11:50.112Z] [STEP] Entering OTP: 427067
+[2026-03-06T17:11:50.112Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-06T17:11:50.371Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-06T17:11:50.695Z] [SUCCESS] OTP entered
+[2026-03-06T17:11:50.813Z] [INFO] Waiting for redirect to /welcome...
+[2026-03-06T17:11:51.522Z] [ASSERT] Verifying toast message: /Email confirmed!/i

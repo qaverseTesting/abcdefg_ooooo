@@ -1,0 +1,47 @@
+[2026-03-06T17:13:50.643Z] [NAV] Navigating to Registration
+[2026-03-06T17:13:51.611Z] [STEP] Generated test email: mh_06171351w4r0hbpu@mailinator.com
+[2026-03-06T17:13:51.613Z] [INFO] Saving user email: mh_06171351w4r0hbpu@mailinator.com
+[2026-03-06T17:13:51.614Z] [STEP] Filling registration form for: mh_06171351w4r0hbpu@mailinator.com
+[2026-03-06T17:13:53.416Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-06T17:13:53.562Z] [STEP] Submitting registration form
+[2026-03-06T17:13:53.799Z] [SUCCESS] Registration form submitted
+[2026-03-06T17:14:01.346Z] [STEP] Waiting for OTP entry page to be ready
+[2026-03-06T17:14:01.377Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-03-06T17:14:01.377Z] [INFO] [OTP] Requesting real verification code for mh_06171351w4r0hbpu@mailinator.com via Mailinator
+[2026-03-06T17:14:01.464Z] [STEP] Opening Mailinator inbox: https://www.mailinator.com/v4/public/inboxes.jsp?to=mh_06171351w4r0hbpu
+[2026-03-06T17:14:03.025Z] [SUCCESS] Mailinator inbox loaded
+[2026-03-06T17:14:03.025Z] [STEP] Searching for keywords: confirm, email, verify, otp, code in Inbox: https://www.mailinator.com/v4/public/inboxes.jsp?to=mh_06171351w4r0hbpu (Timeout: 60000ms)
+[2026-03-06T17:14:03.109Z] [SUCCESS] Matched email: "	MentalHappy	Confirm your email address	just now..."
+[2026-03-06T17:14:06.217Z] [STEP] Extracting OTP
+[2026-03-06T17:14:09.237Z] [INFO] OTP extraction attempt 1/5
+[2026-03-06T17:14:09.425Z] [SUCCESS] OTP found in iframe #html_msg_body: 446370
+[2026-03-06T17:14:09.484Z] [STEP] Entering OTP: 446370
+[2026-03-06T17:14:09.484Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-06T17:14:09.893Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-06T17:14:10.300Z] [SUCCESS] OTP entered
+[2026-03-06T17:14:10.459Z] [INFO] Waiting for redirect to /welcome...
+[2026-03-06T17:14:11.358Z] [ASSERT] Verifying toast message: /Email confirmed!/i
+[2026-03-06T17:14:11.511Z] [STEP] Selecting path: Continue as a Group Leader
+[2026-03-06T17:14:11.512Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-06T17:14:12.206Z] [INFO] Clicked Continue as a Group Leader
+[2026-03-06T17:14:12.215Z] [SUCCESS] Group Leader path selected
+[2026-03-06T17:14:12.215Z] [STEP] Clicking Welcome Continue button
+[2026-03-06T17:14:12.215Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-06T17:14:12.502Z] [SUCCESS] Welcome Continue clicked
+[2026-03-06T17:14:12.503Z] [INFO] Completing onboarding flow using method: continue
+[2026-03-06T17:14:12.503Z] [STEP] Completing Leader onboarding via 3-step CONTINUE sequence
+[2026-03-06T17:14:12.503Z] [STEP] Clicking Onboarding Continue button
+[2026-03-06T17:14:12.503Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-06T17:14:12.778Z] [INFO] Leader Onboarding: Step 1 Continue clicked
+[2026-03-06T17:14:13.784Z] [STEP] Clicking Onboarding Continue button
+[2026-03-06T17:14:13.784Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-06T17:14:13.894Z] [INFO] Leader Onboarding: Step 2 Continue clicked
+[2026-03-06T17:14:14.903Z] [STEP] Clicking Onboarding Continue button
+[2026-03-06T17:14:14.903Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-06T17:14:15.250Z] [INFO] Leader Onboarding: Step 3 Continue clicked
+[2026-03-06T17:14:17.904Z] [SUCCESS] Redirected to /hosting-plan
+[2026-03-06T17:14:17.914Z] [INFO] On hosting plan page, selecting Free plan
+[2026-03-06T17:14:17.914Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-06T17:14:20.694Z] [ASSERT] Verifying dashboard is loaded
+[2026-03-06T17:14:22.429Z] [SUCCESS] Dashboard load verified
+[2026-03-06T17:14:22.429Z] [INFO] Saving user verification status: true

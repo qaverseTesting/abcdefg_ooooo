@@ -1,0 +1,6 @@
+[2026-03-06T17:11:56.926Z] [STEP] Selecting Active Plan ($19)
+[2026-03-06T17:11:56.928Z] [STEP] Verifying Hosting Plan page content
+[2026-03-06T17:11:57.158Z] [SUCCESS] Hosting Plan page verification successful
+[2026-03-06T17:11:57.158Z] [STEP] Selecting Active Group Plan
+[2026-03-06T17:11:57.392Z] [STEP] Clicking Pay Now
+[2026-03-06T17:12:01.415Z] [SUCCESS] Plan selected, landing on Stripe Checkout

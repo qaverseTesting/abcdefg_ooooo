@@ -1,0 +1,56 @@
+[2026-03-06T17:12:26.899Z] [INFO] RuntimeStore empty. Using generated email: mh_06171226w3r02d9q@mailinator.com
+[2026-03-06T17:12:26.900Z] [INFO] [PREREQUISITE] Checking for proof of existence for: mh_06171226w3r02d9q@mailinator.com
+[2026-03-06T17:12:26.900Z] [INFO] [PREREQUISITE] Proceeding with on-the-fly registration for: mh_06171226w3r02d9q@mailinator.com
+[2026-03-06T17:12:26.900Z] [INFO] Prerequisite not met: User mh_06171226w3r02d9q@mailinator.com not found. Registering...
+[2026-03-06T17:12:26.901Z] [STEP] Navigating to Registration Page
+[2026-03-06T17:12:27.969Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-06T17:12:28.342Z] [SUCCESS] Registration Page loaded
+[2026-03-06T17:12:28.343Z] [STEP] Filling registration form for: mh_06171226w3r02d9q@mailinator.com
+[2026-03-06T17:12:31.298Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-06T17:12:31.601Z] [STEP] Submitting registration form
+[2026-03-06T17:12:31.953Z] [SUCCESS] Registration form submitted
+[2026-03-06T17:12:39.492Z] [INFO] [OTP] Requesting real verification code for mh_06171226w3r02d9q@mailinator.com via Mailinator
+[2026-03-06T17:12:39.656Z] [STEP] Opening Mailinator inbox: https://www.mailinator.com/v4/public/inboxes.jsp?to=mh_06171226w3r02d9q
+[2026-03-06T17:12:41.007Z] [SUCCESS] Mailinator inbox loaded
+[2026-03-06T17:12:41.007Z] [STEP] Searching for keywords: confirm, email, verify, otp, code in Inbox: https://www.mailinator.com/v4/public/inboxes.jsp?to=mh_06171226w3r02d9q (Timeout: 60000ms)
+[2026-03-06T17:12:42.265Z] [INFO] Target email not found among 0 rows. Subjects: []
+[2026-03-06T17:12:53.327Z] [SUCCESS] Matched email: "	MentalHappy	Confirm your email address	just now..."
+[2026-03-06T17:12:56.456Z] [STEP] Extracting OTP
+[2026-03-06T17:12:59.480Z] [INFO] OTP extraction attempt 1/5
+[2026-03-06T17:12:59.563Z] [SUCCESS] OTP found in iframe #html_msg_body: 631176
+[2026-03-06T17:12:59.590Z] [STEP] Entering OTP: 631176
+[2026-03-06T17:12:59.590Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-06T17:12:59.974Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-06T17:13:00.284Z] [SUCCESS] OTP entered
+[2026-03-06T17:13:00.398Z] [INFO] Waiting for redirect to /welcome...
+[2026-03-06T17:13:02.115Z] [STEP] Ensuring clean session state (Force Logout)
+[2026-03-06T17:13:02.115Z] [STEP] User is logging out...
+[2026-03-06T17:13:02.116Z] [STEP] Clicking on Profile Icon
+[2026-03-06T17:13:32.338Z] [NAV] Navigating to Login
+[2026-03-06T17:13:33.185Z] [SUCCESS] Prerequisite completed: User mh_06171226w3r02d9q@mailinator.com created and state reset.
+[2026-03-06T17:13:33.185Z] [INFO] Saving user email: mh_06171226w3r02d9q@mailinator.com
+[2026-03-06T17:13:33.186Z] [INFO] Saving user verification status: true
+[2026-03-06T17:13:33.186Z] [NAV] Navigating to Login
+[2026-03-06T17:13:34.091Z] [STEP] Navigating to Forgot Password page
+[2026-03-06T17:13:35.912Z] [STEP] Requesting password reset for: mh_06171226w3r02d9q@mailinator.com
+[2026-03-06T17:13:36.227Z] [ASSERT] Verifying toast message: Password reset sent successfully
+[2026-03-06T17:13:36.648Z] [STEP] Processing reset link via Mailinator
+[2026-03-06T17:13:36.702Z] [STEP] Opening Mailinator inbox: https://www.mailinator.com/v4/public/inboxes.jsp?to=mh_06171226w3r02d9q
+[2026-03-06T17:13:38.709Z] [SUCCESS] Mailinator inbox loaded
+[2026-03-06T17:13:38.709Z] [STEP] Searching for keywords: reset, password, forgot in Inbox: https://www.mailinator.com/v4/public/inboxes.jsp?to=mh_06171226w3r02d9q (Timeout: 60000ms)
+[2026-03-06T17:13:38.827Z] [SUCCESS] Matched email: "	MentalHappy	Password reset requested	just now..."
+[2026-03-06T17:13:42.037Z] [INFO] Clicking Reset Link in Mailinator...
+[2026-03-06T17:13:42.040Z] [STEP] Clicking reset link
+[2026-03-06T17:13:42.115Z] [INFO] Using iframe: #html_msg_body
+[2026-03-06T17:13:42.338Z] [INFO] Clicking Reset Link found in iframe: https://u8010474.ct.sendgrid.net/ls/click?upn=u001.amIoa00VBXzGb-2FR7MbBTTvTrJY0ZFEJduoZ1A0YFR3-2Fo7WdavOOC-2FyEBVEbdx97EyqC1T8xdyuuzBINVzQK3nXF49-2FA-2FRkBqWaKserG9jEMVNDYkUoojY-2FStTxWnDV1rIzAJ_tuqj9vpKoUafawgDh-2FD5N-2Fgn-2BsRj30Ck0myc0muLbpxyHDDwu7zGwGSWL6aVv3CX6Ojq7qjq7v4V0ETkh3FKLKTTJ7TDNxhaSPrlogEO7H2GJ8wEu8aqRVWAnPq3aOtfBXinE-2FGNmiGAevy1lMqh76IOdaxMZ7ouOjsNJK9ygqEFuj4Q6TtDRRgTEIQYWhFyTpe9-2FiVoR6nbobfg4yUu7Lnk4eMMjDwPcTlSxVh-2BIEFYLqGowKykWhWYwK4fSIM6RCYBri1PPzIgYHDdutzNPr0bz7fa4kaFYeQ-2Br7k7zZQolBKwvbHSxt2NqZslhoe2NgzN709OTTJ0dezTmVgat16gY1ukJbRX8jOFmJ5wbDl8WfRXyNmPotoAOoePldfHZSS5eY-2B1k5NiWzsfV4-2BtpQ-3D-3D
+[2026-03-06T17:13:42.553Z] [SUCCESS] Reset link interaction completed
+[2026-03-06T17:13:42.676Z] [SUCCESS] Reset link clicked. New page opened: https://staging.mentalhappy.com/reset/d0095d02-ddf9-4665-93e2-2518fd4213ff
+[2026-03-06T17:13:42.739Z] [STEP] Completing password reset in new tab
+[2026-03-06T17:13:43.679Z] [INFO] Verifying Reset Password page is visible...
+[2026-03-06T17:13:45.314Z] [INFO] Entering new password: TestPassword123!
+[2026-03-06T17:13:46.272Z] [INFO] Entering confirm password
+[2026-03-06T17:13:46.463Z] [INFO] Submitting new password...
+[2026-03-06T17:13:46.463Z] [INFO] Clicking Confirm Password button
+[2026-03-06T17:13:46.923Z] [INFO] Verifying success message toast...
+[2026-03-06T17:13:46.923Z] [ASSERT] Verifying toast message: Password updated!
+[2026-03-06T17:13:47.451Z] [SUCCESS] Forgot Password test completed successfully
