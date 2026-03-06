@@ -1,0 +1,12 @@
+[2026-03-06T05:14:17.933Z] [STEP] Verifying Payment Success Popup
+[2026-03-06T05:14:17.933Z] [STEP] Verifying Payment Success popup visibility
+[2026-03-06T05:14:18.242Z] [SUCCESS] Payment Success popup verified
+[2026-03-06T05:14:18.265Z] [STEP] Clicking "Do this later"
+[2026-03-06T05:14:18.832Z] [SUCCESS] Success popup dismissed via Do this later
+[2026-03-06T05:14:18.832Z] [ASSERT] Verifying dashboard is loaded
+[2026-03-06T05:14:22.270Z] [SUCCESS] Dashboard load verified
+[2026-03-06T05:14:22.271Z] [SUCCESS] Subscription completed and returned to Dashboard
+[2026-03-06T05:14:22.272Z] [STEP] Verifying Leader Dashboard
+[2026-03-06T05:14:22.272Z] [ASSERT] Verifying dashboard is loaded
+[2026-03-06T05:14:22.379Z] [SUCCESS] Dashboard load verified
+[2026-03-06T05:14:22.403Z] [SUCCESS] Leader dashboard verification successful

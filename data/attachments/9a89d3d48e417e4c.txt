@@ -1,0 +1,12 @@
+[2026-03-06T05:11:26.687Z] [STEP] Selecting Leader role on Welcome page
+[2026-03-06T05:11:26.687Z] [STEP] Verifying Welcome Page is displayed
+[2026-03-06T05:11:26.688Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-06T05:11:26.893Z] [SUCCESS] Welcome Page verification successful (Role buttons visible)
+[2026-03-06T05:11:26.893Z] [STEP] Selecting path: Continue as a Group Leader
+[2026-03-06T05:11:26.893Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-06T05:11:27.167Z] [INFO] Clicked Continue as a Group Leader
+[2026-03-06T05:11:27.190Z] [SUCCESS] Group Leader path selected
+[2026-03-06T05:11:27.190Z] [STEP] Clicking Welcome Continue button
+[2026-03-06T05:11:27.190Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-06T05:11:27.476Z] [SUCCESS] Welcome Continue clicked
+[2026-03-06T05:11:27.476Z] [SUCCESS] Leader role selection completed

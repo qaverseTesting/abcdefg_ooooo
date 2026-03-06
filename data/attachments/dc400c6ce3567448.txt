@@ -1,0 +1,12 @@
+[2026-03-06T05:15:03.838Z] [STEP] Logging in as member
+[2026-03-06T05:15:03.839Z] [NAV] Navigating to Login
+[2026-03-06T05:15:05.160Z] [INFO] Logging in user: aeshamangukiya1@gmail.com
+[2026-03-06T05:15:07.312Z] [ASSERT] Verifying dashboard is loaded
+[2026-03-06T05:15:13.631Z] [SUCCESS] Dashboard load verified
+[2026-03-06T05:15:13.632Z] [STEP] Performing Logout from Dashboard
+[2026-03-06T05:15:13.633Z] [STEP] User is logging out...
+[2026-03-06T05:15:13.633Z] [STEP] Clicking on Profile Icon
+[2026-03-06T05:15:14.433Z] [STEP] Clicking on Logout Button in Menu
+[2026-03-06T05:15:14.727Z] [STEP] Clicking on Confirm Logout Button in Popup
+[2026-03-06T05:15:15.420Z] [SUCCESS] Logout action completed
+[2026-03-06T05:15:17.522Z] [SUCCESS] Logout successful: User redirected to Login page.

@@ -1,0 +1,28 @@
+[2026-03-06T05:11:31.731Z] [STEP] Creating group: PW_Group_20260306_051108_w2r0704bjn
+[2026-03-06T05:11:31.731Z] [NAV] Navigating to Dashboard
+[2026-03-06T05:11:32.117Z] [STEP] Clicking on Start a Group
+[2026-03-06T05:11:33.815Z] [ASSERT] Create Group page is loaded
+[2026-03-06T05:11:33.815Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-06T05:11:34.495Z] [STEP] Filling Group Name
+[2026-03-06T05:11:34.555Z] [STEP] Filling Group Description
+[2026-03-06T05:11:35.277Z] [STEP] Uploading Cover Image
+[2026-03-06T05:11:35.321Z] [SUCCESS] Cover image uploaded
+[2026-03-06T05:11:35.322Z] [STEP] Opening Select Tags dropdown
+[2026-03-06T05:11:35.448Z] [STEP] Selecting tag (second option — first real option)
+[2026-03-06T05:11:35.569Z] [SUCCESS] Tag selected
+[2026-03-06T05:11:35.569Z] [STEP] Clicking Continue
+[2026-03-06T05:11:35.984Z] [INFO] Professional Background tab detected — completing required fields
+[2026-03-06T05:11:35.984Z] [STEP] Filling Professional Background tab
+[2026-03-06T05:11:35.984Z] [STEP] Uploading Profile Photo
+[2026-03-06T05:11:36.015Z] [SUCCESS] Profile photo uploaded
+[2026-03-06T05:11:36.048Z] [INFO] Display name already set: "Auto Leader" — skipping
+[2026-03-06T05:11:36.048Z] [STEP] Selecting Professional Role
+[2026-03-06T05:11:36.086Z] [SUCCESS] Professional Role selected
+[2026-03-06T05:11:36.086Z] [STEP] Filling Professional Bio
+[2026-03-06T05:11:36.561Z] [SUCCESS] Professional Bio filled
+[2026-03-06T05:11:36.561Z] [STEP] Clicking Continue
+[2026-03-06T05:11:41.746Z] [INFO] Pricing Model tab not present
+[2026-03-06T05:11:41.746Z] [STEP] Clicking Launch Group
+[2026-03-06T05:11:41.847Z] [SUCCESS] Group creation flow completed for: PW_Group_20260306_051108_w2r0704bjn
+[2026-03-06T05:11:41.847Z] [ASSERT] Verifying toast message: /Group created successfully!/i
+[2026-03-06T05:11:45.740Z] [SUCCESS] Leader Free Flow Complete: Group "PW_Group_20260306_051108_w2r0704bjn" created.
