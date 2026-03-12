@@ -1,0 +1,22 @@
+[2026-03-12T16:27:14.718Z] [STEP] Registering new leader with email: pw_auto_mh_12162714w5r03iah@mailinator.com
+[2026-03-12T16:27:14.720Z] [STEP] Navigating to Registration Page
+[2026-03-12T16:27:15.522Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-12T16:27:15.777Z] [SUCCESS] Registration Page loaded
+[2026-03-12T16:27:15.778Z] [STEP] Filling registration form for: pw_auto_mh_12162714w5r03iah@mailinator.com
+[2026-03-12T16:27:18.213Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-12T16:27:18.521Z] [STEP] Submitting registration form
+[2026-03-12T16:27:18.860Z] [SUCCESS] Registration form submitted
+[2026-03-12T16:27:18.860Z] [STEP] Waiting for OTP entry page to be ready
+[2026-03-12T16:27:23.682Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-03-12T16:27:23.683Z] [INFO] [OTP] Bypass active for pw_auto_mh_12162714w5r03iah@mailinator.com. Returning fixed validation code: 456321
+[2026-03-12T16:27:23.704Z] [STEP] Entering OTP: 456321
+[2026-03-12T16:27:23.704Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-12T16:27:24.117Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-12T16:27:24.692Z] [SUCCESS] OTP entered
+[2026-03-12T16:27:24.692Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-03-12T16:27:24.698Z] [ASSERT] Verifying toast message: /Email confirmed!/i
+[2026-03-12T16:27:25.632Z] [SUCCESS] Leader registration and OTP verification completed
+[2026-03-12T16:27:25.633Z] [STEP] Verifying Welcome Page is displayed
+[2026-03-12T16:27:25.633Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-12T16:27:26.034Z] [SUCCESS] Welcome Page verification successful (Role buttons visible)
+[2026-03-12T16:27:26.061Z] [SUCCESS] Welcome page URL verified

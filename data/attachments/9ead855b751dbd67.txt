@@ -1,0 +1,24 @@
+[2026-03-12T16:28:43.062Z] [STEP] Submitting member registration form for: pw_auto_mh_12162843w5r0i9f3@mailinator.com
+[2026-03-12T16:28:43.063Z] [STEP] Navigating to Registration Page
+[2026-03-12T16:28:43.805Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-12T16:28:44.005Z] [SUCCESS] Registration Page loaded
+[2026-03-12T16:28:44.006Z] [STEP] Filling registration form for: pw_auto_mh_12162843w5r0i9f3@mailinator.com
+[2026-03-12T16:28:46.488Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-12T16:28:46.811Z] [STEP] Submitting registration form
+[2026-03-12T16:28:47.065Z] [SUCCESS] Registration form submitted
+[2026-03-12T16:28:47.065Z] [STEP] Waiting for OTP entry page to be ready
+[2026-03-12T16:28:54.081Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-03-12T16:28:54.082Z] [SUCCESS] Registration form submitted, OTP page reached
+[2026-03-12T16:28:54.082Z] [STEP] Verifying email for: pw_auto_mh_12162843w5r0i9f3@mailinator.com
+[2026-03-12T16:28:54.082Z] [INFO] [OTP] Bypass active for pw_auto_mh_12162843w5r0i9f3@mailinator.com. Returning fixed validation code: 456321
+[2026-03-12T16:28:54.093Z] [STEP] Entering OTP: 456321
+[2026-03-12T16:28:54.093Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-12T16:28:54.488Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-12T16:28:55.036Z] [SUCCESS] OTP entered
+[2026-03-12T16:28:55.036Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-03-12T16:28:55.045Z] [ASSERT] Verifying toast message: /Email confirmed!/i
+[2026-03-12T16:28:55.983Z] [SUCCESS] Email verification (OTP) successful
+[2026-03-12T16:28:55.984Z] [STEP] Verifying Welcome Page is displayed
+[2026-03-12T16:28:55.984Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-12T16:28:56.392Z] [SUCCESS] Welcome Page verification successful (Role buttons visible)
+[2026-03-12T16:28:56.402Z] [SUCCESS] Member landing on Welcome page verified

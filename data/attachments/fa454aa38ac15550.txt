@@ -1,0 +1,25 @@
+[2026-03-12T16:28:56.944Z] [STEP] Submitting member registration form for: pw_auto_mh_12162856w5r0qwbn@mailinator.com
+[2026-03-12T16:28:56.945Z] [STEP] Navigating to Registration Page
+[2026-03-12T16:28:57.686Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-12T16:28:58.018Z] [SUCCESS] Registration Page loaded
+[2026-03-12T16:28:58.019Z] [STEP] Filling registration form for: pw_auto_mh_12162856w5r0qwbn@mailinator.com
+[2026-03-12T16:29:00.441Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-12T16:29:00.780Z] [STEP] Submitting registration form
+[2026-03-12T16:29:01.074Z] [SUCCESS] Registration form submitted
+[2026-03-12T16:29:01.074Z] [STEP] Waiting for OTP entry page to be ready
+[2026-03-12T16:29:05.821Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-03-12T16:29:05.821Z] [SUCCESS] Registration form submitted, OTP page reached
+[2026-03-12T16:29:05.821Z] [STEP] Verifying email for: pw_auto_mh_12162856w5r0qwbn@mailinator.com
+[2026-03-12T16:29:05.822Z] [INFO] [OTP] Bypass active for pw_auto_mh_12162856w5r0qwbn@mailinator.com. Returning fixed validation code: 456321
+[2026-03-12T16:29:05.837Z] [STEP] Entering OTP: 456321
+[2026-03-12T16:29:05.837Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-12T16:29:06.594Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-12T16:29:07.093Z] [SUCCESS] OTP entered
+[2026-03-12T16:29:07.096Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-03-12T16:29:07.100Z] [ASSERT] Verifying toast message: /Email confirmed!/i
+[2026-03-12T16:29:09.450Z] [SUCCESS] Email verification (OTP) successful
+[2026-03-12T16:29:09.451Z] [STEP] Selecting path: Explore support groups
+[2026-03-12T16:29:09.451Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-12T16:29:10.312Z] [INFO] Clicked Explore support groups
+[2026-03-12T16:29:10.351Z] [SUCCESS] Explore Support Groups path selected
+[2026-03-12T16:29:10.421Z] [SUCCESS] Member path selection enabled Continue button

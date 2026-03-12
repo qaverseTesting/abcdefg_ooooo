@@ -1,0 +1,47 @@
+[2026-03-12T16:20:06.772Z] [STEP] Submitting member registration form for: pw_auto_mh_12162006w2r0xhoi@mailinator.com
+[2026-03-12T16:20:06.773Z] [STEP] Navigating to Registration Page
+[2026-03-12T16:20:07.319Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-12T16:20:07.468Z] [SUCCESS] Registration Page loaded
+[2026-03-12T16:20:07.468Z] [STEP] Filling registration form for: pw_auto_mh_12162006w2r0xhoi@mailinator.com
+[2026-03-12T16:20:09.407Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-12T16:20:09.782Z] [STEP] Submitting registration form
+[2026-03-12T16:20:09.947Z] [SUCCESS] Registration form submitted
+[2026-03-12T16:20:09.947Z] [STEP] Waiting for OTP entry page to be ready
+[2026-03-12T16:20:14.398Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-03-12T16:20:14.398Z] [SUCCESS] Registration form submitted, OTP page reached
+[2026-03-12T16:20:14.398Z] [STEP] Verifying email for: pw_auto_mh_12162006w2r0xhoi@mailinator.com
+[2026-03-12T16:20:14.398Z] [INFO] [OTP] Bypass active for pw_auto_mh_12162006w2r0xhoi@mailinator.com. Returning fixed validation code: 456321
+[2026-03-12T16:20:14.414Z] [STEP] Entering OTP: 456321
+[2026-03-12T16:20:14.414Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-12T16:20:14.678Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-12T16:20:15.088Z] [SUCCESS] OTP entered
+[2026-03-12T16:20:15.088Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-03-12T16:20:15.090Z] [ASSERT] Verifying toast message: /Email confirmed!/i
+[2026-03-12T16:20:15.722Z] [SUCCESS] Email verification (OTP) successful
+[2026-03-12T16:20:15.726Z] [STEP] Selecting Member role on Welcome page
+[2026-03-12T16:20:15.726Z] [STEP] Verifying Welcome Page is displayed
+[2026-03-12T16:20:15.727Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-12T16:20:16.089Z] [SUCCESS] Welcome Page verification successful (Role buttons visible)
+[2026-03-12T16:20:16.089Z] [STEP] Selecting path: Explore support groups
+[2026-03-12T16:20:16.089Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-12T16:20:16.381Z] [INFO] Clicked Explore support groups
+[2026-03-12T16:20:16.396Z] [SUCCESS] Explore Support Groups path selected
+[2026-03-12T16:20:16.396Z] [STEP] Clicking Welcome Continue button
+[2026-03-12T16:20:16.397Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-12T16:20:16.755Z] [SUCCESS] Welcome Continue clicked
+[2026-03-12T16:20:16.756Z] [SUCCESS] Role selection completed
+[2026-03-12T16:20:16.757Z] [STEP] Completing Member onboarding via SKIP path
+[2026-03-12T16:20:16.778Z] [STEP] Completing Member onboarding via SKIP
+[2026-03-12T16:20:16.778Z] [STEP] Clicking Onboarding Skip button
+[2026-03-12T16:20:16.778Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-12T16:20:17.729Z] [SUCCESS] Redirected to Dashboard via Skip
+[2026-03-12T16:20:17.729Z] [SUCCESS] Member onboarding (Skip) completed
+[2026-03-12T16:20:17.731Z] [ASSERT] Verifying dashboard is loaded
+[2026-03-12T16:20:19.496Z] [SUCCESS] Dashboard load verified
+[2026-03-12T16:20:19.496Z] [STEP] Verifying Member Dashboard content
+[2026-03-12T16:20:19.496Z] [ASSERT] Verifying dashboard is loaded
+[2026-03-12T16:20:19.672Z] [SUCCESS] Dashboard load verified
+[2026-03-12T16:20:19.908Z] [SUCCESS] Member dashboard verification successful
+[2026-03-12T16:20:20.414Z] [ASSERT] Verifying dashboard is loaded
+[2026-03-12T16:20:22.007Z] [SUCCESS] Dashboard load verified
+[2026-03-12T16:20:22.007Z] [SUCCESS] Member SKIP journey completed successfully

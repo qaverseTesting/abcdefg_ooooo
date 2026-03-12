@@ -1,0 +1,52 @@
+[2026-03-12T16:19:51.001Z] [STEP] Submitting member registration form for: pw_auto_mh_12161951w2r0eydu@mailinator.com
+[2026-03-12T16:19:51.001Z] [STEP] Navigating to Registration Page
+[2026-03-12T16:19:51.746Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-12T16:19:51.874Z] [SUCCESS] Registration Page loaded
+[2026-03-12T16:19:51.874Z] [STEP] Filling registration form for: pw_auto_mh_12161951w2r0eydu@mailinator.com
+[2026-03-12T16:19:53.801Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-12T16:19:54.044Z] [STEP] Submitting registration form
+[2026-03-12T16:19:54.274Z] [SUCCESS] Registration form submitted
+[2026-03-12T16:19:54.275Z] [STEP] Waiting for OTP entry page to be ready
+[2026-03-12T16:19:58.780Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-03-12T16:19:58.780Z] [SUCCESS] Registration form submitted, OTP page reached
+[2026-03-12T16:19:58.781Z] [STEP] Verifying email for: pw_auto_mh_12161951w2r0eydu@mailinator.com
+[2026-03-12T16:19:58.781Z] [INFO] [OTP] Bypass active for pw_auto_mh_12161951w2r0eydu@mailinator.com. Returning fixed validation code: 456321
+[2026-03-12T16:19:58.787Z] [STEP] Entering OTP: 456321
+[2026-03-12T16:19:58.787Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-12T16:19:59.067Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-12T16:19:59.457Z] [SUCCESS] OTP entered
+[2026-03-12T16:19:59.457Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-03-12T16:19:59.459Z] [ASSERT] Verifying toast message: /Email confirmed!/i
+[2026-03-12T16:20:00.087Z] [SUCCESS] Email verification (OTP) successful
+[2026-03-12T16:20:00.088Z] [STEP] Selecting Member role on Welcome page
+[2026-03-12T16:20:00.088Z] [STEP] Verifying Welcome Page is displayed
+[2026-03-12T16:20:00.088Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-12T16:20:00.435Z] [SUCCESS] Welcome Page verification successful (Role buttons visible)
+[2026-03-12T16:20:00.436Z] [STEP] Selecting path: Explore support groups
+[2026-03-12T16:20:00.436Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-12T16:20:00.736Z] [INFO] Clicked Explore support groups
+[2026-03-12T16:20:00.758Z] [SUCCESS] Explore Support Groups path selected
+[2026-03-12T16:20:00.759Z] [STEP] Clicking Welcome Continue button
+[2026-03-12T16:20:00.759Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-12T16:20:01.082Z] [SUCCESS] Welcome Continue clicked
+[2026-03-12T16:20:01.082Z] [SUCCESS] Role selection completed
+[2026-03-12T16:20:01.083Z] [STEP] Completing Member onboarding via CONTINUE path
+[2026-03-12T16:20:01.111Z] [STEP] Completing Member onboarding via 3-step sequence
+[2026-03-12T16:20:01.111Z] [STEP] Clicking Onboarding Continue button
+[2026-03-12T16:20:01.111Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-12T16:20:01.367Z] [INFO] Member Onboarding: Step 1 Continue clicked
+[2026-03-12T16:20:02.373Z] [STEP] Clicking Onboarding Continue button
+[2026-03-12T16:20:02.373Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-12T16:20:02.482Z] [INFO] Member Onboarding: Step 2 Continue clicked
+[2026-03-12T16:20:03.490Z] [STEP] Clicking final Find Support Group button
+[2026-03-12T16:20:03.490Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-12T16:20:03.616Z] [INFO] Member Onboarding: Step 3 Find Support Group clicked
+[2026-03-12T16:20:04.215Z] [SUCCESS] Redirected to Dashboard
+[2026-03-12T16:20:04.215Z] [SUCCESS] Member onboarding (Continue) completed
+[2026-03-12T16:20:04.216Z] [ASSERT] Verifying dashboard is loaded
+[2026-03-12T16:20:05.930Z] [SUCCESS] Dashboard load verified
+[2026-03-12T16:20:05.930Z] [STEP] Verifying Member Dashboard content
+[2026-03-12T16:20:05.930Z] [ASSERT] Verifying dashboard is loaded
+[2026-03-12T16:20:06.133Z] [SUCCESS] Dashboard load verified
+[2026-03-12T16:20:06.255Z] [SUCCESS] Member dashboard verification successful
+[2026-03-12T16:20:06.255Z] [SUCCESS] Member CONTINUE journey completed successfully

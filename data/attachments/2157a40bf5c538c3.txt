@@ -1,0 +1,33 @@
+[2026-03-12T16:29:38.000Z] [STEP] Submitting member registration form for: pw_auto_mh_12162938w5r0xawt@mailinator.com
+[2026-03-12T16:29:38.000Z] [STEP] Navigating to Registration Page
+[2026-03-12T16:29:40.085Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-12T16:29:40.534Z] [SUCCESS] Registration Page loaded
+[2026-03-12T16:29:40.534Z] [STEP] Filling registration form for: pw_auto_mh_12162938w5r0xawt@mailinator.com
+[2026-03-12T16:29:44.042Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-12T16:29:44.619Z] [STEP] Submitting registration form
+[2026-03-12T16:29:45.079Z] [SUCCESS] Registration form submitted
+[2026-03-12T16:29:45.079Z] [STEP] Waiting for OTP entry page to be ready
+[2026-03-12T16:29:53.821Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-03-12T16:29:53.822Z] [SUCCESS] Registration form submitted, OTP page reached
+[2026-03-12T16:29:53.822Z] [STEP] Verifying email for: pw_auto_mh_12162938w5r0xawt@mailinator.com
+[2026-03-12T16:29:53.822Z] [INFO] [OTP] Bypass active for pw_auto_mh_12162938w5r0xawt@mailinator.com. Returning fixed validation code: 456321
+[2026-03-12T16:29:53.860Z] [STEP] Entering OTP: 456321
+[2026-03-12T16:29:53.863Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-12T16:29:54.697Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-12T16:29:55.321Z] [SUCCESS] OTP entered
+[2026-03-12T16:29:55.322Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-03-12T16:29:55.325Z] [ASSERT] Verifying toast message: /Email confirmed!/i
+[2026-03-12T16:29:56.368Z] [SUCCESS] Email verification (OTP) successful
+[2026-03-12T16:29:56.371Z] [STEP] Selecting Member role on Welcome page
+[2026-03-12T16:29:56.371Z] [STEP] Verifying Welcome Page is displayed
+[2026-03-12T16:29:56.372Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-12T16:29:56.977Z] [SUCCESS] Welcome Page verification successful (Role buttons visible)
+[2026-03-12T16:29:56.977Z] [STEP] Selecting path: Explore support groups
+[2026-03-12T16:29:56.977Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-12T16:29:57.435Z] [INFO] Clicked Explore support groups
+[2026-03-12T16:29:57.448Z] [SUCCESS] Explore Support Groups path selected
+[2026-03-12T16:29:57.449Z] [STEP] Clicking Welcome Continue button
+[2026-03-12T16:29:57.449Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-12T16:29:57.961Z] [SUCCESS] Welcome Continue clicked
+[2026-03-12T16:29:57.961Z] [SUCCESS] Role selection completed
+[2026-03-12T16:29:58.030Z] [SUCCESS] Member Onboarding intro screen verified

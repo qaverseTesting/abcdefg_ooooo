@@ -1,0 +1,31 @@
+[2026-03-12T16:28:15.721Z] [STEP] Registering new leader with email: pw_auto_mh_12162815w5r03ksn@mailinator.com
+[2026-03-12T16:28:15.721Z] [STEP] Navigating to Registration Page
+[2026-03-12T16:28:16.483Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-12T16:28:16.721Z] [SUCCESS] Registration Page loaded
+[2026-03-12T16:28:16.721Z] [STEP] Filling registration form for: pw_auto_mh_12162815w5r03ksn@mailinator.com
+[2026-03-12T16:28:19.108Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-12T16:28:19.444Z] [STEP] Submitting registration form
+[2026-03-12T16:28:19.676Z] [SUCCESS] Registration form submitted
+[2026-03-12T16:28:19.676Z] [STEP] Waiting for OTP entry page to be ready
+[2026-03-12T16:28:24.562Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-03-12T16:28:24.562Z] [INFO] [OTP] Bypass active for pw_auto_mh_12162815w5r03ksn@mailinator.com. Returning fixed validation code: 456321
+[2026-03-12T16:28:24.569Z] [STEP] Entering OTP: 456321
+[2026-03-12T16:28:24.569Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-12T16:28:25.337Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-12T16:28:25.829Z] [SUCCESS] OTP entered
+[2026-03-12T16:28:25.829Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-03-12T16:28:25.834Z] [ASSERT] Verifying toast message: /Email confirmed!/i
+[2026-03-12T16:28:26.885Z] [SUCCESS] Leader registration and OTP verification completed
+[2026-03-12T16:28:26.885Z] [STEP] Selecting Leader role on Welcome page
+[2026-03-12T16:28:26.885Z] [STEP] Verifying Welcome Page is displayed
+[2026-03-12T16:28:26.885Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-12T16:28:27.500Z] [SUCCESS] Welcome Page verification successful (Role buttons visible)
+[2026-03-12T16:28:27.500Z] [STEP] Selecting path: Continue as a Group Leader
+[2026-03-12T16:28:27.500Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-12T16:28:27.793Z] [INFO] Clicked Continue as a Group Leader
+[2026-03-12T16:28:27.829Z] [SUCCESS] Group Leader path selected
+[2026-03-12T16:28:27.829Z] [STEP] Clicking Welcome Continue button
+[2026-03-12T16:28:27.829Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-12T16:28:28.227Z] [SUCCESS] Welcome Continue clicked
+[2026-03-12T16:28:28.227Z] [SUCCESS] Leader role selection completed
+[2026-03-12T16:28:28.259Z] [SUCCESS] Leader Onboarding intro screen verified

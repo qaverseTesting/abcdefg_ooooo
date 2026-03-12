@@ -1,0 +1,11 @@
+[2026-03-12T16:24:03.966Z] [STEP] Verifying OTP page persistence on refresh
+[2026-03-12T16:24:04.864Z] [STEP] Waiting for OTP entry page to be ready
+[2026-03-12T16:24:07.037Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-03-12T16:24:07.037Z] [INFO] [OTP] Bypass active for pw_auto_mh_12162355w5r0uec3@mailinator.com. Returning fixed validation code: 456321
+[2026-03-12T16:24:07.040Z] [STEP] Entering OTP: 456321
+[2026-03-12T16:24:07.040Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-12T16:24:07.325Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-12T16:24:08.212Z] [SUCCESS] OTP entered
+[2026-03-12T16:24:08.212Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-03-12T16:24:08.218Z] [ASSERT] Verifying toast message: /Email confirmed!/i
+[2026-03-12T16:24:09.228Z] [SUCCESS] Step 2 Complete: User verified and reached Welcome page.
