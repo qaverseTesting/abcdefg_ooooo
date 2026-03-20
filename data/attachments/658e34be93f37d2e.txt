@@ -1,0 +1,73 @@
+[2026-03-20T06:21:47.336Z] [STEP] Registering new leader with email: pw_auto_mh_20062147w8r042b1@mailinator.com
+[2026-03-20T06:21:47.338Z] [STEP] Navigating to Registration Page
+[2026-03-20T06:21:49.193Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-20T06:21:49.528Z] [SUCCESS] Registration Page loaded
+[2026-03-20T06:21:49.528Z] [STEP] Filling registration form for: pw_auto_mh_20062147w8r042b1@mailinator.com
+[2026-03-20T06:21:52.588Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-20T06:21:53.083Z] [STEP] Submitting registration form
+[2026-03-20T06:21:53.404Z] [SUCCESS] Registration form submitted
+[2026-03-20T06:21:53.404Z] [STEP] Waiting for OTP entry page to be ready
+[2026-03-20T06:21:59.377Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-03-20T06:21:59.377Z] [INFO] [OTP] Bypass active for pw_auto_mh_20062147w8r042b1@mailinator.com. Returning fixed validation code: 456321
+[2026-03-20T06:21:59.423Z] [STEP] Entering OTP: 456321
+[2026-03-20T06:21:59.423Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-20T06:22:00.454Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-20T06:22:01.361Z] [SUCCESS] OTP entered
+[2026-03-20T06:22:01.362Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-03-20T06:22:01.368Z] [ASSERT] Verifying toast message matching: /Email confirmed!/i
+[2026-03-20T06:22:02.609Z] [SUCCESS] Leader registration and OTP verification completed
+[2026-03-20T06:22:02.610Z] [STEP] Selecting Leader role on Welcome page
+[2026-03-20T06:22:02.611Z] [STEP] Verifying Welcome Page is displayed
+[2026-03-20T06:22:02.611Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-20T06:22:03.341Z] [SUCCESS] Welcome Page verification successful (Role buttons visible)
+[2026-03-20T06:22:03.341Z] [STEP] Selecting path: Continue as a Group Leader
+[2026-03-20T06:22:03.341Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-20T06:22:03.886Z] [INFO] Clicked Continue as a Group Leader
+[2026-03-20T06:22:03.929Z] [SUCCESS] Group Leader path selected
+[2026-03-20T06:22:03.930Z] [STEP] Clicking Welcome Continue button
+[2026-03-20T06:22:03.930Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-20T06:22:04.449Z] [SUCCESS] Welcome Continue clicked
+[2026-03-20T06:22:04.449Z] [SUCCESS] Leader role selection completed
+[2026-03-20T06:22:04.450Z] [STEP] Completing Leader onboarding via SKIP path
+[2026-03-20T06:22:04.450Z] [STEP] Completing Leader onboarding via SKIP
+[2026-03-20T06:22:04.450Z] [STEP] Clicking Onboarding Skip button
+[2026-03-20T06:22:04.450Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-20T06:22:08.583Z] [SUCCESS] Redirected to /hosting-plan via Skip
+[2026-03-20T06:22:08.583Z] [SUCCESS] Leader onboarding (Skip) completed
+[2026-03-20T06:22:08.599Z] [STEP] Verifying Hosting Plan page content
+[2026-03-20T06:22:09.634Z] [SUCCESS] Hosting Plan page verification successful
+[2026-03-20T06:22:09.634Z] [STEP] Selecting Free Group Plan
+[2026-03-20T06:22:10.182Z] [SUCCESS] Free Plan selection click sent (forced)
+[2026-03-20T06:22:10.183Z] [STEP] Verifying Free Group popup visibility
+[2026-03-20T06:22:11.056Z] [SUCCESS] Free Group popup verified
+[2026-03-20T06:22:11.058Z] [STEP] Clicking Go to Groups in popup
+[2026-03-20T06:22:11.764Z] [SUCCESS] Popup dismissed via Go to Groups
+[2026-03-20T06:22:11.773Z] [STEP] Creating group: PW_Group_20260320_062147_w8r0334bqm
+[2026-03-20T06:22:11.782Z] [NAV] Navigating to Dashboard
+[2026-03-20T06:22:13.009Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-20T06:22:13.297Z] [STEP] Clicking on Start a Group
+[2026-03-20T06:22:16.280Z] [ASSERT] Create Group page is loaded
+[2026-03-20T06:22:16.280Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-20T06:22:17.870Z] [STEP] Filling Group Name
+[2026-03-20T06:22:18.024Z] [STEP] Filling Group Description
+[2026-03-20T06:22:19.225Z] [STEP] Uploading Cover Image
+[2026-03-20T06:22:19.334Z] [SUCCESS] Cover image uploaded
+[2026-03-20T06:22:19.334Z] [STEP] Opening Select Tags dropdown
+[2026-03-20T06:22:19.549Z] [STEP] Selecting tag (second option — first real option)
+[2026-03-20T06:22:19.782Z] [SUCCESS] Tag selected
+[2026-03-20T06:22:19.783Z] [STEP] Clicking Continue
+[2026-03-20T06:22:20.260Z] [INFO] Professional Background tab detected — completing required fields
+[2026-03-20T06:22:20.261Z] [STEP] Filling Professional Background tab
+[2026-03-20T06:22:20.261Z] [STEP] Uploading Profile Photo
+[2026-03-20T06:22:20.367Z] [SUCCESS] Profile photo uploaded
+[2026-03-20T06:22:20.418Z] [INFO] Display name already set: "Auto Leader" — skipping
+[2026-03-20T06:22:20.418Z] [STEP] Selecting Professional Role
+[2026-03-20T06:22:20.495Z] [SUCCESS] Professional Role selected
+[2026-03-20T06:22:20.495Z] [STEP] Filling Professional Bio
+[2026-03-20T06:22:21.287Z] [SUCCESS] Professional Bio filled
+[2026-03-20T06:22:21.287Z] [STEP] Clicking Continue
+[2026-03-20T06:22:26.540Z] [INFO] Pricing Model tab not present
+[2026-03-20T06:22:26.540Z] [STEP] Clicking Launch Group
+[2026-03-20T06:22:26.687Z] [SUCCESS] Group creation flow completed for: PW_Group_20260320_062147_w8r0334bqm
+[2026-03-20T06:22:26.687Z] [ASSERT] Verifying toast message matching: /Group created successfully!/i
+[2026-03-20T06:22:30.630Z] [SUCCESS] Leader Free Plan Journey complete: Group "PW_Group_20260320_062147_w8r0334bqm" created.

@@ -1,0 +1,25 @@
+[2026-03-20T06:21:05.383Z] [STEP] Submitting member registration form for: pw_auto_mh_20062105w4r02wlb@mailinator.com
+[2026-03-20T06:21:05.383Z] [STEP] Navigating to Registration Page
+[2026-03-20T06:21:07.787Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-20T06:21:08.259Z] [SUCCESS] Registration Page loaded
+[2026-03-20T06:21:08.259Z] [STEP] Filling registration form for: pw_auto_mh_20062105w4r02wlb@mailinator.com
+[2026-03-20T06:21:11.594Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-20T06:21:12.165Z] [STEP] Submitting registration form
+[2026-03-20T06:21:12.677Z] [SUCCESS] Registration form submitted
+[2026-03-20T06:21:12.677Z] [STEP] Waiting for OTP entry page to be ready
+[2026-03-20T06:21:19.762Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-03-20T06:21:19.762Z] [SUCCESS] Registration form submitted, OTP page reached
+[2026-03-20T06:21:19.762Z] [STEP] Verifying email for: pw_auto_mh_20062105w4r02wlb@mailinator.com
+[2026-03-20T06:21:19.763Z] [INFO] [OTP] Bypass active for pw_auto_mh_20062105w4r02wlb@mailinator.com. Returning fixed validation code: 456321
+[2026-03-20T06:21:19.772Z] [STEP] Entering OTP: 456321
+[2026-03-20T06:21:19.772Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-20T06:21:20.800Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-20T06:21:21.730Z] [SUCCESS] OTP entered
+[2026-03-20T06:21:21.730Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-03-20T06:21:21.735Z] [ASSERT] Verifying toast message matching: /Email confirmed!/i
+[2026-03-20T06:21:23.152Z] [SUCCESS] Email verification (OTP) successful
+[2026-03-20T06:21:23.163Z] [STEP] Selecting path: Explore support groups
+[2026-03-20T06:21:23.163Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-20T06:21:24.967Z] [INFO] Clicked Explore support groups
+[2026-03-20T06:21:25.049Z] [SUCCESS] Explore Support Groups path selected
+[2026-03-20T06:21:25.115Z] [SUCCESS] Member path selection enabled Continue button

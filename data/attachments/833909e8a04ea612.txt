@@ -1,0 +1,4 @@
+[2026-03-20T06:18:52.772Z] [STEP] Testing mandatory fields: Empty credentials submission
+[2026-03-20T06:18:52.775Z] [INFO] Attempting login for user:  | Password: ****** (expectSuccess: false)
+[2026-03-20T06:18:55.206Z] [INFO] Login button is disabled. Triggering validation via Enter key.
+[2026-03-20T06:18:59.822Z] [SUCCESS] Success: Form correctly blocked "Empty credentials submission"

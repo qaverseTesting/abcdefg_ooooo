@@ -1,0 +1,99 @@
+[2026-03-20T06:23:09.283Z] [STEP] Navigating to Registration Page
+[2026-03-20T06:23:10.796Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-20T06:23:11.180Z] [SUCCESS] Registration Page loaded
+[2026-03-20T06:23:11.181Z] [STEP] Filling registration form for: pw_auto_mh_20062309w7r0wbak@mailinator.com
+[2026-03-20T06:23:13.981Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-20T06:23:14.326Z] [STEP] Submitting registration form
+[2026-03-20T06:23:14.689Z] [SUCCESS] Registration form submitted
+[2026-03-20T06:23:14.689Z] [STEP] Waiting for OTP entry page to be ready
+[2026-03-20T06:23:21.121Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-03-20T06:23:21.122Z] [INFO] [OTP] Bypass active for pw_auto_mh_20062309w7r0wbak@mailinator.com. Returning fixed validation code: 456321
+[2026-03-20T06:23:21.131Z] [STEP] Entering OTP: 456321
+[2026-03-20T06:23:21.131Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-20T06:23:21.779Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-20T06:23:22.103Z] [SUCCESS] OTP entered
+[2026-03-20T06:23:22.403Z] [SUCCESS] OTP submitted and verify clicked
+[2026-03-20T06:23:22.404Z] [ASSERT] Verifying toast message matching: /Email confirmed!/i
+[2026-03-20T06:23:22.972Z] [STEP] Selecting Leader role on Welcome page
+[2026-03-20T06:23:22.972Z] [STEP] Verifying Welcome Page is displayed
+[2026-03-20T06:23:22.972Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-20T06:23:23.728Z] [SUCCESS] Welcome Page verification successful (Role buttons visible)
+[2026-03-20T06:23:23.728Z] [STEP] Selecting path: Continue as a Group Leader
+[2026-03-20T06:23:23.728Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-20T06:23:24.487Z] [INFO] Clicked Continue as a Group Leader
+[2026-03-20T06:23:24.516Z] [SUCCESS] Group Leader path selected
+[2026-03-20T06:23:24.516Z] [STEP] Clicking Welcome Continue button
+[2026-03-20T06:23:24.516Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-20T06:23:25.034Z] [SUCCESS] Welcome Continue clicked
+[2026-03-20T06:23:25.034Z] [SUCCESS] Leader role selection completed
+[2026-03-20T06:23:25.035Z] [STEP] Completing Leader onboarding via CONTINUE path
+[2026-03-20T06:23:25.077Z] [STEP] Completing Leader onboarding via 3-step CONTINUE sequence
+[2026-03-20T06:23:25.078Z] [STEP] Attempting to click Onboarding Continue button
+[2026-03-20T06:23:25.078Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-20T06:23:25.445Z] [INFO] Button "Continue" is disabled. Selecting first available option...
+[2026-03-20T06:23:25.521Z] [INFO] Option selected. Waiting for button to enable...
+[2026-03-20T06:23:26.636Z] [INFO] Leader Onboarding: Step 1 Continue clicked
+[2026-03-20T06:23:28.142Z] [STEP] Attempting to click Onboarding Continue button
+[2026-03-20T06:23:28.142Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-20T06:23:28.375Z] [INFO] Button "Continue" is disabled. Selecting first available option...
+[2026-03-20T06:23:28.499Z] [INFO] Option selected. Waiting for button to enable...
+[2026-03-20T06:23:29.637Z] [INFO] Leader Onboarding: Step 2 Continue clicked
+[2026-03-20T06:23:31.146Z] [STEP] Attempting to click Onboarding Continue button
+[2026-03-20T06:23:31.147Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-20T06:23:31.240Z] [INFO] Button "Continue" is disabled. Selecting first available option...
+[2026-03-20T06:23:31.332Z] [INFO] Option selected. Waiting for button to enable...
+[2026-03-20T06:23:32.530Z] [INFO] Leader Onboarding: Step 3 Continue clicked
+[2026-03-20T06:23:35.877Z] [SUCCESS] Redirected to /hosting-plan
+[2026-03-20T06:23:35.877Z] [SUCCESS] Leader onboarding (Continue) completed
+[2026-03-20T06:23:35.884Z] [STEP] Selecting Active Plan ($19)
+[2026-03-20T06:23:35.884Z] [STEP] Verifying Hosting Plan page content
+[2026-03-20T06:23:37.013Z] [SUCCESS] Hosting Plan page verification successful
+[2026-03-20T06:23:37.017Z] [STEP] Selecting Active Group Plan
+[2026-03-20T06:23:37.614Z] [STEP] Clicking Pay Now
+[2026-03-20T06:23:43.359Z] [SUCCESS] Plan selected, landing on Stripe Checkout
+[2026-03-20T06:23:43.364Z] [STEP] Completing Stripe Payment
+[2026-03-20T06:23:43.364Z] [STEP] Verifying Stripe form visibility
+[2026-03-20T06:23:46.936Z] [SUCCESS] Stripe form verified
+[2026-03-20T06:23:46.936Z] [STEP] Filling Stripe payment details
+[2026-03-20T06:23:47.013Z] [STEP] Selecting country: US
+[2026-03-20T06:23:50.117Z] [SUCCESS] Stripe payment details filled
+[2026-03-20T06:23:50.117Z] [STEP] Submitting payment
+[2026-03-20T06:23:53.480Z] [SUCCESS] Payment submitted
+[2026-03-20T06:23:53.480Z] [SUCCESS] Stripe payment submitted
+[2026-03-20T06:23:53.481Z] [STEP] Verifying Payment Success (Redirect or Popup)
+[2026-03-20T06:23:56.192Z] [INFO] Final payment landing state: https://staging.mentalhappy.com/groups/create
+[2026-03-20T06:23:57.082Z] [SUCCESS] Direct redirect to Group Creation page detected. Bypassing popup logic.
+[2026-03-20T06:23:57.090Z] [SUCCESS] Subscription completed and reached target page.
+[2026-03-20T06:23:57.352Z] [SUCCESS] Payment succeeded and redirected to Group Creation flow
+[2026-03-20T06:23:57.358Z] [STEP] Creating group: PW_Group_20260320_062309_w7r02832vt
+[2026-03-20T06:23:57.361Z] [NAV] Navigating to Dashboard
+[2026-03-20T06:23:58.177Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-20T06:23:58.351Z] [STEP] Clicking on Start a Group
+[2026-03-20T06:24:00.405Z] [ASSERT] Create Group page is loaded
+[2026-03-20T06:24:00.405Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-20T06:24:01.218Z] [STEP] Filling Group Name
+[2026-03-20T06:24:01.290Z] [STEP] Filling Group Description
+[2026-03-20T06:24:01.723Z] [STEP] Uploading Cover Image
+[2026-03-20T06:24:01.791Z] [SUCCESS] Cover image uploaded
+[2026-03-20T06:24:01.791Z] [STEP] Opening Select Tags dropdown
+[2026-03-20T06:24:01.945Z] [STEP] Selecting tag (second option — first real option)
+[2026-03-20T06:24:02.063Z] [SUCCESS] Tag selected
+[2026-03-20T06:24:02.063Z] [STEP] Clicking Continue
+[2026-03-20T06:24:02.428Z] [INFO] Professional Background tab detected — completing required fields
+[2026-03-20T06:24:02.428Z] [STEP] Filling Professional Background tab
+[2026-03-20T06:24:02.428Z] [STEP] Uploading Profile Photo
+[2026-03-20T06:24:02.466Z] [SUCCESS] Profile photo uploaded
+[2026-03-20T06:24:02.499Z] [INFO] Display name already set: "Pixel Perfect" — skipping
+[2026-03-20T06:24:02.499Z] [STEP] Selecting Professional Role
+[2026-03-20T06:24:02.545Z] [SUCCESS] Professional Role selected
+[2026-03-20T06:24:02.545Z] [STEP] Filling Professional Bio
+[2026-03-20T06:24:03.014Z] [SUCCESS] Professional Bio filled
+[2026-03-20T06:24:03.014Z] [STEP] Clicking Continue
+[2026-03-20T06:24:03.210Z] [INFO] Pricing Model tab detected — selecting "Free"
+[2026-03-20T06:24:03.210Z] [STEP] Selecting "Free" Pricing Model
+[2026-03-20T06:24:03.278Z] [SUCCESS] Free pricing model selected
+[2026-03-20T06:24:03.278Z] [STEP] Clicking Continue
+[2026-03-20T06:24:03.512Z] [STEP] Clicking Launch Group
+[2026-03-20T06:24:03.648Z] [SUCCESS] Group creation flow completed for: PW_Group_20260320_062309_w7r02832vt
+[2026-03-20T06:24:03.648Z] [ASSERT] Verifying toast message matching: /Group created successfully!/i
+[2026-03-20T06:24:07.532Z] [SUCCESS] Full Gold Standard Cycle Complete: Group "PW_Group_20260320_062309_w7r02832vt" created.

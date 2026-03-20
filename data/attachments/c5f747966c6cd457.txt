@@ -1,0 +1,15 @@
+[2026-03-20T06:18:35.715Z] [INFO] [ResetLink] Requesting password reset link for pw_auto_mh_20061724w4r0tznk@mailinator.com via Mailinator
+[2026-03-20T06:18:35.766Z] [STEP] Opening Mailinator inbox: https://www.mailinator.com/v4/public/inboxes.jsp?to=pw_auto_mh_20061724w4r0tznk
+[2026-03-20T06:18:38.247Z] [SUCCESS] Mailinator inbox loaded
+[2026-03-20T06:18:38.247Z] [STEP] Searching for keywords: reset, password, forgot in Inbox: https://www.mailinator.com/v4/public/inboxes.jsp?to=pw_auto_mh_20061724w4r0tznk (Timeout: 90000ms)
+[2026-03-20T06:18:39.158Z] [SUCCESS] Matched email: "	MentalHappy	Password reset requested	just now..."
+[2026-03-20T06:18:42.294Z] [STEP] Clicking reset link
+[2026-03-20T06:18:42.449Z] [INFO] Using iframe: #html_msg_body
+[2026-03-20T06:18:42.685Z] [INFO] Clicking Reset Link found in iframe: https://u8010474.ct.sendgrid.net/ls/click?upn=u001.amIoa00VBXzGb-2FR7MbBTTvTrJY0ZFEJduoZ1A0YFR3-2BRSlYMdo9XZXrwvB3n1NaosOJe-2FtUODBxqDzGzCORdmvaQSfOacx2IXmYXcoLKu9WkLqWstp4G81mncAmR-2F6clK7iV_s7uUp-2FOr014lhxhDaCPf1JQkI8APDQ2Rk4RTWlCK9sLqhWRMq9-2FoGp8J9fqfQkSktMxPEZ3Ghti5TO-2FFT2h3RmCmJAEWLyPH-2BzoudJ1NpF-2F4EBd0gmUosrMwbqOTod9-2FkaalzRfmgqeb6iegdnBaSno-2BOgNQJETlSlz0kA-2BvQTJIhlpn-2B6AK65k8TMZrDv01JCOb0pBwateggezSpjXepX15UdUhsEDuN6mcoEkWIsrzAkZ5pDvBNC7gIFKZR-2F6xjTTFjIcWgxXNxP1VVflhNfYQc6YKrQHPlFKReSePpWsyg-2F1BJnG37lvXuxDZPXne6-2FXZ2MaUq4-2BKEWbCmsDO8vpjcUsRmc-2Fv0ZlPRgAqNiYfkpnxPu4-2FHu6QC6YRLqMtmgzCKaICn3H1zPoOLULFwQ-3D-3D
+[2026-03-20T06:18:42.885Z] [SUCCESS] Reset link interaction completed
+[2026-03-20T06:18:45.004Z] [SUCCESS] Reset page identified: https://staging.mentalhappy.com/reset/af2c2789-3125-4016-a8f4-8194e718938d
+[2026-03-20T06:18:47.153Z] [INFO] Entering new password: TestPassword123!
+[2026-03-20T06:18:49.121Z] [INFO] Entering confirm password
+[2026-03-20T06:18:49.598Z] [INFO] Clicking Confirm Password button
+[2026-03-20T06:18:50.090Z] [ASSERT] Verifying toast message matching: Password updated!
+[2026-03-20T06:18:51.089Z] [SUCCESS] Password updated successfully

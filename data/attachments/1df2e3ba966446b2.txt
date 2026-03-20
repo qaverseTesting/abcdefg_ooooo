@@ -1,0 +1,28 @@
+[2026-03-20T06:17:24.825Z] [INFO] [DISPOSABLE USER] RuntimeStore empty. Using generated email: pw_auto_mh_20061724w4r0tznk@mailinator.com
+[2026-03-20T06:17:24.826Z] [INFO] [PREREQUISITE] Checking for proof of existence for: pw_auto_mh_20061724w4r0tznk@mailinator.com
+[2026-03-20T06:17:24.826Z] [INFO] [PREREQUISITE] Proceeding with on-the-fly registration for: pw_auto_mh_20061724w4r0tznk@mailinator.com
+[2026-03-20T06:17:24.830Z] [INFO] Prerequisite not met: User pw_auto_mh_20061724w4r0tznk@mailinator.com not found. Registering...
+[2026-03-20T06:17:24.830Z] [STEP] Navigating to Registration Page
+[2026-03-20T06:17:26.208Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-20T06:17:26.553Z] [SUCCESS] Registration Page loaded
+[2026-03-20T06:17:26.553Z] [STEP] Filling registration form for: pw_auto_mh_20061724w4r0tznk@mailinator.com
+[2026-03-20T06:17:30.720Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-20T06:17:31.642Z] [STEP] Submitting registration form
+[2026-03-20T06:17:32.468Z] [SUCCESS] Registration form submitted
+[2026-03-20T06:17:39.247Z] [INFO] [OTP] Bypass active for pw_auto_mh_20061724w4r0tznk@mailinator.com. Returning fixed validation code: 456321
+[2026-03-20T06:17:39.248Z] [STEP] Entering OTP: 456321
+[2026-03-20T06:17:39.248Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-20T06:17:41.442Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-20T06:17:42.165Z] [SUCCESS] OTP entered
+[2026-03-20T06:17:42.514Z] [SUCCESS] OTP submitted and verify clicked
+[2026-03-20T06:17:42.514Z] [STEP] Ensuring clean session state (Force Logout)
+[2026-03-20T06:17:42.547Z] [STEP] User is logging out...
+[2026-03-20T06:17:42.547Z] [STEP] Clicking on Profile Icon
+[2026-03-20T06:18:12.641Z] [SUCCESS] Session state forcefully cleared.
+[2026-03-20T06:18:12.641Z] [SUCCESS] Prerequisite completed: User pw_auto_mh_20061724w4r0tznk@mailinator.com created and state reset.
+[2026-03-20T06:18:12.641Z] [INFO] Saving user email: pw_auto_mh_20061724w4r0tznk@mailinator.com
+[2026-03-20T06:18:12.642Z] [INFO] Saving user verification status: true
+[2026-03-20T06:18:12.642Z] [INFO] Using test email: pw_auto_mh_20061724w4r0tznk@mailinator.com
+[2026-03-20T06:18:12.645Z] [NAV] Navigating to Login
+[2026-03-20T06:18:18.999Z] [ASSERT] Verifying toast message matching: Password reset sent successfully
+[2026-03-20T06:18:19.496Z] [SUCCESS] Password reset request submitted successfully

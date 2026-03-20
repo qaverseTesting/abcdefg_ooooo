@@ -1,0 +1,56 @@
+[2026-03-20T06:22:25.903Z] [STEP] Registering new leader with email: pw_auto_mh_20062225w7r0a4i9@mailinator.com
+[2026-03-20T06:22:25.904Z] [STEP] Navigating to Registration Page
+[2026-03-20T06:22:27.557Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-20T06:22:27.837Z] [SUCCESS] Registration Page loaded
+[2026-03-20T06:22:27.837Z] [STEP] Filling registration form for: pw_auto_mh_20062225w7r0a4i9@mailinator.com
+[2026-03-20T06:22:30.355Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-20T06:22:30.575Z] [STEP] Submitting registration form
+[2026-03-20T06:22:30.991Z] [SUCCESS] Registration form submitted
+[2026-03-20T06:22:30.991Z] [STEP] Waiting for OTP entry page to be ready
+[2026-03-20T06:22:36.278Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-03-20T06:22:36.278Z] [INFO] [OTP] Bypass active for pw_auto_mh_20062225w7r0a4i9@mailinator.com. Returning fixed validation code: 456321
+[2026-03-20T06:22:36.285Z] [STEP] Entering OTP: 456321
+[2026-03-20T06:22:36.285Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-20T06:22:37.112Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-20T06:22:37.641Z] [SUCCESS] OTP entered
+[2026-03-20T06:22:37.641Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-03-20T06:22:37.648Z] [ASSERT] Verifying toast message matching: /Email confirmed!/i
+[2026-03-20T06:22:38.723Z] [SUCCESS] Leader registration and OTP verification completed
+[2026-03-20T06:22:38.724Z] [STEP] Selecting Leader role on Welcome page
+[2026-03-20T06:22:38.724Z] [STEP] Verifying Welcome Page is displayed
+[2026-03-20T06:22:38.724Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-20T06:22:39.080Z] [SUCCESS] Welcome Page verification successful (Role buttons visible)
+[2026-03-20T06:22:39.080Z] [STEP] Selecting path: Continue as a Group Leader
+[2026-03-20T06:22:39.080Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-20T06:22:39.605Z] [INFO] Clicked Continue as a Group Leader
+[2026-03-20T06:22:39.647Z] [SUCCESS] Group Leader path selected
+[2026-03-20T06:22:39.647Z] [STEP] Clicking Welcome Continue button
+[2026-03-20T06:22:39.647Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-20T06:22:40.044Z] [SUCCESS] Welcome Continue clicked
+[2026-03-20T06:22:40.044Z] [SUCCESS] Leader role selection completed
+[2026-03-20T06:22:40.045Z] [STEP] Completing Leader onboarding via SKIP path
+[2026-03-20T06:22:40.047Z] [STEP] Completing Leader onboarding via SKIP
+[2026-03-20T06:22:40.047Z] [STEP] Clicking Onboarding Skip button
+[2026-03-20T06:22:40.047Z] [INFO] Checking for generic support popups to dismiss...
+[2026-03-20T06:22:43.874Z] [SUCCESS] Redirected to /hosting-plan via Skip
+[2026-03-20T06:22:43.874Z] [SUCCESS] Leader onboarding (Skip) completed
+[2026-03-20T06:22:43.885Z] [STEP] Selecting Multi-Group Plan ($49)
+[2026-03-20T06:22:43.886Z] [STEP] Verifying Hosting Plan page content
+[2026-03-20T06:22:44.983Z] [SUCCESS] Hosting Plan page verification successful
+[2026-03-20T06:22:44.983Z] [STEP] Selecting Multi-Group Plan
+[2026-03-20T06:22:45.613Z] [STEP] Clicking Pay Now
+[2026-03-20T06:22:51.140Z] [SUCCESS] Multi-Group plan selected, landing on Stripe Checkout
+[2026-03-20T06:22:51.145Z] [STEP] Completing Stripe Payment
+[2026-03-20T06:22:51.146Z] [STEP] Verifying Stripe form visibility
+[2026-03-20T06:22:54.507Z] [SUCCESS] Stripe form verified
+[2026-03-20T06:22:54.507Z] [STEP] Filling Stripe payment details
+[2026-03-20T06:22:54.673Z] [STEP] Selecting country: US
+[2026-03-20T06:23:00.209Z] [SUCCESS] Stripe payment details filled
+[2026-03-20T06:23:00.209Z] [STEP] Submitting payment
+[2026-03-20T06:23:03.620Z] [SUCCESS] Payment submitted
+[2026-03-20T06:23:03.620Z] [SUCCESS] Stripe payment submitted
+[2026-03-20T06:23:03.622Z] [STEP] Verifying Payment Success (Redirect or Popup)
+[2026-03-20T06:23:06.923Z] [INFO] Final payment landing state: https://staging.mentalhappy.com/groups/create
+[2026-03-20T06:23:07.905Z] [SUCCESS] Direct redirect to Group Creation page detected. Bypassing popup logic.
+[2026-03-20T06:23:07.922Z] [SUCCESS] Subscription completed and reached target page.
+[2026-03-20T06:23:07.922Z] [SUCCESS] Leader Multi-Group Journey completed successfully
