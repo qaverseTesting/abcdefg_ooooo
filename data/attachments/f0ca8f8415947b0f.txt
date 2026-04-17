@@ -1,0 +1,15 @@
+[2026-04-17T12:15:23.394Z] [INFO] [ResetLink] Requesting password reset link for pw_auto_mh_forgotpass@mailinator.com via Mailinator
+[2026-04-17T12:15:23.591Z] [STEP] Opening Mailinator inbox: https://www.mailinator.com/v4/public/inboxes.jsp?to=pw_auto_mh_forgotpass
+[2026-04-17T12:15:25.928Z] [SUCCESS] Mailinator inbox loaded
+[2026-04-17T12:15:25.928Z] [STEP] Searching for keywords: reset, password, forgot in Inbox: https://www.mailinator.com/v4/public/inboxes.jsp?to=pw_auto_mh_forgotpass (Timeout: 90000ms)
+[2026-04-17T12:15:26.604Z] [SUCCESS] Matched email: "	MentalHappy	Password reset requested	just now..."
+[2026-04-17T12:15:30.392Z] [STEP] Clicking reset link
+[2026-04-17T12:15:30.552Z] [INFO] Using iframe: #html_msg_body
+[2026-04-17T12:15:30.791Z] [INFO] Clicking Reset Link found in iframe: https://u8010474.ct.sendgrid.net/ls/click?upn=u001.amIoa00VBXzGb-2FR7MbBTTvTrJY0ZFEJduoZ1A0YFR39U2kX2N7hrHUnxvQrNirtnpABHVOHFuW5SJSf3W22Y2J83Jys1gta-2BdE3ia689cWLxwldIgWEwK3a2eDDsmKtW18c0_s7uUp-2FOr014lhxhDaCPf1KzuR20HQYPI1lLGvy6hlGGg3kXLkDhLRx5sYnrjihchzkim9ilQj-2FK4jJhfdr7-2Fo4uhCD-2BhCCLJb64L8a1WV1jnWIjD-2B-2BXrPl-2B8fBqCyaWgRw24TTI-2Bdwmx5SE5XCft6l5nVQ0SylR5JQp-2FInoaEz0NdnQV3qyzlrK3xp-2FlZtlqtCCnxEPCSQ7F-2Bckp4uEaXKbuGva-2FBzvyXVbugQdBThbQD-2FD6JcM6iw4-2FFzOUIA0Wzc35ZRPtDPUtEa29cLGIv0WrweKTdMsv9dcdYmCDwebdFkcC6TS6LwImI1jpxIaZlOBakg89qmsQYs2ETGvPaxPh9faK6M28wBIX9uhX1wHyPXV-2B3gTYy4L-2BsQvauh5SkaS5yZunpkdr8RgU-2BDgj-2Fg-3D-3D
+[2026-04-17T12:15:30.984Z] [SUCCESS] Reset link interaction completed
+[2026-04-17T12:15:33.700Z] [SUCCESS] Reset page identified: https://staging.mentalhappy.com/reset/e27c6b55-504b-4d44-9daa-76557c6631cd
+[2026-04-17T12:15:36.021Z] [INFO] Entering new password: TestPassword123!
+[2026-04-17T12:15:38.120Z] [INFO] Entering confirm password
+[2026-04-17T12:15:39.004Z] [INFO] Clicking Confirm Password button
+[2026-04-17T12:15:39.574Z] [ASSERT] Verifying toast message matching: Success: Password Changed Successfully
+[2026-04-17T12:15:41.581Z] [SUCCESS] Password updated successfully

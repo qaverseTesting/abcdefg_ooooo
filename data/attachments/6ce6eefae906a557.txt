@@ -1,0 +1,24 @@
+[2026-04-17T12:18:32.892Z] [STEP] Submitting member registration form for: pw_auto_mh_17121832ey8u@mentalhappy.com
+[2026-04-17T12:18:32.893Z] [STEP] Navigating to Registration Page
+[2026-04-17T12:18:34.508Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-17T12:18:34.508Z] [SUCCESS] Registration Page loaded
+[2026-04-17T12:18:34.508Z] [STEP] Filling registration form for: pw_auto_mh_17121832ey8u@mentalhappy.com
+[2026-04-17T12:18:39.618Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-17T12:18:39.619Z] [STEP] Submitting registration form
+[2026-04-17T12:18:40.498Z] [SUCCESS] Registration form submitted
+[2026-04-17T12:18:40.498Z] [STEP] Waiting for OTP entry page to be ready
+[2026-04-17T12:18:47.704Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-04-17T12:18:47.704Z] [SUCCESS] Registration form submitted, OTP page reached
+[2026-04-17T12:18:47.704Z] [STEP] Verifying email for: pw_auto_mh_17121832ey8u@mentalhappy.com
+[2026-04-17T12:18:47.704Z] [INFO] [OTP] Bypass active for pw_auto_mh_17121832ey8u@mentalhappy.com. Returning fixed validation code: 456321
+[2026-04-17T12:18:47.726Z] [STEP] Entering OTP: 456321
+[2026-04-17T12:18:47.726Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-17T12:18:48.694Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-17T12:18:49.169Z] [SUCCESS] OTP entered
+[2026-04-17T12:18:49.169Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-04-17T12:18:49.177Z] [ASSERT] Verifying toast message matching: /Email Verified Successfully/i
+[2026-04-17T12:18:50.770Z] [SUCCESS] Email verification (OTP) successful
+[2026-04-17T12:18:50.771Z] [STEP] Verifying Welcome Page is displayed
+[2026-04-17T12:18:50.771Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-17T12:18:51.542Z] [SUCCESS] Welcome Page verification successful (Role buttons visible)
+[2026-04-17T12:18:51.596Z] [SUCCESS] Member landing on Welcome page verified

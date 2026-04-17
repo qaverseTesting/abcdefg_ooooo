@@ -1,6 +1,0 @@
-[2026-04-17T12:09:24.776Z] [STEP] Ensuring clean session state (Force Logout)
-[2026-04-17T12:09:24.777Z] [INFO] Already on an anonymous page. Skipping logout logic.
-[2026-04-17T12:09:24.801Z] [NAV] Navigating to Registration
-[2026-04-17T12:09:25.785Z] [STEP] Testing field formatting: First Name (Regex: Only letters allowed)
-[2026-04-17T12:09:25.786Z] [STEP] Filling registration form for: pw_auto_mh_17120925lgmq@mentalhappy.com
-[2026-04-17T12:09:28.505Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
