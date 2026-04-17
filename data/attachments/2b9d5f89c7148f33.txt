@@ -1,0 +1,9 @@
+[2026-04-17T12:09:47.380Z] [NAV] Navigating to Registration
+[2026-04-17T12:09:48.892Z] [STEP] Generated email for Resend OTP test: pw_auto_mh_17120948p4ch@mentalhappy.com
+[2026-04-17T12:09:48.894Z] [STEP] Filling registration form for: pw_auto_mh_17120948p4ch@mentalhappy.com
+[2026-04-17T12:09:52.677Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-17T12:09:52.680Z] [STEP] Submitting registration form
+[2026-04-17T12:09:53.309Z] [SUCCESS] Registration form submitted
+[2026-04-17T12:10:01.878Z] [STEP] Waiting for OTP entry page to be ready
+[2026-04-17T12:10:02.042Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-04-17T12:10:02.042Z] [INFO] Phase 1 Complete: User is on OTP page, ready for resend timer check.

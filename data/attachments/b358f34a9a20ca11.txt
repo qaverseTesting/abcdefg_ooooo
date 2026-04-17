@@ -1,9 +1,0 @@
-[2026-03-20T06:24:09.158Z] [INFO] [LIFECYCLE INIT] - Starting journey for Group: PW_Group_20260320_062409_w9r0157tpn
-[2026-03-20T06:24:09.366Z] [STEP] STEP: Initializing Group Creation
-[2026-03-20T06:24:09.367Z] [STEP] Initializing Group Creation from Dashboard
-[2026-03-20T06:24:09.369Z] [NAV] Navigating to Dashboard
-[2026-03-20T06:24:10.370Z] [INFO] Checking for generic support popups to dismiss...
-[2026-03-20T06:24:10.521Z] [STEP] Clicking on Start a Group
-[2026-03-20T06:24:12.196Z] [ASSERT] Create Group page is loaded
-[2026-03-20T06:24:12.196Z] [INFO] Checking for generic support popups to dismiss...
-[2026-03-20T06:24:13.474Z] [SUCCESS] Group Creation page loaded

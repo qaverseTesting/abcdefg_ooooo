@@ -1,3 +1,0 @@
-[2026-03-20T06:18:40.796Z] [STEP] Attempting login for: pw_auto_mh_20061823w0r0z0r9@mailinator.com (Scenario: Unregistered user cannot login with a generated email)
-[2026-03-20T06:18:40.796Z] [INFO] Attempting login for user: pw_auto_mh_20061823w0r0z0r9@mailinator.com | Password: Password123! (expectSuccess: false)
-[2026-03-20T06:18:49.037Z] [SUCCESS] Success: Access denied as expected for "Unregistered user cannot login with a generated email"

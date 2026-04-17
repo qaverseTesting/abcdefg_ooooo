@@ -1,0 +1,7 @@
+[2026-04-17T12:09:31.528Z] [STEP] Ensuring clean session state (Force Logout)
+[2026-04-17T12:09:31.528Z] [INFO] Already on an anonymous page. Skipping logout logic.
+[2026-04-17T12:09:31.572Z] [NAV] Navigating to Registration
+[2026-04-17T12:09:33.987Z] [STEP] Testing field formatting: Password (Minimum Complexity: Len, Mix, Digit)
+[2026-04-17T12:09:33.987Z] [STEP] Filling registration form for: pw_auto_mh_171209338ce3@mentalhappy.com
+[2026-04-17T12:09:38.496Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-17T12:09:38.730Z] [INFO] Verifying form submission is blocked due to password constraints

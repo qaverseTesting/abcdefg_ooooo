@@ -1,0 +1,56 @@
+[2026-04-17T12:10:08.680Z] [STEP] Prerequisite: Setting up new Leader for payment testing
+[2026-04-17T12:10:08.680Z] [STEP] Registering new leader with email: pw_auto_mh_17121008sjra@mentalhappy.com
+[2026-04-17T12:10:08.681Z] [STEP] Navigating to Registration Page
+[2026-04-17T12:10:09.786Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-17T12:10:09.786Z] [SUCCESS] Registration Page loaded
+[2026-04-17T12:10:09.786Z] [STEP] Filling registration form for: pw_auto_mh_17121008sjra@mentalhappy.com
+[2026-04-17T12:10:13.422Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-17T12:10:13.422Z] [STEP] Submitting registration form
+[2026-04-17T12:10:13.760Z] [SUCCESS] Registration form submitted
+[2026-04-17T12:10:13.760Z] [STEP] Waiting for OTP entry page to be ready
+[2026-04-17T12:10:18.835Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-04-17T12:10:18.835Z] [INFO] [OTP] Bypass active for pw_auto_mh_17121008sjra@mentalhappy.com. Returning fixed validation code: 456321
+[2026-04-17T12:10:18.846Z] [STEP] Entering OTP: 456321
+[2026-04-17T12:10:18.846Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-17T12:10:19.120Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-17T12:10:19.314Z] [SUCCESS] OTP entered
+[2026-04-17T12:10:19.314Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-04-17T12:10:19.318Z] [ASSERT] Verifying toast message matching: /Email Verified Successfully/i
+[2026-04-17T12:10:20.157Z] [SUCCESS] Leader registration and OTP verification completed
+[2026-04-17T12:10:20.157Z] [STEP] Selecting Leader role on Welcome page
+[2026-04-17T12:10:20.157Z] [STEP] Verifying Welcome Page is displayed
+[2026-04-17T12:10:20.157Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-17T12:10:20.433Z] [SUCCESS] Welcome Page verification successful (Role buttons visible)
+[2026-04-17T12:10:20.433Z] [STEP] Selecting path: Continue as a Group Leader
+[2026-04-17T12:10:20.433Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-17T12:10:20.610Z] [INFO] Clicked Continue as a Group Leader
+[2026-04-17T12:10:20.629Z] [SUCCESS] Group Leader path selected
+[2026-04-17T12:10:20.629Z] [STEP] Clicking Welcome Continue button
+[2026-04-17T12:10:20.629Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-17T12:10:20.838Z] [SUCCESS] Welcome Continue clicked
+[2026-04-17T12:10:20.838Z] [SUCCESS] Leader role selection completed
+[2026-04-17T12:10:20.838Z] [STEP] Completing Leader onboarding via SKIP path
+[2026-04-17T12:10:20.839Z] [STEP] Completing Leader onboarding via SKIP (Deep Check Flow)
+[2026-04-17T12:10:20.864Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-17T12:10:20.882Z] [INFO] Checking for Screen 2 (Survey) Skip option...
+[2026-04-17T12:10:20.890Z] [STEP] Clicking Onboarding Skip button
+[2026-04-17T12:10:20.890Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-17T12:10:23.432Z] [SUCCESS] Onboarding cleared successfully
+[2026-04-17T12:10:23.432Z] [SUCCESS] Leader onboarding (Skip) completed
+[2026-04-17T12:10:23.432Z] [STEP] Selecting Active Plan ($19)
+[2026-04-17T12:10:23.433Z] [STEP] Verifying Hosting Plan page content
+[2026-04-17T12:10:24.163Z] [SUCCESS] Hosting Plan page verification successful
+[2026-04-17T12:10:24.163Z] [STEP] Selecting Active Group Plan
+[2026-04-17T12:10:24.398Z] [STEP] Clicking Pay Now
+[2026-04-17T12:10:31.100Z] [SUCCESS] Plan selected, landing on Stripe Checkout
+[2026-04-17T12:10:34.150Z] [STEP] Testing Declined Card scenario
+[2026-04-17T12:10:34.150Z] [STEP] Completing Stripe Payment
+[2026-04-17T12:10:34.150Z] [STEP] Verifying Stripe form visibility
+[2026-04-17T12:10:35.225Z] [SUCCESS] Stripe form verified
+[2026-04-17T12:10:35.226Z] [STEP] Filling Stripe payment details
+[2026-04-17T12:10:35.290Z] [STEP] Selecting country: US
+[2026-04-17T12:10:38.768Z] [SUCCESS] Stripe payment details filled
+[2026-04-17T12:10:38.769Z] [STEP] Submitting payment
+[2026-04-17T12:10:42.142Z] [SUCCESS] Payment submitted
+[2026-04-17T12:10:42.142Z] [SUCCESS] Stripe payment submitted
+[2026-04-17T12:10:42.176Z] [SUCCESS] Declined Card error verified correctly
