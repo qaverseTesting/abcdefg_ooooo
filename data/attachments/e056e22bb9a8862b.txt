@@ -1,0 +1,15 @@
+[2026-04-27T08:56:04.112Z] [INFO] [ResetLink] Requesting password reset link for pw_auto_mh_forgotpass@mailinator.com via Mailinator
+[2026-04-27T08:56:04.227Z] [STEP] Opening Mailinator inbox: https://www.mailinator.com/v4/public/inboxes.jsp?to=pw_auto_mh_forgotpass
+[2026-04-27T08:56:05.764Z] [SUCCESS] Mailinator inbox loaded
+[2026-04-27T08:56:05.764Z] [STEP] Searching for keywords: reset, password, forgot in Inbox: https://www.mailinator.com/v4/public/inboxes.jsp?to=pw_auto_mh_forgotpass (Timeout: 90000ms)
+[2026-04-27T08:56:06.047Z] [SUCCESS] Matched email: "	MentalHappy	Password reset requested	just now..."
+[2026-04-27T08:56:09.628Z] [STEP] Clicking reset link
+[2026-04-27T08:56:09.663Z] [INFO] Using iframe: #html_msg_body
+[2026-04-27T08:56:09.728Z] [INFO] Clicking Reset Link found in iframe: https://u8010474.ct.sendgrid.net/ls/click?upn=u001.amIoa00VBXzGb-2FR7MbBTTvTrJY0ZFEJduoZ1A0YFR38qyRm2G1CyClBCgTIujyy-2Bukd-2BD5c-2FyxuqHVJVKpEBqlhVvNFhpurZ-2FQ1zHTuMf7z-2BPBnJ8xSIO5SQgThnm4llAlLx_s7uUp-2FOr014lhxhDaCPf1KzuR20HQYPI1lLGvy6hlGGg3kXLkDhLRx5sYnrjihchzkim9ilQj-2FK4jJhfdr7-2Fo4uhCD-2BhCCLJb64L8a1WV1jnWIjD-2B-2BXrPl-2B8fBqCyaWgRw24TTI-2Bdwmx5SE5XCft6l5nVQ0SylR5JQp-2FInoaEz0NdnQV3qyzlrK3xp-2FlZtlqRZoeahAZNOUVRIN5L8ctMsl9-2FAR799D0gK1qinDHMbJOhYRvfZFuTBNqnCSQBf9zgsbjBI8Hm1X1UANw-2BzVMFq8CAw9bPWBYGEf8FEq8irmQ1IXXbdtnnDMmvftNrTvpWVj3gui5MKR3SYgA3rSyz8ntVYKegSqc-2BpOQn9sgBmWeAGBxG6oHWVDvlrD8gOkfq1KVkXz0UUXYuYGjxYhE6Q-3D-3D
+[2026-04-27T08:56:09.832Z] [SUCCESS] Reset link interaction completed
+[2026-04-27T08:56:11.270Z] [SUCCESS] Reset page identified: https://staging.mentalhappy.com/reset/65d521e8-188c-4e55-adad-ad93f8be12e5
+[2026-04-27T08:56:12.426Z] [INFO] Entering new password: TestPassword123!
+[2026-04-27T08:56:13.707Z] [INFO] Entering confirm password
+[2026-04-27T08:56:14.024Z] [INFO] Clicking Confirm Password button
+[2026-04-27T08:56:14.400Z] [ASSERT] Verifying toast message matching: Success: Password Changed Successfully
+[2026-04-27T08:56:16.492Z] [SUCCESS] Password updated successfully

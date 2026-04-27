@@ -1,6 +1,0 @@
-[2026-04-27T08:56:07.561Z] [STEP] Ensuring clean session state (Force Logout)
-[2026-04-27T08:56:07.561Z] [INFO] Already on an anonymous page. Skipping logout logic.
-[2026-04-27T08:56:07.599Z] [NAV] Navigating to Registration
-[2026-04-27T08:56:10.712Z] [STEP] Testing field formatting: Email (System-wide Collision check)
-[2026-04-27T08:56:10.712Z] [STEP] Filling registration form for: pw_auto_mh_member@mailinator.com
-[2026-04-27T08:56:15.326Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.

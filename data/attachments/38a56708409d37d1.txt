@@ -1,0 +1,19 @@
+[2026-04-27T08:58:48.028Z] [STEP] Registering new leader with email: pw_auto_mh_27085848exhc@mentalhappy.com
+[2026-04-27T08:58:48.028Z] [STEP] Navigating to Registration Page
+[2026-04-27T08:58:49.833Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-27T08:58:49.833Z] [SUCCESS] Registration Page loaded
+[2026-04-27T08:58:49.833Z] [STEP] Filling registration form for: pw_auto_mh_27085848exhc@mentalhappy.com
+[2026-04-27T08:58:53.685Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-27T08:58:53.685Z] [STEP] Submitting registration form
+[2026-04-27T08:58:54.130Z] [SUCCESS] Registration form submitted
+[2026-04-27T08:58:54.130Z] [STEP] Waiting for OTP entry page to be ready
+[2026-04-27T08:59:00.124Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-04-27T08:59:00.124Z] [INFO] [OTP] Bypass active for pw_auto_mh_27085848exhc@mentalhappy.com. Returning fixed validation code: 456321
+[2026-04-27T08:59:00.143Z] [STEP] Entering OTP: 456321
+[2026-04-27T08:59:00.146Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-27T08:59:00.958Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-27T08:59:01.335Z] [SUCCESS] OTP entered
+[2026-04-27T08:59:01.335Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-04-27T08:59:01.339Z] [ASSERT] Verifying toast message matching: /Email Verified Successfully/i
+[2026-04-27T08:59:02.793Z] [SUCCESS] Leader registration and OTP verification completed
+[2026-04-27T08:59:03.280Z] [SUCCESS] Continue button disabled by default

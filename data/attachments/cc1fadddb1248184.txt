@@ -1,0 +1,28 @@
+[2026-04-27T08:57:47.729Z] [STEP] Selecting path: Explore Support Groups
+[2026-04-27T08:57:47.729Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-27T08:57:48.266Z] [INFO] Clicked Explore support groups
+[2026-04-27T08:57:48.328Z] [SUCCESS] Explore Support Groups path selected
+[2026-04-27T08:57:48.328Z] [STEP] Clicking Welcome Continue button
+[2026-04-27T08:57:48.328Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-27T08:57:48.811Z] [SUCCESS] Welcome Continue clicked
+[2026-04-27T08:57:48.812Z] [STEP] Completing Member onboarding via 3-step sequence
+[2026-04-27T08:57:48.812Z] [STEP] Attempting to click Onboarding Continue button
+[2026-04-27T08:57:48.813Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-27T08:57:48.943Z] [INFO] Button "Continue" is disabled. Selecting first available option...
+[2026-04-27T08:57:49.142Z] [INFO] Option selected. Waiting for button to enable...
+[2026-04-27T08:57:50.335Z] [INFO] Member Onboarding: Step 1 Continue clicked
+[2026-04-27T08:57:51.348Z] [STEP] Attempting to click Onboarding Continue button
+[2026-04-27T08:57:51.348Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-27T08:57:51.424Z] [INFO] Button "Continue" is disabled. Selecting first available option...
+[2026-04-27T08:57:51.578Z] [INFO] Option selected. Waiting for button to enable...
+[2026-04-27T08:57:53.004Z] [INFO] Member Onboarding: Step 2 Continue clicked
+[2026-04-27T08:57:54.023Z] [STEP] Attempting to click final Find Support Group button
+[2026-04-27T08:57:54.023Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-27T08:57:54.093Z] [INFO] Button "Find Support Group" is disabled. Selecting first available option...
+[2026-04-27T08:57:54.288Z] [INFO] Option selected. Waiting for button to enable...
+[2026-04-27T08:57:55.437Z] [INFO] Member Onboarding: Step 3 Find Support Group clicked
+[2026-04-27T08:57:56.601Z] [SUCCESS] Redirected to Dashboard
+[2026-04-27T08:57:56.601Z] [ASSERT] Verifying dashboard is loaded
+[2026-04-27T08:57:59.707Z] [SUCCESS] Dashboard load verified
+[2026-04-27T08:57:59.707Z] [INFO] Saving user verification status: true
+[2026-04-27T08:57:59.707Z] [SUCCESS] Step 3 Complete: Member reached Dashboard.

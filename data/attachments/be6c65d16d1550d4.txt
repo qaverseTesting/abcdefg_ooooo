@@ -1,0 +1,44 @@
+[2026-04-27T08:58:23.395Z] [STEP] Registering new leader with email: pw_auto_mh_27085823g0uz@mentalhappy.com
+[2026-04-27T08:58:23.403Z] [STEP] Navigating to Registration Page
+[2026-04-27T08:58:25.502Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-27T08:58:25.502Z] [SUCCESS] Registration Page loaded
+[2026-04-27T08:58:25.502Z] [STEP] Filling registration form for: pw_auto_mh_27085823g0uz@mentalhappy.com
+[2026-04-27T08:58:28.273Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-27T08:58:28.273Z] [STEP] Submitting registration form
+[2026-04-27T08:58:28.687Z] [SUCCESS] Registration form submitted
+[2026-04-27T08:58:28.687Z] [STEP] Waiting for OTP entry page to be ready
+[2026-04-27T08:58:35.873Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-04-27T08:58:35.873Z] [INFO] [OTP] Bypass active for pw_auto_mh_27085823g0uz@mentalhappy.com. Returning fixed validation code: 456321
+[2026-04-27T08:58:35.886Z] [STEP] Entering OTP: 456321
+[2026-04-27T08:58:35.886Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-27T08:58:36.797Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-27T08:58:37.276Z] [SUCCESS] OTP entered
+[2026-04-27T08:58:37.276Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-04-27T08:58:37.293Z] [ASSERT] Verifying toast message matching: /Email Verified Successfully/i
+[2026-04-27T08:58:38.816Z] [SUCCESS] Leader registration and OTP verification completed
+[2026-04-27T08:58:38.816Z] [STEP] Selecting Leader role on Welcome page
+[2026-04-27T08:58:38.817Z] [STEP] Verifying Welcome Page is displayed
+[2026-04-27T08:58:38.817Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-27T08:58:39.490Z] [SUCCESS] Welcome Page verification successful (Role buttons visible)
+[2026-04-27T08:58:39.491Z] [STEP] Selecting path: Continue as a Group Leader
+[2026-04-27T08:58:39.491Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-27T08:58:39.870Z] [INFO] Clicked Continue as a Group Leader
+[2026-04-27T08:58:39.928Z] [SUCCESS] Group Leader path selected
+[2026-04-27T08:58:39.928Z] [STEP] Clicking Welcome Continue button
+[2026-04-27T08:58:39.928Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-27T08:58:40.612Z] [SUCCESS] Welcome Continue clicked
+[2026-04-27T08:58:40.613Z] [SUCCESS] Leader role selection completed
+[2026-04-27T08:58:40.613Z] [STEP] Completing Leader onboarding via SKIP path
+[2026-04-27T08:58:40.625Z] [STEP] Completing Leader onboarding via SKIP (Deep Check Flow)
+[2026-04-27T08:58:40.689Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-27T08:58:40.723Z] [INFO] Checking for Screen 2 (Survey) Skip option...
+[2026-04-27T08:58:40.766Z] [STEP] Clicking Onboarding Skip button
+[2026-04-27T08:58:40.766Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-27T08:58:45.010Z] [SUCCESS] Onboarding cleared successfully
+[2026-04-27T08:58:45.010Z] [SUCCESS] Leader onboarding (Skip) completed
+[2026-04-27T08:58:45.010Z] [STEP] Navigating to Hosting Plan Page
+[2026-04-27T08:58:46.750Z] [SUCCESS] Hosting Plan Page loaded
+[2026-04-27T08:58:46.750Z] [STEP] Verifying Hosting Plan page content
+[2026-04-27T08:58:48.503Z] [SUCCESS] Hosting Plan page verification successful
+[2026-04-27T08:58:49.723Z] [STEP] Verifying Hosting Plan page content
+[2026-04-27T08:58:49.842Z] [SUCCESS] Hosting Plan page verification successful
