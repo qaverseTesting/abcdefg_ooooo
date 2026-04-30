@@ -1,0 +1,10 @@
+[2026-04-30T10:34:05.957Z] [NAV] Navigating to Registration
+[2026-04-30T10:34:07.252Z] [STEP] Generated test email: pw_auto_mh_30103407khrm@mentalhappy.com
+[2026-04-30T10:34:07.252Z] [INFO] Saving user email: pw_auto_mh_30103407khrm@mentalhappy.com
+[2026-04-30T10:34:07.252Z] [STEP] Filling registration form for: pw_auto_mh_30103407khrm@mentalhappy.com
+[2026-04-30T10:34:11.630Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-30T10:34:11.630Z] [STEP] Submitting registration form
+[2026-04-30T10:34:12.534Z] [SUCCESS] Registration form submitted
+[2026-04-30T10:34:19.060Z] [STEP] Waiting for OTP entry page to be ready
+[2026-04-30T10:34:19.096Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-04-30T10:34:19.096Z] [SUCCESS] Step 1 Complete: User is on OTP page.

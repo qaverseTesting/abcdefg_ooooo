@@ -1,0 +1,35 @@
+[2026-04-30T10:36:30.492Z] [STEP] Submitting member registration form for: pw_auto_mh_30103630hvoj@mentalhappy.com
+[2026-04-30T10:36:30.492Z] [STEP] Navigating to Registration Page
+[2026-04-30T10:36:32.713Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-30T10:36:32.713Z] [SUCCESS] Registration Page loaded
+[2026-04-30T10:36:32.713Z] [STEP] Filling registration form for: pw_auto_mh_30103630hvoj@mentalhappy.com
+[2026-04-30T10:36:36.413Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-30T10:36:36.413Z] [STEP] Submitting registration form
+[2026-04-30T10:36:37.002Z] [SUCCESS] Registration form submitted
+[2026-04-30T10:36:37.002Z] [STEP] Waiting for OTP entry page to be ready
+[2026-04-30T10:36:44.662Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-04-30T10:36:44.662Z] [SUCCESS] Registration form submitted, OTP page reached
+[2026-04-30T10:36:44.662Z] [STEP] Verifying email for: pw_auto_mh_30103630hvoj@mentalhappy.com
+[2026-04-30T10:36:44.662Z] [INFO] [OTP] Bypass active for pw_auto_mh_30103630hvoj@mentalhappy.com. Returning fixed validation code: 456321
+[2026-04-30T10:36:44.689Z] [STEP] Entering OTP: 456321
+[2026-04-30T10:36:44.689Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-30T10:36:46.082Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-30T10:36:46.509Z] [SUCCESS] OTP entered
+[2026-04-30T10:36:46.509Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-04-30T10:36:46.517Z] [ASSERT] Verifying toast message matching: /Email Verified Successfully/i
+[2026-04-30T10:36:47.935Z] [SUCCESS] Email verification (OTP) successful
+[2026-04-30T10:36:47.935Z] [STEP] Selecting Member role on Welcome page
+[2026-04-30T10:36:47.935Z] [STEP] Verifying Welcome Page is displayed
+[2026-04-30T10:36:47.936Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-30T10:36:48.427Z] [SUCCESS] Welcome Page verification successful (Role buttons visible)
+[2026-04-30T10:36:48.427Z] [STEP] Selecting path: Explore Support Groups
+[2026-04-30T10:36:48.428Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-30T10:36:48.824Z] [INFO] Clicked Explore support groups
+[2026-04-30T10:36:48.852Z] [SUCCESS] Explore Support Groups path selected
+[2026-04-30T10:36:48.852Z] [STEP] Clicking Welcome Continue button
+[2026-04-30T10:36:48.852Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-30T10:36:49.182Z] [SUCCESS] Welcome Continue clicked
+[2026-04-30T10:36:49.182Z] [SUCCESS] Role selection completed
+[2026-04-30T10:36:49.183Z] [STEP] Clicking Onboarding Skip button
+[2026-04-30T10:36:49.183Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-30T10:36:50.806Z] [SUCCESS] Member successfully skipped onboarding to Discovery page

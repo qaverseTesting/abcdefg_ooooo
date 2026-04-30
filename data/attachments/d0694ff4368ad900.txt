@@ -1,0 +1,7 @@
+[2026-04-30T10:34:05.430Z] [NAV] Navigating to Dashboard
+[2026-04-30T10:34:06.770Z] [ASSERT] Verifying dashboard is loaded
+[2026-04-30T10:34:11.668Z] [SUCCESS] Dashboard load verified
+[2026-04-30T10:34:11.670Z] [STEP] User is logging out...
+[2026-04-30T10:34:11.670Z] [STEP] Clicking on Profile Icon
+[2026-04-30T10:34:13.047Z] [STEP] Clicking on Logout Button in Menu
+[2026-04-30T10:34:13.660Z] [STEP] Clicking on Confirm Logout Button in Popup

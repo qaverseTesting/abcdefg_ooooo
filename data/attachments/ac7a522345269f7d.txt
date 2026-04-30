@@ -1,0 +1,7 @@
+[2026-04-30T10:32:05.380Z] [NAV] Navigating to Login
+[2026-04-30T10:32:11.160Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-30T10:32:12.038Z] [INFO] Email entered via stableFill: pw_auto_mh_forgotpass@mailinator.com
+[2026-04-30T10:32:14.303Z] [INFO] Check your inbox screen is visible
+[2026-04-30T10:32:14.475Z] [INFO] Check your inbox screen is visible
+[2026-04-30T10:32:14.830Z] [INFO] Resend timer is visible with text: Resend in 02:58
+[2026-04-30T10:32:14.830Z] [SUCCESS] Password reset request submitted and "Check your inbox" screen verified

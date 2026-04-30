@@ -1,0 +1,22 @@
+[2026-04-30T10:35:09.612Z] [STEP] Registering new leader with email: pw_auto_mh_301035094ge0@mentalhappy.com
+[2026-04-30T10:35:09.614Z] [STEP] Navigating to Registration Page
+[2026-04-30T10:35:11.439Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-30T10:35:11.439Z] [SUCCESS] Registration Page loaded
+[2026-04-30T10:35:11.442Z] [STEP] Filling registration form for: pw_auto_mh_301035094ge0@mentalhappy.com
+[2026-04-30T10:35:16.145Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-30T10:35:16.146Z] [STEP] Submitting registration form
+[2026-04-30T10:35:16.921Z] [SUCCESS] Registration form submitted
+[2026-04-30T10:35:16.921Z] [STEP] Waiting for OTP entry page to be ready
+[2026-04-30T10:35:23.957Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-04-30T10:35:23.957Z] [INFO] [OTP] Bypass active for pw_auto_mh_301035094ge0@mentalhappy.com. Returning fixed validation code: 456321
+[2026-04-30T10:35:23.968Z] [STEP] Entering OTP: 456321
+[2026-04-30T10:35:23.968Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-30T10:35:24.733Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-30T10:35:25.015Z] [SUCCESS] OTP entered
+[2026-04-30T10:35:25.016Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-04-30T10:35:25.022Z] [ASSERT] Verifying toast message matching: /Email Verified Successfully/i
+[2026-04-30T10:35:26.335Z] [SUCCESS] Leader registration and OTP verification completed
+[2026-04-30T10:35:26.349Z] [STEP] Verifying Welcome Page is displayed
+[2026-04-30T10:35:26.349Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-30T10:35:26.820Z] [SUCCESS] Welcome Page verification successful (Role buttons visible)
+[2026-04-30T10:35:26.857Z] [SUCCESS] Welcome page URL verified

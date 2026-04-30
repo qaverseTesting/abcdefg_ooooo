@@ -1,3 +1,0 @@
-[2026-04-30T10:32:02.822Z] [STEP] Attempting login for: pw_auto_mh_member@mailinator.com (Scenario: Registered member fails login with minimum password length violation)
-[2026-04-30T10:32:02.822Z] [INFO] Attempting login for user: pw_auto_mh_member@mailinator.com | Password: Pass1! (expectSuccess: false)
-[2026-04-30T10:32:09.402Z] [SUCCESS] Success: Access denied as expected for "Registered member fails login with minimum password length violation"

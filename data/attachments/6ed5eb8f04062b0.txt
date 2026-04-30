@@ -1,0 +1,5 @@
+[2026-04-30T10:34:44.243Z] [STEP] Navigating to My Groups page
+[2026-04-30T10:34:47.122Z] [STEP] Waiting for My Groups page content
+[2026-04-30T10:34:51.004Z] [STEP] Clicking on Joined Groups tab
+[2026-04-30T10:34:51.035Z] [INFO] Joined Groups tab not found (User may have no groups). Skipping tab click.
+[2026-04-30T10:34:51.035Z] [SUCCESS] Member Joined Groups sections verified

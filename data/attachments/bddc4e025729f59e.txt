@@ -1,0 +1,62 @@
+[2026-04-30T10:37:26.750Z] [STEP] Registering new leader with email: pw_auto_mh_30103726skdk@mentalhappy.com
+[2026-04-30T10:37:26.750Z] [STEP] Navigating to Registration Page
+[2026-04-30T10:37:27.474Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-30T10:37:27.474Z] [SUCCESS] Registration Page loaded
+[2026-04-30T10:37:27.474Z] [STEP] Filling registration form for: pw_auto_mh_30103726skdk@mentalhappy.com
+[2026-04-30T10:37:29.584Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-30T10:37:29.584Z] [STEP] Submitting registration form
+[2026-04-30T10:37:29.961Z] [SUCCESS] Registration form submitted
+[2026-04-30T10:37:29.961Z] [STEP] Waiting for OTP entry page to be ready
+[2026-04-30T10:37:35.438Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-04-30T10:37:35.438Z] [INFO] [OTP] Bypass active for pw_auto_mh_30103726skdk@mentalhappy.com. Returning fixed validation code: 456321
+[2026-04-30T10:37:35.451Z] [STEP] Entering OTP: 456321
+[2026-04-30T10:37:35.451Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-30T10:37:36.199Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-30T10:37:36.687Z] [SUCCESS] OTP entered
+[2026-04-30T10:37:36.687Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-04-30T10:37:36.693Z] [ASSERT] Verifying toast message matching: /Email Verified Successfully/i
+[2026-04-30T10:37:37.885Z] [SUCCESS] Leader registration and OTP verification completed
+[2026-04-30T10:37:37.885Z] [STEP] Selecting Leader role on Welcome page
+[2026-04-30T10:37:37.886Z] [STEP] Verifying Welcome Page is displayed
+[2026-04-30T10:37:37.888Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-30T10:37:38.383Z] [SUCCESS] Welcome Page verification successful (Role buttons visible)
+[2026-04-30T10:37:38.383Z] [STEP] Selecting path: Continue as a Group Leader
+[2026-04-30T10:37:38.383Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-30T10:37:38.626Z] [INFO] Clicked Continue as a Group Leader
+[2026-04-30T10:37:38.642Z] [SUCCESS] Group Leader path selected
+[2026-04-30T10:37:38.642Z] [STEP] Clicking Welcome Continue button
+[2026-04-30T10:37:38.642Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-30T10:37:39.119Z] [SUCCESS] Welcome Continue clicked
+[2026-04-30T10:37:39.119Z] [SUCCESS] Leader role selection completed
+[2026-04-30T10:37:39.120Z] [STEP] Completing Leader onboarding via SKIP path
+[2026-04-30T10:37:39.120Z] [STEP] Completing Leader onboarding via SKIP (Deep Check Flow)
+[2026-04-30T10:37:39.163Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-30T10:37:39.195Z] [INFO] Checking for Screen 2 (Survey) Skip option...
+[2026-04-30T10:37:39.216Z] [STEP] Clicking Onboarding Skip button
+[2026-04-30T10:37:39.216Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
+[2026-04-30T10:37:41.951Z] [SUCCESS] Onboarding cleared successfully
+[2026-04-30T10:37:41.951Z] [SUCCESS] Leader onboarding (Skip) completed
+[2026-04-30T10:37:41.951Z] [STEP] Selecting Multi-Group Plan ($49)
+[2026-04-30T10:37:41.952Z] [STEP] Verifying Hosting Plan page content
+[2026-04-30T10:37:42.923Z] [SUCCESS] Hosting Plan page verification successful
+[2026-04-30T10:37:42.923Z] [STEP] Selecting Multi-Group Plan
+[2026-04-30T10:37:43.431Z] [STEP] Clicking Pay Now
+[2026-04-30T10:37:51.434Z] [SUCCESS] Multi-Group plan selected, landing on Stripe Checkout
+[2026-04-30T10:37:51.446Z] [STEP] Completing Stripe Payment
+[2026-04-30T10:37:51.446Z] [STEP] Verifying Stripe form visibility
+[2026-04-30T10:37:53.024Z] [SUCCESS] Stripe form verified
+[2026-04-30T10:37:53.024Z] [STEP] Filling Stripe payment details
+[2026-04-30T10:37:53.080Z] [STEP] Selecting country: US
+[2026-04-30T10:37:58.755Z] [SUCCESS] Stripe payment details filled
+[2026-04-30T10:37:58.755Z] [STEP] Submitting payment
+[2026-04-30T10:38:02.481Z] [SUCCESS] Payment submitted
+[2026-04-30T10:38:02.481Z] [SUCCESS] Stripe payment submitted
+[2026-04-30T10:38:02.481Z] [STEP] Verifying Payment Success (Redirect or Popup)
+[2026-04-30T10:38:05.795Z] [INFO] Final payment landing state: https://staging.mentalhappy.com/welcome/hosting-payment?plan=MULTI_GROUP&period=monthly
+[2026-04-30T10:38:06.105Z] [INFO] Success popup detected. Dismissing to proceed...
+[2026-04-30T10:38:06.106Z] [STEP] Verifying Payment Success popup visibility
+[2026-04-30T10:38:07.768Z] [SUCCESS] Payment Success popup verified
+[2026-04-30T10:38:07.768Z] [STEP] Clicking "Do this later"
+[2026-04-30T10:38:08.318Z] [SUCCESS] Success popup dismissed via Do this later
+[2026-04-30T10:38:08.659Z] [SUCCESS] Subscription completed and reached target page.
+[2026-04-30T10:38:08.660Z] [SUCCESS] Leader Multi-Group Journey completed successfully

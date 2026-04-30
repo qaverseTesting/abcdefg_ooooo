@@ -1,0 +1,3 @@
+[2026-04-30T10:33:25.866Z] [STEP] Attempting login for: pw_auto_mh_30103312ufse@mentalhappy.com (Scenario: Unregistered user cannot login with a generated email)
+[2026-04-30T10:33:25.866Z] [INFO] Attempting login for user: pw_auto_mh_30103312ufse@mentalhappy.com | Password: Password123! (expectSuccess: false)
+[2026-04-30T10:33:33.151Z] [SUCCESS] Success: Access denied as expected for "Unregistered user cannot login with a generated email"
