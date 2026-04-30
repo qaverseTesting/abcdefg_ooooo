@@ -1,0 +1,229 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - link [ref=e6] [cursor=pointer]:
+          - /url: /groups
+          - img [ref=e8]
+        - generic [ref=e9]:
+          - link [ref=e10] [cursor=pointer]:
+            - /url: /groups
+            - generic [ref=e12]:
+              - img [ref=e13]
+              - paragraph [ref=e16]: Explore Groups
+          - link [ref=e18] [cursor=pointer]:
+            - /url: /groups/my
+            - generic [ref=e20]:
+              - img [ref=e21]
+              - paragraph [ref=e26]: My Groups
+          - link [ref=e28] [cursor=pointer]:
+            - /url: /user/sessions
+            - generic [ref=e30]:
+              - img [ref=e31]
+              - paragraph [ref=e33]: My Sessions
+      - generic [ref=e35]:
+        - generic [ref=e36] [cursor=pointer]:
+          - generic:
+            - generic:
+              - generic: "3"
+              - img
+        - separator [ref=e37]
+        - generic [ref=e38] [cursor=pointer]:
+          - generic:
+            - generic:
+              - generic:
+                - paragraph: A
+              - img
+        - separator [ref=e39]
+        - button [ref=e40] [cursor=pointer]:
+          - img [ref=e42]
+          - text: Create Group
+    - generic [ref=e45]:
+      - generic [ref=e48]:
+        - generic [ref=e49]:
+          - generic [ref=e50]:
+            - generic:
+              - img
+            - textbox [ref=e51]:
+              - /placeholder: Search for groups names or leaders
+          - button [ref=e54] [cursor=pointer]:
+            - generic [ref=e55]:
+              - img [ref=e56]
+              - paragraph [ref=e58]: Filters
+        - generic [ref=e60]:
+          - button [ref=e61] [cursor=pointer]:
+            - paragraph [ref=e62]: All Groups
+          - button [ref=e64] [cursor=pointer]:
+            - paragraph [ref=e65]: Top Groups
+          - button [ref=e67] [cursor=pointer]:
+            - paragraph [ref=e68]: Listing Groups
+          - button [ref=e70] [cursor=pointer]:
+            - paragraph [ref=e71]: Requested Topics
+      - generic [ref=e75]:
+        - group [ref=e76] [cursor=pointer]:
+          - img [ref=e78]
+          - generic [ref=e80]:
+            - paragraph [ref=e81]: "789"
+            - generic [ref=e82]:
+              - generic [ref=e83]:
+                - img [ref=e85]
+                - paragraph [ref=e86]: Test Tset
+              - img [ref=e88]
+        - group [ref=e91] [cursor=pointer]:
+          - img [ref=e93]
+          - generic [ref=e95]:
+            - paragraph [ref=e96]: AM Test 10
+            - generic [ref=e97]:
+              - generic [ref=e98]:
+                - img [ref=e100]
+                - paragraph [ref=e101]: AMTestFirst AMTestLast
+              - img [ref=e103]
+        - group [ref=e106] [cursor=pointer]:
+          - img [ref=e108]
+          - generic [ref=e110]:
+            - paragraph [ref=e111]: AMActiveGroup
+            - generic [ref=e112]:
+              - generic [ref=e113]:
+                - img [ref=e115]
+                - paragraph [ref=e116]: Active GroupPlan
+              - img [ref=e118]
+        - group [ref=e121] [cursor=pointer]:
+          - img [ref=e123]
+          - generic [ref=e125]:
+            - paragraph [ref=e126]: AMTest01112
+            - generic [ref=e127]:
+              - generic [ref=e128]:
+                - img [ref=e130]
+                - paragraph [ref=e131]: asda sd
+              - img [ref=e133]
+        - group [ref=e136] [cursor=pointer]:
+          - img [ref=e138]
+          - generic [ref=e140]:
+            - paragraph [ref=e141]: AMTest02 As Member Group
+            - generic [ref=e142]:
+              - generic [ref=e143]:
+                - img [ref=e145]
+                - paragraph [ref=e146]: Aesha Mangukiya
+              - img [ref=e148]
+        - group [ref=e151] [cursor=pointer]:
+          - img [ref=e153]
+          - generic [ref=e155]:
+            - paragraph [ref=e156]: Aees Group
+            - generic [ref=e157]:
+              - generic [ref=e158]:
+                - img [ref=e160]
+                - paragraph [ref=e161]: Aee Lead
+              - img [ref=e163]
+        - group [ref=e166] [cursor=pointer]:
+          - img [ref=e168]
+          - generic [ref=e170]:
+            - paragraph [ref=e171]: Anxiety Awareness and Depression Test
+            - generic [ref=e172]:
+              - generic [ref=e173]:
+                - img [ref=e175]
+                - paragraph [ref=e176]: Courtney Doe
+              - img [ref=e178]
+        - group [ref=e181] [cursor=pointer]:
+          - img [ref=e183]
+          - generic [ref=e185]:
+            - paragraph [ref=e186]: Bees
+            - generic [ref=e187]:
+              - generic [ref=e188]:
+                - img [ref=e190]
+                - paragraph [ref=e191]: Bees Lead
+              - img [ref=e193]
+        - group [ref=e196] [cursor=pointer]:
+          - img [ref=e198]
+          - generic [ref=e200]:
+            - paragraph [ref=e201]: Breakup Recovery Guide
+            - generic [ref=e202]:
+              - generic [ref=e203]:
+                - img [ref=e205]
+                - paragraph [ref=e206]: Court Dorothy
+              - img [ref=e208]
+        - group [ref=e211] [cursor=pointer]:
+          - img [ref=e213]
+          - generic [ref=e215]:
+            - paragraph [ref=e216]: Change your mind Change your LIFE
+            - generic [ref=e217]:
+              - generic [ref=e218]:
+                - img [ref=e220]
+                - paragraph [ref=e221]: Tom June
+              - img [ref=e223]
+        - group [ref=e226] [cursor=pointer]:
+          - img [ref=e228]
+          - generic [ref=e230]:
+            - paragraph [ref=e231]: DonationGroup
+            - generic [ref=e232]:
+              - generic [ref=e233]:
+                - img [ref=e235]: qm
+                - paragraph [ref=e236]: qa mhsglone
+              - img [ref=e238]
+        - group [ref=e241] [cursor=pointer]:
+          - img [ref=e243]
+          - generic [ref=e245]:
+            - paragraph [ref=e246]: Dreamers
+            - generic [ref=e247]:
+              - generic [ref=e248]:
+                - img [ref=e250]
+                - paragraph [ref=e251]: Daisy Johnson
+              - img [ref=e253]
+        - group [ref=e256] [cursor=pointer]:
+          - img [ref=e258]
+          - generic [ref=e260]:
+            - paragraph [ref=e261]: Easy Cliq
+            - generic [ref=e262]:
+              - generic [ref=e263]:
+                - img [ref=e265]
+                - paragraph [ref=e266]: Easy Cliq
+              - img [ref=e268]
+        - group [ref=e271] [cursor=pointer]:
+          - img [ref=e273]
+          - generic [ref=e275]:
+            - paragraph [ref=e276]: Email reception bug
+            - generic [ref=e277]:
+              - generic [ref=e278]:
+                - img [ref=e280]: CC
+                - paragraph [ref=e281]: Clem Cleft
+              - img [ref=e283]
+        - group [ref=e286] [cursor=pointer]:
+          - img [ref=e288]
+          - generic [ref=e290]:
+            - paragraph [ref=e291]: Fishes_Birds
+            - generic [ref=e292]:
+              - generic [ref=e293]:
+                - img [ref=e295]
+                - paragraph [ref=e296]: azeez sglw
+              - img [ref=e298]
+        - group [ref=e301] [cursor=pointer]:
+          - img [ref=e303]
+          - generic [ref=e305]:
+            - paragraph [ref=e306]: Fixed Group
+            - generic [ref=e307]:
+              - generic [ref=e308]:
+                - img [ref=e310]: qm
+                - paragraph [ref=e311]: qa mhsglthree
+              - img [ref=e313]
+  - alert [ref=e342]
+  - generic:
+    - region
+    - region
+    - region
+    - region
+    - region
+    - region
+  - alertdialog "Sign out of your account?" [ref=e345]:
+    - banner [ref=e346]:
+      - generic [ref=e347]:
+        - img [ref=e349]
+        - paragraph [ref=e352]: Sign out of your account?
+    - paragraph [ref=e354]: You'll be signed out and redirected to the login page. Any unsaved changes may be lost.
+    - contentinfo [ref=e355]:
+      - button "Yes, sign me out" [active] [ref=e356] [cursor=pointer]:
+        - img [ref=e358]
+        - text: Yes, sign me out
+      - button "Cancel" [ref=e361] [cursor=pointer]
+```
