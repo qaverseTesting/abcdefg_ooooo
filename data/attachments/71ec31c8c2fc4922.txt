@@ -1,7 +1,0 @@
-[2026-04-30T10:39:37.366Z] [STEP] STEP: Verifying Session exists in list
-[2026-04-30T10:39:37.366Z] [ASSERT] Verifying session in list: L-Session: Firstmste
-[2026-04-30T10:39:37.366Z] [ASSERT] Verifying session exists: L-Session: Firstmste
-[2026-04-30T10:39:39.256Z] [SUCCESS] Session found in list
-[2026-04-30T10:39:39.256Z] [SUCCESS] Session verified in listing
-[2026-04-30T10:39:39.256Z] [SUCCESS] [FULL JOURNEY VERIFIED] - Group: PW_Group_20260430_103906_w12r0155vlm -> Session: L-Session: Firstmste
-[2026-04-30T10:39:39.297Z] [INFO] [LIFECYCLE DONE] - Success for Group: PW_Group_20260430_103906_w12r0155vlm

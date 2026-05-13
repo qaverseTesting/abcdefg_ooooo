@@ -1,3 +1,0 @@
-[2026-04-30T10:33:18.434Z] [STEP] Attempting login for: pw_auto_mh_member@mailinator.com (Scenario: Registered member cannot login with incorrect password)
-[2026-04-30T10:33:18.434Z] [INFO] Attempting login for user: pw_auto_mh_member@mailinator.com | Password: WrongPassword123! (expectSuccess: false)
-[2026-04-30T10:33:23.391Z] [SUCCESS] Success: Access denied as expected for "Registered member cannot login with incorrect password"

@@ -1,9 +1,0 @@
-[2026-04-30T10:39:06.156Z] [INFO] [LIFECYCLE INIT] - Starting journey for Group: PW_Group_20260430_103906_w12r0155vlm
-[2026-04-30T10:39:06.365Z] [STEP] STEP: Initializing Group Creation
-[2026-04-30T10:39:06.365Z] [STEP] Initializing Group Creation from Dashboard
-[2026-04-30T10:39:06.368Z] [NAV] Navigating to Dashboard
-[2026-04-30T10:39:07.117Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
-[2026-04-30T10:39:07.117Z] [STEP] Clicking on Start a Group
-[2026-04-30T10:39:09.236Z] [ASSERT] Create Group page is loaded
-[2026-04-30T10:39:09.236Z] [INFO] 3rd-party widgets are handled via Enterprise Kill-Switch in fixtures. Skipping manual dismissal.
-[2026-04-30T10:39:10.909Z] [SUCCESS] Group Creation page loaded
