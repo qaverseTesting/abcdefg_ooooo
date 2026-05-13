@@ -1,6 +1,0 @@
-[2026-05-13T10:34:16.391Z] [STEP] Ensuring clean session state (Force Logout)
-[2026-05-13T10:34:16.392Z] [INFO] Already on an anonymous page. Skipping logout logic.
-[2026-05-13T10:34:16.401Z] [NAV] Navigating to Registration
-[2026-05-13T10:34:17.068Z] [STEP] Testing field formatting: First Name (Regex: Only letters allowed)
-[2026-05-13T10:34:17.068Z] [STEP] Filling registration form for: pw_auto_mh_13103417fa0f@mentalhappy.com
-[2026-05-13T10:34:19.691Z] [STEP] Clearing 3rd-party overlays for clean interaction

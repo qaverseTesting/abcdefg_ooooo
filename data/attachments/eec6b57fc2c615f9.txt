@@ -1,0 +1,9 @@
+[2026-05-13T10:39:01.863Z] [INFO] [LIFECYCLE INIT] - Starting journey for Group: PW_Group_20260513_103901_w13r0862wr5
+[2026-05-13T10:39:02.079Z] [STEP] STEP: Initializing Group Creation
+[2026-05-13T10:39:02.080Z] [STEP] Initializing Group Creation from Dashboard
+[2026-05-13T10:39:02.081Z] [NAV] Navigating to Dashboard
+[2026-05-13T10:39:02.712Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-05-13T10:39:02.795Z] [STEP] Clicking on Start a Group
+[2026-05-13T10:39:05.722Z] [ASSERT] Create Group page is loaded
+[2026-05-13T10:39:05.722Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-05-13T10:39:06.529Z] [SUCCESS] Group Creation page loaded

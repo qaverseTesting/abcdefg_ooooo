@@ -1,0 +1,15 @@
+[2026-05-13T10:33:15.854Z] [INFO] [ResetLink] Requesting password reset link for pw_auto_mh_forgotpass@mailinator.com via Mailinator
+[2026-05-13T10:33:16.012Z] [STEP] Opening Mailinator inbox: https://www.mailinator.com/v4/public/inboxes.jsp?to=pw_auto_mh_forgotpass
+[2026-05-13T10:33:18.340Z] [SUCCESS] Mailinator inbox loaded
+[2026-05-13T10:33:18.340Z] [STEP] Searching for keywords: reset, password, forgot in Inbox: https://www.mailinator.com/v4/public/inboxes.jsp?to=pw_auto_mh_forgotpass (Timeout: 90000ms)
+[2026-05-13T10:33:18.801Z] [SUCCESS] Matched email: "	MentalHappy	Password reset requested	just now..."
+[2026-05-13T10:33:22.036Z] [STEP] Clicking reset link
+[2026-05-13T10:33:22.216Z] [INFO] Using iframe: #html_msg_body
+[2026-05-13T10:33:22.427Z] [INFO] Clicking Reset Link found in iframe: https://u8010474.ct.sendgrid.net/ls/click?upn=u001.amIoa00VBXzGb-2FR7MbBTTvTrJY0ZFEJduoZ1A0YFR38rHuPqvbkVu2RE-2F9T2-2BXe5ZCgN87pa6wJ2Mg5aknuC4-2BFb9q-2FnU0QGXSwAZsAAqifHcQsJF2i5AWFS3pdleRESOjtz_s7uUp-2FOr014lhxhDaCPf1KzuR20HQYPI1lLGvy6hlGGg3kXLkDhLRx5sYnrjihchzkim9ilQj-2FK4jJhfdr7-2Fo4uhCD-2BhCCLJb64L8a1WV1jnWIjD-2B-2BXrPl-2B8fBqCyaWgRw24TTI-2Bdwmx5SE5XCft6l5nVQ0SylR5JQp-2FInoaEz0NdnQV3qyzlrK3xp-2FlZtlqAwYewOMU1h2Ood7XEXe-2F-2F-2F95n0HPLolt1T-2BfjXSi387ei-2BMJO-2F7u0SQxSOR0Bg2DavAh-2B-2BBocryfQUNdjVWL7utiQfGr-2BWvjwBfHnLizVrdsxY66NuUU-2F6ZDFENzkUKDmEitLpJdy3L6R-2Fey-2FmsIfT4j9TIQjYV8xPmXaA-2FdgQAJfPcsunwrssNpsGA0Uaf1ymuBJFfOHkeZzUReS8dfVQ-3D-3D
+[2026-05-13T10:33:22.902Z] [SUCCESS] Reset link interaction completed
+[2026-05-13T10:33:25.914Z] [SUCCESS] Reset page identified: https://staging.mentalhappy.com/reset/791391ad-520e-4503-bf28-5e7c8ebe54ec
+[2026-05-13T10:33:27.920Z] [INFO] Entering new password: TestPassword123!
+[2026-05-13T10:33:29.569Z] [INFO] Entering confirm password
+[2026-05-13T10:33:29.934Z] [INFO] Clicking Confirm Password button
+[2026-05-13T10:33:30.613Z] [ASSERT] Verifying toast message matching: Success: Password Changed Successfully
+[2026-05-13T10:33:31.722Z] [SUCCESS] Password updated successfully
