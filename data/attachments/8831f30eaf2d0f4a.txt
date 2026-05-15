@@ -1,0 +1,19 @@
+[2026-05-15T11:42:55.075Z] [STEP] Testing Successful Transaction (Happy Path)
+[2026-05-15T11:42:55.075Z] [STEP] Completing Stripe Payment
+[2026-05-15T11:42:55.075Z] [STEP] Verifying Stripe form visibility
+[2026-05-15T11:42:55.345Z] [SUCCESS] Stripe form verified
+[2026-05-15T11:42:55.345Z] [STEP] Filling Stripe payment details
+[2026-05-15T11:42:55.393Z] [STEP] Selecting country: US
+[2026-05-15T11:42:58.278Z] [SUCCESS] Stripe payment details filled
+[2026-05-15T11:42:58.278Z] [STEP] Submitting payment
+[2026-05-15T11:42:58.512Z] [SUCCESS] Payment submitted
+[2026-05-15T11:42:58.513Z] [SUCCESS] Stripe payment submitted
+[2026-05-15T11:42:58.513Z] [STEP] Verifying Payment Success (Redirect or Popup)
+[2026-05-15T11:43:04.004Z] [INFO] Final payment landing state: https://staging.mentalhappy.com/welcome/hosting-payment?plan=ACTIVE_GROUP&period=monthly
+[2026-05-15T11:43:04.254Z] [INFO] Success popup detected. Dismissing to proceed...
+[2026-05-15T11:43:04.256Z] [STEP] Verifying Payment Success popup visibility
+[2026-05-15T11:43:05.114Z] [SUCCESS] Payment Success popup verified
+[2026-05-15T11:43:05.115Z] [STEP] Clicking "Do this later"
+[2026-05-15T11:43:05.471Z] [SUCCESS] Success popup dismissed via Do this later
+[2026-05-15T11:43:05.900Z] [SUCCESS] Subscription completed and reached target page.
+[2026-05-15T11:43:05.900Z] [SUCCESS] Stripe Payment Validation suite completed successfully
