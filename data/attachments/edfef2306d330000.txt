@@ -1,0 +1,4 @@
+[2026-05-15T11:53:47.651Z] [STEP] Navigating to My Groups page
+[2026-05-15T11:53:50.265Z] [STEP] Waiting for My Groups page content
+[2026-05-15T11:53:55.504Z] [STEP] Verifying at least one group card is visible
+[2026-05-15T11:53:55.633Z] [SUCCESS] 1 group card(s) confirmed visible

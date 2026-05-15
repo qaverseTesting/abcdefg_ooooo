@@ -1,0 +1,7 @@
+[2026-05-15T11:51:46.867Z] [STEP] STEP: Verifying Session exists in list
+[2026-05-15T11:51:46.868Z] [ASSERT] Verifying session in list: L-Session: Firstujzyaq
+[2026-05-15T11:51:46.868Z] [ASSERT] Verifying session exists: L-Session: Firstujzyaq
+[2026-05-15T11:51:48.904Z] [SUCCESS] Session found in list
+[2026-05-15T11:51:48.904Z] [SUCCESS] Session verified in listing
+[2026-05-15T11:51:48.904Z] [SUCCESS] [FULL JOURNEY VERIFIED] - Group: PW_Group_20260515_115055_w8r0849aak -> Session: L-Session: Firstujzyaq
+[2026-05-15T11:51:49.646Z] [INFO] [LIFECYCLE DONE] - Group: PW_Group_20260515_115055_w8r0849aak

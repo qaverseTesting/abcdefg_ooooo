@@ -1,0 +1,28 @@
+[2026-05-15T11:52:59.345Z] [STEP] Selecting path: Explore Support Groups
+[2026-05-15T11:52:59.345Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-05-15T11:53:01.063Z] [INFO] Clicked Explore support groups
+[2026-05-15T11:53:01.108Z] [SUCCESS] Explore Support Groups path selected
+[2026-05-15T11:53:01.108Z] [STEP] Clicking Welcome Continue button
+[2026-05-15T11:53:01.108Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-05-15T11:53:01.726Z] [SUCCESS] Welcome Continue clicked
+[2026-05-15T11:53:01.726Z] [STEP] Completing Member onboarding via 3-step sequence
+[2026-05-15T11:53:01.726Z] [STEP] Attempting to click Onboarding Continue button
+[2026-05-15T11:53:01.726Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-05-15T11:53:01.891Z] [INFO] Button "Continue" is disabled. Selecting first available option...
+[2026-05-15T11:53:02.305Z] [INFO] Option selected. Waiting for button to enable...
+[2026-05-15T11:53:02.925Z] [INFO] Member Onboarding: Step 1 Continue clicked
+[2026-05-15T11:53:03.953Z] [STEP] Attempting to click Onboarding Continue button
+[2026-05-15T11:53:03.953Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-05-15T11:53:04.060Z] [INFO] Button "Continue" is disabled. Selecting first available option...
+[2026-05-15T11:53:04.190Z] [INFO] Option selected. Waiting for button to enable...
+[2026-05-15T11:53:04.511Z] [INFO] Member Onboarding: Step 2 Continue clicked
+[2026-05-15T11:53:05.531Z] [STEP] Attempting to click final Find Support Group button
+[2026-05-15T11:53:05.531Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-05-15T11:53:05.645Z] [INFO] Button "Find Support Group" is disabled. Selecting first available option...
+[2026-05-15T11:53:05.831Z] [INFO] Option selected. Waiting for button to enable...
+[2026-05-15T11:53:06.460Z] [INFO] Member Onboarding: Step 3 Find Support Group clicked
+[2026-05-15T11:53:08.273Z] [SUCCESS] Redirected to Dashboard
+[2026-05-15T11:53:08.273Z] [ASSERT] Verifying dashboard is loaded
+[2026-05-15T11:53:13.662Z] [SUCCESS] Dashboard load verified
+[2026-05-15T11:53:13.663Z] [INFO] Saving user verification status: true
+[2026-05-15T11:53:13.667Z] [SUCCESS] Step 3 Complete: Member reached Dashboard.

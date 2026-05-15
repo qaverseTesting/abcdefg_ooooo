@@ -1,0 +1,15 @@
+[2026-05-15T11:51:22.855Z] [INFO] [ResetLink] Requesting password reset link for pw_auto_mh_forgotpass@mailinator.com via Mailinator
+[2026-05-15T11:51:22.934Z] [STEP] Opening Mailinator inbox: https://www.mailinator.com/v4/public/inboxes.jsp?to=pw_auto_mh_forgotpass
+[2026-05-15T11:51:24.902Z] [SUCCESS] Mailinator inbox loaded
+[2026-05-15T11:51:24.902Z] [STEP] Searching for keywords: reset, password, forgot in Inbox: https://www.mailinator.com/v4/public/inboxes.jsp?to=pw_auto_mh_forgotpass (Timeout: 90000ms)
+[2026-05-15T11:51:25.325Z] [SUCCESS] Matched email: "	MentalHappy	Password reset requested	just now..."
+[2026-05-15T11:51:28.641Z] [STEP] Clicking reset link
+[2026-05-15T11:51:28.772Z] [INFO] Using iframe: #html_msg_body
+[2026-05-15T11:51:28.906Z] [INFO] Clicking Reset Link found in iframe: https://u8010474.ct.sendgrid.net/ls/click?upn=u001.amIoa00VBXzGb-2FR7MbBTTvTrJY0ZFEJduoZ1A0YFR3-2Fx-2BtZ1mSuAdErh4swO-2FamRp7anGG8JgUsB1EXKa1bKXPBWyG9IjGZeP73-2BYSFt4XeLDPrJeGSprBGotWCm5EddJN_4_s7uUp-2FOr014lhxhDaCPf1KzuR20HQYPI1lLGvy6hlGGg3kXLkDhLRx5sYnrjihchzkim9ilQj-2FK4jJhfdr7-2Fo4uhCD-2BhCCLJb64L8a1WV1jnWIjD-2B-2BXrPl-2B8fBqCyaWgRw24TTI-2Bdwmx5SE5XCft6l5nVQ0SylR5JQp-2FInoaEz0NdnQV3qyzlrK3xp-2FlZtlqFNSMYI4pbFqoYjI5IcPcnhwVWCk9n4d-2Fo4XVdeny1MsrH9u6BplAuMllRTw1fZgFoyZge1zwEl79WZ84c4WJWZI6jf8-2F5WTqXmoMHkgnmxBRhi5z63U-2FtTSrCLzDGUuFKdA1qf7ucJq6P5u2afu3xQSMe-2BfqzIMp-2BuygeltdHosjk3SeY2zQ7C8dNj82XnRBBnGx9t2z-2FMlqVTcx0R6Www-3D-3D
+[2026-05-15T11:51:29.043Z] [SUCCESS] Reset link interaction completed
+[2026-05-15T11:51:30.543Z] [SUCCESS] Reset page identified: https://staging.mentalhappy.com/reset/9685c48d-5c72-48c3-98b3-0bc276afec51
+[2026-05-15T11:51:32.317Z] [INFO] Entering new password: TestPassword123!
+[2026-05-15T11:51:33.906Z] [INFO] Entering confirm password
+[2026-05-15T11:51:34.509Z] [INFO] Clicking Confirm Password button
+[2026-05-15T11:51:35.311Z] [ASSERT] Verifying toast message matching: Success: Password Changed Successfully
+[2026-05-15T11:51:37.383Z] [SUCCESS] Password updated successfully
