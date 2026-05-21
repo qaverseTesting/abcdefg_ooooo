@@ -1,3 +1,0 @@
-[2026-05-15T11:52:10.935Z] [STEP] Testing mandatory fields: Empty credentials submission
-[2026-05-15T11:52:10.936Z] [INFO] Attempting login for user:  | Password: [EMPTY] (expectSuccess: false)
-[2026-05-15T11:52:22.903Z] [SUCCESS] Success: Form correctly blocked "Empty credentials submission"

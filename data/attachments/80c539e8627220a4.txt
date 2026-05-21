@@ -1,3 +1,0 @@
-[2026-05-15T11:51:08.212Z] [STEP] Security Check: Verifying behavior with an invalid/malformed reset token
-[2026-05-15T11:51:20.621Z] [INFO] Reset page not visible for invalid token, which is a safe/correct default.
-[2026-05-15T11:51:20.622Z] [SUCCESS] Phase 2 Complete: Security check for malformed link executed
