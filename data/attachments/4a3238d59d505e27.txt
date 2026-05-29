@@ -1,0 +1,6 @@
+[2026-05-29T05:37:22.516Z] [STEP] Navigating to My Groups page
+[2026-05-29T05:37:25.955Z] [STEP] Waiting for My Groups page content
+[2026-05-29T05:37:29.845Z] [STEP] Clicking filter: My Groups
+[2026-05-29T05:37:30.287Z] [SUCCESS] Filter "My Groups" clicked
+[2026-05-29T05:37:30.526Z] [STEP] Verifying at least one group card is visible
+[2026-05-29T05:37:30.784Z] [SUCCESS] 1 group card(s) confirmed visible
