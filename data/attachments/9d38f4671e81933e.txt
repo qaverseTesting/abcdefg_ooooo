@@ -1,0 +1,7 @@
+[2026-05-29T05:33:37.547Z] [STEP] Ensuring clean session state (Force Logout)
+[2026-05-29T05:33:37.548Z] [INFO] Already on an anonymous page. Skipping logout logic.
+[2026-05-29T05:33:37.621Z] [NAV] Navigating to Registration
+[2026-05-29T05:33:39.587Z] [STEP] Testing field formatting: Password (Minimum Complexity: Len, Mix, Digit)
+[2026-05-29T05:33:39.588Z] [STEP] Filling registration form for: pw_auto_mh_290533394icc@mentalhappy.com
+[2026-05-29T05:33:43.715Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-05-29T05:33:43.972Z] [INFO] Verifying form submission is blocked due to password constraints
