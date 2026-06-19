@@ -1,0 +1,28 @@
+[2026-06-19T11:41:08.340Z] [STEP] Registering new leader with email: mh_191141084un0@mailinator.com
+[2026-06-19T11:41:08.340Z] [STEP] Navigating to Registration Page
+[2026-06-19T11:41:10.768Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-06-19T11:41:10.901Z] [SUCCESS] Registration Page loaded
+[2026-06-19T11:41:10.901Z] [STEP] Filling registration form for: mh_191141084un0@mailinator.com
+[2026-06-19T11:41:15.140Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-06-19T11:41:15.199Z] [STEP] Submitting registration form
+[2026-06-19T11:41:16.288Z] [SUCCESS] Registration form submitted
+[2026-06-19T11:41:16.288Z] [STEP] Waiting for OTP entry page to be ready
+[2026-06-19T11:41:24.771Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-06-19T11:41:24.771Z] [INFO] [OTP] Requesting real verification code for mh_191141084un0@mailinator.com via Mailinator
+[2026-06-19T11:41:25.035Z] [STEP] Opening Mailinator inbox: https://www.mailinator.com/v4/public/inboxes.jsp?to=mh_191141084un0
+[2026-06-19T11:41:27.311Z] [SUCCESS] Mailinator inbox loaded
+[2026-06-19T11:41:27.312Z] [STEP] Searching for keywords: confirm, email, verify, otp, code in Inbox: https://www.mailinator.com/v4/public/inboxes.jsp?to=mh_191141084un0 (Timeout: 60000ms)
+[2026-06-19T11:41:28.047Z] [SUCCESS] Matched email: "	MentalHappy	Confirm your email address	just now..."
+[2026-06-19T11:41:31.570Z] [STEP] Extracting OTP
+[2026-06-19T11:41:34.615Z] [INFO] OTP extraction attempt 1/5
+[2026-06-19T11:41:35.024Z] [SUCCESS] OTP found in iframe #html_msg_body: 960704
+[2026-06-19T11:41:35.109Z] [STEP] Entering OTP: 960704
+[2026-06-19T11:41:35.109Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-06-19T11:41:36.043Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-06-19T11:41:36.660Z] [SUCCESS] OTP entered
+[2026-06-19T11:41:36.660Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-06-19T11:41:36.666Z] [ASSERT] Verifying toast message matching: /Email Verified Successfully/i
+[2026-06-19T11:41:38.565Z] [SUCCESS] Leader registration and OTP verification completed
+[2026-06-19T11:41:38.569Z] [STEP] Verifying Continue button is disabled
+[2026-06-19T11:41:39.207Z] [SUCCESS] Continue button is disabled as expected
+[2026-06-19T11:41:39.207Z] [SUCCESS] Continue button disabled by default

@@ -1,0 +1,18 @@
+[2026-06-19T11:39:13.689Z] [STEP] Logging in as member
+[2026-06-19T11:39:13.690Z] [STEP] Ensuring clean session state (Force Logout)
+[2026-06-19T11:39:13.690Z] [INFO] Already on an anonymous page. Skipping logout logic.
+[2026-06-19T11:39:13.771Z] [NAV] Navigating to Login
+[2026-06-19T11:39:16.304Z] [INFO] Attempting login for user: aeshamangukiya1@gmail.com | Password: Am@Test123 (expectSuccess: true)
+[2026-06-19T11:39:21.265Z] [SUCCESS] Login successful. Landed on: https://community.mentalhappy.com/groups
+[2026-06-19T11:39:21.265Z] [ASSERT] Verifying dashboard is loaded
+[2026-06-19T11:39:24.276Z] [SUCCESS] Dashboard load verified
+[2026-06-19T11:39:24.276Z] [STEP] Performing Logout from Dashboard
+[2026-06-19T11:39:24.276Z] [STEP] User is logging out...
+[2026-06-19T11:39:24.276Z] [STEP] Clicking on Profile Icon (User menu)
+[2026-06-19T11:39:25.833Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-06-19T11:39:25.997Z] [STEP] Waiting for Logout menuitem to be visible
+[2026-06-19T11:39:26.061Z] [STEP] Clicking Logout from menu
+[2026-06-19T11:39:26.461Z] [STEP] Handling Logout Confirmation Modal
+[2026-06-19T11:39:29.672Z] [STEP] Ensuring redirection to Login page
+[2026-06-19T11:39:30.065Z] [SUCCESS] Logout action completed and verified
+[2026-06-19T11:39:31.388Z] [SUCCESS] Logout successful: User redirected to Login page.
