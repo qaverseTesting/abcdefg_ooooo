@@ -1,4 +1,0 @@
-[2026-06-19T13:35:48.621Z] [STEP] Attempting login for: mh_191335034k5l@mailinator.com (Invalid Credentials: Unregistered user cannot login with a generated email)
-[2026-06-19T13:35:48.621Z] [INFO] Attempting login for user: mh_191335034k5l@mailinator.com | Password: Password123! (expectSuccess: false)
-[2026-06-19T13:35:55.378Z] [INFO] Invalid login error message verified.
-[2026-06-19T13:35:55.378Z] [SUCCESS] Success: Access denied as expected for "Unregistered user cannot login with a generated email"

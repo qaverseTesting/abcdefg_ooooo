@@ -1,0 +1,42 @@
+[2026-06-19T14:36:13.081Z] [STEP] Submitting member registration form for: mh_19143613qyfr@mailinator.com
+[2026-06-19T14:36:13.081Z] [STEP] Navigating to Registration Page
+[2026-06-19T14:36:15.378Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-06-19T14:36:15.490Z] [SUCCESS] Registration Page loaded
+[2026-06-19T14:36:15.490Z] [STEP] Filling registration form for: mh_19143613qyfr@mailinator.com
+[2026-06-19T14:36:18.157Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-06-19T14:36:18.180Z] [STEP] Submitting registration form
+[2026-06-19T14:36:18.759Z] [SUCCESS] Registration form submitted
+[2026-06-19T14:36:18.759Z] [STEP] Waiting for OTP entry page to be ready
+[2026-06-19T14:36:25.990Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-06-19T14:36:25.990Z] [SUCCESS] Registration form submitted, OTP page reached
+[2026-06-19T14:36:25.990Z] [STEP] Verifying email for: mh_19143613qyfr@mailinator.com
+[2026-06-19T14:36:25.990Z] [INFO] [OTP] Requesting real verification code for mh_19143613qyfr@mailinator.com via Mailinator
+[2026-06-19T14:36:26.136Z] [STEP] Opening Mailinator inbox: https://www.mailinator.com/v4/public/inboxes.jsp?to=mh_19143613qyfr
+[2026-06-19T14:36:27.985Z] [SUCCESS] Mailinator inbox loaded
+[2026-06-19T14:36:27.985Z] [STEP] Searching for keywords: confirm, email, verify, otp, code in Inbox: https://www.mailinator.com/v4/public/inboxes.jsp?to=mh_19143613qyfr (Timeout: 60000ms)
+[2026-06-19T14:36:28.215Z] [SUCCESS] Matched email: "	MentalHappy	Confirm your email address	just now..."
+[2026-06-19T14:36:31.546Z] [STEP] Extracting OTP
+[2026-06-19T14:36:34.567Z] [INFO] OTP extraction attempt 1/5
+[2026-06-19T14:36:34.625Z] [SUCCESS] OTP found in iframe #html_msg_body: 972557
+[2026-06-19T14:36:34.648Z] [STEP] Entering OTP: 972557
+[2026-06-19T14:36:34.648Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-06-19T14:36:35.168Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-06-19T14:36:35.820Z] [SUCCESS] OTP entered
+[2026-06-19T14:36:35.820Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-06-19T14:36:35.831Z] [ASSERT] Verifying toast message matching: /Email Verified Successfully/i
+[2026-06-19T14:36:37.044Z] [SUCCESS] Email verification (OTP) successful
+[2026-06-19T14:36:37.048Z] [STEP] Selecting Member role on Welcome page
+[2026-06-19T14:36:37.048Z] [STEP] Verifying Welcome Page is displayed
+[2026-06-19T14:36:37.048Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-06-19T14:36:37.602Z] [SUCCESS] Welcome Page verification successful (Role buttons visible)
+[2026-06-19T14:36:37.602Z] [STEP] Selecting path: Explore Support Groups
+[2026-06-19T14:36:37.602Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-06-19T14:36:38.091Z] [INFO] Clicked Explore support groups
+[2026-06-19T14:36:38.112Z] [SUCCESS] Explore Support Groups path selected
+[2026-06-19T14:36:38.112Z] [STEP] Clicking Welcome Continue button
+[2026-06-19T14:36:38.112Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-06-19T14:36:38.621Z] [SUCCESS] Welcome Continue clicked
+[2026-06-19T14:36:38.621Z] [SUCCESS] Role selection completed
+[2026-06-19T14:36:38.621Z] [STEP] Verifying Member onboarding intro screen is visible
+[2026-06-19T14:36:38.670Z] [SUCCESS] Member onboarding intro confirmed
+[2026-06-19T14:36:38.670Z] [SUCCESS] Member Onboarding intro screen verified
