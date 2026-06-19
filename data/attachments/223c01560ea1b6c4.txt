@@ -1,6 +1,0 @@
-[2026-06-18T12:52:59.350Z] [INFO] [leader_multi_group_hosting_plan] Debug - CI: true, Skip: false, File: false at /home/runner/work/playwright-enterprise-framework/playwright-enterprise-framework/storage/auth/leader_multi_group_hosting_plan.json
-[2026-06-18T12:52:59.350Z] [STEP] Logging in as leader_multi_group_hosting_plan
-[2026-06-18T12:52:59.356Z] [STEP] Ensuring clean session state (Force Logout)
-[2026-06-18T12:52:59.356Z] [INFO] Already on an anonymous page. Skipping logout logic.
-[2026-06-18T12:52:59.393Z] [NAV] Navigating to Login
-[2026-06-18T12:53:00.694Z] [INFO] Attempting login for user: pw_auto_mh_multi_group_hosting_plan@mailinator.com | Password: Am123456 (expectSuccess: true)
