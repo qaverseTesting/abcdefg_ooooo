@@ -1,0 +1,15 @@
+[2026-06-19T13:35:29.435Z] [INFO] [ResetLink] Requesting password reset link for mh_forgotpass@mailinator.com via Mailinator
+[2026-06-19T13:35:29.566Z] [STEP] Opening Mailinator inbox: https://www.mailinator.com/v4/public/inboxes.jsp?to=mh_forgotpass
+[2026-06-19T13:35:31.681Z] [SUCCESS] Mailinator inbox loaded
+[2026-06-19T13:35:31.684Z] [STEP] Searching for keywords: reset, password, forgot in Inbox: https://www.mailinator.com/v4/public/inboxes.jsp?to=mh_forgotpass (Timeout: 90000ms)
+[2026-06-19T13:35:32.369Z] [SUCCESS] Matched email: "	MentalHappy	Password reset requested	just now..."
+[2026-06-19T13:35:35.643Z] [STEP] Clicking reset link
+[2026-06-19T13:35:35.793Z] [INFO] Using iframe: #html_msg_body
+[2026-06-19T13:35:35.958Z] [INFO] Clicking Reset Link found in iframe: https://u8010474.ct.sendgrid.net/ls/click?upn=u001.amIoa00VBXzGb-2FR7MbBTTqRZpHMc3qEaYbqrxFnmVPA7rDm4qVrhYyj9QVumgOrtnWOsH53nGUpapLVEOO4SUGCKbpftPdzrz5-2FZSBpTSJRrocXbWFVzxsDwp1gGodvSb4u9_Ibx7e5gfWGG-2BSRiyYnbQWVrCwy-2Bsm-2Fu7cGvL7Rfj79jfxywfBnN-2BhzmEaRSIY4vw-2B8qofTDOwhUpHzzZmCT3uUiY3740kBPuYHxJ6-2FIfj-2FfuxJf5EpjGQakpbsn2-2B7kUvp02WUXUdO2dy7DOXIrirtiRG77Vf-2FA6Jxf30yCGNjEDJUPGJ-2BXvZRShIBVm4aqvC1D-2F-2FwdcbBlYDfYBBsHGTSTtt1SWTyM3nQjeweQJD5UjEH6lUkwZ3Hv-2BAadRdUb30SRsuduYlpR-2FsvvcR0UUK3wfiDYN504-2FsA46a3lBnlT0uHGCkTEHh-2FrU1d8tnFTCLPS-2BZQyWFt-2FiTo50WiyYOsm4PnJ-2BePj-2FAxb4D3s0dGyQgoWVAD6TgJUhA1peYZJ8
+[2026-06-19T13:35:36.195Z] [SUCCESS] Reset link interaction completed
+[2026-06-19T13:35:38.089Z] [SUCCESS] Reset page identified: https://community.mentalhappy.com/reset/85be4683-2a6f-413f-b494-24b5471a5b00
+[2026-06-19T13:35:40.143Z] [INFO] Entering new password: TestPassword123!
+[2026-06-19T13:35:42.052Z] [INFO] Entering confirm password
+[2026-06-19T13:35:42.281Z] [INFO] Clicking Confirm Password button
+[2026-06-19T13:35:42.745Z] [ASSERT] Verifying toast message matching: Success: Password Changed Successfully
+[2026-06-19T13:35:43.875Z] [SUCCESS] Password updated successfully

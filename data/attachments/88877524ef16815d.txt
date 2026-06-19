@@ -1,0 +1,4 @@
+[2026-06-19T13:35:47.801Z] [STEP] Attempting login for: aeshamangukiya1@gmail.com (Invalid Credentials: Registered member cannot login with incorrect password)
+[2026-06-19T13:35:47.801Z] [INFO] Attempting login for user: aeshamangukiya1@gmail.com | Password: WrongPassword123! (expectSuccess: false)
+[2026-06-19T13:35:53.653Z] [INFO] Invalid login error message verified.
+[2026-06-19T13:35:53.653Z] [SUCCESS] Success: Access denied as expected for "Registered member cannot login with incorrect password"

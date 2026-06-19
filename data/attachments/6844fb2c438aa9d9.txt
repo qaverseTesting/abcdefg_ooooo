@@ -1,6 +1,0 @@
-[2026-06-19T12:19:18.320Z] [STEP] Ensuring clean session state (Force Logout)
-[2026-06-19T12:19:18.320Z] [INFO] Already on an anonymous page. Skipping logout logic.
-[2026-06-19T12:19:18.326Z] [NAV] Navigating to Registration
-[2026-06-19T12:19:19.812Z] [STEP] Testing field formatting: Last Name (Regex: Only letters allowed)
-[2026-06-19T12:19:19.812Z] [STEP] Filling registration form for: mh_191219194x7w@mailinator.com
-[2026-06-19T12:19:24.157Z] [STEP] Clearing 3rd-party overlays for clean interaction
