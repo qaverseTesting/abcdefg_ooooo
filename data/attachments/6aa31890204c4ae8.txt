@@ -1,0 +1,18 @@
+[2026-06-19T12:19:26.661Z] [STEP] Verifying OTP page persistence on refresh
+[2026-06-19T12:19:27.715Z] [STEP] Waiting for OTP entry page to be ready
+[2026-06-19T12:19:30.500Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-06-19T12:19:30.501Z] [INFO] [OTP] Requesting real verification code for mh_19121910z5e2@mailinator.com via Mailinator
+[2026-06-19T12:19:30.787Z] [STEP] Opening Mailinator inbox: https://www.mailinator.com/v4/public/inboxes.jsp?to=mh_19121910z5e2
+[2026-06-19T12:19:32.860Z] [SUCCESS] Mailinator inbox loaded
+[2026-06-19T12:19:32.861Z] [STEP] Searching for keywords: confirm, email, verify, otp, code in Inbox: https://www.mailinator.com/v4/public/inboxes.jsp?to=mh_19121910z5e2 (Timeout: 60000ms)
+[2026-06-19T12:19:33.300Z] [SUCCESS] Matched email: "	MentalHappy	Confirm your email address	just now..."
+[2026-06-19T12:19:36.528Z] [STEP] Extracting OTP
+[2026-06-19T12:19:39.579Z] [INFO] OTP extraction attempt 1/5
+[2026-06-19T12:19:39.670Z] [SUCCESS] OTP found in iframe #html_msg_body: 572037
+[2026-06-19T12:19:39.711Z] [STEP] Entering OTP: 572037
+[2026-06-19T12:19:39.711Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-06-19T12:19:40.035Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-06-19T12:19:40.420Z] [SUCCESS] OTP entered
+[2026-06-19T12:19:40.420Z] [STEP] Submitting OTP and verifying redirect
+[2026-06-19T12:19:40.651Z] [ASSERT] Verifying toast message matching: /Email Verified Successfully/i
+[2026-06-19T12:19:42.044Z] [SUCCESS] Step 2 Complete: User verified and reached Welcome page.

@@ -1,0 +1,10 @@
+[2026-06-19T12:19:09.199Z] [NAV] Navigating to Registration
+[2026-06-19T12:19:10.523Z] [STEP] Generated test email: mh_19121910z5e2@mailinator.com
+[2026-06-19T12:19:10.523Z] [INFO] Saving user email: mh_19121910z5e2@mailinator.com
+[2026-06-19T12:19:10.524Z] [STEP] Filling registration form for: mh_19121910z5e2@mailinator.com
+[2026-06-19T12:19:15.656Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-06-19T12:19:15.912Z] [STEP] Submitting registration form
+[2026-06-19T12:19:16.905Z] [SUCCESS] Registration form submitted
+[2026-06-19T12:19:26.618Z] [STEP] Waiting for OTP entry page to be ready
+[2026-06-19T12:19:26.628Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-06-19T12:19:26.628Z] [SUCCESS] Step 1 Complete: User is on OTP page.
