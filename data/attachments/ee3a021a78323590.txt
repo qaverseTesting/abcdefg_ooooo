@@ -1,4 +1,0 @@
-[2026-06-19T14:33:52.081Z] [STEP] Attempting login for: aeshamangukiya1@gmail.com (Invalid Credentials: Registered member fails login with minimum password length violation)
-[2026-06-19T14:33:52.081Z] [INFO] Attempting login for user: aeshamangukiya1@gmail.com | Password: Pass1! (expectSuccess: false)
-[2026-06-19T14:33:58.588Z] [INFO] Invalid login error message verified.
-[2026-06-19T14:33:58.588Z] [SUCCESS] Success: Access denied as expected for "Registered member fails login with minimum password length violation"

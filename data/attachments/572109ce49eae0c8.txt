@@ -1,0 +1,29 @@
+[2026-06-19T15:32:47.956Z] [STEP] Registering new leader with email: mh_19153247duep@mailinator.com
+[2026-06-19T15:32:47.967Z] [STEP] Navigating to Registration Page
+[2026-06-19T15:32:49.845Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-06-19T15:32:50.064Z] [SUCCESS] Registration Page loaded
+[2026-06-19T15:32:50.064Z] [STEP] Filling registration form for: mh_19153247duep@mailinator.com
+[2026-06-19T15:32:53.089Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-06-19T15:32:53.183Z] [STEP] Submitting registration form
+[2026-06-19T15:32:54.176Z] [SUCCESS] Registration form submitted
+[2026-06-19T15:32:54.183Z] [STEP] Waiting for OTP entry page to be ready
+[2026-06-19T15:33:01.747Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-06-19T15:33:01.748Z] [INFO] [OTP] Requesting real verification code for mh_19153247duep@mailinator.com via Mailinator
+[2026-06-19T15:33:01.989Z] [STEP] Opening Mailinator inbox: https://www.mailinator.com/v4/public/inboxes.jsp?to=mh_19153247duep
+[2026-06-19T15:33:04.616Z] [SUCCESS] Mailinator inbox loaded
+[2026-06-19T15:33:04.616Z] [STEP] Searching for keywords: confirm, email, verify, otp, code in Inbox: https://www.mailinator.com/v4/public/inboxes.jsp?to=mh_19153247duep (Timeout: 60000ms)
+[2026-06-19T15:33:05.175Z] [SUCCESS] Matched email: "	MentalHappy	Confirm your email address	just now..."
+[2026-06-19T15:33:08.534Z] [STEP] Extracting OTP
+[2026-06-19T15:33:11.585Z] [INFO] OTP extraction attempt 1/5
+[2026-06-19T15:33:11.927Z] [SUCCESS] OTP found in iframe #html_msg_body: 293747
+[2026-06-19T15:33:11.972Z] [STEP] Entering OTP: 293747
+[2026-06-19T15:33:11.973Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-06-19T15:33:12.762Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-06-19T15:33:13.181Z] [SUCCESS] OTP entered
+[2026-06-19T15:33:13.181Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-06-19T15:33:13.185Z] [ASSERT] Verifying toast message matching: /Email Verified Successfully/i
+[2026-06-19T15:33:15.237Z] [SUCCESS] Leader registration and OTP verification completed
+[2026-06-19T15:33:15.238Z] [STEP] Verifying Welcome Page is displayed
+[2026-06-19T15:33:15.238Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-06-19T15:33:16.303Z] [SUCCESS] Welcome Page verification successful (Role buttons visible)
+[2026-06-19T15:33:16.371Z] [SUCCESS] Welcome page URL verified

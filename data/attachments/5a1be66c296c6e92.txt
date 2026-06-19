@@ -1,0 +1,9 @@
+[2026-06-19T15:30:50.898Z] [STEP] Logging in as Leader
+[2026-06-19T15:30:50.898Z] [STEP] Logging in as leader
+[2026-06-19T15:30:50.900Z] [STEP] Ensuring clean session state (Force Logout)
+[2026-06-19T15:30:50.900Z] [INFO] Already on an anonymous page. Skipping logout logic.
+[2026-06-19T15:30:50.910Z] [NAV] Navigating to Login
+[2026-06-19T15:30:52.720Z] [INFO] Attempting login for user: qa_prod_leader@mailinator.com | Password: Am@Test123 (expectSuccess: true)
+[2026-06-19T15:31:00.502Z] [SUCCESS] Login successful. Landed on: https://community.mentalhappy.com/groups
+[2026-06-19T15:31:00.502Z] [ASSERT] Verifying dashboard is loaded
+[2026-06-19T15:31:04.405Z] [SUCCESS] Dashboard load verified

@@ -1,4 +1,0 @@
-[2026-06-19T14:34:34.004Z] [STEP] Ensuring clean session state (Force Logout)
-[2026-06-19T14:34:34.004Z] [INFO] Already on an anonymous page. Skipping logout logic.
-[2026-06-19T14:34:34.016Z] [NAV] Navigating to Registration
-[2026-06-19T14:34:35.781Z] [STEP] Testing mandatory constraint: First Name required on registration
