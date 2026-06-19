@@ -1,7 +1,0 @@
-[2026-06-19T15:32:25.683Z] [STEP] Ensuring clean session state (Force Logout)
-[2026-06-19T15:32:25.683Z] [INFO] Already on an anonymous page. Skipping logout logic.
-[2026-06-19T15:32:25.717Z] [NAV] Navigating to Registration
-[2026-06-19T15:32:27.438Z] [STEP] Testing field formatting: Password (Minimum Complexity: Len, Mix, Digit)
-[2026-06-19T15:32:27.440Z] [STEP] Filling registration form for: mh_19153227j601@mailinator.com
-[2026-06-19T15:32:31.363Z] [STEP] Clearing 3rd-party overlays for clean interaction
-[2026-06-19T15:32:31.534Z] [INFO] Verifying form submission is blocked due to password constraints

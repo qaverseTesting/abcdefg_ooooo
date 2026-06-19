@@ -1,9 +1,0 @@
-[2026-06-19T15:30:34.209Z] [INFO] [leader] Debug - CI: true, Skip: false, File: false at /home/runner/work/playwright-enterprise-framework/playwright-enterprise-framework/storage/auth/leader.json
-[2026-06-19T15:30:34.209Z] [STEP] Logging in as leader
-[2026-06-19T15:30:34.213Z] [STEP] Ensuring clean session state (Force Logout)
-[2026-06-19T15:30:34.213Z] [INFO] Already on an anonymous page. Skipping logout logic.
-[2026-06-19T15:30:34.230Z] [NAV] Navigating to Login
-[2026-06-19T15:30:35.930Z] [INFO] Attempting login for user: qa_prod_leader@mailinator.com | Password: Am@Test123 (expectSuccess: true)
-[2026-06-19T15:30:42.083Z] [SUCCESS] Login successful. Landed on: https://community.mentalhappy.com/groups
-[2026-06-19T15:30:45.336Z] [SUCCESS] Login successful and dashboard loaded
-[2026-06-19T15:30:45.754Z] [SUCCESS] leader session captured at Dashboard state.
