@@ -1,0 +1,35 @@
+[2026-07-07T12:29:56.154Z] [STEP] Submitting member registration form for: pw_auto_mh_071229561uqv@mentalhappy.com
+[2026-07-07T12:29:56.154Z] [STEP] Navigating to Registration Page
+[2026-07-07T12:29:56.739Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-07-07T12:29:56.801Z] [SUCCESS] Registration Page loaded
+[2026-07-07T12:29:56.801Z] [STEP] Filling registration form for: pw_auto_mh_071229561uqv@mentalhappy.com
+[2026-07-07T12:29:58.125Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-07-07T12:29:58.487Z] [STEP] Submitting registration form
+[2026-07-07T12:30:00.377Z] [SUCCESS] Registration form submitted
+[2026-07-07T12:30:00.377Z] [STEP] Waiting for OTP entry page to be ready
+[2026-07-07T12:30:06.138Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-07-07T12:30:06.138Z] [SUCCESS] Registration form submitted, OTP page reached
+[2026-07-07T12:30:06.138Z] [STEP] Verifying email for: pw_auto_mh_071229561uqv@mentalhappy.com
+[2026-07-07T12:30:06.138Z] [INFO] [OTP] Bypass active for pw_auto_mh_071229561uqv@mentalhappy.com. Returning fixed validation code: 456321
+[2026-07-07T12:30:06.157Z] [STEP] Entering OTP: 456321
+[2026-07-07T12:30:06.157Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-07-07T12:30:07.195Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-07-07T12:30:07.637Z] [SUCCESS] OTP entered
+[2026-07-07T12:30:07.637Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-07-07T12:30:07.638Z] [ASSERT] Verifying toast message matching: /Email Verified Successfully/i
+[2026-07-07T12:30:09.153Z] [SUCCESS] Email verification (OTP) successful
+[2026-07-07T12:30:09.156Z] [STEP] Selecting Member role on Welcome page
+[2026-07-07T12:30:09.156Z] [STEP] Verifying Welcome Page is displayed
+[2026-07-07T12:30:09.156Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-07-07T12:30:09.882Z] [SUCCESS] Welcome Page verification successful (Role buttons visible)
+[2026-07-07T12:30:09.882Z] [STEP] Selecting path: Explore Support Groups
+[2026-07-07T12:30:09.882Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-07-07T12:30:10.191Z] [INFO] Clicked Explore support groups
+[2026-07-07T12:30:10.213Z] [SUCCESS] Explore Support Groups path selected
+[2026-07-07T12:30:10.213Z] [STEP] Clicking Welcome Continue button
+[2026-07-07T12:30:10.213Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-07-07T12:30:10.603Z] [SUCCESS] Welcome Continue clicked
+[2026-07-07T12:30:10.603Z] [SUCCESS] Role selection completed
+[2026-07-07T12:30:10.603Z] [STEP] Verifying Member onboarding intro screen is visible
+[2026-07-07T12:30:10.643Z] [SUCCESS] Member onboarding intro confirmed
+[2026-07-07T12:30:10.643Z] [SUCCESS] Member Onboarding intro screen verified
