@@ -1,3 +1,0 @@
-[2026-07-07T15:29:17.189Z] [STEP] Accessing Login page while already authenticated
-[2026-07-07T15:29:18.913Z] [ASSERT] Verifying redirect to Dashboard/Groups (UX Audit)
-[2026-07-07T15:29:24.819Z] [SUCCESS] Auth redirection verified successfully

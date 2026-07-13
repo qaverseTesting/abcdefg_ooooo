@@ -1,0 +1,23 @@
+[2026-07-13T12:47:19.422Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-07-13T12:47:20.911Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-07-13T12:47:20.911Z] [STEP] Verifying Plan & Billing page content
+[2026-07-13T12:47:23.968Z] [SUCCESS] Plan & Billing page verified
+[2026-07-13T12:47:23.968Z] [STEP] Verifying $19 subscription is NOT visible (plan no longer active)
+[2026-07-13T12:47:24.017Z] [SUCCESS] $19 subscription confirmed absent — billing state correct
+[2026-07-13T12:47:24.017Z] [SUCCESS] RA-01 PASSED: $19 absent — Listing plan starting state confirmed
+[2026-07-13T12:47:24.018Z] [STEP] Clicking "Upgrade to Active Group" from Group options menu
+[2026-07-13T12:47:25.014Z] [SUCCESS] "Upgrade to Active Group" selected from Group options menu
+[2026-07-13T12:47:25.014Z] [STEP] Verifying Stripe form visibility
+[2026-07-13T12:47:40.239Z] [SUCCESS] Stripe form verified
+[2026-07-13T12:47:40.239Z] [SUCCESS] RA-02 PASSED: Stripe checkout form loaded after Upgrade to Active Group click
+[2026-07-13T12:47:40.240Z] [STEP] Completing Stripe Payment
+[2026-07-13T12:47:40.240Z] [STEP] Verifying Stripe form visibility
+[2026-07-13T12:47:40.630Z] [SUCCESS] Stripe form verified
+[2026-07-13T12:47:40.631Z] [STEP] Filling Stripe payment details
+[2026-07-13T12:47:40.706Z] [STEP] Selecting country: US
+[2026-07-13T12:47:49.679Z] [SUCCESS] Stripe payment details filled
+[2026-07-13T12:47:49.679Z] [STEP] Submitting payment
+[2026-07-13T12:47:56.621Z] [SUCCESS] Payment submitted
+[2026-07-13T12:47:56.622Z] [SUCCESS] Stripe payment submitted
+[2026-07-13T12:47:56.622Z] [STEP] Verifying Plan Change Payment — waiting for app redirect
+[2026-07-13T12:47:56.629Z] [INFO] Post-payment landing: https://staging.mentalhappy.com/user/profile/plan-billing

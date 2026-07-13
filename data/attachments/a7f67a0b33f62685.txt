@@ -1,8 +1,0 @@
-[2026-07-07T15:30:04.904Z] [STEP] Navigating to My Groups page
-[2026-07-07T15:30:07.130Z] [STEP] Waiting for My Groups page content
-[2026-07-07T15:30:14.509Z] [STEP] Clicking filter: Following
-[2026-07-07T15:30:14.898Z] [SUCCESS] Filter "Following" clicked
-[2026-07-07T15:30:14.898Z] [STEP] Verifying at least one group card is visible
-[2026-07-07T15:30:15.214Z] [SUCCESS] 1 group card(s) confirmed visible
-[2026-07-07T15:30:15.214Z] [STEP] Verifying Following cards have Remove interest action
-[2026-07-07T15:30:16.461Z] [SUCCESS] Remove interest action confirmed in Following cards
