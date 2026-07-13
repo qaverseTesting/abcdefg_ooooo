@@ -1,0 +1,58 @@
+[2026-07-13T12:48:57.888Z] [STEP] Submitting member registration form for: pw_auto_mh_13124857ily8@mentalhappy.com
+[2026-07-13T12:48:57.889Z] [STEP] Navigating to Registration Page
+[2026-07-13T12:48:59.013Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-07-13T12:48:59.051Z] [SUCCESS] Registration Page loaded
+[2026-07-13T12:48:59.052Z] [STEP] Filling registration form for: pw_auto_mh_13124857ily8@mentalhappy.com
+[2026-07-13T12:49:03.051Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-07-13T12:49:03.084Z] [STEP] Submitting registration form
+[2026-07-13T12:49:03.577Z] [SUCCESS] Registration form submitted
+[2026-07-13T12:49:03.578Z] [STEP] Waiting for OTP entry page to be ready
+[2026-07-13T12:49:09.631Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-07-13T12:49:09.631Z] [SUCCESS] Registration form submitted, OTP page reached
+[2026-07-13T12:49:09.632Z] [STEP] Verifying email for: pw_auto_mh_13124857ily8@mentalhappy.com
+[2026-07-13T12:49:09.632Z] [INFO] [OTP] Bypass active for pw_auto_mh_13124857ily8@mentalhappy.com. Returning fixed validation code: 456321
+[2026-07-13T12:49:09.656Z] [STEP] Entering OTP: 456321
+[2026-07-13T12:49:09.657Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-07-13T12:49:10.431Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-07-13T12:49:10.991Z] [SUCCESS] OTP entered
+[2026-07-13T12:49:10.991Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-07-13T12:49:11.003Z] [ASSERT] Verifying toast message matching: /Email Verified Successfully/i
+[2026-07-13T12:49:12.365Z] [SUCCESS] Email verification (OTP) successful
+[2026-07-13T12:49:12.366Z] [STEP] Selecting Member role on Welcome page
+[2026-07-13T12:49:12.372Z] [STEP] Verifying Welcome Page is displayed
+[2026-07-13T12:49:12.373Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-07-13T12:49:12.873Z] [SUCCESS] Welcome Page verification successful (Role buttons visible)
+[2026-07-13T12:49:12.873Z] [STEP] Selecting path: Explore Support Groups
+[2026-07-13T12:49:12.873Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-07-13T12:49:13.306Z] [INFO] Clicked Explore support groups
+[2026-07-13T12:49:13.337Z] [SUCCESS] Explore Support Groups path selected
+[2026-07-13T12:49:13.338Z] [STEP] Clicking Welcome Continue button
+[2026-07-13T12:49:13.338Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-07-13T12:49:13.739Z] [SUCCESS] Welcome Continue clicked
+[2026-07-13T12:49:13.739Z] [SUCCESS] Role selection completed
+[2026-07-13T12:49:13.744Z] [STEP] Completing Member onboarding via CONTINUE path
+[2026-07-13T12:49:13.763Z] [STEP] Completing Member onboarding via 3-step sequence
+[2026-07-13T12:49:13.763Z] [STEP] Attempting to click Onboarding Continue button
+[2026-07-13T12:49:13.763Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-07-13T12:49:13.832Z] [INFO] Button "Continue" is disabled. Selecting first available option...
+[2026-07-13T12:49:14.013Z] [INFO] Option selected. Waiting for button to enable...
+[2026-07-13T12:49:14.318Z] [INFO] Member Onboarding: Step 1 Continue clicked
+[2026-07-13T12:49:15.334Z] [STEP] Attempting to click Onboarding Continue button
+[2026-07-13T12:49:15.334Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-07-13T12:49:15.418Z] [INFO] Button "Continue" is disabled. Selecting first available option...
+[2026-07-13T12:49:15.639Z] [INFO] Option selected. Waiting for button to enable...
+[2026-07-13T12:49:16.083Z] [INFO] Member Onboarding: Step 2 Continue clicked
+[2026-07-13T12:49:17.099Z] [STEP] Attempting to click final Find Support Group button
+[2026-07-13T12:49:17.099Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-07-13T12:49:17.160Z] [INFO] Button "Find Support Group" is disabled. Selecting first available option...
+[2026-07-13T12:49:17.226Z] [INFO] Option selected. Waiting for button to enable...
+[2026-07-13T12:49:17.504Z] [INFO] Member Onboarding: Step 3 Find Support Group clicked
+[2026-07-13T12:49:18.812Z] [SUCCESS] Redirected to Dashboard
+[2026-07-13T12:49:18.812Z] [SUCCESS] Member onboarding (Continue) completed
+[2026-07-13T12:49:18.817Z] [ASSERT] Verifying dashboard is loaded
+[2026-07-13T12:49:22.272Z] [SUCCESS] Dashboard load verified
+[2026-07-13T12:49:22.272Z] [STEP] Verifying Member Dashboard content
+[2026-07-13T12:49:22.272Z] [ASSERT] Verifying dashboard is loaded
+[2026-07-13T12:49:22.638Z] [SUCCESS] Dashboard load verified
+[2026-07-13T12:49:23.711Z] [SUCCESS] Member dashboard verification successful
+[2026-07-13T12:49:23.715Z] [SUCCESS] Member CONTINUE journey completed successfully
