@@ -1,0 +1,6 @@
+[2026-07-15T11:58:44.380Z] [STEP] Navigating to My Groups page
+[2026-07-15T11:58:46.535Z] [STEP] Waiting for My Groups page content
+[2026-07-15T11:58:53.130Z] [STEP] Verifying at least one group card is visible
+[2026-07-15T11:58:53.249Z] [SUCCESS] 1 group card(s) confirmed visible
+[2026-07-15T11:58:53.249Z] [STEP] Verifying each group card has a name and cover image
+[2026-07-15T11:58:53.580Z] [SUCCESS] All 1 card(s) have name and cover image

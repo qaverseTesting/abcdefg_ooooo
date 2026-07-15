@@ -1,0 +1,33 @@
+[2026-07-15T11:51:52.895Z] [STEP] Registering new leader with email: pw_auto_mh_15115152cldg@mentalhappy.com
+[2026-07-15T11:51:52.896Z] [STEP] Navigating to Registration Page
+[2026-07-15T11:51:55.488Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-07-15T11:51:55.572Z] [SUCCESS] Registration Page loaded
+[2026-07-15T11:51:55.572Z] [STEP] Filling registration form for: pw_auto_mh_15115152cldg@mentalhappy.com
+[2026-07-15T11:51:59.552Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-07-15T11:51:59.591Z] [STEP] Submitting registration form
+[2026-07-15T11:52:01.198Z] [SUCCESS] Registration form submitted
+[2026-07-15T11:52:01.198Z] [STEP] Waiting for OTP entry page to be ready
+[2026-07-15T11:52:11.506Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-07-15T11:52:11.507Z] [INFO] [OTP] Bypass active for pw_auto_mh_15115152cldg@mentalhappy.com. Returning fixed validation code: 456321
+[2026-07-15T11:52:11.519Z] [STEP] Entering OTP: 456321
+[2026-07-15T11:52:11.519Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-07-15T11:52:12.147Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-07-15T11:52:12.685Z] [SUCCESS] OTP entered
+[2026-07-15T11:52:12.685Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-07-15T11:52:12.687Z] [ASSERT] Verifying toast message matching: /Email Verified Successfully/i
+[2026-07-15T11:52:14.106Z] [SUCCESS] Leader registration and OTP verification completed
+[2026-07-15T11:52:14.106Z] [STEP] Selecting Leader role on Welcome page
+[2026-07-15T11:52:14.107Z] [STEP] Verifying Welcome Page is displayed
+[2026-07-15T11:52:14.107Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-07-15T11:52:14.747Z] [SUCCESS] Welcome Page verification successful (Role buttons visible)
+[2026-07-15T11:52:14.747Z] [STEP] Selecting path: Continue as a Group Leader
+[2026-07-15T11:52:14.747Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-07-15T11:52:15.188Z] [INFO] Clicked Continue as a Group Leader
+[2026-07-15T11:52:15.214Z] [SUCCESS] Group Leader path selected
+[2026-07-15T11:52:15.214Z] [STEP] Clicking Welcome Continue button
+[2026-07-15T11:52:15.214Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-07-15T11:52:15.999Z] [SUCCESS] Welcome Continue clicked
+[2026-07-15T11:52:15.999Z] [SUCCESS] Leader role selection completed
+[2026-07-15T11:52:16.000Z] [STEP] Verifying Leader onboarding intro screen is visible
+[2026-07-15T11:52:16.113Z] [SUCCESS] Leader onboarding intro confirmed
+[2026-07-15T11:52:16.113Z] [SUCCESS] Leader Onboarding intro screen verified

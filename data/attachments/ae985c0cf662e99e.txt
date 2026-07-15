@@ -1,0 +1,5 @@
+[2026-07-15T11:57:52.150Z] [STEP] STEP: Launching Group (Tab 4)
+[2026-07-15T11:57:52.150Z] [STEP] Tab 4: Finalizing Group Creation (Launch)
+[2026-07-15T11:57:52.151Z] [STEP] Clicking Launch Group
+[2026-07-15T11:57:52.569Z] [ASSERT] Verifying redirect to Group Details
+[2026-07-15T11:57:52.598Z] [SUCCESS] Group Lifecycle: Launch successful, redirected to details

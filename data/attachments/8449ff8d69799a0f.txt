@@ -1,0 +1,24 @@
+[2026-07-15T11:52:12.488Z] [STEP] Submitting member registration form for: pw_auto_mh_15115212mbv9@mentalhappy.com
+[2026-07-15T11:52:12.495Z] [STEP] Navigating to Registration Page
+[2026-07-15T11:52:14.584Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-07-15T11:52:14.666Z] [SUCCESS] Registration Page loaded
+[2026-07-15T11:52:14.666Z] [STEP] Filling registration form for: pw_auto_mh_15115212mbv9@mentalhappy.com
+[2026-07-15T11:52:20.289Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-07-15T11:52:20.415Z] [STEP] Submitting registration form
+[2026-07-15T11:52:20.902Z] [SUCCESS] Registration form submitted
+[2026-07-15T11:52:20.902Z] [STEP] Waiting for OTP entry page to be ready
+[2026-07-15T11:52:29.392Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-07-15T11:52:29.392Z] [SUCCESS] Registration form submitted, OTP page reached
+[2026-07-15T11:52:29.392Z] [STEP] Verifying email for: pw_auto_mh_15115212mbv9@mentalhappy.com
+[2026-07-15T11:52:29.392Z] [INFO] [OTP] Bypass active for pw_auto_mh_15115212mbv9@mentalhappy.com. Returning fixed validation code: 456321
+[2026-07-15T11:52:29.438Z] [STEP] Entering OTP: 456321
+[2026-07-15T11:52:29.438Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-07-15T11:52:30.455Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-07-15T11:52:31.138Z] [SUCCESS] OTP entered
+[2026-07-15T11:52:31.138Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-07-15T11:52:31.148Z] [ASSERT] Verifying toast message matching: /Email Verified Successfully/i
+[2026-07-15T11:52:33.344Z] [SUCCESS] Email verification (OTP) successful
+[2026-07-15T11:52:33.353Z] [STEP] Verifying Welcome Page is displayed
+[2026-07-15T11:52:33.353Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-07-15T11:52:34.334Z] [SUCCESS] Welcome Page verification successful (Role buttons visible)
+[2026-07-15T11:52:34.502Z] [SUCCESS] Member landing on Welcome page verified
