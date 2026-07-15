@@ -1,5 +1,0 @@
-[2026-07-13T12:49:51.578Z] [STEP] Attempting to access member protected routes without session
-[2026-07-13T12:49:51.578Z] [INFO] Checking path: /groups
-[2026-07-13T12:49:52.701Z] [SUCCESS] Successfully redirected from /groups to login
-[2026-07-13T12:49:52.701Z] [INFO] Checking path: /profile
-[2026-07-13T12:49:53.532Z] [SUCCESS] Successfully redirected from /profile to login
