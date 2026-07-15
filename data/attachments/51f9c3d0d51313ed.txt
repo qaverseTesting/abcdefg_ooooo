@@ -1,9 +1,0 @@
-[2026-07-15T11:57:37.111Z] [STEP] Navigating to My Groups page
-[2026-07-15T11:57:40.459Z] [STEP] Waiting for My Groups page content
-[2026-07-15T11:57:46.197Z] [STEP] Verifying all filter tabs are visible
-[2026-07-15T11:57:46.742Z] [SUCCESS] All filter tabs confirmed visible
-[2026-07-15T11:57:46.742Z] [STEP] Clicking Joined filter
-[2026-07-15T11:57:47.572Z] [SUCCESS] Joined filter clicked
-[2026-07-15T11:57:47.785Z] [STEP] Verifying at least one group card is visible
-[2026-07-15T11:57:48.062Z] [SUCCESS] 1 group card(s) confirmed visible
-[2026-07-15T11:57:48.062Z] [SUCCESS] Leader My Groups sections verified
