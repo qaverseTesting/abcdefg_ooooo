@@ -1,0 +1,56 @@
+[2026-07-24T11:14:09.747Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-07-24T11:14:11.872Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-07-24T11:14:11.872Z] [STEP] Verifying Plan & Billing page content
+[2026-07-24T11:14:14.972Z] [SUCCESS] Plan & Billing page verified
+[2026-07-24T11:14:14.972Z] [STEP] Verifying $19 subscription is NOT visible (plan no longer active)
+[2026-07-24T11:14:15.083Z] [SUCCESS] $19 subscription confirmed absent — billing state correct
+[2026-07-24T11:14:15.083Z] [SUCCESS] R-01 PASSED: No $19 subscription — Listing plan starting state confirmed
+[2026-07-24T11:14:15.085Z] [STEP] Clicking Change Plan → navigating to Hosting Plan page
+[2026-07-24T11:14:15.980Z] [SUCCESS] Redirected to Hosting Plan page
+[2026-07-24T11:14:15.980Z] [STEP] Verifying Hosting Plan page content
+[2026-07-24T11:14:18.086Z] [SUCCESS] Hosting Plan page verification successful
+[2026-07-24T11:14:18.086Z] [SUCCESS] R-02 PASSED: Redirected to Hosting Plan page
+[2026-07-24T11:14:18.086Z] [STEP] Verifying current plan card shows "Current Plan" (disabled state)
+[2026-07-24T11:14:18.307Z] [SUCCESS] "Current Plan" label verified
+[2026-07-24T11:14:18.307Z] [SUCCESS] R-03 PASSED: "Current Plan" label confirmed — Listing is current
+[2026-07-24T11:14:18.307Z] [STEP] Verifying Active Plan CTA is visible (user is on Listing plan)
+[2026-07-24T11:14:18.496Z] [SUCCESS] Active Plan CTA verified visible
+[2026-07-24T11:14:18.496Z] [SUCCESS] R-04 PASSED: "Upgrade to Active Group" CTA visible and available
+[2026-07-24T11:14:18.507Z] [STEP] Selecting Active Group Plan
+[2026-07-24T11:14:18.939Z] [STEP] Verifying Pay Now button is visible after plan selection
+[2026-07-24T11:14:24.063Z] [SUCCESS] Pay Now button verified visible
+[2026-07-24T11:14:24.063Z] [SUCCESS] R-05 PASSED: "Pay Now" button appeared after Active Plan selection
+[2026-07-24T11:14:24.064Z] [STEP] Clicking Pay Now
+[2026-07-24T11:14:28.296Z] [STEP] Verifying Stripe form visibility
+[2026-07-24T11:14:32.289Z] [SUCCESS] Stripe form verified
+[2026-07-24T11:14:32.289Z] [SUCCESS] R-06 PASSED: Stripe checkout form loaded successfully
+[2026-07-24T11:14:32.290Z] [STEP] Completing Stripe Payment
+[2026-07-24T11:14:32.290Z] [STEP] Verifying Stripe form visibility
+[2026-07-24T11:14:32.634Z] [SUCCESS] Stripe form verified
+[2026-07-24T11:14:32.634Z] [STEP] Filling Stripe payment details
+[2026-07-24T11:14:32.719Z] [STEP] Selecting country: US
+[2026-07-24T11:14:41.774Z] [SUCCESS] Stripe payment details filled
+[2026-07-24T11:14:41.774Z] [STEP] Submitting payment
+[2026-07-24T11:14:48.029Z] [SUCCESS] Payment submitted
+[2026-07-24T11:14:48.029Z] [SUCCESS] Stripe payment submitted
+[2026-07-24T11:14:48.030Z] [STEP] Verifying Plan Change Payment — waiting for app redirect
+[2026-07-24T11:15:08.036Z] [INFO] Post-payment landing: https://staging.mentalhappy.com/user/profile/plan-billing
+[2026-07-24T11:15:08.233Z] [SUCCESS] Plan change payment confirmed
+[2026-07-24T11:15:08.233Z] [SUCCESS] R-07 PASSED: Payment complete — plan=ACTIVE_GROUP confirmed in redirect URL
+[2026-07-24T11:15:08.234Z] [STEP] Waiting for $19 subscription to appear after payment (up to 50s)
+[2026-07-24T11:15:08.234Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-07-24T11:15:09.989Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-07-24T11:15:09.989Z] [STEP] Verifying Plan & Billing page content
+[2026-07-24T11:15:13.400Z] [SUCCESS] Plan & Billing page verified
+[2026-07-24T11:15:13.477Z] [SUCCESS] $19 subscription visible after 1 reload(s)
+[2026-07-24T11:15:13.477Z] [SUCCESS] R-08 PASSED: $19 subscription restored — Active Plan billing confirmed
+[2026-07-24T11:15:13.481Z] [STEP] Navigating to Hosting Plan Page
+[2026-07-24T11:15:15.968Z] [SUCCESS] Hosting Plan Page loaded
+[2026-07-24T11:15:15.968Z] [STEP] Verifying Downgrade CTA is visible on Free plan card
+[2026-07-24T11:15:18.178Z] [SUCCESS] Downgrade CTA verified visible
+[2026-07-24T11:15:18.178Z] [STEP] Verifying current plan card shows "Current Plan" (disabled state)
+[2026-07-24T11:15:18.316Z] [SUCCESS] "Current Plan" label verified
+[2026-07-24T11:15:18.316Z] [SUCCESS] R-09 PASSED: "Downgrade" CTA + "Current Plan" confirmed — Active Plan fully active
+[2026-07-24T11:15:18.317Z] [STEP] Verifying Downgrade CTA is visible on Free plan card
+[2026-07-24T11:15:18.554Z] [SUCCESS] Downgrade CTA verified visible
+[2026-07-24T11:15:18.555Z] [SUCCESS] R-10 PASSED: "Downgrade" CTA stable — Active Plan re-activation fully verified

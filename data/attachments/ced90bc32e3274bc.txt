@@ -1,6 +1,0 @@
-[2026-07-15T13:01:25.086Z] [STEP] Navigating to My Groups page
-[2026-07-15T13:01:28.087Z] [STEP] Waiting for My Groups page content
-[2026-07-15T13:01:31.859Z] [STEP] Clicking filter: Following
-[2026-07-15T13:01:32.805Z] [SUCCESS] Filter "Following" clicked
-[2026-07-15T13:01:33.003Z] [STEP] Verifying empty state content
-[2026-07-15T13:01:33.341Z] [SUCCESS] Empty state verified: Connect Stripe + Most Requested Groups + Submit request button

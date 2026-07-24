@@ -1,0 +1,2 @@
+[2026-07-24T11:10:16.209Z] [STEP] Attempting to access protected dashboard URL directly without session
+[2026-07-24T11:10:22.226Z] [SUCCESS] Security Verified: Redirected to login from protected route.

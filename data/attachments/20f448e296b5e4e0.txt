@@ -1,6 +1,0 @@
-[2026-07-15T13:01:17.028Z] [STEP] Navigating to My Groups page
-[2026-07-15T13:01:18.651Z] [STEP] Waiting for My Groups page content
-[2026-07-15T13:01:26.875Z] [STEP] Clicking filter: Joined
-[2026-07-15T13:01:27.521Z] [SUCCESS] Filter "Joined" clicked
-[2026-07-15T13:01:27.623Z] [STEP] Verifying at least one group card is visible
-[2026-07-15T13:01:27.764Z] [SUCCESS] 1 group card(s) confirmed visible

@@ -1,0 +1,9 @@
+[2026-07-24T11:06:07.164Z] [INFO] [leader_active_hosting_plan] Debug - CI: true, Skip: false, File: false at /home/runner/work/playwright-enterprise-framework/playwright-enterprise-framework/storage/auth/leader_active_hosting_plan.json
+[2026-07-24T11:06:07.165Z] [STEP] Logging in as leader_active_hosting_plan
+[2026-07-24T11:06:07.166Z] [STEP] Ensuring clean session state (Force Logout)
+[2026-07-24T11:06:07.174Z] [INFO] Already on an anonymous page. Skipping logout logic.
+[2026-07-24T11:06:07.218Z] [NAV] Navigating to Login
+[2026-07-24T11:06:09.277Z] [INFO] Attempting login for user: pw_auto_mh_active_hosting_plan@mailinator.com | Password: Am123456 (expectSuccess: true)
+[2026-07-24T11:06:18.155Z] [SUCCESS] Login successful. Landed on: https://staging.mentalhappy.com/groups
+[2026-07-24T11:06:23.341Z] [SUCCESS] Login successful and dashboard loaded
+[2026-07-24T11:06:23.659Z] [SUCCESS] leader_active_hosting_plan session captured at Dashboard state.

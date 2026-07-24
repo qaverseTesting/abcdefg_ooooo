@@ -1,0 +1,57 @@
+[2026-07-24T11:16:21.447Z] [STEP] Prerequisite: Setting up new Leader for payment testing
+[2026-07-24T11:16:21.451Z] [STEP] Registering new leader with email: pw_auto_mh_24111621wnpw@mentalhappy.com
+[2026-07-24T11:16:21.452Z] [STEP] Navigating to Registration Page
+[2026-07-24T11:16:22.908Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-07-24T11:16:22.940Z] [SUCCESS] Registration Page loaded
+[2026-07-24T11:16:22.940Z] [STEP] Filling registration form for: pw_auto_mh_24111621wnpw@mentalhappy.com
+[2026-07-24T11:16:25.036Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-07-24T11:16:25.046Z] [STEP] Submitting registration form
+[2026-07-24T11:16:25.394Z] [SUCCESS] Registration form submitted
+[2026-07-24T11:16:25.394Z] [STEP] Waiting for OTP entry page to be ready
+[2026-07-24T11:16:31.594Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-07-24T11:16:31.595Z] [INFO] [OTP] Bypass active for pw_auto_mh_24111621wnpw@mentalhappy.com. Returning fixed validation code: 456321
+[2026-07-24T11:16:31.615Z] [STEP] Entering OTP: 456321
+[2026-07-24T11:16:31.615Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-07-24T11:16:32.113Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-07-24T11:16:32.419Z] [SUCCESS] OTP entered
+[2026-07-24T11:16:32.419Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-07-24T11:16:32.423Z] [ASSERT] Verifying toast message matching: /Email Verified Successfully/i
+[2026-07-24T11:16:33.732Z] [SUCCESS] Leader registration and OTP verification completed
+[2026-07-24T11:16:33.732Z] [STEP] Selecting Leader role on Welcome page
+[2026-07-24T11:16:33.732Z] [STEP] Verifying Welcome Page is displayed
+[2026-07-24T11:16:33.732Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-07-24T11:16:34.210Z] [SUCCESS] Welcome Page verification successful (Role buttons visible)
+[2026-07-24T11:16:34.211Z] [STEP] Selecting path: Continue as a Group Leader
+[2026-07-24T11:16:34.211Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-07-24T11:16:34.565Z] [INFO] Clicked Continue as a Group Leader
+[2026-07-24T11:16:34.614Z] [SUCCESS] Group Leader path selected
+[2026-07-24T11:16:34.614Z] [STEP] Clicking Welcome Continue button
+[2026-07-24T11:16:34.614Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-07-24T11:16:35.090Z] [SUCCESS] Welcome Continue clicked
+[2026-07-24T11:16:35.090Z] [SUCCESS] Leader role selection completed
+[2026-07-24T11:16:35.091Z] [STEP] Completing Leader onboarding via SKIP path
+[2026-07-24T11:16:35.091Z] [STEP] Completing Leader onboarding via SKIP (Deep Check Flow)
+[2026-07-24T11:16:35.126Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-07-24T11:16:35.157Z] [INFO] Checking for Screen 2 (Survey) Skip option...
+[2026-07-24T11:16:35.182Z] [STEP] Clicking Onboarding Skip button
+[2026-07-24T11:16:35.183Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-07-24T11:16:39.025Z] [SUCCESS] Onboarding cleared successfully
+[2026-07-24T11:16:39.025Z] [SUCCESS] Leader onboarding (Skip) completed
+[2026-07-24T11:16:39.026Z] [STEP] Selecting Active Plan ($19)
+[2026-07-24T11:16:39.028Z] [STEP] Verifying Hosting Plan page content
+[2026-07-24T11:16:42.321Z] [SUCCESS] Hosting Plan page verification successful
+[2026-07-24T11:16:42.322Z] [STEP] Selecting Active Group Plan
+[2026-07-24T11:16:42.597Z] [STEP] Clicking Pay Now
+[2026-07-24T11:16:48.175Z] [SUCCESS] Plan selected, landing on Stripe Checkout
+[2026-07-24T11:16:50.454Z] [STEP] Testing Declined Card scenario
+[2026-07-24T11:16:50.454Z] [STEP] Completing Stripe Payment
+[2026-07-24T11:16:50.455Z] [STEP] Verifying Stripe form visibility
+[2026-07-24T11:16:50.846Z] [SUCCESS] Stripe form verified
+[2026-07-24T11:16:50.846Z] [STEP] Filling Stripe payment details
+[2026-07-24T11:16:50.870Z] [STEP] Selecting country: US
+[2026-07-24T11:16:55.275Z] [SUCCESS] Stripe payment details filled
+[2026-07-24T11:16:55.275Z] [STEP] Submitting payment
+[2026-07-24T11:17:00.919Z] [SUCCESS] Payment submitted
+[2026-07-24T11:17:00.919Z] [SUCCESS] Stripe payment submitted
+[2026-07-24T11:17:00.919Z] [STEP] Verifying declined card error
+[2026-07-24T11:17:00.975Z] [SUCCESS] Declined card error verified
