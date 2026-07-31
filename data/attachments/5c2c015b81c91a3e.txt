@@ -1,0 +1,9 @@
+[2026-07-31T12:19:25.765Z] [STEP] Logging in as leader
+[2026-07-31T12:19:25.774Z] [STEP] Logging in as leader
+[2026-07-31T12:19:25.775Z] [STEP] Ensuring clean session state (Force Logout)
+[2026-07-31T12:19:25.775Z] [INFO] Already on an anonymous page. Skipping logout logic.
+[2026-07-31T12:19:25.864Z] [NAV] Navigating to Login
+[2026-07-31T12:19:27.995Z] [INFO] Attempting login for user: pw_auto_mh_leader@mailinator.com | Password: Am123456 (expectSuccess: true)
+[2026-07-31T12:19:33.876Z] [SUCCESS] Login successful. Landed on: https://staging.mentalhappy.com/groups
+[2026-07-31T12:19:33.876Z] [STEP] Checking the chat button is still visible after login
+[2026-07-31T12:19:34.256Z] [SUCCESS] Chat button is visible after logging in

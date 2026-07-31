@@ -1,0 +1,63 @@
+[2026-07-31T12:18:25.214Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-07-31T12:18:26.115Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-07-31T12:18:26.115Z] [STEP] Verifying Plan & Billing page content
+[2026-07-31T12:18:29.306Z] [SUCCESS] Plan & Billing page verified
+[2026-07-31T12:18:29.307Z] [STEP] Verifying $19 subscription is NOT visible (plan no longer active)
+[2026-07-31T12:18:29.389Z] [SUCCESS] $19 subscription confirmed absent — billing state correct
+[2026-07-31T12:18:29.389Z] [SUCCESS] R-01 PASSED: No $19 subscription — Listing plan starting state confirmed
+[2026-07-31T12:18:29.390Z] [STEP] Clicking Change Plan → navigating to Hosting Plan page
+[2026-07-31T12:18:29.928Z] [SUCCESS] Redirected to Hosting Plan page
+[2026-07-31T12:18:29.928Z] [STEP] Verifying Hosting Plan page content
+[2026-07-31T12:18:30.974Z] [SUCCESS] Hosting Plan page verification successful
+[2026-07-31T12:18:30.974Z] [SUCCESS] R-02 PASSED: Redirected to Hosting Plan page
+[2026-07-31T12:18:30.975Z] [STEP] Verifying current plan card shows "Current Plan" (disabled state)
+[2026-07-31T12:18:31.154Z] [SUCCESS] "Current Plan" label verified
+[2026-07-31T12:18:31.154Z] [SUCCESS] R-03 PASSED: "Current Plan" label confirmed — Listing is current
+[2026-07-31T12:18:31.155Z] [STEP] Verifying Active Plan CTA is visible (user is on Listing plan)
+[2026-07-31T12:18:31.297Z] [SUCCESS] Active Plan CTA verified visible
+[2026-07-31T12:18:31.297Z] [SUCCESS] R-04 PASSED: "Upgrade to Active Group" CTA visible and available
+[2026-07-31T12:18:31.299Z] [STEP] Selecting Active Group Plan
+[2026-07-31T12:18:31.625Z] [STEP] Verifying Pay Now button is visible after plan selection
+[2026-07-31T12:18:37.168Z] [SUCCESS] Pay Now button verified visible
+[2026-07-31T12:18:37.168Z] [SUCCESS] R-05 PASSED: "Pay Now" button appeared after Active Plan selection
+[2026-07-31T12:18:37.168Z] [STEP] Clicking Pay Now
+[2026-07-31T12:18:40.896Z] [STEP] Verifying Stripe form visibility
+[2026-07-31T12:18:42.806Z] [SUCCESS] Stripe form verified
+[2026-07-31T12:18:42.807Z] [SUCCESS] R-06 PASSED: Stripe checkout form loaded successfully
+[2026-07-31T12:18:42.807Z] [STEP] Completing Stripe Payment
+[2026-07-31T12:18:42.807Z] [STEP] Verifying Stripe form visibility
+[2026-07-31T12:18:43.437Z] [SUCCESS] Stripe form verified
+[2026-07-31T12:18:43.438Z] [STEP] Filling Stripe payment details
+[2026-07-31T12:18:43.625Z] [STEP] Selecting country: US
+[2026-07-31T12:18:44.044Z] [SUCCESS] Country settled on US
+[2026-07-31T12:18:51.002Z] [SUCCESS] Stripe payment details filled
+[2026-07-31T12:18:51.002Z] [STEP] Submitting payment
+[2026-07-31T12:18:51.616Z] [SUCCESS] Payment submitted
+[2026-07-31T12:18:51.616Z] [SUCCESS] Stripe payment submitted
+[2026-07-31T12:18:51.616Z] [STEP] Verifying Plan Change Payment — waiting for app redirect
+[2026-07-31T12:18:51.654Z] [INFO] Post-payment landing: https://staging.mentalhappy.com/welcome/hosting-payment?plan=ACTIVE_GROUP&period=monthly&returnTo=%2Fuser%2Fprofile%2Fplan-billing
+[2026-07-31T12:18:51.654Z] [SUCCESS] Plan param confirmed: "plan=ACTIVE_GROUP" found in redirect URL
+[2026-07-31T12:18:51.956Z] [SUCCESS] Plan change payment confirmed
+[2026-07-31T12:18:51.956Z] [SUCCESS] R-07 PASSED: Payment complete — plan=ACTIVE_GROUP confirmed in redirect URL
+[2026-07-31T12:18:51.957Z] [STEP] Waiting for $19 subscription to appear after payment (up to 50s)
+[2026-07-31T12:18:51.957Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-07-31T12:18:53.352Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-07-31T12:18:53.352Z] [STEP] Verifying Plan & Billing page content
+[2026-07-31T12:18:56.495Z] [SUCCESS] Plan & Billing page verified
+[2026-07-31T12:18:56.545Z] [INFO] Attempt 1/10: $19 not yet visible — waiting 5s before reload
+[2026-07-31T12:19:01.565Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-07-31T12:19:02.513Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-07-31T12:19:02.513Z] [STEP] Verifying Plan & Billing page content
+[2026-07-31T12:19:04.508Z] [SUCCESS] Plan & Billing page verified
+[2026-07-31T12:19:04.543Z] [SUCCESS] $19 subscription visible after 2 reload(s)
+[2026-07-31T12:19:04.543Z] [SUCCESS] R-08 PASSED: $19 subscription restored — Active Plan billing confirmed
+[2026-07-31T12:19:04.543Z] [STEP] Navigating to Hosting Plan Page
+[2026-07-31T12:19:05.725Z] [SUCCESS] Hosting Plan Page loaded
+[2026-07-31T12:19:05.725Z] [STEP] Verifying Downgrade CTA is visible on Free plan card
+[2026-07-31T12:19:07.806Z] [SUCCESS] Downgrade CTA verified visible
+[2026-07-31T12:19:07.806Z] [STEP] Verifying current plan card shows "Current Plan" (disabled state)
+[2026-07-31T12:19:07.973Z] [SUCCESS] "Current Plan" label verified
+[2026-07-31T12:19:07.973Z] [SUCCESS] R-09 PASSED: "Downgrade" CTA + "Current Plan" confirmed — Active Plan fully active
+[2026-07-31T12:19:07.973Z] [STEP] Verifying Downgrade CTA is visible on Free plan card
+[2026-07-31T12:19:08.030Z] [SUCCESS] Downgrade CTA verified visible
+[2026-07-31T12:19:08.030Z] [SUCCESS] R-10 PASSED: "Downgrade" CTA stable — Active Plan re-activation fully verified

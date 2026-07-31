@@ -1,6 +1,0 @@
-[2026-07-24T11:17:56.796Z] [STEP] Navigating to My Groups page
-[2026-07-24T11:17:59.601Z] [STEP] Waiting for My Groups page content
-[2026-07-24T11:18:04.712Z] [STEP] Clicking filter: Following
-[2026-07-24T11:18:05.099Z] [SUCCESS] Filter "Following" clicked
-[2026-07-24T11:18:05.164Z] [STEP] Verifying at least one group card is visible
-[2026-07-24T11:18:05.263Z] [SUCCESS] 1 group card(s) confirmed visible

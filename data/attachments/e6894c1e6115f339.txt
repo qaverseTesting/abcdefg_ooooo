@@ -1,0 +1,20 @@
+[2026-07-31T12:20:14.664Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-07-31T12:20:15.573Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-07-31T12:20:15.573Z] [STEP] Verifying Plan & Billing page content
+[2026-07-31T12:20:18.693Z] [SUCCESS] Plan & Billing page verified
+[2026-07-31T12:20:18.693Z] [STEP] Verifying subscription with price $49 is visible
+[2026-07-31T12:20:18.811Z] [SUCCESS] Subscription details verified
+[2026-07-31T12:20:18.811Z] [SUCCESS] PC-01 PASSED: $49 Multi-Group subscription confirmed active
+[2026-07-31T12:20:18.812Z] [STEP] Opening plan-level "Subscription options" menu → "Cancel Subscription"
+[2026-07-31T12:20:19.812Z] [ASSERT] "Cancel Subscription?" confirmation modal is visible
+[2026-07-31T12:20:20.036Z] [ASSERT] Cancel-subscription consequence warnings are visible
+[2026-07-31T12:20:20.174Z] [SUCCESS] PC-02 PASSED: "Cancel Subscription?" modal + warnings verified
+[2026-07-31T12:20:20.175Z] [STEP] Confirming "Cancel Subscription" — canceling the whole plan
+[2026-07-31T12:20:22.303Z] [SUCCESS] Subscription cancellation confirmed — modal dismissed
+[2026-07-31T12:20:22.303Z] [SUCCESS] PC-03 PASSED: subscription cancellation confirmed
+[2026-07-31T12:20:22.305Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-07-31T12:20:23.070Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-07-31T12:20:23.070Z] [STEP] Verifying Plan & Billing page content
+[2026-07-31T12:20:25.573Z] [SUCCESS] Plan & Billing page verified
+[2026-07-31T12:20:25.575Z] [ASSERT] Plan card shows "Listing Group" (subscription canceled / downgraded to Listing)
+[2026-07-31T12:20:25.641Z] [SUCCESS] PC-04 PASSED: subscription canceled — plan downgraded to Listing Group
