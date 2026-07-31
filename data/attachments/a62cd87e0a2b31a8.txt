@@ -1,0 +1,11 @@
+[2026-07-31T12:21:39.156Z] [STEP] Opening dashboard
+[2026-07-31T12:21:42.654Z] [STEP] Searching for group: PW_Group_20260731_122023_w13r00805eh
+[2026-07-31T12:21:50.234Z] [STEP] Verifying group card content for: PW_Group_20260731_122023_w13r00805eh
+[2026-07-31T12:21:53.689Z] [SUCCESS] Group card content verified: PW_Group_20260731_122023_w13r00805eh
+[2026-07-31T12:21:53.690Z] [STEP] Verifying group side panel is visible
+[2026-07-31T12:21:53.793Z] [INFO] Side panel not open — clicking card to open: PW_Group_20260731_122023_w13r00805eh
+[2026-07-31T12:21:53.793Z] [STEP] Clicking group card: PW_Group_20260731_122023_w13r00805eh
+[2026-07-31T12:21:54.613Z] [SUCCESS] Group card clicked: PW_Group_20260731_122023_w13r00805eh
+[2026-07-31T12:21:54.806Z] [SUCCESS] Group side panel opened
+[2026-07-31T12:21:54.807Z] [ASSERT] Verifying member-facing price "$10/month" for group: PW_Group_20260731_122023_w13r00805eh
+[2026-07-31T12:21:55.138Z] [SUCCESS] Member-facing price verified: $10/month

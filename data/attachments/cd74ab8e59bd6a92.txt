@@ -1,0 +1,20 @@
+[2026-07-31T12:23:11.735Z] [STEP] Navigating to My Groups page
+[2026-07-31T12:23:14.029Z] [STEP] Waiting for My Groups page content
+[2026-07-31T12:23:16.666Z] [STEP] Clicking Joined filter
+[2026-07-31T12:23:16.953Z] [SUCCESS] Joined filter clicked
+[2026-07-31T12:23:16.953Z] [STEP] Clicking on group: AMActiveGroup
+[2026-07-31T12:23:17.924Z] [SUCCESS] Group "AMActiveGroup" clicked
+[2026-07-31T12:23:17.932Z] [STEP] Verifying chat page has loaded correctly
+[2026-07-31T12:23:20.976Z] [SUCCESS] Chat page layout is visible
+[2026-07-31T12:23:21.043Z] [SUCCESS] Chat page opened for expected group: AMActiveGroup
+[2026-07-31T12:23:24.064Z] [INFO] No announcement banner present
+[2026-07-31T12:23:24.064Z] [STEP] Entering chat message: PW_Chat_20260731_122311_w16r0723y9n
+[2026-07-31T12:23:25.191Z] [STEP] Clicking on Send button
+[2026-07-31T12:23:25.289Z] [STEP] Verifying chat message is visible: PW_Chat_20260731_122311_w16r0723y9n
+[2026-07-31T12:23:26.624Z] [SUCCESS] Chat message is visible
+[2026-07-31T12:23:26.625Z] [INFO] Member sent message: PW_Chat_20260731_122311_w16r0723y9n
+[2026-07-31T12:23:26.626Z] [STEP] Navigating to My Groups page
+[2026-07-31T12:23:28.300Z] [STEP] Waiting for My Groups page content
+[2026-07-31T12:23:31.078Z] [STEP] Clicking Joined filter
+[2026-07-31T12:23:31.436Z] [SUCCESS] Joined filter clicked
+[2026-07-31T12:23:31.437Z] [STEP] Clicking on group: AMActiveGroup

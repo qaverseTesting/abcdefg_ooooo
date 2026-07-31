@@ -1,0 +1,24 @@
+[2026-07-31T12:21:12.040Z] [INFO] [PRICING INIT] - Carry-forward journey for Group: PW_Group_20260731_122023_w13r00805eh
+[2026-07-31T12:21:12.955Z] [STEP] Opening group Settings tab for: pw_group_20260731_122023_w13r00805eh
+[2026-07-31T12:21:22.784Z] [SUCCESS] Group Settings tab loaded
+[2026-07-31T12:21:22.788Z] [ASSERT] Verifying group pricing model summary is: Free
+[2026-07-31T12:21:22.900Z] [SUCCESS] Pricing model summary verified: Free
+[2026-07-31T12:21:22.909Z] [STEP] Clicking "Change Pricing Model"
+[2026-07-31T12:21:23.303Z] [SUCCESS] "Change Pricing Model" clicked
+[2026-07-31T12:21:23.303Z] [STEP] Verifying Update Group Pricing page loaded
+[2026-07-31T12:21:25.648Z] [SUCCESS] Update Group Pricing page loaded
+[2026-07-31T12:21:25.648Z] [STEP] Selecting "Monthly Subscription" pricing model
+[2026-07-31T12:21:26.125Z] [SUCCESS] Monthly Subscription selected
+[2026-07-31T12:21:26.125Z] [STEP] Entering monthly price: $10
+[2026-07-31T12:21:26.407Z] [SUCCESS] Monthly price set to $10
+[2026-07-31T12:21:26.407Z] [STEP] Clicking "Update Pricing"
+[2026-07-31T12:21:26.979Z] [SUCCESS] "Update Pricing" clicked — confirmation dialog opened
+[2026-07-31T12:21:26.979Z] [ASSERT] Verifying pricing confirmation dialog: You're changing from Free to Monthly Paid
+[2026-07-31T12:21:27.068Z] [SUCCESS] Pricing confirmation dialog verified
+[2026-07-31T12:21:27.068Z] [STEP] Clicking "Apply Changes"
+[2026-07-31T12:21:28.329Z] [SUCCESS] "Apply Changes" clicked — confirmation dialog closed
+[2026-07-31T12:21:28.330Z] [ASSERT] Verifying toast message matching: Your group pricing has been successfully updated from Free to Monthly Paid.
+[2026-07-31T12:21:31.551Z] [STEP] Opening group Settings tab for: pw_group_20260731_122023_w13r00805eh
+[2026-07-31T12:21:38.754Z] [SUCCESS] Group Settings tab loaded
+[2026-07-31T12:21:38.757Z] [ASSERT] Verifying monthly pricing summary: Monthly Paid $10/Month
+[2026-07-31T12:21:39.043Z] [SUCCESS] Monthly pricing summary verified: $10/Month
