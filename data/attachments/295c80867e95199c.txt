@@ -1,0 +1,75 @@
+[2026-08-13T16:16:52.359Z] [INFO] [LIFECYCLE] Shared context initialised — Multi-Group ($49) + 3 groups starting state
+[2026-08-13T16:16:52.697Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-08-13T16:16:54.631Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-08-13T16:16:54.631Z] [STEP] Verifying Plan & Billing page content
+[2026-08-13T16:17:00.985Z] [SUCCESS] Plan & Billing page verified
+[2026-08-13T16:17:00.989Z] [STEP] Verifying subscription with price $49 is visible
+[2026-08-13T16:17:01.312Z] [SUCCESS] Subscription details verified
+[2026-08-13T16:17:01.312Z] [SUCCESS] MGD-01 PASSED: $49 Multi-Group Plan confirmed on Plan & Billing
+[2026-08-13T16:17:01.313Z] [STEP] Clicking Change Plan → navigating to Hosting Plan page
+[2026-08-13T16:17:02.076Z] [SUCCESS] Redirected to Hosting Plan page
+[2026-08-13T16:17:02.076Z] [STEP] Verifying Hosting Plan page content
+[2026-08-13T16:17:02.744Z] [SUCCESS] Hosting Plan page verification successful
+[2026-08-13T16:17:02.744Z] [STEP] Verifying current plan card shows "Current Plan" (disabled state)
+[2026-08-13T16:17:02.930Z] [SUCCESS] "Current Plan" label verified
+[2026-08-13T16:17:02.930Z] [SUCCESS] MGD-02 PASSED: Hosting Plan loaded — Multi-Group is the current plan
+[2026-08-13T16:17:02.942Z] [STEP] Verifying "Downgrade" CTA is visible on the Active Group ($19) card (user is on Multi-Group)
+[2026-08-13T16:17:03.301Z] [SUCCESS] "Downgrade" CTA on Active Group card verified visible
+[2026-08-13T16:17:03.302Z] [STEP] Clicking Downgrade on the Active Group card — expecting group-selection page
+[2026-08-13T16:17:03.900Z] [SUCCESS] Downgrade (to Active) clicked — expecting group-selection page
+[2026-08-13T16:17:03.900Z] [STEP] Verifying Multi-Group downgrade selection page loaded
+[2026-08-13T16:17:06.114Z] [SUCCESS] Multi-Group downgrade selection page verified
+[2026-08-13T16:17:06.114Z] [SUCCESS] MGD-03 PASSED: Group-selection page loaded ("Downgrade to 1 Active Group Plan")
+[2026-08-13T16:17:06.114Z] [ASSERT] Downgrade consequence warnings are visible
+[2026-08-13T16:17:06.482Z] [SUCCESS] MGD-04 PASSED: Downgrade consequence warnings confirmed visible
+[2026-08-13T16:17:06.482Z] [ASSERT] "Delete & Downgrade" action is disabled (insufficient selection)
+[2026-08-13T16:17:06.518Z] [SUCCESS] MGD-05 PASSED: "Delete & Downgrade" disabled with 0 groups selected
+[2026-08-13T16:17:06.541Z] [INFO] Required groups to delete: 2
+[2026-08-13T16:17:06.542Z] [STEP] Selecting 1 group(s) for deletion
+[2026-08-13T16:17:06.687Z] [INFO] Selected group: PW_Group_20260813_160714_w10r0542afn
+[2026-08-13T16:17:06.691Z] [SUCCESS] Selected 1 group(s): PW_Group_20260813_160714_w10r0542afn
+[2026-08-13T16:17:06.691Z] [ASSERT] "Delete & Downgrade" action is disabled (insufficient selection)
+[2026-08-13T16:17:06.732Z] [SUCCESS] MGD-06 PASSED: action still disabled with 1/2 selected
+[2026-08-13T16:17:06.732Z] [STEP] Selecting 2 group(s) for deletion
+[2026-08-13T16:17:06.878Z] [INFO] Selected group: PW_Group_20260813_160714_w10r0542afn
+[2026-08-13T16:17:07.244Z] [INFO] Selected group: PW_Group_20260813_160650_w10r02471ma
+[2026-08-13T16:17:07.244Z] [SUCCESS] Selected 2 group(s): PW_Group_20260813_160714_w10r0542afn, PW_Group_20260813_160650_w10r02471ma
+[2026-08-13T16:17:07.245Z] [ASSERT] "Delete & Downgrade" action is enabled (required selection met)
+[2026-08-13T16:17:07.306Z] [SUCCESS] MGD-07 PASSED: action enabled with 2 groups selected: PW_Group_20260813_160714_w10r0542afn, PW_Group_20260813_160650_w10r02471ma
+[2026-08-13T16:17:07.307Z] [STEP] Unselecting group checkbox #1
+[2026-08-13T16:17:07.594Z] [ASSERT] "Delete & Downgrade" action is disabled (insufficient selection)
+[2026-08-13T16:17:07.629Z] [STEP] Selecting group checkbox #1
+[2026-08-13T16:17:07.986Z] [ASSERT] "Delete & Downgrade" action is enabled (required selection met)
+[2026-08-13T16:17:08.055Z] [SUCCESS] MGD-07b PASSED: action re-disabled on deselect and re-enabled on reselect
+[2026-08-13T16:17:08.056Z] [STEP] Clicking "Delete & Downgrade N Groups" — expecting confirmation modal
+[2026-08-13T16:17:08.771Z] [SUCCESS] "Delete & Downgrade" clicked — expecting confirmation modal
+[2026-08-13T16:17:08.771Z] [STEP] Verifying Multi-Group downgrade confirmation modal content
+[2026-08-13T16:17:09.298Z] [SUCCESS] Confirmation modal verified
+[2026-08-13T16:17:09.298Z] [SUCCESS] MGD-08 PASSED: confirmation modal displayed with title, policy text, and confirm button
+[2026-08-13T16:17:09.298Z] [ASSERT] Confirmation modal lists the 2 selected group(s)
+[2026-08-13T16:17:09.543Z] [SUCCESS] MGD-09 PASSED: modal lists the selected groups: PW_Group_20260813_160714_w10r0542afn, PW_Group_20260813_160650_w10r02471ma
+[2026-08-13T16:17:09.551Z] [STEP] Clicking Cancel on the downgrade confirmation modal
+[2026-08-13T16:17:10.168Z] [ASSERT] "Delete & Downgrade" action is enabled (required selection met)
+[2026-08-13T16:17:10.206Z] [STEP] Clicking "Delete & Downgrade N Groups" — expecting confirmation modal
+[2026-08-13T16:17:10.411Z] [SUCCESS] "Delete & Downgrade" clicked — expecting confirmation modal
+[2026-08-13T16:17:10.411Z] [STEP] Verifying Multi-Group downgrade confirmation modal content
+[2026-08-13T16:17:10.776Z] [SUCCESS] Confirmation modal verified
+[2026-08-13T16:17:10.776Z] [SUCCESS] MGD-09b PASSED: Cancel dismissed the modal without downgrading; re-opened to proceed
+[2026-08-13T16:17:10.783Z] [STEP] Clicking "Delete & Downgrade" — confirming Multi-Group downgrade
+[2026-08-13T16:17:14.263Z] [SUCCESS] Downgrade confirmed — modal dismissed
+[2026-08-13T16:17:14.329Z] [SUCCESS] Downgrade success toast observed
+[2026-08-13T16:17:14.329Z] [SUCCESS] MGD-10 PASSED: downgrade confirmed — modal dismissed
+[2026-08-13T16:17:14.330Z] [STEP] Waiting for $19 subscription to appear after payment (up to 50s)
+[2026-08-13T16:17:14.330Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-08-13T16:17:16.138Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-08-13T16:17:16.138Z] [STEP] Verifying Plan & Billing page content
+[2026-08-13T16:17:20.807Z] [SUCCESS] Plan & Billing page verified
+[2026-08-13T16:17:20.914Z] [SUCCESS] $19 subscription visible after 1 reload(s)
+[2026-08-13T16:17:20.914Z] [STEP] Verifying $49 subscription is NOT visible (plan no longer active)
+[2026-08-13T16:17:21.068Z] [SUCCESS] $49 subscription confirmed absent — billing state correct
+[2026-08-13T16:17:21.068Z] [SUCCESS] MGD-11 PASSED: plan downgraded — $19 Active active, $49 Multi-Group absent
+[2026-08-13T16:17:21.069Z] [STEP] Verifying 2 group(s) are absent from My Groups
+[2026-08-13T16:17:21.069Z] [STEP] Navigating to My Groups page
+[2026-08-13T16:17:23.030Z] [STEP] Waiting for My Groups page content
+[2026-08-13T16:17:28.818Z] [SUCCESS] Confirmed: selected group(s) removed from My Groups
+[2026-08-13T16:17:28.818Z] [SUCCESS] MGD-12 PASSED: selected groups removed from My Groups

@@ -1,0 +1,29 @@
+[2026-08-13T16:20:38.511Z] [STEP] Opening group Settings tab for: pw_group_20260813_161812_w24r0001ejs
+[2026-08-13T16:20:47.983Z] [SUCCESS] Group Settings tab loaded
+[2026-08-13T16:20:47.984Z] [STEP] Clicking "Change Pricing Model"
+[2026-08-13T16:20:48.566Z] [SUCCESS] "Change Pricing Model" clicked
+[2026-08-13T16:20:48.566Z] [STEP] Verifying Update Group Pricing page loaded
+[2026-08-13T16:20:51.170Z] [SUCCESS] Update Group Pricing page loaded
+[2026-08-13T16:20:51.171Z] [STEP] Selecting "Monthly Subscription" pricing model
+[2026-08-13T16:20:51.796Z] [SUCCESS] Monthly Subscription selected
+[2026-08-13T16:20:51.796Z] [ASSERT] Verifying monthly price input min/max/step constraints
+[2026-08-13T16:20:51.999Z] [SUCCESS] Monthly price input constraints verified
+[2026-08-13T16:20:51.999Z] [STEP] Selecting "One-Time Payment" pricing model
+[2026-08-13T16:20:52.927Z] [SUCCESS] One-Time Payment selected
+[2026-08-13T16:20:52.927Z] [ASSERT] Verifying one-time price input min/max/step constraints
+[2026-08-13T16:20:53.151Z] [SUCCESS] One-time price input constraints verified
+[2026-08-13T16:20:53.152Z] [STEP] Selecting "Monthly Subscription" pricing model
+[2026-08-13T16:20:53.467Z] [SUCCESS] Monthly Subscription selected
+[2026-08-13T16:20:53.468Z] [STEP] Clearing monthly price input
+[2026-08-13T16:20:53.653Z] [SUCCESS] Monthly price input cleared
+[2026-08-13T16:20:53.653Z] [ASSERT] Verifying "Update Pricing" is disabled
+[2026-08-13T16:20:53.741Z] [SUCCESS] "Update Pricing" is disabled as expected
+[2026-08-13T16:20:53.741Z] [STEP] Entering monthly price: $10
+[2026-08-13T16:20:54.113Z] [SUCCESS] Monthly price set to $10
+[2026-08-13T16:20:54.113Z] [STEP] Clicking "Update Pricing"
+[2026-08-13T16:20:55.178Z] [SUCCESS] "Update Pricing" clicked — confirmation dialog opened
+[2026-08-13T16:20:55.178Z] [STEP] Clicking "Cancel" on the pricing confirmation dialog
+[2026-08-13T16:20:56.418Z] [SUCCESS] Confirmation dialog dismissed via Cancel — no change applied
+[2026-08-13T16:20:56.418Z] [STEP] Verifying Update Group Pricing page loaded
+[2026-08-13T16:20:56.611Z] [SUCCESS] Update Group Pricing page loaded
+[2026-08-13T16:20:56.611Z] [SUCCESS] [PRICING JOURNEY VERIFIED] - Group: PW_Group_20260813_161812_w24r0001ejs

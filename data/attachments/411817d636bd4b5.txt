@@ -1,0 +1,11 @@
+[2026-08-13T16:20:20.857Z] [STEP] Opening dashboard
+[2026-08-13T16:20:23.070Z] [STEP] Searching for group: PW_Group_20260813_161812_w24r0001ejs
+[2026-08-13T16:20:33.574Z] [STEP] Verifying group card content for: PW_Group_20260813_161812_w24r0001ejs
+[2026-08-13T16:20:36.824Z] [SUCCESS] Group card content verified: PW_Group_20260813_161812_w24r0001ejs
+[2026-08-13T16:20:36.824Z] [STEP] Verifying group side panel is visible
+[2026-08-13T16:20:36.955Z] [INFO] Side panel not open — clicking card to open: PW_Group_20260813_161812_w24r0001ejs
+[2026-08-13T16:20:36.955Z] [STEP] Clicking group card: PW_Group_20260813_161812_w24r0001ejs
+[2026-08-13T16:20:37.740Z] [SUCCESS] Group card clicked: PW_Group_20260813_161812_w24r0001ejs
+[2026-08-13T16:20:38.010Z] [SUCCESS] Group side panel opened
+[2026-08-13T16:20:38.010Z] [ASSERT] Verifying member-facing one-time price "$10 One time" for group: PW_Group_20260813_161812_w24r0001ejs
+[2026-08-13T16:20:38.402Z] [SUCCESS] Member-facing one-time price verified: $10 One time

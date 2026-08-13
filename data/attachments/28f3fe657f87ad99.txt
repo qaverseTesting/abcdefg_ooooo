@@ -1,0 +1,17 @@
+[2026-08-13T16:08:07.985Z] [INFO] [ResetLink] Requesting password reset link for mh_forgotpass@mailinator.com via Mailinator
+[2026-08-13T16:08:08.221Z] [STEP] Opening Mailinator inbox: https://www.mailinator.com/v4/public/inboxes.jsp?to=mh_forgotpass
+[2026-08-13T16:08:10.328Z] [SUCCESS] Mailinator inbox loaded
+[2026-08-13T16:08:10.331Z] [STEP] Searching for keywords: reset, password, forgot in Inbox: https://www.mailinator.com/v4/public/inboxes.jsp?to=mh_forgotpass (Timeout: 90000ms)
+[2026-08-13T16:08:11.132Z] [SUCCESS] Matched email: "	MentalHappy	Password reset requested	just now..."
+[2026-08-13T16:08:11.776Z] [INFO] Message body rendered in iframe: #html_msg_body
+[2026-08-13T16:08:11.776Z] [STEP] Clicking reset link
+[2026-08-13T16:08:12.025Z] [INFO] Message body rendered in iframe: #html_msg_body
+[2026-08-13T16:08:12.163Z] [INFO] Using iframe: #html_msg_body
+[2026-08-13T16:08:12.338Z] [INFO] Clicking Reset Link found in iframe: https://u8010474.ct.sendgrid.net/ls/click?upn=u001.amIoa00VBXzGb-2FR7MbBTTvTrJY0ZFEJduoZ1A0YFR3-2F9UZqpIx-2BOJr6saQIiOrWnMozYcnRvgGowFr-2FQ8cUjPnXecfiVc3dQ73lMx-2B7nGKOxVYv-2F7YoTNsXKBhXnXREBrzSv_Ibx7e5gfWGG-2BSRiyYnbQWVrCwy-2Bsm-2Fu7cGvL7Rfj79jfxywfBnN-2BhzmEaRSIY4vw-2B8qofTDOwhUpHzzZmCT3uUiY3740kBPuYHxJ6-2FIfj-2FfuxJf5EpjGQakpbsn2-2B7kUvp02WUXUdO2dy7DOXIrirtiRG77Vf-2FA6Jxf30yCGNjEDJUPGJ-2BXvZRShIBVm4aqvqNctCQUAOoOXsPWPKDqLdzTfgmUE0DPegBXA1JykzP-2BvVPwl4mnLSUQhGR4GyBfAxw16uVgyljMzLzW07IioVjy8PoicRUTv0rvHn-2BglLn561nwyVuHqZuvw559ISUUZ-2BbYZ4PH0C1jySUS1Cy3kfX05SJ-2FTmLm87X-2FBTPAS2Yx4fNT-2BTpJ9n2MBMJH9OUIL
+[2026-08-13T16:08:12.474Z] [SUCCESS] Reset link interaction completed
+[2026-08-13T16:08:15.202Z] [SUCCESS] Reset page identified: https://staging.mentalhappy.com/reset/4fb6e73a-a556-4c40-8a2a-8fb85e447d36
+[2026-08-13T16:08:18.499Z] [INFO] Entering new password: TestPassword123!
+[2026-08-13T16:08:19.033Z] [INFO] Entering confirm password
+[2026-08-13T16:08:19.378Z] [INFO] Clicking Confirm Password button
+[2026-08-13T16:08:19.883Z] [ASSERT] Verifying toast message matching: Success: Password Changed Successfully
+[2026-08-13T16:08:21.091Z] [SUCCESS] Password updated successfully
