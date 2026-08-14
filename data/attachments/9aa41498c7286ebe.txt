@@ -1,6 +1,0 @@
-[2026-08-14T12:14:22.694Z] [INFO] [LIFECYCLE] Shared context initialised — Active Plan ($19) starting state
-[2026-08-14T12:14:22.964Z] [STEP] Navigating to Profile → Plan & Billing
-[2026-08-14T12:14:25.008Z] [SUCCESS] Profile Plan & Billing page loaded
-[2026-08-14T12:14:25.008Z] [STEP] Verifying Plan & Billing page content
-[2026-08-14T12:14:29.848Z] [SUCCESS] Plan & Billing page verified
-[2026-08-14T12:14:29.849Z] [STEP] Verifying subscription with price $19 is visible

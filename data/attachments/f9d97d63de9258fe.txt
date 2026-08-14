@@ -1,0 +1,8 @@
+[2026-08-14T12:58:39.131Z] [STEP] Ensuring clean session state (Force Logout)
+[2026-08-14T12:58:39.131Z] [INFO] Already on an anonymous page. Skipping logout logic.
+[2026-08-14T12:58:39.139Z] [NAV] Navigating to Registration
+[2026-08-14T12:58:44.505Z] [SUCCESS] Password visibility verified as hidden
+[2026-08-14T12:58:44.505Z] [STEP] Toggling password visibility
+[2026-08-14T12:58:44.833Z] [SUCCESS] Password visibility verified as visible
+[2026-08-14T12:58:44.833Z] [STEP] Toggling password visibility
+[2026-08-14T12:58:45.072Z] [SUCCESS] Password visibility verified as hidden

@@ -1,0 +1,189 @@
+[2026-08-14T13:03:09.884Z] [STEP] Registering new leader with email: pw_auto_mh_141303091hju@mentalhappy.com
+[2026-08-14T13:03:09.885Z] [STEP] Navigating to Registration Page
+[2026-08-14T13:03:12.613Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-14T13:03:12.837Z] [SUCCESS] Registration Page loaded
+[2026-08-14T13:03:12.837Z] [STEP] Filling registration form for: pw_auto_mh_141303091hju@mentalhappy.com
+[2026-08-14T13:03:16.511Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-14T13:03:16.568Z] [STEP] Submitting registration form
+[2026-08-14T13:03:17.697Z] [SUCCESS] Registration form submitted
+[2026-08-14T13:03:17.698Z] [STEP] Waiting for OTP entry page to be ready
+[2026-08-14T13:03:25.836Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-08-14T13:03:25.836Z] [INFO] [OTP] Bypass active for pw_auto_mh_141303091hju@mentalhappy.com. Returning fixed validation code: 456321
+[2026-08-14T13:03:25.918Z] [STEP] Entering OTP: 456321
+[2026-08-14T13:03:25.918Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-14T13:03:27.317Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-14T13:03:27.945Z] [SUCCESS] OTP entered
+[2026-08-14T13:03:27.945Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-08-14T13:03:27.950Z] [ASSERT] Verifying toast message matching: /Email Verified Successfully/i
+[2026-08-14T13:03:29.451Z] [SUCCESS] Leader registration and OTP verification completed
+[2026-08-14T13:03:29.451Z] [STEP] Selecting Leader role on Welcome page
+[2026-08-14T13:03:29.451Z] [STEP] Verifying Welcome Page is displayed
+[2026-08-14T13:03:29.451Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-14T13:03:30.266Z] [SUCCESS] Welcome Page verification successful (Role buttons visible)
+[2026-08-14T13:03:30.266Z] [STEP] Selecting path: Continue as a Group Leader
+[2026-08-14T13:03:30.266Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-14T13:03:30.678Z] [INFO] Clicked Continue as a Group Leader
+[2026-08-14T13:03:30.731Z] [SUCCESS] Group Leader path selected
+[2026-08-14T13:03:30.731Z] [STEP] Clicking Welcome Continue button
+[2026-08-14T13:03:30.731Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-14T13:03:31.445Z] [SUCCESS] Welcome Continue clicked
+[2026-08-14T13:03:31.445Z] [SUCCESS] Leader role selection completed
+[2026-08-14T13:03:31.445Z] [STEP] Completing Leader onboarding via SKIP path
+[2026-08-14T13:03:31.446Z] [STEP] Completing Leader onboarding via SKIP (Deep Check Flow)
+[2026-08-14T13:03:31.573Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-14T13:03:31.660Z] [INFO] Checking for Screen 2 (Survey) Skip option...
+[2026-08-14T13:03:31.714Z] [STEP] Clicking Onboarding Skip button
+[2026-08-14T13:03:31.714Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-14T13:03:36.070Z] [SUCCESS] Onboarding cleared successfully
+[2026-08-14T13:03:36.071Z] [SUCCESS] Leader onboarding (Skip) completed
+[2026-08-14T13:03:36.071Z] [STEP] Selecting Active Plan ($19)
+[2026-08-14T13:03:36.071Z] [STEP] Verifying Hosting Plan page content
+[2026-08-14T13:03:40.565Z] [SUCCESS] Hosting Plan page verification successful
+[2026-08-14T13:03:40.565Z] [STEP] Selecting Active Group Plan
+[2026-08-14T13:03:41.329Z] [STEP] Clicking Pay Now
+[2026-08-14T13:03:49.549Z] [SUCCESS] Plan selected, landing on Stripe Checkout
+[2026-08-14T13:03:49.550Z] [STEP] Completing Stripe Payment
+[2026-08-14T13:03:49.550Z] [STEP] Verifying Stripe form visibility
+[2026-08-14T13:03:53.343Z] [SUCCESS] Stripe form verified
+[2026-08-14T13:03:53.344Z] [STEP] Filling Stripe payment details
+[2026-08-14T13:03:53.392Z] [STEP] Selecting country: US
+[2026-08-14T13:03:53.451Z] [SUCCESS] Country settled on US
+[2026-08-14T13:03:59.333Z] [SUCCESS] Stripe payment details filled
+[2026-08-14T13:03:59.334Z] [STEP] Submitting payment
+[2026-08-14T13:03:59.773Z] [SUCCESS] Payment submitted
+[2026-08-14T13:03:59.773Z] [SUCCESS] Stripe payment submitted
+[2026-08-14T13:03:59.773Z] [STEP] Verifying Payment Success (Redirect or Popup)
+[2026-08-14T13:04:06.973Z] [INFO] Payment landing state: popup — https://staging.mentalhappy.com/welcome/hosting-payment?plan=ACTIVE_GROUP&period=monthly
+[2026-08-14T13:04:06.973Z] [STEP] Verifying Payment Success popup visibility
+[2026-08-14T13:04:07.302Z] [SUCCESS] Payment Success popup verified
+[2026-08-14T13:04:07.302Z] [STEP] Clicking "Do this later"
+[2026-08-14T13:04:07.789Z] [SUCCESS] Success popup dismissed via Do this later
+[2026-08-14T13:04:08.433Z] [SUCCESS] Subscription completed and reached target page.
+[2026-08-14T13:04:08.433Z] [STEP] Creating group: PW_Group_20260814_130309_w19r0882ind
+[2026-08-14T13:04:08.434Z] [NAV] Navigating to Dashboard
+[2026-08-14T13:04:09.713Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-14T13:04:09.854Z] [STEP] Clicking on Start a Group
+[2026-08-14T13:04:12.294Z] [ASSERT] Create Group page is loaded
+[2026-08-14T13:04:12.294Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-14T13:04:12.976Z] [STEP] Filling Group Name
+[2026-08-14T13:04:13.121Z] [STEP] Filling Group Description
+[2026-08-14T13:04:13.758Z] [STEP] Uploading Cover Image
+[2026-08-14T13:04:13.814Z] [SUCCESS] Cover image uploaded
+[2026-08-14T13:04:13.816Z] [STEP] Opening Select Tags dropdown
+[2026-08-14T13:04:13.959Z] [STEP] Selecting tag (second option — first real option)
+[2026-08-14T13:04:14.083Z] [SUCCESS] Tag selected
+[2026-08-14T13:04:14.083Z] [STEP] Clicking Continue
+[2026-08-14T13:04:14.513Z] [INFO] Professional Background tab detected — completing required fields
+[2026-08-14T13:04:14.513Z] [STEP] Filling Professional Background tab
+[2026-08-14T13:04:14.513Z] [STEP] Uploading Profile Photo
+[2026-08-14T13:04:14.539Z] [SUCCESS] Profile photo uploaded
+[2026-08-14T13:04:14.539Z] [STEP] Selecting Professional Role
+[2026-08-14T13:04:14.720Z] [SUCCESS] Professional Role selected
+[2026-08-14T13:04:14.720Z] [STEP] Filling Professional Bio
+[2026-08-14T13:04:15.500Z] [SUCCESS] Professional Bio filled
+[2026-08-14T13:04:15.500Z] [STEP] Clicking Continue
+[2026-08-14T13:04:15.678Z] [INFO] Pricing Model tab detected — selecting "Free"
+[2026-08-14T13:04:15.678Z] [STEP] Selecting "Free" Pricing Model
+[2026-08-14T13:04:15.752Z] [SUCCESS] Free pricing model selected
+[2026-08-14T13:04:15.753Z] [STEP] Clicking Continue
+[2026-08-14T13:04:15.936Z] [STEP] Clicking Launch Group
+[2026-08-14T13:04:16.068Z] [SUCCESS] Group creation flow completed for: PW_Group_20260814_130309_w19r0882ind
+[2026-08-14T13:04:16.068Z] [STEP] Navigating to Sessions from Group Details
+[2026-08-14T13:04:16.069Z] [STEP] Navigating to Sessions tab
+[2026-08-14T13:04:27.010Z] [SUCCESS] Sessions tab active
+[2026-08-14T13:04:27.010Z] [SUCCESS] Leader ready with an active group on the Sessions tab
+[2026-08-14T13:04:27.011Z] [STEP] Opening Schedule Session modal
+[2026-08-14T13:04:27.838Z] [STEP] Waiting for Create Session modal
+[2026-08-14T13:04:27.936Z] [SUCCESS] Create Session modal visible
+[2026-08-14T13:04:27.937Z] [STEP] Filling Create Session form
+[2026-08-14T13:04:27.937Z] [STEP] Setting session date to next day
+[2026-08-14T13:04:29.141Z] [INFO] Session date set to 15 August, 2026
+[2026-08-14T13:04:29.142Z] [STEP] Ensuring timezone is selected
+[2026-08-14T13:04:29.409Z] [INFO] Searching for timezone "Pacific"
+[2026-08-14T13:04:29.913Z] [INFO] Timezone selection attempted via keyboard
+[2026-08-14T13:04:29.914Z] [STEP] Setting session time
+[2026-08-14T13:04:30.930Z] [INFO] Session time set to 10:00 AM – 11:00 AM
+[2026-08-14T13:04:30.947Z] [INFO] Filling description editor
+[2026-08-14T13:04:31.635Z] [STEP] Checking if tags are required
+[2026-08-14T13:04:31.711Z] [INFO] Opened Tags drawer
+[2026-08-14T13:04:32.174Z] [INFO] Selected a tag
+[2026-08-14T13:04:32.199Z] [SUCCESS] Tags drawer closed
+[2026-08-14T13:04:32.199Z] [SUCCESS] Form filling completed
+[2026-08-14T13:04:32.199Z] [INFO] Clearing title
+[2026-08-14T13:04:32.381Z] [STEP] Verifying Schedule Now button is disabled
+[2026-08-14T13:04:32.405Z] [ASSERT] Verifying Create Session modal remains open
+[2026-08-14T13:04:32.423Z] [ASSERT] Verifying title validation
+[2026-08-14T13:04:32.448Z] [SUCCESS] Title required validation displayed
+[2026-08-14T13:04:32.448Z] [STEP] Closing Create Session modal
+[2026-08-14T13:04:32.544Z] [SUCCESS] Create Session modal closed
+[2026-08-14T13:04:32.546Z] [STEP] Opening Schedule Session modal
+[2026-08-14T13:04:32.884Z] [STEP] Waiting for Create Session modal
+[2026-08-14T13:04:32.946Z] [SUCCESS] Create Session modal visible
+[2026-08-14T13:04:32.946Z] [STEP] Filling Create Session form
+[2026-08-14T13:04:32.946Z] [STEP] Setting session date to next day
+[2026-08-14T13:04:34.072Z] [INFO] Session date set to 15 August, 2026
+[2026-08-14T13:04:34.073Z] [STEP] Ensuring timezone is selected
+[2026-08-14T13:04:34.312Z] [INFO] Searching for timezone "Pacific"
+[2026-08-14T13:04:34.792Z] [INFO] Timezone selection attempted via keyboard
+[2026-08-14T13:04:34.792Z] [STEP] Setting session time
+[2026-08-14T13:04:35.771Z] [INFO] Session time set to 10:00 AM – 11:00 AM
+[2026-08-14T13:04:35.787Z] [INFO] Filling description editor
+[2026-08-14T13:04:36.454Z] [STEP] Checking if tags are required
+[2026-08-14T13:04:36.649Z] [INFO] Opened Tags drawer
+[2026-08-14T13:04:36.830Z] [INFO] Selected a tag
+[2026-08-14T13:04:36.857Z] [SUCCESS] Tags drawer closed
+[2026-08-14T13:04:36.857Z] [SUCCESS] Form filling completed
+[2026-08-14T13:04:36.857Z] [INFO] Setting start time: 11:00 AM
+[2026-08-14T13:04:37.416Z] [INFO] Setting end time: 10:00 AM
+[2026-08-14T13:04:37.987Z] [STEP] Verifying Schedule Now button is disabled
+[2026-08-14T13:04:37.994Z] [ASSERT] Verifying Create Session modal remains open
+[2026-08-14T13:04:38.017Z] [SUCCESS] Time range validation displayed
+[2026-08-14T13:04:38.017Z] [STEP] Closing Create Session modal
+[2026-08-14T13:04:38.085Z] [SUCCESS] Create Session modal closed
+[2026-08-14T13:04:38.086Z] [STEP] Opening Schedule Session modal
+[2026-08-14T13:04:38.414Z] [STEP] Waiting for Create Session modal
+[2026-08-14T13:04:38.472Z] [SUCCESS] Create Session modal visible
+[2026-08-14T13:04:38.472Z] [STEP] Filling Create Session form
+[2026-08-14T13:04:38.472Z] [STEP] Setting session date to next day
+[2026-08-14T13:04:39.626Z] [INFO] Session date set to 15 August, 2026
+[2026-08-14T13:04:39.626Z] [STEP] Ensuring timezone is selected
+[2026-08-14T13:04:39.867Z] [INFO] Searching for timezone "Pacific"
+[2026-08-14T13:04:40.339Z] [INFO] Timezone selection attempted via keyboard
+[2026-08-14T13:04:40.339Z] [STEP] Setting session time
+[2026-08-14T13:04:41.321Z] [INFO] Session time set to 10:00 AM – 11:00 AM
+[2026-08-14T13:04:41.338Z] [INFO] Filling description editor
+[2026-08-14T13:04:42.003Z] [STEP] Checking if tags are required
+[2026-08-14T13:04:42.196Z] [INFO] Opened Tags drawer
+[2026-08-14T13:04:42.354Z] [INFO] Selected a tag
+[2026-08-14T13:04:42.368Z] [SUCCESS] Tags drawer closed
+[2026-08-14T13:04:42.368Z] [SUCCESS] Form filling completed
+[2026-08-14T13:04:42.368Z] [INFO] Setting start time: 10:00 AM
+[2026-08-14T13:04:42.840Z] [INFO] Setting end time: 10:00 AM
+[2026-08-14T13:04:43.360Z] [STEP] Verifying Schedule Now button is disabled
+[2026-08-14T13:04:43.390Z] [ASSERT] Verifying Create Session modal remains open
+[2026-08-14T13:04:43.447Z] [SUCCESS] Equal start/end time validation displayed
+[2026-08-14T13:04:43.447Z] [STEP] Closing Create Session modal
+[2026-08-14T13:04:43.515Z] [SUCCESS] Create Session modal closed
+[2026-08-14T13:04:43.516Z] [STEP] Opening Schedule Session modal
+[2026-08-14T13:04:43.812Z] [STEP] Waiting for Create Session modal
+[2026-08-14T13:04:43.858Z] [SUCCESS] Create Session modal visible
+[2026-08-14T13:04:43.858Z] [STEP] Filling Create Session form
+[2026-08-14T13:04:43.859Z] [STEP] Setting session date to next day
+[2026-08-14T13:04:45.498Z] [INFO] Session date set to 15 August, 2026
+[2026-08-14T13:04:45.498Z] [STEP] Ensuring timezone is selected
+[2026-08-14T13:04:45.804Z] [INFO] Searching for timezone "Pacific"
+[2026-08-14T13:04:46.285Z] [INFO] Timezone selection attempted via keyboard
+[2026-08-14T13:04:46.285Z] [STEP] Setting session time
+[2026-08-14T13:04:47.281Z] [INFO] Session time set to 10:00 AM – 11:00 AM
+[2026-08-14T13:04:47.306Z] [INFO] Filling description editor
+[2026-08-14T13:04:48.007Z] [STEP] Checking if tags are required
+[2026-08-14T13:04:48.196Z] [INFO] Opened Tags drawer
+[2026-08-14T13:04:48.378Z] [INFO] Selected a tag
+[2026-08-14T13:04:48.399Z] [SUCCESS] Tags drawer closed
+[2026-08-14T13:04:48.399Z] [SUCCESS] Form filling completed
+[2026-08-14T13:04:48.399Z] [INFO] Clearing date
+[2026-08-14T13:04:48.585Z] [STEP] Verifying Schedule Now button is disabled
+[2026-08-14T13:04:48.608Z] [ASSERT] Verifying Create Session modal remains open
+[2026-08-14T13:04:48.628Z] [SUCCESS] Invalid date disables session submission
+[2026-08-14T13:04:48.628Z] [STEP] Closing Create Session modal
+[2026-08-14T13:04:48.709Z] [SUCCESS] Create Session modal closed

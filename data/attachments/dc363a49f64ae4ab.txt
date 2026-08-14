@@ -1,0 +1,56 @@
+[2026-08-14T12:49:13.740Z] [STEP] Submitting member registration form for: pw_auto_mh_1412483166rd@mentalhappy.com
+[2026-08-14T12:49:13.740Z] [STEP] Navigating to Registration Page
+[2026-08-14T12:49:15.156Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-14T12:49:15.218Z] [SUCCESS] Registration Page loaded
+[2026-08-14T12:49:15.218Z] [STEP] Filling registration form for: pw_auto_mh_1412483166rd@mentalhappy.com
+[2026-08-14T12:49:17.813Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-14T12:49:17.830Z] [STEP] Submitting registration form
+[2026-08-14T12:49:18.348Z] [SUCCESS] Registration form submitted
+[2026-08-14T12:49:18.350Z] [STEP] Waiting for OTP entry page to be ready
+[2026-08-14T12:49:25.899Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-08-14T12:49:25.899Z] [SUCCESS] Registration form submitted, OTP page reached
+[2026-08-14T12:49:25.900Z] [STEP] Verifying email for: pw_auto_mh_1412483166rd@mentalhappy.com
+[2026-08-14T12:49:25.900Z] [INFO] [OTP] Bypass active for pw_auto_mh_1412483166rd@mentalhappy.com. Returning fixed validation code: 456321
+[2026-08-14T12:49:25.910Z] [STEP] Entering OTP: 456321
+[2026-08-14T12:49:25.910Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-14T12:49:26.237Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-14T12:49:26.476Z] [SUCCESS] OTP entered
+[2026-08-14T12:49:26.476Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-08-14T12:49:26.478Z] [ASSERT] Verifying toast message matching: /Email Verified Successfully/i
+[2026-08-14T12:49:27.567Z] [SUCCESS] Email verification (OTP) successful
+[2026-08-14T12:49:27.568Z] [STEP] Selecting Member role on Welcome page
+[2026-08-14T12:49:27.568Z] [STEP] Verifying Welcome Page is displayed
+[2026-08-14T12:49:27.568Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-14T12:49:27.966Z] [SUCCESS] Welcome Page verification successful (Role buttons visible)
+[2026-08-14T12:49:27.967Z] [STEP] Selecting path: Explore Support Groups
+[2026-08-14T12:49:27.967Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-14T12:49:28.188Z] [INFO] Clicked Explore support groups
+[2026-08-14T12:49:28.222Z] [SUCCESS] Explore Support Groups path selected
+[2026-08-14T12:49:28.222Z] [STEP] Clicking Welcome Continue button
+[2026-08-14T12:49:28.222Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-14T12:49:28.516Z] [SUCCESS] Welcome Continue clicked
+[2026-08-14T12:49:28.516Z] [SUCCESS] Role selection completed
+[2026-08-14T12:49:28.516Z] [STEP] Completing Member onboarding via SKIP path
+[2026-08-14T12:49:28.535Z] [STEP] Completing Member onboarding via SKIP
+[2026-08-14T12:49:28.535Z] [STEP] Clicking Onboarding Skip button
+[2026-08-14T12:49:28.535Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-14T12:49:29.742Z] [SUCCESS] Redirected to Dashboard via Skip
+[2026-08-14T12:49:29.742Z] [SUCCESS] Member onboarding (Skip) completed
+[2026-08-14T12:49:29.742Z] [STEP] Opening dashboard
+[2026-08-14T12:49:30.691Z] [STEP] Searching for group: PW_Group_20260814_124831_w4r0326xjn
+[2026-08-14T12:49:32.577Z] [STEP] Verifying group card content for: PW_Group_20260814_124831_w4r0326xjn
+[2026-08-14T12:49:34.468Z] [SUCCESS] Group card content verified: PW_Group_20260814_124831_w4r0326xjn
+[2026-08-14T12:49:34.477Z] [STEP] Clicking join and waiting for payment redirect
+[2026-08-14T12:49:34.489Z] [INFO] Side panel not open — clicking card to open: PW_Group_20260814_124831_w4r0326xjn
+[2026-08-14T12:49:34.489Z] [STEP] Clicking group card: PW_Group_20260814_124831_w4r0326xjn
+[2026-08-14T12:49:34.612Z] [SUCCESS] Group card clicked: PW_Group_20260814_124831_w4r0326xjn
+[2026-08-14T12:49:35.451Z] [SUCCESS] Redirected to payment page
+[2026-08-14T12:49:35.451Z] [STEP] Verifying Stripe iframe is visible
+[2026-08-14T12:49:41.880Z] [SUCCESS] Stripe iframe verified
+[2026-08-14T12:49:41.887Z] [STEP] Filling Stripe payment details
+[2026-08-14T12:49:48.610Z] [SUCCESS] Stripe payment details filled
+[2026-08-14T12:49:48.610Z] [STEP] Submitting payment
+[2026-08-14T12:50:53.772Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-08-14T12:50:55.643Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-08-14T12:50:55.770Z] [INFO] Group cards on Plan & Billing: []
+[2026-08-14T12:50:55.770Z] [INFO] [CLEANUP] "PW_Group_20260814_124831_w4r0326xjn" not on Plan & Billing — nothing to clean up.
