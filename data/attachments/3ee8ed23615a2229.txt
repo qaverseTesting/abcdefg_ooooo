@@ -1,0 +1,27 @@
+[2026-08-14T12:13:03.893Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-08-14T12:13:05.075Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-08-14T12:13:05.075Z] [STEP] Verifying Plan & Billing page content
+[2026-08-14T12:13:08.645Z] [SUCCESS] Plan & Billing page verified
+[2026-08-14T12:13:08.645Z] [STEP] Verifying subscription with price $19 is visible
+[2026-08-14T12:13:08.799Z] [SUCCESS] Subscription details verified
+[2026-08-14T12:13:08.800Z] [SUCCESS] CD-01 PASSED: Active Plan confirmed as starting point
+[2026-08-14T12:13:08.804Z] [STEP] Clicking "Cancel & Delete Group" from subscription menu
+[2026-08-14T12:13:09.816Z] [SUCCESS] "Cancel & Delete Group" selected from menu
+[2026-08-14T12:13:09.818Z] [ASSERT] Outer Cancel & Delete modal (2-button) is visible
+[2026-08-14T12:13:10.100Z] [SUCCESS] CD-02 PASSED: Outer modal opened with [Downgrade to Listing] + [Delete Group] choices
+[2026-08-14T12:13:10.101Z] [STEP] Outer modal: clicking "Delete Group" to open Reason modal
+[2026-08-14T12:13:10.326Z] [ASSERT] Reason-selection modal is visible
+[2026-08-14T12:13:10.741Z] [SUCCESS] CD-03 PASSED: Reason-selection modal opened with "Why Are You Leaving?"
+[2026-08-14T12:13:10.742Z] [ASSERT] "Continue to Delete" is disabled before a reason is selected
+[2026-08-14T12:13:10.820Z] [SUCCESS] CD-04 PASSED: "Continue to Delete" correctly disabled before reason selection
+[2026-08-14T12:13:10.821Z] [STEP] Selecting first reason checkbox to enable Continue to Delete
+[2026-08-14T12:13:11.030Z] [ASSERT] "Continue to Delete" is enabled after a reason is selected
+[2026-08-14T12:13:11.055Z] [SUCCESS] CD-05 PASSED: "Continue to Delete" enabled after reason selection
+[2026-08-14T12:13:11.056Z] [STEP] Clicking "Continue to Delete" — confirming destructive delete
+[2026-08-14T12:13:11.289Z] [ASSERT] Subscription canceled and Group Deleted success toast is visible
+[2026-08-14T12:13:13.286Z] [SUCCESS] CD-06 PASSED: Success toast "Subscription canceled and Group Deleted Successfully" confirmed
+[2026-08-14T12:13:13.287Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-08-14T12:13:14.102Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-08-14T12:13:14.102Z] [STEP] Verifying Plan & Billing page content
+[2026-08-14T12:13:16.686Z] [SUCCESS] Plan & Billing page verified
+[2026-08-14T12:13:16.921Z] [SUCCESS] CD-07 PASSED: Subscription Options 3-dot button absent — group successfully deleted (per actual product behavior)

@@ -1,0 +1,26 @@
+[2026-08-14T12:07:06.985Z] [STEP] Registering new leader with email: pw_auto_mh_14120706v7de@mentalhappy.com
+[2026-08-14T12:07:06.991Z] [STEP] Navigating to Registration Page
+[2026-08-14T12:07:07.686Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-14T12:07:07.905Z] [SUCCESS] Registration Page loaded
+[2026-08-14T12:07:07.906Z] [STEP] Filling registration form for: pw_auto_mh_14120706v7de@mentalhappy.com
+[2026-08-14T12:07:11.566Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-14T12:07:11.597Z] [STEP] Submitting registration form
+[2026-08-14T12:07:12.168Z] [SUCCESS] Registration form submitted
+[2026-08-14T12:07:12.168Z] [STEP] Waiting for OTP entry page to be ready
+[2026-08-14T12:07:19.153Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-08-14T12:07:19.153Z] [INFO] [OTP] Bypass active for pw_auto_mh_14120706v7de@mentalhappy.com. Returning fixed validation code: 456321
+[2026-08-14T12:07:19.162Z] [STEP] Entering OTP: 456321
+[2026-08-14T12:07:19.162Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-14T12:07:20.124Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-14T12:07:20.912Z] [SUCCESS] OTP entered
+[2026-08-14T12:07:20.912Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-08-14T12:07:20.913Z] [ASSERT] Verifying toast message matching: /Email Verified Successfully/i
+[2026-08-14T12:07:22.120Z] [SUCCESS] Leader registration and OTP verification completed
+[2026-08-14T12:07:22.121Z] [STEP] Selecting path: Continue as a Group Leader
+[2026-08-14T12:07:22.121Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-14T12:07:22.889Z] [INFO] Clicked Continue as a Group Leader
+[2026-08-14T12:07:22.915Z] [SUCCESS] Group Leader path selected
+[2026-08-14T12:07:22.916Z] [STEP] Clicking Welcome Continue button
+[2026-08-14T12:07:22.916Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-14T12:07:23.286Z] [SUCCESS] Welcome Continue clicked
+[2026-08-14T12:07:23.293Z] [SUCCESS] Leader successfully routed to Onboarding

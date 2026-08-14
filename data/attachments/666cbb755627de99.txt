@@ -1,5 +1,0 @@
-[2026-08-13T16:20:07.848Z] [STEP] Scanning Dashboard for broken or empty links
-[2026-08-13T16:20:10.231Z] [ASSERT] Verifying dashboard is loaded
-[2026-08-13T16:20:16.646Z] [SUCCESS] Dashboard load verified
-[2026-08-13T16:20:17.545Z] [INFO] Found 6 links to audit
-[2026-08-13T16:20:19.092Z] [SUCCESS] Link integrity scan passed. No empty/placeholder links found.
