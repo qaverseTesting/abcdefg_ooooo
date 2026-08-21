@@ -1,9 +1,0 @@
-[2026-08-21T12:45:56.078Z] [STEP] Navigating to Profile → Earnings
-[2026-08-21T12:45:59.005Z] [SUCCESS] Earnings page loaded
-[2026-08-21T12:45:59.038Z] [INFO] Balance panel not shown (Stripe likely not connected) — treating as 0
-[2026-08-21T12:45:59.038Z] [STEP] Navigating to Profile → Plan & Billing
-[2026-08-21T12:46:00.082Z] [SUCCESS] Profile Plan & Billing page loaded
-[2026-08-21T12:46:00.082Z] [STEP] Reading Transactions History
-[2026-08-21T12:46:02.437Z] [SUCCESS] Transactions History has 1 row(s)
-[2026-08-21T12:46:02.438Z] [INFO] [REFUND] pending before=$0 afterPayment=$0 afterDelete=$0
-[2026-08-21T12:46:02.439Z] [INFO] [REFUND] transaction rows: ["Jul 30, 2026 1 × STRIPE_USER_HOSTING_PRODUCT (at $49.00 / month) -$49.00 Paid"]

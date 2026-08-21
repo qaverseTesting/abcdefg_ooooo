@@ -1,0 +1,91 @@
+[2026-08-21T14:29:29.098Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-08-21T14:29:31.029Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-08-21T14:29:31.029Z] [STEP] Verifying Plan & Billing page content
+[2026-08-21T14:29:34.724Z] [SUCCESS] Plan & Billing page verified
+[2026-08-21T14:29:34.724Z] [STEP] Verifying $19 subscription is NOT visible (plan no longer active)
+[2026-08-21T14:29:34.850Z] [SUCCESS] $19 subscription confirmed absent — billing state correct
+[2026-08-21T14:29:34.850Z] [SUCCESS] R-01 PASSED: No $19 subscription — Listing plan starting state confirmed
+[2026-08-21T14:29:34.851Z] [STEP] Clicking Change Plan → navigating to Hosting Plan page
+[2026-08-21T14:29:35.514Z] [SUCCESS] Redirected to Hosting Plan page
+[2026-08-21T14:29:35.514Z] [STEP] Verifying Hosting Plan page content
+[2026-08-21T14:29:36.816Z] [SUCCESS] Hosting Plan page verification successful
+[2026-08-21T14:29:36.816Z] [SUCCESS] R-02 PASSED: Redirected to Hosting Plan page
+[2026-08-21T14:29:36.817Z] [STEP] Verifying current plan card shows "Current Plan" (disabled state)
+[2026-08-21T14:29:37.119Z] [SUCCESS] "Current Plan" label verified
+[2026-08-21T14:29:37.119Z] [SUCCESS] R-03 PASSED: "Current Plan" label confirmed — Listing is current
+[2026-08-21T14:29:37.121Z] [STEP] Verifying Active Plan CTA is visible (user is on Listing plan)
+[2026-08-21T14:29:37.334Z] [SUCCESS] Active Plan CTA verified visible
+[2026-08-21T14:29:37.334Z] [SUCCESS] R-04 PASSED: "Upgrade to Active Group" CTA visible and available
+[2026-08-21T14:29:37.338Z] [STEP] Selecting Active Group Plan
+[2026-08-21T14:29:38.071Z] [STEP] Verifying Pay Now button is visible after plan selection
+[2026-08-21T14:29:46.484Z] [SUCCESS] Pay Now button verified visible
+[2026-08-21T14:29:46.484Z] [SUCCESS] R-05 PASSED: "Pay Now" button appeared after Active Plan selection
+[2026-08-21T14:29:46.487Z] [STEP] Clicking Pay Now
+[2026-08-21T14:29:49.962Z] [STEP] Verifying Stripe form visibility
+[2026-08-21T14:29:53.120Z] [SUCCESS] Stripe form verified
+[2026-08-21T14:29:53.120Z] [SUCCESS] R-06 PASSED: Stripe checkout form loaded successfully
+[2026-08-21T14:29:53.121Z] [STEP] Completing Stripe Payment
+[2026-08-21T14:29:53.121Z] [STEP] Verifying Stripe form visibility
+[2026-08-21T14:29:53.669Z] [SUCCESS] Stripe form verified
+[2026-08-21T14:29:53.670Z] [STEP] Filling Stripe payment details
+[2026-08-21T14:29:53.760Z] [STEP] Selecting country: US
+[2026-08-21T14:29:54.030Z] [SUCCESS] Country settled on US
+[2026-08-21T14:30:03.859Z] [SUCCESS] Stripe payment details filled
+[2026-08-21T14:30:03.860Z] [STEP] Submitting payment
+[2026-08-21T14:30:04.791Z] [SUCCESS] Payment submitted
+[2026-08-21T14:30:04.791Z] [SUCCESS] Stripe payment submitted
+[2026-08-21T14:30:04.801Z] [STEP] Verifying Plan Change Payment — waiting for app redirect
+[2026-08-21T14:30:04.817Z] [INFO] Post-payment landing: https://staging.mentalhappy.com/welcome/hosting-payment?plan=ACTIVE_GROUP&period=monthly&returnTo=%2Fuser%2Fprofile%2Fplan-billing
+[2026-08-21T14:30:04.817Z] [SUCCESS] Plan param confirmed: "plan=ACTIVE_GROUP" found in redirect URL
+[2026-08-21T14:30:05.560Z] [SUCCESS] Plan change payment confirmed
+[2026-08-21T14:30:05.560Z] [SUCCESS] R-07 PASSED: Payment complete — plan=ACTIVE_GROUP confirmed in redirect URL
+[2026-08-21T14:30:05.561Z] [STEP] Waiting for $19 subscription to appear after payment (up to 50s)
+[2026-08-21T14:30:05.561Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-08-21T14:30:07.731Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-08-21T14:30:07.731Z] [STEP] Verifying Plan & Billing page content
+[2026-08-21T14:30:10.920Z] [SUCCESS] Plan & Billing page verified
+[2026-08-21T14:30:10.969Z] [INFO] Attempt 1/10: $19 not yet visible — waiting 5s before reload
+[2026-08-21T14:30:16.006Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-08-21T14:30:17.267Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-08-21T14:30:17.267Z] [STEP] Verifying Plan & Billing page content
+[2026-08-21T14:30:20.650Z] [SUCCESS] Plan & Billing page verified
+[2026-08-21T14:30:20.682Z] [INFO] Attempt 2/10: $19 not yet visible — waiting 5s before reload
+[2026-08-21T14:30:25.702Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-08-21T14:30:27.411Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-08-21T14:30:27.411Z] [STEP] Verifying Plan & Billing page content
+[2026-08-21T14:30:30.835Z] [SUCCESS] Plan & Billing page verified
+[2026-08-21T14:30:30.913Z] [INFO] Attempt 3/10: $19 not yet visible — waiting 5s before reload
+[2026-08-21T14:30:35.978Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-08-21T14:30:38.274Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-08-21T14:30:38.274Z] [STEP] Verifying Plan & Billing page content
+[2026-08-21T14:30:42.076Z] [SUCCESS] Plan & Billing page verified
+[2026-08-21T14:30:42.116Z] [INFO] Attempt 4/10: $19 not yet visible — waiting 5s before reload
+[2026-08-21T14:30:47.124Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-08-21T14:30:48.307Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-08-21T14:30:48.307Z] [STEP] Verifying Plan & Billing page content
+[2026-08-21T14:30:51.258Z] [SUCCESS] Plan & Billing page verified
+[2026-08-21T14:30:51.274Z] [INFO] Attempt 5/10: $19 not yet visible — waiting 5s before reload
+[2026-08-21T14:30:56.297Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-08-21T14:30:57.386Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-08-21T14:30:57.386Z] [STEP] Verifying Plan & Billing page content
+[2026-08-21T14:30:59.817Z] [SUCCESS] Plan & Billing page verified
+[2026-08-21T14:30:59.858Z] [INFO] Attempt 6/10: $19 not yet visible — waiting 5s before reload
+[2026-08-21T14:31:04.913Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-08-21T14:31:06.472Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-08-21T14:31:06.472Z] [STEP] Verifying Plan & Billing page content
+[2026-08-21T14:31:08.903Z] [SUCCESS] Plan & Billing page verified
+[2026-08-21T14:31:08.957Z] [INFO] Attempt 7/10: $19 not yet visible — waiting 5s before reload
+[2026-08-21T14:31:13.982Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-08-21T14:31:15.501Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-08-21T14:31:15.501Z] [STEP] Verifying Plan & Billing page content
+[2026-08-21T14:31:17.796Z] [SUCCESS] Plan & Billing page verified
+[2026-08-21T14:31:17.847Z] [INFO] Attempt 8/10: $19 not yet visible — waiting 5s before reload
+[2026-08-21T14:31:22.882Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-08-21T14:31:24.353Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-08-21T14:31:24.353Z] [STEP] Verifying Plan & Billing page content
+[2026-08-21T14:31:27.095Z] [SUCCESS] Plan & Billing page verified
+[2026-08-21T14:31:27.133Z] [INFO] Attempt 9/10: $19 not yet visible — waiting 5s before reload
+[2026-08-21T14:31:32.153Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-08-21T14:31:33.752Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-08-21T14:31:33.752Z] [STEP] Verifying Plan & Billing page content
+[2026-08-21T14:31:36.867Z] [SUCCESS] Plan & Billing page verified

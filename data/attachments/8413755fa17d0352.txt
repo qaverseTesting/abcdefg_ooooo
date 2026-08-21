@@ -1,0 +1,14 @@
+[2026-08-21T14:20:05.455Z] [INFO] [REFUND INIT] group="PW_Group_20260821_142005_w5r123712a" member="pw_auto_mh_211420052zu9@mentalhappy.com"
+[2026-08-21T14:20:06.486Z] [INFO] Attempting login for user: pw_auto_mh_leader@mailinator.com | Password: Am123456 (expectSuccess: true)
+[2026-08-21T14:20:09.979Z] [SUCCESS] Login successful. Landed on: https://staging.mentalhappy.com/groups
+[2026-08-21T14:20:09.980Z] [STEP] Navigating to Profile → Earnings
+[2026-08-21T14:20:13.271Z] [SUCCESS] Earnings page loaded
+[2026-08-21T14:20:13.432Z] [INFO] Balance panel not shown (Stripe likely not connected) — treating as 0
+[2026-08-21T14:20:13.433Z] [INFO] [REFUND] Pending balance before the test: $0
+[2026-08-21T14:20:13.474Z] [INFO] Stripe connected for this leader: true
+[2026-08-21T14:20:13.479Z] [STEP] Initializing Group Creation from Dashboard
+[2026-08-21T14:20:13.483Z] [NAV] Navigating to Dashboard
+[2026-08-21T14:20:14.405Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-21T14:20:14.429Z] [STEP] Clicking on Start a Group
+[2026-08-21T14:20:17.168Z] [ASSERT] Create Group page is loaded
+[2026-08-21T14:20:17.168Z] [STEP] Clearing 3rd-party overlays for clean interaction

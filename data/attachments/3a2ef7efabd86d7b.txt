@@ -1,0 +1,190 @@
+[2026-08-21T14:26:48.307Z] [STEP] Leader Flow: Registering new leader
+[2026-08-21T14:26:48.307Z] [STEP] Registering new leader with email: pw_auto_mh_21142647ystc@mentalhappy.com
+[2026-08-21T14:26:48.314Z] [STEP] Navigating to Registration Page
+[2026-08-21T14:26:49.730Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-21T14:26:49.842Z] [SUCCESS] Registration Page loaded
+[2026-08-21T14:26:49.842Z] [STEP] Filling registration form for: pw_auto_mh_21142647ystc@mentalhappy.com
+[2026-08-21T14:26:53.245Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-21T14:26:53.268Z] [STEP] Submitting registration form
+[2026-08-21T14:26:53.937Z] [SUCCESS] Registration form submitted
+[2026-08-21T14:26:53.937Z] [STEP] Waiting for OTP entry page to be ready
+[2026-08-21T14:26:59.838Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-08-21T14:26:59.838Z] [INFO] [OTP] Bypass active for pw_auto_mh_21142647ystc@mentalhappy.com. Returning fixed validation code: 456321
+[2026-08-21T14:26:59.852Z] [STEP] Entering OTP: 456321
+[2026-08-21T14:26:59.852Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-21T14:27:00.352Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-21T14:27:00.497Z] [SUCCESS] OTP entered
+[2026-08-21T14:27:00.498Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-08-21T14:27:00.502Z] [ASSERT] Verifying toast message matching: /Email Verified Successfully/i
+[2026-08-21T14:27:01.422Z] [SUCCESS] Leader registration and OTP verification completed
+[2026-08-21T14:27:01.422Z] [STEP] Selecting Leader role on Welcome page
+[2026-08-21T14:27:01.423Z] [STEP] Verifying Welcome Page is displayed
+[2026-08-21T14:27:01.423Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-21T14:27:01.851Z] [SUCCESS] Welcome Page verification successful (Role buttons visible)
+[2026-08-21T14:27:01.851Z] [STEP] Selecting path: Continue as a Group Leader
+[2026-08-21T14:27:01.851Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-21T14:27:02.175Z] [INFO] Clicked Continue as a Group Leader
+[2026-08-21T14:27:02.200Z] [SUCCESS] Group Leader path selected
+[2026-08-21T14:27:02.200Z] [STEP] Clicking Welcome Continue button
+[2026-08-21T14:27:02.200Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-21T14:27:02.651Z] [SUCCESS] Welcome Continue clicked
+[2026-08-21T14:27:02.651Z] [SUCCESS] Leader role selection completed
+[2026-08-21T14:27:02.651Z] [STEP] Completing Leader onboarding via SKIP path
+[2026-08-21T14:27:02.651Z] [STEP] Completing Leader onboarding via SKIP (Deep Check Flow)
+[2026-08-21T14:27:02.702Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-21T14:27:02.727Z] [INFO] Checking for Screen 2 (Survey) Skip option...
+[2026-08-21T14:27:02.746Z] [STEP] Clicking Onboarding Skip button
+[2026-08-21T14:27:02.746Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-21T14:27:06.816Z] [SUCCESS] Onboarding cleared successfully
+[2026-08-21T14:27:06.816Z] [SUCCESS] Leader onboarding (Skip) completed
+[2026-08-21T14:27:06.816Z] [STEP] Leader Flow: Completing payment
+[2026-08-21T14:27:06.816Z] [STEP] Selecting Active Plan ($19)
+[2026-08-21T14:27:06.817Z] [STEP] Verifying Hosting Plan page content
+[2026-08-21T14:27:08.960Z] [SUCCESS] Hosting Plan page verification successful
+[2026-08-21T14:27:08.961Z] [STEP] Selecting Active Group Plan
+[2026-08-21T14:27:09.288Z] [STEP] Clicking Pay Now
+[2026-08-21T14:27:15.799Z] [SUCCESS] Plan selected, landing on Stripe Checkout
+[2026-08-21T14:27:15.799Z] [STEP] Completing Stripe Payment
+[2026-08-21T14:27:15.800Z] [STEP] Verifying Stripe form visibility
+[2026-08-21T14:27:20.061Z] [SUCCESS] Stripe form verified
+[2026-08-21T14:27:20.061Z] [STEP] Filling Stripe payment details
+[2026-08-21T14:27:20.138Z] [STEP] Selecting country: US
+[2026-08-21T14:27:20.260Z] [SUCCESS] Country settled on US
+[2026-08-21T14:27:27.292Z] [SUCCESS] Stripe payment details filled
+[2026-08-21T14:27:27.292Z] [STEP] Submitting payment
+[2026-08-21T14:27:27.981Z] [SUCCESS] Payment submitted
+[2026-08-21T14:27:27.981Z] [SUCCESS] Stripe payment submitted
+[2026-08-21T14:27:27.981Z] [STEP] Verifying Payment Success (Redirect or Popup)
+[2026-08-21T14:27:34.542Z] [INFO] Payment landing state: popup — https://staging.mentalhappy.com/welcome/hosting-payment?plan=ACTIVE_GROUP&period=monthly
+[2026-08-21T14:27:34.542Z] [STEP] Verifying Payment Success popup visibility
+[2026-08-21T14:27:34.869Z] [SUCCESS] Payment Success popup verified
+[2026-08-21T14:27:34.869Z] [STEP] Clicking "Do this later"
+[2026-08-21T14:27:35.438Z] [SUCCESS] Success popup dismissed via Do this later
+[2026-08-21T14:27:35.924Z] [SUCCESS] Subscription completed and reached target page.
+[2026-08-21T14:27:35.924Z] [STEP] Leader Flow: Creating group
+[2026-08-21T14:27:35.924Z] [STEP] Creating group: PW_Group_20260821_142647_w0r0140yu2
+[2026-08-21T14:27:35.925Z] [NAV] Navigating to Dashboard
+[2026-08-21T14:27:37.186Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-21T14:27:37.225Z] [STEP] Clicking on Start a Group
+[2026-08-21T14:27:41.752Z] [ASSERT] Create Group page is loaded
+[2026-08-21T14:27:41.752Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-21T14:27:42.101Z] [STEP] Filling Group Name
+[2026-08-21T14:27:42.157Z] [STEP] Filling Group Description
+[2026-08-21T14:27:42.785Z] [STEP] Uploading Cover Image
+[2026-08-21T14:27:42.929Z] [SUCCESS] Cover image uploaded
+[2026-08-21T14:27:42.929Z] [STEP] Opening Select Tags dropdown
+[2026-08-21T14:27:43.169Z] [STEP] Selecting tag (second option — first real option)
+[2026-08-21T14:27:43.417Z] [SUCCESS] Tag selected
+[2026-08-21T14:27:43.417Z] [STEP] Clicking Continue
+[2026-08-21T14:27:44.115Z] [INFO] Professional Background tab detected — completing required fields
+[2026-08-21T14:27:44.115Z] [STEP] Filling Professional Background tab
+[2026-08-21T14:27:44.116Z] [STEP] Uploading Profile Photo
+[2026-08-21T14:27:44.230Z] [SUCCESS] Profile photo uploaded
+[2026-08-21T14:27:44.230Z] [STEP] Selecting Professional Role
+[2026-08-21T14:27:44.776Z] [SUCCESS] Professional Role selected
+[2026-08-21T14:27:44.776Z] [STEP] Filling Professional Bio
+[2026-08-21T14:27:46.658Z] [SUCCESS] Professional Bio filled
+[2026-08-21T14:27:46.658Z] [STEP] Clicking Continue
+[2026-08-21T14:27:46.994Z] [INFO] Pricing Model tab detected — selecting "Free"
+[2026-08-21T14:27:46.995Z] [STEP] Selecting "Free" Pricing Model
+[2026-08-21T14:27:47.150Z] [SUCCESS] Free pricing model selected
+[2026-08-21T14:27:47.150Z] [STEP] Clicking Continue
+[2026-08-21T14:27:47.605Z] [STEP] Clicking Launch Group
+[2026-08-21T14:27:47.827Z] [SUCCESS] Group creation flow completed for: PW_Group_20260821_142647_w0r0140yu2
+[2026-08-21T14:27:47.827Z] [STEP] Leader Flow: Creating session
+[2026-08-21T14:27:47.829Z] [STEP] Navigating to Sessions from Group Details
+[2026-08-21T14:27:47.830Z] [STEP] Navigating to Sessions tab
+[2026-08-21T14:27:58.998Z] [SUCCESS] Sessions tab active
+[2026-08-21T14:27:58.999Z] [STEP] Starting Session Creation flow for: PW_Session_20260821_142647_w0r01413uk
+[2026-08-21T14:27:58.999Z] [STEP] Opening Schedule Session modal
+[2026-08-21T14:27:59.621Z] [STEP] Waiting for Create Session modal
+[2026-08-21T14:27:59.746Z] [SUCCESS] Create Session modal visible
+[2026-08-21T14:27:59.746Z] [STEP] Filling Create Session form
+[2026-08-21T14:27:59.747Z] [STEP] Setting session date to next day
+[2026-08-21T14:28:00.983Z] [INFO] Session date set to 22 August, 2026
+[2026-08-21T14:28:00.983Z] [STEP] Ensuring timezone is selected
+[2026-08-21T14:28:01.235Z] [INFO] Searching for timezone "Pacific"
+[2026-08-21T14:28:01.909Z] [INFO] Timezone selection attempted via keyboard
+[2026-08-21T14:28:01.910Z] [STEP] Setting session time
+[2026-08-21T14:28:03.680Z] [INFO] Session time set to 10:00 AM – 11:00 AM
+[2026-08-21T14:28:03.742Z] [INFO] Filling description editor
+[2026-08-21T14:28:04.902Z] [STEP] Checking if tags are required
+[2026-08-21T14:28:04.995Z] [INFO] Opened Tags drawer
+[2026-08-21T14:28:05.652Z] [INFO] Selected a tag
+[2026-08-21T14:28:05.698Z] [SUCCESS] Tags drawer closed
+[2026-08-21T14:28:05.698Z] [SUCCESS] Form filling completed
+[2026-08-21T14:28:05.698Z] [STEP] Submitting session
+[2026-08-21T14:28:05.859Z] [STEP] Verifying session creation (modal closed)
+[2026-08-21T14:28:07.775Z] [SUCCESS] Session "PW_Session_20260821_142647_w0r01413uk" submitted.
+[2026-08-21T14:28:07.776Z] [ASSERT] Verifying session in list: PW_Session_20260821_142647_w0r01413uk
+[2026-08-21T14:28:07.776Z] [ASSERT] Verifying session exists: PW_Session_20260821_142647_w0r01413uk
+[2026-08-21T14:28:07.816Z] [SUCCESS] Session found in list
+[2026-08-21T14:28:07.816Z] [SUCCESS] Session verified in listing
+[2026-08-21T14:28:07.816Z] [SUCCESS] Leader successfully created group and session
+[2026-08-21T14:28:07.825Z] [STEP] Member Flow: Logging in as member
+[2026-08-21T14:28:07.825Z] [STEP] Logging in as member
+[2026-08-21T14:28:07.826Z] [STEP] Ensuring clean session state (Force Logout)
+[2026-08-21T14:28:07.826Z] [INFO] Already on an anonymous page. Skipping logout logic.
+[2026-08-21T14:28:07.836Z] [NAV] Navigating to Login
+[2026-08-21T14:28:09.418Z] [INFO] Attempting login for user: pw_auto_mh_member@mailinator.com | Password: Am123456 (expectSuccess: true)
+[2026-08-21T14:28:15.053Z] [SUCCESS] Login successful. Landed on: https://staging.mentalhappy.com/groups
+[2026-08-21T14:28:15.053Z] [STEP] Member Flow: Searching and joining group
+[2026-08-21T14:28:15.054Z] [STEP] Searching for group: PW_Group_20260821_142647_w0r0140yu2
+[2026-08-21T14:28:20.864Z] [STEP] Clicking on the group card from search results
+[2026-08-21T14:28:20.865Z] [STEP] Clicking group card: PW_Group_20260821_142647_w0r0140yu2
+[2026-08-21T14:28:22.696Z] [SUCCESS] Group card clicked: PW_Group_20260821_142647_w0r0140yu2
+[2026-08-21T14:28:22.696Z] [STEP] Verify by clicking Join Group CTA
+[2026-08-21T14:28:22.696Z] [STEP] Clicking Join Group CTA
+[2026-08-21T14:28:23.621Z] [STEP] Member Flow: Completing payment
+[2026-08-21T14:28:23.621Z] [STEP] Completing Stripe Payment
+[2026-08-21T14:28:23.622Z] [STEP] Verifying Stripe form visibility
+[2026-08-21T14:28:35.170Z] [SUCCESS] Stripe form verified
+[2026-08-21T14:28:35.170Z] [STEP] Filling Stripe payment details
+[2026-08-21T14:28:35.306Z] [STEP] Selecting country: US
+[2026-08-21T14:28:35.462Z] [SUCCESS] Country settled on US
+[2026-08-21T14:28:41.242Z] [SUCCESS] Stripe payment details filled
+[2026-08-21T14:28:41.242Z] [STEP] Submitting payment
+[2026-08-21T14:28:46.680Z] [SUCCESS] Payment submitted
+[2026-08-21T14:28:46.680Z] [SUCCESS] Stripe payment submitted
+[2026-08-21T14:28:46.680Z] [STEP] Waiting for group page to load after payment redirect
+[2026-08-21T14:28:46.682Z] [SUCCESS] Group page loaded
+[2026-08-21T14:28:46.682Z] [STEP] Checking for post-join success modal
+[2026-08-21T14:28:46.895Z] [SUCCESS] Success modal handled
+[2026-08-21T14:28:46.896Z] [STEP] Member Flow: Joining session
+[2026-08-21T14:28:46.896Z] [STEP] Clicking Conversations tab
+[2026-08-21T14:28:55.814Z] [SUCCESS] Conversations tab clicked
+[2026-08-21T14:28:55.814Z] [ASSERT] Verifying session announcement in conversation: PW_Session_20260821_142647_w0r01413uk
+[2026-08-21T14:28:55.833Z] [SUCCESS] Session announcement found in conversation
+[2026-08-21T14:28:55.833Z] [STEP] Registering for session: PW_Session_20260821_142647_w0r01413uk
+[2026-08-21T14:28:56.028Z] [SUCCESS] Register for session clicked
+[2026-08-21T14:28:56.028Z] [ASSERT] Verifying session registration confirmed: PW_Session_20260821_142647_w0r01413uk
+[2026-08-21T14:28:56.054Z] [SUCCESS] Session registration confirmed — Register button is now disabled
+[2026-08-21T14:28:56.054Z] [SUCCESS] Member joined session successfully
+[2026-08-21T14:28:56.057Z] [STEP] Cancelling session: PW_Session_20260821_142647_w0r01413uk
+[2026-08-21T14:28:56.057Z] [STEP] Opening session details: PW_Session_20260821_142647_w0r01413uk
+[2026-08-21T14:28:56.057Z] [STEP] Navigating to Sessions tab
+[2026-08-21T14:28:56.362Z] [SUCCESS] Sessions tab active
+[2026-08-21T14:28:56.362Z] [STEP] Waiting for session list to settle
+[2026-08-21T14:28:56.437Z] [SUCCESS] Session list settled — 1 session(s)
+[2026-08-21T14:28:56.589Z] [SUCCESS] Session details opened
+[2026-08-21T14:28:56.589Z] [STEP] Verifying session details page
+[2026-08-21T14:28:57.695Z] [SUCCESS] Session details page loaded: https://staging.mentalhappy.com/groups/pw_group_20260821_142647_w0r0140yu2/session/6a886076155ebddee6bc32b7
+[2026-08-21T14:28:57.695Z] [STEP] Deleting session
+[2026-08-21T14:28:58.890Z] [SUCCESS] Session deleted — returned to the group
+[2026-08-21T14:28:58.890Z] [SUCCESS] Session cancelled: PW_Session_20260821_142647_w0r01413uk
+[2026-08-21T14:28:58.890Z] [ASSERT] Verifying session is no longer listed: PW_Session_20260821_142647_w0r01413uk
+[2026-08-21T14:28:58.890Z] [ASSERT] Verifying session is absent: PW_Session_20260821_142647_w0r01413uk
+[2026-08-21T14:28:58.890Z] [INFO] Checking sessions on: https://staging.mentalhappy.com/groups/pw_group_20260821_142647_w0r0140yu2/room?tab=conversations
+[2026-08-21T14:28:58.890Z] [STEP] Opening Sessions tab
+[2026-08-21T14:28:59.061Z] [SUCCESS] Sessions tab is active
+[2026-08-21T14:28:59.061Z] [STEP] Waiting for session list to settle
+[2026-08-21T14:28:59.471Z] [SUCCESS] Session list settled — 0 session(s)
+[2026-08-21T14:28:59.484Z] [SUCCESS] Leader cancelled session: PW_Session_20260821_142647_w0r01413uk
+[2026-08-21T14:28:59.485Z] [ASSERT] Verifying session is no longer listed: PW_Session_20260821_142647_w0r01413uk
+[2026-08-21T14:28:59.485Z] [ASSERT] Verifying session is absent: PW_Session_20260821_142647_w0r01413uk
+[2026-08-21T14:28:59.485Z] [INFO] Checking sessions on: https://staging.mentalhappy.com/groups/pw_group_20260821_142647_w0r0140yu2/room?payment=success&tab=conversations
+[2026-08-21T14:28:59.485Z] [STEP] Opening Sessions tab
+[2026-08-21T14:28:59.656Z] [SUCCESS] Sessions tab is active
+[2026-08-21T14:28:59.656Z] [STEP] Waiting for session list to settle
+[2026-08-21T14:29:00.016Z] [SUCCESS] Session list settled — 0 session(s)
+[2026-08-21T14:29:00.025Z] [SUCCESS] Member no longer sees cancelled session: PW_Session_20260821_142647_w0r01413uk

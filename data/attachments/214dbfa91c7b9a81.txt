@@ -1,0 +1,53 @@
+[2026-08-21T14:18:45.567Z] [STEP] Submitting member registration form for: pw_auto_mh_21141811q86j@mentalhappy.com
+[2026-08-21T14:18:45.567Z] [STEP] Navigating to Registration Page
+[2026-08-21T14:18:46.676Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-21T14:18:46.810Z] [SUCCESS] Registration Page loaded
+[2026-08-21T14:18:46.810Z] [STEP] Filling registration form for: pw_auto_mh_21141811q86j@mentalhappy.com
+[2026-08-21T14:18:49.346Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-21T14:18:49.362Z] [STEP] Submitting registration form
+[2026-08-21T14:18:49.851Z] [SUCCESS] Registration form submitted
+[2026-08-21T14:18:49.851Z] [STEP] Waiting for OTP entry page to be ready
+[2026-08-21T14:18:55.156Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-08-21T14:18:55.156Z] [SUCCESS] Registration form submitted, OTP page reached
+[2026-08-21T14:18:55.157Z] [STEP] Verifying email for: pw_auto_mh_21141811q86j@mentalhappy.com
+[2026-08-21T14:18:55.157Z] [INFO] [OTP] Bypass active for pw_auto_mh_21141811q86j@mentalhappy.com. Returning fixed validation code: 456321
+[2026-08-21T14:18:55.167Z] [STEP] Entering OTP: 456321
+[2026-08-21T14:18:55.167Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-21T14:18:55.553Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-21T14:18:55.800Z] [SUCCESS] OTP entered
+[2026-08-21T14:18:55.800Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-08-21T14:18:55.804Z] [ASSERT] Verifying toast message matching: /Email Verified Successfully/i
+[2026-08-21T14:18:56.606Z] [SUCCESS] Email verification (OTP) successful
+[2026-08-21T14:18:56.607Z] [STEP] Selecting Member role on Welcome page
+[2026-08-21T14:18:56.607Z] [STEP] Verifying Welcome Page is displayed
+[2026-08-21T14:18:56.607Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-21T14:18:56.898Z] [SUCCESS] Welcome Page verification successful (Role buttons visible)
+[2026-08-21T14:18:56.899Z] [STEP] Selecting path: Explore Support Groups
+[2026-08-21T14:18:56.899Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-21T14:18:57.048Z] [INFO] Clicked Explore support groups
+[2026-08-21T14:18:57.071Z] [SUCCESS] Explore Support Groups path selected
+[2026-08-21T14:18:57.071Z] [STEP] Clicking Welcome Continue button
+[2026-08-21T14:18:57.071Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-21T14:18:57.315Z] [SUCCESS] Welcome Continue clicked
+[2026-08-21T14:18:57.315Z] [SUCCESS] Role selection completed
+[2026-08-21T14:18:57.315Z] [STEP] Completing Member onboarding via SKIP path
+[2026-08-21T14:18:57.334Z] [STEP] Completing Member onboarding via SKIP
+[2026-08-21T14:18:57.334Z] [STEP] Clicking Onboarding Skip button
+[2026-08-21T14:18:57.334Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-21T14:18:58.370Z] [SUCCESS] Redirected to Dashboard via Skip
+[2026-08-21T14:18:58.370Z] [SUCCESS] Member onboarding (Skip) completed
+[2026-08-21T14:18:58.371Z] [STEP] Opening dashboard
+[2026-08-21T14:18:59.104Z] [STEP] Searching for "PW_Group_20260821_141811_w4r09825lg" — up to 5 attempts (fresh groups index slowly)
+[2026-08-21T14:18:59.104Z] [STEP] Searching for group: PW_Group_20260821_141811_w4r09825lg
+[2026-08-21T14:19:07.060Z] [INFO] Attempt 1/5: "PW_Group_20260821_141811_w4r09825lg" not indexed yet — waiting 8s and reloading Explore
+[2026-08-21T14:19:07.060Z] [STEP] Opening dashboard
+[2026-08-21T14:19:07.682Z] [STEP] Searching for group: PW_Group_20260821_141811_w4r09825lg
+[2026-08-21T14:19:16.411Z] [INFO] Attempt 2/5: "PW_Group_20260821_141811_w4r09825lg" not indexed yet — waiting 8s and reloading Explore
+[2026-08-21T14:19:16.411Z] [STEP] Opening dashboard
+[2026-08-21T14:19:17.096Z] [STEP] Searching for group: PW_Group_20260821_141811_w4r09825lg
+[2026-08-21T14:19:24.986Z] [INFO] Attempt 3/5: "PW_Group_20260821_141811_w4r09825lg" not indexed yet — waiting 8s and reloading Explore
+[2026-08-21T14:19:24.986Z] [STEP] Opening dashboard
+[2026-08-21T14:19:25.640Z] [STEP] Searching for group: PW_Group_20260821_141811_w4r09825lg
+[2026-08-21T14:19:34.425Z] [INFO] Attempt 4/5: "PW_Group_20260821_141811_w4r09825lg" not indexed yet — waiting 8s and reloading Explore
+[2026-08-21T14:19:34.425Z] [STEP] Opening dashboard
+[2026-08-21T14:19:35.039Z] [STEP] Searching for group: PW_Group_20260821_141811_w4r09825lg

@@ -1,0 +1,4 @@
+[2026-08-21T14:25:52.646Z] [STEP] Attempting login for: pw_auto_mh_member@mailinator.com (Invalid Credentials: Registered member cannot login with incorrect password)
+[2026-08-21T14:25:52.646Z] [INFO] Attempting login for user: pw_auto_mh_member@mailinator.com | Password: WrongPassword123! (expectSuccess: false)
+[2026-08-21T14:25:58.088Z] [INFO] Invalid login error message verified.
+[2026-08-21T14:25:58.088Z] [SUCCESS] Success: Access denied as expected for "Registered member cannot login with incorrect password"

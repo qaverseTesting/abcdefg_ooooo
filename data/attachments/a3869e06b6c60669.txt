@@ -1,7 +1,0 @@
-[2026-08-21T12:51:14.262Z] [STEP] Ensuring clean session state (Force Logout)
-[2026-08-21T12:51:14.262Z] [INFO] Already on an anonymous page. Skipping logout logic.
-[2026-08-21T12:51:14.288Z] [NAV] Navigating to Registration
-[2026-08-21T12:51:16.819Z] [STEP] Testing field formatting: Password (Minimum Complexity: Len, Mix, Digit)
-[2026-08-21T12:51:16.820Z] [STEP] Filling registration form for: pw_auto_mh_21125116uuz2@mentalhappy.com
-[2026-08-21T12:51:21.449Z] [STEP] Clearing 3rd-party overlays for clean interaction
-[2026-08-21T12:51:21.857Z] [INFO] Verifying form submission is blocked due to password constraints
