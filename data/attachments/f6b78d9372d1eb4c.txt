@@ -1,0 +1,4 @@
+[2026-08-21T12:46:56.813Z] [STEP] Verifying side panel content for: AMActiveGroup
+[2026-08-21T12:46:57.641Z] [SUCCESS] Side panel content verified for: AMActiveGroup
+[2026-08-21T12:46:57.642Z] [ASSERT] Verifying side panel discloses the platform fee: "+3$ platform fee will be added to your total"
+[2026-08-21T12:46:58.885Z] [SUCCESS] Platform fee disclosure verified in side panel (revealed on hover)

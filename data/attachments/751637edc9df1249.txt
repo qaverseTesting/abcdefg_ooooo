@@ -1,0 +1,5 @@
+[2026-08-21T12:56:21.478Z] [STEP] Triggering limit modal via Dashboard "Create Group" click
+[2026-08-21T12:56:21.479Z] [NAV] Navigating to Dashboard
+[2026-08-21T12:56:24.107Z] [STEP] Clicking on Start a Group
+[2026-08-21T12:56:33.731Z] [STEP] Verifying active group limit modal
+[2026-08-21T12:56:35.046Z] [SUCCESS] Active group limit modal verified and dismissed
