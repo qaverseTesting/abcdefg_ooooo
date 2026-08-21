@@ -1,3 +1,0 @@
-[2026-08-21T14:30:26.542Z] [STEP] Attempting to access private Dashboard as Guest
-[2026-08-21T14:30:28.990Z] [ASSERT] Verifying redirect to /login
-[2026-08-21T14:30:29.229Z] [SUCCESS] Guest protection verified
