@@ -1,0 +1,94 @@
+[2026-08-21T11:55:35.963Z] [INFO] [SETUP] Provisioning Active ($19) leader with 1 group(s): pw_auto_mh_2111553586t4@mentalhappy.com
+[2026-08-21T11:55:35.963Z] [STEP] Registering new leader with email: pw_auto_mh_2111553586t4@mentalhappy.com
+[2026-08-21T11:55:35.964Z] [STEP] Navigating to Registration Page
+[2026-08-21T11:55:38.411Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-21T11:55:38.616Z] [SUCCESS] Registration Page loaded
+[2026-08-21T11:55:38.619Z] [STEP] Filling registration form for: pw_auto_mh_2111553586t4@mentalhappy.com
+[2026-08-21T11:55:41.757Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-21T11:55:41.790Z] [STEP] Submitting registration form
+[2026-08-21T11:55:42.667Z] [SUCCESS] Registration form submitted
+[2026-08-21T11:55:42.667Z] [STEP] Waiting for OTP entry page to be ready
+[2026-08-21T11:55:48.915Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-08-21T11:55:48.915Z] [INFO] [OTP] Bypass active for pw_auto_mh_2111553586t4@mentalhappy.com. Returning fixed validation code: 456321
+[2026-08-21T11:55:48.925Z] [STEP] Entering OTP: 456321
+[2026-08-21T11:55:48.925Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-21T11:55:49.106Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-21T11:55:49.486Z] [SUCCESS] OTP entered
+[2026-08-21T11:55:49.487Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-08-21T11:55:49.496Z] [ASSERT] Verifying toast message matching: /Email Verified Successfully/i
+[2026-08-21T11:55:50.732Z] [SUCCESS] Leader registration and OTP verification completed
+[2026-08-21T11:55:50.733Z] [STEP] Selecting Leader role on Welcome page
+[2026-08-21T11:55:50.737Z] [STEP] Verifying Welcome Page is displayed
+[2026-08-21T11:55:50.737Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-21T11:55:51.213Z] [SUCCESS] Welcome Page verification successful (Role buttons visible)
+[2026-08-21T11:55:51.213Z] [STEP] Selecting path: Continue as a Group Leader
+[2026-08-21T11:55:51.213Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-21T11:55:51.387Z] [INFO] Clicked Continue as a Group Leader
+[2026-08-21T11:55:51.412Z] [SUCCESS] Group Leader path selected
+[2026-08-21T11:55:51.412Z] [STEP] Clicking Welcome Continue button
+[2026-08-21T11:55:51.412Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-21T11:55:51.750Z] [SUCCESS] Welcome Continue clicked
+[2026-08-21T11:55:51.750Z] [SUCCESS] Leader role selection completed
+[2026-08-21T11:55:51.750Z] [STEP] Completing Leader onboarding via SKIP path
+[2026-08-21T11:55:51.755Z] [STEP] Completing Leader onboarding via SKIP (Deep Check Flow)
+[2026-08-21T11:55:51.798Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-21T11:55:51.832Z] [INFO] Checking for Screen 2 (Survey) Skip option...
+[2026-08-21T11:55:51.852Z] [STEP] Clicking Onboarding Skip button
+[2026-08-21T11:55:51.852Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-21T11:55:56.366Z] [SUCCESS] Onboarding cleared successfully
+[2026-08-21T11:55:56.366Z] [SUCCESS] Leader onboarding (Skip) completed
+[2026-08-21T11:55:56.366Z] [STEP] Selecting Active Plan ($19)
+[2026-08-21T11:55:56.366Z] [STEP] Verifying Hosting Plan page content
+[2026-08-21T11:55:59.203Z] [SUCCESS] Hosting Plan page verification successful
+[2026-08-21T11:55:59.203Z] [STEP] Selecting Active Group Plan
+[2026-08-21T11:55:59.473Z] [STEP] Clicking Pay Now
+[2026-08-21T11:56:05.646Z] [SUCCESS] Plan selected, landing on Stripe Checkout
+[2026-08-21T11:56:05.646Z] [STEP] Completing Stripe Payment
+[2026-08-21T11:56:05.646Z] [STEP] Verifying Stripe form visibility
+[2026-08-21T11:56:08.828Z] [SUCCESS] Stripe form verified
+[2026-08-21T11:56:08.829Z] [STEP] Filling Stripe payment details
+[2026-08-21T11:56:08.932Z] [STEP] Selecting country: US
+[2026-08-21T11:56:09.144Z] [SUCCESS] Country settled on US
+[2026-08-21T11:56:15.556Z] [SUCCESS] Stripe payment details filled
+[2026-08-21T11:56:15.557Z] [STEP] Submitting payment
+[2026-08-21T11:56:16.348Z] [SUCCESS] Payment submitted
+[2026-08-21T11:56:16.348Z] [SUCCESS] Stripe payment submitted
+[2026-08-21T11:56:16.348Z] [STEP] Verifying Payment Success (Redirect or Popup)
+[2026-08-21T11:56:22.310Z] [INFO] Payment landing state: popup — https://staging.mentalhappy.com/welcome/hosting-payment?plan=ACTIVE_GROUP&period=monthly
+[2026-08-21T11:56:22.311Z] [STEP] Verifying Payment Success popup visibility
+[2026-08-21T11:56:22.473Z] [SUCCESS] Payment Success popup verified
+[2026-08-21T11:56:22.473Z] [STEP] Clicking "Do this later"
+[2026-08-21T11:56:22.840Z] [SUCCESS] Success popup dismissed via Do this later
+[2026-08-21T11:56:23.386Z] [SUCCESS] Subscription completed and reached target page.
+[2026-08-21T11:56:23.386Z] [STEP] Creating group: PW_Group_20260821_115623_w9r038611v
+[2026-08-21T11:56:23.387Z] [NAV] Navigating to Dashboard
+[2026-08-21T11:56:24.349Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-21T11:56:24.398Z] [STEP] Clicking on Start a Group
+[2026-08-21T11:56:28.482Z] [ASSERT] Create Group page is loaded
+[2026-08-21T11:56:28.485Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-21T11:56:29.557Z] [STEP] Filling Group Name
+[2026-08-21T11:56:29.891Z] [STEP] Filling Group Description
+[2026-08-21T11:56:32.208Z] [STEP] Uploading Cover Image
+[2026-08-21T11:56:32.592Z] [SUCCESS] Cover image uploaded
+[2026-08-21T11:56:32.593Z] [STEP] Opening Select Tags dropdown
+[2026-08-21T11:56:33.187Z] [STEP] Selecting tag (second option — first real option)
+[2026-08-21T11:56:33.794Z] [SUCCESS] Tag selected
+[2026-08-21T11:56:33.794Z] [STEP] Clicking Continue
+[2026-08-21T11:56:34.982Z] [INFO] Professional Background tab detected — completing required fields
+[2026-08-21T11:56:34.982Z] [STEP] Filling Professional Background tab
+[2026-08-21T11:56:34.982Z] [STEP] Uploading Profile Photo
+[2026-08-21T11:56:35.265Z] [SUCCESS] Profile photo uploaded
+[2026-08-21T11:56:35.265Z] [STEP] Selecting Professional Role
+[2026-08-21T11:56:36.158Z] [SUCCESS] Professional Role selected
+[2026-08-21T11:56:36.159Z] [STEP] Filling Professional Bio
+[2026-08-21T11:56:38.521Z] [SUCCESS] Professional Bio filled
+[2026-08-21T11:56:38.521Z] [STEP] Clicking Continue
+[2026-08-21T11:56:38.986Z] [INFO] Pricing Model tab detected — selecting "Free"
+[2026-08-21T11:56:38.986Z] [STEP] Selecting "Free" Pricing Model
+[2026-08-21T11:56:39.186Z] [SUCCESS] Free pricing model selected
+[2026-08-21T11:56:39.186Z] [STEP] Clicking Continue
+[2026-08-21T11:56:39.685Z] [STEP] Clicking Launch Group
+[2026-08-21T11:56:39.972Z] [SUCCESS] Group creation flow completed for: PW_Group_20260821_115623_w9r038611v
+[2026-08-21T11:56:43.655Z] [SUCCESS] [SETUP] Group 1/1 created: PW_Group_20260821_115623_w9r038611v
+[2026-08-21T11:56:43.655Z] [NAV] Navigating to Dashboard
+[2026-08-21T11:56:46.012Z] [SUCCESS] [SETUP] State captured at /home/runner/work/playwright-enterprise-framework/playwright-enterprise-framework/storage/auth/leader_active_group_transition.json — groups: PW_Group_20260821_115623_w9r038611v

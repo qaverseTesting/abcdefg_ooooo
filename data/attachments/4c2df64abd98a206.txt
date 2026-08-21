@@ -1,0 +1,81 @@
+[2026-08-21T11:52:07.516Z] [STEP] Submitting member registration form for: pw_auto_mh_211151290e4a@mentalhappy.com
+[2026-08-21T11:52:07.516Z] [STEP] Navigating to Registration Page
+[2026-08-21T11:52:08.903Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-21T11:52:08.982Z] [SUCCESS] Registration Page loaded
+[2026-08-21T11:52:08.983Z] [STEP] Filling registration form for: pw_auto_mh_211151290e4a@mentalhappy.com
+[2026-08-21T11:52:11.523Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-21T11:52:11.583Z] [STEP] Submitting registration form
+[2026-08-21T11:52:12.216Z] [SUCCESS] Registration form submitted
+[2026-08-21T11:52:12.216Z] [STEP] Waiting for OTP entry page to be ready
+[2026-08-21T11:52:17.840Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-08-21T11:52:17.840Z] [SUCCESS] Registration form submitted, OTP page reached
+[2026-08-21T11:52:17.841Z] [STEP] Verifying email for: pw_auto_mh_211151290e4a@mentalhappy.com
+[2026-08-21T11:52:17.842Z] [INFO] [OTP] Bypass active for pw_auto_mh_211151290e4a@mentalhappy.com. Returning fixed validation code: 456321
+[2026-08-21T11:52:17.850Z] [STEP] Entering OTP: 456321
+[2026-08-21T11:52:17.850Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-21T11:52:18.164Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-21T11:52:18.346Z] [SUCCESS] OTP entered
+[2026-08-21T11:52:18.346Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-08-21T11:52:18.355Z] [ASSERT] Verifying toast message matching: /Email Verified Successfully/i
+[2026-08-21T11:52:19.311Z] [SUCCESS] Email verification (OTP) successful
+[2026-08-21T11:52:19.311Z] [STEP] Selecting Member role on Welcome page
+[2026-08-21T11:52:19.312Z] [STEP] Verifying Welcome Page is displayed
+[2026-08-21T11:52:19.312Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-21T11:52:19.707Z] [SUCCESS] Welcome Page verification successful (Role buttons visible)
+[2026-08-21T11:52:19.707Z] [STEP] Selecting path: Explore Support Groups
+[2026-08-21T11:52:19.707Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-21T11:52:19.843Z] [INFO] Clicked Explore support groups
+[2026-08-21T11:52:19.868Z] [SUCCESS] Explore Support Groups path selected
+[2026-08-21T11:52:19.868Z] [STEP] Clicking Welcome Continue button
+[2026-08-21T11:52:19.868Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-21T11:52:20.179Z] [SUCCESS] Welcome Continue clicked
+[2026-08-21T11:52:20.179Z] [SUCCESS] Role selection completed
+[2026-08-21T11:52:20.179Z] [STEP] Completing Member onboarding via SKIP path
+[2026-08-21T11:52:20.190Z] [STEP] Completing Member onboarding via SKIP
+[2026-08-21T11:52:20.190Z] [STEP] Clicking Onboarding Skip button
+[2026-08-21T11:52:20.190Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-21T11:52:21.236Z] [SUCCESS] Redirected to Dashboard via Skip
+[2026-08-21T11:52:21.236Z] [SUCCESS] Member onboarding (Skip) completed
+[2026-08-21T11:52:21.237Z] [STEP] Opening dashboard
+[2026-08-21T11:52:22.306Z] [STEP] Searching for "PW_Group_20260821_115129_w5r1015s00" — up to 5 attempts (fresh groups index slowly)
+[2026-08-21T11:52:22.307Z] [STEP] Searching for group: PW_Group_20260821_115129_w5r1015s00
+[2026-08-21T11:52:26.202Z] [SUCCESS] Group "PW_Group_20260821_115129_w5r1015s00" found in Explore search (attempt 1/5)
+[2026-08-21T11:52:26.203Z] [STEP] Verifying group card content for: PW_Group_20260821_115129_w5r1015s00
+[2026-08-21T11:52:26.228Z] [SUCCESS] Group card content verified: PW_Group_20260821_115129_w5r1015s00
+[2026-08-21T11:52:26.238Z] [STEP] Clicking join and waiting for payment redirect
+[2026-08-21T11:52:26.247Z] [INFO] Side panel not open — clicking card to open: PW_Group_20260821_115129_w5r1015s00
+[2026-08-21T11:52:26.247Z] [STEP] Clicking group card: PW_Group_20260821_115129_w5r1015s00
+[2026-08-21T11:52:26.383Z] [SUCCESS] Group card clicked: PW_Group_20260821_115129_w5r1015s00
+[2026-08-21T11:52:27.238Z] [SUCCESS] Redirected to payment page
+[2026-08-21T11:52:27.239Z] [STEP] Verifying Stripe iframe is visible
+[2026-08-21T11:52:35.638Z] [SUCCESS] Stripe iframe verified
+[2026-08-21T11:52:35.640Z] [STEP] Filling Stripe payment details
+[2026-08-21T11:52:42.621Z] [SUCCESS] Stripe payment details filled
+[2026-08-21T11:52:42.621Z] [STEP] Submitting payment
+[2026-08-21T11:52:51.638Z] [SUCCESS] Payment submitted
+[2026-08-21T11:52:51.638Z] [SUCCESS] Member paid $5 for "PW_Group_20260821_115129_w5r1015s00"
+[2026-08-21T11:52:51.639Z] [STEP] Navigating to Profile → Earnings
+[2026-08-21T11:52:55.754Z] [SUCCESS] Earnings page loaded
+[2026-08-21T11:52:55.975Z] [INFO] Balance panel not shown (Stripe likely not connected) — treating as 0
+[2026-08-21T11:52:55.975Z] [INFO] [REFUND] attempt 1/6 — pending $0, available $0
+[2026-08-21T11:53:01.005Z] [STEP] Navigating to Profile → Earnings
+[2026-08-21T11:53:04.019Z] [SUCCESS] Earnings page loaded
+[2026-08-21T11:53:04.075Z] [INFO] Balance panel not shown (Stripe likely not connected) — treating as 0
+[2026-08-21T11:53:04.075Z] [INFO] [REFUND] attempt 2/6 — pending $0, available $0
+[2026-08-21T11:53:09.100Z] [STEP] Navigating to Profile → Earnings
+[2026-08-21T11:53:12.076Z] [SUCCESS] Earnings page loaded
+[2026-08-21T11:53:12.155Z] [INFO] Balance panel not shown (Stripe likely not connected) — treating as 0
+[2026-08-21T11:53:12.155Z] [INFO] [REFUND] attempt 3/6 — pending $0, available $0
+[2026-08-21T11:53:17.175Z] [STEP] Navigating to Profile → Earnings
+[2026-08-21T11:53:20.149Z] [SUCCESS] Earnings page loaded
+[2026-08-21T11:53:20.280Z] [INFO] Balance panel not shown (Stripe likely not connected) — treating as 0
+[2026-08-21T11:53:20.280Z] [INFO] [REFUND] attempt 4/6 — pending $0, available $0
+[2026-08-21T11:53:25.328Z] [STEP] Navigating to Profile → Earnings
+[2026-08-21T11:53:28.293Z] [SUCCESS] Earnings page loaded
+[2026-08-21T11:53:28.343Z] [INFO] Balance panel not shown (Stripe likely not connected) — treating as 0
+[2026-08-21T11:53:28.343Z] [INFO] [REFUND] attempt 5/6 — pending $0, available $0
+[2026-08-21T11:53:33.357Z] [STEP] Navigating to Profile → Earnings
+[2026-08-21T11:53:36.343Z] [SUCCESS] Earnings page loaded
+[2026-08-21T11:53:36.427Z] [INFO] Balance panel not shown (Stripe likely not connected) — treating as 0
+[2026-08-21T11:53:36.427Z] [INFO] [REFUND] attempt 6/6 — pending $0, available $0
+[2026-08-21T11:53:41.498Z] [INFO] [REFUND] pending before=$0 afterPayment=$0
