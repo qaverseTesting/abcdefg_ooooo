@@ -1,0 +1,21 @@
+[2026-08-21T12:11:21.135Z] [STEP] Opening group Settings tab for: pw_group_20260821_120944_w13r0727eoc
+[2026-08-21T12:11:28.500Z] [SUCCESS] Group Settings tab loaded
+[2026-08-21T12:11:28.500Z] [STEP] Clicking "Change Pricing Model"
+[2026-08-21T12:11:29.181Z] [SUCCESS] "Change Pricing Model" clicked
+[2026-08-21T12:11:29.181Z] [STEP] Verifying Update Group Pricing page loaded
+[2026-08-21T12:11:31.364Z] [SUCCESS] Update Group Pricing page loaded
+[2026-08-21T12:11:31.365Z] [STEP] Selecting "One-Time Payment" pricing model
+[2026-08-21T12:11:31.760Z] [SUCCESS] One-Time Payment selected
+[2026-08-21T12:11:31.760Z] [STEP] Entering one-time price: $10
+[2026-08-21T12:11:32.095Z] [SUCCESS] One-time price set to $10
+[2026-08-21T12:11:32.096Z] [STEP] Clicking "Update Pricing"
+[2026-08-21T12:11:33.083Z] [SUCCESS] "Update Pricing" clicked — confirmation dialog opened
+[2026-08-21T12:11:33.083Z] [ASSERT] Verifying pricing confirmation dialog: You're changing from Monthly Paid to One-Time Payment
+[2026-08-21T12:11:33.273Z] [SUCCESS] Pricing confirmation dialog verified
+[2026-08-21T12:11:33.273Z] [STEP] Clicking "Apply Changes"
+[2026-08-21T12:11:34.965Z] [SUCCESS] "Apply Changes" clicked — confirmation dialog closed
+[2026-08-21T12:11:34.965Z] [ASSERT] Verifying toast message matching: Your group pricing has been successfully updated from Monthly Paid to One-Time Payment.
+[2026-08-21T12:11:37.336Z] [STEP] Opening group Settings tab for: pw_group_20260821_120944_w13r0727eoc
+[2026-08-21T12:11:45.244Z] [SUCCESS] Group Settings tab loaded
+[2026-08-21T12:11:45.244Z] [ASSERT] Verifying one-time pricing summary: One-Time Payment $10
+[2026-08-21T12:11:45.705Z] [SUCCESS] One-time pricing summary verified: $10
