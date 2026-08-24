@@ -1,0 +1,6 @@
+[2026-08-24T18:00:16.326Z] [STEP] Triggering limit modal via Dashboard "Create Group" click
+[2026-08-24T18:00:16.326Z] [NAV] Navigating to Dashboard
+[2026-08-24T18:00:17.888Z] [STEP] Clicking on Start a Group
+[2026-08-24T18:00:20.790Z] [STEP] Verifying active group limit modal
+[2026-08-24T18:00:21.636Z] [INFO] Listing-state upgrade dialog shown — group creation blocked via Listing prompt
+[2026-08-24T18:00:22.941Z] [SUCCESS] Active group limit modal verified and dismissed

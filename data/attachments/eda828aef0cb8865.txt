@@ -1,0 +1,58 @@
+[2026-08-24T17:51:11.827Z] [INFO] [REFUND INIT] group="PW_Group_20260824_175111_w4r0678lfn" member="pw_auto_mh_241751116lhe@mentalhappy.com"
+[2026-08-24T17:51:12.686Z] [INFO] Attempting login for user: pw_auto_mh_leader@mailinator.com | Password: Am123456 (expectSuccess: true)
+[2026-08-24T17:51:15.854Z] [SUCCESS] Login successful. Landed on: https://staging.mentalhappy.com/groups
+[2026-08-24T17:51:15.858Z] [STEP] Navigating to Profile → Earnings
+[2026-08-24T17:51:18.989Z] [SUCCESS] Earnings page loaded
+[2026-08-24T17:51:19.032Z] [INFO] Balance panel not shown (Stripe likely not connected) — treating as 0
+[2026-08-24T17:51:19.034Z] [INFO] [REFUND] Pending balance before the test: $0
+[2026-08-24T17:51:19.051Z] [INFO] Stripe connected for this leader: true
+[2026-08-24T17:51:19.052Z] [INFO] [LEDGER] Recorded "PW_Group_20260824_175111_w4r0678lfn" for cleanup.
+[2026-08-24T17:51:19.052Z] [STEP] Initializing Group Creation from Dashboard
+[2026-08-24T17:51:19.054Z] [NAV] Navigating to Dashboard
+[2026-08-24T17:51:20.054Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-24T17:51:20.088Z] [STEP] Clicking on Start a Group
+[2026-08-24T17:51:22.242Z] [ASSERT] Create Group page is loaded
+[2026-08-24T17:51:22.242Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-24T17:51:22.826Z] [SUCCESS] Group Creation page loaded
+[2026-08-24T17:51:22.826Z] [STEP] Tab 1: Filling Basic Details for group: PW_Group_20260824_175111_w4r0678lfn
+[2026-08-24T17:51:22.826Z] [STEP] Filling Group Name
+[2026-08-24T17:51:22.852Z] [STEP] Filling Group Description
+[2026-08-24T17:51:23.185Z] [STEP] Uploading Cover Image
+[2026-08-24T17:51:23.236Z] [SUCCESS] Cover image uploaded
+[2026-08-24T17:51:23.237Z] [STEP] Opening Select Tags dropdown
+[2026-08-24T17:51:23.340Z] [STEP] Selecting tag (second option — first real option)
+[2026-08-24T17:51:23.431Z] [SUCCESS] Tag selected
+[2026-08-24T17:51:23.431Z] [STEP] Clicking Continue
+[2026-08-24T17:51:23.541Z] [SUCCESS] Tab 1 (Basic Details) completed
+[2026-08-24T17:51:23.541Z] [STEP] Tab 2: Checking for Optional Professional Background
+[2026-08-24T17:51:28.550Z] [INFO] Optional Tab: Professional Background not presented - Skipping
+[2026-08-24T17:51:28.550Z] [STEP] Tab 3: Setting Group Pricing (Mandatory)
+[2026-08-24T17:51:28.558Z] [STEP] Selecting "Free" Pricing Model
+[2026-08-24T17:51:28.609Z] [SUCCESS] Free pricing model selected
+[2026-08-24T17:51:28.609Z] [STEP] Clicking Continue
+[2026-08-24T17:51:28.825Z] [SUCCESS] Tab 3 (Pricing) completed
+[2026-08-24T17:51:28.826Z] [STEP] Tab 4: Finalizing Group Creation (Launch)
+[2026-08-24T17:51:28.826Z] [STEP] Clicking Launch Group
+[2026-08-24T17:51:29.006Z] [ASSERT] Verifying redirect to Group Details
+[2026-08-24T17:51:29.018Z] [SUCCESS] Group Lifecycle: Launch successful, redirected to details
+[2026-08-24T17:51:29.019Z] [STEP] Verifying Group Details page loaded for: PW_Group_20260824_175111_w4r0678lfn
+[2026-08-24T17:51:34.105Z] [SUCCESS] Group Details page verified
+[2026-08-24T17:51:34.106Z] [INFO] Group slug resolved from URL: pw_group_20260824_175111_w4r0678lfn
+[2026-08-24T17:51:34.108Z] [STEP] Opening group Settings tab for: pw_group_20260824_175111_w4r0678lfn
+[2026-08-24T17:51:37.130Z] [SUCCESS] Group Settings tab loaded
+[2026-08-24T17:51:37.130Z] [STEP] Clicking "Change Pricing Model"
+[2026-08-24T17:51:37.296Z] [SUCCESS] "Change Pricing Model" clicked
+[2026-08-24T17:51:37.297Z] [STEP] Verifying Update Group Pricing page loaded
+[2026-08-24T17:51:39.305Z] [SUCCESS] Update Group Pricing page loaded
+[2026-08-24T17:51:39.305Z] [STEP] Selecting "Monthly Subscription" pricing model
+[2026-08-24T17:51:39.418Z] [SUCCESS] Monthly Subscription selected
+[2026-08-24T17:51:39.418Z] [STEP] Entering monthly price: $5
+[2026-08-24T17:51:39.526Z] [SUCCESS] Monthly price set to $5
+[2026-08-24T17:51:39.526Z] [STEP] Clicking "Update Pricing"
+[2026-08-24T17:51:39.685Z] [SUCCESS] "Update Pricing" clicked — confirmation dialog opened
+[2026-08-24T17:51:39.685Z] [STEP] Clicking "Apply Changes"
+[2026-08-24T17:51:40.788Z] [SUCCESS] "Apply Changes" clicked — confirmation dialog closed
+[2026-08-24T17:51:40.788Z] [STEP] Opening group Settings tab for: pw_group_20260824_175111_w4r0678lfn
+[2026-08-24T17:51:43.580Z] [SUCCESS] Group Settings tab loaded
+[2026-08-24T17:51:43.580Z] [ASSERT] Verifying monthly pricing summary: Monthly Paid $5/Month
+[2026-08-24T17:51:43.591Z] [SUCCESS] Monthly pricing summary verified: $5/Month
