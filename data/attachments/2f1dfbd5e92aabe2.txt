@@ -1,0 +1,18 @@
+[2026-08-24T15:56:04.327Z] [STEP] Navigating to My Groups page
+[2026-08-24T15:56:05.607Z] [STEP] Waiting for My Groups page content
+[2026-08-24T15:56:09.274Z] [STEP] Clicking on group: PW_Group_20260824_154935_w7r05975uc
+[2026-08-24T15:56:09.274Z] [STEP] Waiting for group list to settle
+[2026-08-24T15:56:10.064Z] [SUCCESS] Group list settled — 3 card(s) on the active tab
+[2026-08-24T15:56:10.455Z] [SUCCESS] Group "PW_Group_20260824_154935_w7r05975uc" clicked
+[2026-08-24T15:56:10.455Z] [SUCCESS] RA-01 PASSED: opened leader-space for "PW_Group_20260824_154935_w7r05975uc"
+[2026-08-24T15:56:10.471Z] [STEP] Reactivating Listing group via "Upgrade to Active Group" (no payment on Multi-Group plan)
+[2026-08-24T15:56:15.723Z] [SUCCESS] Group reactivated — "Upgrade to Active Group" CTA no longer shown
+[2026-08-24T15:56:15.723Z] [SUCCESS] RA-02 PASSED: "PW_Group_20260824_154935_w7r05975uc" reactivated to Active
+[2026-08-24T15:56:15.724Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-08-24T15:56:16.580Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-08-24T15:56:16.580Z] [STEP] Verifying Plan & Billing page content
+[2026-08-24T15:56:20.513Z] [SUCCESS] Plan & Billing page verified
+[2026-08-24T15:56:20.513Z] [ASSERT] Active-state menu for "PW_Group_20260824_154935_w7r05975uc" shows Downgrade to Listing + Cancel & Delete Group
+[2026-08-24T15:56:20.513Z] [STEP] Opening "Group options" menu for group "PW_Group_20260824_154935_w7r05975uc"
+[2026-08-24T15:56:21.665Z] [INFO] Popover wait fell through — proceeding to item lookup
+[2026-08-24T15:56:22.446Z] [SUCCESS] RA-03 PASSED: "PW_Group_20260824_154935_w7r05975uc" Active again — group menu restored
