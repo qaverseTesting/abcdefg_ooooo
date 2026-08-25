@@ -1,6 +1,0 @@
-[2026-08-25T11:06:04.038Z] [STEP] Ensuring clean session state (Force Logout)
-[2026-08-25T11:06:04.038Z] [INFO] Already on an anonymous page. Skipping logout logic.
-[2026-08-25T11:06:04.064Z] [NAV] Navigating to Registration
-[2026-08-25T11:06:06.488Z] [STEP] Testing field formatting: Email (System-wide Collision check)
-[2026-08-25T11:06:06.488Z] [STEP] Filling registration form for: pw_auto_mh_member@mailinator.com
-[2026-08-25T11:06:10.330Z] [STEP] Clearing 3rd-party overlays for clean interaction
