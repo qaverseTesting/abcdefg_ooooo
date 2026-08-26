@@ -1,0 +1,62 @@
+[2026-08-26T09:50:23.654Z] [STEP] Registering new leader with email: pw_auto_mh_2609502340z3@mentalhappy.com
+[2026-08-26T09:50:23.655Z] [STEP] Navigating to Registration Page
+[2026-08-26T09:50:24.758Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-26T09:50:24.841Z] [SUCCESS] Registration Page loaded
+[2026-08-26T09:50:24.841Z] [STEP] Filling registration form for: pw_auto_mh_2609502340z3@mentalhappy.com
+[2026-08-26T09:50:28.783Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-26T09:50:28.829Z] [STEP] Submitting registration form
+[2026-08-26T09:50:29.542Z] [SUCCESS] Registration form submitted
+[2026-08-26T09:50:29.542Z] [STEP] Waiting for OTP entry page to be ready
+[2026-08-26T09:50:34.893Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-08-26T09:50:34.893Z] [INFO] [OTP] Bypass active for pw_auto_mh_2609502340z3@mentalhappy.com. Returning fixed validation code: 456321
+[2026-08-26T09:50:34.903Z] [STEP] Entering OTP: 456321
+[2026-08-26T09:50:34.903Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-26T09:50:35.426Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-26T09:50:35.979Z] [SUCCESS] OTP entered
+[2026-08-26T09:50:35.979Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-08-26T09:50:35.992Z] [ASSERT] Verifying toast message matching: /Email Verified Successfully/i
+[2026-08-26T09:50:37.248Z] [SUCCESS] Leader registration and OTP verification completed
+[2026-08-26T09:50:37.251Z] [STEP] Selecting Leader role on Welcome page
+[2026-08-26T09:50:37.263Z] [STEP] Verifying Welcome Page is displayed
+[2026-08-26T09:50:37.263Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-26T09:50:37.697Z] [SUCCESS] Welcome Page verification successful (Role buttons visible)
+[2026-08-26T09:50:37.697Z] [STEP] Selecting path: Continue as a Group Leader
+[2026-08-26T09:50:37.697Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-26T09:50:38.141Z] [INFO] Clicked Continue as a Group Leader
+[2026-08-26T09:50:38.178Z] [SUCCESS] Group Leader path selected
+[2026-08-26T09:50:38.178Z] [STEP] Clicking Welcome Continue button
+[2026-08-26T09:50:38.178Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-26T09:50:38.663Z] [SUCCESS] Welcome Continue clicked
+[2026-08-26T09:50:38.663Z] [SUCCESS] Leader role selection completed
+[2026-08-26T09:50:38.664Z] [STEP] Completing Leader onboarding via SKIP path
+[2026-08-26T09:50:38.671Z] [STEP] Completing Leader onboarding via SKIP (Deep Check Flow)
+[2026-08-26T09:50:38.759Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-26T09:50:38.809Z] [INFO] Checking for Screen 2 (Survey) Skip option...
+[2026-08-26T09:50:38.834Z] [STEP] Clicking Onboarding Skip button
+[2026-08-26T09:50:38.834Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-26T09:50:41.769Z] [SUCCESS] Onboarding cleared successfully
+[2026-08-26T09:50:41.769Z] [SUCCESS] Leader onboarding (Skip) completed
+[2026-08-26T09:50:41.769Z] [STEP] Selecting Active Plan ($19)
+[2026-08-26T09:50:41.770Z] [STEP] Verifying Hosting Plan page content
+[2026-08-26T09:50:43.862Z] [SUCCESS] Hosting Plan page verification successful
+[2026-08-26T09:50:43.869Z] [STEP] Selecting Active Group Plan
+[2026-08-26T09:50:44.435Z] [STEP] Clicking Pay Now
+[2026-08-26T09:50:50.743Z] [SUCCESS] Plan selected, landing on Stripe Checkout
+[2026-08-26T09:50:50.745Z] [STEP] Completing Stripe Payment
+[2026-08-26T09:50:50.745Z] [STEP] Verifying Stripe form visibility
+[2026-08-26T09:50:55.234Z] [SUCCESS] Stripe form verified
+[2026-08-26T09:50:55.234Z] [STEP] Filling Stripe payment details
+[2026-08-26T09:50:55.381Z] [STEP] Selecting country: US
+[2026-08-26T09:50:55.604Z] [SUCCESS] Country settled on US
+[2026-08-26T09:51:03.981Z] [SUCCESS] Stripe payment details filled
+[2026-08-26T09:51:03.982Z] [STEP] Submitting payment (attempt 1/3)
+[2026-08-26T09:51:04.646Z] [SUCCESS] Payment submitted
+[2026-08-26T09:51:04.646Z] [SUCCESS] Stripe payment submitted
+[2026-08-26T09:51:04.660Z] [STEP] Verifying Payment Success (Redirect or Popup)
+[2026-08-26T09:51:11.569Z] [INFO] Payment landing state: popup — https://staging.mentalhappy.com/welcome/hosting-payment?plan=ACTIVE_GROUP&period=monthly
+[2026-08-26T09:51:11.569Z] [STEP] Verifying Payment Success popup visibility
+[2026-08-26T09:51:13.267Z] [SUCCESS] Payment Success popup verified
+[2026-08-26T09:51:13.267Z] [STEP] Clicking "Do this later"
+[2026-08-26T09:51:13.798Z] [SUCCESS] Success popup dismissed via Do this later
+[2026-08-26T09:51:14.356Z] [SUCCESS] Subscription completed and reached target page.
+[2026-08-26T09:51:14.688Z] [SUCCESS] Leader Active Group Subscription Journey completed successfully

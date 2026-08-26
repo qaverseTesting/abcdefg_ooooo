@@ -1,0 +1,6 @@
+[2026-08-26T09:56:22.258Z] [STEP] Logging in as leader
+[2026-08-26T09:56:22.258Z] [STEP] Logging in as leader
+[2026-08-26T09:56:22.259Z] [STEP] Ensuring clean session state (Force Logout)
+[2026-08-26T09:56:22.259Z] [INFO] Already on an anonymous page. Skipping logout logic.
+[2026-08-26T09:56:22.268Z] [NAV] Navigating to Login
+[2026-08-26T09:56:23.150Z] [INFO] Attempting login for user: pw_auto_mh_leader@mailinator.com | Password: Am123456 (expectSuccess: true)
