@@ -1,3 +1,0 @@
-[2026-08-26T10:27:06.874Z] [STEP] Testing mandatory fields: Missing password submission
-[2026-08-26T10:27:06.874Z] [INFO] Attempting login for user: pw_auto_mh_member@mailinator.com | Password: [EMPTY] (expectSuccess: false)
-[2026-08-26T10:27:14.061Z] [SUCCESS] Success: Form correctly blocked "Missing password submission"

@@ -1,8 +1,0 @@
-[2026-08-26T10:22:37.698Z] [STEP] Filling Stripe payment details
-[2026-08-26T10:22:38.704Z] [STEP] Selecting country: US
-[2026-08-26T10:22:38.842Z] [SUCCESS] Country settled on US
-[2026-08-26T10:22:45.967Z] [INFO] [STRIPE LINK] Filled the opt-in email (pw_auto_mh_link@mailinator.com).
-[2026-08-26T10:22:46.668Z] [INFO] [STRIPE LINK] Filled the opt-in phone (4155550123).
-[2026-08-26T10:22:46.668Z] [SUCCESS] Stripe payment details filled
-[2026-08-26T10:22:46.668Z] [STEP] Submitting payment (attempt 1/3)
-[2026-08-26T10:22:58.252Z] [SUCCESS] Payment submitted

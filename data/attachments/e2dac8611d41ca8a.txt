@@ -1,0 +1,30 @@
+[2026-08-26T11:29:48.564Z] [INFO] [LIFECYCLE] Shared context initialised — Active Plan + 1 Active Group starting state
+[2026-08-26T11:29:48.677Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-08-26T11:29:50.117Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-08-26T11:29:50.117Z] [STEP] Verifying Plan & Billing page content
+[2026-08-26T11:29:53.245Z] [SUCCESS] Plan & Billing page verified
+[2026-08-26T11:29:53.245Z] [STEP] Verifying subscription with price $19 is visible
+[2026-08-26T11:29:53.512Z] [SUCCESS] Subscription details verified
+[2026-08-26T11:29:53.512Z] [SUCCESS] DL-01 PASSED: $19 Active Plan confirmed
+[2026-08-26T11:29:53.521Z] [ASSERT] Active-state menu shows "Cancel & Delete Group" + "Downgrade to Listing"
+[2026-08-26T11:29:54.915Z] [SUCCESS] DL-02 PASSED: Active-state subscription menu options confirmed
+[2026-08-26T11:29:54.916Z] [STEP] Clicking Downgrade to Listing from subscription menu
+[2026-08-26T11:29:54.916Z] [STEP] Opening subscription options menu
+[2026-08-26T11:29:55.476Z] [SUCCESS] Subscription options menu open
+[2026-08-26T11:29:56.155Z] [SUCCESS] Downgrade to Listing selected from menu
+[2026-08-26T11:29:56.155Z] [ASSERT] Move Group to Listing modal is visible
+[2026-08-26T11:29:56.523Z] [SUCCESS] DL-03 PASSED: Move to Listing modal opened with correct heading
+[2026-08-26T11:29:56.524Z] [ASSERT] Move-to-Listing warning bullets are visible
+[2026-08-26T11:29:56.711Z] [SUCCESS] DL-04 PASSED: Modal warning bullets verified
+[2026-08-26T11:29:56.711Z] [STEP] Clicking "Downgrade to Listing" — confirming downgrade
+[2026-08-26T11:29:56.988Z] [ASSERT] Group Downgraded success toast is visible
+[2026-08-26T11:29:58.252Z] [SUCCESS] DL-05 PASSED: Success toast "Group Downgraded to Listing Successfully" confirmed
+[2026-08-26T11:29:58.253Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-08-26T11:29:59.037Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-08-26T11:29:59.037Z] [STEP] Verifying Plan & Billing page content
+[2026-08-26T11:30:01.792Z] [SUCCESS] Plan & Billing page verified
+[2026-08-26T11:30:01.793Z] [STEP] Verifying $19 subscription is NOT visible (plan no longer active)
+[2026-08-26T11:30:01.895Z] [SUCCESS] $19 subscription confirmed absent — billing state correct
+[2026-08-26T11:30:01.895Z] [SUCCESS] DL-06 PASSED: $19 subscription absent — downgrade reflected in billing UI
+[2026-08-26T11:30:01.895Z] [ASSERT] Listing-state menu shows "Cancel & Delete Group" + "Upgrade to Active Group"
+[2026-08-26T11:30:02.424Z] [SUCCESS] DL-07 PASSED: Listing-state Group options menu confirmed

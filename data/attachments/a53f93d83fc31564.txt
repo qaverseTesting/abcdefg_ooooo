@@ -1,9 +1,0 @@
-[2026-08-26T10:17:13.412Z] [WARN] [PAYMENT ERROR] [page] MentalHappy | [stripe-frame] Please try again. ⚠️
-[2026-08-26T10:17:13.413Z] [WARN] [PAYMENT RETRY] Stripe returned a transient error on attempt 1 ([stripe-frame] Please try again. ⚠️). Retrying — the card and every other field are still filled, so only the submit is repeated.
-[2026-08-26T10:18:17.261Z] [WARN] [PAYMENT ERROR] [page] MentalHappy | [stripe-frame] Please try again. ⚠️
-[2026-08-26T10:18:17.261Z] [WARN] [PAYMENT RETRY] Stripe returned a transient error on attempt 2 ([stripe-frame] Please try again. ⚠️). Retrying — the card and every other field are still filled, so only the submit is repeated.
-[2026-08-26T10:19:20.892Z] [WARN] [PAYMENT ERROR] [page] MentalHappy | [stripe-frame] Please try again. ⚠️
-[2026-08-26T10:19:20.893Z] [WARN] [ONE-TIME PAYMENT REFUSED] Stripe rejected the payment for a group priced One-Time, with "Please try again." — three attempts, 60s apart.
-  The checkout itself is correct. It routed properly and Total minus the group fee was exactly the platform fee ($10 + $3 = $13); that assertion passed before this.
-  It is the MODEL, not the member. Proven 2026-08-26: a re-joining member AND a brand-new account both get it, while Free and Monthly payments succeed in the same run through the same code path.
-  A one-time charge is a different Stripe flow from a subscription, which is where to look. The browser can see the refusal but not the reason.
