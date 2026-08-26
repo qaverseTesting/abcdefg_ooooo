@@ -1,0 +1,19 @@
+[2026-08-26T10:19:34.667Z] [STEP] Opening dashboard
+[2026-08-26T10:19:36.581Z] [STEP] Searching for "PW_Group_20260826_101415_w3r07704gv" — up to 5 attempts (fresh groups index slowly)
+[2026-08-26T10:19:36.582Z] [STEP] Searching for group: PW_Group_20260826_101415_w3r07704gv
+[2026-08-26T10:19:43.332Z] [SUCCESS] Group "PW_Group_20260826_101415_w3r07704gv" found in Explore search (attempt 1/5)
+[2026-08-26T10:19:43.333Z] [STEP] Verifying group card content for: PW_Group_20260826_101415_w3r07704gv
+[2026-08-26T10:19:43.476Z] [SUCCESS] Group card content verified: PW_Group_20260826_101415_w3r07704gv
+[2026-08-26T10:19:43.533Z] [INFO] Side panel not open — clicking card to open: PW_Group_20260826_101415_w3r07704gv
+[2026-08-26T10:19:43.533Z] [STEP] Clicking group card: PW_Group_20260826_101415_w3r07704gv
+[2026-08-26T10:19:43.667Z] [SUCCESS] Group card clicked: PW_Group_20260826_101415_w3r07704gv
+[2026-08-26T10:19:47.340Z] [INFO] Side panel not open — clicking card to open: PW_Group_20260826_101415_w3r07704gv
+[2026-08-26T10:19:47.340Z] [STEP] Clicking group card: PW_Group_20260826_101415_w3r07704gv
+[2026-08-26T10:19:53.506Z] [STEP] Clicking join on "PW_Group_20260826_101415_w3r07704gv" — detecting destination (checkout or group)
+[2026-08-26T10:19:53.509Z] [SUCCESS] Join destination for "PW_Group_20260826_101415_w3r07704gv": group
+[2026-08-26T10:19:53.510Z] [STEP] Waiting for group page to load after payment redirect
+[2026-08-26T10:19:53.512Z] [SUCCESS] Group page loaded
+[2026-08-26T10:19:53.512Z] [STEP] Checking for post-join success modal
+[2026-08-26T10:19:53.525Z] [SUCCESS] Success modal handled
+[2026-08-26T10:19:53.525Z] [STEP] Verifying Conversations tab is visible
+[2026-08-26T10:19:53.532Z] [SUCCESS] Conversations tab visible — membership access confirmed

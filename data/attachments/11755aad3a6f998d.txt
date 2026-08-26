@@ -1,0 +1,19 @@
+[2026-08-26T10:37:45.354Z] [STEP] Opening dashboard
+[2026-08-26T10:37:46.302Z] [STEP] Searching for group: PW_Group_20260826_103603_w21r05951jp
+[2026-08-26T10:37:51.894Z] [STEP] Verifying group card content for: PW_Group_20260826_103603_w21r05951jp
+[2026-08-26T10:37:53.092Z] [SUCCESS] Group card content verified: PW_Group_20260826_103603_w21r05951jp
+[2026-08-26T10:37:53.137Z] [STEP] Following group: PW_Group_20260826_103603_w21r05951jp
+[2026-08-26T10:37:53.198Z] [INFO] Side panel not open — clicking card to open: PW_Group_20260826_103603_w21r05951jp
+[2026-08-26T10:37:53.198Z] [STEP] Clicking group card: PW_Group_20260826_103603_w21r05951jp
+[2026-08-26T10:37:53.496Z] [SUCCESS] Group card clicked: PW_Group_20260826_103603_w21r05951jp
+[2026-08-26T10:37:53.731Z] [SUCCESS] Follow action sent for: PW_Group_20260826_103603_w21r05951jp
+[2026-08-26T10:37:53.734Z] [STEP] Navigating to My Groups page
+[2026-08-26T10:37:54.408Z] [STEP] Waiting for My Groups page content
+[2026-08-26T10:37:59.030Z] [STEP] Clicking filter: Following
+[2026-08-26T10:37:59.454Z] [SUCCESS] Filter "Following" clicked
+[2026-08-26T10:37:59.454Z] [ASSERT] Verifying "PW_Group_20260826_103603_w21r05951jp" is listed as followed
+[2026-08-26T10:37:59.454Z] [STEP] Waiting for group list to settle
+[2026-08-26T10:38:03.008Z] [SUCCESS] Group list settled — 16 card(s) on the active tab
+[2026-08-26T10:38:03.177Z] [SUCCESS] Confirmed followed: PW_Group_20260826_103603_w21r05951jp
+[2026-08-26T10:38:03.177Z] [SUCCESS] [FOLLOW VERIFIED] - Member follows: PW_Group_20260826_103603_w21r05951jp
+[2026-08-26T10:38:05.807Z] [INFO] [PRICING DONE] - Group: PW_Group_20260826_103603_w21r05951jp

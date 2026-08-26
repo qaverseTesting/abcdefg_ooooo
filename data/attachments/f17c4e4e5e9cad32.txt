@@ -1,6 +1,0 @@
-[2026-08-26T09:57:07.934Z] [STEP] Navigating to My Groups page
-[2026-08-26T09:57:09.051Z] [STEP] Waiting for My Groups page content
-[2026-08-26T09:57:11.013Z] [STEP] Clicking filter: Joined
-[2026-08-26T09:57:11.526Z] [SUCCESS] Filter "Joined" clicked
-[2026-08-26T09:57:11.558Z] [STEP] Verifying empty state content
-[2026-08-26T09:57:11.915Z] [SUCCESS] Empty state verified: No groups found + Most Requested Groups + Submit request button

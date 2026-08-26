@@ -1,0 +1,9 @@
+{
+  "target": "https://staging.mentalhappy.com",
+  "environment": "staging",
+  "up": true,
+  "status": 200,
+  "detail": "HTTP 200",
+  "attempts": 1,
+  "durationMs": 247
+}

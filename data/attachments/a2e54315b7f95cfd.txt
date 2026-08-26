@@ -1,0 +1,38 @@
+[2026-08-26T10:14:54.408Z] [STEP] Opening dashboard
+[2026-08-26T10:14:55.060Z] [STEP] Searching for "PW_Group_20260826_101415_w3r07704gv" — up to 5 attempts (fresh groups index slowly)
+[2026-08-26T10:14:55.060Z] [STEP] Searching for group: PW_Group_20260826_101415_w3r07704gv
+[2026-08-26T10:14:58.740Z] [SUCCESS] Group "PW_Group_20260826_101415_w3r07704gv" found in Explore search (attempt 1/5)
+[2026-08-26T10:14:58.740Z] [STEP] Verifying group card content for: PW_Group_20260826_101415_w3r07704gv
+[2026-08-26T10:14:58.768Z] [SUCCESS] Group card content verified: PW_Group_20260826_101415_w3r07704gv
+[2026-08-26T10:14:58.776Z] [STEP] Verifying join CTA is visible and enabled
+[2026-08-26T10:14:58.785Z] [INFO] Side panel not open — clicking card to open: PW_Group_20260826_101415_w3r07704gv
+[2026-08-26T10:14:58.785Z] [STEP] Clicking group card: PW_Group_20260826_101415_w3r07704gv
+[2026-08-26T10:14:58.926Z] [SUCCESS] Group card clicked: PW_Group_20260826_101415_w3r07704gv
+[2026-08-26T10:14:59.052Z] [SUCCESS] Join CTA verified
+[2026-08-26T10:14:59.202Z] [INFO] [CTA PANEL BUTTONS] [{"text":"","aria":"Close"},{"text":"","aria":"Close"},{"text":"","aria":"Share group"},{"text":"","aria":"Show platform fee details"},{"text":"Join Group","aria":"Join Group"}]
+[2026-08-26T10:14:59.245Z] [INFO] [CTA] Free: button "Join Group", price "none"
+[2026-08-26T10:14:59.249Z] [ASSERT] Verifying side panel discloses the platform fee: "+3$ platform fee will be added to your total"
+[2026-08-26T10:14:59.490Z] [SUCCESS] Platform fee disclosure verified in side panel (revealed on hover)
+[2026-08-26T10:14:59.490Z] [SUCCESS] [JP-5] Free group DOES disclose the platform fee in the side panel
+[2026-08-26T10:14:59.491Z] [STEP] Clicking join on "PW_Group_20260826_101415_w3r07704gv" — detecting destination (checkout or group)
+[2026-08-26T10:15:00.184Z] [SUCCESS] Join destination for "PW_Group_20260826_101415_w3r07704gv": checkout
+[2026-08-26T10:15:00.187Z] [STEP] Verifying checkout summary for: PW_Group_20260826_101415_w3r07704gv
+[2026-08-26T10:15:03.977Z] [SUCCESS] Checkout summary verified
+[2026-08-26T10:15:03.977Z] [STEP] Verifying $3 platform fee is disclosed and added to the total
+[2026-08-26T10:15:06.006Z] [SUCCESS] Platform fee verified: $3 disclosed and included in the total
+[2026-08-26T10:15:06.006Z] [STEP] Verifying Stripe iframe is visible
+[2026-08-26T10:15:06.239Z] [SUCCESS] Stripe iframe verified
+[2026-08-26T10:15:06.240Z] [STEP] Filling Stripe payment details
+[2026-08-26T10:15:06.466Z] [STEP] Selecting country: US
+[2026-08-26T10:15:06.652Z] [SUCCESS] Country settled on US
+[2026-08-26T10:15:09.691Z] [SUCCESS] Stripe payment details filled
+[2026-08-26T10:15:09.692Z] [STEP] Submitting payment (attempt 1/3)
+[2026-08-26T10:15:14.323Z] [SUCCESS] Payment submitted
+[2026-08-26T10:15:14.323Z] [SUCCESS] Free group charged the $3 platform fee — JP-5 holds on the member side too
+[2026-08-26T10:15:14.324Z] [STEP] Waiting for group page to load after payment redirect
+[2026-08-26T10:15:14.326Z] [SUCCESS] Group page loaded
+[2026-08-26T10:15:14.326Z] [STEP] Checking for post-join success modal
+[2026-08-26T10:15:14.565Z] [SUCCESS] Success modal handled
+[2026-08-26T10:15:14.566Z] [STEP] Verifying Conversations tab is visible
+[2026-08-26T10:15:16.604Z] [SUCCESS] Conversations tab visible — membership access confirmed
+[2026-08-26T10:15:16.605Z] [SUCCESS] Member joined while Free: pw_auto_mh_26101443i7n8@mentalhappy.com

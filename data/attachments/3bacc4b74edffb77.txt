@@ -1,0 +1,4 @@
+[2026-08-26T10:19:53.505Z] [WARN] [DONATION SIDE PANEL DOM] Side panel did not open for the donation group. Not failed — this step only reports copy. If the join below also fails to find a CTA, start here.
+[2026-08-26T10:19:53.509Z] [WARN] [DONATION CHARGES NOTHING] Joining "PW_Group_20260826_101415_w3r07704gv" while priced Donation-Based went straight into the group. No checkout, no contribution field, no $3 platform fee — the member paid nothing.
+  The leader is told otherwise. Their own pricing dialog for this group reads "Total Member Pays $3/month" and "Members will still pay the $3 platform service fee to stay in the group".
+  A FREE group on this same leader DOES charge the fee (JPM-01 pays it every run), so this is specific to Donation-Based rather than to $0 pricing.
