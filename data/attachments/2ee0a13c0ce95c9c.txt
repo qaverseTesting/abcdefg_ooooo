@@ -1,0 +1,20 @@
+[2026-08-27T16:20:54.138Z] [STEP] Logging in as member
+[2026-08-27T16:20:54.139Z] [STEP] Ensuring clean session state (Force Logout)
+[2026-08-27T16:20:54.139Z] [INFO] Already on an anonymous page. Skipping logout logic.
+[2026-08-27T16:20:54.163Z] [NAV] Navigating to Login
+[2026-08-27T16:20:56.562Z] [INFO] Attempting login for user: pw_auto_mh_member@mailinator.com | Password: Am123456 (expectSuccess: true)
+[2026-08-27T16:21:04.473Z] [SUCCESS] Login successful. Landed on: https://staging.mentalhappy.com/groups
+[2026-08-27T16:21:04.473Z] [ASSERT] Verifying dashboard is loaded
+[2026-08-27T16:21:04.987Z] [SUCCESS] Dashboard load verified
+[2026-08-27T16:21:04.988Z] [STEP] Performing Logout to establish post-auth state
+[2026-08-27T16:21:04.988Z] [STEP] User is logging out...
+[2026-08-27T16:21:04.988Z] [STEP] Clicking on Profile Icon (User menu)
+[2026-08-27T16:21:07.813Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-08-27T16:21:08.035Z] [STEP] Waiting for Logout menuitem to be visible
+[2026-08-27T16:21:08.097Z] [STEP] Clicking Logout from menu
+[2026-08-27T16:21:08.453Z] [STEP] Handling Logout Confirmation Modal
+[2026-08-27T16:21:11.698Z] [STEP] Ensuring redirection to Login page
+[2026-08-27T16:21:11.947Z] [SUCCESS] Logout action completed and verified
+[2026-08-27T16:21:12.093Z] [STEP] Attempting to navigate back to the dashboard after logout
+[2026-08-27T16:21:16.176Z] [ASSERT] Verifying the restored page is in a guest state
+[2026-08-27T16:21:16.215Z] [SUCCESS] Security Verified: Back does not restore the logged-in session.

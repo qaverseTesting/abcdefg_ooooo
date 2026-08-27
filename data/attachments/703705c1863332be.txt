@@ -1,8 +1,0 @@
-[2026-08-27T11:37:14.902Z] [STEP] Waiting for group page to load after payment redirect
-[2026-08-27T11:37:14.927Z] [SUCCESS] Group page loaded
-[2026-08-27T11:37:14.927Z] [STEP] Checking for post-join success modal
-[2026-08-27T11:37:14.960Z] [SUCCESS] Success modal handled
-[2026-08-27T11:37:14.960Z] [STEP] Verifying Conversations tab is visible
-[2026-08-27T11:37:15.900Z] [SUCCESS] Conversations tab visible — membership access confirmed
-[2026-08-27T11:37:15.900Z] [SUCCESS] TC-11 PASSED: Membership access confirmed
-[2026-08-27T11:37:16.880Z] [SUCCESS] [SETUP] member_subscribed.json captured from group-join-flow
