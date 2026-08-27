@@ -1,0 +1,2 @@
+[2026-08-27T11:56:23.529Z] [STEP] Attempting to access private Dashboard as Guest
+[2026-08-27T11:56:28.818Z] [ASSERT] Verifying redirect to /login

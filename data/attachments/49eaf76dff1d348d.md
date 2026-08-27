@@ -1,0 +1,217 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - link "cover" [ref=e6] [cursor=pointer]:
+          - /url: /groups
+          - img "cover" [ref=e8]
+        - link "Explore Groups" [ref=e10] [cursor=pointer]:
+          - /url: /groups
+          - generic [ref=e12]:
+            - img [ref=e13]
+            - paragraph [ref=e16]: Explore Groups
+      - link "Log in" [ref=e19] [cursor=pointer]:
+        - /url: /login?returnUrl=%2Fgroups
+        - button "Log in" [ref=e20]
+    - generic [ref=e21]:
+      - region "Mobile app download" [ref=e23]:
+        - generic [ref=e24]:
+          - img [ref=e26]
+          - generic [ref=e27]:
+            - paragraph [ref=e28]: MentalHappy is better on the app
+            - paragraph [ref=e30]: Join sessions, message your groups and get reminders on the go — free on iPhone & Android.
+        - generic [ref=e32]:
+          - link "Download MentalHappy on the App Store" [ref=e33] [cursor=pointer]:
+            - /url: https://apps.apple.com/us/app/mentalhappy/id1574363583?ct=web_app_top_banner&mt=8
+            - generic [ref=e34]:
+              - img [ref=e35]
+              - generic [ref=e37]:
+                - paragraph [ref=e38]: Download on the
+                - paragraph [ref=e39]: App Store
+          - link "Get MentalHappy on Google Play" [ref=e40] [cursor=pointer]:
+            - /url: https://play.google.com/store/apps/details?id=com.mentalhappy.app&referrer=utm_source%3Dweb_app%26utm_medium%3Dtop_banner%26utm_campaign%3Dmobile_app_download
+            - generic [ref=e41]:
+              - img [ref=e42]
+              - generic [ref=e43]:
+                - paragraph [ref=e44]: GET IT ON
+                - paragraph [ref=e45]: Google Play
+        - button "Dismiss app download banner" [ref=e46] [cursor=pointer]:
+          - img [ref=e47]
+      - generic [ref=e52]:
+        - generic [ref=e55]:
+          - generic [ref=e56]:
+            - generic [ref=e57]:
+              - generic:
+                - img
+              - textbox "Search for groups" [ref=e58]:
+                - /placeholder: Search for groups names or leaders
+            - button "Filters" [ref=e61] [cursor=pointer]:
+              - generic [ref=e62]:
+                - img [ref=e63]
+                - paragraph [ref=e65]: Filters
+          - tablist "Explore tabs" [ref=e67]:
+            - tab "All Groups" [selected] [ref=e68] [cursor=pointer]:
+              - paragraph [ref=e69]: All Groups
+            - tab "Top Groups" [ref=e71] [cursor=pointer]:
+              - paragraph [ref=e72]: Top Groups
+            - tab "Listing Groups" [ref=e74] [cursor=pointer]:
+              - paragraph [ref=e75]: Listing Groups
+            - tab "Requested Topics" [ref=e77] [cursor=pointer]:
+              - paragraph [ref=e78]: Requested Topics
+        - generic [ref=e82]:
+          - group "AM Test 10" [ref=e83] [cursor=pointer]:
+            - img "AM Test 10" [ref=e85]
+            - generic [ref=e87]:
+              - paragraph [ref=e88]: AM Test 10
+              - generic [ref=e89]:
+                - generic [ref=e90]:
+                  - img "AMTestFirst AMTestLast" [ref=e92]
+                  - paragraph [ref=e93]: AMTestFirst AMTestLast
+                - img [ref=e95]
+          - group "AM Test Group of Free" [ref=e98] [cursor=pointer]:
+            - img "AM Test Group of Free" [ref=e100]
+            - generic [ref=e102]:
+              - paragraph [ref=e103]: AM Test Group of Free
+              - generic [ref=e104]:
+                - generic [ref=e105]:
+                  - img "Am Leader" [ref=e107]
+                  - paragraph [ref=e108]: Am Leader
+                - img [ref=e110]
+          - group "AMActiveGroup" [ref=e113] [cursor=pointer]:
+            - img "AMActiveGroup" [ref=e115]
+            - generic [ref=e117]:
+              - paragraph [ref=e118]: AMActiveGroup
+              - generic [ref=e119]:
+                - generic [ref=e120]:
+                  - img "Active GroupPlan" [ref=e122]
+                  - paragraph [ref=e123]: Active GroupPlan
+                - img [ref=e125]
+          - group "Aees Group" [ref=e128] [cursor=pointer]:
+            - img "Aees Group" [ref=e130]
+            - generic [ref=e132]:
+              - paragraph [ref=e133]: Aees Group
+              - generic [ref=e134]:
+                - generic [ref=e135]:
+                  - img "Aee Lead" [ref=e137]
+                  - paragraph [ref=e138]: Aee Lead
+                - img [ref=e140]
+          - group "Anxiety Awareness and Depression Test" [ref=e143] [cursor=pointer]:
+            - img "Anxiety Awareness and Depression Test" [ref=e145]
+            - generic [ref=e147]:
+              - paragraph [ref=e148]: Anxiety Awareness and Depression Test
+              - generic [ref=e149]:
+                - generic [ref=e150]:
+                  - img "Courtney Doe" [ref=e152]
+                  - paragraph [ref=e153]: Courtney Doe
+                - img [ref=e155]
+          - group "Bees" [ref=e158] [cursor=pointer]:
+            - img "Bees" [ref=e160]
+            - generic [ref=e162]:
+              - paragraph [ref=e163]: Bees
+              - generic [ref=e164]:
+                - generic [ref=e165]:
+                  - img "Bees Lead" [ref=e167]
+                  - paragraph [ref=e168]: Bees Lead
+                - img [ref=e170]
+          - group "Breakup Recovery Guide" [ref=e173] [cursor=pointer]:
+            - img "Breakup Recovery Guide" [ref=e175]
+            - generic [ref=e177]:
+              - paragraph [ref=e178]: Breakup Recovery Guide
+              - generic [ref=e179]:
+                - generic [ref=e180]:
+                  - img "Court Dorothy" [ref=e182]
+                  - paragraph [ref=e183]: Court Dorothy
+                - img [ref=e185]
+          - group "Change your mind Change your LIFE" [ref=e188] [cursor=pointer]:
+            - img "Change your mind Change your LIFE" [ref=e190]
+            - generic [ref=e192]:
+              - paragraph [ref=e193]: Change your mind Change your LIFE
+              - generic [ref=e194]:
+                - generic [ref=e195]:
+                  - img "Tom June" [ref=e197]
+                  - paragraph [ref=e198]: Tom June
+                - img [ref=e200]
+          - group "DonationGroup" [ref=e203] [cursor=pointer]:
+            - img "DonationGroup" [ref=e205]
+            - generic [ref=e207]:
+              - paragraph [ref=e208]: DonationGroup
+              - generic [ref=e209]:
+                - generic [ref=e210]:
+                  - img "qa mhsglone" [ref=e212]: qm
+                  - paragraph [ref=e213]: qa mhsglone
+                - img [ref=e215]
+          - group "Dreamers" [ref=e218] [cursor=pointer]:
+            - img "Dreamers" [ref=e220]
+            - generic [ref=e222]:
+              - paragraph [ref=e223]: Dreamers
+              - generic [ref=e224]:
+                - generic [ref=e225]:
+                  - img "Daisy Johnson" [ref=e227]
+                  - paragraph [ref=e228]: Daisy Johnson
+                - img [ref=e230]
+          - group "Easy Cliq" [ref=e233] [cursor=pointer]:
+            - img "Easy Cliq" [ref=e235]
+            - generic [ref=e237]:
+              - paragraph [ref=e238]: Easy Cliq
+              - generic [ref=e239]:
+                - generic [ref=e240]:
+                  - img "Easy Cliq" [ref=e242]
+                  - paragraph [ref=e243]: Easy Cliq
+                - img [ref=e245]
+          - group "Email reception bug" [ref=e248] [cursor=pointer]:
+            - img "Email reception bug" [ref=e250]
+            - generic [ref=e252]:
+              - paragraph [ref=e253]: Email reception bug
+              - generic [ref=e254]:
+                - generic [ref=e255]:
+                  - img "Clem Cleft" [ref=e257]: CC
+                  - paragraph [ref=e258]: Clem Cleft
+                - img [ref=e260]
+          - group "Fishes_Birds" [ref=e263] [cursor=pointer]:
+            - img "Fishes_Birds" [ref=e265]
+            - generic [ref=e267]:
+              - paragraph [ref=e268]: Fishes_Birds
+              - generic [ref=e269]:
+                - generic [ref=e270]:
+                  - img "azeez sglw" [ref=e272]
+                  - paragraph [ref=e273]: azeez sglw
+                - img [ref=e275]
+          - group "Fixed Group" [ref=e278] [cursor=pointer]:
+            - img "Fixed Group" [ref=e280]
+            - generic [ref=e282]:
+              - paragraph [ref=e283]: Fixed Group
+              - generic [ref=e284]:
+                - generic [ref=e285]:
+                  - img "qa mhsglthree" [ref=e287]: qm
+                  - paragraph [ref=e288]: qa mhsglthree
+                - img [ref=e290]
+          - group "Food" [ref=e293] [cursor=pointer]:
+            - img "Food" [ref=e295]
+            - generic [ref=e297]:
+              - paragraph [ref=e298]: Food
+              - generic [ref=e299]:
+                - generic [ref=e300]:
+                  - img "Azeez Ar" [ref=e302]
+                  - paragraph [ref=e303]: Azeez Ar
+                - img [ref=e305]
+          - group "Free Group" [ref=e308] [cursor=pointer]:
+            - img "Free Group" [ref=e310]
+            - generic [ref=e312]:
+              - paragraph [ref=e313]: Free Group
+              - generic [ref=e314]:
+                - generic [ref=e315]:
+                  - img "qa mhsglfour" [ref=e317]: qm
+                  - paragraph [ref=e318]: qa mhsglfour
+                - img [ref=e320]
+  - alert [ref=e349]
+  - generic:
+    - region
+    - region
+    - region
+    - region
+    - region
+    - region
+```
