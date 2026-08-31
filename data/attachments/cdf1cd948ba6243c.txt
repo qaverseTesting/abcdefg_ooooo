@@ -1,0 +1,1 @@
+[2026-08-31T17:37:06.382Z] [WARN] [MEMBER] No member survived from PG-02 — an earlier block failed and this worker was restarted. Registered a fresh one so the refund chain can still run. Check the earlier failure; this test is not the problem.

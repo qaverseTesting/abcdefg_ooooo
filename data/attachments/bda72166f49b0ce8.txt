@@ -1,1 +1,0 @@
-[2026-08-27T16:15:41.691Z] [WARN] [REFUND NOT UI-VERIFIABLE] The $5 payment never appeared in the leader's earnings (pending stayed $0). Dev confirmed 31 Jul 2026 that no screen shows a participant refund, so this is expected — the flow above is proven, but confirming the money returns requires a backend/Stripe test.

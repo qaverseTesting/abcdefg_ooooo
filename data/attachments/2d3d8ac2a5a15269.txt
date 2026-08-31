@@ -1,0 +1,37 @@
+[2026-08-31T17:47:54.744Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-08-31T17:47:56.344Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-08-31T17:47:56.344Z] [STEP] Verifying Plan & Billing page content
+[2026-08-31T17:47:58.178Z] [SUCCESS] Plan & Billing page verified
+[2026-08-31T17:47:58.179Z] [STEP] Verifying $19 subscription is NOT visible (plan no longer active)
+[2026-08-31T17:47:58.306Z] [SUCCESS] $19 subscription confirmed absent — billing state correct
+[2026-08-31T17:47:58.306Z] [SUCCESS] RA-01 PASSED: $19 absent — Listing plan starting state confirmed
+[2026-08-31T17:47:58.307Z] [STEP] Clicking "Upgrade to Active Group" from Group options menu
+[2026-08-31T17:47:59.075Z] [SUCCESS] "Upgrade to Active Group" selected from Group options menu
+[2026-08-31T17:47:59.076Z] [STEP] Verifying Stripe form visibility
+[2026-08-31T17:48:06.125Z] [SUCCESS] Stripe form verified
+[2026-08-31T17:48:06.125Z] [SUCCESS] RA-02 PASSED: Stripe checkout form loaded after Upgrade to Active Group click
+[2026-08-31T17:48:06.126Z] [STEP] Completing Stripe Payment
+[2026-08-31T17:48:06.126Z] [STEP] Verifying Stripe form visibility
+[2026-08-31T17:48:06.495Z] [SUCCESS] Stripe form verified
+[2026-08-31T17:48:06.496Z] [STEP] Filling Stripe payment details
+[2026-08-31T17:48:06.536Z] [STEP] Selecting country: US
+[2026-08-31T17:48:06.600Z] [SUCCESS] Country settled on US
+[2026-08-31T17:48:09.344Z] [SUCCESS] Stripe payment details filled
+[2026-08-31T17:48:09.345Z] [STEP] Submitting payment (attempt 1/3)
+[2026-08-31T17:48:09.618Z] [SUCCESS] Payment submitted
+[2026-08-31T17:48:09.618Z] [SUCCESS] Stripe payment submitted
+[2026-08-31T17:48:09.618Z] [STEP] Verifying Plan Change Payment — waiting for the app to finish and return
+[2026-08-31T17:48:16.086Z] [SUCCESS] App returned to Plan & Billing after payment
+[2026-08-31T17:48:16.087Z] [ASSERT] Verifying toast message matching: /successfully upgraded to the .*plan/i
+[2026-08-31T17:48:36.157Z] [INFO] Post-payment landing: https://staging.mentalhappy.com/user/profile/plan-billing
+[2026-08-31T17:48:36.227Z] [SUCCESS] Plan change payment confirmed
+[2026-08-31T17:48:36.227Z] [SUCCESS] RA-03 PASSED: Payment complete — redirected to app with plan=ACTIVE_GROUP
+[2026-08-31T17:48:36.228Z] [ASSERT] Verifying $19 subscription is active after payment
+[2026-08-31T17:48:36.228Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-08-31T17:48:38.914Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-08-31T17:48:38.914Z] [STEP] Verifying Plan & Billing page content
+[2026-08-31T17:48:40.018Z] [SUCCESS] Plan & Billing page verified
+[2026-08-31T17:48:40.097Z] [SUCCESS] $19 subscription confirmed active
+[2026-08-31T17:48:40.097Z] [SUCCESS] RA-04 PASSED: $19 Active Plan subscription restored on Plan & Billing
+[2026-08-31T17:48:40.098Z] [ASSERT] Active-state menu shows "Cancel & Delete Group" + "Downgrade to Listing"
+[2026-08-31T17:48:41.043Z] [SUCCESS] RA-05 PASSED: Reactivation fully confirmed via Active-state menu
