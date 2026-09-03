@@ -1,0 +1,39 @@
+[2026-09-03T18:29:36.441Z] [STEP] Opening dashboard
+[2026-09-03T18:29:39.509Z] [STEP] Searching for "PW_Group_20260903_182627_w3r0835unp" — up to 5 attempts (fresh groups index slowly)
+[2026-09-03T18:29:39.509Z] [STEP] Searching for group: PW_Group_20260903_182627_w3r0835unp
+[2026-09-03T18:29:41.406Z] [SUCCESS] Group "PW_Group_20260903_182627_w3r0835unp" found in Explore search (attempt 1/5)
+[2026-09-03T18:29:41.406Z] [STEP] Verifying group card content for: PW_Group_20260903_182627_w3r0835unp
+[2026-09-03T18:29:41.440Z] [SUCCESS] Group card content verified: PW_Group_20260903_182627_w3r0835unp
+[2026-09-03T18:29:41.447Z] [STEP] Verifying group side panel is visible
+[2026-09-03T18:29:41.453Z] [INFO] Side panel not open — clicking card to open: PW_Group_20260903_182627_w3r0835unp
+[2026-09-03T18:29:41.453Z] [STEP] Clicking group card: PW_Group_20260903_182627_w3r0835unp
+[2026-09-03T18:29:41.575Z] [SUCCESS] Group card clicked: PW_Group_20260903_182627_w3r0835unp
+[2026-09-03T18:29:41.600Z] [SUCCESS] Group side panel opened
+[2026-09-03T18:29:41.600Z] [ASSERT] Verifying member-facing one-time price "$10 One time" for group: PW_Group_20260903_182627_w3r0835unp
+[2026-09-03T18:29:41.707Z] [SUCCESS] Member-facing one-time price verified: $10 One time
+[2026-09-03T18:29:41.911Z] [INFO] [CTA PANEL BUTTONS] [{"text":"","aria":"Close"},{"text":"","aria":"Close"},{"text":"","aria":"Share group"},{"text":"","aria":"Show platform fee details"},{"text":"Join Group","aria":"Join Group"}]
+[2026-09-03T18:29:41.936Z] [INFO] [CTA] One-Time 10: button "Join Group", price "$10 One time"
+[2026-09-03T18:29:41.939Z] [ASSERT] Verifying side panel discloses the platform fee: "+3$ platform fee will be added to your total"
+[2026-09-03T18:29:42.311Z] [SUCCESS] Platform fee disclosure verified in side panel (revealed on hover)
+[2026-09-03T18:29:42.311Z] [SUCCESS] One-time group discloses the platform fee in the side panel
+[2026-09-03T18:29:42.312Z] [STEP] Clicking join on "PW_Group_20260903_182627_w3r0835unp" — detecting destination (checkout or group)
+[2026-09-03T18:29:42.991Z] [SUCCESS] Join destination for "PW_Group_20260903_182627_w3r0835unp": checkout
+[2026-09-03T18:29:43.000Z] [STEP] Verifying checkout summary for: PW_Group_20260903_182627_w3r0835unp
+[2026-09-03T18:29:47.821Z] [SUCCESS] Checkout summary verified
+[2026-09-03T18:29:47.821Z] [STEP] Verifying $3 platform fee is disclosed and added to the total
+[2026-09-03T18:29:50.773Z] [SUCCESS] Platform fee verified: $3 disclosed and included in the total
+[2026-09-03T18:29:50.773Z] [STEP] Verifying Stripe iframe is visible
+[2026-09-03T18:29:51.821Z] [SUCCESS] Stripe iframe verified
+[2026-09-03T18:29:51.821Z] [STEP] Filling Stripe payment details
+[2026-09-03T18:29:52.614Z] [STEP] Selecting country: US
+[2026-09-03T18:29:52.742Z] [SUCCESS] Country settled on US
+[2026-09-03T18:29:56.166Z] [SUCCESS] Stripe payment details filled
+[2026-09-03T18:29:56.166Z] [STEP] Submitting payment (attempt 1/3)
+[2026-09-03T18:30:03.395Z] [SUCCESS] Payment submitted
+[2026-09-03T18:30:03.398Z] [STEP] Waiting for group page to load after payment redirect
+[2026-09-03T18:30:03.403Z] [SUCCESS] Group page loaded
+[2026-09-03T18:30:03.403Z] [STEP] Checking for post-join success modal
+[2026-09-03T18:30:03.455Z] [SUCCESS] Success modal handled
+[2026-09-03T18:30:03.455Z] [STEP] Verifying Conversations tab is visible
+[2026-09-03T18:30:04.552Z] [SUCCESS] Conversations tab visible — membership access confirmed
+[2026-09-03T18:30:04.552Z] [SUCCESS] Member joined and paid $10 one-time (+ platform fee)

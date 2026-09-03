@@ -1,0 +1,11 @@
+[2026-09-03T18:39:17.744Z] [STEP] Verifying OTP page persistence on refresh
+[2026-09-03T18:39:19.074Z] [STEP] Waiting for OTP entry page to be ready
+[2026-09-03T18:39:19.377Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-09-03T18:39:19.381Z] [INFO] [OTP] Bypass active for pw_auto_mh_031839043p9r@mentalhappy.com. Returning fixed validation code: 456321
+[2026-09-03T18:39:19.395Z] [STEP] Entering OTP: 456321
+[2026-09-03T18:39:19.395Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-09-03T18:39:20.210Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-09-03T18:39:21.150Z] [SUCCESS] OTP entered
+[2026-09-03T18:39:21.150Z] [STEP] Submitting OTP and verifying redirect
+[2026-09-03T18:39:21.585Z] [ASSERT] Verifying toast message matching: /Email Verified Successfully/i
+[2026-09-03T18:39:23.823Z] [SUCCESS] Step 2 Complete: User verified and reached Welcome page.

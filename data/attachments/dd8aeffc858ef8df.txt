@@ -1,0 +1,30 @@
+[2026-09-03T18:28:42.480Z] [STEP] Opening dashboard
+[2026-09-03T18:28:45.667Z] [STEP] Searching for "PW_Group_20260903_182627_w3r0835unp" — up to 5 attempts (fresh groups index slowly)
+[2026-09-03T18:28:45.667Z] [STEP] Searching for group: PW_Group_20260903_182627_w3r0835unp
+[2026-09-03T18:28:47.860Z] [SUCCESS] Group "PW_Group_20260903_182627_w3r0835unp" found in Explore search (attempt 1/5)
+[2026-09-03T18:28:47.860Z] [STEP] Verifying group card content for: PW_Group_20260903_182627_w3r0835unp
+[2026-09-03T18:28:47.892Z] [SUCCESS] Group card content verified: PW_Group_20260903_182627_w3r0835unp
+[2026-09-03T18:28:47.899Z] [STEP] Clicking join on "PW_Group_20260903_182627_w3r0835unp" — detecting destination (checkout or group)
+[2026-09-03T18:28:47.906Z] [INFO] Side panel not open — clicking card to open: PW_Group_20260903_182627_w3r0835unp
+[2026-09-03T18:28:47.906Z] [STEP] Clicking group card: PW_Group_20260903_182627_w3r0835unp
+[2026-09-03T18:28:48.016Z] [SUCCESS] Group card clicked: PW_Group_20260903_182627_w3r0835unp
+[2026-09-03T18:28:48.707Z] [SUCCESS] Join destination for "PW_Group_20260903_182627_w3r0835unp": checkout
+[2026-09-03T18:28:48.711Z] [STEP] Verifying checkout summary for: PW_Group_20260903_182627_w3r0835unp
+[2026-09-03T18:28:51.546Z] [SUCCESS] Checkout summary verified
+[2026-09-03T18:28:51.546Z] [STEP] Verifying $3 platform fee is disclosed and added to the total
+[2026-09-03T18:28:54.050Z] [SUCCESS] Platform fee verified: $3 disclosed and included in the total
+[2026-09-03T18:28:54.050Z] [STEP] Verifying Stripe iframe is visible
+[2026-09-03T18:28:54.213Z] [SUCCESS] Stripe iframe verified
+[2026-09-03T18:28:54.213Z] [STEP] Filling Stripe payment details
+[2026-09-03T18:28:54.619Z] [STEP] Selecting country: US
+[2026-09-03T18:28:54.932Z] [SUCCESS] Country settled on US
+[2026-09-03T18:28:57.637Z] [SUCCESS] Stripe payment details filled
+[2026-09-03T18:28:57.637Z] [STEP] Submitting payment (attempt 1/3)
+[2026-09-03T18:29:03.729Z] [SUCCESS] Payment submitted
+[2026-09-03T18:29:03.730Z] [STEP] Waiting for group page to load after payment redirect
+[2026-09-03T18:29:03.736Z] [SUCCESS] Group page loaded
+[2026-09-03T18:29:03.736Z] [STEP] Checking for post-join success modal
+[2026-09-03T18:29:03.803Z] [SUCCESS] Success modal handled
+[2026-09-03T18:29:03.803Z] [STEP] Verifying Conversations tab is visible
+[2026-09-03T18:29:04.946Z] [SUCCESS] Conversations tab visible — membership access confirmed
+[2026-09-03T18:29:10.321Z] [SUCCESS] [COVERED] Donating $10 is charged as $10 — no second platform fee

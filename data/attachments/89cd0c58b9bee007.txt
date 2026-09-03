@@ -1,7 +1,0 @@
-[2026-09-03T11:44:09.928Z] [STEP] Attempting to access /groups/my as Guest
-[2026-09-03T11:44:11.966Z] [ASSERT] Verifying /groups/my redirects to /login
-[2026-09-03T11:44:12.418Z] [STEP] Attempting to access /profile as Guest
-[2026-09-03T11:44:14.691Z] [ASSERT] Verifying /profile redirects to /login
-[2026-09-03T11:44:14.775Z] [STEP] Attempting to access /user/profile/plan-billing as Guest
-[2026-09-03T11:44:18.781Z] [ASSERT] Verifying /user/profile/plan-billing redirects to /login
-[2026-09-03T11:44:18.943Z] [SUCCESS] Guest protection verified on every private route

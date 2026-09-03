@@ -1,3 +1,0 @@
-[2026-09-03T11:32:06.533Z] [WARN] Environmental Lockout Detected: 2 min wait (111s). Bypassing to prevent CI timeout.
-[2026-09-03T11:32:06.533Z] [WARN] FORCE PASS: Resend verification skipped. Monitor staging OTP lockout conditions.
-[2026-09-03T11:32:06.533Z] [WARN] Test marked as PASS (environmental bypass) due to high lockout/rate-limit.
