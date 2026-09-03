@@ -1,0 +1,11 @@
+[2026-09-03T11:24:17.207Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-09-03T11:24:18.412Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-09-03T11:24:18.412Z] [STEP] Clicking "Cancel & Delete Group" for group "PW_Group_20260903_111952_w3r0320b15"
+[2026-09-03T11:24:18.413Z] [STEP] Opening "Group options" menu for group "PW_Group_20260903_111952_w3r0320b15"
+[2026-09-03T11:24:20.229Z] [INFO] Popover wait fell through — proceeding to item lookup
+[2026-09-03T11:24:20.533Z] [ASSERT] Outer Cancel & Delete modal (2-button) is visible
+[2026-09-03T11:24:20.726Z] [STEP] Outer modal: clicking "Delete Group" to open Reason modal
+[2026-09-03T11:24:20.847Z] [ASSERT] Reason-selection modal is visible
+[2026-09-03T11:24:21.057Z] [STEP] Selecting first reason checkbox to enable Continue to Delete
+[2026-09-03T11:24:21.191Z] [STEP] Clicking "Continue to Delete" — confirming destructive delete
+[2026-09-03T11:24:21.362Z] [ASSERT] Subscription canceled and Group Deleted success toast is visible

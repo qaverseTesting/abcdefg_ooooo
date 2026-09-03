@@ -1,5 +1,0 @@
-[2026-08-31T17:34:10.910Z] [WARN] [PAYMENT ERROR] [page] MentalHappy | [stripe-frame] Your ZIP code is invalid. | [stripe-frame] Please try again. ⚠️
-[2026-08-31T17:34:10.912Z] [WARN] [PAYMENT RETRY] Stripe returned a transient error on attempt 1 ([stripe-frame] Please try again. ⚠️). Retrying — the card and every other field are still filled, so only the submit is repeated.
-[2026-08-31T17:35:14.628Z] [WARN] [PAYMENT ERROR] [page] MentalHappy | [stripe-frame] Your ZIP code is invalid. | [stripe-frame] Please try again. ⚠️
-[2026-08-31T17:35:14.629Z] [WARN] [PAYMENT RETRY] Stripe returned a transient error on attempt 2 ([stripe-frame] Please try again. ⚠️). Retrying — the card and every other field are still filled, so only the submit is repeated.
-[2026-08-31T17:36:18.264Z] [WARN] [PAYMENT ERROR] [page] MentalHappy | [stripe-frame] Your ZIP code is invalid. | [stripe-frame] Please try again. ⚠️
