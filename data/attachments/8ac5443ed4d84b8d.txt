@@ -1,0 +1,46 @@
+[2026-09-04T12:30:24.596Z] [STEP] Registering new leader with email: pw_auto_mh_041230242r9l@mentalhappy.com
+[2026-09-04T12:30:24.597Z] [STEP] Navigating to Registration Page
+[2026-09-04T12:30:26.766Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-09-04T12:30:27.148Z] [SUCCESS] Registration Page loaded
+[2026-09-04T12:30:27.149Z] [STEP] Filling registration form for: pw_auto_mh_041230242r9l@mentalhappy.com
+[2026-09-04T12:30:29.297Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-09-04T12:30:29.307Z] [STEP] Submitting registration form
+[2026-09-04T12:30:29.879Z] [SUCCESS] Registration form submitted
+[2026-09-04T12:30:29.879Z] [STEP] Waiting for OTP entry page to be ready
+[2026-09-04T12:30:38.446Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-09-04T12:30:38.446Z] [INFO] [OTP] Bypass active for pw_auto_mh_041230242r9l@mentalhappy.com. Returning fixed validation code: 456321
+[2026-09-04T12:30:38.458Z] [STEP] Entering OTP: 456321
+[2026-09-04T12:30:38.460Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-09-04T12:30:39.228Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-09-04T12:30:39.790Z] [SUCCESS] OTP entered
+[2026-09-04T12:30:39.790Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-09-04T12:30:39.796Z] [ASSERT] Verifying toast message matching: /Email Verified Successfully/i
+[2026-09-04T12:30:42.411Z] [SUCCESS] Leader registration and OTP verification completed
+[2026-09-04T12:30:42.412Z] [STEP] Selecting Leader role on Welcome page
+[2026-09-04T12:30:42.412Z] [STEP] Verifying Welcome Page is displayed
+[2026-09-04T12:30:42.413Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-09-04T12:30:43.098Z] [SUCCESS] Welcome Page verification successful (Role buttons visible)
+[2026-09-04T12:30:43.098Z] [STEP] Selecting path: Continue as a Group Leader
+[2026-09-04T12:30:43.098Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-09-04T12:30:43.441Z] [INFO] Clicked Continue as a Group Leader
+[2026-09-04T12:30:43.460Z] [SUCCESS] Group Leader path selected
+[2026-09-04T12:30:43.460Z] [STEP] Clicking Welcome Continue button
+[2026-09-04T12:30:43.460Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-09-04T12:30:44.037Z] [SUCCESS] Welcome Continue clicked
+[2026-09-04T12:30:44.039Z] [SUCCESS] Leader role selection completed
+[2026-09-04T12:30:44.040Z] [STEP] Completing Leader onboarding via SKIP path
+[2026-09-04T12:30:44.040Z] [STEP] Completing Leader onboarding via SKIP (Deep Check Flow)
+[2026-09-04T12:30:44.146Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-09-04T12:30:44.191Z] [INFO] Checking for Screen 2 (Survey) Skip option...
+[2026-09-04T12:30:44.220Z] [STEP] Clicking Onboarding Skip button
+[2026-09-04T12:30:44.221Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-09-04T12:30:48.126Z] [SUCCESS] Onboarding cleared successfully
+[2026-09-04T12:30:48.128Z] [SUCCESS] Leader onboarding (Skip) completed
+[2026-09-04T12:30:48.129Z] [STEP] Navigating to Hosting Plan Page
+[2026-09-04T12:30:51.789Z] [SUCCESS] Hosting Plan Page loaded
+[2026-09-04T12:30:51.789Z] [STEP] Verifying Hosting Plan page content
+[2026-09-04T12:30:52.495Z] [SUCCESS] Hosting Plan page verification successful
+[2026-09-04T12:30:54.436Z] [STEP] Navigating to Hosting Plan Page
+[2026-09-04T12:30:55.709Z] [SUCCESS] Hosting Plan Page loaded
+[2026-09-04T12:30:55.709Z] [STEP] Verifying Hosting Plan page content
+[2026-09-04T12:30:56.455Z] [SUCCESS] Hosting Plan page verification successful

@@ -1,0 +1,33 @@
+{
+  "group": "PW_Group_20260904_120525_w3r0452rr4",
+  "payments": [
+    {
+      "model": "Free",
+      "groupPrice": "0",
+      "member": "pw_auto_mh_041205553r1i@mentalhappy.com"
+    },
+    {
+      "model": "Donation",
+      "groupPrice": "0",
+      "member": "pw_auto_mh_041205553r1i@mentalhappy.com"
+    },
+    {
+      "model": "One-Time",
+      "groupPrice": "10",
+      "member": "pw_auto_mh_041205553r1i@mentalhappy.com"
+    },
+    {
+      "model": "Monthly",
+      "groupPrice": "5",
+      "member": "pw_auto_mh_041205553r1i@mentalhappy.com"
+    }
+  ],
+  "pendingBefore": 0,
+  "pendingBeforeRefund": 0,
+  "pendingAfterPayment": 0,
+  "pendingAfter": 0,
+  "transactionRows": [
+    "Aug 30, 2026 1 × STRIPE_USER_HOSTING_PRODUCT (at $49.00 / month) -$49.00 Paid",
+    "Jul 30, 2026 1 × STRIPE_USER_HOSTING_PRODUCT (at $49.00 / month) -$49.00 Paid"
+  ]
+}

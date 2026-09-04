@@ -1,0 +1,17 @@
+[2026-09-04T12:15:56.749Z] [INFO] [ResetLink] Requesting password reset link for mh_forgotpass@mailinator.com via Mailinator
+[2026-09-04T12:15:56.923Z] [STEP] Opening Mailinator inbox: https://www.mailinator.com/v4/public/inboxes.jsp?to=mh_forgotpass
+[2026-09-04T12:15:59.251Z] [SUCCESS] Mailinator inbox loaded
+[2026-09-04T12:15:59.251Z] [STEP] Searching for keywords: reset, password, forgot in Inbox: https://www.mailinator.com/v4/public/inboxes.jsp?to=mh_forgotpass (Timeout: 90000ms)
+[2026-09-04T12:15:59.481Z] [SUCCESS] Matched email: "	MentalHappy	Password reset requested	just now..."
+[2026-09-04T12:16:00.037Z] [INFO] Message body rendered in iframe: #html_msg_body
+[2026-09-04T12:16:00.037Z] [STEP] Clicking reset link
+[2026-09-04T12:16:00.217Z] [INFO] Message body rendered in iframe: #html_msg_body
+[2026-09-04T12:16:00.323Z] [INFO] Using iframe: #html_msg_body
+[2026-09-04T12:16:00.556Z] [INFO] Clicking Reset Link found in iframe: https://u8010474.ct.sendgrid.net/ls/click?upn=u001.amIoa00VBXzGb-2FR7MbBTTvTrJY0ZFEJduoZ1A0YFR3-2BYy1EQ1wwHtb2pzQCFeRUy7WIA-2BlGjkeo2LoJ86MO25TmF6SbbHDa05NHQRkmAsVwgzRqR8TaUZPdoKIACzRviWA9O_Ibx7e5gfWGG-2BSRiyYnbQWVrCwy-2Bsm-2Fu7cGvL7Rfj79jfxywfBnN-2BhzmEaRSIY4vw-2B8qofTDOwhUpHzzZmCT3uUiY3740kBPuYHxJ6-2FIfj-2FfuxJf5EpjGQakpbsn2-2B7kUvp02WUXUdO2dy7DOXIrirtiRG77Vf-2FA6Jxf30yCGNjEDJUPGJ-2BXvZRShIBVm4aqvIkmnlQgOyciYuF9ywibk6TVvSniRFq6yCfnN2CQvuXOjHz9FHwcH7ZDRszwFvM0RZj5MtQpBlpe-2BNwZg4FbcteQnz6NVzOVL-2FBuvbrgtk3JFQHW68dFi3bmgk6mHMmlemAy0xHoqSukNd3O9XfJhy73iRmv-2FclgfG4s-2B3zYEGiXJ92LM7Is7p8kwlCT8FeMv
+[2026-09-04T12:16:00.793Z] [SUCCESS] Reset link interaction completed
+[2026-09-04T12:16:03.651Z] [SUCCESS] Reset page identified: https://staging.mentalhappy.com/reset/485cc4db-064a-4866-9570-ea593176fb5a
+[2026-09-04T12:16:03.917Z] [INFO] Entering new password: TestPassword123!
+[2026-09-04T12:16:04.153Z] [INFO] Entering confirm password
+[2026-09-04T12:16:04.670Z] [INFO] Clicking Confirm Password button
+[2026-09-04T12:16:05.057Z] [ASSERT] Verifying toast message matching: Success: Password Changed Successfully
+[2026-09-04T12:16:06.190Z] [SUCCESS] Password updated successfully

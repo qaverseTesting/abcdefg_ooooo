@@ -1,0 +1,27 @@
+[2026-09-04T12:18:59.819Z] [STEP] Submitting member registration form for: pw_auto_mh_041218597yus@mentalhappy.com
+[2026-09-04T12:18:59.822Z] [STEP] Navigating to Registration Page
+[2026-09-04T12:19:01.951Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-09-04T12:19:02.231Z] [SUCCESS] Registration Page loaded
+[2026-09-04T12:19:02.232Z] [STEP] Filling registration form for: pw_auto_mh_041218597yus@mentalhappy.com
+[2026-09-04T12:19:04.650Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-09-04T12:19:04.669Z] [STEP] Submitting registration form
+[2026-09-04T12:19:05.253Z] [SUCCESS] Registration form submitted
+[2026-09-04T12:19:05.254Z] [STEP] Waiting for OTP entry page to be ready
+[2026-09-04T12:19:13.433Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-09-04T12:19:13.433Z] [SUCCESS] Registration form submitted, OTP page reached
+[2026-09-04T12:19:13.434Z] [STEP] Verifying email for: pw_auto_mh_041218597yus@mentalhappy.com
+[2026-09-04T12:19:13.434Z] [INFO] [OTP] Bypass active for pw_auto_mh_041218597yus@mentalhappy.com. Returning fixed validation code: 456321
+[2026-09-04T12:19:13.445Z] [STEP] Entering OTP: 456321
+[2026-09-04T12:19:13.446Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-09-04T12:19:13.692Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-09-04T12:19:14.106Z] [SUCCESS] OTP entered
+[2026-09-04T12:19:14.106Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-09-04T12:19:14.111Z] [ASSERT] Verifying toast message matching: /Email Verified Successfully/i
+[2026-09-04T12:19:16.657Z] [SUCCESS] Email verification (OTP) successful
+[2026-09-04T12:19:16.661Z] [STEP] Selecting path: Explore Support Groups
+[2026-09-04T12:19:16.662Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-09-04T12:19:17.601Z] [INFO] Clicked Explore support groups
+[2026-09-04T12:19:17.622Z] [SUCCESS] Explore Support Groups path selected
+[2026-09-04T12:19:17.623Z] [STEP] Verifying Continue button is enabled
+[2026-09-04T12:19:17.642Z] [SUCCESS] Continue button is enabled
+[2026-09-04T12:19:17.642Z] [SUCCESS] Member path selection enabled Continue button
