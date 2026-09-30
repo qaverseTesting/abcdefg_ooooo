@@ -1,0 +1,17 @@
+[2026-09-30T13:14:14.605Z] [STEP] Opening followed group: pw_group_20260930_131154_w21r0958h3s
+[2026-09-30T13:14:17.930Z] [SUCCESS] Followed group open — the toggle reads Unfollow
+[2026-09-30T13:14:17.931Z] [STEP] Clicking Unfollow
+[2026-09-30T13:14:17.941Z] [ASSERT] Verifying toast message matching: Group unfollowed successfully.
+[2026-09-30T13:14:18.983Z] [SUCCESS] Unfollowed — the toggle reads Follow again
+[2026-09-30T13:14:19.047Z] [STEP] Navigating to My Groups page
+[2026-09-30T13:14:20.812Z] [STEP] Waiting for My Groups page content
+[2026-09-30T13:14:22.979Z] [STEP] Clicking filter: Following
+[2026-09-30T13:14:23.649Z] [SUCCESS] Filter "Following" clicked
+[2026-09-30T13:14:23.650Z] [ASSERT] Verifying "PW_Group_20260930_131154_w21r0958h3s" is no longer listed as followed
+[2026-09-30T13:14:23.650Z] [STEP] Searching the active tab for: PW_Group_20260930_131154_w21r0958h3s
+[2026-09-30T13:14:24.969Z] [STEP] Waiting for group list to settle
+[2026-09-30T13:14:26.263Z] [SUCCESS] Group list settled — 0 card(s) on the active tab
+[2026-09-30T13:14:26.263Z] [INFO] Search "PW_Group_20260930_131154_w21r0958h3s" returned 0 group(s)
+[2026-09-30T13:14:26.317Z] [SUCCESS] Confirmed not followed: PW_Group_20260930_131154_w21r0958h3s
+[2026-09-30T13:14:26.317Z] [SUCCESS] [UNFOLLOW VERIFIED] - Member no longer follows: PW_Group_20260930_131154_w21r0958h3s
+[2026-09-30T13:14:34.514Z] [INFO] [PRICING DONE] - Group: PW_Group_20260930_131154_w21r0958h3s

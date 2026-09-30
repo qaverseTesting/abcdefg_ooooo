@@ -1,0 +1,7 @@
+[2026-09-30T13:03:24.667Z] [STEP] Verify password is initially hidden
+[2026-09-30T13:03:24.719Z] [INFO] Password visibility verified as hidden
+[2026-09-30T13:03:24.719Z] [STEP] Toggle password visibility to Show
+[2026-09-30T13:03:25.284Z] [INFO] Password visibility verified as visible
+[2026-09-30T13:03:25.284Z] [STEP] Toggle password visibility to Hide
+[2026-09-30T13:03:25.550Z] [INFO] Password visibility verified as hidden
+[2026-09-30T13:03:25.551Z] [SUCCESS] Password Visibility Toggle test passed successfully

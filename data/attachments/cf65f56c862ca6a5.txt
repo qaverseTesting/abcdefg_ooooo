@@ -1,0 +1,16 @@
+[2026-09-30T12:54:59.087Z] [STEP] Exiting group "PW_Group_20260930_125146_w3r0749bza" as a member
+[2026-09-30T12:54:59.087Z] [STEP] Opening group room "pw_group_20260930_125146_w3r0749bza" on tab=settings
+[2026-09-30T12:55:02.003Z] [SUCCESS] Group room open on tab=settings
+[2026-09-30T12:55:05.937Z] [SUCCESS] Exited "PW_Group_20260930_125146_w3r0749bza"
+[2026-09-30T12:55:05.938Z] [STEP] Navigating to My Groups page
+[2026-09-30T12:55:06.886Z] [STEP] Waiting for My Groups page content
+[2026-09-30T12:55:07.747Z] [STEP] Clicking filter: Joined
+[2026-09-30T12:55:08.250Z] [SUCCESS] Filter "Joined" clicked
+[2026-09-30T12:55:08.250Z] [ASSERT] Verifying "PW_Group_20260930_125146_w3r0749bza" is not listed on the active tab
+[2026-09-30T12:55:08.250Z] [STEP] Waiting for group list to settle
+[2026-09-30T12:55:08.924Z] [SUCCESS] Group list settled — 0 card(s) on the active tab
+[2026-09-30T12:55:08.932Z] [SUCCESS] Confirmed absent: PW_Group_20260930_125146_w3r0749bza
+[2026-09-30T12:55:09.916Z] [ASSERT] Verifying member no longer has access to: PW_Group_20260930_125146_w3r0749bza
+[2026-09-30T12:55:10.227Z] [SUCCESS] Access revoked as expected for: PW_Group_20260930_125146_w3r0749bza
+[2026-09-30T12:55:10.227Z] [SUCCESS] [SL-4 VERIFIED] pw_auto_mh_30125216ysna@mentalhappy.com exited "PW_Group_20260930_125146_w3r0749bza" (priced One-Time $10) and lost access
+[2026-09-30T12:55:10.227Z] [SUCCESS] Member is out of the group — nothing carries into the refund chain

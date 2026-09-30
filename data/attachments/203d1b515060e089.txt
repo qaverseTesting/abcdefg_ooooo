@@ -1,0 +1,25 @@
+[2026-09-30T13:04:23.425Z] [STEP] Registering new leader with email: pw_auto_mh_30130423uhzr@mentalhappy.com
+[2026-09-30T13:04:23.425Z] [STEP] Navigating to Registration Page
+[2026-09-30T13:04:25.420Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-09-30T13:04:25.720Z] [SUCCESS] Registration Page loaded
+[2026-09-30T13:04:25.720Z] [STEP] Filling registration form for: pw_auto_mh_30130423uhzr@mentalhappy.com
+[2026-09-30T13:04:27.537Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-09-30T13:04:27.566Z] [STEP] Submitting registration form
+[2026-09-30T13:04:27.995Z] [SUCCESS] Registration form submitted
+[2026-09-30T13:04:27.995Z] [STEP] Waiting for OTP entry page to be ready
+[2026-09-30T13:04:31.958Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-09-30T13:04:31.959Z] [INFO] [OTP] Bypass active for pw_auto_mh_30130423uhzr@mentalhappy.com. Returning fixed validation code: 456321
+[2026-09-30T13:04:31.966Z] [STEP] Entering OTP: 456321
+[2026-09-30T13:04:31.966Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-09-30T13:04:32.442Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-09-30T13:04:32.938Z] [SUCCESS] OTP entered
+[2026-09-30T13:04:32.938Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-09-30T13:04:32.947Z] [ASSERT] Verifying toast message matching: /Email Verified Successfully/i
+[2026-09-30T13:04:34.514Z] [SUCCESS] Leader registration and OTP verification completed
+[2026-09-30T13:04:34.517Z] [STEP] Selecting path: Continue as a Group Leader
+[2026-09-30T13:04:34.517Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-09-30T13:04:34.957Z] [INFO] Clicked Continue as a Group Leader
+[2026-09-30T13:04:34.984Z] [SUCCESS] Group Leader path selected
+[2026-09-30T13:04:34.984Z] [STEP] Verifying Continue button is enabled
+[2026-09-30T13:04:35.017Z] [SUCCESS] Continue button is enabled
+[2026-09-30T13:04:35.017Z] [SUCCESS] Role toggle logic enabled Continue button for Leader path

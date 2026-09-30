@@ -1,0 +1,32 @@
+[2026-09-30T13:11:55.328Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-09-30T13:11:57.503Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-09-30T13:11:57.504Z] [STEP] Verifying Plan & Billing page content
+[2026-09-30T13:11:59.910Z] [SUCCESS] Plan & Billing page verified
+[2026-09-30T13:12:00.436Z] [INFO] Group cards on Plan & Billing: ["PW_Group_20260930_125952_w7r07814v0","PW_Group_20260930_125930_w7r0614wml","PW_Group_20260930_125912_w7r0526798"]
+[2026-09-30T13:12:00.439Z] [INFO] [LIFECYCLE] Multi-Group transition target group: "PW_Group_20260930_125952_w7r07814v0" (of 3)
+[2026-09-30T13:12:00.875Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-09-30T13:12:02.247Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-09-30T13:12:02.247Z] [STEP] Verifying Plan & Billing page content
+[2026-09-30T13:12:04.687Z] [SUCCESS] Plan & Billing page verified
+[2026-09-30T13:12:04.689Z] [SUCCESS] DL-01 PASSED: target group "PW_Group_20260930_125952_w7r07814v0" present
+[2026-09-30T13:12:04.696Z] [ASSERT] Active-state menu for "PW_Group_20260930_125952_w7r07814v0" shows Downgrade to Listing + Cancel & Delete Group
+[2026-09-30T13:12:04.696Z] [STEP] Opening "Group options" menu for group "PW_Group_20260930_125952_w7r07814v0"
+[2026-09-30T13:12:05.249Z] [INFO] Popover wait fell through — proceeding to item lookup
+[2026-09-30T13:12:06.111Z] [SUCCESS] DL-02 PASSED: Active-state group menu confirmed (Downgrade to Listing + Cancel & Delete Group)
+[2026-09-30T13:12:06.112Z] [STEP] Clicking "Downgrade to Listing" for group "PW_Group_20260930_125952_w7r07814v0"
+[2026-09-30T13:12:06.113Z] [STEP] Opening "Group options" menu for group "PW_Group_20260930_125952_w7r07814v0"
+[2026-09-30T13:12:06.314Z] [INFO] Popover wait fell through — proceeding to item lookup
+[2026-09-30T13:12:06.725Z] [ASSERT] Move Group to Listing modal is visible
+[2026-09-30T13:12:07.020Z] [ASSERT] Move-to-Listing modal names the group "PW_Group_20260930_125952_w7r07814v0"
+[2026-09-30T13:12:07.121Z] [SUCCESS] DL-03 PASSED: "Move Group to Listing Mode?" modal opened for "PW_Group_20260930_125952_w7r07814v0"
+[2026-09-30T13:12:07.122Z] [ASSERT] Move-to-Listing warning bullets are visible
+[2026-09-30T13:12:07.225Z] [SUCCESS] DL-04 PASSED: Modal warning bullets verified
+[2026-09-30T13:12:07.225Z] [STEP] Clicking "Downgrade to Listing" — confirming downgrade
+[2026-09-30T13:12:07.398Z] [ASSERT] Group Downgraded success toast is visible
+[2026-09-30T13:12:08.484Z] [SUCCESS] DL-05 PASSED: Group downgraded — success toast confirmed
+[2026-09-30T13:12:08.485Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-09-30T13:12:09.919Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-09-30T13:12:09.919Z] [STEP] Verifying Plan & Billing page content
+[2026-09-30T13:12:12.117Z] [SUCCESS] Plan & Billing page verified
+[2026-09-30T13:12:12.310Z] [INFO] Group cards on Plan & Billing: ["PW_Group_20260930_125930_w7r0614wml","PW_Group_20260930_125912_w7r0526798"]
+[2026-09-30T13:12:12.315Z] [SUCCESS] DL-06 PASSED: "PW_Group_20260930_125952_w7r07814v0" removed from the active subscription list (now Listing)
