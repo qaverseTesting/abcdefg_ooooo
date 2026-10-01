@@ -1,0 +1,55 @@
+[2026-10-01T12:20:17.164Z] [STEP] Opening dashboard
+[2026-10-01T12:20:20.124Z] [STEP] Searching for "PW_Group_20261001_121642_w3r00242gr" — up to 5 attempts (fresh groups index slowly)
+[2026-10-01T12:20:20.124Z] [STEP] Searching for group: PW_Group_20261001_121642_w3r00242gr
+[2026-10-01T12:20:21.238Z] [INFO] Search "PW_Group_20261001_121642_w3r00242gr" settled: explore-grid data-state="ready"
+[2026-10-01T12:20:21.259Z] [SUCCESS] Group "PW_Group_20261001_121642_w3r00242gr" found in Explore search (attempt 1/5)
+[2026-10-01T12:20:21.259Z] [STEP] Verifying group card content for: PW_Group_20261001_121642_w3r00242gr
+[2026-10-01T12:20:21.379Z] [SUCCESS] Group card content verified: PW_Group_20261001_121642_w3r00242gr
+[2026-10-01T12:20:21.391Z] [INFO] Side panel not open — clicking card to open: PW_Group_20261001_121642_w3r00242gr
+[2026-10-01T12:20:21.392Z] [STEP] Clicking group card: PW_Group_20261001_121642_w3r00242gr
+[2026-10-01T12:20:22.018Z] [SUCCESS] Group card clicked: PW_Group_20261001_121642_w3r00242gr
+[2026-10-01T12:20:22.131Z] [INFO] [CTA PANEL BUTTONS] [{"text":"","aria":"Close"},{"text":"","aria":"Close"},{"text":"","aria":"Share group"},{"text":"","aria":"Show platform fee details"},{"text":"Join Group","aria":"Join Group"}]
+[2026-10-01T12:20:22.182Z] [INFO] [CTA] Monthly $5: button "Join Group", price "$5/month"
+[2026-10-01T12:20:24.992Z] [INFO] [FOLLOW CHECK] PW_Group_20261001_121642_w3r00242gr: Follow=false · Unfollow=false · Join=true · https://staging.mentalhappy.com/groups/pw_group_20261001_121642_w3r00242gr
+[2026-10-01T12:20:25.021Z] [STEP] Navigating to Profile → Earnings
+[2026-10-01T12:20:27.468Z] [SUCCESS] Earnings page loaded
+[2026-10-01T12:20:27.578Z] [INFO] Balance panel not shown (Stripe likely not connected) — treating as 0
+[2026-10-01T12:20:27.578Z] [INFO] [REFUND] pending at run start $0, immediately before the monthly payment $0
+[2026-10-01T12:20:27.578Z] [STEP] Clicking join and waiting for payment redirect
+[2026-10-01T12:20:28.042Z] [SUCCESS] Redirected to payment page
+[2026-10-01T12:20:28.042Z] [STEP] Verifying $3 platform fee is disclosed and added to the total
+[2026-10-01T12:20:33.033Z] [SUCCESS] Platform fee verified: $3 disclosed and included in the total
+[2026-10-01T12:20:33.033Z] [STEP] Verifying Stripe iframe is visible
+[2026-10-01T12:20:34.121Z] [SUCCESS] Stripe iframe verified
+[2026-10-01T12:20:34.121Z] [STEP] Filling Stripe payment details
+[2026-10-01T12:20:36.176Z] [STEP] Selecting country: US
+[2026-10-01T12:20:36.277Z] [SUCCESS] Country settled on US
+[2026-10-01T12:20:39.606Z] [SUCCESS] Stripe payment details filled
+[2026-10-01T12:20:39.606Z] [STEP] Submitting payment (attempt 1/3)
+[2026-10-01T12:20:47.278Z] [SUCCESS] Payment submitted
+[2026-10-01T12:20:47.278Z] [SUCCESS] Member paid $5/month (+ platform fee) for "PW_Group_20261001_121642_w3r00242gr"
+[2026-10-01T12:20:47.279Z] [STEP] Navigating to Profile → Earnings
+[2026-10-01T12:20:49.498Z] [SUCCESS] Earnings page loaded
+[2026-10-01T12:20:49.683Z] [INFO] Balance panel not shown (Stripe likely not connected) — treating as 0
+[2026-10-01T12:20:49.683Z] [INFO] [REFUND] attempt 1/6 — pending $0, available $0
+[2026-10-01T12:20:55.276Z] [STEP] Navigating to Profile → Earnings
+[2026-10-01T12:20:58.064Z] [SUCCESS] Earnings page loaded
+[2026-10-01T12:20:58.142Z] [INFO] Balance panel not shown (Stripe likely not connected) — treating as 0
+[2026-10-01T12:20:58.142Z] [INFO] [REFUND] attempt 2/6 — pending $0, available $0
+[2026-10-01T12:21:03.157Z] [STEP] Navigating to Profile → Earnings
+[2026-10-01T12:21:05.531Z] [SUCCESS] Earnings page loaded
+[2026-10-01T12:21:05.900Z] [INFO] Balance panel not shown (Stripe likely not connected) — treating as 0
+[2026-10-01T12:21:05.900Z] [INFO] [REFUND] attempt 3/6 — pending $0, available $0
+[2026-10-01T12:21:10.927Z] [STEP] Navigating to Profile → Earnings
+[2026-10-01T12:21:13.494Z] [SUCCESS] Earnings page loaded
+[2026-10-01T12:21:13.686Z] [INFO] Balance panel not shown (Stripe likely not connected) — treating as 0
+[2026-10-01T12:21:13.686Z] [INFO] [REFUND] attempt 4/6 — pending $0, available $0
+[2026-10-01T12:21:18.708Z] [STEP] Navigating to Profile → Earnings
+[2026-10-01T12:21:21.191Z] [SUCCESS] Earnings page loaded
+[2026-10-01T12:21:21.446Z] [INFO] Balance panel not shown (Stripe likely not connected) — treating as 0
+[2026-10-01T12:21:21.446Z] [INFO] [REFUND] attempt 5/6 — pending $0, available $0
+[2026-10-01T12:21:26.468Z] [STEP] Navigating to Profile → Earnings
+[2026-10-01T12:21:28.061Z] [SUCCESS] Earnings page loaded
+[2026-10-01T12:21:28.164Z] [INFO] Balance panel not shown (Stripe likely not connected) — treating as 0
+[2026-10-01T12:21:28.165Z] [INFO] [REFUND] attempt 6/6 — pending $0, available $0
+[2026-10-01T12:21:33.275Z] [INFO] [REFUND] pending beforeThisPayment=$0 afterPayment=$0 (run start was $0)

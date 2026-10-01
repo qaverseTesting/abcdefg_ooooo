@@ -1,3 +1,0 @@
-[2026-09-30T13:14:11.753Z] [STEP] Accessing Login page while already authenticated
-[2026-09-30T13:14:13.792Z] [ASSERT] Verifying a signed-in user is redirected away from the Login page
-[2026-09-30T13:14:20.519Z] [SUCCESS] Signed-in user was redirected from Login to /

@@ -1,0 +1,9 @@
+[2026-10-01T12:27:08.293Z] [STEP] Logging in as Member
+[2026-10-01T12:27:08.294Z] [STEP] Logging in as member
+[2026-10-01T12:27:08.299Z] [STEP] Ensuring clean session state (Force Logout)
+[2026-10-01T12:27:08.299Z] [INFO] Already on an anonymous page. Skipping logout logic.
+[2026-10-01T12:27:08.341Z] [NAV] Navigating to Login
+[2026-10-01T12:27:10.118Z] [INFO] Attempting login for user: pw_auto_mh_member@mailinator.com | Password: Am123456 (expectSuccess: true)
+[2026-10-01T12:27:15.287Z] [SUCCESS] Login successful. Landed on: https://staging.mentalhappy.com/groups
+[2026-10-01T12:27:15.287Z] [ASSERT] Verifying dashboard is loaded
+[2026-10-01T12:27:18.275Z] [SUCCESS] Dashboard load verified
