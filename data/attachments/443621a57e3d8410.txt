@@ -1,7 +1,0 @@
-[2026-10-01T12:36:50.804Z] [STEP] STEP: Verifying Session exists in list
-[2026-10-01T12:36:50.807Z] [ASSERT] Verifying session in list: L-Session: Firstdgvcgq
-[2026-10-01T12:36:50.807Z] [ASSERT] Verifying session exists: L-Session: Firstdgvcgq
-[2026-10-01T12:36:51.194Z] [SUCCESS] Session found in list
-[2026-10-01T12:36:51.194Z] [SUCCESS] Session verified in listing
-[2026-10-01T12:36:51.194Z] [SUCCESS] [FULL JOURNEY VERIFIED] - Group: PW_Group_20261001_123614_w20r0076j2m -> Session: L-Session: Firstdgvcgq
-[2026-10-01T12:36:51.671Z] [INFO] [LIFECYCLE DONE] - Group: PW_Group_20261001_123614_w20r0076j2m

@@ -1,0 +1,10 @@
+[2026-10-05T12:47:18.302Z] [STEP] Navigating to My Groups page
+[2026-10-05T12:47:19.479Z] [STEP] Waiting for My Groups page content
+[2026-10-05T12:47:22.296Z] [STEP] Clicking filter: Following
+[2026-10-05T12:47:23.019Z] [SUCCESS] Filter "Following" clicked
+[2026-10-05T12:47:23.061Z] [STEP] Waiting for group list to settle
+[2026-10-05T12:47:25.209Z] [SUCCESS] Group list settled — 16 card(s) on the active tab
+[2026-10-05T12:47:25.209Z] [STEP] Verifying at least one group card is visible
+[2026-10-05T12:47:25.209Z] [STEP] Waiting for group list to settle
+[2026-10-05T12:47:25.890Z] [SUCCESS] Group list settled — 16 card(s) on the active tab
+[2026-10-05T12:47:25.901Z] [SUCCESS] 16 group card(s) confirmed visible
