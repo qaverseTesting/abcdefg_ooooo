@@ -1,0 +1,22 @@
+[2026-10-09T14:30:21.783Z] [STEP] Opening dashboard
+[2026-10-09T14:30:26.202Z] [STEP] Searching for group: PW_Group_20261009_142831_w22r08164ep
+[2026-10-09T14:30:27.570Z] [INFO] Search "PW_Group_20261009_142831_w22r08164ep" settled: explore-grid data-state="ready"
+[2026-10-09T14:30:27.573Z] [STEP] Verifying group card content for: PW_Group_20261009_142831_w22r08164ep
+[2026-10-09T14:30:27.870Z] [SUCCESS] Group card content verified: PW_Group_20261009_142831_w22r08164ep
+[2026-10-09T14:30:32.122Z] [INFO] [FOLLOW CHECK] PW_Group_20261009_142831_w22r08164ep: Follow=true · Unfollow=false · Join=false · https://staging.mentalhappy.com/groups/pw_group_20261009_142831_w22r08164ep
+[2026-10-09T14:30:32.169Z] [STEP] Following group: PW_Group_20261009_142831_w22r08164ep
+[2026-10-09T14:30:32.266Z] [INFO] Side panel not open — clicking card to open: PW_Group_20261009_142831_w22r08164ep
+[2026-10-09T14:30:32.266Z] [STEP] Clicking group card: PW_Group_20261009_142831_w22r08164ep
+[2026-10-09T14:30:33.361Z] [SUCCESS] Group card clicked: PW_Group_20261009_142831_w22r08164ep
+[2026-10-09T14:30:34.217Z] [SUCCESS] Follow action sent for: PW_Group_20261009_142831_w22r08164ep
+[2026-10-09T14:30:34.218Z] [STEP] Navigating to My Groups page
+[2026-10-09T14:30:35.818Z] [STEP] Waiting for My Groups page content
+[2026-10-09T14:30:38.794Z] [STEP] Clicking filter: Following
+[2026-10-09T14:30:39.607Z] [SUCCESS] Filter "Following" clicked
+[2026-10-09T14:30:39.607Z] [ASSERT] Verifying "PW_Group_20261009_142831_w22r08164ep" is listed as followed
+[2026-10-09T14:30:39.607Z] [STEP] Searching the active tab for: PW_Group_20261009_142831_w22r08164ep
+[2026-10-09T14:30:40.914Z] [STEP] Waiting for group list to settle
+[2026-10-09T14:30:42.647Z] [SUCCESS] Group list settled — 1 card(s) on the active tab
+[2026-10-09T14:30:42.647Z] [INFO] Search "PW_Group_20261009_142831_w22r08164ep" returned 1 group(s)
+[2026-10-09T14:30:45.821Z] [SUCCESS] Confirmed followed: PW_Group_20261009_142831_w22r08164ep
+[2026-10-09T14:30:45.821Z] [SUCCESS] [FOLLOW VERIFIED] - Member follows: PW_Group_20261009_142831_w22r08164ep
