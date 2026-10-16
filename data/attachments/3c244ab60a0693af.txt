@@ -1,0 +1,10 @@
+[2026-10-16T15:46:29.654Z] [INFO] [LIFECYCLE INIT] - Starting journey for Group: PW_Group_20261016_154629_w21r0654alb
+[2026-10-16T15:46:30.558Z] [STEP] STEP: Initializing Group Creation
+[2026-10-16T15:46:30.558Z] [STEP] Initializing Group Creation from Dashboard
+[2026-10-16T15:46:30.560Z] [NAV] Navigating to Dashboard
+[2026-10-16T15:46:32.348Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-10-16T15:46:32.837Z] [STEP] Clicking on Start a Group
+[2026-10-16T15:46:33.013Z] [INFO] "Create Your Support Group" is not on this page — opening My Groups, where it now lives
+[2026-10-16T15:46:40.500Z] [ASSERT] Create Group page is loaded
+[2026-10-16T15:46:40.500Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-10-16T15:46:40.649Z] [SUCCESS] Group Creation page loaded

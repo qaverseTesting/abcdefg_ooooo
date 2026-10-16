@@ -1,0 +1,11 @@
+[2026-10-16T15:37:57.045Z] [STEP] Opening group room "pw_group_20261016_153238_w0r07012dw" on tab=sessions
+[2026-10-16T15:38:00.076Z] [SUCCESS] Group room open on tab=sessions
+[2026-10-16T15:38:00.121Z] [STEP] Waiting for "PW_Session_20261016_153238_w0r0701jhi" to become starting-soon (up to 285s)
+[2026-10-16T15:38:02.979Z] [SUCCESS] "PW_Session_20261016_153238_w0r0701jhi" is starting-soon
+[2026-10-16T15:38:03.005Z] [STEP] Opening group room "pw_group_20261016_153238_w0r07012dw" on tab=conversations
+[2026-10-16T15:38:05.899Z] [SUCCESS] Group room open on tab=conversations
+[2026-10-16T15:38:06.563Z] [STEP] Registering for session: PW_Session_20261016_153238_w0r0701jhi
+[2026-10-16T15:38:06.663Z] [SUCCESS] Register for session clicked
+[2026-10-16T15:38:06.663Z] [ASSERT] Verifying toast message matching: successfully registered to the session
+[2026-10-16T15:38:07.574Z] [ASSERT] Verifying session registration confirmed: PW_Session_20261016_153238_w0r0701jhi
+[2026-10-16T15:38:07.600Z] [SUCCESS] Session registration confirmed — card now offers Unregister

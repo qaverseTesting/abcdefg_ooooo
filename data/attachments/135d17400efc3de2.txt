@@ -1,0 +1,4 @@
+[2026-10-16T15:24:03.150Z] [STEP] Ensuring clean session state (Force Logout)
+[2026-10-16T15:24:03.150Z] [INFO] Already on an anonymous page. Skipping logout logic.
+[2026-10-16T15:24:03.158Z] [NAV] Navigating to Registration
+[2026-10-16T15:24:04.501Z] [STEP] Testing mandatory constraint: Password required on registration
