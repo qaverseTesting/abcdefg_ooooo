@@ -1,0 +1,30 @@
+[2026-10-16T12:35:52.966Z] [STEP] Opening group room "pw_group_20261016_123259_w0r00385aq" on tab=sessions
+[2026-10-16T12:35:56.444Z] [SUCCESS] Group room open on tab=sessions
+[2026-10-16T12:35:56.445Z] [STEP] Starting Session Creation flow for: PW_Session_20261016_123552_w17r0966grb
+[2026-10-16T12:35:56.445Z] [STEP] Opening Schedule Session modal
+[2026-10-16T12:35:58.074Z] [STEP] Waiting for Create Session modal
+[2026-10-16T12:35:58.215Z] [SUCCESS] Create Session modal visible
+[2026-10-16T12:35:58.215Z] [STEP] Filling Create Session form
+[2026-10-16T12:35:58.215Z] [STEP] Setting session date to next day
+[2026-10-16T12:35:59.929Z] [INFO] Session date set to 17 October, 2026
+[2026-10-16T12:35:59.929Z] [STEP] Ensuring timezone is selected
+[2026-10-16T12:36:00.312Z] [INFO] Searching for timezone "Pacific"
+[2026-10-16T12:36:00.852Z] [INFO] Timezone selection attempted via keyboard
+[2026-10-16T12:36:00.852Z] [STEP] Setting session time
+[2026-10-16T12:36:01.979Z] [INFO] Session time set to 10:00 AM – 11:00 AM
+[2026-10-16T12:36:02.089Z] [INFO] Filling description editor
+[2026-10-16T12:36:03.598Z] [STEP] Checking if tags are required
+[2026-10-16T12:36:03.871Z] [INFO] Opened Tags drawer
+[2026-10-16T12:36:04.660Z] [INFO] Selected a tag
+[2026-10-16T12:36:04.721Z] [SUCCESS] Tags drawer closed
+[2026-10-16T12:36:04.721Z] [SUCCESS] Form filling completed
+[2026-10-16T12:36:04.722Z] [STEP] Making the session recurring: Weekly, ending 06 November, 2026
+[2026-10-16T12:36:06.834Z] [STEP] Submitting session
+[2026-10-16T12:36:06.952Z] [STEP] Verifying session creation (modal closed)
+[2026-10-16T12:36:07.964Z] [SUCCESS] Session "PW_Session_20261016_123552_w17r0966grb" submitted.
+[2026-10-16T12:36:07.964Z] [STEP] Opening session details: PW_Session_20261016_123552_w17r0966grb
+[2026-10-16T12:36:07.964Z] [STEP] Navigating to Sessions tab
+[2026-10-16T12:36:08.228Z] [SUCCESS] Sessions tab active
+[2026-10-16T12:36:08.228Z] [STEP] Waiting for session list to settle
+[2026-10-16T12:36:08.426Z] [SUCCESS] Session list settled — 1 session(s)
+[2026-10-16T12:36:08.730Z] [SUCCESS] Session details opened

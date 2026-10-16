@@ -1,0 +1,106 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - link "cover" [ref=e6] [cursor=pointer]:
+        - /url: /groups
+        - img "cover" [ref=e8]
+      - generic "User menu" [ref=e10] [cursor=pointer]:
+        - generic:
+          - generic:
+            - generic:
+              - paragraph: A
+            - img
+    - generic [ref=e13]:
+      - generic [ref=e14]:
+        - paragraph [ref=e15]: Get Active Group
+        - paragraph [ref=e16]: Start running live sessions immediately with full platform features.
+      - generic [ref=e18]:
+        - generic [ref=e20]:
+          - generic [ref=e21]: "1"
+          - paragraph [ref=e22]: Group Details
+        - generic [ref=e25]:
+          - generic [ref=e26]: "2"
+          - paragraph [ref=e27]: Professional Background
+        - generic [ref=e30]:
+          - generic [ref=e31]: "3"
+          - paragraph [ref=e32]: Pricing Model
+        - generic [ref=e35]:
+          - generic [ref=e36]: "4"
+          - paragraph [ref=e37]: Review & Submit
+      - generic [ref=e40]:
+        - generic [ref=e42]:
+          - group [ref=e43]:
+            - generic [ref=e44]: Group Name*
+            - textbox "Group Name" [ref=e45]:
+              - /placeholder: Enter your Group name or choose from requested topics below...
+          - button "Toggle community group suggestions" [ref=e47] [cursor=pointer]:
+            - img [ref=e49]
+            - paragraph [ref=e52]: Not sure what group to start? Explore the most requested topics from our community
+            - img [ref=e54]
+          - group [ref=e56]:
+            - generic [ref=e57]: Cover Image*
+            - generic [ref=e58]: Your cover image creates the first impression people see when discovering your group.
+            - generic [ref=e60] [cursor=pointer]:
+              - paragraph [ref=e61]: Click to upload photo or
+              - paragraph [ref=e62]: Drag and drop photo here
+          - group [ref=e63]:
+            - generic [ref=e64]: Group Description*
+            - generic [ref=e65]: Use this space to clearly explain your group's purpose, the value you offer, and how following your group could support their journey.
+            - generic [ref=e66]:
+              - paragraph [ref=e67]: 0/500
+              - generic [ref=e68]:
+                - generic [ref=e69]:
+                  - textbox [active] [ref=e72]
+                  - paragraph: Share the goal of your group and how it will support your members.
+                - generic [ref=e74]:
+                  - button "Bold" [ref=e75] [cursor=pointer]:
+                    - img [ref=e76]
+                  - button "Italic" [ref=e79] [cursor=pointer]:
+                    - img [ref=e80]
+                  - button "Ordered list" [ref=e82] [cursor=pointer]:
+                    - img [ref=e83]
+                  - button "Unordered list" [ref=e86] [cursor=pointer]:
+                    - img [ref=e87]
+          - group [ref=e88]:
+            - generic [ref=e89]: Select Tags*
+            - generic [ref=e90]: Tags help your group show up in relevant search results, so the right people can find you.
+            - generic:
+              - list
+            - generic [ref=e94]:
+              - generic [ref=e95]:
+                - generic [ref=e96]: Search and select tags that describe your group
+                - combobox "Select group tags" [ref=e98]
+              - img [ref=e102]
+        - generic [ref=e104]:
+          - paragraph [ref=e105]: Live Preview
+          - generic [ref=e106]:
+            - paragraph [ref=e108]: Group Name
+            - paragraph [ref=e111]: Cover image
+            - generic [ref=e112]:
+              - paragraph [ref=e113]: Leader
+              - generic [ref=e114]:
+                - img "Auto Leader" [ref=e116]: A
+                - generic [ref=e117]:
+                  - paragraph [ref=e118]: Auto Leader
+                  - paragraph [ref=e119]: Background Title
+              - paragraph [ref=e120]: Your background information will appear here...
+            - generic [ref=e121]:
+              - paragraph [ref=e122]: Description
+              - paragraph [ref=e123]: Your group description will appear here...
+      - generic [ref=e126]:
+        - button "Finish later" [ref=e127] [cursor=pointer]
+        - button "Continue" [ref=e128] [cursor=pointer]:
+          - text: Continue
+          - img [ref=e130]
+  - alert [ref=e132]
+  - generic:
+    - region
+    - region
+    - region
+    - region
+    - region
+    - region
+```

@@ -1,0 +1,12 @@
+[2026-10-16T12:28:29.614Z] [NAV] Navigating to Dashboard
+[2026-10-16T12:28:31.442Z] [ASSERT] Verifying dashboard is loaded
+[2026-10-16T12:28:31.963Z] [SUCCESS] Dashboard load verified
+[2026-10-16T12:28:31.963Z] [STEP] User is logging out...
+[2026-10-16T12:28:31.963Z] [STEP] Clicking on Profile Icon (User menu)
+[2026-10-16T12:28:35.544Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-10-16T12:28:35.593Z] [STEP] Waiting for Logout menuitem to be visible
+[2026-10-16T12:28:35.611Z] [STEP] Clicking Logout from menu
+[2026-10-16T12:28:35.932Z] [STEP] Handling Logout Confirmation Modal
+[2026-10-16T12:28:38.076Z] [STEP] Ensuring redirection to Login page
+[2026-10-16T12:28:38.364Z] [SUCCESS] Logout action completed and verified
+[2026-10-16T12:28:38.596Z] [SUCCESS] Logout test case passed: User successfully logged out
