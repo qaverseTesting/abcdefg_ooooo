@@ -1,0 +1,15 @@
+[2026-10-21T12:52:11.345Z] [STEP] Exiting group "PW_Group_20261021_125109_w3r0921dag" as a member
+[2026-10-21T12:52:11.345Z] [STEP] Opening group room "pw_group_20261021_125109_w3r0921dag" on tab=settings
+[2026-10-21T12:52:14.090Z] [SUCCESS] Group room open on tab=settings
+[2026-10-21T12:52:16.534Z] [SUCCESS] Exited "PW_Group_20261021_125109_w3r0921dag"
+[2026-10-21T12:52:16.535Z] [STEP] Navigating to My Groups page
+[2026-10-21T12:52:18.025Z] [STEP] Waiting for My Groups page content
+[2026-10-21T12:52:18.640Z] [STEP] Clicking filter: Joined
+[2026-10-21T12:52:19.738Z] [SUCCESS] Filter "Joined" selected
+[2026-10-21T12:52:19.739Z] [ASSERT] Verifying "PW_Group_20261021_125109_w3r0921dag" is not listed on the active tab
+[2026-10-21T12:52:19.739Z] [STEP] Waiting for group list to settle
+[2026-10-21T12:52:20.305Z] [SUCCESS] Group list settled — 0 card(s) on the active tab
+[2026-10-21T12:52:20.312Z] [SUCCESS] Confirmed absent: PW_Group_20261021_125109_w3r0921dag
+[2026-10-21T12:52:20.505Z] [ASSERT] Verifying member no longer has access to: PW_Group_20261021_125109_w3r0921dag
+[2026-10-21T12:52:20.523Z] [SUCCESS] Access revoked as expected for: PW_Group_20261021_125109_w3r0921dag
+[2026-10-21T12:52:20.523Z] [SUCCESS] [SL-4 VERIFIED] pw_auto_mh_21125136qa7d@mentalhappy.com exited "PW_Group_20261021_125109_w3r0921dag" (priced Free) and lost access

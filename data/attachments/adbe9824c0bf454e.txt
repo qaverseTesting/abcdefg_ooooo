@@ -1,0 +1,17 @@
+[2026-10-21T13:04:21.629Z] [INFO] [ResetLink] Requesting password reset link for mh_forgotpass@mailinator.com via Mailinator
+[2026-10-21T13:04:21.694Z] [STEP] Opening Mailinator inbox: https://www.mailinator.com/v4/public/inboxes.jsp?to=mh_forgotpass
+[2026-10-21T13:04:23.150Z] [SUCCESS] Mailinator inbox loaded
+[2026-10-21T13:04:23.151Z] [STEP] Searching for keywords: reset, password, forgot in Inbox: https://www.mailinator.com/v4/public/inboxes.jsp?to=mh_forgotpass (Timeout: 90000ms)
+[2026-10-21T13:04:23.199Z] [SUCCESS] Matched email: "	MentalHappy	Password reset requested	just now..."
+[2026-10-21T13:04:23.375Z] [INFO] Message body rendered in iframe: #html_msg_body
+[2026-10-21T13:04:23.375Z] [STEP] Clicking reset link
+[2026-10-21T13:04:23.402Z] [INFO] Message body rendered in iframe: #html_msg_body
+[2026-10-21T13:04:23.419Z] [INFO] Using iframe: #html_msg_body
+[2026-10-21T13:04:23.553Z] [INFO] Clicking Reset Link found in iframe: https://u8010474.ct.sendgrid.net/ls/click?upn=u001.amIoa00VBXzGb-2FR7MbBTTvTrJY0ZFEJduoZ1A0YFR38tFuOxVVfgU-2BTnK2wcIfAslPGKSZeh6lpG5KNUaOk58GyLIBH43WgnSw5zgBWgfV4M0P6HLO3YLomrCXhat0V27Oc-_Ibx7e5gfWGG-2BSRiyYnbQWVrCwy-2Bsm-2Fu7cGvL7Rfj79jfxywfBnN-2BhzmEaRSIY4vw-2B8qofTDOwhUpHzzZmCT3uUiY3740kBPuYHxJ6-2FIfj-2FfuxJf5EpjGQakpbsn2-2B7kUvp02WUXUdO2dy7DOXIrirtiRG77Vf-2FA6Jxf30yCGNjEDJUPGJ-2BXvZRShIBVm4aqvz55hAMTePbeSXKq8-2BJKnymcaZ7dP4YKm2lek6PdQ2Fik2AsDO5N-2FNyAhi9CIpMCMbFSgk7wJ9hEzArA5jeSUcLnM7a1ICzcN-2FoIjbghMGWS6z4W7-2BmhDd2UO83zvUSO9ks4TTrIcccGODgXRRT6HMkifzEekfWvKMyZyRCihGJLdI49U85oXClFWkqbNlM6Q
+[2026-10-21T13:04:23.604Z] [SUCCESS] Reset link interaction completed
+[2026-10-21T13:04:24.597Z] [SUCCESS] Reset page identified: https://staging.mentalhappy.com/reset/abc142c2-4619-46bb-b43c-cdd52e942b3a
+[2026-10-21T13:04:25.701Z] [INFO] Entering new password: TestPassword123!
+[2026-10-21T13:04:26.003Z] [INFO] Entering confirm password
+[2026-10-21T13:04:26.257Z] [INFO] Clicking Confirm Password button
+[2026-10-21T13:04:26.468Z] [ASSERT] Verifying toast message matching: Success: Password Changed Successfully
+[2026-10-21T13:04:27.391Z] [SUCCESS] Password updated successfully

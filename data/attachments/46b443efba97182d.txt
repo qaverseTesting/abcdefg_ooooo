@@ -1,0 +1,3 @@
+[2026-10-21T13:00:42.505Z] [STEP] Clicking join and waiting for payment redirect
+[2026-10-21T13:00:43.107Z] [INFO] [STRIPE] Stripe's script files are now served from this run's memory (downloaded once per worker)
+[2026-10-21T13:00:43.148Z] [SUCCESS] Redirected to payment page
