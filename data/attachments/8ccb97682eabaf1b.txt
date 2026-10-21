@@ -1,0 +1,73 @@
+[2026-10-21T09:04:36.951Z] [STEP] Registering new leader with email: pw_auto_mh_21090436sv2c@mentalhappy.com
+[2026-10-21T09:04:36.951Z] [STEP] Navigating to Registration Page
+[2026-10-21T09:04:38.050Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-10-21T09:04:38.302Z] [SUCCESS] Registration Page loaded
+[2026-10-21T09:04:38.302Z] [STEP] Filling registration form for: pw_auto_mh_21090436sv2c@mentalhappy.com
+[2026-10-21T09:04:39.732Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-10-21T09:04:39.744Z] [STEP] Submitting registration form
+[2026-10-21T09:04:40.251Z] [SUCCESS] Registration form submitted
+[2026-10-21T09:04:40.251Z] [STEP] Waiting for OTP entry page to be ready
+[2026-10-21T09:04:44.440Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-10-21T09:04:44.440Z] [INFO] [OTP] Bypass active for pw_auto_mh_21090436sv2c@mentalhappy.com. Returning fixed validation code: 456321
+[2026-10-21T09:04:44.452Z] [STEP] Entering OTP: 456321
+[2026-10-21T09:04:44.452Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-10-21T09:04:44.837Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-10-21T09:04:45.331Z] [SUCCESS] OTP entered
+[2026-10-21T09:04:45.331Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-10-21T09:04:45.332Z] [ASSERT] Verifying toast message matching: /Email Verified Successfully/i
+[2026-10-21T09:04:46.779Z] [SUCCESS] Leader registration and OTP verification completed
+[2026-10-21T09:04:46.779Z] [STEP] Selecting Leader role on Welcome page
+[2026-10-21T09:04:46.779Z] [STEP] Verifying Welcome Page is displayed
+[2026-10-21T09:04:46.779Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-10-21T09:04:47.105Z] [SUCCESS] Welcome Page verification successful (Role buttons visible)
+[2026-10-21T09:04:47.105Z] [STEP] Selecting path: Continue as a Group Leader
+[2026-10-21T09:04:47.105Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-10-21T09:04:47.314Z] [INFO] Clicked Continue as a Group Leader
+[2026-10-21T09:04:47.334Z] [SUCCESS] Group Leader path selected
+[2026-10-21T09:04:47.334Z] [STEP] Clicking Welcome Continue button
+[2026-10-21T09:04:47.336Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-10-21T09:04:47.795Z] [SUCCESS] Welcome Continue clicked
+[2026-10-21T09:04:47.795Z] [SUCCESS] Leader role selection completed
+[2026-10-21T09:04:47.799Z] [STEP] Completing Leader onboarding via SKIP path
+[2026-10-21T09:04:47.799Z] [STEP] Completing Leader onboarding via SKIP (Deep Check Flow)
+[2026-10-21T09:04:47.848Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-10-21T09:04:47.893Z] [INFO] Checking for Screen 2 (Survey) Skip option...
+[2026-10-21T09:04:47.912Z] [STEP] Clicking Onboarding Skip button
+[2026-10-21T09:04:47.912Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-10-21T09:04:51.612Z] [SUCCESS] Onboarding cleared successfully
+[2026-10-21T09:04:51.612Z] [SUCCESS] Leader onboarding (Skip) completed
+[2026-10-21T09:04:51.615Z] [STEP] Verifying Hosting Plan page content
+[2026-10-21T09:04:53.073Z] [SUCCESS] Hosting Plan page verification successful
+[2026-10-21T09:04:53.073Z] [STEP] Selecting Free Group Plan
+[2026-10-21T09:04:53.188Z] [SUCCESS] Free Plan selection click sent (forced)
+[2026-10-21T09:04:53.188Z] [STEP] Verifying Free Group popup visibility
+[2026-10-21T09:04:54.336Z] [SUCCESS] Free Group popup verified
+[2026-10-21T09:04:54.337Z] [STEP] Clicking Go to Groups in popup
+[2026-10-21T09:04:54.806Z] [SUCCESS] Popup dismissed via Go to Groups
+[2026-10-21T09:04:54.807Z] [STEP] Creating group: PW_Group_20261021_090436_w13r0943fap
+[2026-10-21T09:04:54.808Z] [STEP] Opening My Sessions and clicking Create Group
+[2026-10-21T09:04:57.663Z] [ASSERT] Create Group page is loaded
+[2026-10-21T09:04:57.663Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-10-21T09:04:59.186Z] [STEP] Filling Group Name
+[2026-10-21T09:04:59.322Z] [STEP] Filling Group Description
+[2026-10-21T09:05:00.599Z] [STEP] Uploading Cover Image
+[2026-10-21T09:05:00.701Z] [SUCCESS] Cover image uploaded
+[2026-10-21T09:05:00.701Z] [STEP] Opening Select Tags dropdown
+[2026-10-21T09:05:00.903Z] [STEP] Selecting tag (second option — first real option)
+[2026-10-21T09:05:01.011Z] [SUCCESS] Tag selected
+[2026-10-21T09:05:01.011Z] [STEP] Clicking Continue
+[2026-10-21T09:05:01.464Z] [INFO] Professional Background tab detected — completing required fields
+[2026-10-21T09:05:01.465Z] [STEP] Filling Professional Background tab
+[2026-10-21T09:05:01.465Z] [STEP] Uploading Profile Photo
+[2026-10-21T09:05:01.587Z] [SUCCESS] Profile photo uploaded
+[2026-10-21T09:05:01.587Z] [STEP] Selecting Professional Role
+[2026-10-21T09:05:02.029Z] [SUCCESS] Professional Role selected
+[2026-10-21T09:05:02.029Z] [STEP] Filling Professional Bio
+[2026-10-21T09:05:03.324Z] [SUCCESS] Professional Bio filled
+[2026-10-21T09:05:03.324Z] [STEP] Clicking Continue
+[2026-10-21T09:05:08.563Z] [INFO] Pricing Model tab not present
+[2026-10-21T09:05:08.563Z] [STEP] Clicking Launch Group
+[2026-10-21T09:05:08.710Z] [SUCCESS] Group creation flow completed for: PW_Group_20261021_090436_w13r0943fap
+[2026-10-21T09:05:08.717Z] [STEP] Verifying Group Details page loaded for: PW_Group_20261021_090436_w13r0943fap
+[2026-10-21T09:05:14.185Z] [SUCCESS] Group Details page verified
+[2026-10-21T09:05:14.186Z] [SUCCESS] Leader Free Plan Journey complete: Group "PW_Group_20261021_090436_w13r0943fap" created.

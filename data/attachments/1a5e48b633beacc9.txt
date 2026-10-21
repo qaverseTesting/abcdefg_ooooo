@@ -1,0 +1,6 @@
+[2026-10-21T08:58:46.374Z] [STEP] Filling Stripe payment details
+[2026-10-21T08:58:46.862Z] [STEP] Selecting country: US
+[2026-10-21T08:58:47.027Z] [SUCCESS] Country settled on US
+[2026-10-21T08:58:51.907Z] [SUCCESS] Stripe payment details filled
+[2026-10-21T08:58:51.907Z] [STEP] Submitting payment (attempt 1/3)
+[2026-10-21T08:58:59.475Z] [SUCCESS] Payment submitted

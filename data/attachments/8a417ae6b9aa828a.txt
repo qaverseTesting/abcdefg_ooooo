@@ -1,0 +1,12 @@
+[2026-10-21T09:22:18.940Z] [STEP] Opening dashboard
+[2026-10-21T09:22:21.379Z] [STEP] Searching for group: PW_Group_20261021_092129_w21r0352bub
+[2026-10-21T09:22:26.024Z] [INFO] Search "PW_Group_20261021_092129_w21r0352bub" settled: explore-grid data-state="ready"
+[2026-10-21T09:22:26.024Z] [STEP] Verifying group card content for: PW_Group_20261021_092129_w21r0352bub
+[2026-10-21T09:22:26.322Z] [SUCCESS] Group card content verified: PW_Group_20261021_092129_w21r0352bub
+[2026-10-21T09:22:26.322Z] [STEP] Verifying group side panel is visible
+[2026-10-21T09:22:26.340Z] [INFO] Side panel not open — clicking card to open: PW_Group_20261021_092129_w21r0352bub
+[2026-10-21T09:22:26.340Z] [STEP] Clicking group card: PW_Group_20261021_092129_w21r0352bub
+[2026-10-21T09:22:27.284Z] [SUCCESS] Group card clicked: PW_Group_20261021_092129_w21r0352bub
+[2026-10-21T09:22:27.447Z] [SUCCESS] Group side panel opened
+[2026-10-21T09:22:27.459Z] [ASSERT] Verifying member-facing price "$13/month" for group: PW_Group_20261021_092129_w21r0352bub
+[2026-10-21T09:22:27.514Z] [SUCCESS] Member-facing price verified: $13/month
