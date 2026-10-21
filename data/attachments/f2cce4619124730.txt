@@ -1,0 +1,30 @@
+[2026-10-21T12:15:15.181Z] [STEP] Opening group room "pw_group_20261021_121244_w0r028945o" on tab=sessions
+[2026-10-21T12:15:18.343Z] [SUCCESS] Group room open on tab=sessions
+[2026-10-21T12:15:18.343Z] [STEP] Starting Session Creation flow for: PW_Session_20261021_121515_w16r018111s
+[2026-10-21T12:15:18.344Z] [STEP] Opening Schedule Session modal
+[2026-10-21T12:15:19.375Z] [STEP] Waiting for Create Session modal
+[2026-10-21T12:15:19.505Z] [SUCCESS] Create Session modal visible
+[2026-10-21T12:15:19.505Z] [STEP] Filling Create Session form
+[2026-10-21T12:15:19.505Z] [STEP] Setting session date to next day
+[2026-10-21T12:15:20.805Z] [INFO] Session date set to 22 October, 2026
+[2026-10-21T12:15:20.806Z] [STEP] Ensuring timezone is selected
+[2026-10-21T12:15:21.185Z] [INFO] Searching for timezone "Pacific"
+[2026-10-21T12:15:21.786Z] [INFO] Timezone selection attempted via keyboard
+[2026-10-21T12:15:21.786Z] [STEP] Setting session time
+[2026-10-21T12:15:23.535Z] [INFO] Session time set to 10:00 AM – 11:00 AM
+[2026-10-21T12:15:23.589Z] [INFO] Filling description editor
+[2026-10-21T12:15:24.700Z] [STEP] Checking if tags are required
+[2026-10-21T12:15:24.801Z] [INFO] Opened Tags drawer
+[2026-10-21T12:15:25.286Z] [INFO] Selected a tag
+[2026-10-21T12:15:25.316Z] [SUCCESS] Tags drawer closed
+[2026-10-21T12:15:25.316Z] [SUCCESS] Form filling completed
+[2026-10-21T12:15:25.316Z] [STEP] Making the session recurring: Bi-weekly, never ending
+[2026-10-21T12:15:25.828Z] [STEP] Submitting session
+[2026-10-21T12:15:26.083Z] [STEP] Verifying session creation (modal closed)
+[2026-10-21T12:15:28.126Z] [SUCCESS] Session "PW_Session_20261021_121515_w16r018111s" submitted.
+[2026-10-21T12:15:28.126Z] [STEP] Opening session details: PW_Session_20261021_121515_w16r018111s
+[2026-10-21T12:15:28.126Z] [STEP] Navigating to Sessions tab
+[2026-10-21T12:15:28.198Z] [SUCCESS] Sessions tab active
+[2026-10-21T12:15:28.198Z] [STEP] Waiting for session list to settle
+[2026-10-21T12:15:28.266Z] [SUCCESS] Session list settled — 3 session(s)
+[2026-10-21T12:15:28.744Z] [SUCCESS] Session details opened

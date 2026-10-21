@@ -1,0 +1,5 @@
+[2026-10-21T12:31:01.391Z] [STEP] Opening dashboard
+[2026-10-21T12:31:03.093Z] [STEP] Searching for group: AMActiveGroup
+[2026-10-21T12:31:06.043Z] [INFO] Search "AMActiveGroup" settled: explore-grid data-state="ready"
+[2026-10-21T12:31:06.043Z] [STEP] Verifying group card content for: AMActiveGroup
+[2026-10-21T12:31:06.115Z] [SUCCESS] Group card content verified: AMActiveGroup

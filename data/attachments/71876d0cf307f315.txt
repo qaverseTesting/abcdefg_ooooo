@@ -1,9 +1,0 @@
-[2026-10-21T09:13:39.946Z] [STEP] Opening group room "pw_group_20261021_090930_w0r0134tri" on tab=sessions
-[2026-10-21T09:13:42.492Z] [SUCCESS] Group room open on tab=sessions
-[2026-10-21T09:13:42.492Z] [STEP] Waiting for "PW_Session_20261021_090930_w0r0134ifc" to become live (up to 498s)
-[2026-10-21T09:19:28.454Z] [SUCCESS] "PW_Session_20261021_090930_w0r0134ifc" is live
-[2026-10-21T09:19:28.454Z] [STEP] Opening group room "pw_group_20261021_090930_w0r0134tri" on tab=conversations
-[2026-10-21T09:19:31.331Z] [SUCCESS] Group room open on tab=conversations
-[2026-10-21T09:19:31.732Z] [ASSERT] Verifying "PW_Session_20261021_090930_w0r0134ifc" feed card shows "Registered for session"
-[2026-10-21T09:19:31.777Z] [SUCCESS] Feed card shows "Registered for session"
-[2026-10-21T09:19:31.777Z] [STEP] Opening session details from feed: PW_Session_20261021_090930_w0r0134ifc

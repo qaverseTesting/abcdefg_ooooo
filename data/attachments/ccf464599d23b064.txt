@@ -1,0 +1,7 @@
+[2026-10-21T12:28:57.175Z] [INFO] [LIFECYCLE INIT] - Starting journey for Group: PW_Group_20261021_122857_w21r0175mri
+[2026-10-21T12:28:58.108Z] [STEP] STEP: Initializing Group Creation
+[2026-10-21T12:28:58.111Z] [STEP] Initializing Group Creation
+[2026-10-21T12:28:58.112Z] [STEP] Opening My Sessions and clicking Create Group
+[2026-10-21T12:29:01.272Z] [ASSERT] Create Group page is loaded
+[2026-10-21T12:29:01.272Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-10-21T12:29:03.353Z] [SUCCESS] Group Creation page loaded
