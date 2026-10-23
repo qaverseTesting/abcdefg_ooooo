@@ -1,0 +1,2 @@
+[2026-10-23T09:10:04.092Z] [WARN] [KNOWN APP ISSUE] Checkout for "PW_Group_20261023_090539_w12r0439w4t" says the ways to join have changed — its copy of the price is older than the live one. Reloading every 30s for up to 7 min
+[2026-10-23T09:12:29.981Z] [WARN] [KNOWN APP ISSUE] Checkout for "PW_Group_20261023_090539_w12r0439w4t" showed "the ways to join this group have changed" (a stale copy of the price) and took 146s of reloads to show the current price.

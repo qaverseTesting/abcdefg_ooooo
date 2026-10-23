@@ -1,8 +1,0 @@
-[2026-10-21T13:28:38.569Z] [STEP] Navigating to My Groups page
-[2026-10-21T13:28:39.197Z] [STEP] Waiting for My Groups page content
-[2026-10-21T13:28:39.782Z] [STEP] Waiting for group list to settle
-[2026-10-21T13:28:40.650Z] [SUCCESS] Group list settled — 1 card(s) on the active tab
-[2026-10-21T13:28:40.650Z] [STEP] Verifying at least one group card is visible
-[2026-10-21T13:28:40.650Z] [STEP] Waiting for group list to settle
-[2026-10-21T13:28:41.202Z] [SUCCESS] Group list settled — 1 card(s) on the active tab
-[2026-10-21T13:28:41.204Z] [SUCCESS] 1 group card(s) confirmed visible

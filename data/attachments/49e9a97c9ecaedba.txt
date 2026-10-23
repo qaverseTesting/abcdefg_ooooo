@@ -1,6 +1,0 @@
-[2026-10-21T13:30:58.392Z] [STEP] Navigating to Profile → Plan & Billing
-[2026-10-21T13:30:59.391Z] [SUCCESS] Profile Plan & Billing page loaded
-[2026-10-21T13:30:59.391Z] [ASSERT] Verifying a "Paid" transaction matching "STRIPE_USER_HOSTING_PRODUCT"
-[2026-10-21T13:30:59.392Z] [STEP] Reading Transactions History
-[2026-10-21T13:31:00.620Z] [SUCCESS] Transactions History has 1 row(s)
-[2026-10-21T13:31:00.622Z] [SUCCESS] Transaction confirmed: Oct 21, 2026 1 × STRIPE_USER_HOSTING_PRODUCT (at $19.00 / month) -$19.00 Paid
