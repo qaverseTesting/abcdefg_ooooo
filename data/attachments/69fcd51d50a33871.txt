@@ -1,7 +1,0 @@
-[2026-10-26T15:03:27.008Z] [INFO] [LIFECYCLE INIT] - Starting journey for Group: PW_Group_20261026_150327_w15r00085d6
-[2026-10-26T15:03:27.362Z] [STEP] STEP: Initializing Group Creation
-[2026-10-26T15:03:27.363Z] [STEP] Initializing Group Creation
-[2026-10-26T15:03:27.366Z] [STEP] Opening My Sessions and clicking Create Group
-[2026-10-26T15:03:30.086Z] [ASSERT] Create Group page is loaded
-[2026-10-26T15:03:30.086Z] [STEP] Clearing 3rd-party overlays for clean interaction
-[2026-10-26T15:03:31.951Z] [SUCCESS] Group Creation page loaded

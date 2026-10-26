@@ -1,0 +1,33 @@
+[2026-10-26T17:30:14.353Z] [STEP] Registering new leader with email: pw_auto_mh_26173014abcw@mentalhappy.com
+[2026-10-26T17:30:14.353Z] [STEP] Navigating to Registration Page
+[2026-10-26T17:30:15.494Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-10-26T17:30:15.845Z] [SUCCESS] Registration Page loaded
+[2026-10-26T17:30:15.846Z] [STEP] Filling registration form for: pw_auto_mh_26173014abcw@mentalhappy.com
+[2026-10-26T17:30:16.696Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-10-26T17:30:16.708Z] [STEP] Submitting registration form
+[2026-10-26T17:30:16.956Z] [SUCCESS] Registration form submitted
+[2026-10-26T17:30:16.956Z] [STEP] Waiting for OTP entry page to be ready
+[2026-10-26T17:30:20.511Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-10-26T17:30:20.511Z] [INFO] [OTP] Bypass active for pw_auto_mh_26173014abcw@mentalhappy.com. Returning fixed validation code: 456321
+[2026-10-26T17:30:20.515Z] [STEP] Entering OTP: 456321
+[2026-10-26T17:30:20.515Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-10-26T17:30:20.747Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-10-26T17:30:20.924Z] [SUCCESS] OTP entered
+[2026-10-26T17:30:20.924Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-10-26T17:30:20.926Z] [ASSERT] Verifying toast message matching: /Email Verified Successfully/i
+[2026-10-26T17:30:23.034Z] [SUCCESS] Leader registration and OTP verification completed
+[2026-10-26T17:30:23.035Z] [STEP] Selecting Leader role on Welcome page
+[2026-10-26T17:30:23.035Z] [STEP] Verifying Welcome Page is displayed
+[2026-10-26T17:30:23.035Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-10-26T17:30:23.256Z] [SUCCESS] Welcome Page verification successful (Role buttons visible)
+[2026-10-26T17:30:23.256Z] [STEP] Selecting path: Continue as a Group Leader
+[2026-10-26T17:30:23.256Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-10-26T17:30:23.381Z] [INFO] Clicked Continue as a Group Leader
+[2026-10-26T17:30:23.396Z] [SUCCESS] Group Leader path selected
+[2026-10-26T17:30:23.396Z] [STEP] Clicking Welcome Continue button
+[2026-10-26T17:30:23.396Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-10-26T17:30:23.673Z] [SUCCESS] Welcome Continue clicked
+[2026-10-26T17:30:23.673Z] [SUCCESS] Leader role selection completed
+[2026-10-26T17:30:23.673Z] [STEP] Clicking Onboarding Skip button
+[2026-10-26T17:30:23.673Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-10-26T17:30:27.957Z] [SUCCESS] Leader successfully skipped onboarding (accepted hosting-plan OR groups)

@@ -1,0 +1,2 @@
+[2026-10-26T17:14:02.362Z] [WARN] [RUN STATE] Recovered "PW_Group_20261026_171042_w14r0707rd1" from disk — this worker was restarted after an earlier failure, so in-memory state was lost. The group itself is fine.
+[2026-10-26T17:14:02.362Z] [WARN] [RECOVERY] No leader session in this worker — an earlier block failed and the worker was restarted. Signing in again so this block can still run. Check that earlier failure; this is not it.

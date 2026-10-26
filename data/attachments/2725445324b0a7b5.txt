@@ -1,0 +1,31 @@
+[2026-10-26T17:12:50.511Z] [STEP] Opening dashboard
+[2026-10-26T17:12:53.504Z] [STEP] Searching for "PW_Group_20261026_171042_w14r0707rd1" — up to 5 attempts (fresh groups index slowly)
+[2026-10-26T17:12:53.504Z] [STEP] Searching for group: PW_Group_20261026_171042_w14r0707rd1
+[2026-10-26T17:12:57.793Z] [INFO] Search "PW_Group_20261026_171042_w14r0707rd1" settled: explore-grid data-state="ready"
+[2026-10-26T17:12:57.875Z] [SUCCESS] Group "PW_Group_20261026_171042_w14r0707rd1" found in Explore search (attempt 1/5)
+[2026-10-26T17:12:57.875Z] [STEP] Verifying group card content for: PW_Group_20261026_171042_w14r0707rd1
+[2026-10-26T17:12:58.028Z] [SUCCESS] Group card content verified: PW_Group_20261026_171042_w14r0707rd1
+[2026-10-26T17:13:03.101Z] [INFO] [FOLLOW CHECK] PW_Group_20261026_171042_w14r0707rd1: isUpcoming=false · Follow=false · Unfollow=false · Join=true · https://staging.mentalhappy.com/groups/pw_group_20261026_171042_w14r0707rd1
+[2026-10-26T17:13:03.141Z] [STEP] Clicking join on "PW_Group_20261026_171042_w14r0707rd1" — detecting destination (checkout or group)
+[2026-10-26T17:13:03.200Z] [INFO] Side panel not open — clicking card to open: PW_Group_20261026_171042_w14r0707rd1
+[2026-10-26T17:13:03.200Z] [STEP] Clicking group card: PW_Group_20261026_171042_w14r0707rd1
+[2026-10-26T17:13:04.162Z] [SUCCESS] Group card clicked: PW_Group_20261026_171042_w14r0707rd1
+[2026-10-26T17:13:06.225Z] [SUCCESS] Join destination for "PW_Group_20261026_171042_w14r0707rd1": checkout
+[2026-10-26T17:13:06.234Z] [STEP] Verifying checkout summary for: PW_Group_20261026_171042_w14r0707rd1
+[2026-10-26T17:13:10.623Z] [SUCCESS] Checkout summary verified
+[2026-10-26T17:13:10.623Z] [STEP] Verifying $3 platform fee is disclosed and added to the total
+[2026-10-26T17:13:13.330Z] [SUCCESS] Platform fee verified: $3 disclosed and included in the total
+[2026-10-26T17:13:13.330Z] [STEP] Verifying Stripe iframe is visible
+[2026-10-26T17:13:13.784Z] [SUCCESS] Stripe iframe verified
+[2026-10-26T17:13:13.784Z] [STEP] Filling Stripe payment details
+[2026-10-26T17:13:14.572Z] [STEP] Selecting country: US
+[2026-10-26T17:13:14.696Z] [SUCCESS] Country settled on US
+[2026-10-26T17:13:18.987Z] [SUCCESS] Stripe payment details filled
+[2026-10-26T17:13:18.987Z] [STEP] Submitting payment (attempt 1/3)
+[2026-10-26T17:13:25.389Z] [SUCCESS] Payment submitted
+[2026-10-26T17:13:25.391Z] [STEP] Waiting for group page to load after payment redirect
+[2026-10-26T17:13:25.400Z] [SUCCESS] Group page loaded
+[2026-10-26T17:13:25.400Z] [STEP] Checking for post-join success modal
+[2026-10-26T17:13:25.500Z] [SUCCESS] Success modal handled
+[2026-10-26T17:13:25.500Z] [STEP] Verifying Conversations tab is visible
+[2026-10-26T17:13:26.905Z] [SUCCESS] Conversations tab visible — membership access confirmed

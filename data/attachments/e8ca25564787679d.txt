@@ -1,0 +1,60 @@
+[2026-10-26T17:22:51.963Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-10-26T17:22:52.769Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-10-26T17:22:52.769Z] [STEP] Verifying Plan & Billing page content
+[2026-10-26T17:22:54.053Z] [SUCCESS] Plan & Billing page verified
+[2026-10-26T17:22:54.053Z] [STEP] Verifying subscription with price $19 is visible
+[2026-10-26T17:22:54.060Z] [SUCCESS] Subscription details verified
+[2026-10-26T17:22:54.060Z] [SUCCESS] U-01 PASSED: $19 Active Plan confirmed — ready to upgrade
+[2026-10-26T17:22:54.061Z] [STEP] Clicking Change Plan → navigating to Hosting Plan page
+[2026-10-26T17:22:54.413Z] [SUCCESS] Redirected to Hosting Plan page
+[2026-10-26T17:22:54.413Z] [STEP] Verifying Hosting Plan page content
+[2026-10-26T17:22:54.581Z] [SUCCESS] Hosting Plan page verification successful
+[2026-10-26T17:22:54.581Z] [SUCCESS] U-02 PASSED: Redirected to Hosting Plan page
+[2026-10-26T17:22:54.584Z] [STEP] Verifying current plan card shows "Current Plan" (disabled state)
+[2026-10-26T17:22:54.632Z] [SUCCESS] "Current Plan" label verified
+[2026-10-26T17:22:54.632Z] [SUCCESS] U-03 PASSED: "Current Plan" label on Active Plan card confirmed
+[2026-10-26T17:22:54.634Z] [STEP] Verifying Multi-Group Plan CTA is visible
+[2026-10-26T17:22:54.676Z] [SUCCESS] Multi-Group Plan CTA verified visible
+[2026-10-26T17:22:54.676Z] [SUCCESS] U-04 PASSED: "Upgrade to Multi-Group" CTA visible and available
+[2026-10-26T17:22:54.677Z] [STEP] Selecting Multi-Group Plan
+[2026-10-26T17:22:54.745Z] [STEP] Verifying Pay Now button is visible after plan selection
+[2026-10-26T17:22:58.859Z] [SUCCESS] Pay Now button verified visible
+[2026-10-26T17:22:58.860Z] [SUCCESS] U-05 PASSED: "Pay Now" button appeared after Multi-Group selection
+[2026-10-26T17:22:58.861Z] [STEP] Verifying the plan selection landed on the checkout
+[2026-10-26T17:22:58.864Z] [SUCCESS] Checkout page reached
+[2026-10-26T17:22:58.864Z] [STEP] Verifying Stripe form visibility
+[2026-10-26T17:23:01.000Z] [SUCCESS] Stripe form verified — ready after 2.1s
+[2026-10-26T17:23:01.000Z] [SUCCESS] U-06 PASSED: Stripe checkout form loaded successfully
+[2026-10-26T17:23:01.001Z] [STEP] Completing Stripe Payment
+[2026-10-26T17:23:01.001Z] [STEP] Verifying Stripe form visibility
+[2026-10-26T17:23:01.292Z] [SUCCESS] Stripe form verified — ready after 0.3s
+[2026-10-26T17:23:01.292Z] [STEP] Filling Stripe payment details
+[2026-10-26T17:23:01.376Z] [STEP] Selecting country: US
+[2026-10-26T17:23:01.425Z] [SUCCESS] Country settled on US
+[2026-10-26T17:23:04.318Z] [SUCCESS] Stripe payment details filled
+[2026-10-26T17:23:04.318Z] [STEP] Submitting payment (attempt 1/3)
+[2026-10-26T17:23:04.585Z] [SUCCESS] Payment submitted
+[2026-10-26T17:23:04.585Z] [SUCCESS] Stripe payment submitted
+[2026-10-26T17:23:04.585Z] [STEP] Verifying Plan Change Payment — waiting for the app to finish and return
+[2026-10-26T17:23:09.238Z] [SUCCESS] App returned to Plan & Billing after payment
+[2026-10-26T17:23:09.238Z] [ASSERT] Verifying toast message matching: /successfully upgraded to the .*plan/i
+[2026-10-26T17:23:09.585Z] [INFO] Post-payment landing: https://staging.mentalhappy.com/user/profile/plan-billing
+[2026-10-26T17:23:09.717Z] [SUCCESS] Plan change payment confirmed
+[2026-10-26T17:23:09.717Z] [SUCCESS] U-07 PASSED: Payment complete — redirected back to app
+[2026-10-26T17:23:09.718Z] [ASSERT] Verifying $49 subscription is active after payment
+[2026-10-26T17:23:09.718Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-10-26T17:23:10.714Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-10-26T17:23:10.714Z] [STEP] Verifying Plan & Billing page content
+[2026-10-26T17:23:12.028Z] [SUCCESS] Plan & Billing page verified
+[2026-10-26T17:23:12.043Z] [SUCCESS] $49 subscription confirmed active
+[2026-10-26T17:23:12.043Z] [SUCCESS] U-08 PASSED: $49 Multi-Group Plan confirmed on Plan & Billing
+[2026-10-26T17:23:12.045Z] [STEP] Navigating to Hosting Plan Page
+[2026-10-26T17:23:13.114Z] [SUCCESS] Hosting Plan Page loaded
+[2026-10-26T17:23:13.114Z] [STEP] Verifying Downgrade CTA is visible on Free plan card
+[2026-10-26T17:23:14.076Z] [SUCCESS] Downgrade CTA verified visible
+[2026-10-26T17:23:14.076Z] [STEP] Verifying current plan card shows "Current Plan" (disabled state)
+[2026-10-26T17:23:14.125Z] [SUCCESS] "Current Plan" label verified
+[2026-10-26T17:23:14.125Z] [SUCCESS] U-09 PASSED: "Downgrade" CTA + "Current Plan" confirmed — Multi-Group upgrade verified
+[2026-10-26T17:23:14.126Z] [STEP] Verifying Downgrade CTA is visible on Free plan card
+[2026-10-26T17:23:14.174Z] [SUCCESS] Downgrade CTA verified visible
+[2026-10-26T17:23:14.175Z] [SUCCESS] U-10 PASSED: "Downgrade" CTA visible — Multi-Group Plan fully active

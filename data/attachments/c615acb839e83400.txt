@@ -1,9 +1,0 @@
-[2026-10-26T15:15:30.379Z] [NAV] Navigating to Registration
-[2026-10-26T15:15:32.096Z] [STEP] Generated test email: pw_auto_mh_261515324p6c@mentalhappy.com
-[2026-10-26T15:15:32.097Z] [STEP] Filling registration form for: pw_auto_mh_261515324p6c@mentalhappy.com
-[2026-10-26T15:15:34.552Z] [STEP] Clearing 3rd-party overlays for clean interaction
-[2026-10-26T15:15:34.601Z] [STEP] Submitting registration form
-[2026-10-26T15:15:35.016Z] [SUCCESS] Registration form submitted
-[2026-10-26T15:15:38.275Z] [STEP] Waiting for OTP entry page to be ready
-[2026-10-26T15:15:39.151Z] [SUCCESS] OTP entry page is ready — registration email was sent
-[2026-10-26T15:15:39.151Z] [SUCCESS] Step 1 Complete: User is on OTP page.

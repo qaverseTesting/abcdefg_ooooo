@@ -1,0 +1,9 @@
+[2026-10-26T17:18:23.372Z] [WARN] [FOLLOW CHECK] "PW_Group_20261026_171644_w16r0756axa" — group data says isUpcoming=true but the page never showed the matching CTA; reading the page as it is
+[2026-10-26T17:18:24.055Z] [WARN] [KNOWN APP ISSUE] "PW_Group_20261026_171644_w16r0756axa" is follow-only, but its page does not offer Follow yet — still the button from before the last price change (KI-01) — waiting up to 7 min for it to catch up
+[2026-10-26T17:18:40.964Z] [WARN] [FOLLOW CHECK] "PW_Group_20261026_171644_w16r0756axa" — group data says isUpcoming=true but the page never showed the matching CTA; reading the page as it is
+[2026-10-26T17:19:29.900Z] [WARN] [FOLLOW CHECK] "PW_Group_20261026_171644_w16r0756axa" — group data says isUpcoming=true but the page never showed the matching CTA; reading the page as it is
+[2026-10-26T17:20:17.749Z] [WARN] [FOLLOW CHECK] "PW_Group_20261026_171644_w16r0756axa" — group data says isUpcoming=true but the page never showed the matching CTA; reading the page as it is
+[2026-10-26T17:21:07.155Z] [WARN] [FOLLOW CHECK] "PW_Group_20261026_171644_w16r0756axa" — group data says isUpcoming=true but the page never showed the matching CTA; reading the page as it is
+[2026-10-26T17:21:57.254Z] [WARN] [FOLLOW CHECK] "PW_Group_20261026_171644_w16r0756axa" — group data says isUpcoming=true but the page never showed the matching CTA; reading the page as it is
+[2026-10-26T17:22:45.490Z] [WARN] [FOLLOW CHECK] "PW_Group_20261026_171644_w16r0756axa" — group data says isUpcoming=true but the page never showed the matching CTA; reading the page as it is
+[2026-10-26T17:23:21.922Z] [WARN] [KNOWN APP ISSUE] KI-01: "PW_Group_20261026_171644_w16r0756axa"'s page still showed the button from before the last price change, and took another 298s to show Follow (app issue since 2026-10-12).

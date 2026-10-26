@@ -1,0 +1,10 @@
+[2026-10-26T17:15:16.352Z] [STEP] Clicking Unregister on feed card: PW_Session_20261026_170932_w0r0859t1c
+[2026-10-26T17:15:18.127Z] [ASSERT] Verifying unregister confirmation for: PW_Session_20261026_170932_w0r0859t1c
+[2026-10-26T17:15:18.199Z] [STEP] Confirming unregister ("Yes, cancel")
+[2026-10-26T17:15:19.274Z] [ASSERT] Verifying toast message matching: no longer registered for this session
+[2026-10-26T17:15:19.296Z] [ASSERT] Verifying "PW_Session_20261026_170932_w0r0859t1c" feed card shows "Register for session"
+[2026-10-26T17:15:19.345Z] [SUCCESS] Feed card shows "Register for session"
+[2026-10-26T17:15:19.345Z] [STEP] Opening session details from feed: PW_Session_20261026_170932_w0r0859t1c
+[2026-10-26T17:15:23.110Z] [STEP] Opening My Sessions ?tab=registered&status=upcoming
+[2026-10-26T17:15:27.934Z] [ASSERT] Verifying "PW_Session_20261026_170932_w0r0859t1c" is not in My Sessions
+[2026-10-26T17:15:28.045Z] [SUCCESS] Not listed
