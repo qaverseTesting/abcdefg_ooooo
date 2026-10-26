@@ -1,0 +1,5 @@
+[2026-10-26T12:17:16.407Z] [STEP] Clicking Unregister on feed card: PW_Session_20261026_121208_w0r0719ijh
+[2026-10-26T12:17:18.396Z] [ASSERT] Verifying unregister confirmation for: PW_Session_20261026_121208_w0r0719ijh
+[2026-10-26T12:17:18.462Z] [STEP] Keeping registration ("Keep it")
+[2026-10-26T12:17:18.731Z] [ASSERT] Verifying "PW_Session_20261026_121208_w0r0719ijh" feed card shows "Unregister from session"
+[2026-10-26T12:17:18.837Z] [SUCCESS] Feed card shows "Unregister from session"
