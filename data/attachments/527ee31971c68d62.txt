@@ -1,0 +1,28 @@
+[2026-10-26T15:17:34.542Z] [STEP] Submitting member registration form for: pw_auto_mh_26151734n8m9@mentalhappy.com
+[2026-10-26T15:17:34.542Z] [STEP] Navigating to Registration Page
+[2026-10-26T15:17:35.555Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-10-26T15:17:35.741Z] [SUCCESS] Registration Page loaded
+[2026-10-26T15:17:35.741Z] [STEP] Filling registration form for: pw_auto_mh_26151734n8m9@mentalhappy.com
+[2026-10-26T15:17:36.600Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-10-26T15:17:36.609Z] [STEP] Submitting registration form
+[2026-10-26T15:17:36.881Z] [SUCCESS] Registration form submitted
+[2026-10-26T15:17:36.881Z] [STEP] Waiting for OTP entry page to be ready
+[2026-10-26T15:17:39.936Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-10-26T15:17:39.936Z] [SUCCESS] Registration form submitted, OTP page reached
+[2026-10-26T15:17:39.937Z] [STEP] Verifying email for: pw_auto_mh_26151734n8m9@mentalhappy.com
+[2026-10-26T15:17:39.937Z] [INFO] [OTP] Bypass active for pw_auto_mh_26151734n8m9@mentalhappy.com. Returning fixed validation code: 456321
+[2026-10-26T15:17:39.941Z] [STEP] Entering OTP: 456321
+[2026-10-26T15:17:39.941Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-10-26T15:17:40.276Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-10-26T15:17:40.478Z] [SUCCESS] OTP entered
+[2026-10-26T15:17:40.478Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-10-26T15:17:40.482Z] [ASSERT] Verifying toast message matching: /Email Verified Successfully/i
+[2026-10-26T15:17:42.696Z] [SUCCESS] Email verification (OTP) successful
+[2026-10-26T15:17:42.697Z] [STEP] Selecting path: Explore Support Groups
+[2026-10-26T15:17:42.697Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-10-26T15:17:43.132Z] [INFO] Clicked Explore support groups
+[2026-10-26T15:17:43.151Z] [SUCCESS] Explore Support Groups path selected
+[2026-10-26T15:17:43.151Z] [STEP] Clicking Welcome Continue button
+[2026-10-26T15:17:43.151Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-10-26T15:17:43.352Z] [SUCCESS] Welcome Continue clicked
+[2026-10-26T15:17:43.354Z] [SUCCESS] Member successfully routed to Onboarding
