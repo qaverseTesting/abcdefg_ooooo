@@ -1,0 +1,20 @@
+[2026-10-27T05:06:35.837Z] [INFO] [ResetLink] Requesting password reset link for mh_forgotpass@mailinator.com via Mailinator
+[2026-10-27T05:06:35.912Z] [STEP] Opening Mailinator inbox: https://www.mailinator.com/v4/public/inboxes.jsp?to=mh_forgotpass
+[2026-10-27T05:06:37.376Z] [SUCCESS] Mailinator inbox loaded
+[2026-10-27T05:06:37.376Z] [STEP] Searching for keywords: reset, password, forgot in Inbox: https://www.mailinator.com/v4/public/inboxes.jsp?to=mh_forgotpass (Timeout: 90000ms)
+[2026-10-27T05:06:37.450Z] [SUCCESS] Matched email: "	MentalHappy	Password reset requested	just now..."
+[2026-10-27T05:06:37.790Z] [INFO] Message body rendered in iframe: #html_msg_body
+[2026-10-27T05:06:37.791Z] [STEP] Clicking reset link
+[2026-10-27T05:06:37.835Z] [INFO] Message body rendered in iframe: #html_msg_body
+[2026-10-27T05:06:37.850Z] [INFO] Using iframe: #html_msg_body
+[2026-10-27T05:06:37.902Z] [INFO] Clicking Reset Link found in iframe: https://u8010474.ct.sendgrid.net/ls/click?upn=u001.amIoa00VBXzGb-2FR7MbBTTvTrJY0ZFEJduoZ1A0YFR38gU9MZbyEX3TDqJOxX9Dy574ilyzZFIfUTFnZd49c7MClNrg6m4QCzPUxL1OiXySuSvl-2FWF-2FNpiKnW8n44qfPMQsM1_Ibx7e5gfWGG-2BSRiyYnbQWVrCwy-2Bsm-2Fu7cGvL7Rfj79jfxywfBnN-2BhzmEaRSIY4vw-2B8qofTDOwhUpHzzZmCT3uUiY3740kBPuYHxJ6-2FIfj-2FfuxJf5EpjGQakpbsn2-2B7kUvp02WUXUdO2dy7DOXIrirtiRG77Vf-2FA6Jxf30yCGNjEDJUPGJ-2BXvZRShIBVm4aqvsE01eiCOIt3rVCiFZYxklv8wuunEPAxaiKXg2tlXbbd6lsGSEJzsOXyNsgtwTjRtyFB1h2VUiZmPGqPFNuvBVsKhojDOnJNL3BcLtriko2shQhGsXeh6JYevJ-2FfptF8N5IaUOedqueADz6UwUgULetspgWWEBIwaTFQutZfpGaa0K1Nh595PEg4T-2BctM4cg9
+[2026-10-27T05:06:37.949Z] [SUCCESS] Reset link interaction completed
+[2026-10-27T05:06:38.987Z] [SUCCESS] Reset page identified: https://staging.mentalhappy.com/reset/c8b88987-5bb3-466e-91dc-11ed3610d75a
+[2026-10-27T05:06:39.714Z] [INFO] Entering new password: Pw20261027050635t6t0!
+[2026-10-27T05:06:39.825Z] [INFO] Entering confirm password
+[2026-10-27T05:06:39.976Z] [INFO] Clicking Confirm Password button
+[2026-10-27T05:06:40.127Z] [ASSERT] Verifying toast message matching: Success: Password Changed Successfully
+[2026-10-27T05:06:41.060Z] [SUCCESS] Password updated successfully
+[2026-10-27T05:06:43.434Z] [INFO] Reset link refused, no password form shown
+[2026-10-27T05:06:43.439Z] [INFO] Attempting login for user: mh_forgotpass@mailinator.com | Password: Pw20261027050635t6t0! (expectSuccess: true)
+[2026-10-27T05:06:45.860Z] [SUCCESS] Login successful. Landed on: https://staging.mentalhappy.com/groups
