@@ -1,0 +1,41 @@
+[2026-10-29T12:12:31.370Z] [STEP] Opening dashboard
+[2026-10-29T12:12:33.337Z] [STEP] Searching for "PW_Group_20261029_121147_w12r0436add" — up to 5 attempts (fresh groups index slowly)
+[2026-10-29T12:12:33.338Z] [STEP] Searching for group: PW_Group_20261029_121147_w12r0436add
+[2026-10-29T12:12:36.585Z] [INFO] Search "PW_Group_20261029_121147_w12r0436add" settled: explore-grid data-state="ready"
+[2026-10-29T12:12:36.619Z] [SUCCESS] Group "PW_Group_20261029_121147_w12r0436add" found in Explore search (attempt 1/5)
+[2026-10-29T12:12:36.620Z] [STEP] Verifying group card content for: PW_Group_20261029_121147_w12r0436add
+[2026-10-29T12:12:36.747Z] [SUCCESS] Group card content verified: PW_Group_20261029_121147_w12r0436add
+[2026-10-29T12:12:40.183Z] [INFO] [FOLLOW CHECK] PW_Group_20261029_121147_w12r0436add: isUpcoming=false · Follow=false · Unfollow=false · Join=true · https://staging.mentalhappy.com/groups/pw_group_20261029_121147_w12r0436add
+[2026-10-29T12:12:40.258Z] [STEP] Verifying join CTA is visible and enabled
+[2026-10-29T12:12:40.302Z] [INFO] Side panel not open — clicking card to open: PW_Group_20261029_121147_w12r0436add
+[2026-10-29T12:12:40.303Z] [STEP] Clicking group card: PW_Group_20261029_121147_w12r0436add
+[2026-10-29T12:12:41.023Z] [SUCCESS] Group card clicked: PW_Group_20261029_121147_w12r0436add
+[2026-10-29T12:12:41.197Z] [SUCCESS] Join CTA verified
+[2026-10-29T12:12:41.407Z] [INFO] [CTA PANEL BUTTONS] [{"text":"","aria":"Close"},{"text":"","aria":"Close"},{"text":"","aria":"Share group"},{"text":"","aria":"Show platform fee details"},{"text":"Join Group","aria":"Join Group"}]
+[2026-10-29T12:12:41.436Z] [INFO] [CTA] Free: button "Join Group", price "$3/month"
+[2026-10-29T12:12:41.438Z] [ASSERT] Verifying side panel discloses the platform fee: "Includes the $3/month MentalHappy platform fee"
+[2026-10-29T12:12:41.850Z] [SUCCESS] Platform fee disclosure verified in side panel (revealed on hover)
+[2026-10-29T12:12:41.850Z] [SUCCESS] [JP-5] Free group DOES disclose the platform fee in the side panel
+[2026-10-29T12:12:41.853Z] [STEP] Clicking join on "PW_Group_20261029_121147_w12r0436add" — detecting destination (checkout or group)
+[2026-10-29T12:12:42.248Z] [INFO] [STRIPE] Stripe's script files are served from the shared cache (storage/stripe-cache)
+[2026-10-29T12:12:42.524Z] [SUCCESS] Join destination for "PW_Group_20261029_121147_w12r0436add": checkout
+[2026-10-29T12:12:42.526Z] [STEP] Verifying checkout summary for: PW_Group_20261029_121147_w12r0436add
+[2026-10-29T12:12:49.248Z] [SUCCESS] Checkout summary verified
+[2026-10-29T12:12:49.248Z] [STEP] Verifying $3 platform fee is disclosed and added to the total
+[2026-10-29T12:12:50.571Z] [SUCCESS] Platform fee verified: $3 disclosed and included in the total
+[2026-10-29T12:12:50.572Z] [STEP] Verifying Stripe iframe is visible
+[2026-10-29T12:12:50.607Z] [SUCCESS] Stripe iframe verified
+[2026-10-29T12:12:50.607Z] [STEP] Filling Stripe payment details
+[2026-10-29T12:12:50.829Z] [STEP] Selecting country: US
+[2026-10-29T12:12:50.918Z] [SUCCESS] Country settled on US
+[2026-10-29T12:12:54.068Z] [SUCCESS] Stripe payment details filled
+[2026-10-29T12:12:54.068Z] [STEP] Submitting payment (attempt 1/3)
+[2026-10-29T12:12:58.924Z] [SUCCESS] Payment submitted
+[2026-10-29T12:12:58.924Z] [SUCCESS] Free group charged the $3 platform fee — JP-5 holds on the member side too
+[2026-10-29T12:12:58.925Z] [STEP] Waiting for group page to load after payment redirect
+[2026-10-29T12:12:58.929Z] [SUCCESS] Group page loaded
+[2026-10-29T12:12:58.929Z] [STEP] Checking for post-join success modal
+[2026-10-29T12:12:59.014Z] [SUCCESS] Success modal handled
+[2026-10-29T12:12:59.014Z] [STEP] Verifying Conversations tab is visible
+[2026-10-29T12:12:59.973Z] [SUCCESS] Conversations tab visible — membership access confirmed
+[2026-10-29T12:12:59.973Z] [SUCCESS] Member joined while Free: pw_auto_mh_291212188zx5@mentalhappy.com

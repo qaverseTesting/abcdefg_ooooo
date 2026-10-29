@@ -1,0 +1,2 @@
+[2026-10-29T12:13:57.720Z] [WARN] [KNOWN APP ISSUE] The donate page sent the member back to the room — its copy of "PW_Group_20261029_121147_w12r0436add" is older than the switch to Donation (KI-07). Retrying every 30s for up to 7 min
+[2026-10-29T12:18:19.793Z] [WARN] [KNOWN APP ISSUE] The donate page for "PW_Group_20261029_121147_w12r0436add" sent the member back to the room (its copy of the group was older than the switch to Donation) and took 262s to open (KI-07).

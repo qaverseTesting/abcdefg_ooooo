@@ -1,0 +1,11 @@
+[2026-10-29T12:21:03.947Z] [STEP] Navigating to My Groups page
+[2026-10-29T12:21:04.596Z] [STEP] Waiting for My Groups page content
+[2026-10-29T12:21:05.138Z] [STEP] Clicking filter: Joined
+[2026-10-29T12:21:06.592Z] [SUCCESS] Filter "Joined" selected
+[2026-10-29T12:21:06.592Z] [ASSERT] Verifying "PW_Group_20261029_121147_w12r0436add" is not listed on the active tab
+[2026-10-29T12:21:06.592Z] [STEP] Waiting for group list to settle
+[2026-10-29T12:21:07.194Z] [SUCCESS] Group list settled — 0 card(s) on the active tab
+[2026-10-29T12:21:07.206Z] [SUCCESS] Confirmed absent: PW_Group_20261029_121147_w12r0436add
+[2026-10-29T12:21:07.432Z] [ASSERT] Verifying member no longer has access to: PW_Group_20261029_121147_w12r0436add
+[2026-10-29T12:21:07.955Z] [SUCCESS] Access revoked as expected for: PW_Group_20261029_121147_w12r0436add
+[2026-10-29T12:21:07.955Z] [SUCCESS] [MEMBER ACCESS] Revoked for "PW_Group_20261029_121147_w12r0436add" after deletion

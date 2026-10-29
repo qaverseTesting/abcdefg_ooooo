@@ -1,0 +1,18 @@
+[2026-10-29T12:19:27.282Z] [STEP] Opening group Settings tab for: pw_group_20261029_121147_w12r0436add
+[2026-10-29T12:19:32.352Z] [SUCCESS] Group Settings tab loaded
+[2026-10-29T12:19:32.352Z] [STEP] Clicking "Change Pricing Model"
+[2026-10-29T12:19:32.626Z] [SUCCESS] "Change Pricing Model" clicked
+[2026-10-29T12:19:32.626Z] [STEP] Verifying Update Group Pricing page loaded
+[2026-10-29T12:19:35.721Z] [SUCCESS] Update Group Pricing page loaded
+[2026-10-29T12:19:35.722Z] [STEP] Selecting "Monthly Subscription" pricing model
+[2026-10-29T12:19:35.921Z] [SUCCESS] Monthly Subscription selected
+[2026-10-29T12:19:35.922Z] [STEP] Entering monthly price: $5
+[2026-10-29T12:19:36.232Z] [SUCCESS] Monthly price set to $5
+[2026-10-29T12:19:36.232Z] [STEP] Clicking "Update Pricing"
+[2026-10-29T12:19:36.509Z] [SUCCESS] "Update Pricing" clicked — confirmation dialog opened
+[2026-10-29T12:19:36.509Z] [STEP] Clicking "Apply Changes"
+[2026-10-29T12:19:37.766Z] [SUCCESS] "Apply Changes" clicked — confirmation dialog closed
+[2026-10-29T12:19:37.766Z] [STEP] Opening group Settings tab for: pw_group_20261029_121147_w12r0436add
+[2026-10-29T12:19:42.448Z] [SUCCESS] Group Settings tab loaded
+[2026-10-29T12:19:42.449Z] [ASSERT] Verifying monthly pricing summary: Monthly Paid $5/Month
+[2026-10-29T12:19:42.497Z] [SUCCESS] Monthly pricing summary verified: $5/Month
