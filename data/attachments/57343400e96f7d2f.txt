@@ -1,7 +1,0 @@
-[2026-10-30T11:24:38.804Z] [INFO] [LIFECYCLE INIT] - Starting journey for Group: PW_Group_20261030_112438_w14r080388l
-[2026-10-30T11:24:39.197Z] [STEP] STEP: Initializing Group Creation
-[2026-10-30T11:24:39.197Z] [STEP] Initializing Group Creation
-[2026-10-30T11:24:39.201Z] [STEP] Opening Profile → Earnings and clicking Create Group
-[2026-10-30T11:24:42.630Z] [ASSERT] Create Group page is loaded
-[2026-10-30T11:24:42.630Z] [STEP] Clearing 3rd-party overlays for clean interaction
-[2026-10-30T11:24:45.620Z] [SUCCESS] Group Creation page loaded

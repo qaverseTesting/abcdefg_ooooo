@@ -1,7 +1,0 @@
-[2026-10-30T11:24:24.786Z] [STEP] Opening group room "pw_group_20261030_111414_w0r09013s2" on tab=conversations
-[2026-10-30T11:24:28.407Z] [SUCCESS] Group room open on tab=conversations
-[2026-10-30T11:24:29.408Z] [STEP] Opening session details from feed: PW_Session_20261030_111414_w0r0901dk1
-[2026-10-30T11:24:29.868Z] [STEP] Clicking Join session
-[2026-10-30T11:24:34.266Z] [STEP] Joining the call as "Automation Member"
-[2026-10-30T11:24:43.077Z] [SUCCESS] In the call
-[2026-10-30T11:24:43.079Z] [ASSERT] Verifying 1 participant(s) in the call
