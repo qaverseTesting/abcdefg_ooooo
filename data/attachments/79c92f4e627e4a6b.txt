@@ -1,0 +1,15 @@
+[2026-10-30T16:59:20.714Z] [STEP] Opening group room "pw_group_20261030_165435_w0r08497zw" on tab=conversations
+[2026-10-30T16:59:29.057Z] [SUCCESS] Group room open on tab=conversations
+[2026-10-30T16:59:29.719Z] [STEP] Registering for session: PW_Session_20261030_165435_w0r0849vmn
+[2026-10-30T16:59:30.666Z] [SUCCESS] Register for session clicked
+[2026-10-30T16:59:30.668Z] [ASSERT] Verifying toast message matching: successfully registered to the session
+[2026-10-30T16:59:31.248Z] [ASSERT] Verifying session registration confirmed: PW_Session_20261030_165435_w0r0849vmn
+[2026-10-30T16:59:31.287Z] [SUCCESS] Session registration confirmed — card now offers Unregister
+[2026-10-30T16:59:31.287Z] [STEP] Opening group room "pw_group_20261030_165435_w0r08497zw" on tab=sessions
+[2026-10-30T16:59:36.167Z] [SUCCESS] Group room open on tab=sessions
+[2026-10-30T16:59:36.167Z] [STEP] Opening session details: PW_Session_20261030_165435_w0r0849vmn
+[2026-10-30T16:59:36.167Z] [STEP] Navigating to Sessions tab
+[2026-10-30T16:59:37.230Z] [SUCCESS] Sessions tab active
+[2026-10-30T16:59:37.230Z] [STEP] Waiting for session list to settle
+[2026-10-30T16:59:38.810Z] [SUCCESS] Session list settled — 6 session(s)
+[2026-10-30T16:59:39.661Z] [SUCCESS] Session details opened

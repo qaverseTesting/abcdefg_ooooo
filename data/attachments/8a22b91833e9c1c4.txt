@@ -1,0 +1,30 @@
+[2026-10-30T16:58:07.632Z] [STEP] Opening group room "pw_group_20261030_165435_w0r08497zw" on tab=sessions
+[2026-10-30T16:58:11.876Z] [SUCCESS] Group room open on tab=sessions
+[2026-10-30T16:58:11.876Z] [STEP] Starting Session Creation flow for: PW_Session_20261030_165807_w10r0632nbu
+[2026-10-30T16:58:11.876Z] [STEP] Opening Schedule Session modal
+[2026-10-30T16:58:13.347Z] [STEP] Waiting for Create Session modal
+[2026-10-30T16:58:13.562Z] [SUCCESS] Create Session modal visible
+[2026-10-30T16:58:13.562Z] [STEP] Filling Create Session form
+[2026-10-30T16:58:13.562Z] [STEP] Setting session date to next day
+[2026-10-30T16:58:15.398Z] [INFO] Session date set to 31 October, 2026
+[2026-10-30T16:58:15.398Z] [STEP] Ensuring timezone is selected
+[2026-10-30T16:58:16.202Z] [INFO] Searching for timezone "Pacific"
+[2026-10-30T16:58:17.006Z] [INFO] Timezone selection attempted via keyboard
+[2026-10-30T16:58:17.006Z] [STEP] Setting session time
+[2026-10-30T16:58:19.123Z] [INFO] Session time set to 10:00 AM – 11:00 AM
+[2026-10-30T16:58:19.175Z] [INFO] Filling description editor
+[2026-10-30T16:58:20.579Z] [STEP] Checking if tags are required
+[2026-10-30T16:58:20.743Z] [INFO] Opened Tags drawer
+[2026-10-30T16:58:21.483Z] [INFO] Selected a tag
+[2026-10-30T16:58:21.557Z] [SUCCESS] Tags drawer closed
+[2026-10-30T16:58:21.557Z] [SUCCESS] Form filling completed
+[2026-10-30T16:58:21.558Z] [STEP] Making the session recurring: Monthly, never ending
+[2026-10-30T16:58:22.435Z] [STEP] Submitting session
+[2026-10-30T16:58:22.771Z] [STEP] Verifying session creation (modal closed)
+[2026-10-30T16:58:24.828Z] [SUCCESS] Session "PW_Session_20261030_165807_w10r0632nbu" submitted.
+[2026-10-30T16:58:24.828Z] [STEP] Opening session details: PW_Session_20261030_165807_w10r0632nbu
+[2026-10-30T16:58:24.828Z] [STEP] Navigating to Sessions tab
+[2026-10-30T16:58:24.853Z] [SUCCESS] Sessions tab active
+[2026-10-30T16:58:24.853Z] [STEP] Waiting for session list to settle
+[2026-10-30T16:58:24.880Z] [SUCCESS] Session list settled — 4 session(s)
+[2026-10-30T16:58:25.230Z] [SUCCESS] Session details opened

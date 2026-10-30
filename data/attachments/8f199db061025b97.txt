@@ -1,0 +1,298 @@
+[2026-10-30T16:59:47.826Z] [STEP] [SETUP] Leader: register and pay for the Multi-Group plan
+[2026-10-30T16:59:47.827Z] [STEP] Registering new leader with email: pw_auto_mh_30165947g412@mentalhappy.com
+[2026-10-30T16:59:47.828Z] [STEP] Navigating to Registration Page
+[2026-10-30T16:59:50.451Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-10-30T16:59:51.762Z] [SUCCESS] Registration Page loaded
+[2026-10-30T16:59:51.769Z] [STEP] Filling registration form for: pw_auto_mh_30165947g412@mentalhappy.com
+[2026-10-30T16:59:54.914Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-10-30T16:59:54.946Z] [STEP] Submitting registration form
+[2026-10-30T16:59:55.392Z] [SUCCESS] Registration form submitted
+[2026-10-30T16:59:55.392Z] [STEP] Waiting for OTP entry page to be ready
+[2026-10-30T17:00:01.336Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-10-30T17:00:01.337Z] [INFO] [OTP] Bypass active for pw_auto_mh_30165947g412@mentalhappy.com. Returning fixed validation code: 456321
+[2026-10-30T17:00:01.379Z] [STEP] Entering OTP: 456321
+[2026-10-30T17:00:01.379Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-10-30T17:00:02.418Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-10-30T17:00:03.109Z] [SUCCESS] OTP entered
+[2026-10-30T17:00:03.109Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-10-30T17:00:03.125Z] [ASSERT] Verifying toast message matching: /Email Verified Successfully/i
+[2026-10-30T17:00:05.453Z] [SUCCESS] Leader registration and OTP verification completed
+[2026-10-30T17:00:05.453Z] [STEP] Selecting Leader role on Welcome page
+[2026-10-30T17:00:05.454Z] [STEP] Verifying Welcome Page is displayed
+[2026-10-30T17:00:05.454Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-10-30T17:00:06.182Z] [SUCCESS] Welcome Page verification successful (Role buttons visible)
+[2026-10-30T17:00:06.182Z] [STEP] Selecting path: Continue as a Group Leader
+[2026-10-30T17:00:06.182Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-10-30T17:00:07.008Z] [INFO] Clicked Continue as a Group Leader
+[2026-10-30T17:00:07.068Z] [SUCCESS] Group Leader path selected
+[2026-10-30T17:00:07.068Z] [STEP] Clicking Welcome Continue button
+[2026-10-30T17:00:07.068Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-10-30T17:00:07.673Z] [SUCCESS] Welcome Continue clicked
+[2026-10-30T17:00:07.673Z] [SUCCESS] Leader role selection completed
+[2026-10-30T17:00:07.673Z] [STEP] Completing Leader onboarding via SKIP path
+[2026-10-30T17:00:07.686Z] [STEP] Completing Leader onboarding via SKIP (Deep Check Flow)
+[2026-10-30T17:00:07.827Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-10-30T17:00:07.917Z] [INFO] Checking for Screen 2 (Survey) Skip option...
+[2026-10-30T17:00:07.973Z] [STEP] Clicking Onboarding Skip button
+[2026-10-30T17:00:07.973Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-10-30T17:00:13.475Z] [SUCCESS] Onboarding cleared successfully
+[2026-10-30T17:00:13.475Z] [SUCCESS] Leader onboarding (Skip) completed
+[2026-10-30T17:00:13.476Z] [STEP] Selecting Multi-Group Plan ($49)
+[2026-10-30T17:00:13.506Z] [STEP] Verifying Hosting Plan page content
+[2026-10-30T17:00:15.934Z] [SUCCESS] Hosting Plan page verification successful
+[2026-10-30T17:00:15.934Z] [STEP] Selecting Multi-Group Plan
+[2026-10-30T17:00:16.342Z] [STEP] Verifying the plan selection landed on the checkout
+[2026-10-30T17:00:16.606Z] [INFO] [STRIPE] Stripe's script files are served from the shared cache (storage/stripe-cache)
+[2026-10-30T17:00:16.630Z] [SUCCESS] Checkout page reached
+[2026-10-30T17:00:16.630Z] [SUCCESS] Multi-Group plan selected, landed on the checkout
+[2026-10-30T17:00:16.630Z] [STEP] Completing Stripe Payment
+[2026-10-30T17:00:16.630Z] [STEP] Verifying Stripe form visibility
+[2026-10-30T17:00:31.760Z] [SUCCESS] Stripe form verified — ready after 15.1s
+[2026-10-30T17:00:31.761Z] [STEP] Filling Stripe payment details
+[2026-10-30T17:00:31.945Z] [STEP] Selecting country: US
+[2026-10-30T17:00:32.104Z] [SUCCESS] Country settled on US
+[2026-10-30T17:00:39.468Z] [SUCCESS] Stripe payment details filled
+[2026-10-30T17:00:39.469Z] [STEP] Submitting payment (attempt 1/3)
+[2026-10-30T17:00:40.321Z] [SUCCESS] Payment submitted
+[2026-10-30T17:00:40.322Z] [SUCCESS] Stripe payment submitted
+[2026-10-30T17:00:40.322Z] [STEP] Verifying Payment Success (Redirect or Popup)
+[2026-10-30T17:00:48.670Z] [INFO] Payment landing state: popup — https://staging.mentalhappy.com/welcome/hosting-payment?plan=MULTI_GROUP&period=monthly
+[2026-10-30T17:00:48.670Z] [STEP] Verifying Payment Success popup visibility
+[2026-10-30T17:00:49.339Z] [SUCCESS] Payment Success popup verified
+[2026-10-30T17:00:49.339Z] [STEP] Clicking "Do this later"
+[2026-10-30T17:00:53.168Z] [SUCCESS] Success popup dismissed via Do this later
+[2026-10-30T17:00:53.390Z] [SUCCESS] Subscription completed and reached target page.
+[2026-10-30T17:00:53.390Z] [STEP] [SETUP] Leader: other group + one session
+[2026-10-30T17:00:53.393Z] [STEP] Creating group: PW_Group_20261030_165946_w0r0754gnj
+[2026-10-30T17:00:53.397Z] [STEP] Opening Profile → Earnings and clicking Create Group
+[2026-10-30T17:00:57.307Z] [ASSERT] Create Group page is loaded
+[2026-10-30T17:00:57.307Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-10-30T17:00:59.480Z] [STEP] Filling Group Name
+[2026-10-30T17:00:59.611Z] [STEP] Filling Group Description
+[2026-10-30T17:01:00.891Z] [STEP] Uploading Cover Image
+[2026-10-30T17:01:01.058Z] [SUCCESS] Cover image uploaded
+[2026-10-30T17:01:01.058Z] [STEP] Opening Select Tags dropdown
+[2026-10-30T17:01:01.248Z] [STEP] Selecting tag (second option — first real option)
+[2026-10-30T17:01:01.449Z] [SUCCESS] Tag selected
+[2026-10-30T17:01:01.449Z] [STEP] Clicking Continue
+[2026-10-30T17:01:01.821Z] [INFO] Professional Background tab detected — completing required fields
+[2026-10-30T17:01:01.821Z] [STEP] Filling Professional Background tab
+[2026-10-30T17:01:01.821Z] [STEP] Uploading Profile Photo
+[2026-10-30T17:01:01.960Z] [SUCCESS] Profile photo uploaded
+[2026-10-30T17:01:01.960Z] [STEP] Selecting Professional Role
+[2026-10-30T17:01:02.521Z] [SUCCESS] Professional Role selected
+[2026-10-30T17:01:02.521Z] [STEP] Filling Professional Bio
+[2026-10-30T17:01:04.093Z] [SUCCESS] Professional Bio filled
+[2026-10-30T17:01:04.093Z] [STEP] Clicking Continue
+[2026-10-30T17:01:04.297Z] [INFO] Pricing Model tab detected — selecting "Free"
+[2026-10-30T17:01:04.297Z] [STEP] Selecting "Free" Pricing Model
+[2026-10-30T17:01:04.373Z] [SUCCESS] Free pricing model selected
+[2026-10-30T17:01:04.373Z] [STEP] Clicking Continue
+[2026-10-30T17:01:04.634Z] [STEP] Clicking Launch Group
+[2026-10-30T17:01:04.841Z] [SUCCESS] Group creation flow completed for: PW_Group_20261030_165946_w0r0754gnj
+[2026-10-30T17:01:04.841Z] [STEP] Navigating to Sessions from Group Details
+[2026-10-30T17:01:04.841Z] [STEP] Navigating to Sessions tab
+[2026-10-30T17:01:10.946Z] [STEP] Clearing toasts
+[2026-10-30T17:01:11.582Z] [SUCCESS] Toasts cleared
+[2026-10-30T17:01:12.042Z] [SUCCESS] Sessions tab active
+[2026-10-30T17:01:12.042Z] [STEP] Starting Session Creation flow for: PW_Session_20261030_165946_w0r07543j8
+[2026-10-30T17:01:12.043Z] [STEP] Opening Schedule Session modal
+[2026-10-30T17:01:13.508Z] [STEP] Waiting for Create Session modal
+[2026-10-30T17:01:13.694Z] [SUCCESS] Create Session modal visible
+[2026-10-30T17:01:13.694Z] [STEP] Filling Create Session form
+[2026-10-30T17:01:13.694Z] [STEP] Setting session date to next day
+[2026-10-30T17:01:15.679Z] [INFO] Session date set to 31 October, 2026
+[2026-10-30T17:01:15.679Z] [STEP] Ensuring timezone is selected
+[2026-10-30T17:01:16.130Z] [INFO] Searching for timezone "Pacific"
+[2026-10-30T17:01:16.761Z] [INFO] Timezone selection attempted via keyboard
+[2026-10-30T17:01:16.761Z] [STEP] Setting session time
+[2026-10-30T17:01:19.215Z] [INFO] Session time set to 10:00 AM – 11:00 AM
+[2026-10-30T17:01:19.272Z] [INFO] Filling description editor
+[2026-10-30T17:01:20.855Z] [STEP] Checking if tags are required
+[2026-10-30T17:01:21.015Z] [INFO] Opened Tags drawer
+[2026-10-30T17:01:21.653Z] [INFO] Selected a tag
+[2026-10-30T17:01:21.703Z] [SUCCESS] Tags drawer closed
+[2026-10-30T17:01:21.703Z] [SUCCESS] Form filling completed
+[2026-10-30T17:01:21.703Z] [STEP] Submitting session
+[2026-10-30T17:01:22.100Z] [STEP] Verifying session creation (modal closed)
+[2026-10-30T17:01:24.265Z] [SUCCESS] Session "PW_Session_20261030_165946_w0r07543j8" submitted.
+[2026-10-30T17:01:24.265Z] [STEP] [SETUP] Leader: main group + tomorrow's session
+[2026-10-30T17:01:24.265Z] [STEP] Creating group: PW_Group_20261030_165946_w0r07519vi
+[2026-10-30T17:01:24.266Z] [STEP] Opening Profile → Earnings and clicking Create Group
+[2026-10-30T17:01:26.719Z] [ASSERT] Create Group page is loaded
+[2026-10-30T17:01:26.719Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-10-30T17:01:28.483Z] [STEP] Filling Group Name
+[2026-10-30T17:01:28.526Z] [STEP] Filling Group Description
+[2026-10-30T17:01:29.165Z] [STEP] Uploading Cover Image
+[2026-10-30T17:01:29.251Z] [SUCCESS] Cover image uploaded
+[2026-10-30T17:01:29.251Z] [STEP] Opening Select Tags dropdown
+[2026-10-30T17:01:29.475Z] [STEP] Selecting tag (second option — first real option)
+[2026-10-30T17:01:29.767Z] [SUCCESS] Tag selected
+[2026-10-30T17:01:29.767Z] [STEP] Clicking Continue
+[2026-10-30T17:01:35.067Z] [INFO] Professional Background tab not present
+[2026-10-30T17:01:35.095Z] [INFO] Pricing Model tab detected — selecting "Free"
+[2026-10-30T17:01:35.095Z] [STEP] Selecting "Free" Pricing Model
+[2026-10-30T17:01:35.338Z] [SUCCESS] Free pricing model selected
+[2026-10-30T17:01:35.338Z] [STEP] Clicking Continue
+[2026-10-30T17:01:35.673Z] [STEP] Clicking Launch Group
+[2026-10-30T17:01:35.886Z] [SUCCESS] Group creation flow completed for: PW_Group_20261030_165946_w0r07519vi
+[2026-10-30T17:01:35.886Z] [STEP] Navigating to Sessions from Group Details
+[2026-10-30T17:01:35.886Z] [STEP] Navigating to Sessions tab
+[2026-10-30T17:01:41.501Z] [STEP] Clearing toasts
+[2026-10-30T17:01:42.439Z] [SUCCESS] Toasts cleared
+[2026-10-30T17:01:42.852Z] [SUCCESS] Sessions tab active
+[2026-10-30T17:01:42.852Z] [INFO] Group slug resolved from URL: pw_group_20261030_165946_w0r07519vi
+[2026-10-30T17:01:42.853Z] [STEP] Starting Session Creation flow for: PW_Session_20261030_165946_w0r0754qq0
+[2026-10-30T17:01:42.853Z] [STEP] Opening Schedule Session modal
+[2026-10-30T17:01:44.420Z] [STEP] Waiting for Create Session modal
+[2026-10-30T17:01:44.569Z] [SUCCESS] Create Session modal visible
+[2026-10-30T17:01:44.569Z] [STEP] Filling Create Session form
+[2026-10-30T17:01:44.569Z] [STEP] Setting session date to next day
+[2026-10-30T17:01:46.453Z] [INFO] Session date set to 31 October, 2026
+[2026-10-30T17:01:46.453Z] [STEP] Ensuring timezone is selected
+[2026-10-30T17:01:46.816Z] [INFO] Searching for timezone "Pacific"
+[2026-10-30T17:01:47.560Z] [INFO] Timezone selection attempted via keyboard
+[2026-10-30T17:01:47.560Z] [STEP] Setting session time
+[2026-10-30T17:01:49.313Z] [INFO] Session time set to 10:00 AM – 11:00 AM
+[2026-10-30T17:01:49.356Z] [INFO] Filling description editor
+[2026-10-30T17:01:50.512Z] [STEP] Checking if tags are required
+[2026-10-30T17:01:50.669Z] [INFO] Opened Tags drawer
+[2026-10-30T17:01:51.821Z] [INFO] Selected a tag
+[2026-10-30T17:01:51.879Z] [SUCCESS] Tags drawer closed
+[2026-10-30T17:01:51.879Z] [SUCCESS] Form filling completed
+[2026-10-30T17:01:51.879Z] [STEP] Submitting session
+[2026-10-30T17:01:52.172Z] [STEP] Verifying session creation (modal closed)
+[2026-10-30T17:01:54.306Z] [SUCCESS] Session "PW_Session_20261030_165946_w0r0754qq0" submitted.
+[2026-10-30T17:01:54.486Z] [STEP] [SETUP] Fresh member: register; join the other group and register for its session
+[2026-10-30T17:01:54.487Z] [STEP] Submitting member registration form for: pw_auto_mh_301701549yzb@mentalhappy.com
+[2026-10-30T17:01:54.487Z] [STEP] Navigating to Registration Page
+[2026-10-30T17:01:56.125Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-10-30T17:01:56.747Z] [SUCCESS] Registration Page loaded
+[2026-10-30T17:01:56.747Z] [STEP] Filling registration form for: pw_auto_mh_301701549yzb@mentalhappy.com
+[2026-10-30T17:01:58.212Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-10-30T17:01:58.240Z] [STEP] Submitting registration form
+[2026-10-30T17:01:58.748Z] [SUCCESS] Registration form submitted
+[2026-10-30T17:01:58.749Z] [STEP] Waiting for OTP entry page to be ready
+[2026-10-30T17:02:03.312Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-10-30T17:02:03.312Z] [SUCCESS] Registration form submitted, OTP page reached
+[2026-10-30T17:02:03.312Z] [STEP] Verifying email for: pw_auto_mh_301701549yzb@mentalhappy.com
+[2026-10-30T17:02:03.312Z] [INFO] [OTP] Bypass active for pw_auto_mh_301701549yzb@mentalhappy.com. Returning fixed validation code: 456321
+[2026-10-30T17:02:03.323Z] [STEP] Entering OTP: 456321
+[2026-10-30T17:02:03.323Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-10-30T17:02:04.014Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-10-30T17:02:04.430Z] [SUCCESS] OTP entered
+[2026-10-30T17:02:04.430Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-10-30T17:02:04.436Z] [ASSERT] Verifying toast message matching: /Email Verified Successfully/i
+[2026-10-30T17:02:06.560Z] [SUCCESS] Email verification (OTP) successful
+[2026-10-30T17:02:06.560Z] [STEP] Selecting Member role on Welcome page
+[2026-10-30T17:02:06.565Z] [STEP] Verifying Welcome Page is displayed
+[2026-10-30T17:02:06.565Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-10-30T17:02:06.695Z] [SUCCESS] Welcome Page verification successful (Role buttons visible)
+[2026-10-30T17:02:06.695Z] [STEP] Selecting path: Explore Support Groups
+[2026-10-30T17:02:06.695Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-10-30T17:02:07.321Z] [INFO] Clicked Explore support groups
+[2026-10-30T17:02:07.357Z] [SUCCESS] Explore Support Groups path selected
+[2026-10-30T17:02:07.357Z] [STEP] Clicking Welcome Continue button
+[2026-10-30T17:02:07.357Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-10-30T17:02:07.632Z] [SUCCESS] Welcome Continue clicked
+[2026-10-30T17:02:07.632Z] [SUCCESS] Role selection completed
+[2026-10-30T17:02:07.632Z] [STEP] Completing Member onboarding via SKIP path
+[2026-10-30T17:02:07.670Z] [STEP] Completing Member onboarding via SKIP
+[2026-10-30T17:02:07.670Z] [STEP] Clicking Onboarding Skip button
+[2026-10-30T17:02:07.670Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-10-30T17:02:10.084Z] [SUCCESS] Redirected to Dashboard via Skip
+[2026-10-30T17:02:10.084Z] [SUCCESS] Member onboarding (Skip) completed
+[2026-10-30T17:02:10.084Z] [STEP] Searching for "PW_Group_20261030_165946_w0r0754gnj" — up to 5 attempts (fresh groups index slowly)
+[2026-10-30T17:02:10.084Z] [STEP] Searching for group: PW_Group_20261030_165946_w0r0754gnj
+[2026-10-30T17:02:16.019Z] [INFO] Search "PW_Group_20261030_165946_w0r0754gnj" settled: explore-grid data-state="ready"
+[2026-10-30T17:02:16.051Z] [SUCCESS] Group "PW_Group_20261030_165946_w0r0754gnj" found in Explore search (attempt 1/5)
+[2026-10-30T17:02:16.052Z] [STEP] Opening the group and joining via the side panel
+[2026-10-30T17:02:16.052Z] [STEP] Clicking join and waiting for payment redirect
+[2026-10-30T17:02:16.078Z] [INFO] Side panel not open — clicking card to open: PW_Group_20261030_165946_w0r0754gnj
+[2026-10-30T17:02:16.078Z] [STEP] Clicking group card: PW_Group_20261030_165946_w0r0754gnj
+[2026-10-30T17:02:17.428Z] [SUCCESS] Group card clicked: PW_Group_20261030_165946_w0r0754gnj
+[2026-10-30T17:02:18.511Z] [SUCCESS] Redirected to payment page
+[2026-10-30T17:02:18.511Z] [STEP] Completing Stripe Payment
+[2026-10-30T17:02:18.512Z] [STEP] Verifying Stripe form visibility
+[2026-10-30T17:02:28.803Z] [SUCCESS] Stripe form verified — ready after 10.3s
+[2026-10-30T17:02:28.803Z] [STEP] Filling Stripe payment details
+[2026-10-30T17:02:28.954Z] [STEP] Selecting country: US
+[2026-10-30T17:02:29.106Z] [SUCCESS] Country settled on US
+[2026-10-30T17:02:33.495Z] [SUCCESS] Stripe payment details filled
+[2026-10-30T17:02:33.495Z] [STEP] Submitting payment (attempt 1/3)
+[2026-10-30T17:02:39.947Z] [SUCCESS] Payment submitted
+[2026-10-30T17:02:39.947Z] [SUCCESS] Stripe payment submitted
+[2026-10-30T17:02:39.947Z] [STEP] Waiting for group page to load after payment redirect
+[2026-10-30T17:02:39.955Z] [SUCCESS] Group page loaded
+[2026-10-30T17:02:39.955Z] [STEP] Checking for post-join success modal
+[2026-10-30T17:02:40.101Z] [SUCCESS] Success modal handled
+[2026-10-30T17:02:40.101Z] [STEP] Clicking Conversations tab
+[2026-10-30T17:02:41.143Z] [SUCCESS] Conversations tab already active
+[2026-10-30T17:02:42.468Z] [STEP] Registering for session: PW_Session_20261030_165946_w0r07543j8
+[2026-10-30T17:02:42.822Z] [SUCCESS] Register for session clicked
+[2026-10-30T17:02:42.822Z] [ASSERT] Verifying session registration confirmed: PW_Session_20261030_165946_w0r07543j8
+[2026-10-30T17:02:43.779Z] [SUCCESS] Session registration confirmed — card now offers Unregister
+[2026-10-30T17:02:43.783Z] [STEP] [SETUP] Fresh member: join the main group
+[2026-10-30T17:02:43.783Z] [STEP] Searching for "PW_Group_20261030_165946_w0r07519vi" — up to 5 attempts (fresh groups index slowly)
+[2026-10-30T17:02:43.783Z] [STEP] Searching for group: PW_Group_20261030_165946_w0r07519vi
+[2026-10-30T17:03:03.807Z] [STEP] Opening dashboard
+[2026-10-30T17:03:07.251Z] [STEP] Searching for group: PW_Group_20261030_165946_w0r07519vi
+[2026-10-30T17:03:14.781Z] [INFO] Search "PW_Group_20261030_165946_w0r07519vi" settled: explore-grid data-state="ready"
+[2026-10-30T17:03:14.848Z] [SUCCESS] Group "PW_Group_20261030_165946_w0r07519vi" found in Explore search (attempt 2/5)
+[2026-10-30T17:03:14.848Z] [STEP] Opening the group and joining via the side panel
+[2026-10-30T17:03:14.848Z] [STEP] Clicking join and waiting for payment redirect
+[2026-10-30T17:03:14.877Z] [INFO] Side panel not open — clicking card to open: PW_Group_20261030_165946_w0r07519vi
+[2026-10-30T17:03:14.877Z] [STEP] Clicking group card: PW_Group_20261030_165946_w0r07519vi
+[2026-10-30T17:03:15.692Z] [SUCCESS] Group card clicked: PW_Group_20261030_165946_w0r07519vi
+[2026-10-30T17:03:16.959Z] [SUCCESS] Redirected to payment page
+[2026-10-30T17:03:16.959Z] [STEP] Completing Stripe Payment
+[2026-10-30T17:03:16.960Z] [STEP] Verifying Stripe form visibility
+[2026-10-30T17:03:27.345Z] [SUCCESS] Stripe form verified — ready after 10.4s
+[2026-10-30T17:03:27.345Z] [STEP] Filling Stripe payment details
+[2026-10-30T17:03:27.546Z] [STEP] Selecting country: US
+[2026-10-30T17:03:27.737Z] [SUCCESS] Country settled on US
+[2026-10-30T17:03:33.174Z] [SUCCESS] Stripe payment details filled
+[2026-10-30T17:03:33.175Z] [STEP] Submitting payment (attempt 1/3)
+[2026-10-30T17:03:40.771Z] [SUCCESS] Payment submitted
+[2026-10-30T17:03:40.771Z] [SUCCESS] Stripe payment submitted
+[2026-10-30T17:03:40.771Z] [STEP] Waiting for group page to load after payment redirect
+[2026-10-30T17:03:40.780Z] [SUCCESS] Group page loaded
+[2026-10-30T17:03:40.780Z] [STEP] Checking for post-join success modal
+[2026-10-30T17:03:40.888Z] [SUCCESS] Success modal handled
+[2026-10-30T17:03:40.890Z] [STEP] Opening My Sessions ?tab=registered
+[2026-10-30T17:03:45.380Z] [STEP] [SETUP] Leader: starting-soon session
+[2026-10-30T17:03:45.381Z] [STEP] Opening group room "pw_group_20261030_165946_w0r07519vi" on tab=sessions
+[2026-10-30T17:03:50.281Z] [SUCCESS] Group room open on tab=sessions
+[2026-10-30T17:03:50.281Z] [STEP] Waiting for session list to settle
+[2026-10-30T17:03:52.499Z] [SUCCESS] Session list settled — 1 session(s)
+[2026-10-30T17:03:52.500Z] [STEP] Creating starting-soon session: PW_Session_20261030_165946_w0r0754fpq
+[2026-10-30T17:03:52.500Z] [STEP] Opening Schedule Session modal
+[2026-10-30T17:03:54.021Z] [STEP] Waiting for Create Session modal
+[2026-10-30T17:03:54.302Z] [SUCCESS] Create Session modal visible
+[2026-10-30T17:03:54.302Z] [STEP] Filling Create Session form
+[2026-10-30T17:03:54.302Z] [STEP] Setting session date to next day
+[2026-10-30T17:03:56.649Z] [INFO] Session date set to 31 October, 2026
+[2026-10-30T17:03:56.650Z] [STEP] Selecting a timezone on the browser's offset
+[2026-10-30T17:03:59.429Z] [INFO] Timezone Africa/Abidjan (browser: UTC)
+[2026-10-30T17:03:59.429Z] [STEP] Setting session time
+[2026-10-30T17:04:01.970Z] [INFO] Session time set to 10:00 AM – 11:00 AM
+[2026-10-30T17:04:02.046Z] [INFO] Filling description editor
+[2026-10-30T17:04:04.159Z] [STEP] Checking if tags are required
+[2026-10-30T17:04:04.566Z] [INFO] Opened Tags drawer
+[2026-10-30T17:04:05.853Z] [INFO] Selected a tag
+[2026-10-30T17:04:05.908Z] [SUCCESS] Tags drawer closed
+[2026-10-30T17:04:05.908Z] [SUCCESS] Form filling completed
+[2026-10-30T17:04:11.416Z] [INFO] Session set to 30 October, 2026 5:11 PM–5:41 PM Africa/Abidjan (starts in 410s)
+[2026-10-30T17:04:11.416Z] [STEP] Submitting session
+[2026-10-30T17:04:11.855Z] [STEP] Verifying session creation (modal closed)
+[2026-10-30T17:04:13.267Z] [SUCCESS] Session "PW_Session_20261030_165946_w0r0754fpq" submitted.
+[2026-10-30T17:04:13.267Z] [SUCCESS] [SETUP] Ready — PW_Group_20261030_165946_w0r07519vi; live session starts in 408s
+[2026-10-30T17:04:22.007Z] [STEP] Opening group room "pw_group_20261030_165946_w0r07519vi" on tab=conversations
+[2026-10-30T17:04:25.665Z] [SUCCESS] Group room open on tab=conversations
+[2026-10-30T17:04:26.622Z] [ASSERT] Verifying "PW_Session_20261030_165946_w0r0754qq0" feed card shows "Register for session"
+[2026-10-30T17:04:26.726Z] [SUCCESS] Feed card shows "Register for session"
+[2026-10-30T17:04:26.726Z] [STEP] Registering for session: PW_Session_20261030_165946_w0r0754qq0
+[2026-10-30T17:04:26.959Z] [SUCCESS] Register for session clicked
+[2026-10-30T17:04:26.959Z] [ASSERT] Verifying toast message matching: successfully registered to the session
+[2026-10-30T17:04:27.436Z] [ASSERT] Verifying session registration confirmed: PW_Session_20261030_165946_w0r0754qq0
+[2026-10-30T17:04:27.463Z] [SUCCESS] Session registration confirmed — card now offers Unregister
