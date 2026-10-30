@@ -1,0 +1,7 @@
+[2026-10-30T11:25:19.957Z] [STEP] STEP: Verifying Session exists in list
+[2026-10-30T11:25:19.957Z] [ASSERT] Verifying session in list: L-Session: Firsttiotr
+[2026-10-30T11:25:19.957Z] [ASSERT] Verifying session exists: L-Session: Firsttiotr
+[2026-10-30T11:25:20.046Z] [SUCCESS] Session found in list
+[2026-10-30T11:25:20.046Z] [SUCCESS] Session verified in listing
+[2026-10-30T11:25:20.046Z] [SUCCESS] [FULL JOURNEY VERIFIED] - Group: PW_Group_20261030_112438_w14r080388l -> Session: L-Session: Firsttiotr
+[2026-10-30T11:25:20.504Z] [INFO] [LIFECYCLE DONE] - Group: PW_Group_20261030_112438_w14r080388l

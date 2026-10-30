@@ -1,0 +1,32 @@
+[2026-10-30T11:26:34.568Z] [STEP] Opening dashboard
+[2026-10-30T11:26:37.245Z] [STEP] Searching for group: PW_Group_20261030_112438_w14r080388l
+[2026-10-30T11:26:41.960Z] [INFO] Search "PW_Group_20261030_112438_w14r080388l" settled: explore-grid data-state="ready"
+[2026-10-30T11:26:41.961Z] [STEP] Verifying group card content for: PW_Group_20261030_112438_w14r080388l
+[2026-10-30T11:26:42.482Z] [SUCCESS] Group card content verified: PW_Group_20261030_112438_w14r080388l
+[2026-10-30T11:27:01.011Z] [INFO] [FOLLOW CHECK] PW_Group_20261030_112438_w14r080388l: isUpcoming=true · Follow=false · Unfollow=false · Join=true · https://staging.mentalhappy.com/groups/pw_group_20261030_112438_w14r080388l
+[2026-10-30T11:27:18.044Z] [INFO] [FOLLOW CHECK] PW_Group_20261030_112438_w14r080388l: isUpcoming=true · Follow=false · Unfollow=false · Join=true · https://staging.mentalhappy.com/groups/pw_group_20261030_112438_w14r080388l
+[2026-10-30T11:28:06.529Z] [INFO] [FOLLOW CHECK] PW_Group_20261030_112438_w14r080388l: isUpcoming=true · Follow=false · Unfollow=false · Join=true · https://staging.mentalhappy.com/groups/pw_group_20261030_112438_w14r080388l
+[2026-10-30T11:28:54.455Z] [INFO] [FOLLOW CHECK] PW_Group_20261030_112438_w14r080388l: isUpcoming=true · Follow=false · Unfollow=false · Join=true · https://staging.mentalhappy.com/groups/pw_group_20261030_112438_w14r080388l
+[2026-10-30T11:29:42.763Z] [INFO] [FOLLOW CHECK] PW_Group_20261030_112438_w14r080388l: isUpcoming=true · Follow=false · Unfollow=false · Join=true · https://staging.mentalhappy.com/groups/pw_group_20261030_112438_w14r080388l
+[2026-10-30T11:30:31.361Z] [INFO] [FOLLOW CHECK] PW_Group_20261030_112438_w14r080388l: isUpcoming=true · Follow=false · Unfollow=false · Join=true · https://staging.mentalhappy.com/groups/pw_group_20261030_112438_w14r080388l
+[2026-10-30T11:31:20.103Z] [INFO] [FOLLOW CHECK] PW_Group_20261030_112438_w14r080388l: isUpcoming=true · Follow=false · Unfollow=false · Join=true · https://staging.mentalhappy.com/groups/pw_group_20261030_112438_w14r080388l
+[2026-10-30T11:31:54.149Z] [INFO] [FOLLOW CHECK] PW_Group_20261030_112438_w14r080388l: isUpcoming=true · Follow=true · Unfollow=false · Join=false · https://staging.mentalhappy.com/groups/pw_group_20261030_112438_w14r080388l
+[2026-10-30T11:31:54.182Z] [STEP] Opening dashboard
+[2026-10-30T11:31:56.390Z] [STEP] Searching for group: PW_Group_20261030_112438_w14r080388l
+[2026-10-30T11:31:59.853Z] [INFO] Search "PW_Group_20261030_112438_w14r080388l" settled: explore-grid data-state="ready"
+[2026-10-30T11:31:59.865Z] [STEP] Following group: PW_Group_20261030_112438_w14r080388l
+[2026-10-30T11:31:59.987Z] [INFO] Side panel not open — clicking card to open: PW_Group_20261030_112438_w14r080388l
+[2026-10-30T11:31:59.989Z] [STEP] Clicking group card: PW_Group_20261030_112438_w14r080388l
+[2026-10-30T11:32:01.295Z] [SUCCESS] Group card clicked: PW_Group_20261030_112438_w14r080388l
+[2026-10-30T11:32:04.227Z] [SUCCESS] Follow saved for: PW_Group_20261030_112438_w14r080388l (PUT /v2/me/group-follows/6ae47e87f1c2eccb9fa78d4f)
+[2026-10-30T11:32:04.233Z] [STEP] Navigating to My Groups page
+[2026-10-30T11:32:06.105Z] [STEP] Waiting for My Groups page content
+[2026-10-30T11:32:07.258Z] [STEP] Clicking filter: Following
+[2026-10-30T11:32:10.040Z] [SUCCESS] Filter "Following" selected
+[2026-10-30T11:32:10.041Z] [ASSERT] Verifying "PW_Group_20261030_112438_w14r080388l" is listed as followed
+[2026-10-30T11:32:10.042Z] [STEP] Searching the active tab for: PW_Group_20261030_112438_w14r080388l
+[2026-10-30T11:32:11.810Z] [STEP] Waiting for group list to settle
+[2026-10-30T11:32:12.387Z] [SUCCESS] Group list settled — 1 card(s) on the active tab
+[2026-10-30T11:32:12.387Z] [INFO] Search "PW_Group_20261030_112438_w14r080388l" returned 1 group(s)
+[2026-10-30T11:32:15.626Z] [SUCCESS] Confirmed followed: PW_Group_20261030_112438_w14r080388l
+[2026-10-30T11:32:15.626Z] [SUCCESS] [FOLLOW VERIFIED] - Member follows: PW_Group_20261030_112438_w14r080388l

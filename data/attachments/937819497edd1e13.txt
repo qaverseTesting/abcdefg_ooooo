@@ -1,7 +1,0 @@
-[2026-10-29T12:15:04.734Z] [STEP] Opening group room "pw_group_20261029_121041_w0r0652axk" on tab=conversations
-[2026-10-29T12:15:07.342Z] [SUCCESS] Group room open on tab=conversations
-[2026-10-29T12:15:07.686Z] [STEP] Registering for session: PW_Session_20261029_121041_w0r0652ecn
-[2026-10-29T12:15:07.760Z] [SUCCESS] Register for session clicked
-[2026-10-29T12:15:07.760Z] [ASSERT] Verifying toast message matching: successfully registered to the session
-[2026-10-29T12:15:08.635Z] [ASSERT] Verifying session registration confirmed: PW_Session_20261029_121041_w0r0652ecn
-[2026-10-29T12:15:08.642Z] [SUCCESS] Session registration confirmed — card now offers Unregister
