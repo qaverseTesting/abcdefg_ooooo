@@ -1,0 +1,49 @@
+[2026-10-31T11:50:16.576Z] [INFO] [LIFECYCLE] Shared context initialised — Active Plan ($19) starting state
+[2026-10-31T11:50:16.672Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-10-31T11:50:17.746Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-10-31T11:50:17.746Z] [STEP] Verifying Plan & Billing page content
+[2026-10-31T11:50:19.156Z] [SUCCESS] Plan & Billing page verified
+[2026-10-31T11:50:19.156Z] [STEP] Verifying subscription with price $19 is visible
+[2026-10-31T11:50:19.173Z] [SUCCESS] Subscription details verified
+[2026-10-31T11:50:19.173Z] [SUCCESS] D-01 PASSED: $19 Active Plan confirmed on Plan & Billing
+[2026-10-31T11:50:19.174Z] [STEP] Clicking Change Plan → navigating to Hosting Plan page
+[2026-10-31T11:50:19.415Z] [SUCCESS] Redirected to Hosting Plan page
+[2026-10-31T11:50:19.415Z] [STEP] Verifying Hosting Plan page content
+[2026-10-31T11:50:19.663Z] [SUCCESS] Hosting Plan page verification successful
+[2026-10-31T11:50:19.663Z] [SUCCESS] D-02 PASSED: Redirected to Hosting Plan page
+[2026-10-31T11:50:19.664Z] [STEP] Verifying current plan card shows "Current Plan" (disabled state)
+[2026-10-31T11:50:19.698Z] [SUCCESS] "Current Plan" label verified
+[2026-10-31T11:50:19.698Z] [SUCCESS] D-03 PASSED: "Current Plan" label confirmed on Active Plan card
+[2026-10-31T11:50:19.698Z] [STEP] Verifying Downgrade CTA is visible on Free plan card
+[2026-10-31T11:50:19.712Z] [SUCCESS] Downgrade CTA verified visible
+[2026-10-31T11:50:19.712Z] [SUCCESS] D-04 PASSED: "Downgrade" CTA visible on Free plan card
+[2026-10-31T11:50:19.713Z] [STEP] Clicking Downgrade on Free plan card
+[2026-10-31T11:50:19.763Z] [SUCCESS] Downgrade clicked — expecting confirmation page
+[2026-10-31T11:50:19.763Z] [STEP] Verifying Downgrade Confirmation page loaded
+[2026-10-31T11:50:20.649Z] [SUCCESS] Downgrade Confirmation page verified
+[2026-10-31T11:50:20.649Z] [SUCCESS] D-05 PASSED: Downgrade Confirmation page loaded with heading
+[2026-10-31T11:50:20.651Z] [STEP] Verifying downgrade consequence bullets are visible
+[2026-10-31T11:50:20.702Z] [SUCCESS] Downgrade consequence bullets verified
+[2026-10-31T11:50:20.702Z] [SUCCESS] D-06 PASSED: Both consequence warnings confirmed visible
+[2026-10-31T11:50:20.703Z] [STEP] Clicking Downgrade — expecting confirmation popup
+[2026-10-31T11:50:20.839Z] [SUCCESS] Downgrade button clicked
+[2026-10-31T11:50:20.839Z] [STEP] Verifying downgrade confirmation modal content
+[2026-10-31T11:50:21.038Z] [SUCCESS] Downgrade confirmation modal verified
+[2026-10-31T11:50:21.038Z] [SUCCESS] D-07 PASSED: Modal appeared — policy text and "Delete & Downgrade" button verified
+[2026-10-31T11:50:21.038Z] [STEP] Clicking Downgrade — confirming plan downgrade
+[2026-10-31T11:50:22.421Z] [SUCCESS] Downgrade confirmed — landed on Plan & Billing page
+[2026-10-31T11:50:22.617Z] [SUCCESS] D-08 PASSED: Plan & Billing page confirmed — downgrade complete
+[2026-10-31T11:50:22.617Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-10-31T11:50:26.247Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-10-31T11:50:26.247Z] [STEP] Verifying Plan & Billing page content
+[2026-10-31T11:50:26.557Z] [SUCCESS] Plan & Billing page verified
+[2026-10-31T11:50:26.557Z] [STEP] Verifying $19 subscription is NOT visible (plan no longer active)
+[2026-10-31T11:50:26.597Z] [SUCCESS] $19 subscription confirmed absent — billing state correct
+[2026-10-31T11:50:26.597Z] [SUCCESS] D-09 PASSED: $19 subscription absent — billing confirmed as Listing plan
+[2026-10-31T11:50:26.598Z] [STEP] Clicking Change Plan → navigating to Hosting Plan page
+[2026-10-31T11:50:27.109Z] [SUCCESS] Redirected to Hosting Plan page
+[2026-10-31T11:50:27.109Z] [STEP] Verifying Hosting Plan page content
+[2026-10-31T11:50:27.559Z] [SUCCESS] Hosting Plan page verification successful
+[2026-10-31T11:50:27.559Z] [STEP] Verifying Active Plan CTA is visible (user is on Listing plan)
+[2026-10-31T11:50:27.757Z] [SUCCESS] Active Plan CTA verified visible
+[2026-10-31T11:50:27.757Z] [SUCCESS] D-10 PASSED: Active Plan CTA visible — Listing is now the current plan

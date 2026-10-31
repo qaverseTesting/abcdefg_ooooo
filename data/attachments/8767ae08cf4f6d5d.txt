@@ -1,0 +1,29 @@
+[2026-10-31T11:53:08.380Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-10-31T11:53:09.949Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-10-31T11:53:09.949Z] [STEP] Verifying Plan & Billing page content
+[2026-10-31T11:53:11.085Z] [SUCCESS] Plan & Billing page verified
+[2026-10-31T11:53:11.085Z] [ASSERT] Active-state menu for "PW_Group_20261031_113252_w3r0468sh9" shows Downgrade to Listing + Cancel & Delete Group
+[2026-10-31T11:53:11.085Z] [STEP] Opening "Group options" menu for group "PW_Group_20261031_113252_w3r0468sh9"
+[2026-10-31T11:53:11.370Z] [INFO] Popover wait fell through — proceeding to item lookup
+[2026-10-31T11:53:12.168Z] [SUCCESS] CD-01 PASSED: "PW_Group_20261031_113252_w3r0468sh9" Active — ready to delete
+[2026-10-31T11:53:12.168Z] [STEP] Clicking "Cancel & Delete Group" for group "PW_Group_20261031_113252_w3r0468sh9"
+[2026-10-31T11:53:12.168Z] [STEP] Opening "Group options" menu for group "PW_Group_20261031_113252_w3r0468sh9"
+[2026-10-31T11:53:12.287Z] [INFO] Popover wait fell through — proceeding to item lookup
+[2026-10-31T11:53:12.913Z] [ASSERT] Outer Cancel & Delete modal (2-button) is visible
+[2026-10-31T11:53:13.134Z] [SUCCESS] CD-02 PASSED: outer modal opened ([Downgrade to Listing] + [Delete Group])
+[2026-10-31T11:53:13.135Z] [STEP] Outer modal: clicking "Delete Group" to open Reason modal
+[2026-10-31T11:53:13.384Z] [ASSERT] Reason-selection modal is visible
+[2026-10-31T11:53:13.704Z] [SUCCESS] CD-03 PASSED: "Why Are You Leaving?" reason modal opened
+[2026-10-31T11:53:13.705Z] [ASSERT] "Continue to Delete" is disabled before a reason is selected
+[2026-10-31T11:53:13.728Z] [STEP] Selecting first reason checkbox to enable Continue to Delete
+[2026-10-31T11:53:13.816Z] [ASSERT] "Continue to Delete" is enabled after a reason is selected
+[2026-10-31T11:53:13.835Z] [SUCCESS] CD-04 PASSED: reason-gating verified (disabled → enabled)
+[2026-10-31T11:53:13.836Z] [STEP] Clicking "Continue to Delete" — confirming destructive delete
+[2026-10-31T11:53:14.151Z] [ASSERT] Subscription canceled and Group Deleted success toast is visible
+[2026-10-31T11:53:18.296Z] [SUCCESS] CD-05 PASSED: "Subscription canceled and Group Deleted" toast confirmed
+[2026-10-31T11:53:18.297Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-10-31T11:53:18.993Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-10-31T11:53:18.993Z] [STEP] Verifying Plan & Billing page content
+[2026-10-31T11:53:20.171Z] [SUCCESS] Plan & Billing page verified
+[2026-10-31T11:53:20.215Z] [INFO] Group cards on Plan & Billing: ["PW_Group_20261031_113233_w3r0474743","PW_Group_20261031_113217_w3r0252xgp"]
+[2026-10-31T11:53:20.216Z] [SUCCESS] CD-06 PASSED: "PW_Group_20261031_113252_w3r0468sh9" deleted — removed from the active list

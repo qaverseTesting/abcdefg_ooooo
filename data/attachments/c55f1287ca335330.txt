@@ -1,9 +1,0 @@
-[2026-10-30T17:05:41.165Z] [STEP] Opening My Sessions ?tab=registered&status=upcoming
-[2026-10-30T17:05:43.711Z] [ASSERT] Verifying "PW_Session_20261030_165946_w0r0754qq0" is in My Sessions as Registered
-[2026-10-30T17:05:43.783Z] [SUCCESS] Listed with the Registered badge
-[2026-10-30T17:05:43.784Z] [STEP] Clicking Unregister in My Sessions: PW_Session_20261030_165946_w0r0754qq0
-[2026-10-30T17:05:45.649Z] [ASSERT] Verifying unregister confirmation for: PW_Session_20261030_165946_w0r0754qq0
-[2026-10-30T17:05:45.668Z] [STEP] Confirming unregister ("Yes, cancel")
-[2026-10-30T17:05:46.706Z] [ASSERT] Verifying toast message matching: no longer registered for this session
-[2026-10-30T17:05:46.784Z] [ASSERT] Verifying "PW_Session_20261030_165946_w0r0754qq0" is not in My Sessions
-[2026-10-30T17:05:47.214Z] [SUCCESS] Not listed

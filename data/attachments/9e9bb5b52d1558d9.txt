@@ -1,0 +1,30 @@
+[2026-10-31T11:37:52.046Z] [STEP] Opening group room "pw_group_20261031_113444_w0r0374hg1" on tab=sessions
+[2026-10-31T11:37:56.126Z] [SUCCESS] Group room open on tab=sessions
+[2026-10-31T11:37:56.127Z] [STEP] Starting Session Creation flow for: PW_Session_20261031_113752_w10r00451q2
+[2026-10-31T11:37:56.127Z] [STEP] Opening Schedule Session modal
+[2026-10-31T11:37:58.151Z] [STEP] Waiting for Create Session modal
+[2026-10-31T11:37:58.335Z] [SUCCESS] Create Session modal visible
+[2026-10-31T11:37:58.335Z] [STEP] Filling Create Session form
+[2026-10-31T11:37:58.335Z] [STEP] Setting session date to next day
+[2026-10-31T11:38:00.483Z] [INFO] Session date set to 01 November, 2026
+[2026-10-31T11:38:00.483Z] [STEP] Ensuring timezone is selected
+[2026-10-31T11:38:00.925Z] [INFO] Searching for timezone "Pacific"
+[2026-10-31T11:38:01.638Z] [INFO] Timezone selection attempted via keyboard
+[2026-10-31T11:38:01.638Z] [STEP] Setting session time
+[2026-10-31T11:38:04.121Z] [INFO] Session time set to 10:00 AM – 11:00 AM
+[2026-10-31T11:38:04.211Z] [INFO] Filling description editor
+[2026-10-31T11:38:05.823Z] [STEP] Checking if tags are required
+[2026-10-31T11:38:05.988Z] [INFO] Opened Tags drawer
+[2026-10-31T11:38:06.822Z] [INFO] Selected a tag
+[2026-10-31T11:38:06.881Z] [SUCCESS] Tags drawer closed
+[2026-10-31T11:38:06.881Z] [SUCCESS] Form filling completed
+[2026-10-31T11:38:06.881Z] [STEP] Making the session recurring: Bi-weekly, never ending
+[2026-10-31T11:38:07.464Z] [STEP] Submitting session
+[2026-10-31T11:38:07.867Z] [STEP] Verifying session creation (modal closed)
+[2026-10-31T11:38:09.018Z] [SUCCESS] Session "PW_Session_20261031_113752_w10r00451q2" submitted.
+[2026-10-31T11:38:09.018Z] [STEP] Opening session details: PW_Session_20261031_113752_w10r00451q2
+[2026-10-31T11:38:09.018Z] [STEP] Navigating to Sessions tab
+[2026-10-31T11:38:09.173Z] [SUCCESS] Sessions tab active
+[2026-10-31T11:38:09.173Z] [STEP] Waiting for session list to settle
+[2026-10-31T11:38:09.254Z] [SUCCESS] Session list settled — 2 session(s)
+[2026-10-31T11:38:10.107Z] [SUCCESS] Session details opened
