@@ -1,0 +1,32 @@
+[2026-11-01T14:10:14.376Z] [STEP] Opening dashboard
+[2026-11-01T14:10:16.564Z] [STEP] Searching for "PW_Group_20261101_140828_w12r0559jx2" — up to 5 attempts (fresh groups index slowly)
+[2026-11-01T14:10:16.564Z] [STEP] Searching for group: PW_Group_20261101_140828_w12r0559jx2
+[2026-11-01T14:10:20.387Z] [INFO] Search "PW_Group_20261101_140828_w12r0559jx2" settled: explore-grid data-state="ready"
+[2026-11-01T14:10:20.454Z] [SUCCESS] Group "PW_Group_20261101_140828_w12r0559jx2" found in Explore search (attempt 1/5)
+[2026-11-01T14:10:20.454Z] [STEP] Verifying group card content for: PW_Group_20261101_140828_w12r0559jx2
+[2026-11-01T14:10:20.614Z] [SUCCESS] Group card content verified: PW_Group_20261101_140828_w12r0559jx2
+[2026-11-01T14:10:24.772Z] [INFO] [FOLLOW CHECK] PW_Group_20261101_140828_w12r0559jx2: isUpcoming=false · Follow=false · Unfollow=false · Join=true · https://staging.mentalhappy.com/groups/pw_group_20261101_140828_w12r0559jx2
+[2026-11-01T14:10:24.803Z] [STEP] Clicking join on "PW_Group_20261101_140828_w12r0559jx2" — detecting destination (checkout or group)
+[2026-11-01T14:10:24.827Z] [INFO] Side panel not open — clicking card to open: PW_Group_20261101_140828_w12r0559jx2
+[2026-11-01T14:10:24.827Z] [STEP] Clicking group card: PW_Group_20261101_140828_w12r0559jx2
+[2026-11-01T14:10:25.682Z] [SUCCESS] Group card clicked: PW_Group_20261101_140828_w12r0559jx2
+[2026-11-01T14:10:27.529Z] [SUCCESS] Join destination for "PW_Group_20261101_140828_w12r0559jx2": checkout
+[2026-11-01T14:10:27.529Z] [STEP] Verifying checkout summary for: PW_Group_20261101_140828_w12r0559jx2
+[2026-11-01T14:10:33.547Z] [SUCCESS] Checkout summary verified
+[2026-11-01T14:10:33.547Z] [STEP] Verifying $3 platform fee is disclosed and added to the total
+[2026-11-01T14:10:35.912Z] [SUCCESS] Platform fee verified: $3 disclosed and included in the total
+[2026-11-01T14:10:35.912Z] [STEP] Verifying Stripe iframe is visible
+[2026-11-01T14:10:36.030Z] [SUCCESS] Stripe iframe verified
+[2026-11-01T14:10:36.030Z] [STEP] Filling Stripe payment details
+[2026-11-01T14:10:36.336Z] [STEP] Selecting country: US
+[2026-11-01T14:10:36.525Z] [SUCCESS] Country settled on US
+[2026-11-01T14:10:40.810Z] [SUCCESS] Stripe payment details filled
+[2026-11-01T14:10:40.811Z] [STEP] Submitting payment (attempt 1/3)
+[2026-11-01T14:10:46.897Z] [SUCCESS] Payment submitted
+[2026-11-01T14:10:46.897Z] [STEP] Waiting for group page to load after payment redirect
+[2026-11-01T14:10:46.914Z] [SUCCESS] Group page loaded
+[2026-11-01T14:10:46.914Z] [STEP] Checking for post-join success modal
+[2026-11-01T14:10:47.037Z] [SUCCESS] Success modal handled
+[2026-11-01T14:10:47.037Z] [STEP] Verifying Conversations tab is visible
+[2026-11-01T14:10:48.229Z] [SUCCESS] Conversations tab visible — membership access confirmed
+[2026-11-01T14:14:53.817Z] [SUCCESS] [COVERED] Donating $10 is charged as $10 — no second platform fee
