@@ -1,0 +1,43 @@
+[2026-11-02T10:24:59.990Z] [STEP] Navigating to My Groups page
+[2026-11-02T10:25:01.637Z] [STEP] Waiting for My Groups page content
+[2026-11-02T10:25:02.557Z] [STEP] Clicking Joined filter
+[2026-11-02T10:25:02.957Z] [STEP] Clicking filter: Joined
+[2026-11-02T10:25:05.005Z] [SUCCESS] Filter "Joined" selected
+[2026-11-02T10:25:05.006Z] [STEP] Clicking on group: AMActiveGroupV2
+[2026-11-02T10:25:05.006Z] [STEP] Waiting for group list to settle
+[2026-11-02T10:25:05.693Z] [SUCCESS] Group list settled — 1 card(s) on the active tab
+[2026-11-02T10:25:08.350Z] [SUCCESS] Group "AMActiveGroupV2" clicked
+[2026-11-02T10:25:08.350Z] [STEP] Verifying chat page has loaded correctly
+[2026-11-02T10:25:10.958Z] [SUCCESS] Chat page layout is visible
+[2026-11-02T10:25:11.190Z] [SUCCESS] Chat page opened for expected group: AMActiveGroupV2
+[2026-11-02T10:25:14.352Z] [INFO] No announcement banner present
+[2026-11-02T10:25:14.352Z] [STEP] Entering chat message: PW_Chat_20261102_102459_w21r0987sk6
+[2026-11-02T10:25:16.269Z] [STEP] Clicking on Send button
+[2026-11-02T10:25:16.514Z] [STEP] Verifying chat message is visible: PW_Chat_20261102_102459_w21r0987sk6
+[2026-11-02T10:25:18.050Z] [SUCCESS] Chat message is visible
+[2026-11-02T10:25:18.050Z] [INFO] Member sent message: PW_Chat_20261102_102459_w21r0987sk6
+[2026-11-02T10:25:18.051Z] [STEP] Navigating to My Groups page
+[2026-11-02T10:25:18.746Z] [STEP] Waiting for My Groups page content
+[2026-11-02T10:25:20.571Z] [STEP] Clicking filter: My Groups
+[2026-11-02T10:25:24.965Z] [SUCCESS] Filter "My Groups" selected
+[2026-11-02T10:25:24.965Z] [STEP] Clicking on group: AMActiveGroupV2
+[2026-11-02T10:25:24.965Z] [STEP] Waiting for group list to settle
+[2026-11-02T10:25:25.750Z] [SUCCESS] Group list settled — 1 card(s) on the active tab
+[2026-11-02T10:25:28.341Z] [SUCCESS] Group "AMActiveGroupV2" clicked
+[2026-11-02T10:25:28.341Z] [STEP] Clicking Conversations tab
+[2026-11-02T10:25:33.648Z] [SUCCESS] Conversations tab clicked
+[2026-11-02T10:25:33.648Z] [STEP] Verifying chat page has loaded correctly
+[2026-11-02T10:25:33.812Z] [SUCCESS] Chat page layout is visible
+[2026-11-02T10:25:33.878Z] [SUCCESS] Chat page opened for expected group: AMActiveGroupV2
+[2026-11-02T10:25:36.919Z] [INFO] No announcement banner present
+[2026-11-02T10:25:36.920Z] [STEP] Verifying chat message is visible: PW_Chat_20261102_102459_w21r0987sk6
+[2026-11-02T10:25:37.179Z] [SUCCESS] Chat message is visible
+[2026-11-02T10:25:37.179Z] [SUCCESS] Leader verified receipt of Member message: PW_Chat_20261102_102459_w21r0987sk6
+[2026-11-02T10:25:37.179Z] [STEP] Entering chat message: PW_Chat_20261102_102459_w21r0989pf1
+[2026-11-02T10:25:39.145Z] [STEP] Clicking on Send button
+[2026-11-02T10:25:39.310Z] [STEP] Verifying chat message is visible: PW_Chat_20261102_102459_w21r0989pf1
+[2026-11-02T10:25:40.622Z] [SUCCESS] Chat message is visible
+[2026-11-02T10:25:40.622Z] [INFO] Leader sent reply: PW_Chat_20261102_102459_w21r0989pf1
+[2026-11-02T10:25:40.623Z] [STEP] Verifying chat message is visible: PW_Chat_20261102_102459_w21r0989pf1
+[2026-11-02T10:25:40.725Z] [SUCCESS] Chat message is visible
+[2026-11-02T10:25:40.725Z] [SUCCESS] Member successfully received Leader reply in real-time

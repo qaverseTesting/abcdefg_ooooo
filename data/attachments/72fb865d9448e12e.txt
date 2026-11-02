@@ -1,0 +1,39 @@
+[2026-11-02T10:15:01.559Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-11-02T10:15:02.948Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-11-02T10:15:02.948Z] [STEP] Verifying Plan & Billing page content
+[2026-11-02T10:15:04.125Z] [SUCCESS] Plan & Billing page verified
+[2026-11-02T10:15:04.125Z] [STEP] Verifying $19 subscription is NOT visible (plan no longer active)
+[2026-11-02T10:15:04.139Z] [SUCCESS] $19 subscription confirmed absent — billing state correct
+[2026-11-02T10:15:04.139Z] [SUCCESS] RA-01 PASSED: $19 absent — Listing plan starting state confirmed
+[2026-11-02T10:15:04.139Z] [STEP] Clicking "Upgrade to Active Group" from Group options menu
+[2026-11-02T10:15:04.416Z] [SUCCESS] "Upgrade to Active Group" selected from Group options menu
+[2026-11-02T10:15:04.416Z] [STEP] Verifying Stripe form visibility
+[2026-11-02T10:15:04.531Z] [INFO] [STRIPE] Stripe's script files are served from the shared cache (storage/stripe-cache)
+[2026-11-02T10:15:09.390Z] [SUCCESS] Stripe form verified — ready after 5.0s
+[2026-11-02T10:15:09.390Z] [SUCCESS] RA-02 PASSED: Stripe checkout form loaded after Upgrade to Active Group click
+[2026-11-02T10:15:09.391Z] [STEP] Completing Stripe Payment
+[2026-11-02T10:15:09.391Z] [STEP] Verifying Stripe form visibility
+[2026-11-02T10:15:09.578Z] [SUCCESS] Stripe form verified — ready after 0.2s
+[2026-11-02T10:15:09.579Z] [STEP] Filling Stripe payment details
+[2026-11-02T10:15:09.724Z] [STEP] Selecting country: US
+[2026-11-02T10:15:09.818Z] [SUCCESS] Country settled on US
+[2026-11-02T10:15:12.122Z] [SUCCESS] Stripe payment details filled
+[2026-11-02T10:15:12.123Z] [STEP] Submitting payment (attempt 1/3)
+[2026-11-02T10:15:15.201Z] [SUCCESS] Payment submitted
+[2026-11-02T10:15:15.203Z] [INFO] [PAYMENT] Stripe: succeeded, 1900 usd cents, 1 confirm request(s)
+[2026-11-02T10:15:15.203Z] [SUCCESS] Stripe payment submitted
+[2026-11-02T10:15:15.203Z] [STEP] Verifying Plan Change Payment — waiting for the app to finish and return
+[2026-11-02T10:15:17.796Z] [SUCCESS] App returned to Plan & Billing after payment
+[2026-11-02T10:15:17.796Z] [ASSERT] Verifying toast message matching: /successfully upgraded to the .*plan/i
+[2026-11-02T10:15:37.936Z] [INFO] Post-payment landing: https://staging.mentalhappy.com/user/profile/plan-billing
+[2026-11-02T10:15:37.963Z] [SUCCESS] Plan change payment confirmed
+[2026-11-02T10:15:37.964Z] [SUCCESS] RA-03 PASSED: Payment complete — redirected to app with plan=ACTIVE_GROUP
+[2026-11-02T10:15:37.964Z] [ASSERT] Verifying $19 subscription is active after payment
+[2026-11-02T10:15:37.964Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-11-02T10:15:39.431Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-11-02T10:15:39.431Z] [STEP] Verifying Plan & Billing page content
+[2026-11-02T10:15:40.532Z] [SUCCESS] Plan & Billing page verified
+[2026-11-02T10:15:40.552Z] [SUCCESS] $19 subscription confirmed active
+[2026-11-02T10:15:40.553Z] [SUCCESS] RA-04 PASSED: $19 Active Plan subscription restored on Plan & Billing
+[2026-11-02T10:15:40.553Z] [ASSERT] Active-state menu shows "Cancel & Delete Group" + "Downgrade to Listing"
+[2026-11-02T10:15:41.161Z] [SUCCESS] RA-05 PASSED: Reactivation fully confirmed via Active-state menu

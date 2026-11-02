@@ -1,0 +1,9 @@
+[2026-11-02T10:01:20.611Z] [STEP] Clicking Join session
+[2026-11-02T10:01:21.028Z] [ASSERT] Verifying "Session Not Started" page
+[2026-11-02T10:01:23.080Z] [SUCCESS] "Session Not Started" shown with Retry and Go Back
+[2026-11-02T10:01:23.080Z] [STEP] Clicking Retry
+[2026-11-02T10:01:23.197Z] [ASSERT] Verifying "Session Not Started" page
+[2026-11-02T10:01:23.332Z] [SUCCESS] "Session Not Started" shown with Retry and Go Back
+[2026-11-02T10:01:23.333Z] [STEP] Clicking Start session
+[2026-11-02T10:01:23.927Z] [ASSERT] Verifying "Session Not Started" page
+[2026-11-02T10:01:25.966Z] [SUCCESS] "Session Not Started" shown with Retry and Go Back
