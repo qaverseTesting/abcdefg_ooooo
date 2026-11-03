@@ -1,0 +1,4 @@
+[2026-11-03T15:34:59.646Z] [STEP] Ensuring clean session state (Force Logout)
+[2026-11-03T15:34:59.647Z] [INFO] Already on an anonymous page. Skipping logout logic.
+[2026-11-03T15:34:59.665Z] [NAV] Navigating to Registration
+[2026-11-03T15:35:01.495Z] [STEP] Testing mandatory constraint: Email required on registration

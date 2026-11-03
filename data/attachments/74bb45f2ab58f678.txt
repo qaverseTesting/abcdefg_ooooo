@@ -1,0 +1,97 @@
+[2026-11-03T15:28:12.229Z] [INFO] [MEMBER] Registering "refund-recovery" member: pw_auto_mh_0315281235ex@mentalhappy.com
+[2026-11-03T15:28:12.229Z] [STEP] Submitting member registration form for: pw_auto_mh_0315281235ex@mentalhappy.com
+[2026-11-03T15:28:12.230Z] [STEP] Navigating to Registration Page
+[2026-11-03T15:28:13.484Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-03T15:28:13.690Z] [SUCCESS] Registration Page loaded
+[2026-11-03T15:28:13.690Z] [STEP] Filling registration form for: pw_auto_mh_0315281235ex@mentalhappy.com
+[2026-11-03T15:28:14.666Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-03T15:28:14.702Z] [STEP] Submitting registration form
+[2026-11-03T15:28:15.118Z] [SUCCESS] Registration form submitted
+[2026-11-03T15:28:15.118Z] [STEP] Waiting for OTP entry page to be ready
+[2026-11-03T15:28:18.623Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-11-03T15:28:18.623Z] [SUCCESS] Registration form submitted, OTP page reached
+[2026-11-03T15:28:18.623Z] [STEP] Verifying email for: pw_auto_mh_0315281235ex@mentalhappy.com
+[2026-11-03T15:28:18.623Z] [INFO] [OTP] Bypass active for pw_auto_mh_0315281235ex@mentalhappy.com. Returning fixed validation code: 456321
+[2026-11-03T15:28:18.630Z] [STEP] Entering OTP: 456321
+[2026-11-03T15:28:18.631Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-03T15:28:18.915Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-03T15:28:19.332Z] [SUCCESS] OTP entered
+[2026-11-03T15:28:19.333Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-11-03T15:28:19.336Z] [ASSERT] Verifying toast message matching: /Email Verified Successfully/i
+[2026-11-03T15:28:21.461Z] [SUCCESS] Email verification (OTP) successful
+[2026-11-03T15:28:21.461Z] [STEP] Selecting Member role on Welcome page
+[2026-11-03T15:28:21.461Z] [STEP] Verifying Welcome Page is displayed
+[2026-11-03T15:28:21.461Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-03T15:28:21.732Z] [SUCCESS] Welcome Page verification successful (Role buttons visible)
+[2026-11-03T15:28:21.732Z] [STEP] Selecting path: Explore Support Groups
+[2026-11-03T15:28:21.732Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-03T15:28:21.852Z] [INFO] Clicked Explore support groups
+[2026-11-03T15:28:21.866Z] [SUCCESS] Explore Support Groups path selected
+[2026-11-03T15:28:21.866Z] [STEP] Clicking Welcome Continue button
+[2026-11-03T15:28:21.866Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-03T15:28:22.046Z] [SUCCESS] Welcome Continue clicked
+[2026-11-03T15:28:22.046Z] [SUCCESS] Role selection completed
+[2026-11-03T15:28:22.046Z] [STEP] Completing Member onboarding via SKIP path
+[2026-11-03T15:28:22.069Z] [STEP] Completing Member onboarding via SKIP
+[2026-11-03T15:28:22.069Z] [STEP] Clicking Onboarding Skip button
+[2026-11-03T15:28:22.069Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-03T15:28:23.972Z] [SUCCESS] Redirected to Dashboard via Skip
+[2026-11-03T15:28:23.972Z] [SUCCESS] Member onboarding (Skip) completed
+[2026-11-03T15:28:23.972Z] [SUCCESS] [MEMBER] "refund-recovery" member ready: pw_auto_mh_0315281235ex@mentalhappy.com
+[2026-11-03T15:28:23.973Z] [STEP] Opening dashboard
+[2026-11-03T15:28:25.964Z] [STEP] Searching for "PW_Group_20261103_151940_w12r0090rt0" — up to 5 attempts (fresh groups index slowly)
+[2026-11-03T15:28:25.964Z] [STEP] Searching for group: PW_Group_20261103_151940_w12r0090rt0
+[2026-11-03T15:28:28.939Z] [INFO] Search "PW_Group_20261103_151940_w12r0090rt0" settled: explore-grid data-state="ready"
+[2026-11-03T15:28:28.955Z] [SUCCESS] Group "PW_Group_20261103_151940_w12r0090rt0" found in Explore search (attempt 1/5)
+[2026-11-03T15:28:28.956Z] [STEP] Verifying group card content for: PW_Group_20261103_151940_w12r0090rt0
+[2026-11-03T15:28:29.029Z] [SUCCESS] Group card content verified: PW_Group_20261103_151940_w12r0090rt0
+[2026-11-03T15:28:29.038Z] [INFO] Side panel not open — clicking card to open: PW_Group_20261103_151940_w12r0090rt0
+[2026-11-03T15:28:29.038Z] [STEP] Clicking group card: PW_Group_20261103_151940_w12r0090rt0
+[2026-11-03T15:28:29.705Z] [SUCCESS] Group card clicked: PW_Group_20261103_151940_w12r0090rt0
+[2026-11-03T15:28:29.926Z] [INFO] [CTA PANEL BUTTONS] [{"text":"","aria":"Close"},{"text":"","aria":"Close"},{"text":"","aria":"Share group"},{"text":"","aria":"Show platform fee details"},{"text":"Join Group","aria":"Join Group"}]
+[2026-11-03T15:28:29.943Z] [INFO] [CTA] Monthly $5: button "Join Group", price "$8/month"
+[2026-11-03T15:28:34.144Z] [INFO] [FOLLOW CHECK] PW_Group_20261103_151940_w12r0090rt0: isUpcoming=false · Follow=false · Unfollow=false · Join=true · https://staging.mentalhappy.com/groups/pw_group_20261103_151940_w12r0090rt0
+[2026-11-03T15:28:34.264Z] [STEP] Navigating to Profile → Earnings
+[2026-11-03T15:28:42.597Z] [SUCCESS] Earnings page loaded
+[2026-11-03T15:28:44.082Z] [INFO] Balance panel not shown (Stripe likely not connected) — treating as 0
+[2026-11-03T15:28:44.082Z] [INFO] [REFUND] pending at run start $0, immediately before the monthly payment $0
+[2026-11-03T15:28:44.085Z] [STEP] Clicking join and waiting for payment redirect
+[2026-11-03T15:28:44.618Z] [SUCCESS] Redirected to payment page
+[2026-11-03T15:28:44.618Z] [STEP] Verifying $3 platform fee is disclosed and added to the total
+[2026-11-03T15:28:51.489Z] [SUCCESS] Platform fee verified: $3 disclosed and included in the total
+[2026-11-03T15:28:51.503Z] [STEP] Verifying Stripe iframe is visible
+[2026-11-03T15:28:52.054Z] [SUCCESS] Stripe iframe verified
+[2026-11-03T15:28:52.054Z] [STEP] Filling Stripe payment details
+[2026-11-03T15:28:52.972Z] [STEP] Selecting country: US
+[2026-11-03T15:28:53.067Z] [SUCCESS] Country settled on US
+[2026-11-03T15:28:56.274Z] [SUCCESS] Stripe payment details filled
+[2026-11-03T15:28:56.276Z] [STEP] Submitting payment (attempt 1/3)
+[2026-11-03T15:29:01.184Z] [SUCCESS] Payment submitted
+[2026-11-03T15:29:01.193Z] [INFO] [PAYMENT] Stripe: succeeded, 800 usd cents, 1 confirm request(s)
+[2026-11-03T15:29:01.204Z] [SUCCESS] [CHARGED] Monthly join: Stripe took exactly $8.00
+[2026-11-03T15:29:01.206Z] [SUCCESS] Member paid $5/month (+ platform fee) for "PW_Group_20261103_151940_w12r0090rt0"
+[2026-11-03T15:29:01.210Z] [STEP] Navigating to Profile → Earnings
+[2026-11-03T15:29:04.974Z] [SUCCESS] Earnings page loaded
+[2026-11-03T15:29:05.151Z] [INFO] Balance panel not shown (Stripe likely not connected) — treating as 0
+[2026-11-03T15:29:05.153Z] [INFO] [REFUND] attempt 1/6 — pending $0, available $0
+[2026-11-03T15:29:10.629Z] [STEP] Navigating to Profile → Earnings
+[2026-11-03T15:29:18.754Z] [SUCCESS] Earnings page loaded
+[2026-11-03T15:29:19.528Z] [INFO] Balance panel not shown (Stripe likely not connected) — treating as 0
+[2026-11-03T15:29:19.529Z] [INFO] [REFUND] attempt 2/6 — pending $0, available $0
+[2026-11-03T15:29:24.682Z] [STEP] Navigating to Profile → Earnings
+[2026-11-03T15:29:28.657Z] [SUCCESS] Earnings page loaded
+[2026-11-03T15:29:28.928Z] [INFO] Balance panel not shown (Stripe likely not connected) — treating as 0
+[2026-11-03T15:29:28.928Z] [INFO] [REFUND] attempt 3/6 — pending $0, available $0
+[2026-11-03T15:29:34.181Z] [STEP] Navigating to Profile → Earnings
+[2026-11-03T15:29:37.936Z] [SUCCESS] Earnings page loaded
+[2026-11-03T15:29:38.244Z] [INFO] Balance panel not shown (Stripe likely not connected) — treating as 0
+[2026-11-03T15:29:38.248Z] [INFO] [REFUND] attempt 4/6 — pending $0, available $0
+[2026-11-03T15:29:45.562Z] [STEP] Navigating to Profile → Earnings
+[2026-11-03T15:29:57.027Z] [SUCCESS] Earnings page loaded
+[2026-11-03T15:29:57.714Z] [INFO] Balance panel not shown (Stripe likely not connected) — treating as 0
+[2026-11-03T15:29:57.714Z] [INFO] [REFUND] attempt 5/6 — pending $0, available $0
+[2026-11-03T15:30:02.924Z] [STEP] Navigating to Profile → Earnings
+[2026-11-03T15:30:16.446Z] [SUCCESS] Earnings page loaded
+[2026-11-03T15:30:17.231Z] [INFO] Balance panel not shown (Stripe likely not connected) — treating as 0
+[2026-11-03T15:30:17.231Z] [INFO] [REFUND] attempt 6/6 — pending $0, available $0
+[2026-11-03T15:30:22.451Z] [INFO] [REFUND] pending beforeThisPayment=$0 afterPayment=$0 (run start was $0)

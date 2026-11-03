@@ -1,7 +1,0 @@
-[2026-11-02T10:19:09.795Z] [STEP] Attempting to access member protected routes without session
-[2026-11-02T10:19:09.795Z] [INFO] Checking path: /groups/my
-[2026-11-02T10:19:10.846Z] [SUCCESS] Successfully redirected from /groups/my to login
-[2026-11-02T10:19:10.846Z] [INFO] Checking path: /profile
-[2026-11-02T10:19:11.842Z] [SUCCESS] Successfully redirected from /profile to login
-[2026-11-02T10:19:11.842Z] [INFO] Checking path: /user/profile/plan-billing
-[2026-11-02T10:19:13.426Z] [SUCCESS] Successfully redirected from /user/profile/plan-billing to login
