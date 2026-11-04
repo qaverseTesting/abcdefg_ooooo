@@ -1,0 +1,3 @@
+[2026-11-04T15:50:07.744Z] [STEP] Testing mandatory fields: Missing email submission
+[2026-11-04T15:50:07.744Z] [INFO] Attempting login for user:  | Password: [hidden, 12 chars] (expectSuccess: false)
+[2026-11-04T15:50:13.836Z] [SUCCESS] Success: Form correctly blocked "Missing email submission"

@@ -1,0 +1,135 @@
+[2026-11-04T15:31:41.239Z] [INFO] [SETUP] Provisioning Multi-Group ($49) leader with 3 group(s): pw_auto_mh_04153141248e@mentalhappy.com
+[2026-11-04T15:31:41.239Z] [STEP] Registering new leader with email: pw_auto_mh_04153141248e@mentalhappy.com
+[2026-11-04T15:31:41.244Z] [STEP] Navigating to Registration Page
+[2026-11-04T15:31:44.607Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-04T15:31:45.168Z] [SUCCESS] Registration Page loaded
+[2026-11-04T15:31:45.168Z] [STEP] Filling registration form for: pw_auto_mh_04153141248e@mentalhappy.com
+[2026-11-04T15:31:47.197Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-04T15:31:47.264Z] [STEP] Submitting registration form
+[2026-11-04T15:31:47.693Z] [SUCCESS] Registration form submitted
+[2026-11-04T15:31:47.693Z] [STEP] Waiting for OTP entry page to be ready
+[2026-11-04T15:31:51.309Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-11-04T15:31:51.309Z] [INFO] [OTP] Bypass active for pw_auto_mh_04153141248e@mentalhappy.com. Returning fixed validation code: 456321
+[2026-11-04T15:31:51.349Z] [STEP] Entering OTP: 456321
+[2026-11-04T15:31:51.349Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-04T15:31:51.673Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-04T15:31:52.010Z] [SUCCESS] OTP entered
+[2026-11-04T15:31:52.010Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-11-04T15:31:52.013Z] [ASSERT] Verifying toast message matching: /Email Verified Successfully/i
+[2026-11-04T15:31:53.154Z] [SUCCESS] Leader registration and OTP verification completed
+[2026-11-04T15:31:53.154Z] [STEP] Selecting Leader role on Welcome page
+[2026-11-04T15:31:53.154Z] [STEP] Verifying Welcome Page is displayed
+[2026-11-04T15:31:53.154Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-04T15:31:53.424Z] [SUCCESS] Welcome Page verification successful (Role buttons visible)
+[2026-11-04T15:31:53.424Z] [STEP] Selecting path: Continue as a Group Leader
+[2026-11-04T15:31:53.424Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-04T15:31:53.647Z] [INFO] Clicked Continue as a Group Leader
+[2026-11-04T15:31:53.678Z] [SUCCESS] Group Leader path selected
+[2026-11-04T15:31:53.678Z] [STEP] Clicking Welcome Continue button
+[2026-11-04T15:31:53.678Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-04T15:31:54.200Z] [SUCCESS] Welcome Continue clicked
+[2026-11-04T15:31:54.200Z] [SUCCESS] Leader role selection completed
+[2026-11-04T15:31:54.200Z] [STEP] Completing Leader onboarding via SKIP path
+[2026-11-04T15:31:54.200Z] [STEP] Completing Leader onboarding via SKIP (Deep Check Flow)
+[2026-11-04T15:31:54.280Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-04T15:31:54.331Z] [INFO] Checking for Screen 2 (Survey) Skip option...
+[2026-11-04T15:31:54.365Z] [STEP] Clicking Onboarding Skip button
+[2026-11-04T15:31:54.365Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-04T15:31:58.671Z] [SUCCESS] Onboarding cleared successfully
+[2026-11-04T15:31:58.671Z] [SUCCESS] Leader onboarding (Skip) completed
+[2026-11-04T15:31:58.671Z] [STEP] Selecting Multi-Group Plan ($49)
+[2026-11-04T15:31:59.464Z] [STEP] Verifying Hosting Plan page content
+[2026-11-04T15:32:00.193Z] [SUCCESS] Hosting Plan page verification successful
+[2026-11-04T15:32:00.193Z] [STEP] Selecting Multi-Group Plan
+[2026-11-04T15:32:00.486Z] [STEP] Verifying the plan selection landed on the checkout
+[2026-11-04T15:32:00.632Z] [INFO] [STRIPE] Stripe's script files are served from the shared cache (storage/stripe-cache)
+[2026-11-04T15:32:00.642Z] [SUCCESS] Checkout page reached
+[2026-11-04T15:32:00.642Z] [SUCCESS] Multi-Group plan selected, landed on the checkout
+[2026-11-04T15:32:00.642Z] [STEP] Completing Stripe Payment
+[2026-11-04T15:32:00.645Z] [STEP] Verifying Stripe form visibility
+[2026-11-04T15:32:11.320Z] [SUCCESS] Stripe form verified — ready after 10.7s
+[2026-11-04T15:32:11.321Z] [STEP] Filling Stripe payment details
+[2026-11-04T15:32:11.522Z] [STEP] Selecting country: US
+[2026-11-04T15:32:11.729Z] [SUCCESS] Country settled on US
+[2026-11-04T15:32:16.487Z] [SUCCESS] Stripe payment details filled
+[2026-11-04T15:32:16.494Z] [STEP] Submitting payment (attempt 1/3)
+[2026-11-04T15:32:20.046Z] [SUCCESS] Payment submitted
+[2026-11-04T15:32:20.056Z] [INFO] [PAYMENT] Stripe: succeeded, 4900 usd cents, 1 confirm request(s)
+[2026-11-04T15:32:20.056Z] [SUCCESS] Stripe payment submitted
+[2026-11-04T15:32:20.058Z] [STEP] Verifying Payment Success (Redirect or Popup)
+[2026-11-04T15:32:24.962Z] [INFO] Payment landing state: popup — https://staging.mentalhappy.com/welcome/hosting-payment?plan=MULTI_GROUP&period=monthly
+[2026-11-04T15:32:24.962Z] [STEP] Verifying Payment Success popup visibility
+[2026-11-04T15:32:25.404Z] [SUCCESS] Payment Success popup verified
+[2026-11-04T15:32:25.404Z] [STEP] Clicking "Do this later"
+[2026-11-04T15:32:26.799Z] [SUCCESS] Success popup dismissed via Do this later
+[2026-11-04T15:32:28.344Z] [SUCCESS] Subscription completed and reached target page.
+[2026-11-04T15:32:28.345Z] [STEP] Creating group: PW_Group_20261104_153228_w3r0344nmv
+[2026-11-04T15:32:28.345Z] [STEP] Opening Profile → Earnings and clicking Create Group
+[2026-11-04T15:32:32.396Z] [ASSERT] Create Group page is loaded
+[2026-11-04T15:32:32.396Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-04T15:32:34.405Z] [STEP] Filling Group Name
+[2026-11-04T15:32:34.616Z] [STEP] Filling Group Description
+[2026-11-04T15:32:35.630Z] [STEP] Uploading Cover Image
+[2026-11-04T15:32:35.786Z] [SUCCESS] Cover image uploaded
+[2026-11-04T15:32:35.786Z] [STEP] Opening Select Tags dropdown
+[2026-11-04T15:32:36.089Z] [STEP] Selecting tag (second option — first real option)
+[2026-11-04T15:32:36.486Z] [SUCCESS] Tag selected
+[2026-11-04T15:32:36.487Z] [STEP] Clicking Continue
+[2026-11-04T15:32:37.196Z] [INFO] Professional Background tab detected — completing required fields
+[2026-11-04T15:32:37.196Z] [STEP] Filling Professional Background tab
+[2026-11-04T15:32:37.196Z] [STEP] Uploading Profile Photo
+[2026-11-04T15:32:37.402Z] [SUCCESS] Profile photo uploaded
+[2026-11-04T15:32:37.402Z] [STEP] Selecting Professional Role
+[2026-11-04T15:32:38.282Z] [SUCCESS] Professional Role selected
+[2026-11-04T15:32:38.282Z] [STEP] Filling Professional Bio
+[2026-11-04T15:32:39.995Z] [SUCCESS] Professional Bio filled
+[2026-11-04T15:32:39.995Z] [STEP] Clicking Continue
+[2026-11-04T15:32:40.505Z] [INFO] Pricing Model tab detected — selecting "Free"
+[2026-11-04T15:32:40.505Z] [STEP] Selecting "Free" Pricing Model
+[2026-11-04T15:32:40.702Z] [SUCCESS] Free pricing model selected
+[2026-11-04T15:32:40.702Z] [STEP] Clicking Continue
+[2026-11-04T15:32:41.016Z] [STEP] Clicking Launch Group
+[2026-11-04T15:32:41.210Z] [SUCCESS] Group creation flow completed for: PW_Group_20261104_153228_w3r0344nmv
+[2026-11-04T15:32:46.167Z] [SUCCESS] [SETUP] Group 1/3 created: PW_Group_20261104_153228_w3r0344nmv
+[2026-11-04T15:32:46.167Z] [STEP] Creating group: PW_Group_20261104_153246_w3r0167cvj
+[2026-11-04T15:32:46.168Z] [STEP] Opening Profile → Earnings and clicking Create Group
+[2026-11-04T15:32:49.788Z] [ASSERT] Create Group page is loaded
+[2026-11-04T15:32:49.795Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-04T15:32:52.223Z] [STEP] Filling Group Name
+[2026-11-04T15:32:52.436Z] [STEP] Filling Group Description
+[2026-11-04T15:32:53.668Z] [STEP] Uploading Cover Image
+[2026-11-04T15:32:53.815Z] [SUCCESS] Cover image uploaded
+[2026-11-04T15:32:53.815Z] [STEP] Opening Select Tags dropdown
+[2026-11-04T15:32:54.077Z] [STEP] Selecting tag (second option — first real option)
+[2026-11-04T15:32:54.314Z] [SUCCESS] Tag selected
+[2026-11-04T15:32:54.314Z] [STEP] Clicking Continue
+[2026-11-04T15:32:59.484Z] [INFO] Professional Background tab not present
+[2026-11-04T15:32:59.556Z] [INFO] Pricing Model tab detected — selecting "Free"
+[2026-11-04T15:32:59.556Z] [STEP] Selecting "Free" Pricing Model
+[2026-11-04T15:32:59.899Z] [SUCCESS] Free pricing model selected
+[2026-11-04T15:32:59.899Z] [STEP] Clicking Continue
+[2026-11-04T15:33:00.455Z] [STEP] Clicking Launch Group
+[2026-11-04T15:33:00.787Z] [SUCCESS] Group creation flow completed for: PW_Group_20261104_153246_w3r0167cvj
+[2026-11-04T15:33:05.337Z] [SUCCESS] [SETUP] Group 2/3 created: PW_Group_20261104_153246_w3r0167cvj
+[2026-11-04T15:33:05.337Z] [STEP] Creating group: PW_Group_20261104_153305_w3r0337utk
+[2026-11-04T15:33:05.338Z] [STEP] Opening Profile → Earnings and clicking Create Group
+[2026-11-04T15:33:09.416Z] [ASSERT] Create Group page is loaded
+[2026-11-04T15:33:09.416Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-04T15:33:11.955Z] [STEP] Filling Group Name
+[2026-11-04T15:33:12.150Z] [STEP] Filling Group Description
+[2026-11-04T15:33:13.094Z] [STEP] Uploading Cover Image
+[2026-11-04T15:33:13.402Z] [SUCCESS] Cover image uploaded
+[2026-11-04T15:33:13.402Z] [STEP] Opening Select Tags dropdown
+[2026-11-04T15:33:13.755Z] [STEP] Selecting tag (second option — first real option)
+[2026-11-04T15:33:13.979Z] [SUCCESS] Tag selected
+[2026-11-04T15:33:13.979Z] [STEP] Clicking Continue
+[2026-11-04T15:33:19.258Z] [INFO] Professional Background tab not present
+[2026-11-04T15:33:19.298Z] [INFO] Pricing Model tab detected — selecting "Free"
+[2026-11-04T15:33:19.298Z] [STEP] Selecting "Free" Pricing Model
+[2026-11-04T15:33:19.411Z] [SUCCESS] Free pricing model selected
+[2026-11-04T15:33:19.411Z] [STEP] Clicking Continue
+[2026-11-04T15:33:19.838Z] [STEP] Clicking Launch Group
+[2026-11-04T15:33:20.150Z] [SUCCESS] Group creation flow completed for: PW_Group_20261104_153305_w3r0337utk
+[2026-11-04T15:33:25.669Z] [SUCCESS] [SETUP] Group 3/3 created: PW_Group_20261104_153305_w3r0337utk
+[2026-11-04T15:33:25.669Z] [NAV] Navigating to Dashboard
+[2026-11-04T15:33:29.113Z] [SUCCESS] [SETUP] State captured at /home/runner/work/playwright-enterprise-framework/playwright-enterprise-framework/storage/auth/leader_multi_group_transition.json — groups: PW_Group_20261104_153228_w3r0344nmv, PW_Group_20261104_153246_w3r0167cvj, PW_Group_20261104_153305_w3r0337utk
