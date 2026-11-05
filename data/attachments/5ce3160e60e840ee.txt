@@ -1,0 +1,9 @@
+[2026-11-05T10:29:11.810Z] [STEP] Testing Invalid CVC scenario
+[2026-11-05T10:29:11.810Z] [STEP] Verifying Stripe form visibility
+[2026-11-05T10:29:12.237Z] [SUCCESS] Stripe form verified — ready after 0.4s
+[2026-11-05T10:29:12.237Z] [STEP] Filling Stripe payment details
+[2026-11-05T10:29:12.428Z] [STEP] Selecting country: US
+[2026-11-05T10:29:12.536Z] [SUCCESS] Country settled on US
+[2026-11-05T10:29:16.701Z] [SUCCESS] Stripe payment details filled
+[2026-11-05T10:29:17.048Z] [STEP] Verifying invalid CVC error
+[2026-11-05T10:29:17.230Z] [SUCCESS] Invalid CVC error verified

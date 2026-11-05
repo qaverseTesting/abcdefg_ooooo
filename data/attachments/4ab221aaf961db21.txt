@@ -1,0 +1,25 @@
+[2026-11-05T10:14:28.821Z] [INFO] [PRICING INIT] - Carry-forward journey for Group: PW_Group_20261105_101353_w14r0206hs3
+[2026-11-05T10:14:29.507Z] [STEP] Opening group Settings tab for: pw_group_20261105_101353_w14r0206hs3
+[2026-11-05T10:14:37.057Z] [SUCCESS] Group Settings tab loaded
+[2026-11-05T10:14:37.057Z] [ASSERT] Verifying group pricing model summary is: Free
+[2026-11-05T10:14:37.556Z] [SUCCESS] Pricing model summary verified: Free
+[2026-11-05T10:14:37.557Z] [STEP] Clicking "Change Pricing Model"
+[2026-11-05T10:14:37.908Z] [SUCCESS] "Change Pricing Model" clicked
+[2026-11-05T10:14:37.908Z] [STEP] Verifying Update Group Pricing page loaded
+[2026-11-05T10:14:40.860Z] [SUCCESS] Update Group Pricing page loaded
+[2026-11-05T10:14:40.860Z] [STEP] Selecting "Monthly Subscription" pricing model
+[2026-11-05T10:14:41.333Z] [SUCCESS] Monthly Subscription selected
+[2026-11-05T10:14:41.333Z] [STEP] Entering monthly price: $10
+[2026-11-05T10:14:41.705Z] [SUCCESS] Monthly price set to $10
+[2026-11-05T10:14:41.706Z] [STEP] Clicking "Update Pricing"
+[2026-11-05T10:14:42.261Z] [SUCCESS] "Update Pricing" clicked — confirmation dialog opened
+[2026-11-05T10:14:42.261Z] [ASSERT] Verifying pricing confirmation dialog: You're changing from Free to Monthly Paid
+[2026-11-05T10:14:42.526Z] [SUCCESS] Platform fee verified on the leader's dialog: $10 + $3 = $13
+[2026-11-05T10:14:42.526Z] [SUCCESS] Pricing confirmation dialog verified
+[2026-11-05T10:14:42.526Z] [STEP] Clicking "Apply Changes"
+[2026-11-05T10:14:44.032Z] [SUCCESS] "Apply Changes" clicked — confirmation dialog closed
+[2026-11-05T10:14:44.038Z] [ASSERT] Verifying toast message matching: Your group pricing has been successfully updated from Free to Monthly Paid.
+[2026-11-05T10:14:45.717Z] [STEP] Opening group Settings tab for: pw_group_20261105_101353_w14r0206hs3
+[2026-11-05T10:14:52.706Z] [SUCCESS] Group Settings tab loaded
+[2026-11-05T10:14:52.706Z] [ASSERT] Verifying monthly pricing summary: Monthly Paid $10/Month
+[2026-11-05T10:14:52.810Z] [SUCCESS] Monthly pricing summary verified: $10/Month

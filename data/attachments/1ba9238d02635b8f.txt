@@ -1,0 +1,7 @@
+[2026-11-05T10:05:41.324Z] [STEP] Opening group room "pw_group_20261105_095951_w0r0479gze" on tab=conversations
+[2026-11-05T10:05:45.139Z] [SUCCESS] Group room open on tab=conversations
+[2026-11-05T10:05:45.975Z] [STEP] Opening session details from feed: PW_Session_20261105_095951_w0r0485il0
+[2026-11-05T10:05:47.900Z] [STEP] Verifying session details page: PW_Session_20261105_095951_w0r0485il0
+[2026-11-05T10:05:50.374Z] [ASSERT] Verifying the session page offers no Join before the session is starting soon
+[2026-11-05T10:05:52.278Z] [ASSERT] Verifying "Session Not Started" page
+[2026-11-05T10:05:55.196Z] [SUCCESS] "Session Not Started" shown with Retry and Go Back

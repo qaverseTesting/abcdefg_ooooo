@@ -1,0 +1,10 @@
+[2026-11-05T10:27:40.488Z] [STEP] Navigating to My Groups page
+[2026-11-05T10:27:41.308Z] [STEP] Waiting for My Groups page content
+[2026-11-05T10:27:42.127Z] [STEP] Waiting for group list to settle
+[2026-11-05T10:27:43.525Z] [SUCCESS] Group list settled — 3 card(s) on the active tab
+[2026-11-05T10:27:43.525Z] [STEP] Verifying at least one group card is visible
+[2026-11-05T10:27:43.525Z] [STEP] Waiting for group list to settle
+[2026-11-05T10:27:44.081Z] [SUCCESS] Group list settled — 3 card(s) on the active tab
+[2026-11-05T10:27:44.082Z] [SUCCESS] 3 group card(s) confirmed visible
+[2026-11-05T10:27:44.082Z] [STEP] Verifying each group card has a name and cover image
+[2026-11-05T10:27:44.124Z] [SUCCESS] All 3 card(s) have name and cover image
