@@ -1,5 +1,0 @@
-[2026-11-05T10:23:54.944Z] [STEP] Ensuring clean session state (Force Logout)
-[2026-11-05T10:23:54.944Z] [INFO] Already on an anonymous page. Skipping logout logic.
-[2026-11-05T10:23:54.952Z] [NAV] Navigating to Registration
-[2026-11-05T10:23:56.286Z] [STEP] Filling registration form for: pw_auto_mh_member@mailinator.com
-[2026-11-05T10:23:58.352Z] [STEP] Clearing 3rd-party overlays for clean interaction

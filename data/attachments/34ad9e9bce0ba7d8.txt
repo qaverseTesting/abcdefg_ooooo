@@ -1,0 +1,9 @@
+[2026-11-05T15:31:36.754Z] [INFO] [member] Debug - CI: true, Skip: false, File: false at /home/runner/work/playwright-enterprise-framework/playwright-enterprise-framework/storage/auth/member.json
+[2026-11-05T15:31:36.754Z] [STEP] Logging in as member
+[2026-11-05T15:31:36.755Z] [STEP] Ensuring clean session state (Force Logout)
+[2026-11-05T15:31:36.755Z] [INFO] Already on an anonymous page. Skipping logout logic.
+[2026-11-05T15:31:36.778Z] [NAV] Navigating to Login
+[2026-11-05T15:31:37.895Z] [INFO] Attempting login for user: pw_auto_mh_member@mailinator.com | Password: [hidden, 8 chars] (expectSuccess: true)
+[2026-11-05T15:31:41.175Z] [SUCCESS] Login successful. Landed on: https://staging.mentalhappy.com/groups
+[2026-11-05T15:31:42.864Z] [SUCCESS] Login successful and dashboard loaded
+[2026-11-05T15:31:42.923Z] [SUCCESS] member session captured at Dashboard state.

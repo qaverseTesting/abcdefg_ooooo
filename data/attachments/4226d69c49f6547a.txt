@@ -1,0 +1,12 @@
+[2026-11-05T15:51:04.950Z] [STEP] Waiting for the resend cooldown to end
+[2026-11-05T15:51:04.971Z] [INFO] Countdown on screen: Resend In 00:00
+[2026-11-05T15:53:03.322Z] [SUCCESS] Resend OTP button clicked
+[2026-11-05T15:53:03.323Z] [ASSERT] Verifying toast message matching: /email sent/i
+[2026-11-05T15:53:04.071Z] [INFO] New countdown: Resend In 01:59
+[2026-11-05T15:53:04.072Z] [INFO] [OTP] Bypass active for pw_auto_mh_051551001qgl@mentalhappy.com. Returning fixed validation code: 456321
+[2026-11-05T15:53:04.072Z] [STEP] Entering OTP: 456321
+[2026-11-05T15:53:04.072Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-05T15:53:04.167Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-05T15:53:04.315Z] [SUCCESS] OTP entered
+[2026-11-05T15:53:04.409Z] [ASSERT] Verifying toast message matching: /Email Verified Successfully/i
+[2026-11-05T15:53:05.350Z] [SUCCESS] Phase 2 Complete: New OTP verified successfully.
