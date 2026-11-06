@@ -1,0 +1,10 @@
+[2026-11-06T15:16:05.493Z] [STEP] Opening My Sessions ?tab=registered
+[2026-11-06T15:16:10.866Z] [ASSERT] Verifying "PW_Session_20261106_151147_w0r0529jas" is in My Sessions as Registered
+[2026-11-06T15:16:11.012Z] [SUCCESS] Listed with the Registered badge
+[2026-11-06T15:16:11.012Z] [ASSERT] Verifying "PW_Session_20261106_151147_w0r0528ghu" is in My Sessions as Registered
+[2026-11-06T15:16:11.143Z] [SUCCESS] Listed with the Registered badge
+[2026-11-06T15:16:11.144Z] [STEP] Filtering My Sessions by group: PW_Group_20261106_151147_w0r0528nb6
+[2026-11-06T15:16:12.477Z] [ASSERT] Verifying only "PW_Group_20261106_151147_w0r0528nb6" sessions are shown
+[2026-11-06T15:16:12.781Z] [SUCCESS] All 1 session(s) belong to PW_Group_20261106_151147_w0r0528nb6
+[2026-11-06T15:16:12.781Z] [ASSERT] Verifying "PW_Session_20261106_151147_w0r0529jas" is not in My Sessions
+[2026-11-06T15:16:12.826Z] [SUCCESS] Not listed
