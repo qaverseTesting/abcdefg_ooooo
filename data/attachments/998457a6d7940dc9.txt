@@ -1,0 +1,33 @@
+[2026-11-07T14:19:12.277Z] [STEP] Exiting group "PW_Group_20261107_141441_w13r01917oa" as a member
+[2026-11-07T14:19:12.277Z] [STEP] Opening group room "pw_group_20261107_141441_w13r01917oa" on tab=settings
+[2026-11-07T14:19:14.601Z] [SUCCESS] Group room open on tab=settings
+[2026-11-07T14:19:21.045Z] [SUCCESS] Exited "PW_Group_20261107_141441_w13r01917oa"
+[2026-11-07T14:19:21.046Z] [STEP] Navigating to My Groups page
+[2026-11-07T14:19:22.269Z] [STEP] Waiting for My Groups page content
+[2026-11-07T14:19:23.234Z] [STEP] Clicking filter: Joined
+[2026-11-07T14:19:25.982Z] [SUCCESS] Filter "Joined" selected
+[2026-11-07T14:19:25.982Z] [ASSERT] Verifying "PW_Group_20261107_141441_w13r01917oa" is not listed on the active tab
+[2026-11-07T14:19:25.982Z] [STEP] Waiting for group list to settle
+[2026-11-07T14:19:26.741Z] [SUCCESS] Group list settled — 0 card(s) on the active tab
+[2026-11-07T14:19:26.783Z] [SUCCESS] Confirmed absent: PW_Group_20261107_141441_w13r01917oa
+[2026-11-07T14:19:26.786Z] [ASSERT] Verifying the room link of "PW_Group_20261107_141441_w13r01917oa" (tab=conversations) does not let this user in
+[2026-11-07T14:19:28.112Z] [SUCCESS] Refused: the room link of "PW_Group_20261107_141441_w13r01917oa" sent this user to /groups/pw_group_20261107_141441_w13r01917oa
+[2026-11-07T14:19:28.112Z] [SUCCESS] [SL-4 VERIFIED] pw_auto_mh_07141839q0w6@mentalhappy.com exited "PW_Group_20261107_141441_w13r01917oa" (priced free trial) and lost access
+[2026-11-07T14:19:30.403Z] [INFO] [MEMBERSHIP] {"groupId":"6aef326ad279f4150491d9cd","isMember":false,"status":null,"isFollowing":false,"joinRequestStatus":null,"trial":{"available":false,"days":0.0104167},"openCheckout":null}
+[2026-11-07T14:19:30.434Z] [STEP] Opening dashboard
+[2026-11-07T14:19:32.361Z] [STEP] Searching for "PW_Group_20261107_141441_w13r01917oa" — up to 5 attempts (fresh groups index slowly)
+[2026-11-07T14:19:32.363Z] [STEP] Searching for group: PW_Group_20261107_141441_w13r01917oa
+[2026-11-07T14:19:35.366Z] [INFO] Search "PW_Group_20261107_141441_w13r01917oa" settled: explore-grid data-state="ready"
+[2026-11-07T14:19:35.424Z] [SUCCESS] Group "PW_Group_20261107_141441_w13r01917oa" found in Explore search (attempt 1/5)
+[2026-11-07T14:19:35.451Z] [INFO] Side panel not open — clicking card to open: PW_Group_20261107_141441_w13r01917oa
+[2026-11-07T14:19:35.451Z] [STEP] Clicking group card: PW_Group_20261107_141441_w13r01917oa
+[2026-11-07T14:19:36.880Z] [SUCCESS] Group card clicked: PW_Group_20261107_141441_w13r01917oa
+[2026-11-07T14:19:37.263Z] [INFO] [CTA PANEL BUTTONS] [{"text":"","aria":"Close"},{"text":"","aria":"Close"},{"text":"","aria":"Share group"},{"text":"","aria":"Show platform fee details"},{"text":"Join Group","aria":"Join Group"}]
+[2026-11-07T14:19:37.353Z] [INFO] [CTA] Monthly $5, trial used: button "Join Group", price "$8/month"
+[2026-11-07T14:19:37.373Z] [STEP] Clicking join and waiting for payment redirect
+[2026-11-07T14:19:38.054Z] [INFO] [STRIPE] Stripe's script files are served from the shared cache (storage/stripe-cache)
+[2026-11-07T14:19:38.121Z] [SUCCESS] Redirected to payment page
+[2026-11-07T14:19:39.106Z] [STEP] Verifying checkout summary for: PW_Group_20261107_141441_w13r01917oa
+[2026-11-07T14:19:45.236Z] [SUCCESS] Checkout summary verified
+[2026-11-07T14:19:45.236Z] [STEP] Verifying $3 platform fee is disclosed and added to the total
+[2026-11-07T14:19:47.211Z] [SUCCESS] Platform fee verified: $3 disclosed and included in the $8 total

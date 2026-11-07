@@ -1,0 +1,20 @@
+[2026-11-07T14:14:07.764Z] [STEP] Opening group room "pw_group_20261107_140701_w0r04309e3" on tab=conversations
+[2026-11-07T14:14:11.044Z] [SUCCESS] Group room open on tab=conversations
+[2026-11-07T14:14:14.791Z] [STEP] Opening session details from feed: PW_Session_20261107_140701_w0r0431c5c
+[2026-11-07T14:14:15.719Z] [STEP] Verifying session details page: PW_Session_20261107_140701_w0r0431c5c
+[2026-11-07T14:14:16.761Z] [ASSERT] Verifying the session page says "For members of PW_Group_20261107_140701_w0r04309e3. Membership is a $3/month platform fee."
+[2026-11-07T14:14:16.834Z] [STEP] Copying the session link
+[2026-11-07T14:14:17.263Z] [SUCCESS] Copied https://staging.mentalhappy.com/session/event/6aef3121d279f4150491cde0
+[2026-11-07T14:14:18.522Z] [ASSERT] Verifying "PW_Session_20261107_140701_w0r0431c5c" is not shown to this viewer
+[2026-11-07T14:14:22.452Z] [STEP] Opening group room "pw_group_20261107_140701_w0r04309e3" on tab=sessions
+[2026-11-07T14:14:24.912Z] [SUCCESS] Group room open on tab=sessions
+[2026-11-07T14:14:24.913Z] [STEP] Waiting for session list to settle
+[2026-11-07T14:14:27.733Z] [SUCCESS] Session list settled — 6 session(s)
+[2026-11-07T14:14:29.517Z] [ASSERT] Verifying the session page says "For members of PW_Group_20261107_140701_w0r04309e3. Membership is a $3/month platform fee."
+[2026-11-07T14:14:29.924Z] [ASSERT] Verifying a non-member is asked to join the group before registering
+[2026-11-07T14:14:30.374Z] [STEP] Clicking Join Group to Register
+[2026-11-07T14:14:31.475Z] [ASSERT] Verifying the public page of "pw_group_20261107_140701_w0r04309e3" offers "Join Group"
+[2026-11-07T14:14:31.698Z] [SUCCESS] The public page offers "Join Group"
+[2026-11-07T14:14:32.386Z] [STEP] Verifying session details page: PW_Session_20261107_140701_w0r0431vx6
+[2026-11-07T14:14:33.982Z] [ASSERT] Verifying the session page says "Free to attend. Anyone can register."
+[2026-11-07T14:14:34.183Z] [ASSERT] Verifying the session page shows the member as not registered

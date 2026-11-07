@@ -1,0 +1,11 @@
+[2026-11-07T14:20:54.501Z] [STEP] Opening group room "pw_group_20261107_141324_w0r0887vvb" on tab=sessions
+[2026-11-07T14:20:56.665Z] [SUCCESS] Group room open on tab=sessions
+[2026-11-07T14:20:56.665Z] [STEP] Waiting for "PW_Session_20261107_141324_w0r0887zbp" to become live (up to 424s)
+[2026-11-07T14:25:11.738Z] [SUCCESS] "PW_Session_20261107_141324_w0r0887zbp" is live
+[2026-11-07T14:25:11.739Z] [STEP] Opening group room "pw_group_20261107_141324_w0r0887vvb" on tab=conversations
+[2026-11-07T14:25:14.193Z] [SUCCESS] Group room open on tab=conversations
+[2026-11-07T14:25:17.440Z] [ASSERT] Verifying "PW_Session_20261107_141324_w0r0887zbp" feed card shows "Registered for session"
+[2026-11-07T14:25:17.515Z] [SUCCESS] Feed card shows "Registered for session"
+[2026-11-07T14:25:17.516Z] [STEP] Opening session details from feed: PW_Session_20261107_141324_w0r0887zbp
+[2026-11-07T14:25:18.053Z] [STEP] Verifying session details page: PW_Session_20261107_141324_w0r0887zbp
+[2026-11-07T14:25:18.941Z] [ASSERT] Verifying session status is "Live"

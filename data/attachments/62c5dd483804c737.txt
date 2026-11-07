@@ -1,0 +1,60 @@
+[2026-11-07T14:18:39.765Z] [INFO] [MEMBER] Registering "trial" member: pw_auto_mh_07141839q0w6@mentalhappy.com
+[2026-11-07T14:18:39.765Z] [STEP] Submitting member registration form for: pw_auto_mh_07141839q0w6@mentalhappy.com
+[2026-11-07T14:18:39.773Z] [STEP] Navigating to Registration Page
+[2026-11-07T14:18:40.847Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-07T14:18:41.128Z] [SUCCESS] Registration Page loaded
+[2026-11-07T14:18:41.128Z] [STEP] Filling registration form for: pw_auto_mh_07141839q0w6@mentalhappy.com
+[2026-11-07T14:18:42.456Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-07T14:18:42.489Z] [STEP] Submitting registration form
+[2026-11-07T14:18:42.822Z] [SUCCESS] Registration form submitted
+[2026-11-07T14:18:42.822Z] [STEP] Waiting for OTP entry page to be ready
+[2026-11-07T14:18:46.179Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-11-07T14:18:46.179Z] [SUCCESS] Registration form submitted, OTP page reached
+[2026-11-07T14:18:46.180Z] [STEP] Verifying email for: pw_auto_mh_07141839q0w6@mentalhappy.com
+[2026-11-07T14:18:46.180Z] [INFO] [OTP] Bypass active for pw_auto_mh_07141839q0w6@mentalhappy.com. Returning fixed validation code: 456321
+[2026-11-07T14:18:46.187Z] [STEP] Entering OTP: 456321
+[2026-11-07T14:18:46.187Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-07T14:18:46.487Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-07T14:18:46.702Z] [SUCCESS] OTP entered
+[2026-11-07T14:18:46.702Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-11-07T14:18:46.710Z] [ASSERT] Verifying toast message matching: /Email Verified Successfully/i
+[2026-11-07T14:18:48.900Z] [SUCCESS] Email verification (OTP) successful
+[2026-11-07T14:18:48.900Z] [STEP] Selecting Member role on Welcome page
+[2026-11-07T14:18:48.900Z] [STEP] Verifying Welcome Page is displayed
+[2026-11-07T14:18:48.901Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-07T14:18:49.474Z] [SUCCESS] Welcome Page verification successful (Role buttons visible)
+[2026-11-07T14:18:49.474Z] [STEP] Selecting path: Explore Support Groups
+[2026-11-07T14:18:49.474Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-07T14:18:50.312Z] [INFO] Clicked Explore support groups
+[2026-11-07T14:18:50.367Z] [SUCCESS] Explore Support Groups path selected
+[2026-11-07T14:18:50.367Z] [STEP] Clicking Welcome Continue button
+[2026-11-07T14:18:50.367Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-07T14:18:50.869Z] [SUCCESS] Welcome Continue clicked
+[2026-11-07T14:18:50.869Z] [SUCCESS] Role selection completed
+[2026-11-07T14:18:50.870Z] [STEP] Completing Member onboarding via SKIP path
+[2026-11-07T14:18:50.926Z] [STEP] Completing Member onboarding via SKIP
+[2026-11-07T14:18:50.926Z] [STEP] Clicking Onboarding Skip button
+[2026-11-07T14:18:50.926Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-07T14:18:54.300Z] [SUCCESS] Redirected to Dashboard via Skip
+[2026-11-07T14:18:54.300Z] [SUCCESS] Member onboarding (Skip) completed
+[2026-11-07T14:18:54.300Z] [SUCCESS] [MEMBER] "trial" member ready: pw_auto_mh_07141839q0w6@mentalhappy.com
+[2026-11-07T14:18:57.479Z] [INFO] [MEMBERSHIP] {"groupId":"6aef326ad279f4150491d9cd","isMember":false,"status":null,"isFollowing":false,"joinRequestStatus":null,"trial":{"available":true,"days":0.0104167},"openCheckout":null}
+[2026-11-07T14:18:57.497Z] [STEP] Opening dashboard
+[2026-11-07T14:19:00.320Z] [STEP] Searching for "PW_Group_20261107_141441_w13r01917oa" — up to 5 attempts (fresh groups index slowly)
+[2026-11-07T14:19:00.320Z] [STEP] Searching for group: PW_Group_20261107_141441_w13r01917oa
+[2026-11-07T14:19:05.225Z] [INFO] Search "PW_Group_20261107_141441_w13r01917oa" settled: explore-grid data-state="ready"
+[2026-11-07T14:19:05.299Z] [SUCCESS] Group "PW_Group_20261107_141441_w13r01917oa" found in Explore search (attempt 1/5)
+[2026-11-07T14:19:05.458Z] [INFO] Side panel not open — clicking card to open: PW_Group_20261107_141441_w13r01917oa
+[2026-11-07T14:19:05.458Z] [STEP] Clicking group card: PW_Group_20261107_141441_w13r01917oa
+[2026-11-07T14:19:06.618Z] [SUCCESS] Group card clicked: PW_Group_20261107_141441_w13r01917oa
+[2026-11-07T14:19:06.908Z] [INFO] [CTA PANEL BUTTONS] [{"text":"","aria":"Close"},{"text":"","aria":"Close"},{"text":"","aria":"Share group"},{"text":"","aria":"Show platform fee details"},{"text":"Join Group","aria":"Join Group"}]
+[2026-11-07T14:19:07.290Z] [STEP] Starting the free trial of "PW_Group_20261107_141441_w13r01917oa"
+[2026-11-07T14:19:08.433Z] [INFO] Trial join answered 201: {"groupId":"6aef326ad279f4150491d9cd","status":"TRIALING","role":"GROUP_MEMBER","joinedAt":"2026-11-07T14:19:07.924Z","trialEndsAt":"2026-11-07T14:34:07.927Z"}
+[2026-11-07T14:19:09.136Z] [SUCCESS] Trial started for "PW_Group_20261107_141441_w13r01917oa"
+[2026-11-07T14:19:09.140Z] [STEP] Waiting for group page to load after payment redirect
+[2026-11-07T14:19:09.150Z] [SUCCESS] Group page loaded
+[2026-11-07T14:19:09.151Z] [STEP] Checking for post-join success modal
+[2026-11-07T14:19:09.397Z] [SUCCESS] Success modal handled
+[2026-11-07T14:19:09.397Z] [STEP] Verifying Conversations tab is visible
+[2026-11-07T14:19:09.458Z] [SUCCESS] Conversations tab visible — membership access confirmed
+[2026-11-07T14:19:12.059Z] [INFO] [MEMBERSHIP] {"groupId":"6aef326ad279f4150491d9cd","isMember":true,"status":"TRIALING","isFollowing":false,"joinRequestStatus":null,"trial":{"available":false,"days":0.0104167},"openCheckout":null}
