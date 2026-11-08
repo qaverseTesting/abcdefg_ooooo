@@ -1,0 +1,88 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - link "All Groups" [ref=e5] [cursor=pointer]:
+          - /url: /groups
+          - img [ref=e6]
+          - paragraph [ref=e8]: All Groups
+        - button "Group info menu" [ref=e10] [cursor=pointer]:
+          - generic:
+            - button "PW_Group_20261108_142757_w13r004243e options":
+              - generic:
+                - img "PW_Group_20261108_142757_w13r004243e"
+              - paragraph: PW_Group_20261108_142757_w13r004243e
+              - img
+        - button "User menu" [ref=e12] [cursor=pointer]:
+          - generic:
+            - generic:
+              - img
+      - tablist "Group Navigation" [ref=e13]:
+        - tab "Leader Space" [ref=e14] [cursor=pointer]:
+          - img [ref=e15]
+          - paragraph [ref=e20]: Leader Space
+        - tab "Conversations" [ref=e21] [cursor=pointer]:
+          - img [ref=e22]
+          - paragraph [ref=e25]: Conversations
+        - tab "Sessions" [ref=e26] [cursor=pointer]:
+          - img [ref=e27]
+          - paragraph [ref=e29]: Sessions
+        - tab "Members" [ref=e30] [cursor=pointer]:
+          - img [ref=e31]
+          - paragraph [ref=e36]: Members
+        - tab "About" [ref=e37] [cursor=pointer]:
+          - img [ref=e38]
+          - paragraph [ref=e40]: About
+        - tab "Settings" [selected] [ref=e41] [cursor=pointer]:
+          - img [ref=e42]
+          - paragraph [ref=e45]: Settings
+    - generic [ref=e46]:
+      - navigation "Your groups" [ref=e47]:
+        - link "PW_Group_20261108_142757_w13r004243e" [ref=e48] [cursor=pointer]:
+          - /url: /groups/pw_group_20261108_142757_w13r004243e/room
+        - link "AM Test Group of Free" [ref=e49] [cursor=pointer]:
+          - /url: /groups/am-test-group-of-free/room
+      - generic [ref=e53]:
+        - generic [ref=e56]:
+          - generic [ref=e57]:
+            - generic [ref=e58]:
+              - paragraph [ref=e59]: Group Visibility
+              - generic [ref=e60]: Visible
+            - paragraph [ref=e61]: Your group is visible to everyone on MentalHappy.
+            - paragraph [ref=e62]: "*Turn this switch off to hide your group from search and explore."
+          - checkbox "Toggle group visibility" [checked] [ref=e64]
+        - generic [ref=e69]:
+          - generic [ref=e70]:
+            - paragraph [ref=e71]: Request to Join
+            - paragraph [ref=e72]: Any MentalHappy member can join your group directly
+            - paragraph [ref=e73]: "*Turn this switch on to have members request approval before joining."
+          - checkbox "Toggle request to join" [ref=e75]
+        - generic [ref=e80]:
+          - generic [ref=e81]:
+            - generic [ref=e82]:
+              - paragraph [ref=e83]: Free Trial
+              - generic [ref=e84]: Disabled
+            - paragraph [ref=e85]: Free trial is disabled. Members must pay to join your group
+            - paragraph [ref=e86]: "*Turn this switch on and first-time members can join during the free trial."
+          - checkbox "Toggle free trial" [ref=e88]
+        - generic [ref=e92]:
+          - generic [ref=e93]:
+            - generic [ref=e94]:
+              - paragraph [ref=e95]: Group Pricing Model
+              - generic [ref=e96]: Donation-Based
+            - paragraph [ref=e97]: Allow members to join while giving them the option to support your work with voluntary contributions at any time. A standard $3 platform service fee applies per member.
+          - button "Change Pricing Model" [ref=e98] [cursor=pointer]:
+            - text: Change Pricing Model
+            - img [ref=e100]
+  - alert [ref=e102]: Group room | MentalHappy
+  - generic:
+    - region
+    - region
+    - region
+    - region
+    - region
+    - region
+```

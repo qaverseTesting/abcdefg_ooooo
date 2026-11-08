@@ -1,4 +1,0 @@
-[2026-11-07T14:26:31.848Z] [STEP] Attempting login for: pw_auto_mh_07142540cw5e@mentalhappy.com (Invalid Credentials: Unregistered user cannot login with a generated email)
-[2026-11-07T14:26:31.848Z] [INFO] Attempting login for user: pw_auto_mh_07142540cw5e@mentalhappy.com | Password: [hidden, 12 chars] (expectSuccess: false)
-[2026-11-07T14:26:33.389Z] [INFO] Invalid login error message verified.
-[2026-11-07T14:26:33.389Z] [SUCCESS] Success: Access denied as expected for "Unregistered user cannot login with a generated email"
