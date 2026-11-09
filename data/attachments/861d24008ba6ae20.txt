@@ -1,0 +1,17 @@
+[2026-11-09T17:55:14.353Z] [STEP] Opening group Settings tab for: pw_group_20261109_175310_w13r0857eno
+[2026-11-09T17:55:18.182Z] [SUCCESS] Group Settings tab loaded
+[2026-11-09T17:55:18.182Z] [STEP] Clicking "Change Pricing Model"
+[2026-11-09T17:55:18.386Z] [SUCCESS] "Change Pricing Model" clicked
+[2026-11-09T17:55:18.386Z] [STEP] Verifying Update Group Pricing page loaded
+[2026-11-09T17:55:19.584Z] [SUCCESS] Update Group Pricing page loaded
+[2026-11-09T17:55:19.584Z] [STEP] Selecting "Donation-Based" pricing model
+[2026-11-09T17:55:20.068Z] [SUCCESS] Donation-Based selected
+[2026-11-09T17:55:20.069Z] [STEP] Clicking "Update Pricing"
+[2026-11-09T17:55:20.389Z] [SUCCESS] "Update Pricing" clicked — confirmation dialog opened
+[2026-11-09T17:55:20.444Z] [STEP] Clicking "Apply Changes"
+[2026-11-09T17:55:22.756Z] [SUCCESS] "Apply Changes" clicked — confirmation dialog closed
+[2026-11-09T17:55:22.758Z] [STEP] Opening group Settings tab for: pw_group_20261109_175310_w13r0857eno
+[2026-11-09T17:55:26.581Z] [SUCCESS] Group Settings tab loaded
+[2026-11-09T17:55:26.581Z] [ASSERT] Verifying group pricing model summary is: Donation
+[2026-11-09T17:55:26.602Z] [SUCCESS] Pricing model summary verified: Donation
+[2026-11-09T17:55:26.602Z] [SUCCESS] [COVERED] Donation-Based is set and persisted on the leader side

@@ -1,0 +1,29 @@
+[2026-11-09T17:48:10.899Z] [STEP] Opening group room "pw_group_20261109_174543_w0r0772u5d" on tab=sessions
+[2026-11-09T17:48:13.343Z] [SUCCESS] Group room open on tab=sessions
+[2026-11-09T17:48:13.343Z] [STEP] Starting Session Creation flow for: PW_Session_20261109_174810_w10r0899wuk
+[2026-11-09T17:48:13.343Z] [STEP] Opening Schedule Session modal
+[2026-11-09T17:48:17.272Z] [STEP] Waiting for Create Session modal
+[2026-11-09T17:48:17.440Z] [SUCCESS] Create Session modal visible
+[2026-11-09T17:48:17.440Z] [STEP] Filling Create Session form
+[2026-11-09T17:48:17.440Z] [STEP] Setting session date to next day
+[2026-11-09T17:48:20.084Z] [INFO] Session date set to 10 November, 2026
+[2026-11-09T17:48:20.086Z] [STEP] Ensuring timezone is selected
+[2026-11-09T17:48:20.672Z] [INFO] Searching for timezone "Pacific"
+[2026-11-09T17:48:21.530Z] [INFO] Timezone selection attempted via keyboard
+[2026-11-09T17:48:21.530Z] [STEP] Setting session time
+[2026-11-09T17:48:23.411Z] [INFO] Session time set to 10:00 AM – 11:00 AM
+[2026-11-09T17:48:23.472Z] [INFO] Filling description editor
+[2026-11-09T17:48:24.669Z] [STEP] Checking if tags are required
+[2026-11-09T17:48:25.052Z] [INFO] Opened Tags drawer
+[2026-11-09T17:48:25.286Z] [INFO] Selected a tag
+[2026-11-09T17:48:45.421Z] [SUCCESS] Form filling completed
+[2026-11-09T17:48:45.423Z] [STEP] Making the session recurring: Weekly, ending 30 November, 2026
+[2026-11-09T17:48:48.536Z] [STEP] Submitting session
+[2026-11-09T17:48:48.868Z] [STEP] Verifying session creation (modal closed)
+[2026-11-09T17:48:50.900Z] [SUCCESS] Session "PW_Session_20261109_174810_w10r0899wuk" submitted.
+[2026-11-09T17:48:50.900Z] [STEP] Opening session details: PW_Session_20261109_174810_w10r0899wuk
+[2026-11-09T17:48:50.900Z] [STEP] Navigating to Sessions tab
+[2026-11-09T17:48:50.988Z] [SUCCESS] Sessions tab active
+[2026-11-09T17:48:50.988Z] [STEP] Waiting for session list to settle
+[2026-11-09T17:48:51.047Z] [SUCCESS] Session list settled — 2 session(s)
+[2026-11-09T17:48:51.619Z] [SUCCESS] Session details opened
