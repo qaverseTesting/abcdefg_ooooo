@@ -1,0 +1,11 @@
+[2026-11-12T17:57:00.994Z] [WARN] Tag selection flow issue: locator.click: Timeout 20000ms exceeded.
+Call log:
+  - waiting for locator('[role="dialog"][aria-label="Select Tags"]').getByRole('button', { name: /Done|Apply|Save|Add/i }).first()
+    - locator resolved to <button type="button" aria-label="Done" class="chakra-button css-l4a7xz">Done</button>
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+    - element is not stable
+  - retrying click action
+    - waiting for element to be visible, enabled and stable
+  - element was detached from the DOM, retrying
+.

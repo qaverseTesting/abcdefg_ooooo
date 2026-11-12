@@ -1,0 +1,12 @@
+[2026-11-12T18:14:27.296Z] [STEP] Navigating to My Groups page
+[2026-11-12T18:14:28.187Z] [STEP] Waiting for My Groups page content
+[2026-11-12T18:14:29.390Z] [STEP] Verifying all filter tabs are visible
+[2026-11-12T18:14:29.926Z] [SUCCESS] All filter tabs confirmed visible
+[2026-11-12T18:14:29.927Z] [STEP] Clicking Joined filter
+[2026-11-12T18:14:30.148Z] [STEP] Clicking filter: Joined
+[2026-11-12T18:14:32.064Z] [SUCCESS] Filter "Joined" selected
+[2026-11-12T18:14:32.101Z] [STEP] Verifying My Groups list rendered a valid state
+[2026-11-12T18:14:32.101Z] [STEP] Waiting for group list to settle
+[2026-11-12T18:14:32.816Z] [SUCCESS] Group list settled — 0 card(s) on the active tab
+[2026-11-12T18:14:32.816Z] [SUCCESS] My Groups list rendered — 0 card(s) on the active tab
+[2026-11-12T18:14:32.816Z] [SUCCESS] Leader My Groups sections verified

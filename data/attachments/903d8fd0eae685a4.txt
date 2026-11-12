@@ -1,6 +1,0 @@
-[2026-11-12T16:18:00.859Z] [STEP] Navigating to Profile → Earnings
-[2026-11-12T16:18:02.214Z] [SUCCESS] Earnings page loaded
-[2026-11-12T16:18:02.272Z] [INFO] Stripe connected for this leader: false
-[2026-11-12T16:18:02.272Z] [ASSERT] Verifying the Connect Stripe prompt is offered
-[2026-11-12T16:18:02.290Z] [SUCCESS] Connect Stripe prompt confirmed
-[2026-11-12T16:18:02.290Z] [SUCCESS] EARN-01: this leader is prompted to connect Stripe — cannot be paid yet
