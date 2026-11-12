@@ -1,0 +1,22 @@
+[2026-11-12T16:09:02.975Z] [WARN] Tag selection flow issue: locator.click: Timeout 20000ms exceeded.
+Call log:
+  - waiting for locator('[role="dialog"][aria-label="Select Tags"]').getByRole('button', { name: /Done|Apply|Save|Add/i }).first()
+    - locator resolved to <button type="button" aria-label="Done" class="chakra-button css-l4a7xz">Done</button>
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+    - element is not stable
+  - retrying click action
+    - waiting for element to be visible, enabled and stable
+  - element was detached from the DOM, retrying
+.
+[2026-11-12T16:09:46.649Z] [WARN] Tag selection flow issue: locator.click: Timeout 20000ms exceeded.
+Call log:
+  - waiting for locator('[role="dialog"][aria-label="Select Tags"]').getByRole('button', { name: /Done|Apply|Save|Add/i }).first()
+.
+[2026-11-12T16:10:55.197Z] [WARN] Attempt 1/5: Explore search not usable (TimeoutError: locator.waitFor: Timeout 20000ms exceeded.
+Call log:
+  - waiti) — reloading.
+[2026-11-12T16:12:01.136Z] [WARN] Tag selection flow issue: locator.click: Timeout 20000ms exceeded.
+Call log:
+  - waiting for locator('[role="dialog"][aria-label="Select Tags"]').getByRole('button', { name: /Done|Apply|Save|Add/i }).first()
+.
