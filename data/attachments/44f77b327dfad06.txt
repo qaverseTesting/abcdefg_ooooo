@@ -1,8 +1,0 @@
-[2026-11-12T18:14:49.127Z] [ASSERT] Verifying the room link of "AMActiveGroupV2" (tab=conversations) does not let this user in
-[2026-11-12T18:14:51.237Z] [SUCCESS] Refused: the room link of "AMActiveGroupV2" sent this user to /groups/amactivegroupv2
-[2026-11-12T18:14:51.237Z] [ASSERT] Verifying the room link of "AMActiveGroupV2" (tab=sessions) does not let this user in
-[2026-11-12T18:14:52.584Z] [SUCCESS] Refused: the room link of "AMActiveGroupV2" sent this user to /groups/amactivegroupv2
-[2026-11-12T18:14:52.584Z] [ASSERT] Verifying the public page of "amactivegroupv2" offers "Join Group"
-[2026-11-12T18:14:52.663Z] [SUCCESS] The public page offers "Join Group"
-[2026-11-12T18:14:52.664Z] [ASSERT] Verifying the room link of "AMActiveGroupV2" (tab=conversations) does not let this user in
-[2026-11-12T18:14:56.230Z] [SUCCESS] Refused: the room link of "AMActiveGroupV2" sent this user to /login

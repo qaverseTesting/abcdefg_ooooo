@@ -1,0 +1,16 @@
+[2026-11-13T15:33:40.360Z] [INFO] [PAID GROUP INIT] group="PW_Group_20261113_153340_w19r0196yos"
+[2026-11-13T15:33:41.733Z] [INFO] Attempting login for user: pw_auto_mh_leader@mailinator.com | Password: [hidden, 8 chars] (expectSuccess: true)
+[2026-11-13T15:33:44.108Z] [SUCCESS] Login successful. Landed on: https://staging.mentalhappy.com/groups
+[2026-11-13T15:33:44.111Z] [STEP] Navigating to Profile → Earnings
+[2026-11-13T15:33:46.719Z] [SUCCESS] Earnings page loaded
+[2026-11-13T15:33:46.821Z] [INFO] Balance panel not shown (Stripe likely not connected) — treating as 0
+[2026-11-13T15:33:46.822Z] [INFO] [REFUND] Pending balance before the test: $0
+[2026-11-13T15:33:46.855Z] [INFO] Stripe connected for this leader: true
+[2026-11-13T15:33:46.856Z] [INFO] [LEDGER] Recorded "PW_Group_20261113_153340_w19r0196yos" for cleanup.
+[2026-11-13T15:33:46.857Z] [STEP] Initializing Group Creation
+[2026-11-13T15:33:46.861Z] [STEP] Opening Profile → Earnings and clicking Create Group
+[2026-11-13T15:34:19.638Z] [STEP] [SWEEP] Looking for automation groups to free a slot
+[2026-11-13T15:34:19.638Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-11-13T15:34:20.766Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-11-13T15:34:22.299Z] [INFO] Group cards on Plan & Billing: ["QA85 Old hz8c","QA85 Newer 0t5z","AM Test Group of Free"]
+[2026-11-13T15:34:22.299Z] [INFO] [SWEEP] No automation groups to remove. The account holds 3 group(s), none matching PW_Group_* — so the limit is taken by groups this suite did not create. Free one by hand.
