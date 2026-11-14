@@ -1,0 +1,81 @@
+[2026-11-14T14:18:57.736Z] [STEP] [SETUP] Leader: register and pay for the Multi-Group plan
+[2026-11-14T14:18:57.743Z] [STEP] Registering new leader with email: pw_auto_mh_14141857l9p6@mentalhappy.com
+[2026-11-14T14:18:57.744Z] [STEP] Navigating to Registration Page
+[2026-11-14T14:18:59.268Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-14T14:18:59.556Z] [SUCCESS] Registration Page loaded
+[2026-11-14T14:18:59.556Z] [STEP] Filling registration form for: pw_auto_mh_14141857l9p6@mentalhappy.com
+[2026-11-14T14:19:00.933Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-14T14:19:01.007Z] [STEP] Submitting registration form
+[2026-11-14T14:19:01.318Z] [SUCCESS] Registration form submitted
+[2026-11-14T14:19:01.318Z] [STEP] Waiting for OTP entry page to be ready
+[2026-11-14T14:19:06.995Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-11-14T14:19:06.995Z] [INFO] [OTP] Bypass active for pw_auto_mh_14141857l9p6@mentalhappy.com. Returning fixed validation code: 456321
+[2026-11-14T14:19:07.009Z] [STEP] Entering OTP: 456321
+[2026-11-14T14:19:07.009Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-14T14:19:07.298Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-14T14:19:07.793Z] [SUCCESS] OTP entered
+[2026-11-14T14:19:07.793Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-11-14T14:19:07.797Z] [ASSERT] Verifying toast message matching: /Email Verified Successfully/i
+[2026-11-14T14:19:09.009Z] [SUCCESS] Leader registration and OTP verification completed
+[2026-11-14T14:19:09.009Z] [STEP] Selecting Leader role on Welcome page
+[2026-11-14T14:19:09.009Z] [STEP] Verifying Welcome Page is displayed
+[2026-11-14T14:19:09.010Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-14T14:19:09.369Z] [SUCCESS] Welcome Page verification successful (Role buttons visible)
+[2026-11-14T14:19:09.369Z] [STEP] Selecting path: Continue as a Group Leader
+[2026-11-14T14:19:09.369Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-14T14:19:09.584Z] [INFO] Clicked Continue as a Group Leader
+[2026-11-14T14:19:09.616Z] [SUCCESS] Group Leader path selected
+[2026-11-14T14:19:09.616Z] [STEP] Clicking Welcome Continue button
+[2026-11-14T14:19:09.616Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-14T14:19:09.804Z] [SUCCESS] Welcome Continue clicked
+[2026-11-14T14:19:09.804Z] [SUCCESS] Leader role selection completed
+[2026-11-14T14:19:09.804Z] [STEP] Completing Leader onboarding via SKIP path
+[2026-11-14T14:19:09.805Z] [STEP] Completing Leader onboarding via SKIP (Deep Check Flow)
+[2026-11-14T14:19:09.842Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-14T14:19:09.867Z] [INFO] Checking for Screen 2 (Survey) Skip option...
+[2026-11-14T14:19:09.886Z] [STEP] Clicking Onboarding Skip button
+[2026-11-14T14:19:09.887Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-14T14:19:13.811Z] [SUCCESS] Onboarding cleared successfully
+[2026-11-14T14:19:13.812Z] [SUCCESS] Leader onboarding (Skip) completed
+[2026-11-14T14:19:13.812Z] [STEP] Selecting Multi-Group Plan ($49)
+[2026-11-14T14:19:13.918Z] [STEP] Verifying Hosting Plan page content
+[2026-11-14T14:19:14.720Z] [SUCCESS] Hosting Plan page verification successful
+[2026-11-14T14:19:14.720Z] [STEP] Selecting Multi-Group Plan
+[2026-11-14T14:19:14.962Z] [STEP] Verifying the plan selection landed on the checkout
+[2026-11-14T14:19:15.127Z] [INFO] [STRIPE] Stripe's script files are served from the shared cache (storage/stripe-cache)
+[2026-11-14T14:19:15.199Z] [SUCCESS] Checkout page reached
+[2026-11-14T14:19:15.199Z] [SUCCESS] Multi-Group plan selected, landed on the checkout
+[2026-11-14T14:19:15.199Z] [STEP] Completing Stripe Payment
+[2026-11-14T14:19:15.200Z] [STEP] Verifying Stripe form visibility
+[2026-11-14T14:19:23.421Z] [SUCCESS] Stripe form verified — ready after 8.2s
+[2026-11-14T14:19:23.422Z] [STEP] Filling Stripe payment details
+[2026-11-14T14:19:23.477Z] [STEP] Selecting country: US
+[2026-11-14T14:19:23.548Z] [SUCCESS] Country settled on US
+[2026-11-14T14:19:26.979Z] [SUCCESS] Stripe payment details filled
+[2026-11-14T14:19:26.980Z] [STEP] Submitting payment (attempt 1/3)
+[2026-11-14T14:19:29.193Z] [SUCCESS] Payment submitted
+[2026-11-14T14:19:29.195Z] [INFO] [PAYMENT] Stripe: succeeded, 4900 usd cents, 1 confirm request(s)
+[2026-11-14T14:19:29.195Z] [SUCCESS] Stripe payment submitted
+[2026-11-14T14:19:29.195Z] [STEP] Verifying Payment Success (Redirect or Popup)
+[2026-11-14T14:19:33.040Z] [INFO] Payment landing state: popup — https://staging.mentalhappy.com/welcome/hosting-payment?plan=MULTI_GROUP&period=monthly
+[2026-11-14T14:19:33.040Z] [STEP] Verifying Payment Success popup visibility
+[2026-11-14T14:19:33.119Z] [SUCCESS] Payment Success popup verified
+[2026-11-14T14:19:33.119Z] [STEP] Clicking "Do this later"
+[2026-11-14T14:19:33.869Z] [SUCCESS] Success popup dismissed via Do this later
+[2026-11-14T14:19:34.627Z] [SUCCESS] Subscription completed and reached target page.
+[2026-11-14T14:19:34.627Z] [STEP] [SETUP] Leader: other group + one session
+[2026-11-14T14:19:34.628Z] [STEP] Creating group: PW_Group_20261114_141857_w0r0376iu1
+[2026-11-14T14:19:34.628Z] [STEP] Opening Profile → Earnings and clicking Create Group
+[2026-11-14T14:19:36.587Z] [ASSERT] Create Group page is loaded
+[2026-11-14T14:19:36.588Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-14T14:19:37.563Z] [STEP] Filling Group Name
+[2026-11-14T14:19:37.765Z] [STEP] Filling Group Description
+[2026-11-14T14:19:38.434Z] [STEP] Uploading Cover Image
+[2026-11-14T14:19:38.480Z] [SUCCESS] Cover image uploaded
+[2026-11-14T14:19:38.480Z] [STEP] Opening Select Tags dropdown
+[2026-11-14T14:19:38.583Z] [STEP] Selecting tag (second option — first real option)
+[2026-11-14T14:19:38.680Z] [SUCCESS] Tag selected
+[2026-11-14T14:19:38.680Z] [STEP] Clicking Continue
+[2026-11-14T14:19:38.840Z] [INFO] Professional Background tab detected — completing required fields
+[2026-11-14T14:19:38.841Z] [STEP] Filling Professional Background tab
+[2026-11-14T14:19:38.841Z] [STEP] Uploading Profile Photo

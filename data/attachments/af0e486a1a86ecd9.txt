@@ -1,2 +1,0 @@
-[2026-11-13T15:34:19.638Z] [WARN] [LIMIT] Group creation refused — sweeping automation groups and retrying once.
-[2026-11-13T15:34:22.299Z] [WARN] [SKIP] The leader account is at its active group limit and none of its groups were created by this suite, so nothing could be freed automatically. Delete a spare group by hand or raise the plan, then re-run. Its existing groups were left untouched.
