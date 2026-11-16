@@ -1,0 +1,45 @@
+[2026-11-16T17:00:56.955Z] [INFO] [SETUP] Registering fresh member: pw_auto_mh_16170056hm74@mentalhappy.com
+[2026-11-16T17:00:56.955Z] [STEP] Submitting member registration form for: pw_auto_mh_16170056hm74@mentalhappy.com
+[2026-11-16T17:00:56.958Z] [STEP] Navigating to Registration Page
+[2026-11-16T17:00:58.016Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-16T17:00:58.350Z] [SUCCESS] Registration Page loaded
+[2026-11-16T17:00:58.350Z] [STEP] Filling registration form for: pw_auto_mh_16170056hm74@mentalhappy.com
+[2026-11-16T17:01:00.502Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-16T17:01:00.535Z] [STEP] Submitting registration form
+[2026-11-16T17:01:00.898Z] [SUCCESS] Registration form submitted
+[2026-11-16T17:01:00.898Z] [STEP] Waiting for OTP entry page to be ready
+[2026-11-16T17:01:06.914Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-11-16T17:01:06.914Z] [SUCCESS] Registration form submitted, OTP page reached
+[2026-11-16T17:01:06.914Z] [STEP] Verifying email for: pw_auto_mh_16170056hm74@mentalhappy.com
+[2026-11-16T17:01:06.915Z] [INFO] [OTP] Bypass active for pw_auto_mh_16170056hm74@mentalhappy.com. Returning fixed validation code: 456321
+[2026-11-16T17:01:06.920Z] [STEP] Entering OTP: 456321
+[2026-11-16T17:01:06.920Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-16T17:01:07.332Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-16T17:01:07.692Z] [SUCCESS] OTP entered
+[2026-11-16T17:01:07.692Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-11-16T17:01:07.696Z] [ASSERT] Verifying toast message matching: /Email Verified Successfully/i
+[2026-11-16T17:01:09.729Z] [SUCCESS] Email verification (OTP) successful
+[2026-11-16T17:01:09.729Z] [STEP] Selecting Member role on Welcome page
+[2026-11-16T17:01:09.730Z] [STEP] Verifying Welcome Page is displayed
+[2026-11-16T17:01:09.730Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-16T17:01:09.993Z] [SUCCESS] Welcome Page verification successful (Role buttons visible)
+[2026-11-16T17:01:09.993Z] [STEP] Selecting path: Explore Support Groups
+[2026-11-16T17:01:09.993Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-16T17:01:10.237Z] [INFO] Clicked Explore support groups
+[2026-11-16T17:01:10.277Z] [SUCCESS] Explore Support Groups path selected
+[2026-11-16T17:01:10.278Z] [STEP] Clicking Welcome Continue button
+[2026-11-16T17:01:10.278Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-16T17:01:10.602Z] [SUCCESS] Welcome Continue clicked
+[2026-11-16T17:01:10.602Z] [SUCCESS] Role selection completed
+[2026-11-16T17:01:10.602Z] [STEP] Completing Member onboarding via SKIP path
+[2026-11-16T17:01:10.640Z] [STEP] Completing Member onboarding via SKIP
+[2026-11-16T17:01:10.640Z] [STEP] Clicking Onboarding Skip button
+[2026-11-16T17:01:10.640Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-16T17:01:12.355Z] [SUCCESS] Redirected to Dashboard via Skip
+[2026-11-16T17:01:12.355Z] [SUCCESS] Member onboarding (Skip) completed
+[2026-11-16T17:01:12.355Z] [SUCCESS] [SETUP] Fresh member ready — entering group join flow
+[2026-11-16T17:01:14.111Z] [SUCCESS] Login successful and dashboard loaded
+[2026-11-16T17:01:14.111Z] [STEP] Clicking on Find a support group
+[2026-11-16T17:01:15.524Z] [STEP] Verifying Explore landing view (category shelves)
+[2026-11-16T17:01:17.006Z] [SUCCESS] Explore landing view verified
+[2026-11-16T17:01:17.006Z] [SUCCESS] Landed on Explore Groups page
