@@ -1,0 +1,9 @@
+[2026-11-17T09:49:29.166Z] [STEP] Testing Expired Card scenario
+[2026-11-17T09:49:29.166Z] [STEP] Verifying Stripe form visibility
+[2026-11-17T09:49:29.253Z] [SUCCESS] Stripe form verified — ready after 0.1s
+[2026-11-17T09:49:29.253Z] [STEP] Filling Stripe payment details
+[2026-11-17T09:49:29.315Z] [STEP] Selecting country: US
+[2026-11-17T09:49:29.349Z] [SUCCESS] Country settled on US
+[2026-11-17T09:49:31.898Z] [SUCCESS] Stripe payment details filled
+[2026-11-17T09:49:32.107Z] [STEP] Verifying expired card error
+[2026-11-17T09:49:32.201Z] [SUCCESS] Expired card error verified

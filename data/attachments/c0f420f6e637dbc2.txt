@@ -1,0 +1,39 @@
+[2026-11-17T09:42:00.124Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-11-17T09:42:02.023Z] [INFO] [STRIPE] Stripe's script files are served from the shared cache (storage/stripe-cache)
+[2026-11-17T09:42:04.607Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-11-17T09:42:04.607Z] [STEP] Verifying Plan & Billing page content
+[2026-11-17T09:42:05.054Z] [SUCCESS] Plan & Billing page verified
+[2026-11-17T09:42:05.113Z] [INFO] Group cards on Plan & Billing: ["PW_Group_20261117_092441_w4r0612mba"]
+[2026-11-17T09:42:05.113Z] [INFO] [LIFECYCLE] Active Plan + 1 group starting state — group "PW_Group_20261117_092441_w4r0612mba"
+[2026-11-17T09:42:05.524Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-11-17T09:42:09.094Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-11-17T09:42:09.094Z] [STEP] Verifying Plan & Billing page content
+[2026-11-17T09:42:09.260Z] [SUCCESS] Plan & Billing page verified
+[2026-11-17T09:42:09.260Z] [STEP] Verifying subscription with price $19 is visible
+[2026-11-17T09:42:09.279Z] [SUCCESS] Subscription details verified
+[2026-11-17T09:42:09.420Z] [INFO] Next billing date: December 17, 2026
+[2026-11-17T09:42:09.420Z] [ASSERT] "PW_Group_20261117_092441_w4r0612mba" reads "Active" on Plan & Billing
+[2026-11-17T09:42:09.490Z] [SUCCESS] DL-01 PASSED: $19 Active Plan, next billing December 17, 2026, "PW_Group_20261117_092441_w4r0612mba" Active
+[2026-11-17T09:42:09.492Z] [ASSERT] "Subscription options" lists ["Cancel Subscription"]
+[2026-11-17T09:42:10.247Z] [ASSERT] "Group options" for "PW_Group_20261117_092441_w4r0612mba" lists ["Cancel & Delete Group","Downgrade to Listing"]
+[2026-11-17T09:42:10.247Z] [STEP] Opening "Group options" menu for group "PW_Group_20261117_092441_w4r0612mba"
+[2026-11-17T09:42:10.716Z] [SUCCESS] DL-02 PASSED: plan and group menus verified
+[2026-11-17T09:42:10.716Z] [STEP] Clicking "Downgrade to Listing" for group "PW_Group_20261117_092441_w4r0612mba"
+[2026-11-17T09:42:10.716Z] [STEP] Opening "Group options" menu for group "PW_Group_20261117_092441_w4r0612mba"
+[2026-11-17T09:42:11.210Z] [ASSERT] Move Group to Listing modal is visible
+[2026-11-17T09:42:11.380Z] [ASSERT] Move-to-Listing modal names the group "PW_Group_20261117_092441_w4r0612mba"
+[2026-11-17T09:42:11.434Z] [SUCCESS] DL-03 PASSED: Move to Listing modal opened for the group
+[2026-11-17T09:42:11.435Z] [ASSERT] Move-to-Listing warning bullets are visible
+[2026-11-17T09:42:11.476Z] [SUCCESS] DL-04 PASSED: Modal warning bullets verified
+[2026-11-17T09:42:11.477Z] [STEP] Clicking "Downgrade to Listing" — confirming downgrade
+[2026-11-17T09:42:11.592Z] [ASSERT] Toast "The group is now a listing group. Your plan ends on December 17, 2026 unless you make a group active." is visible
+[2026-11-17T09:42:13.267Z] [SUCCESS] DL-05 PASSED: group moved; plan set to end
+[2026-11-17T09:42:13.267Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-11-17T09:42:16.106Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-11-17T09:42:16.106Z] [STEP] Verifying Plan & Billing page content
+[2026-11-17T09:42:16.183Z] [SUCCESS] Plan & Billing page verified
+[2026-11-17T09:42:16.183Z] [STEP] Verifying subscription with price $19 is visible
+[2026-11-17T09:42:16.213Z] [SUCCESS] Subscription details verified
+[2026-11-17T09:42:16.213Z] [ASSERT] Plan card reads "Your plan ends on December 17, 2026 because no group is active. Make a group active before then to keep it."
+[2026-11-17T09:42:16.300Z] [ASSERT] "Subscription options" lists ["Keep My Plan"]
+[2026-11-17T09:42:16.723Z] [SUCCESS] DL-06 PASSED: plan runs to the period end, then ends

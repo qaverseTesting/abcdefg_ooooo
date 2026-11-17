@@ -1,2 +1,0 @@
-[2026-11-16T17:10:08.179Z] [WARN] [PAYMENT ERROR] [page] Hosting Payment | MentalHappy | [stripe-frame] Please try again. ⚠️
-[2026-11-16T17:10:08.179Z] [WARN] [PAYMENT RETRY] Stripe returned a transient error on attempt 1 ([stripe-frame] Please try again. ⚠️). Retrying — the card and every other field are still filled, so only the submit is repeated.

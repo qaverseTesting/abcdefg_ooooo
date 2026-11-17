@@ -1,6 +1,0 @@
-[2026-11-16T17:19:02.312Z] [STEP] Navigating to Profile → Plan & Billing
-[2026-11-16T17:19:03.944Z] [INFO] [STRIPE] Stripe's script files are served from the shared cache (storage/stripe-cache)
-[2026-11-16T17:19:06.057Z] [SUCCESS] Profile Plan & Billing page loaded
-[2026-11-16T17:19:06.057Z] [ASSERT] Verifying a "Paid" transaction matching "STRIPE_USER_HOSTING_PRODUCT"
-[2026-11-16T17:19:06.057Z] [STEP] Reading Transactions History
-[2026-11-16T17:19:06.673Z] [SUCCESS] Transactions History has 1 row(s)

@@ -1,0 +1,33 @@
+[2026-11-17T09:41:20.628Z] [STEP] Opening group Settings tab for: pw_group_20261117_094043_w13r0741l8o
+[2026-11-17T09:41:23.885Z] [SUCCESS] Group Settings tab loaded
+[2026-11-17T09:41:23.885Z] [STEP] Clicking "Change Pricing Model"
+[2026-11-17T09:41:23.960Z] [SUCCESS] "Change Pricing Model" clicked
+[2026-11-17T09:41:23.960Z] [STEP] Verifying Update Group Pricing page loaded
+[2026-11-17T09:41:24.807Z] [SUCCESS] Update Group Pricing page loaded
+[2026-11-17T09:41:24.808Z] [STEP] Selecting "Monthly Subscription" pricing model
+[2026-11-17T09:41:25.042Z] [SUCCESS] Monthly Subscription selected
+[2026-11-17T09:41:25.042Z] [ASSERT] Verifying monthly price input min/max/step constraints
+[2026-11-17T09:41:25.076Z] [SUCCESS] Monthly price input constraints verified
+[2026-11-17T09:41:25.077Z] [STEP] Selecting "One-Time Payment" pricing model
+[2026-11-17T09:41:25.199Z] [SUCCESS] One-Time Payment selected
+[2026-11-17T09:41:25.199Z] [ASSERT] Verifying one-time price input min/max/step constraints
+[2026-11-17T09:41:25.256Z] [SUCCESS] One-time price input constraints verified
+[2026-11-17T09:41:25.257Z] [STEP] Selecting "Monthly Subscription" pricing model
+[2026-11-17T09:41:25.534Z] [SUCCESS] Monthly Subscription selected
+[2026-11-17T09:41:25.534Z] [ASSERT] A monthly price of $4.99 is refused
+[2026-11-17T09:41:25.851Z] [ASSERT] A monthly price of $10000 is refused
+[2026-11-17T09:41:26.153Z] [SUCCESS] Prices outside $5–$9,999 are refused
+[2026-11-17T09:41:26.153Z] [STEP] Clearing monthly price input
+[2026-11-17T09:41:26.208Z] [SUCCESS] Monthly price input cleared
+[2026-11-17T09:41:26.208Z] [ASSERT] Verifying "Update Pricing" is disabled
+[2026-11-17T09:41:26.231Z] [SUCCESS] "Update Pricing" is disabled as expected
+[2026-11-17T09:41:26.231Z] [STEP] Entering monthly price: $10
+[2026-11-17T09:41:26.370Z] [SUCCESS] Monthly price set to $10
+[2026-11-17T09:41:26.373Z] [STEP] Clicking "Update Pricing"
+[2026-11-17T09:41:26.635Z] [SUCCESS] "Update Pricing" clicked — confirmation dialog opened
+[2026-11-17T09:41:26.635Z] [STEP] Clicking "Cancel" on the pricing confirmation dialog
+[2026-11-17T09:41:27.077Z] [SUCCESS] Confirmation dialog dismissed via Cancel — no change applied
+[2026-11-17T09:41:27.077Z] [STEP] Verifying Update Group Pricing page loaded
+[2026-11-17T09:41:27.134Z] [SUCCESS] Update Group Pricing page loaded
+[2026-11-17T09:41:27.134Z] [SUCCESS] [PRICING JOURNEY VERIFIED] - Group: PW_Group_20261117_094043_w13r0741l8o
+[2026-11-17T09:41:27.300Z] [INFO] [PRICING DONE] - Group: PW_Group_20261117_094043_w13r0741l8o

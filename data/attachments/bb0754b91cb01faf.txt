@@ -1,0 +1,9 @@
+[2026-11-17T09:45:36.949Z] [NAV] Navigating to Registration
+[2026-11-17T09:45:38.405Z] [STEP] Generated email for Resend OTP test: pw_auto_mh_17094538pna7@mentalhappy.com
+[2026-11-17T09:45:38.405Z] [STEP] Filling registration form for: pw_auto_mh_17094538pna7@mentalhappy.com
+[2026-11-17T09:45:39.389Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-17T09:45:39.399Z] [STEP] Submitting registration form
+[2026-11-17T09:45:39.850Z] [SUCCESS] Registration form submitted
+[2026-11-17T09:45:41.976Z] [STEP] Waiting for OTP entry page to be ready
+[2026-11-17T09:45:43.711Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-11-17T09:45:43.711Z] [INFO] Phase 1 Complete: User is on OTP page, ready for resend timer check.
