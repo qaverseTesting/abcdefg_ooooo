@@ -1,0 +1,46 @@
+[2026-11-17T17:05:17.209Z] [STEP] Opening dashboard
+[2026-11-17T17:05:19.791Z] [STEP] Searching for "PW_Group_20261117_170245_w12r0431ywp" — up to 5 attempts (fresh groups index slowly)
+[2026-11-17T17:05:19.791Z] [STEP] Searching for group: PW_Group_20261117_170245_w12r0431ywp
+[2026-11-17T17:05:24.794Z] [INFO] Search "PW_Group_20261117_170245_w12r0431ywp" settled: explore-grid data-state="ready"
+[2026-11-17T17:05:24.907Z] [SUCCESS] Group "PW_Group_20261117_170245_w12r0431ywp" found in Explore search (attempt 1/5)
+[2026-11-17T17:05:24.907Z] [STEP] Verifying group card content for: PW_Group_20261117_170245_w12r0431ywp
+[2026-11-17T17:05:25.258Z] [SUCCESS] Group card content verified: PW_Group_20261117_170245_w12r0431ywp
+[2026-11-17T17:05:30.616Z] [INFO] [FOLLOW CHECK] PW_Group_20261117_170245_w12r0431ywp: isUpcoming=false · Follow=false · Unfollow=false · Join=true · https://staging.mentalhappy.com/groups/pw_group_20261117_170245_w12r0431ywp
+[2026-11-17T17:05:30.667Z] [STEP] Clicking join on "PW_Group_20261117_170245_w12r0431ywp" — detecting destination (checkout or group)
+[2026-11-17T17:05:30.741Z] [INFO] Side panel not open — clicking card to open: PW_Group_20261117_170245_w12r0431ywp
+[2026-11-17T17:05:30.741Z] [STEP] Clicking group card: PW_Group_20261117_170245_w12r0431ywp
+[2026-11-17T17:05:31.783Z] [SUCCESS] Group card clicked: PW_Group_20261117_170245_w12r0431ywp
+[2026-11-17T17:05:33.738Z] [SUCCESS] Join destination for "PW_Group_20261117_170245_w12r0431ywp": checkout
+[2026-11-17T17:05:33.738Z] [STEP] Verifying checkout summary for: PW_Group_20261117_170245_w12r0431ywp
+[2026-11-17T17:05:40.442Z] [SUCCESS] Checkout summary verified
+[2026-11-17T17:05:40.442Z] [STEP] Verifying $3 platform fee is disclosed and added to the total
+[2026-11-17T17:05:41.528Z] [SUCCESS] Platform fee verified: $3 disclosed and included in the $3 total
+[2026-11-17T17:05:41.528Z] [STEP] Verifying Stripe iframe is visible
+[2026-11-17T17:05:42.199Z] [SUCCESS] Stripe iframe verified
+[2026-11-17T17:05:42.199Z] [STEP] Filling Stripe payment details
+[2026-11-17T17:05:42.768Z] [STEP] Selecting country: US
+[2026-11-17T17:05:42.918Z] [SUCCESS] Country settled on US
+[2026-11-17T17:05:45.996Z] [SUCCESS] Stripe payment details filled
+[2026-11-17T17:05:45.997Z] [STEP] Submitting payment (attempt 1/3)
+[2026-11-17T17:05:50.826Z] [SUCCESS] Payment submitted
+[2026-11-17T17:05:50.832Z] [INFO] [PAYMENT] Stripe: succeeded, 300 usd cents, 1 confirm request(s)
+[2026-11-17T17:05:50.845Z] [SUCCESS] [CHARGED] Donation join: Stripe took exactly $3.00
+[2026-11-17T17:05:50.846Z] [STEP] Waiting for group page to load after payment redirect
+[2026-11-17T17:05:50.853Z] [SUCCESS] Group page loaded
+[2026-11-17T17:05:50.853Z] [STEP] Checking for post-join success modal
+[2026-11-17T17:05:51.360Z] [SUCCESS] Success modal handled
+[2026-11-17T17:05:51.360Z] [STEP] Verifying Conversations tab is visible
+[2026-11-17T17:05:51.644Z] [SUCCESS] Conversations tab visible — membership access confirmed
+[2026-11-17T17:08:56.125Z] [SUCCESS] [COVERED] Donating $10 is charged as $10 — no second platform fee
+[2026-11-17T17:08:56.486Z] [STEP] Verifying Stripe iframe is visible
+[2026-11-17T17:08:59.125Z] [SUCCESS] Stripe iframe verified
+[2026-11-17T17:08:59.125Z] [STEP] Filling Stripe payment details
+[2026-11-17T17:09:00.404Z] [STEP] Selecting country: US
+[2026-11-17T17:09:00.648Z] [SUCCESS] Country settled on US
+[2026-11-17T17:09:03.038Z] [SUCCESS] Stripe payment details filled
+[2026-11-17T17:09:03.039Z] [STEP] Submitting payment (attempt 1/3)
+[2026-11-17T17:09:05.172Z] [SUCCESS] Payment submitted
+[2026-11-17T17:09:05.174Z] [INFO] [PAYMENT] Stripe: succeeded, 1000 usd cents, 1 confirm request(s)
+[2026-11-17T17:09:05.177Z] [SUCCESS] [CHARGED] donation: Stripe took exactly $10.00
+[2026-11-17T17:09:06.172Z] [INFO] [DONATION] after paying, the member is on https://staging.mentalhappy.com/groups/pw_group_20261117_170245_w12r0431ywp/room
+[2026-11-17T17:09:07.718Z] [INFO] [MEMBERSHIP] {"groupId":"6afc88caeacac4d0f6500427","isMember":true,"status":"ACTIVE","isFollowing":false,"joinRequestStatus":null,"trial":{"available":false,"days":0.0104167},"openCheckout":null}
