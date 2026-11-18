@@ -1,7 +1,0 @@
-[2026-11-17T17:11:38.888Z] [STEP] Opening group Settings tab for: pw_group_20261117_170245_w12r0431ywp
-[2026-11-17T17:11:44.624Z] [SUCCESS] Group Settings tab loaded
-[2026-11-17T17:11:44.625Z] [STEP] Setting the group's free trial OFF
-[2026-11-17T17:11:45.234Z] [SUCCESS] Free trial is OFF
-[2026-11-17T17:11:45.303Z] [INFO] Already Monthly $5 (set by TR-01) — nothing to change
-[2026-11-17T17:11:45.303Z] [ASSERT] Verifying monthly pricing summary: Monthly Paid $5/Month
-[2026-11-17T17:11:45.425Z] [SUCCESS] Monthly pricing summary verified: $5/Month

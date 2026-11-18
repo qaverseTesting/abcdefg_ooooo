@@ -1,0 +1,26 @@
+[2026-11-18T16:33:53.615Z] [STEP] Opening group room "pw_group_20261118_163136_w0r07130m5" on tab=sessions
+[2026-11-18T16:33:56.120Z] [SUCCESS] Group room open on tab=sessions
+[2026-11-18T16:33:56.120Z] [STEP] Starting Session Creation flow for: PW_Session_20261118_163353_w10r06158wh
+[2026-11-18T16:33:56.120Z] [STEP] Opening Schedule Session modal
+[2026-11-18T16:33:58.907Z] [STEP] Waiting for Create Session modal
+[2026-11-18T16:33:59.135Z] [SUCCESS] Create Session modal visible
+[2026-11-18T16:33:59.135Z] [STEP] Filling Create Session form
+[2026-11-18T16:33:59.135Z] [STEP] Setting session date to next day
+[2026-11-18T16:34:01.478Z] [INFO] Session date set to 19 November, 2026
+[2026-11-18T16:34:01.478Z] [STEP] Ensuring timezone is selected
+[2026-11-18T16:34:01.897Z] [INFO] Searching for timezone "Pacific"
+[2026-11-18T16:34:02.854Z] [INFO] Timezone selection attempted via keyboard
+[2026-11-18T16:34:02.854Z] [STEP] Setting session time
+[2026-11-18T16:34:05.095Z] [INFO] Session time set to 10:00 AM – 11:00 AM
+[2026-11-18T16:34:05.124Z] [INFO] Filling description editor
+[2026-11-18T16:34:06.235Z] [SUCCESS] Form filling completed
+[2026-11-18T16:34:06.236Z] [STEP] Making the session recurring: Weekly, ending 09 December, 2026
+[2026-11-18T16:34:08.321Z] [STEP] Submitting session
+[2026-11-18T16:34:08.510Z] [STEP] Verifying session creation (modal closed)
+[2026-11-18T16:34:10.530Z] [SUCCESS] Session "PW_Session_20261118_163353_w10r06158wh" submitted.
+[2026-11-18T16:34:10.531Z] [STEP] Opening session details: PW_Session_20261118_163353_w10r06158wh
+[2026-11-18T16:34:10.531Z] [STEP] Navigating to Sessions tab
+[2026-11-18T16:34:10.550Z] [SUCCESS] Sessions tab active
+[2026-11-18T16:34:10.551Z] [STEP] Waiting for session list to settle
+[2026-11-18T16:34:10.579Z] [SUCCESS] Session list settled — 2 session(s)
+[2026-11-18T16:34:10.967Z] [SUCCESS] Session details opened

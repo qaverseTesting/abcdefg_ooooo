@@ -1,0 +1,29 @@
+[2026-11-18T16:49:54.827Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-11-18T16:49:58.027Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-11-18T16:49:58.027Z] [STEP] Verifying Plan & Billing page content
+[2026-11-18T16:49:58.304Z] [SUCCESS] Plan & Billing page verified
+[2026-11-18T16:49:58.304Z] [STEP] Verifying subscription with price $49 is visible
+[2026-11-18T16:49:58.340Z] [SUCCESS] Subscription details verified
+[2026-11-18T16:49:58.421Z] [INFO] Next billing date: December 18, 2026
+[2026-11-18T16:49:58.509Z] [INFO] Group cards on Plan & Billing: ["PW_Group_20261118_162941_w3r0122b2r","PW_Group_20261118_162929_w3r0783r1d"]
+[2026-11-18T16:49:58.509Z] [ASSERT] "PW_Group_20261118_162941_w3r0122b2r" reads "Active" on Plan & Billing
+[2026-11-18T16:49:58.525Z] [ASSERT] "PW_Group_20261118_162929_w3r0783r1d" reads "Active" on Plan & Billing
+[2026-11-18T16:49:58.538Z] [SUCCESS] PC-01 PASSED: $49 plan, next billing December 18, 2026, 2 active groups
+[2026-11-18T16:49:58.539Z] [STEP] "Subscription options" → "Cancel Subscription"
+[2026-11-18T16:49:59.017Z] [ASSERT] "Cancel Subscription?" confirmation modal is visible
+[2026-11-18T16:49:59.386Z] [ASSERT] Cancel-subscription warnings name December 18, 2026 and 2 active group(s)
+[2026-11-18T16:49:59.656Z] [SUCCESS] PC-02 PASSED: "Cancel Subscription?" modal + warnings verified
+[2026-11-18T16:49:59.657Z] [STEP] Confirming "Cancel Subscription" — scheduling the end of the plan
+[2026-11-18T16:50:01.933Z] [SUCCESS] Subscription cancellation scheduled — modal dismissed
+[2026-11-18T16:50:01.944Z] [SUCCESS] PC-03 PASSED: plan end scheduled
+[2026-11-18T16:50:01.945Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-11-18T16:50:05.907Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-11-18T16:50:05.907Z] [STEP] Verifying Plan & Billing page content
+[2026-11-18T16:50:06.222Z] [SUCCESS] Plan & Billing page verified
+[2026-11-18T16:50:06.222Z] [STEP] Verifying subscription with price $49 is visible
+[2026-11-18T16:50:06.273Z] [SUCCESS] Subscription details verified
+[2026-11-18T16:50:06.273Z] [ASSERT] Plan card reads "Your plan ends on December 18, 2026. You will not be charged again."
+[2026-11-18T16:50:06.327Z] [ASSERT] "PW_Group_20261118_162941_w3r0122b2r" reads "Active" on Plan & Billing
+[2026-11-18T16:50:06.342Z] [ASSERT] "PW_Group_20261118_162929_w3r0783r1d" reads "Active" on Plan & Billing
+[2026-11-18T16:50:06.354Z] [ASSERT] "Subscription options" lists ["Keep My Plan"]
+[2026-11-18T16:50:07.068Z] [SUCCESS] PC-04 PASSED: cancellation scheduled; nothing changes before the date

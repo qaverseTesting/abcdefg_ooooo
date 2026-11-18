@@ -1,0 +1,10 @@
+[2026-11-18T16:35:33.146Z] [STEP] Opening group room "pw_group_20261118_163136_w0r07130m5" on tab=conversations
+[2026-11-18T16:35:35.223Z] [SUCCESS] Group room open on tab=conversations
+[2026-11-18T16:35:37.098Z] [STEP] Opening Edit from the feed card menu: PW_Session_20261118_163136_w0r0713ixj
+[2026-11-18T16:35:39.604Z] [ASSERT] Verifying the edit form is open for "PW_Session_20261118_163136_w0r0713ixj"
+[2026-11-18T16:35:40.065Z] [INFO] Setting title: PW_Session_20261118_163533_w10r01451sv
+[2026-11-18T16:35:40.409Z] [STEP] Saving session changes (Update)
+[2026-11-18T16:35:43.070Z] [ASSERT] Verifying no feed card reads "PW_Session_20261118_163136_w0r0713ixj"
+[2026-11-18T16:35:43.203Z] [STEP] Opening group room "pw_group_20261118_163136_w0r07130m5" on tab=conversations
+[2026-11-18T16:35:45.470Z] [SUCCESS] Group room open on tab=conversations
+[2026-11-18T16:35:48.257Z] [ASSERT] Verifying no feed card reads "PW_Session_20261118_163136_w0r0713ixj"

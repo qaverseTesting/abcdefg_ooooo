@@ -1,0 +1,9 @@
+[2026-11-18T16:47:23.688Z] [STEP] Navigating to Profile → Earnings
+[2026-11-18T16:47:27.874Z] [SUCCESS] Earnings page loaded
+[2026-11-18T16:47:28.150Z] [INFO] Balance panel not shown (Stripe likely not connected) — treating as 0
+[2026-11-18T16:47:28.150Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-11-18T16:47:34.916Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-11-18T16:47:34.924Z] [STEP] Reading Transactions History
+[2026-11-18T16:47:36.019Z] [SUCCESS] Transactions History has 4 row(s)
+[2026-11-18T16:47:36.021Z] [INFO] [REFUND] pending before=$0 afterPayment=$0 afterDelete=$0
+[2026-11-18T16:47:36.021Z] [INFO] [REFUND] transaction rows: ["Oct 28, 2026 Multi-Group plan, monthly -$49.00 Paid","Sep 30, 2026 Multi-Group plan, monthly -$49.00 Paid","Aug 30, 2026 Multi-Group plan, monthly -$49.00 Paid","Jul 30, 2026 Multi-Group plan, monthly -$49.00 Paid"]
