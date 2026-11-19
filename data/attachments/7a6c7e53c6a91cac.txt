@@ -1,0 +1,31 @@
+[2026-11-19T17:01:16.376Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-11-19T17:01:21.112Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-11-19T17:01:21.112Z] [STEP] Verifying Plan & Billing page content
+[2026-11-19T17:01:21.722Z] [SUCCESS] Plan & Billing page verified
+[2026-11-19T17:01:21.723Z] [STEP] Verifying subscription with price $19 is visible
+[2026-11-19T17:01:21.767Z] [SUCCESS] Subscription details verified
+[2026-11-19T17:01:21.821Z] [INFO] Next billing date: December 19, 2026
+[2026-11-19T17:01:21.822Z] [SUCCESS] CD-01 PASSED: Active Plan confirmed as starting point
+[2026-11-19T17:01:21.827Z] [STEP] Clicking "Cancel & Delete Group" for group "PW_Group_20261119_163651_w4r0016b8q"
+[2026-11-19T17:01:21.827Z] [STEP] Opening "Group options" menu for group "PW_Group_20261119_163651_w4r0016b8q"
+[2026-11-19T17:01:22.405Z] [ASSERT] Outer Cancel & Delete modal (2-button) is visible
+[2026-11-19T17:01:23.162Z] [ASSERT] Outer modal says: "This is your only active group, so your plan ends on December 19, 2026. You will not be charged again."
+[2026-11-19T17:01:23.248Z] [SUCCESS] CD-02 PASSED: outer modal with [Downgrade to Listing] + [Delete Group] and the plan-end warning
+[2026-11-19T17:01:23.254Z] [STEP] Outer modal: clicking "Delete Group" to open Reason modal
+[2026-11-19T17:01:23.661Z] [ASSERT] Reason-selection modal is visible
+[2026-11-19T17:01:24.281Z] [SUCCESS] CD-03 PASSED: Reason-selection modal opened with "Why Are You Leaving?"
+[2026-11-19T17:01:24.282Z] [ASSERT] "Continue to Delete" is disabled before a reason is selected
+[2026-11-19T17:01:24.338Z] [SUCCESS] CD-04 PASSED: "Continue to Delete" disabled before reason selection
+[2026-11-19T17:01:24.339Z] [STEP] Selecting first reason checkbox to enable Continue to Delete
+[2026-11-19T17:01:24.480Z] [ASSERT] "Continue to Delete" is enabled after a reason is selected
+[2026-11-19T17:01:24.561Z] [SUCCESS] CD-05 PASSED: "Continue to Delete" enabled after reason selection
+[2026-11-19T17:01:24.562Z] [STEP] Clicking "Continue to Delete" — confirming destructive delete
+[2026-11-19T17:01:24.812Z] [ASSERT] "The group has been deleted." toast is visible
+[2026-11-19T17:01:27.582Z] [SUCCESS] CD-06 PASSED: "The group has been deleted." toast confirmed
+[2026-11-19T17:01:27.583Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-11-19T17:01:32.709Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-11-19T17:01:32.710Z] [STEP] Verifying Plan & Billing page content
+[2026-11-19T17:01:33.015Z] [SUCCESS] Plan & Billing page verified
+[2026-11-19T17:01:33.139Z] [ASSERT] Plan card reads "Your plan ends on December 19, 2026 because no group is active. Make a group active before then to keep it."
+[2026-11-19T17:01:33.212Z] [ASSERT] "Subscription options" lists ["Keep My Plan"]
+[2026-11-19T17:01:33.858Z] [SUCCESS] CD-07 PASSED: group deleted; plan set to end at the period end

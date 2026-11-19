@@ -1,0 +1,56 @@
+[2026-11-19T17:03:55.638Z] [STEP] Prerequisite: Setting up new Leader for payment testing
+[2026-11-19T17:03:55.638Z] [STEP] Registering new leader with email: pw_auto_mh_19170355s4s8@mentalhappy.com
+[2026-11-19T17:03:55.641Z] [STEP] Navigating to Registration Page
+[2026-11-19T17:03:56.883Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-19T17:03:57.146Z] [SUCCESS] Registration Page loaded
+[2026-11-19T17:03:57.146Z] [STEP] Filling registration form for: pw_auto_mh_19170355s4s8@mentalhappy.com
+[2026-11-19T17:03:58.061Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-19T17:03:58.078Z] [STEP] Submitting registration form
+[2026-11-19T17:03:58.382Z] [SUCCESS] Registration form submitted
+[2026-11-19T17:03:58.382Z] [STEP] Waiting for OTP entry page to be ready
+[2026-11-19T17:04:02.095Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-11-19T17:04:02.095Z] [INFO] [OTP] Bypass active for pw_auto_mh_19170355s4s8@mentalhappy.com. Returning fixed validation code: 456321
+[2026-11-19T17:04:02.097Z] [STEP] Entering OTP: 456321
+[2026-11-19T17:04:02.097Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-19T17:04:02.262Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-19T17:04:02.454Z] [SUCCESS] OTP entered
+[2026-11-19T17:04:02.454Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-11-19T17:04:02.456Z] [ASSERT] Verifying toast message matching: /Email Verified Successfully/i
+[2026-11-19T17:04:04.481Z] [SUCCESS] Leader registration and OTP verification completed
+[2026-11-19T17:04:04.482Z] [STEP] Selecting Leader role on Welcome page
+[2026-11-19T17:04:04.482Z] [STEP] Verifying Welcome Page is displayed
+[2026-11-19T17:04:04.482Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-19T17:04:04.659Z] [SUCCESS] Welcome Page verification successful (Role buttons visible)
+[2026-11-19T17:04:04.659Z] [STEP] Selecting path: Continue as a Group Leader
+[2026-11-19T17:04:04.659Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-19T17:04:04.794Z] [INFO] Clicked Continue as a Group Leader
+[2026-11-19T17:04:04.810Z] [SUCCESS] Group Leader path selected
+[2026-11-19T17:04:04.810Z] [STEP] Clicking Welcome Continue button
+[2026-11-19T17:04:04.810Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-19T17:04:04.979Z] [SUCCESS] Welcome Continue clicked
+[2026-11-19T17:04:04.979Z] [SUCCESS] Leader role selection completed
+[2026-11-19T17:04:04.979Z] [STEP] Completing Leader onboarding via SKIP path
+[2026-11-19T17:04:04.980Z] [STEP] Completing Leader onboarding via SKIP (Deep Check Flow)
+[2026-11-19T17:04:05.026Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-19T17:04:05.062Z] [INFO] Checking for Screen 2 (Survey) Skip option...
+[2026-11-19T17:04:05.079Z] [STEP] Clicking Onboarding Skip button
+[2026-11-19T17:04:05.079Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-19T17:04:08.700Z] [SUCCESS] Onboarding cleared successfully
+[2026-11-19T17:04:08.700Z] [SUCCESS] Leader onboarding (Skip) completed
+[2026-11-19T17:04:08.700Z] [STEP] Selecting Active Plan ($19)
+[2026-11-19T17:04:09.425Z] [STEP] Verifying Hosting Plan page content
+[2026-11-19T17:04:10.505Z] [SUCCESS] Hosting Plan page verification successful
+[2026-11-19T17:04:10.506Z] [STEP] Selecting Active Group Plan
+[2026-11-19T17:04:10.870Z] [STEP] Verifying the plan selection landed on the checkout
+[2026-11-19T17:04:11.049Z] [INFO] [STRIPE] Stripe's script files are served from the shared cache (storage/stripe-cache)
+[2026-11-19T17:04:11.189Z] [SUCCESS] Checkout page reached
+[2026-11-19T17:04:11.189Z] [SUCCESS] Plan selected, landed on the checkout
+[2026-11-19T17:04:13.628Z] [STEP] Testing Declined Card scenario
+[2026-11-19T17:04:13.628Z] [STEP] Verifying Stripe form visibility
+[2026-11-19T17:04:18.040Z] [SUCCESS] Stripe form verified — ready after 4.4s
+[2026-11-19T17:04:18.040Z] [STEP] Filling Stripe payment details
+[2026-11-19T17:04:18.150Z] [STEP] Selecting country: US
+[2026-11-19T17:04:18.203Z] [SUCCESS] Country settled on US
+[2026-11-19T17:04:20.626Z] [SUCCESS] Stripe payment details filled
+[2026-11-19T17:04:20.626Z] [STEP] Submitting a card the bank should refuse — expecting "Your card has been declined."
+[2026-11-19T17:04:23.274Z] [SUCCESS] Refused as expected: "Your card has been declined." — no charge, still on the payment page

@@ -1,0 +1,11 @@
+[2026-11-19T16:51:04.726Z] [STEP] Verifying session details page: PW_Session_20261119_164445_w0r01161f4
+[2026-11-19T16:51:06.537Z] [ASSERT] Verifying the session page shows the member as not registered
+[2026-11-19T16:51:06.555Z] [STEP] Registering on the session page
+[2026-11-19T16:51:06.586Z] [ASSERT] Verifying toast message matching: successfully registered to the session
+[2026-11-19T16:51:07.506Z] [ASSERT] Verifying the session page shows the member as registered
+[2026-11-19T16:51:07.907Z] [ASSERT] Verifying the session page reads "1 registered"
+[2026-11-19T16:51:07.922Z] [STEP] Clicking Unregister on the session page
+[2026-11-19T16:51:09.660Z] [ASSERT] Verifying unregister confirmation for: PW_Session_20261119_164445_w0r01161f4
+[2026-11-19T16:51:09.677Z] [STEP] Confirming unregister ("Yes, cancel")
+[2026-11-19T16:51:10.612Z] [ASSERT] Verifying the session page shows the member as not registered
+[2026-11-19T16:51:10.766Z] [ASSERT] Verifying the session page reads "0 registered"
