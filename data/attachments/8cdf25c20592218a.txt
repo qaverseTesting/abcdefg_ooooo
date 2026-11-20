@@ -1,7 +1,0 @@
-[2026-11-19T17:03:41.818Z] [STEP] Opening dashboard
-[2026-11-19T17:03:43.642Z] [STEP] Searching for group: AMActiveGroupV2
-[2026-11-19T17:03:46.087Z] [INFO] Search "AMActiveGroupV2" settled: explore-grid data-state="ready"
-[2026-11-19T17:03:46.091Z] [STEP] Searching for group: zzqx-no-such-group-7431
-[2026-11-19T17:03:47.337Z] [INFO] Search "zzqx-no-such-group-7431" settled: explore-grid data-state="empty"
-[2026-11-19T17:03:47.338Z] [STEP] Verifying the search returned no results
-[2026-11-19T17:03:47.374Z] [SUCCESS] No-results state verified
