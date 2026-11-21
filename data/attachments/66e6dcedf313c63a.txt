@@ -1,0 +1,9 @@
+[2026-11-21T15:41:21.620Z] [STEP] Navigating to Profile → Earnings
+[2026-11-21T15:41:24.570Z] [SUCCESS] Earnings page loaded
+[2026-11-21T15:41:24.923Z] [INFO] Earnings — available: $3075.68, pending: $298.11
+[2026-11-21T15:41:24.923Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-11-21T15:41:29.411Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-11-21T15:41:29.411Z] [STEP] Reading Transactions History
+[2026-11-21T15:41:29.963Z] [SUCCESS] Transactions History has 4 row(s)
+[2026-11-21T15:41:29.965Z] [INFO] [REFUND] pending before=$275.1 afterPayment=$298.11 afterDelete=$298.11
+[2026-11-21T15:41:29.965Z] [INFO] [REFUND] transaction rows: ["Oct 28, 2026 Multi-Group plan, monthly -$49.00 Paid","Sep 30, 2026 Multi-Group plan, monthly -$49.00 Paid","Aug 30, 2026 Multi-Group plan, monthly -$49.00 Paid","Jul 30, 2026 Multi-Group plan, monthly -$49.00 Paid"]

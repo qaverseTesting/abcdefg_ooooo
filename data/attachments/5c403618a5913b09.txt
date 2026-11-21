@@ -1,0 +1,71 @@
+[2026-11-21T15:32:02.654Z] [STEP] Opening dashboard
+[2026-11-21T15:32:04.264Z] [STEP] Searching for "PW_Group_20261121_153120_w12r0583a89" — up to 5 attempts (fresh groups index slowly)
+[2026-11-21T15:32:04.265Z] [STEP] Searching for group: PW_Group_20261121_153120_w12r0583a89
+[2026-11-21T15:32:05.986Z] [INFO] Search "PW_Group_20261121_153120_w12r0583a89" settled: explore-grid data-state="ready"
+[2026-11-21T15:32:06.004Z] [SUCCESS] Group "PW_Group_20261121_153120_w12r0583a89" found in Explore search (attempt 1/5)
+[2026-11-21T15:32:06.004Z] [STEP] Verifying group card content for: PW_Group_20261121_153120_w12r0583a89
+[2026-11-21T15:32:06.042Z] [SUCCESS] Group card content verified: PW_Group_20261121_153120_w12r0583a89
+[2026-11-21T15:32:08.931Z] [INFO] [FOLLOW CHECK] PW_Group_20261121_153120_w12r0583a89: isUpcoming=false · Follow=false · Unfollow=false · Join=true · https://staging.mentalhappy.com/groups/pw_group_20261121_153120_w12r0583a89
+[2026-11-21T15:32:08.953Z] [STEP] Verifying join CTA is visible and enabled
+[2026-11-21T15:32:09.000Z] [INFO] Side panel not open — clicking card to open: PW_Group_20261121_153120_w12r0583a89
+[2026-11-21T15:32:09.000Z] [STEP] Clicking group card: PW_Group_20261121_153120_w12r0583a89
+[2026-11-21T15:32:09.532Z] [SUCCESS] Group card clicked: PW_Group_20261121_153120_w12r0583a89
+[2026-11-21T15:32:09.762Z] [SUCCESS] Join CTA verified
+[2026-11-21T15:32:09.862Z] [INFO] [CTA PANEL BUTTONS] [{"text":"","aria":"Close"},{"text":"","aria":"Close"},{"text":"","aria":"Share group"},{"text":"","aria":"Show platform fee details"},{"text":"Join Group","aria":"Join Group"}]
+[2026-11-21T15:32:09.874Z] [INFO] [CTA] Free: button "Join Group", price "$3/month"
+[2026-11-21T15:32:09.876Z] [ASSERT] Verifying side panel discloses the platform fee: "Includes the $3/month MentalHappy platform fee"
+[2026-11-21T15:32:10.180Z] [SUCCESS] Platform fee disclosure verified in side panel (revealed on hover)
+[2026-11-21T15:32:10.180Z] [SUCCESS] [JP-5] Free group DOES disclose the platform fee in the side panel
+[2026-11-21T15:32:10.181Z] [STEP] Clicking join on "PW_Group_20261121_153120_w12r0583a89" — detecting destination (checkout or group)
+[2026-11-21T15:32:10.581Z] [INFO] [STRIPE] Stripe's script files are served from the shared cache (storage/stripe-cache)
+[2026-11-21T15:32:10.784Z] [SUCCESS] Join destination for "PW_Group_20261121_153120_w12r0583a89": checkout
+[2026-11-21T15:32:10.786Z] [STEP] Verifying Stripe iframe is visible
+[2026-11-21T15:32:14.207Z] [SUCCESS] Stripe iframe verified
+[2026-11-21T15:32:14.207Z] [STEP] Filling Stripe payment details
+[2026-11-21T15:32:15.789Z] [STEP] Selecting country: US
+[2026-11-21T15:32:16.103Z] [SUCCESS] Country settled on US
+[2026-11-21T15:32:18.403Z] [SUCCESS] Stripe payment details filled
+[2026-11-21T15:32:18.403Z] [STEP] Submitting a card the bank should refuse — expecting "Your card has been declined."
+[2026-11-21T15:32:20.772Z] [SUCCESS] Refused as expected: "Your card has been declined." — no charge, still on the payment page
+[2026-11-21T15:32:21.148Z] [STEP] Verifying Stripe iframe is visible
+[2026-11-21T15:32:23.318Z] [SUCCESS] Stripe iframe verified
+[2026-11-21T15:32:23.318Z] [STEP] Filling Stripe payment details
+[2026-11-21T15:32:29.625Z] [STEP] Selecting country: US
+[2026-11-21T15:32:30.005Z] [SUCCESS] Country settled on US
+[2026-11-21T15:32:33.069Z] [SUCCESS] Stripe payment details filled
+[2026-11-21T15:32:33.069Z] [STEP] Submitting a card the bank should refuse — expecting "Your card has insufficient funds."
+[2026-11-21T15:32:36.209Z] [SUCCESS] Refused as expected: "Your card has insufficient funds." — no charge, still on the payment page
+[2026-11-21T15:32:36.816Z] [STEP] Verifying Stripe iframe is visible
+[2026-11-21T15:32:40.005Z] [SUCCESS] Stripe iframe verified
+[2026-11-21T15:32:40.005Z] [STEP] Filling Stripe payment details
+[2026-11-21T15:32:42.934Z] [STEP] Selecting country: US
+[2026-11-21T15:32:43.740Z] [SUCCESS] Country settled on US
+[2026-11-21T15:32:46.481Z] [SUCCESS] Stripe payment details filled
+[2026-11-21T15:32:46.481Z] [STEP] Submitting a card the bank should refuse — expecting "We are unable to authenticate your payment method."
+[2026-11-21T15:32:46.741Z] [STEP] Answering Stripe's 3D Secure page: fail
+[2026-11-21T15:32:52.897Z] [SUCCESS] 3D Secure answered: fail
+[2026-11-21T15:32:55.525Z] [SUCCESS] Refused as expected: "We are unable to authenticate your payment method." — no charge, still on the payment page
+[2026-11-21T15:32:56.175Z] [ASSERT] Verifying the room link of "PW_Group_20261121_153120_w12r0583a89" (tab=conversations) does not let this user in
+[2026-11-21T15:32:59.483Z] [SUCCESS] Refused: the room link of "PW_Group_20261121_153120_w12r0583a89" sent this user to /groups/pw_group_20261121_153120_w12r0583a89
+[2026-11-21T15:32:59.509Z] [STEP] Verifying checkout summary for: PW_Group_20261121_153120_w12r0583a89
+[2026-11-21T15:33:05.763Z] [SUCCESS] Checkout summary verified
+[2026-11-21T15:33:05.763Z] [STEP] Verifying $3 platform fee is disclosed and added to the total
+[2026-11-21T15:33:07.206Z] [SUCCESS] Platform fee verified: $3 disclosed and included in the $3 total
+[2026-11-21T15:33:07.210Z] [STEP] Verifying Stripe iframe is visible
+[2026-11-21T15:33:07.298Z] [SUCCESS] Stripe iframe verified
+[2026-11-21T15:33:07.300Z] [STEP] Filling Stripe payment details
+[2026-11-21T15:33:07.553Z] [STEP] Selecting country: US
+[2026-11-21T15:33:07.692Z] [SUCCESS] Country settled on US
+[2026-11-21T15:33:10.823Z] [SUCCESS] Stripe payment details filled
+[2026-11-21T15:33:10.825Z] [STEP] Submitting payment (attempt 1/3)
+[2026-11-21T15:33:15.812Z] [SUCCESS] Payment submitted
+[2026-11-21T15:33:15.815Z] [INFO] [PAYMENT] Stripe: succeeded, 300 usd cents, 1 confirm request(s)
+[2026-11-21T15:33:15.818Z] [SUCCESS] [CHARGED] Free join: Stripe took exactly $3.00
+[2026-11-21T15:33:15.818Z] [SUCCESS] Free group charged the $3 platform fee — JP-5 holds on the member side too
+[2026-11-21T15:33:15.823Z] [STEP] Waiting for group page to load after payment redirect
+[2026-11-21T15:33:15.825Z] [SUCCESS] Group page loaded
+[2026-11-21T15:33:15.828Z] [STEP] Checking for post-join success modal
+[2026-11-21T15:33:16.249Z] [SUCCESS] Success modal handled
+[2026-11-21T15:33:16.250Z] [STEP] Verifying Conversations tab is visible
+[2026-11-21T15:33:16.364Z] [SUCCESS] Conversations tab visible — membership access confirmed
+[2026-11-21T15:33:16.364Z] [SUCCESS] Member joined while Free: pw_auto_mh_21153150is4x@mentalhappy.com

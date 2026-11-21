@@ -1,0 +1,197 @@
+[2026-11-21T15:28:11.686Z] [STEP] Registering new leader with email: pw_auto_mh_211528119us1@mentalhappy.com
+[2026-11-21T15:28:11.687Z] [STEP] Navigating to Registration Page
+[2026-11-21T15:28:12.838Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-21T15:28:13.063Z] [SUCCESS] Registration Page loaded
+[2026-11-21T15:28:13.063Z] [STEP] Filling registration form for: pw_auto_mh_211528119us1@mentalhappy.com
+[2026-11-21T15:28:14.517Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-21T15:28:14.555Z] [STEP] Submitting registration form
+[2026-11-21T15:28:15.178Z] [SUCCESS] Registration form submitted
+[2026-11-21T15:28:15.178Z] [STEP] Waiting for OTP entry page to be ready
+[2026-11-21T15:28:19.597Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-11-21T15:28:19.597Z] [INFO] [OTP] Bypass active for pw_auto_mh_211528119us1@mentalhappy.com. Returning fixed validation code: 456321
+[2026-11-21T15:28:19.607Z] [STEP] Entering OTP: 456321
+[2026-11-21T15:28:19.607Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-21T15:28:20.212Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-21T15:28:20.684Z] [SUCCESS] OTP entered
+[2026-11-21T15:28:20.684Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-11-21T15:28:20.689Z] [ASSERT] Verifying toast message matching: /Email Verified Successfully/i
+[2026-11-21T15:28:22.145Z] [SUCCESS] Leader registration and OTP verification completed
+[2026-11-21T15:28:22.146Z] [STEP] Selecting Leader role on Welcome page
+[2026-11-21T15:28:22.146Z] [STEP] Verifying Welcome Page is displayed
+[2026-11-21T15:28:22.146Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-21T15:28:22.406Z] [SUCCESS] Welcome Page verification successful (Role buttons visible)
+[2026-11-21T15:28:22.406Z] [STEP] Selecting path: Continue as a Group Leader
+[2026-11-21T15:28:22.406Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-21T15:28:22.577Z] [INFO] Clicked Continue as a Group Leader
+[2026-11-21T15:28:22.607Z] [SUCCESS] Group Leader path selected
+[2026-11-21T15:28:22.607Z] [STEP] Clicking Welcome Continue button
+[2026-11-21T15:28:22.607Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-21T15:28:22.830Z] [SUCCESS] Welcome Continue clicked
+[2026-11-21T15:28:22.830Z] [SUCCESS] Leader role selection completed
+[2026-11-21T15:28:22.830Z] [STEP] Completing Leader onboarding via SKIP path
+[2026-11-21T15:28:22.830Z] [STEP] Completing Leader onboarding via SKIP (Deep Check Flow)
+[2026-11-21T15:28:22.865Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-21T15:28:22.904Z] [INFO] Checking for Screen 2 (Survey) Skip option...
+[2026-11-21T15:28:22.928Z] [STEP] Clicking Onboarding Skip button
+[2026-11-21T15:28:22.928Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-21T15:28:26.398Z] [SUCCESS] Onboarding cleared successfully
+[2026-11-21T15:28:26.398Z] [SUCCESS] Leader onboarding (Skip) completed
+[2026-11-21T15:28:26.398Z] [STEP] Selecting Active Plan ($19)
+[2026-11-21T15:28:27.481Z] [STEP] Verifying Hosting Plan page content
+[2026-11-21T15:28:28.772Z] [SUCCESS] Hosting Plan page verification successful
+[2026-11-21T15:28:28.772Z] [STEP] Selecting Active Group Plan
+[2026-11-21T15:28:28.892Z] [STEP] Verifying the plan selection landed on the checkout
+[2026-11-21T15:28:29.251Z] [SUCCESS] Checkout page reached
+[2026-11-21T15:28:29.251Z] [SUCCESS] Plan selected, landed on the checkout
+[2026-11-21T15:28:29.251Z] [STEP] Completing Stripe Payment
+[2026-11-21T15:28:29.251Z] [STEP] Verifying Stripe form visibility
+[2026-11-21T15:28:36.764Z] [SUCCESS] Stripe form verified — ready after 7.5s
+[2026-11-21T15:28:36.764Z] [STEP] Filling Stripe payment details
+[2026-11-21T15:28:36.845Z] [STEP] Selecting country: US
+[2026-11-21T15:28:36.928Z] [SUCCESS] Country settled on US
+[2026-11-21T15:28:39.600Z] [SUCCESS] Stripe payment details filled
+[2026-11-21T15:28:39.601Z] [STEP] Submitting payment (attempt 1/3)
+[2026-11-21T15:28:43.049Z] [SUCCESS] Payment submitted
+[2026-11-21T15:28:43.052Z] [INFO] [PAYMENT] Stripe: succeeded, 1900 usd cents, 1 confirm request(s)
+[2026-11-21T15:28:43.052Z] [SUCCESS] Stripe payment submitted
+[2026-11-21T15:28:43.052Z] [STEP] Verifying Payment Success (Redirect or Popup)
+[2026-11-21T15:28:45.876Z] [INFO] Payment landing state: popup — https://staging.mentalhappy.com/welcome/hosting-payment?plan=ACTIVE_GROUP&period=monthly&returnTo=%2F
+[2026-11-21T15:28:45.876Z] [STEP] Verifying Payment Success popup visibility
+[2026-11-21T15:28:45.930Z] [SUCCESS] Payment Success popup verified
+[2026-11-21T15:28:45.930Z] [STEP] Clicking "Do this later"
+[2026-11-21T15:28:46.647Z] [SUCCESS] Success popup dismissed via Do this later
+[2026-11-21T15:28:46.656Z] [SUCCESS] Subscription completed and reached target page.
+[2026-11-21T15:28:46.656Z] [STEP] Creating group: PW_Group_20261121_152811_w9r0684b53
+[2026-11-21T15:28:46.657Z] [STEP] Opening Profile → Earnings and clicking Create Group
+[2026-11-21T15:28:49.264Z] [ASSERT] Create Group page is loaded
+[2026-11-21T15:28:49.265Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-21T15:28:51.055Z] [STEP] Filling Group Name
+[2026-11-21T15:28:51.218Z] [STEP] Filling Group Description
+[2026-11-21T15:28:51.858Z] [STEP] Uploading Cover Image
+[2026-11-21T15:28:51.988Z] [SUCCESS] Cover image uploaded
+[2026-11-21T15:28:51.988Z] [STEP] Choosing the main topic (first option)
+[2026-11-21T15:28:52.222Z] [STEP] Choosing a tag of that topic (first option)
+[2026-11-21T15:28:52.567Z] [SUCCESS] Main topic and tag chosen
+[2026-11-21T15:28:52.567Z] [STEP] Clicking Continue
+[2026-11-21T15:28:52.895Z] [INFO] Professional Background tab detected — completing required fields
+[2026-11-21T15:28:52.895Z] [STEP] Filling Professional Background tab
+[2026-11-21T15:28:52.895Z] [STEP] Uploading Profile Photo
+[2026-11-21T15:28:53.011Z] [SUCCESS] Profile photo uploaded
+[2026-11-21T15:28:53.011Z] [STEP] Selecting Professional Role
+[2026-11-21T15:28:53.442Z] [SUCCESS] Professional Role selected
+[2026-11-21T15:28:53.442Z] [STEP] Filling Professional Bio
+[2026-11-21T15:28:54.706Z] [SUCCESS] Professional Bio filled
+[2026-11-21T15:28:54.707Z] [STEP] Clicking Continue
+[2026-11-21T15:28:54.889Z] [INFO] Pricing Model tab detected — selecting "Free"
+[2026-11-21T15:28:54.889Z] [STEP] Selecting "Free" Pricing Model
+[2026-11-21T15:28:54.943Z] [SUCCESS] Free pricing model selected
+[2026-11-21T15:28:54.943Z] [STEP] Clicking Continue
+[2026-11-21T15:28:55.075Z] [STEP] Clicking Launch Group
+[2026-11-21T15:28:55.192Z] [SUCCESS] Group creation flow completed for: PW_Group_20261121_152811_w9r0684b53
+[2026-11-21T15:28:55.192Z] [STEP] Navigating to Sessions from Group Details
+[2026-11-21T15:28:55.192Z] [STEP] Navigating to Sessions tab
+[2026-11-21T15:28:59.624Z] [SUCCESS] Sessions tab active
+[2026-11-21T15:28:59.624Z] [SUCCESS] Leader ready with an active group on the Sessions tab
+[2026-11-21T15:28:59.629Z] [STEP] Opening Schedule Session modal
+[2026-11-21T15:29:00.363Z] [STEP] Waiting for Create Session modal
+[2026-11-21T15:29:00.591Z] [SUCCESS] Create Session modal visible
+[2026-11-21T15:29:00.592Z] [STEP] Filling Create Session form
+[2026-11-21T15:29:00.592Z] [STEP] Setting session date to next day
+[2026-11-21T15:29:01.981Z] [INFO] Session date set to 22 November, 2026
+[2026-11-21T15:29:01.981Z] [STEP] Ensuring timezone is selected
+[2026-11-21T15:29:02.276Z] [INFO] Searching for timezone "Pacific"
+[2026-11-21T15:29:02.854Z] [INFO] Timezone selection attempted via keyboard
+[2026-11-21T15:29:02.854Z] [STEP] Setting session time
+[2026-11-21T15:29:04.164Z] [INFO] Session time set to 10:00 AM – 11:00 AM
+[2026-11-21T15:29:04.227Z] [INFO] Filling description editor
+[2026-11-21T15:29:05.033Z] [SUCCESS] Form filling completed
+[2026-11-21T15:29:05.033Z] [INFO] Clearing title
+[2026-11-21T15:29:05.304Z] [STEP] Pressing Schedule Now on an invalid form — it must be refused
+[2026-11-21T15:29:07.571Z] [ASSERT] Verifying Create Session modal remains open
+[2026-11-21T15:29:07.581Z] [SUCCESS] Missing title refused
+[2026-11-21T15:29:07.581Z] [STEP] Closing Create Session modal
+[2026-11-21T15:29:07.633Z] [SUCCESS] Create Session modal closed
+[2026-11-21T15:29:07.634Z] [STEP] Opening Schedule Session modal
+[2026-11-21T15:29:07.852Z] [STEP] Waiting for Create Session modal
+[2026-11-21T15:29:07.873Z] [SUCCESS] Create Session modal visible
+[2026-11-21T15:29:07.874Z] [STEP] Filling Create Session form
+[2026-11-21T15:29:07.874Z] [STEP] Setting session date to next day
+[2026-11-21T15:29:09.793Z] [INFO] Session date set to 22 November, 2026
+[2026-11-21T15:29:09.793Z] [STEP] Ensuring timezone is selected
+[2026-11-21T15:29:10.134Z] [INFO] Searching for timezone "Pacific"
+[2026-11-21T15:29:10.859Z] [INFO] Timezone selection attempted via keyboard
+[2026-11-21T15:29:10.859Z] [STEP] Setting session time
+[2026-11-21T15:29:12.265Z] [INFO] Session time set to 10:00 AM – 11:00 AM
+[2026-11-21T15:29:12.285Z] [INFO] Filling description editor
+[2026-11-21T15:29:13.072Z] [SUCCESS] Form filling completed
+[2026-11-21T15:29:13.073Z] [INFO] Setting start time: 11:00 AM
+[2026-11-21T15:29:13.612Z] [INFO] Setting end time: 10:00 AM
+[2026-11-21T15:29:14.183Z] [STEP] Pressing Schedule Now on an invalid form — it must be refused
+[2026-11-21T15:29:16.216Z] [ASSERT] Verifying Create Session modal remains open
+[2026-11-21T15:29:16.233Z] [SUCCESS] Start after end refused
+[2026-11-21T15:29:16.233Z] [STEP] Closing Create Session modal
+[2026-11-21T15:29:16.272Z] [SUCCESS] Create Session modal closed
+[2026-11-21T15:29:16.273Z] [STEP] Opening Schedule Session modal
+[2026-11-21T15:29:16.585Z] [STEP] Waiting for Create Session modal
+[2026-11-21T15:29:16.648Z] [SUCCESS] Create Session modal visible
+[2026-11-21T15:29:16.648Z] [STEP] Filling Create Session form
+[2026-11-21T15:29:16.648Z] [STEP] Setting session date to next day
+[2026-11-21T15:29:18.510Z] [INFO] Session date set to 22 November, 2026
+[2026-11-21T15:29:18.510Z] [STEP] Ensuring timezone is selected
+[2026-11-21T15:29:18.814Z] [INFO] Searching for timezone "Pacific"
+[2026-11-21T15:29:19.276Z] [INFO] Timezone selection attempted via keyboard
+[2026-11-21T15:29:19.276Z] [STEP] Setting session time
+[2026-11-21T15:29:20.434Z] [INFO] Session time set to 10:00 AM – 11:00 AM
+[2026-11-21T15:29:20.460Z] [INFO] Filling description editor
+[2026-11-21T15:29:21.044Z] [SUCCESS] Form filling completed
+[2026-11-21T15:29:21.044Z] [INFO] Setting start time: 10:00 AM
+[2026-11-21T15:29:21.475Z] [INFO] Setting end time: 10:00 AM
+[2026-11-21T15:29:22.100Z] [STEP] Pressing Schedule Now on an invalid form — it must be refused
+[2026-11-21T15:29:24.149Z] [ASSERT] Verifying Create Session modal remains open
+[2026-11-21T15:29:24.170Z] [SUCCESS] Equal start and end refused
+[2026-11-21T15:29:24.170Z] [STEP] Closing Create Session modal
+[2026-11-21T15:29:24.234Z] [SUCCESS] Create Session modal closed
+[2026-11-21T15:29:24.235Z] [STEP] Opening Schedule Session modal
+[2026-11-21T15:29:24.567Z] [STEP] Waiting for Create Session modal
+[2026-11-21T15:29:24.613Z] [SUCCESS] Create Session modal visible
+[2026-11-21T15:29:24.613Z] [STEP] Filling Create Session form
+[2026-11-21T15:29:24.613Z] [STEP] Setting session date to next day
+[2026-11-21T15:29:25.974Z] [INFO] Session date set to 22 November, 2026
+[2026-11-21T15:29:25.974Z] [STEP] Ensuring timezone is selected
+[2026-11-21T15:29:26.240Z] [INFO] Searching for timezone "Pacific"
+[2026-11-21T15:29:26.778Z] [INFO] Timezone selection attempted via keyboard
+[2026-11-21T15:29:26.778Z] [STEP] Setting session time
+[2026-11-21T15:29:27.855Z] [INFO] Session time set to 10:00 AM – 11:00 AM
+[2026-11-21T15:29:27.894Z] [INFO] Filling description editor
+[2026-11-21T15:29:28.802Z] [SUCCESS] Form filling completed
+[2026-11-21T15:29:28.803Z] [INFO] Clearing date
+[2026-11-21T15:29:28.983Z] [STEP] Pressing Schedule Now on an invalid form — it must be refused
+[2026-11-21T15:29:31.065Z] [ASSERT] Verifying Create Session modal remains open
+[2026-11-21T15:29:31.077Z] [SUCCESS] Cleared date refused
+[2026-11-21T15:29:31.077Z] [STEP] Closing Create Session modal
+[2026-11-21T15:29:31.128Z] [SUCCESS] Create Session modal closed
+[2026-11-21T15:29:31.130Z] [STEP] Opening Schedule Session modal
+[2026-11-21T15:29:31.373Z] [STEP] Waiting for Create Session modal
+[2026-11-21T15:29:31.429Z] [SUCCESS] Create Session modal visible
+[2026-11-21T15:29:31.430Z] [STEP] Filling Create Session form
+[2026-11-21T15:29:31.430Z] [STEP] Setting session date to next day
+[2026-11-21T15:29:33.443Z] [INFO] Session date set to 22 November, 2026
+[2026-11-21T15:29:33.444Z] [STEP] Selecting a timezone on the browser's offset
+[2026-11-21T15:29:35.086Z] [INFO] Timezone Africa/Abidjan (browser: UTC)
+[2026-11-21T15:29:35.086Z] [STEP] Setting session time
+[2026-11-21T15:29:37.235Z] [INFO] Session time set to 10:00 AM – 11:00 AM
+[2026-11-21T15:29:37.298Z] [INFO] Filling description editor
+[2026-11-21T15:29:38.588Z] [SUCCESS] Form filling completed
+[2026-11-21T15:29:42.318Z] [INFO] Session set to 21 November, 2026 3:00 PM–3:30 PM Africa/Abidjan (starts in -1782s)
+[2026-11-21T15:29:42.318Z] [STEP] Submitting session
+[2026-11-21T15:29:43.758Z] [ASSERT] Verifying Create Session modal remains open
+[2026-11-21T15:29:43.800Z] [STEP] Closing Create Session modal
+[2026-11-21T15:29:43.995Z] [SUCCESS] Create Session modal closed
+[2026-11-21T15:29:43.995Z] [ASSERT] Verifying session is no longer listed: PW_Session_20261121_152931_w9r0429xw4
+[2026-11-21T15:29:43.995Z] [ASSERT] Verifying session is absent: PW_Session_20261121_152931_w9r0429xw4
+[2026-11-21T15:29:43.995Z] [INFO] Checking sessions on: https://staging.mentalhappy.com/groups/pw_group_20261121_152811_w9r0684b53/room?tab=sessions
+[2026-11-21T15:29:43.995Z] [STEP] Opening Sessions tab
+[2026-11-21T15:29:44.313Z] [SUCCESS] Sessions tab is active
+[2026-11-21T15:29:44.313Z] [STEP] Waiting for session list to settle
+[2026-11-21T15:29:44.387Z] [SUCCESS] Session list settled — 0 session(s)
+[2026-11-21T15:29:44.423Z] [SUCCESS] Past-dated session rejected and not created
