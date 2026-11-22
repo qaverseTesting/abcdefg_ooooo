@@ -1,5 +1,0 @@
-[2026-11-21T15:34:13.610Z] [STEP] Clicking Unregister on feed card: PW_Session_20261121_152949_w0r03181wz
-[2026-11-21T15:34:15.317Z] [ASSERT] Verifying unregister confirmation for: PW_Session_20261121_152949_w0r03181wz
-[2026-11-21T15:34:15.330Z] [STEP] Keeping registration ("Keep it")
-[2026-11-21T15:34:15.752Z] [ASSERT] Verifying "PW_Session_20261121_152949_w0r03181wz" feed card shows "Unregister from session"
-[2026-11-21T15:34:15.861Z] [SUCCESS] Feed card shows "Unregister from session"

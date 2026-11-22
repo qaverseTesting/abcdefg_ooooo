@@ -1,6 +1,0 @@
-[2026-11-21T15:45:28.874Z] [STEP] Navigating to Profile → Plan & Billing
-[2026-11-21T15:45:31.683Z] [SUCCESS] Profile Plan & Billing page loaded
-[2026-11-21T15:45:31.683Z] [ASSERT] Verifying a "Paid" transaction "Active Group plan, monthly" for -$19.00
-[2026-11-21T15:45:31.684Z] [STEP] Reading Transactions History
-[2026-11-21T15:45:31.788Z] [SUCCESS] Transactions History has 1 row(s)
-[2026-11-21T15:45:31.789Z] [SUCCESS] Transaction confirmed: Nov 21, 2026 Active Group plan, monthly -$19.00 Paid

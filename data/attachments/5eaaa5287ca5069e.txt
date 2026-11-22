@@ -1,0 +1,4 @@
+[2026-11-22T15:18:36.963Z] [STEP] Verifying side panel content for: AMActiveGroupV2
+[2026-11-22T15:18:37.225Z] [SUCCESS] Side panel content verified for: AMActiveGroupV2
+[2026-11-22T15:18:37.225Z] [ASSERT] Verifying side panel discloses the platform fee: "Includes the $3/month MentalHappy platform fee"
+[2026-11-22T15:18:37.954Z] [SUCCESS] Platform fee disclosure verified in side panel (revealed on hover)
