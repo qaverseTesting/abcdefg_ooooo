@@ -1,3 +1,0 @@
-[2026-11-22T15:36:17.481Z] [ASSERT] Verifying A signed-in user who is not in the group cannot get into the call by its link
-[2026-11-22T15:36:27.683Z] [INFO] [CALL LINK] A signed-in user who is not in the group: call key answered 400 — https://staging.mentalhappy.com/session/video-call/6b030a1415fc69e093b5bab7
-[2026-11-22T15:36:28.045Z] [SUCCESS] A signed-in user who is not in the group was refused (call key HTTP 400)

@@ -1,0 +1,10 @@
+[2026-11-23T19:20:53.748Z] [STEP] Leader Flow: Registering new leader
+[2026-11-23T19:20:53.748Z] [STEP] Registering new leader with email: pw_auto_mh_23192053eykh@mentalhappy.com
+[2026-11-23T19:20:53.752Z] [STEP] Navigating to Registration Page
+[2026-11-23T19:20:55.014Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-23T19:20:55.379Z] [SUCCESS] Registration Page loaded
+[2026-11-23T19:20:55.379Z] [STEP] Filling registration form for: pw_auto_mh_23192053eykh@mentalhappy.com
+[2026-11-23T19:20:57.000Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-23T19:20:57.031Z] [STEP] Submitting registration form
+[2026-11-23T19:20:57.498Z] [SUCCESS] Registration form submitted
+[2026-11-23T19:20:57.499Z] [STEP] Waiting for OTP entry page to be ready

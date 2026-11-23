@@ -1,0 +1,10 @@
+[2026-11-23T19:24:54.345Z] [INFO] Attempting login for user: pw_auto_mh_leader@mailinator.com | Password: [hidden, 8 chars] (expectSuccess: true)
+[2026-11-23T19:24:56.629Z] [SUCCESS] Login successful. Landed on: https://staging.mentalhappy.com/groups
+[2026-11-23T19:24:56.629Z] [SUCCESS] [RECOVERY] Leader session rebuilt
+[2026-11-23T19:24:56.634Z] [STEP] Opening group Settings tab for: pw_group_20261123_192203_w20r0876t48
+[2026-11-23T19:25:02.073Z] [SUCCESS] Group Settings tab loaded
+[2026-11-23T19:25:02.073Z] [STEP] Setting the group's free trial OFF
+[2026-11-23T19:25:02.906Z] [SUCCESS] Free trial is OFF
+[2026-11-23T19:25:02.931Z] [INFO] Already Monthly $5 (set by TR-01) — nothing to change
+[2026-11-23T19:25:02.931Z] [ASSERT] Verifying monthly pricing summary: Monthly Paid $5/Month
+[2026-11-23T19:25:02.975Z] [SUCCESS] Monthly pricing summary verified: $5/Month
