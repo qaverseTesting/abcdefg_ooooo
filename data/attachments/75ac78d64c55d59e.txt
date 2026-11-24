@@ -1,0 +1,10 @@
+[2026-11-24T18:56:06.402Z] [INFO] [SETUP] Provisioning Multi-Group ($49) leader with 3 group(s): pw_auto_mh_24185606ker9@mentalhappy.com
+[2026-11-24T18:56:06.409Z] [STEP] Registering new leader with email: pw_auto_mh_24185606ker9@mentalhappy.com
+[2026-11-24T18:56:06.410Z] [STEP] Navigating to Registration Page
+[2026-11-24T18:56:07.529Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-24T18:56:07.802Z] [SUCCESS] Registration Page loaded
+[2026-11-24T18:56:07.802Z] [STEP] Filling registration form for: pw_auto_mh_24185606ker9@mentalhappy.com
+[2026-11-24T18:56:09.462Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-24T18:56:09.479Z] [STEP] Submitting registration form
+[2026-11-24T18:56:09.871Z] [SUCCESS] Registration form submitted
+[2026-11-24T18:56:09.871Z] [STEP] Waiting for OTP entry page to be ready

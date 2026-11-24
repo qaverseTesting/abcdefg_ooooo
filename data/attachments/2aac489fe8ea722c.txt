@@ -1,0 +1,3 @@
+[2026-11-24T19:02:15.926Z] [WARN] [RUN STATE] Recovered "PW_Group_20261124_190109_w20r01872d8" from disk — this worker was restarted after an earlier failure, so in-memory state was lost. The group itself is fine.
+[2026-11-24T19:02:15.926Z] [WARN] [RECOVERY] No leader session in this worker — an earlier block failed and the worker was restarted. Signing in again so this block can still run. Check that earlier failure; this is not it.
+[2026-11-24T19:02:20.571Z] [WARN] [SKIP] PG-02 did not register a member, so there is nobody to join, exit or re-join with. Fix PG-02 first.
