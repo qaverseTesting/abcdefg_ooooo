@@ -1,0 +1,8 @@
+[2026-11-25T13:24:53.269Z] [STEP] Filling Stripe payment details
+[2026-11-25T13:24:53.516Z] [STEP] Selecting country: US
+[2026-11-25T13:24:53.629Z] [SUCCESS] Country settled on US
+[2026-11-25T13:24:58.323Z] [SUCCESS] Stripe payment details filled
+[2026-11-25T13:24:58.335Z] [STEP] Submitting payment (attempt 1/3)
+[2026-11-25T13:25:03.433Z] [SUCCESS] Payment submitted
+[2026-11-25T13:25:03.447Z] [INFO] [PAYMENT] Stripe: succeeded, 1000 usd cents, 1 confirm request(s)
+[2026-11-25T13:25:03.462Z] [SUCCESS] [CHARGED] paid join: Stripe took exactly $10.00

@@ -1,0 +1,26 @@
+[2026-11-25T14:05:36.355Z] [STEP] Submitting member registration form for: pw_auto_mh_25140536bcva@mentalhappy.com
+[2026-11-25T14:05:36.355Z] [STEP] Navigating to Registration Page
+[2026-11-25T14:05:38.074Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-25T14:05:38.398Z] [SUCCESS] Registration Page loaded
+[2026-11-25T14:05:38.398Z] [STEP] Filling registration form for: pw_auto_mh_25140536bcva@mentalhappy.com
+[2026-11-25T14:05:39.701Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-25T14:05:39.760Z] [STEP] Submitting registration form
+[2026-11-25T14:05:40.246Z] [SUCCESS] Registration form submitted
+[2026-11-25T14:05:40.246Z] [STEP] Waiting for OTP entry page to be ready
+[2026-11-25T14:06:12.251Z] [INFO] Attempting login for user: pw_auto_mh_25140536bcva@mentalhappy.com | Password: [hidden, 12 chars] (expectSuccess: false)
+[2026-11-25T14:06:15.987Z] [STEP] Waiting for OTP entry page to be ready
+[2026-11-25T14:06:16.802Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-11-25T14:06:16.802Z] [SUCCESS] Registration form submitted, OTP page reached
+[2026-11-25T14:06:16.802Z] [STEP] Verifying email for: pw_auto_mh_25140536bcva@mentalhappy.com
+[2026-11-25T14:06:16.803Z] [INFO] [OTP] Bypass active for pw_auto_mh_25140536bcva@mentalhappy.com. Returning fixed validation code: 456321
+[2026-11-25T14:06:16.812Z] [STEP] Entering OTP: 456321
+[2026-11-25T14:06:16.812Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-25T14:06:17.210Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-25T14:06:17.685Z] [SUCCESS] OTP entered
+[2026-11-25T14:06:17.685Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-11-25T14:06:17.693Z] [ASSERT] Verifying toast message matching: /Email Verified Successfully/i
+[2026-11-25T14:06:19.111Z] [SUCCESS] Email verification (OTP) successful
+[2026-11-25T14:06:19.112Z] [STEP] Verifying Welcome Page is displayed
+[2026-11-25T14:06:19.112Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-25T14:06:19.481Z] [SUCCESS] Welcome Page verification successful (Role buttons visible)
+[2026-11-25T14:06:19.493Z] [SUCCESS] Member landing on Welcome page verified

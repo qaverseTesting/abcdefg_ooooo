@@ -1,0 +1,40 @@
+{
+  "group": "PW_Group_20261125_134004_w12r0963orr",
+  "payments": [
+    {
+      "model": "Free",
+      "groupPrice": "0",
+      "member": "pw_auto_mh_25134034y747@mentalhappy.com"
+    },
+    {
+      "model": "Donation",
+      "groupPrice": "0",
+      "member": "pw_auto_mh_25134034y747@mentalhappy.com"
+    },
+    {
+      "model": "Donation gift",
+      "groupPrice": "10",
+      "member": "pw_auto_mh_25134034y747@mentalhappy.com"
+    },
+    {
+      "model": "One-Time",
+      "groupPrice": "10",
+      "member": "pw_auto_mh_25134034y747@mentalhappy.com"
+    },
+    {
+      "model": "Monthly",
+      "groupPrice": "5",
+      "member": "pw_auto_mh_25134034y747@mentalhappy.com"
+    }
+  ],
+  "pendingBefore": 33.01,
+  "pendingBeforeRefund": 51.55,
+  "pendingAfterPayment": 56.02,
+  "pendingAfter": 56.02,
+  "transactionRows": [
+    "Oct 28, 2026 Multi-Group plan, monthly -$49.00 Paid",
+    "Sep 30, 2026 Multi-Group plan, monthly -$49.00 Paid",
+    "Aug 30, 2026 Multi-Group plan, monthly -$49.00 Paid",
+    "Jul 30, 2026 Multi-Group plan, monthly -$49.00 Paid"
+  ]
+}

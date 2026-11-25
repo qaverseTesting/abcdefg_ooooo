@@ -1,0 +1,5 @@
+[2026-11-25T13:41:55.504Z] [STEP] Opening group room "pw_group_20261125_133538_w0r0615u8f" on tab=conversations
+[2026-11-25T13:41:57.833Z] [SUCCESS] Group room open on tab=conversations
+[2026-11-25T13:42:00.384Z] [STEP] Opening session details from feed: PW_Session_20261125_133538_w0r0615cmz
+[2026-11-25T13:42:01.240Z] [STEP] Verifying session details page: PW_Session_20261125_133538_w0r0615cmz
+[2026-11-25T13:42:03.643Z] [ASSERT] Verifying the session page shows the member as registered

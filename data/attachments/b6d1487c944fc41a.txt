@@ -1,0 +1,15 @@
+[2026-11-25T13:43:16.550Z] [STEP] Exiting group "PW_Group_20261125_134004_w12r0963orr" as a member
+[2026-11-25T13:43:16.550Z] [STEP] Opening group room "pw_group_20261125_134004_w12r0963orr" on tab=settings
+[2026-11-25T13:43:18.388Z] [SUCCESS] Group room open on tab=settings
+[2026-11-25T13:43:23.863Z] [SUCCESS] Exited "PW_Group_20261125_134004_w12r0963orr"
+[2026-11-25T13:43:23.865Z] [STEP] Navigating to My Groups page
+[2026-11-25T13:43:25.502Z] [STEP] Waiting for My Groups page content
+[2026-11-25T13:43:26.365Z] [STEP] Clicking filter: Joined
+[2026-11-25T13:43:28.909Z] [SUCCESS] Filter "Joined" selected
+[2026-11-25T13:43:28.910Z] [ASSERT] Verifying "PW_Group_20261125_134004_w12r0963orr" is not listed on the active tab
+[2026-11-25T13:43:28.910Z] [STEP] Waiting for group list to settle
+[2026-11-25T13:43:29.472Z] [SUCCESS] Group list settled — 0 card(s) on the active tab
+[2026-11-25T13:43:29.480Z] [SUCCESS] Confirmed absent: PW_Group_20261125_134004_w12r0963orr
+[2026-11-25T13:43:29.481Z] [ASSERT] Verifying the room link of "PW_Group_20261125_134004_w12r0963orr" (tab=conversations) does not let this user in
+[2026-11-25T13:43:31.484Z] [SUCCESS] Refused: the room link of "PW_Group_20261125_134004_w12r0963orr" sent this user to /groups/pw_group_20261125_134004_w12r0963orr
+[2026-11-25T13:43:31.484Z] [SUCCESS] [SL-4 VERIFIED] pw_auto_mh_25134034y747@mentalhappy.com exited "PW_Group_20261125_134004_w12r0963orr" (priced Free) and lost access
