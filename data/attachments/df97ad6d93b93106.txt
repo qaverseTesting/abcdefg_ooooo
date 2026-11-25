@@ -1,8 +1,0 @@
-[2026-11-25T14:07:39.342Z] [STEP] Navigating to My Groups page
-[2026-11-25T14:07:40.642Z] [STEP] Waiting for My Groups page content
-[2026-11-25T14:07:42.179Z] [STEP] Clicking Joined filter
-[2026-11-25T14:07:42.240Z] [STEP] Clicking filter: Joined
-[2026-11-25T14:07:45.905Z] [SUCCESS] Filter "Joined" selected
-[2026-11-25T14:07:46.373Z] [STEP] Verifying member Joined tab loaded
-[2026-11-25T14:07:46.553Z] [SUCCESS] Member Joined tab confirmed loaded
-[2026-11-25T14:07:46.553Z] [SUCCESS] Member Joined Groups sections verified

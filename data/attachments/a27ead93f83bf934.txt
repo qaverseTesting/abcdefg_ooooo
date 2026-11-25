@@ -1,3 +1,0 @@
-[2026-11-25T14:07:59.124Z] [STEP] Accessing Login page while already authenticated
-[2026-11-25T14:08:01.142Z] [ASSERT] Verifying a signed-in user is redirected away from the Login page
-[2026-11-25T14:08:04.761Z] [SUCCESS] Signed-in user was redirected from Login to /groups

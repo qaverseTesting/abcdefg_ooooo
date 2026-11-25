@@ -1,0 +1,20 @@
+{
+  "group": "PW_Group_20261125_181254_w11r0806imm",
+  "payments": [
+    {
+      "model": "Monthly",
+      "groupPrice": "5",
+      "member": "pw_auto_mh_25182321bf6c@mentalhappy.com"
+    }
+  ],
+  "pendingBefore": 0,
+  "pendingBeforeRefund": 65.43,
+  "pendingAfterPayment": 69.9,
+  "pendingAfter": 69.9,
+  "transactionRows": [
+    "Oct 28, 2026 Multi-Group plan, monthly -$49.00 Paid",
+    "Sep 30, 2026 Multi-Group plan, monthly -$49.00 Paid",
+    "Aug 30, 2026 Multi-Group plan, monthly -$49.00 Paid",
+    "Jul 30, 2026 Multi-Group plan, monthly -$49.00 Paid"
+  ]
+}

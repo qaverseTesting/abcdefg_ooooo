@@ -1,0 +1,2 @@
+[2026-11-25T18:23:57.559Z] [WARN] [KNOWN APP ISSUE] KI-18: staging did not answer the sign-up for pw_auto_mh_25182321bf6c@mentalhappy.com. The account exists, so logging in to reach the email code screen.
+[2026-11-25T18:24:09.707Z] [WARN] [MEMBER] No member survived from PG-02 — an earlier block failed and this worker was restarted. Registered a fresh one so the refund chain can still run. Check the earlier failure; this test is not the problem.
