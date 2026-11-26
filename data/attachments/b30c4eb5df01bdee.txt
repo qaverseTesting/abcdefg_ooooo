@@ -1,0 +1,20 @@
+[2026-11-26T13:32:06.095Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-11-26T13:32:10.648Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-11-26T13:32:10.648Z] [STEP] Verifying Plan & Billing page content
+[2026-11-26T13:32:11.124Z] [SUCCESS] Plan & Billing page verified
+[2026-11-26T13:32:11.124Z] [STEP] "Subscription options" → "Keep My Plan"
+[2026-11-26T13:32:12.853Z] [SUCCESS] K-01 PASSED: plan kept
+[2026-11-26T13:32:12.853Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-11-26T13:32:16.445Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-11-26T13:32:16.445Z] [STEP] Verifying Plan & Billing page content
+[2026-11-26T13:32:16.646Z] [SUCCESS] Plan & Billing page verified
+[2026-11-26T13:32:16.720Z] [INFO] Next billing date: December 26, 2026
+[2026-11-26T13:32:16.721Z] [ASSERT] "Subscription options" lists ["Cancel Subscription"]
+[2026-11-26T13:32:17.075Z] [SUCCESS] K-02 PASSED: no change scheduled any more
+[2026-11-26T13:32:17.076Z] [STEP] Navigating to Hosting Plan Page
+[2026-11-26T13:32:19.868Z] [SUCCESS] Hosting Plan Page loaded
+[2026-11-26T13:32:19.868Z] [STEP] Verifying current plan card shows "Current Plan" (disabled state)
+[2026-11-26T13:32:20.125Z] [SUCCESS] "Current Plan" label verified
+[2026-11-26T13:32:20.125Z] [STEP] Verifying Downgrade CTA is visible on Free plan card
+[2026-11-26T13:32:20.221Z] [SUCCESS] Downgrade CTA verified visible
+[2026-11-26T13:32:20.222Z] [SUCCESS] K-03 PASSED: Active Plan unchanged

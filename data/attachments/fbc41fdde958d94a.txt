@@ -1,0 +1,37 @@
+[2026-11-26T13:29:30.871Z] [STEP] Opening dashboard
+[2026-11-26T13:29:35.044Z] [STEP] Searching for "PW_Group_20261126_131931_w12r0658ght" — up to 5 attempts (fresh groups index slowly)
+[2026-11-26T13:29:35.045Z] [STEP] Searching for group: PW_Group_20261126_131931_w12r0658ght
+[2026-11-26T13:29:44.856Z] [INFO] Search "PW_Group_20261126_131931_w12r0658ght" settled: explore-grid data-state="ready"
+[2026-11-26T13:29:45.033Z] [SUCCESS] Group "PW_Group_20261126_131931_w12r0658ght" found in Explore search (attempt 1/5)
+[2026-11-26T13:29:45.033Z] [STEP] Verifying group card content for: PW_Group_20261126_131931_w12r0658ght
+[2026-11-26T13:29:45.542Z] [SUCCESS] Group card content verified: PW_Group_20261126_131931_w12r0658ght
+[2026-11-26T13:29:45.631Z] [INFO] Side panel not open — clicking card to open: PW_Group_20261126_131931_w12r0658ght
+[2026-11-26T13:29:45.631Z] [STEP] Clicking group card: PW_Group_20261126_131931_w12r0658ght
+[2026-11-26T13:29:47.580Z] [SUCCESS] Group card clicked: PW_Group_20261126_131931_w12r0658ght
+[2026-11-26T13:29:48.568Z] [INFO] [CTA PANEL BUTTONS] [{"text":"","aria":"Close"},{"text":"","aria":"Close"},{"text":"","aria":"Share group"},{"text":"","aria":"Show platform fee details"},{"text":"Join Group","aria":"Join Group"}]
+[2026-11-26T13:29:48.683Z] [INFO] [CTA] Monthly $5: button "Join Group", price "$8/month"
+[2026-11-26T13:29:57.642Z] [INFO] [FOLLOW CHECK] PW_Group_20261126_131931_w12r0658ght: isUpcoming=false · Follow=false · Unfollow=false · Join=true · https://staging.mentalhappy.com/groups/pw_group_20261126_131931_w12r0658ght
+[2026-11-26T13:29:57.797Z] [STEP] Navigating to Profile → Earnings
+[2026-11-26T13:30:05.091Z] [SUCCESS] Earnings page loaded
+[2026-11-26T13:30:06.412Z] [INFO] Earnings — available: $3482.29, pending: $222.03
+[2026-11-26T13:30:06.412Z] [INFO] [REFUND] pending at run start $203.49, immediately before the monthly payment $222.03 — the difference is money the matrix block put there
+[2026-11-26T13:30:06.418Z] [STEP] Clicking join and waiting for payment redirect
+[2026-11-26T13:30:07.454Z] [SUCCESS] Redirected to payment page
+[2026-11-26T13:30:07.454Z] [STEP] Verifying $3 platform fee is disclosed and added to the total
+[2026-11-26T13:30:13.931Z] [SUCCESS] Platform fee verified: $3 disclosed and included in the $8 total
+[2026-11-26T13:30:13.932Z] [STEP] Verifying Stripe iframe is visible
+[2026-11-26T13:30:17.188Z] [SUCCESS] Stripe iframe verified
+[2026-11-26T13:30:17.188Z] [STEP] Filling Stripe payment details
+[2026-11-26T13:30:20.412Z] [STEP] Selecting country: US
+[2026-11-26T13:30:20.667Z] [SUCCESS] Country settled on US
+[2026-11-26T13:30:26.434Z] [SUCCESS] Stripe payment details filled
+[2026-11-26T13:30:26.435Z] [STEP] Submitting payment (attempt 1/3)
+[2026-11-26T13:30:31.637Z] [SUCCESS] Payment submitted
+[2026-11-26T13:30:31.641Z] [INFO] [PAYMENT] Stripe: succeeded, 800 usd cents, 1 confirm request(s)
+[2026-11-26T13:30:31.659Z] [SUCCESS] [CHARGED] Monthly join: Stripe took exactly $8.00
+[2026-11-26T13:30:31.670Z] [SUCCESS] Member paid $5/month (+ platform fee) for "PW_Group_20261126_131931_w12r0658ght"
+[2026-11-26T13:30:31.671Z] [STEP] Navigating to Profile → Earnings
+[2026-11-26T13:30:36.426Z] [SUCCESS] Earnings page loaded
+[2026-11-26T13:30:36.788Z] [INFO] Earnings — available: $3482.29, pending: $226.5
+[2026-11-26T13:30:36.788Z] [INFO] [REFUND] attempt 1/6 — pending $226.5, available $3482.29
+[2026-11-26T13:30:36.788Z] [INFO] [REFUND] pending beforeThisPayment=$222.03 afterPayment=$226.5 (run start was $203.49)

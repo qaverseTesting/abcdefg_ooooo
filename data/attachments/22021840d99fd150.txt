@@ -1,0 +1,6 @@
+[2026-11-26T13:48:30.064Z] [ASSERT] Verifying the page shows the member booked for one date
+[2026-11-26T13:48:33.947Z] [STEP] Clicking Cancel on the booked date
+[2026-11-26T13:48:34.249Z] [ASSERT] Verifying the cancel dialog states the refund rule
+[2026-11-26T13:48:34.516Z] [STEP] Cancelling the booked date
+[2026-11-26T13:48:36.717Z] [ASSERT] Verifying toast message matching: Your date is cancelled. You're eligible for a refund: request it through in-app support.
+[2026-11-26T13:48:37.171Z] [ASSERT] Verifying the member is offered Save My Spot at $5 per session

@@ -1,0 +1,75 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e5]: Loading...
+    - generic [ref=e8]:
+      - link "MentalHappy" [ref=e9] [cursor=pointer]:
+        - /url: /
+        - img "MentalHappy" [ref=e10]
+      - paragraph [ref=e11]: Welcome to MentalHappy
+      - generic [ref=e12]:
+        - paragraph [ref=e13]: Create an Account
+        - generic [ref=e14]:
+          - generic [ref=e15]:
+            - button "Sign up with Google" [ref=e16] [cursor=pointer]:
+              - img [ref=e18]
+              - text: Sign up with Google
+            - button "Sign up with Apple" [ref=e19] [cursor=pointer]:
+              - img [ref=e21]
+              - text: Sign up with Apple
+          - generic [ref=e24]:
+            - generic [ref=e25]:
+              - group [ref=e26]:
+                - generic [ref=e27]: First Name
+                - textbox "First Name" [ref=e28]:
+                  - /placeholder: Enter your first name
+                  - text: Firstnclawu
+              - group [ref=e29]:
+                - generic [ref=e30]: Last Name
+                - textbox "Last Name" [ref=e31]:
+                  - /placeholder: Enter your Last Name
+                  - text: Lastvrlgc
+            - group [ref=e32]:
+              - generic [ref=e33]: Email
+              - textbox "Email" [ref=e34]:
+                - /placeholder: Enter your email
+                - text: pw_auto_mh_26133834ubd2@mentalhappy.com
+              - generic [ref=e35]: By default, your email will be hidden from the public.
+            - group [ref=e36]:
+              - generic [ref=e37]: Password
+              - generic [ref=e38]:
+                - textbox "Password" [ref=e39]:
+                  - /placeholder: ••••••
+                  - text: Password123!
+                - button "Show password" [ref=e41] [cursor=pointer]:
+                  - img [ref=e42]
+              - generic [ref=e45]: Password must be at least 8 characters long, contain at least one lowercase letter, one uppercase letter, and one digit
+            - generic [ref=e46]:
+              - generic [ref=e47]:
+                - button "Create Account" [disabled] [ref=e48]:
+                  - generic [ref=e51]: Loading...
+                  - generic [ref=e52]:
+                    - text: Create Account
+                    - img [ref=e54]
+                - paragraph [ref=e56]:
+                  - text: By signing up, you accept our
+                  - link "Terms of Use" [ref=e57] [cursor=pointer]:
+                    - /url: https://www.mentalhappy.com/terms-of-use
+                  - text: and
+                  - link "Privacy Policy" [ref=e58] [cursor=pointer]:
+                    - /url: https://www.mentalhappy.com/privacy-policy
+              - paragraph [ref=e59]:
+                - text: Already have an account?
+                - link "Login" [ref=e60] [cursor=pointer]:
+                  - /url: /login
+  - alert [ref=e61]
+  - generic:
+    - region
+    - region
+    - region
+    - region
+    - region
+    - region
+```

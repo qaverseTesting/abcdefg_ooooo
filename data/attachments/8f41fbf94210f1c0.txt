@@ -1,9 +1,0 @@
-[2026-11-26T07:36:53.403Z] [STEP] Opening group room "pw_group_20261126_072405_w0r01517dg" on tab=sessions
-[2026-11-26T07:36:57.409Z] [SUCCESS] Group room open on tab=sessions
-[2026-11-26T07:36:57.410Z] [STEP] Clicking Join Session on card: PW_Session_20261126_072405_w0r0151757
-[2026-11-26T07:37:02.560Z] [STEP] Joining the call as "Automation Leader"
-[2026-11-26T07:37:19.496Z] [SUCCESS] In the call
-[2026-11-26T07:37:19.502Z] [ASSERT] Verifying 2 participant(s) in the call
-[2026-11-26T07:37:20.411Z] [ASSERT] Verifying "Automation Member" is visible in the call
-[2026-11-26T07:37:20.750Z] [ASSERT] Verifying 2 participant(s) in the call
-[2026-11-26T07:37:20.965Z] [ASSERT] Verifying "Automation Leader" is visible in the call

@@ -1,0 +1,29 @@
+[2026-11-26T13:42:58.253Z] [STEP] Submitting member registration form for: pw_auto_mh_261342581gev@mentalhappy.com
+[2026-11-26T13:42:58.253Z] [STEP] Navigating to Registration Page
+[2026-11-26T13:42:59.195Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-26T13:42:59.410Z] [SUCCESS] Registration Page loaded
+[2026-11-26T13:42:59.410Z] [STEP] Filling registration form for: pw_auto_mh_261342581gev@mentalhappy.com
+[2026-11-26T13:43:00.267Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-26T13:43:00.291Z] [STEP] Submitting registration form
+[2026-11-26T13:43:00.690Z] [SUCCESS] Registration form submitted
+[2026-11-26T13:43:00.690Z] [STEP] Waiting for OTP entry page to be ready
+[2026-11-26T13:43:32.914Z] [INFO] Attempting login for user: pw_auto_mh_261342581gev@mentalhappy.com | Password: [hidden, 12 chars] (expectSuccess: false)
+[2026-11-26T13:43:35.999Z] [STEP] Waiting for OTP entry page to be ready
+[2026-11-26T13:43:36.659Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-11-26T13:43:36.659Z] [SUCCESS] Registration form submitted, OTP page reached
+[2026-11-26T13:43:36.659Z] [STEP] Verifying email for: pw_auto_mh_261342581gev@mentalhappy.com
+[2026-11-26T13:43:36.659Z] [INFO] [OTP] Bypass active for pw_auto_mh_261342581gev@mentalhappy.com. Returning fixed validation code: 456321
+[2026-11-26T13:43:36.661Z] [STEP] Entering OTP: 456321
+[2026-11-26T13:43:36.661Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-26T13:43:37.036Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-26T13:43:37.345Z] [SUCCESS] OTP entered
+[2026-11-26T13:43:37.345Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-11-26T13:43:37.349Z] [ASSERT] Verifying toast message matching: /Email Verified Successfully/i
+[2026-11-26T13:43:38.478Z] [SUCCESS] Email verification (OTP) successful
+[2026-11-26T13:43:38.481Z] [STEP] Selecting path: Explore Support Groups
+[2026-11-26T13:43:38.481Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-26T13:43:38.788Z] [INFO] Clicked Explore support groups
+[2026-11-26T13:43:38.805Z] [SUCCESS] Explore Support Groups path selected
+[2026-11-26T13:43:38.805Z] [STEP] Verifying Continue button is enabled
+[2026-11-26T13:43:38.825Z] [SUCCESS] Continue button is enabled
+[2026-11-26T13:43:38.825Z] [SUCCESS] Member path selection enabled Continue button

@@ -1,0 +1,50 @@
+[2026-11-26T13:46:48.677Z] [STEP] Opening group room "amactivegroupv2" on tab=sessions
+[2026-11-26T13:46:49.710Z] [SUCCESS] Group room open on tab=sessions
+[2026-11-26T13:46:49.710Z] [STEP] Opening Schedule Session modal
+[2026-11-26T13:46:51.077Z] [STEP] Waiting for Create Session modal
+[2026-11-26T13:46:51.272Z] [SUCCESS] Create Session modal visible
+[2026-11-26T13:46:51.273Z] [STEP] Filling Create Session form
+[2026-11-26T13:46:51.273Z] [STEP] Setting session date to next day
+[2026-11-26T13:46:52.624Z] [INFO] Session date set to 27 November, 2026
+[2026-11-26T13:46:52.624Z] [STEP] Ensuring timezone is selected
+[2026-11-26T13:46:52.854Z] [INFO] Searching for timezone "Pacific"
+[2026-11-26T13:46:53.445Z] [INFO] Timezone selection attempted via keyboard
+[2026-11-26T13:46:53.445Z] [STEP] Setting session time
+[2026-11-26T13:46:55.051Z] [INFO] Session time set to 10:00 AM – 11:00 AM
+[2026-11-26T13:46:55.126Z] [INFO] Filling description editor
+[2026-11-26T13:46:56.328Z] [STEP] Setting session visibility: Private
+[2026-11-26T13:46:56.457Z] [STEP] Setting session price: Free
+[2026-11-26T13:46:56.599Z] [SUCCESS] Form filling completed
+[2026-11-26T13:46:56.599Z] [STEP] Setting session date to 3 days from today
+[2026-11-26T13:46:57.545Z] [INFO] Session date set to 29 November, 2026
+[2026-11-26T13:46:57.546Z] [STEP] Setting a paid price per session: ""
+[2026-11-26T13:46:57.546Z] [STEP] Setting session price: Paid
+[2026-11-26T13:46:57.706Z] [STEP] Pressing Schedule Now on an invalid form — it must be refused
+[2026-11-26T13:46:59.927Z] [ASSERT] Verifying Create Session modal remains open
+[2026-11-26T13:46:59.941Z] [STEP] Setting a paid price per session: "4"
+[2026-11-26T13:46:59.941Z] [STEP] Setting session price: Paid
+[2026-11-26T13:47:00.043Z] [STEP] Pressing Schedule Now on an invalid form — it must be refused
+[2026-11-26T13:47:02.111Z] [ASSERT] Verifying Create Session modal remains open
+[2026-11-26T13:47:02.122Z] [STEP] Setting a paid price per session: "1001"
+[2026-11-26T13:47:02.122Z] [STEP] Setting session price: Paid
+[2026-11-26T13:47:02.241Z] [STEP] Pressing Schedule Now on an invalid form — it must be refused
+[2026-11-26T13:47:04.313Z] [ASSERT] Verifying Create Session modal remains open
+[2026-11-26T13:47:04.324Z] [STEP] Setting a paid price per session: "5"
+[2026-11-26T13:47:04.324Z] [STEP] Setting session price: Paid
+[2026-11-26T13:47:04.426Z] [STEP] Submitting session
+[2026-11-26T13:47:04.675Z] [STEP] Verifying session creation (modal closed)
+[2026-11-26T13:47:06.585Z] [STEP] Navigating to Sessions tab
+[2026-11-26T13:47:06.596Z] [SUCCESS] Sessions tab active
+[2026-11-26T13:47:06.596Z] [STEP] Waiting for session list to settle
+[2026-11-26T13:47:06.605Z] [SUCCESS] Session list settled — 0 session(s)
+[2026-11-26T13:47:06.605Z] [ASSERT] Verifying "PW_Session_20261126_134648_w0r0561f68" is listed as a paid session
+[2026-11-26T13:47:07.025Z] [STEP] Opening session details: PW_Session_20261126_134648_w0r0561f68
+[2026-11-26T13:47:07.025Z] [STEP] Navigating to Sessions tab
+[2026-11-26T13:47:07.047Z] [SUCCESS] Sessions tab active
+[2026-11-26T13:47:07.047Z] [STEP] Waiting for session list to settle
+[2026-11-26T13:47:07.057Z] [SUCCESS] Session list settled — 1 session(s)
+[2026-11-26T13:47:07.465Z] [INFO] [STRIPE] Stripe's script files are served from the shared cache (storage/stripe-cache)
+[2026-11-26T13:47:07.485Z] [SUCCESS] Session details opened
+[2026-11-26T13:47:07.496Z] [ASSERT] Verifying the host's view of "PW_Session_20261126_134648_w0r0561f68"
+[2026-11-26T13:47:09.166Z] [ASSERT] Verifying the leader sees 0 booked and 0 attendee(s)
+[2026-11-26T13:47:09.329Z] [INFO] Paid session 6b083859c5a25d428482f64a: https://staging.mentalhappy.com/session/event/6b083859c5a25d428482f64a

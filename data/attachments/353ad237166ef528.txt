@@ -1,0 +1,20 @@
+[2026-11-26T13:19:02.829Z] [STEP] Opening group room "pw_group_20261126_131232_w0r0369iao" on tab=conversations
+[2026-11-26T13:19:03.870Z] [SUCCESS] Group room open on tab=conversations
+[2026-11-26T13:19:07.800Z] [STEP] Opening session details from feed: PW_Session_20261126_131232_w0r0371n5c
+[2026-11-26T13:19:08.813Z] [STEP] Verifying session details page: PW_Session_20261126_131232_w0r0371n5c
+[2026-11-26T13:19:10.595Z] [ASSERT] Verifying the session page says "For members of PW_Group_20261126_131232_w0r0369iao. Membership is a $3/month platform fee."
+[2026-11-26T13:19:10.815Z] [STEP] Copying the session link
+[2026-11-26T13:19:11.168Z] [SUCCESS] Copied https://staging.mentalhappy.com/session/event/6b08311bc5a25d428482bed4
+[2026-11-26T13:19:11.846Z] [ASSERT] Verifying "PW_Session_20261126_131232_w0r0371n5c" is not shown to this viewer
+[2026-11-26T13:19:16.900Z] [STEP] Opening group room "pw_group_20261126_131232_w0r0369iao" on tab=sessions
+[2026-11-26T13:19:18.118Z] [SUCCESS] Group room open on tab=sessions
+[2026-11-26T13:19:18.118Z] [STEP] Waiting for session list to settle
+[2026-11-26T13:19:20.532Z] [SUCCESS] Session list settled — 6 session(s)
+[2026-11-26T13:19:22.577Z] [ASSERT] Verifying the session page says "For members of PW_Group_20261126_131232_w0r0369iao. Membership is a $3/month platform fee."
+[2026-11-26T13:19:22.583Z] [ASSERT] Verifying a non-member is asked to join the group before registering
+[2026-11-26T13:19:22.596Z] [STEP] Clicking Join Group to Register
+[2026-11-26T13:19:22.671Z] [ASSERT] Verifying the public page of "pw_group_20261126_131232_w0r0369iao" offers "Join Group"
+[2026-11-26T13:19:22.799Z] [SUCCESS] The public page offers "Join Group"
+[2026-11-26T13:19:23.075Z] [STEP] Verifying session details page: PW_Session_20261126_131232_w0r0371gq2
+[2026-11-26T13:19:25.764Z] [ASSERT] Verifying the session page says "For members of PW_Group_20261126_131232_w0r0369iao. Membership is a $3/month platform fee."
+[2026-11-26T13:19:25.793Z] [ASSERT] Verifying a non-member is asked to join the group before registering

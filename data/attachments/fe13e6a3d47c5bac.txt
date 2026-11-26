@@ -1,7 +1,0 @@
-[2026-11-26T07:57:48.034Z] [STEP] Navigating to Profile → Plan & Billing
-[2026-11-26T07:57:49.541Z] [INFO] [STRIPE] Stripe's script files are served from the shared cache (storage/stripe-cache)
-[2026-11-26T07:57:52.645Z] [SUCCESS] Profile Plan & Billing page loaded
-[2026-11-26T07:57:52.645Z] [ASSERT] Verifying a "Paid" transaction "Active Group plan, monthly" for -$19.00
-[2026-11-26T07:57:52.645Z] [STEP] Reading Transactions History
-[2026-11-26T07:57:53.184Z] [SUCCESS] Transactions History has 1 row(s)
-[2026-11-26T07:57:53.187Z] [SUCCESS] Transaction confirmed: Nov 26, 2026 Active Group plan, monthly -$19.00 Paid
