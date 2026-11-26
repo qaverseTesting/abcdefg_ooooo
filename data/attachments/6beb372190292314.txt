@@ -1,0 +1,15 @@
+[2026-11-26T18:07:45.635Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-11-26T18:07:48.922Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-11-26T18:07:48.924Z] [STEP] Verifying Plan & Billing page content
+[2026-11-26T18:07:49.321Z] [SUCCESS] Plan & Billing page verified
+[2026-11-26T18:07:49.321Z] [STEP] "Subscription options" → "Keep My Plan"
+[2026-11-26T18:07:50.967Z] [SUCCESS] KP-01 PASSED: plan kept
+[2026-11-26T18:07:50.974Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-11-26T18:07:54.081Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-11-26T18:07:54.081Z] [STEP] Verifying Plan & Billing page content
+[2026-11-26T18:07:54.397Z] [SUCCESS] Plan & Billing page verified
+[2026-11-26T18:07:54.626Z] [INFO] Next billing date: December 26, 2026
+[2026-11-26T18:07:54.627Z] [ASSERT] "Subscription options" lists ["Cancel Subscription"]
+[2026-11-26T18:07:55.456Z] [ASSERT] "Group options" for "PW_Group_20261126_174706_w4r0742id8" lists ["Cancel & Delete Group","Downgrade to Listing"]
+[2026-11-26T18:07:55.456Z] [STEP] Opening "Group options" menu for group "PW_Group_20261126_174706_w4r0742id8"
+[2026-11-26T18:07:56.010Z] [SUCCESS] KP-02 PASSED: no change scheduled any more

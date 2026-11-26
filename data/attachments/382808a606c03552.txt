@@ -1,0 +1,18 @@
+[2026-11-26T18:02:28.062Z] [STEP] Opening group Settings tab for: pw_group_20261126_175550_w12r00203mr
+[2026-11-26T18:02:32.943Z] [SUCCESS] Group Settings tab loaded
+[2026-11-26T18:02:32.943Z] [STEP] Clicking "Change Pricing Model"
+[2026-11-26T18:02:33.164Z] [SUCCESS] "Change Pricing Model" clicked
+[2026-11-26T18:02:33.164Z] [STEP] Verifying Update Group Pricing page loaded
+[2026-11-26T18:02:34.085Z] [SUCCESS] Update Group Pricing page loaded
+[2026-11-26T18:02:34.086Z] [STEP] Selecting "One-Time Payment" pricing model
+[2026-11-26T18:02:34.301Z] [SUCCESS] One-Time Payment selected
+[2026-11-26T18:02:34.301Z] [STEP] Entering one-time price: $10
+[2026-11-26T18:02:34.515Z] [SUCCESS] One-time price set to $10
+[2026-11-26T18:02:34.516Z] [STEP] Clicking "Update Pricing"
+[2026-11-26T18:02:34.778Z] [SUCCESS] "Update Pricing" clicked — confirmation dialog opened
+[2026-11-26T18:02:34.813Z] [STEP] Clicking "Apply Changes"
+[2026-11-26T18:02:37.438Z] [SUCCESS] "Apply Changes" clicked — confirmation dialog closed
+[2026-11-26T18:02:37.439Z] [STEP] Opening group Settings tab for: pw_group_20261126_175550_w12r00203mr
+[2026-11-26T18:02:40.957Z] [SUCCESS] Group Settings tab loaded
+[2026-11-26T18:02:40.958Z] [ASSERT] Verifying one-time pricing summary: One-Time Payment $10
+[2026-11-26T18:02:41.021Z] [SUCCESS] One-time pricing summary verified: $10

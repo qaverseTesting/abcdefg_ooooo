@@ -1,0 +1,6 @@
+[2026-11-26T18:11:37.773Z] [ASSERT] Verifying the host's view of "PW_Session_20261126_181026_w0r0041gob"
+[2026-11-26T18:11:40.917Z] [ASSERT] Verifying the leader sees 1 booked and 1 attendee(s)
+[2026-11-26T18:11:41.191Z] [STEP] Navigating to Profile → Earnings
+[2026-11-26T18:11:43.400Z] [SUCCESS] Earnings page loaded
+[2026-11-26T18:11:43.401Z] [ASSERT] Verifying Session earnings shows $5 and one booked booking
+[2026-11-26T18:11:44.856Z] [INFO] [SESSION EARNINGS] 6b087621c5a25d4284837622: $5 · Auto Member, booked

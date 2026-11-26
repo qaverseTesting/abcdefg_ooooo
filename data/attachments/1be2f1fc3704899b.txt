@@ -1,5 +1,0 @@
-[2026-11-26T13:48:41.566Z] [ASSERT] Verifying the leader sees 0 booked and 0 attendee(s)
-[2026-11-26T13:48:45.122Z] [STEP] Navigating to Profile → Earnings
-[2026-11-26T13:48:47.785Z] [SUCCESS] Earnings page loaded
-[2026-11-26T13:48:47.785Z] [ASSERT] Verifying Session earnings shows $5 and one cancelled booking
-[2026-11-26T13:48:49.867Z] [INFO] [SESSION EARNINGS] 6b083859c5a25d428482f64a: $5 · Auto Member, cancelled · $5 for Auto Member: refund owed if asked

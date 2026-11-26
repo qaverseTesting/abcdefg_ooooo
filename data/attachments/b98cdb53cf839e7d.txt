@@ -1,0 +1,19 @@
+[2026-11-26T18:11:18.685Z] [STEP] Clicking Save My Spot
+[2026-11-26T18:11:21.201Z] [STEP] Picking the first date
+[2026-11-26T18:11:21.320Z] [STEP] Continuing to payment
+[2026-11-26T18:11:23.789Z] [STEP] Verifying Stripe iframe is visible
+[2026-11-26T18:11:24.457Z] [SUCCESS] Stripe iframe verified
+[2026-11-26T18:11:24.457Z] [STEP] Filling Stripe payment details
+[2026-11-26T18:11:25.292Z] [STEP] Selecting country: US
+[2026-11-26T18:11:25.700Z] [SUCCESS] Country settled on US
+[2026-11-26T18:11:27.914Z] [SUCCESS] Stripe payment details filled
+[2026-11-26T18:11:27.915Z] [STEP] Submitting payment (attempt 1/3)
+[2026-11-26T18:11:29.960Z] [SUCCESS] Payment submitted
+[2026-11-26T18:11:29.963Z] [INFO] [PAYMENT] Stripe: succeeded, 500 usd cents, 1 confirm request(s)
+[2026-11-26T18:11:29.965Z] [SUCCESS] [CHARGED] paid session: Stripe took exactly $5.00
+[2026-11-26T18:11:29.965Z] [ASSERT] Verifying toast message matching: Your place is booked
+[2026-11-26T18:11:30.098Z] [ASSERT] Verifying the page shows the member booked for one date
+[2026-11-26T18:11:31.449Z] [ASSERT] Verifying the page shows the member booked for one date
+[2026-11-26T18:11:34.613Z] [STEP] Opening My Sessions ?tab=registered
+[2026-11-26T18:11:37.059Z] [ASSERT] Verifying "PW_Session_20261126_181026_w0r0041gob" is in My Sessions as Booked
+[2026-11-26T18:11:37.087Z] [SUCCESS] Listed with the Booked badge
