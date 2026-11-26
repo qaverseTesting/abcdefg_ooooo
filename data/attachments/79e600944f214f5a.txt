@@ -1,0 +1,24 @@
+[2026-11-26T07:50:11.545Z] [STEP] Registering new leader with email: pw_auto_mh_26075011m06f@mentalhappy.com
+[2026-11-26T07:50:11.550Z] [STEP] Navigating to Registration Page
+[2026-11-26T07:50:12.796Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-26T07:50:13.081Z] [SUCCESS] Registration Page loaded
+[2026-11-26T07:50:13.081Z] [STEP] Filling registration form for: pw_auto_mh_26075011m06f@mentalhappy.com
+[2026-11-26T07:50:14.829Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-26T07:50:14.847Z] [STEP] Submitting registration form
+[2026-11-26T07:50:15.639Z] [SUCCESS] Registration form submitted
+[2026-11-26T07:50:15.640Z] [STEP] Waiting for OTP entry page to be ready
+[2026-11-26T07:50:47.844Z] [INFO] Attempting login for user: pw_auto_mh_26075011m06f@mentalhappy.com | Password: [hidden, 12 chars] (expectSuccess: false)
+[2026-11-26T07:50:51.072Z] [STEP] Waiting for OTP entry page to be ready
+[2026-11-26T07:50:51.947Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-11-26T07:50:51.948Z] [INFO] [OTP] Bypass active for pw_auto_mh_26075011m06f@mentalhappy.com. Returning fixed validation code: 456321
+[2026-11-26T07:50:51.963Z] [STEP] Entering OTP: 456321
+[2026-11-26T07:50:51.963Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-26T07:50:52.591Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-26T07:50:52.982Z] [SUCCESS] OTP entered
+[2026-11-26T07:50:52.982Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-11-26T07:50:52.990Z] [ASSERT] Verifying toast message matching: /Email Verified Successfully/i
+[2026-11-26T07:50:54.117Z] [SUCCESS] Leader registration and OTP verification completed
+[2026-11-26T07:50:54.119Z] [STEP] Verifying Welcome Page is displayed
+[2026-11-26T07:50:54.120Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-26T07:50:54.436Z] [SUCCESS] Welcome Page verification successful (Role buttons visible)
+[2026-11-26T07:50:54.488Z] [SUCCESS] Welcome page URL verified

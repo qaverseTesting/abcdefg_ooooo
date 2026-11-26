@@ -1,0 +1,45 @@
+[2026-11-26T07:35:07.547Z] [STEP] Opening dashboard
+[2026-11-26T07:35:09.525Z] [STEP] Searching for "PW_Group_20261126_072756_w12r0529so6" — up to 5 attempts (fresh groups index slowly)
+[2026-11-26T07:35:09.525Z] [STEP] Searching for group: PW_Group_20261126_072756_w12r0529so6
+[2026-11-26T07:35:13.141Z] [INFO] Search "PW_Group_20261126_072756_w12r0529so6" settled: explore-grid data-state="ready"
+[2026-11-26T07:35:13.219Z] [SUCCESS] Group "PW_Group_20261126_072756_w12r0529so6" found in Explore search (attempt 1/5)
+[2026-11-26T07:35:13.219Z] [STEP] Verifying group card content for: PW_Group_20261126_072756_w12r0529so6
+[2026-11-26T07:35:13.392Z] [SUCCESS] Group card content verified: PW_Group_20261126_072756_w12r0529so6
+[2026-11-26T07:35:17.610Z] [INFO] [FOLLOW CHECK] PW_Group_20261126_072756_w12r0529so6: isUpcoming=false · Follow=false · Unfollow=false · Join=true · https://staging.mentalhappy.com/groups/pw_group_20261126_072756_w12r0529so6
+[2026-11-26T07:35:17.669Z] [STEP] Verifying group side panel is visible
+[2026-11-26T07:35:17.740Z] [INFO] Side panel not open — clicking card to open: PW_Group_20261126_072756_w12r0529so6
+[2026-11-26T07:35:17.740Z] [STEP] Clicking group card: PW_Group_20261126_072756_w12r0529so6
+[2026-11-26T07:35:18.541Z] [SUCCESS] Group card clicked: PW_Group_20261126_072756_w12r0529so6
+[2026-11-26T07:35:18.750Z] [SUCCESS] Group side panel opened
+[2026-11-26T07:35:18.754Z] [ASSERT] Verifying member-facing one-time price "$10 One time + $3/month" for group: PW_Group_20261126_072756_w12r0529so6
+[2026-11-26T07:35:18.896Z] [SUCCESS] Member-facing one-time price verified: $10 One time + $3/month
+[2026-11-26T07:35:19.052Z] [INFO] [CTA PANEL BUTTONS] [{"text":"","aria":"Close"},{"text":"","aria":"Close"},{"text":"","aria":"Share group"},{"text":"","aria":"Show platform fee details"},{"text":"Join Group","aria":"Join Group"}]
+[2026-11-26T07:35:19.081Z] [INFO] [CTA] One-Time 10: button "Join Group", price "$10 One time + $3/month"
+[2026-11-26T07:35:19.092Z] [ASSERT] Verifying side panel discloses the platform fee: "Includes the $3/month MentalHappy platform fee"
+[2026-11-26T07:35:19.713Z] [SUCCESS] Platform fee disclosure verified in side panel (revealed on hover)
+[2026-11-26T07:35:19.713Z] [SUCCESS] One-time group discloses the platform fee in the side panel
+[2026-11-26T07:35:19.716Z] [STEP] Clicking join on "PW_Group_20261126_072756_w12r0529so6" — detecting destination (checkout or group)
+[2026-11-26T07:35:20.477Z] [SUCCESS] Join destination for "PW_Group_20261126_072756_w12r0529so6": checkout
+[2026-11-26T07:35:20.488Z] [STEP] Verifying checkout summary for: PW_Group_20261126_072756_w12r0529so6
+[2026-11-26T07:35:30.310Z] [SUCCESS] Checkout summary verified
+[2026-11-26T07:35:30.310Z] [STEP] Verifying $3 platform fee is disclosed and added to the total
+[2026-11-26T07:35:32.110Z] [SUCCESS] Platform fee verified: $3 disclosed and included in the $13 total
+[2026-11-26T07:35:32.116Z] [STEP] Verifying Stripe iframe is visible
+[2026-11-26T07:35:32.197Z] [SUCCESS] Stripe iframe verified
+[2026-11-26T07:35:32.197Z] [STEP] Filling Stripe payment details
+[2026-11-26T07:35:32.382Z] [STEP] Selecting country: US
+[2026-11-26T07:35:32.452Z] [SUCCESS] Country settled on US
+[2026-11-26T07:35:34.850Z] [SUCCESS] Stripe payment details filled
+[2026-11-26T07:35:34.851Z] [STEP] Submitting payment (attempt 1/3)
+[2026-11-26T07:35:35.119Z] [STEP] Answering Stripe's 3D Secure page: complete
+[2026-11-26T07:35:39.499Z] [SUCCESS] 3D Secure answered: complete
+[2026-11-26T07:35:45.954Z] [SUCCESS] Payment submitted
+[2026-11-26T07:35:45.957Z] [INFO] [PAYMENT] Stripe: succeeded, 1300 usd cents, 1 confirm request(s)
+[2026-11-26T07:35:45.960Z] [SUCCESS] [CHARGED] One-Time join (3D Secure): Stripe took exactly $13.00
+[2026-11-26T07:35:45.961Z] [STEP] Waiting for group page to load after payment redirect
+[2026-11-26T07:35:45.964Z] [SUCCESS] Group page loaded
+[2026-11-26T07:35:45.964Z] [STEP] Checking for post-join success modal
+[2026-11-26T07:35:46.237Z] [SUCCESS] Success modal handled
+[2026-11-26T07:35:46.237Z] [STEP] Verifying Conversations tab is visible
+[2026-11-26T07:35:46.385Z] [SUCCESS] Conversations tab visible — membership access confirmed
+[2026-11-26T07:35:46.385Z] [SUCCESS] Member joined and paid $10 one-time (+ platform fee)

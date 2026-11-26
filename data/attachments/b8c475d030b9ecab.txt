@@ -1,0 +1,26 @@
+[2026-11-26T07:40:34.388Z] [INFO] [PRICING INIT] - Group: PW_Group_20261126_073954_w13r0444ti8
+[2026-11-26T07:40:34.793Z] [STEP] Opening group Settings tab for: pw_group_20261126_073954_w13r0444ti8
+[2026-11-26T07:40:39.670Z] [SUCCESS] Group Settings tab loaded
+[2026-11-26T07:40:39.671Z] [ASSERT] Verifying group pricing model summary is: Free
+[2026-11-26T07:40:39.704Z] [SUCCESS] Pricing model summary verified: Free
+[2026-11-26T07:40:39.704Z] [STEP] Clicking "Change Pricing Model"
+[2026-11-26T07:40:39.798Z] [SUCCESS] "Change Pricing Model" clicked
+[2026-11-26T07:40:39.798Z] [STEP] Verifying Update Group Pricing page loaded
+[2026-11-26T07:40:40.621Z] [SUCCESS] Update Group Pricing page loaded
+[2026-11-26T07:40:40.621Z] [STEP] Selecting "Monthly Subscription" pricing model
+[2026-11-26T07:40:40.920Z] [SUCCESS] Monthly Subscription selected
+[2026-11-26T07:40:40.920Z] [STEP] Entering monthly price: $10
+[2026-11-26T07:40:41.292Z] [SUCCESS] Monthly price set to $10
+[2026-11-26T07:40:41.292Z] [STEP] Clicking "Update Pricing"
+[2026-11-26T07:40:41.657Z] [SUCCESS] "Update Pricing" clicked — confirmation dialog opened
+[2026-11-26T07:40:41.657Z] [ASSERT] Verifying pricing confirmation dialog: You're changing from Free to Monthly Paid
+[2026-11-26T07:40:41.840Z] [SUCCESS] Platform fee verified on the leader's dialog: $10 + $3 = $13
+[2026-11-26T07:40:41.840Z] [SUCCESS] Pricing confirmation dialog verified
+[2026-11-26T07:40:41.844Z] [STEP] Clicking "Apply Changes"
+[2026-11-26T07:40:44.106Z] [SUCCESS] "Apply Changes" clicked — confirmation dialog closed
+[2026-11-26T07:40:44.110Z] [ASSERT] Verifying toast message matching: Please finish your payout setup before charging for this group.
+[2026-11-26T07:40:44.145Z] [ASSERT] Pricing editor warns that payouts are not set up
+[2026-11-26T07:40:44.178Z] [STEP] Opening group Settings tab for: pw_group_20261126_073954_w13r0444ti8
+[2026-11-26T07:40:48.385Z] [SUCCESS] Group Settings tab loaded
+[2026-11-26T07:40:48.386Z] [ASSERT] Verifying group pricing model summary is: Free
+[2026-11-26T07:40:48.435Z] [SUCCESS] Pricing model summary verified: Free

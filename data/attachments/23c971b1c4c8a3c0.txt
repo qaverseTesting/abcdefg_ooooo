@@ -1,7 +1,0 @@
-[2026-11-25T18:15:43.374Z] [STEP] Opening group room "pw_group_20261125_180958_w0r0906ttj" on tab=conversations
-[2026-11-25T18:15:44.756Z] [SUCCESS] Group room open on tab=conversations
-[2026-11-25T18:15:47.922Z] [STEP] Clicking Unregister on feed card: PW_Session_20261125_180958_w0r0907bpp
-[2026-11-25T18:15:49.722Z] [ASSERT] Verifying unregister confirmation for: PW_Session_20261125_180958_w0r0907bpp
-[2026-11-25T18:15:49.776Z] [STEP] Closing unregister confirmation (X)
-[2026-11-25T18:15:50.052Z] [ASSERT] Verifying "PW_Session_20261125_180958_w0r0907bpp" feed card shows "Unregister from session"
-[2026-11-25T18:15:50.122Z] [SUCCESS] Feed card shows "Unregister from session"

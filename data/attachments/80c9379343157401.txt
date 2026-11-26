@@ -1,0 +1,11 @@
+[2026-11-26T07:41:03.890Z] [STEP] Navigating to My Groups page
+[2026-11-26T07:41:05.290Z] [STEP] Waiting for My Groups page content
+[2026-11-26T07:41:06.926Z] [STEP] Clicking filter: Joined
+[2026-11-26T07:41:11.462Z] [SUCCESS] Filter "Joined" selected
+[2026-11-26T07:41:11.462Z] [ASSERT] Verifying "PW_Group_20261126_072756_w12r0529so6" is not listed on the active tab
+[2026-11-26T07:41:11.462Z] [STEP] Waiting for group list to settle
+[2026-11-26T07:41:12.538Z] [SUCCESS] Group list settled — 0 card(s) on the active tab
+[2026-11-26T07:41:12.590Z] [SUCCESS] Confirmed absent: PW_Group_20261126_072756_w12r0529so6
+[2026-11-26T07:41:12.593Z] [ASSERT] Verifying the room link of "PW_Group_20261126_072756_w12r0529so6" (tab=conversations) does not let this user in
+[2026-11-26T07:41:15.959Z] [SUCCESS] Refused: the room link of "PW_Group_20261126_072756_w12r0529so6" sent this user to /groups
+[2026-11-26T07:41:15.959Z] [SUCCESS] [MEMBER ACCESS] Revoked for "PW_Group_20261126_072756_w12r0529so6" after deletion

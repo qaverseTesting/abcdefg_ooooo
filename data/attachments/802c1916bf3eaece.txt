@@ -1,0 +1,66 @@
+[2026-11-26T07:23:44.906Z] [STEP] Opening group room "pw_group_20261126_071831_w0r07812vv" on tab=sessions
+[2026-11-26T07:23:46.334Z] [SUCCESS] Group room open on tab=sessions
+[2026-11-26T07:23:46.334Z] [STEP] Starting Session Creation flow for: PW_Session_20261126_071831_w0r0782va8
+[2026-11-26T07:23:46.334Z] [STEP] Opening Schedule Session modal
+[2026-11-26T07:23:48.319Z] [STEP] Waiting for Create Session modal
+[2026-11-26T07:23:48.750Z] [SUCCESS] Create Session modal visible
+[2026-11-26T07:23:48.750Z] [STEP] Filling Create Session form
+[2026-11-26T07:23:48.750Z] [STEP] Setting session date to next day
+[2026-11-26T07:23:50.230Z] [INFO] Session date set to 27 November, 2026
+[2026-11-26T07:23:50.230Z] [STEP] Ensuring timezone is selected
+[2026-11-26T07:23:50.673Z] [INFO] Searching for timezone "Pacific"
+[2026-11-26T07:23:51.365Z] [INFO] Timezone selection attempted via keyboard
+[2026-11-26T07:23:51.365Z] [STEP] Setting session time
+[2026-11-26T07:23:52.968Z] [INFO] Session time set to 10:00 AM – 11:00 AM
+[2026-11-26T07:23:53.016Z] [INFO] Filling description editor
+[2026-11-26T07:23:54.408Z] [STEP] Setting session visibility: Private
+[2026-11-26T07:23:54.688Z] [STEP] Setting session price: Free
+[2026-11-26T07:23:55.036Z] [SUCCESS] Form filling completed
+[2026-11-26T07:23:55.036Z] [STEP] Setting session visibility: Discoverable
+[2026-11-26T07:23:55.315Z] [STEP] Submitting session
+[2026-11-26T07:23:55.711Z] [STEP] Verifying session creation (modal closed)
+[2026-11-26T07:23:57.735Z] [SUCCESS] Session "PW_Session_20261126_071831_w0r0782va8" submitted.
+[2026-11-26T07:23:57.735Z] [STEP] Opening session details: PW_Session_20261126_071831_w0r0782va8
+[2026-11-26T07:23:57.735Z] [STEP] Navigating to Sessions tab
+[2026-11-26T07:23:57.811Z] [SUCCESS] Sessions tab active
+[2026-11-26T07:23:57.811Z] [STEP] Waiting for session list to settle
+[2026-11-26T07:23:57.919Z] [SUCCESS] Session list settled — 5 session(s)
+[2026-11-26T07:23:58.520Z] [SUCCESS] Session details opened
+[2026-11-26T07:23:58.520Z] [STEP] Clicking Edit session
+[2026-11-26T07:24:01.734Z] [ASSERT] Verifying the edit form is open for "PW_Session_20261126_071831_w0r0782va8"
+[2026-11-26T07:24:02.085Z] [ASSERT] Verifying the form shows visibility "Discoverable"
+[2026-11-26T07:24:02.151Z] [STEP] Closing Create Session modal
+[2026-11-26T07:24:02.408Z] [SUCCESS] Create Session modal closed
+[2026-11-26T07:24:02.409Z] [STEP] Opening group room "pw_group_20261126_071831_w0r07812vv" on tab=sessions
+[2026-11-26T07:24:04.042Z] [SUCCESS] Group room open on tab=sessions
+[2026-11-26T07:24:04.042Z] [STEP] Starting Session Creation flow for: PW_Session_20261126_071831_w0r0782r56
+[2026-11-26T07:24:04.042Z] [STEP] Opening Schedule Session modal
+[2026-11-26T07:24:06.319Z] [STEP] Waiting for Create Session modal
+[2026-11-26T07:24:06.815Z] [SUCCESS] Create Session modal visible
+[2026-11-26T07:24:06.815Z] [STEP] Filling Create Session form
+[2026-11-26T07:24:06.815Z] [STEP] Setting session date to next day
+[2026-11-26T07:24:08.780Z] [INFO] Session date set to 27 November, 2026
+[2026-11-26T07:24:08.780Z] [STEP] Ensuring timezone is selected
+[2026-11-26T07:24:09.318Z] [INFO] Searching for timezone "Pacific"
+[2026-11-26T07:24:10.374Z] [INFO] Timezone selection attempted via keyboard
+[2026-11-26T07:24:10.374Z] [STEP] Setting session time
+[2026-11-26T07:24:12.088Z] [INFO] Session time set to 10:00 AM – 11:00 AM
+[2026-11-26T07:24:12.119Z] [INFO] Filling description editor
+[2026-11-26T07:24:13.320Z] [STEP] Setting session visibility: Private
+[2026-11-26T07:24:13.512Z] [STEP] Setting session price: Free
+[2026-11-26T07:24:13.757Z] [SUCCESS] Form filling completed
+[2026-11-26T07:24:13.757Z] [STEP] Setting session visibility: Public
+[2026-11-26T07:24:14.010Z] [STEP] Submitting session
+[2026-11-26T07:24:14.327Z] [STEP] Verifying session creation (modal closed)
+[2026-11-26T07:24:15.502Z] [SUCCESS] Session "PW_Session_20261126_071831_w0r0782r56" submitted.
+[2026-11-26T07:24:15.502Z] [STEP] Opening session details: PW_Session_20261126_071831_w0r0782r56
+[2026-11-26T07:24:15.502Z] [STEP] Navigating to Sessions tab
+[2026-11-26T07:24:15.655Z] [SUCCESS] Sessions tab active
+[2026-11-26T07:24:15.655Z] [STEP] Waiting for session list to settle
+[2026-11-26T07:24:15.741Z] [SUCCESS] Session list settled — 5 session(s)
+[2026-11-26T07:24:17.069Z] [SUCCESS] Session details opened
+[2026-11-26T07:24:17.069Z] [STEP] Clicking Edit session
+[2026-11-26T07:24:20.659Z] [ASSERT] Verifying the edit form is open for "PW_Session_20261126_071831_w0r0782r56"
+[2026-11-26T07:24:21.032Z] [ASSERT] Verifying the form shows visibility "Public"
+[2026-11-26T07:24:21.121Z] [STEP] Closing Create Session modal
+[2026-11-26T07:24:21.516Z] [SUCCESS] Create Session modal closed

@@ -1,0 +1,28 @@
+[2026-11-26T07:22:41.903Z] [STEP] Opening group room "pw_group_20261126_071831_w0r07812vv" on tab=sessions
+[2026-11-26T07:22:44.258Z] [SUCCESS] Group room open on tab=sessions
+[2026-11-26T07:22:44.258Z] [STEP] Starting Session Creation flow for: PW_Session_20261126_072241_w10r0903k05
+[2026-11-26T07:22:44.258Z] [STEP] Opening Schedule Session modal
+[2026-11-26T07:22:48.313Z] [STEP] Waiting for Create Session modal
+[2026-11-26T07:22:48.951Z] [SUCCESS] Create Session modal visible
+[2026-11-26T07:22:48.951Z] [STEP] Filling Create Session form
+[2026-11-26T07:22:48.951Z] [STEP] Setting session date to next day
+[2026-11-26T07:22:52.012Z] [INFO] Session date set to 27 November, 2026
+[2026-11-26T07:22:52.012Z] [STEP] Ensuring timezone is selected
+[2026-11-26T07:22:52.777Z] [INFO] Searching for timezone "Pacific"
+[2026-11-26T07:22:54.422Z] [INFO] Timezone selection attempted via keyboard
+[2026-11-26T07:22:54.422Z] [STEP] Setting session time
+[2026-11-26T07:22:57.281Z] [INFO] Session time set to 10:00 AM – 11:00 AM
+[2026-11-26T07:22:57.367Z] [INFO] Filling description editor
+[2026-11-26T07:22:59.285Z] [STEP] Setting session visibility: Private
+[2026-11-26T07:22:59.678Z] [STEP] Setting session price: Free
+[2026-11-26T07:22:59.996Z] [SUCCESS] Form filling completed
+[2026-11-26T07:22:59.996Z] [STEP] Making the session recurring: Weekly, ending 17 December, 2026
+[2026-11-26T07:23:03.003Z] [STEP] Submitting session
+[2026-11-26T07:23:03.542Z] [STEP] Verifying session creation (modal closed)
+[2026-11-26T07:23:05.676Z] [SUCCESS] Session "PW_Session_20261126_072241_w10r0903k05" submitted.
+[2026-11-26T07:23:05.676Z] [STEP] Opening session details: PW_Session_20261126_072241_w10r0903k05
+[2026-11-26T07:23:05.676Z] [STEP] Navigating to Sessions tab
+[2026-11-26T07:23:05.765Z] [SUCCESS] Sessions tab active
+[2026-11-26T07:23:05.765Z] [STEP] Waiting for session list to settle
+[2026-11-26T07:23:05.845Z] [SUCCESS] Session list settled — 2 session(s)
+[2026-11-26T07:23:06.492Z] [SUCCESS] Session details opened

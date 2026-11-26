@@ -1,0 +1,14 @@
+[2026-11-26T07:40:05.710Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-11-26T07:40:14.282Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-11-26T07:40:14.283Z] [STEP] Clicking "Cancel & Delete Group" for group "PW_Group_20261126_072756_w12r0529so6"
+[2026-11-26T07:40:14.283Z] [STEP] Opening "Group options" menu for group "PW_Group_20261126_072756_w12r0529so6"
+[2026-11-26T07:40:15.818Z] [INFO] Popover wait fell through — proceeding to item lookup
+[2026-11-26T07:40:16.628Z] [ASSERT] Outer Cancel & Delete modal (2-button) is visible
+[2026-11-26T07:40:17.083Z] [STEP] Outer modal: clicking "Delete Group" to open Reason modal
+[2026-11-26T07:40:17.550Z] [ASSERT] Reason-selection modal is visible
+[2026-11-26T07:40:18.161Z] [STEP] Selecting first reason checkbox to enable Continue to Delete
+[2026-11-26T07:40:18.396Z] [STEP] Clicking "Continue to Delete" — confirming destructive delete
+[2026-11-26T07:40:19.000Z] [ASSERT] "PW_Group_20261126_072756_w12r0529so6" is deleted ("The group has been deleted." toast, or gone from Plan & Billing)
+[2026-11-26T07:40:50.100Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-11-26T07:40:55.680Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-11-26T07:40:56.206Z] [INFO] Group cards on Plan & Billing: ["AM Test Group of Free"]

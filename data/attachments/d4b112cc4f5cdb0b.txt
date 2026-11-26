@@ -1,5 +1,0 @@
-[2026-11-25T18:10:34.535Z] [WARN] [KNOWN APP ISSUE] KI-18: staging did not answer the sign-up for pw_auto_mh_2518095972o0@mentalhappy.com. The account exists, so logging in to reach the email code screen.
-[2026-11-25T18:12:50.278Z] [WARN] [KNOWN APP ISSUE] KI-18: staging did not answer the sign-up for pw_auto_mh_251812176hue@mentalhappy.com. The account exists, so logging in to reach the email code screen.
-[2026-11-25T18:13:49.153Z] [WARN] Attempt 1/5: Explore search not usable (TimeoutError: locator.waitFor: Timeout 20000ms exceeded.
-Call log:
-  - waiti) — reloading.
