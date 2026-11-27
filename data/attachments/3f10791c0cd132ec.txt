@@ -1,0 +1,15 @@
+[2026-11-27T17:43:48.127Z] [STEP] Opening dashboard
+[2026-11-27T17:43:50.136Z] [STEP] Searching for "PW_Group_20261127_174236_w13r0348d7h" — up to 5 attempts (fresh groups index slowly)
+[2026-11-27T17:43:50.136Z] [STEP] Searching for group: PW_Group_20261127_174236_w13r0348d7h
+[2026-11-27T17:43:52.157Z] [INFO] Search "PW_Group_20261127_174236_w13r0348d7h" settled: explore-grid data-state="ready"
+[2026-11-27T17:43:52.227Z] [SUCCESS] Group "PW_Group_20261127_174236_w13r0348d7h" found in Explore search (attempt 1/5)
+[2026-11-27T17:43:52.227Z] [STEP] Verifying group card content for: PW_Group_20261127_174236_w13r0348d7h
+[2026-11-27T17:43:52.284Z] [SUCCESS] Group card content verified: PW_Group_20261127_174236_w13r0348d7h
+[2026-11-27T17:43:55.056Z] [INFO] [FOLLOW CHECK] PW_Group_20261127_174236_w13r0348d7h: isUpcoming=false · Follow=false · Unfollow=false · Join=true · https://staging.mentalhappy.com/groups/pw_group_20261127_174236_w13r0348d7h
+[2026-11-27T17:43:55.084Z] [STEP] Verifying join CTA is visible and enabled
+[2026-11-27T17:43:55.118Z] [INFO] Side panel not open — clicking card to open: PW_Group_20261127_174236_w13r0348d7h
+[2026-11-27T17:43:55.119Z] [STEP] Clicking group card: PW_Group_20261127_174236_w13r0348d7h
+[2026-11-27T17:43:55.707Z] [SUCCESS] Group card clicked: PW_Group_20261127_174236_w13r0348d7h
+[2026-11-27T17:43:55.930Z] [SUCCESS] Join CTA verified
+[2026-11-27T17:43:56.052Z] [INFO] [CTA PANEL BUTTONS] [{"text":"","aria":"Close"},{"text":"","aria":"Close"},{"text":"","aria":"Share group"},{"text":"","aria":"Show price details"},{"text":"Join Group","aria":"Join Group"}]
+[2026-11-27T17:43:56.076Z] [INFO] [CTA] Free: button "Join Group", price "none"

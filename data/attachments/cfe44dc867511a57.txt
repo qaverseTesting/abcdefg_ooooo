@@ -1,1 +1,0 @@
-[2026-11-26T18:07:14.610Z] [WARN] [REFUND BY HAND] After deleting "PW_Group_20261126_175550_w12r00203mr" the leader's pending earnings are $249.51 (before the payment $245.04, after it $249.51). Refunds are issued by hand in Stripe, so the app does not move this figure; confirming the member's money comes back needs a backend/Stripe check.

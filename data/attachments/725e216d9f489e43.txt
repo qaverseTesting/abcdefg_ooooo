@@ -1,4 +1,0 @@
-[2026-11-26T17:53:57.363Z] [STEP] Opening the group page as a non-member: pw_group_20261126_174921_w0r09363dj
-[2026-11-26T17:54:00.300Z] [ASSERT] Verifying the group page lists "PW_Session_20261126_174921_w0r09372y6"
-[2026-11-26T17:54:00.345Z] [ASSERT] Verifying the group page lists "PW_Session_20261126_174921_w0r09378hm"
-[2026-11-26T17:54:00.391Z] [ASSERT] Verifying the group page does not list "PW_Session_20261126_174921_w0r0937z9f"

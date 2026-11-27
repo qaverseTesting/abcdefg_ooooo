@@ -1,2 +1,0 @@
-[2026-11-26T18:17:13.629Z] [ERROR] [CLEANUP] Could not delete paid session "PW_Session_20261126_181026_w0r0041gob" (https://staging.mentalhappy.com/session/event/6b087621c5a25d4284837622) — delete it by hand in AMActiveGroupV2: Error: expect(locator).toBeVisible() failed
-[2026-11-26T18:17:33.675Z] [ERROR] [CLEANUP] Could not delete paid session "PW_Session_20261126_181026_w0r00425ps" (https://staging.mentalhappy.com/session/event/6b08762ec5a25d4284837872) — delete it by hand in AMActiveGroupV2: Error: expect(locator).toBeVisible() failed

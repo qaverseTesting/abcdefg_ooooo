@@ -1,0 +1,71 @@
+[2026-11-27T17:45:46.862Z] [INFO] [MEMBER] Registering "refund-recovery" member: pw_auto_mh_27174546wzop@mentalhappy.com
+[2026-11-27T17:45:46.862Z] [STEP] Submitting member registration form for: pw_auto_mh_27174546wzop@mentalhappy.com
+[2026-11-27T17:45:46.863Z] [STEP] Navigating to Registration Page
+[2026-11-27T17:45:48.927Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-27T17:45:49.221Z] [SUCCESS] Registration Page loaded
+[2026-11-27T17:45:49.221Z] [STEP] Filling registration form for: pw_auto_mh_27174546wzop@mentalhappy.com
+[2026-11-27T17:45:51.662Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-27T17:45:51.693Z] [STEP] Submitting registration form
+[2026-11-27T17:45:52.305Z] [SUCCESS] Registration form submitted
+[2026-11-27T17:45:52.306Z] [STEP] Waiting for OTP entry page to be ready
+[2026-11-27T17:46:24.128Z] [INFO] Attempting login for user: pw_auto_mh_27174546wzop@mentalhappy.com | Password: [hidden, 12 chars] (expectSuccess: false)
+[2026-11-27T17:46:27.675Z] [STEP] Waiting for OTP entry page to be ready
+[2026-11-27T17:46:28.548Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-11-27T17:46:28.548Z] [SUCCESS] Registration form submitted, OTP page reached
+[2026-11-27T17:46:28.549Z] [STEP] Verifying email for: pw_auto_mh_27174546wzop@mentalhappy.com
+[2026-11-27T17:46:28.549Z] [INFO] [OTP] Bypass active for pw_auto_mh_27174546wzop@mentalhappy.com. Returning fixed validation code: 456321
+[2026-11-27T17:46:28.553Z] [STEP] Entering OTP: 456321
+[2026-11-27T17:46:28.553Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-27T17:46:29.141Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-27T17:46:29.560Z] [SUCCESS] OTP entered
+[2026-11-27T17:46:29.561Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-11-27T17:46:29.566Z] [ASSERT] Verifying toast message matching: /Email Verified Successfully/i
+[2026-11-27T17:46:30.830Z] [SUCCESS] Email verification (OTP) successful
+[2026-11-27T17:46:30.830Z] [STEP] Selecting Member role on Welcome page
+[2026-11-27T17:46:30.830Z] [STEP] Verifying Welcome Page is displayed
+[2026-11-27T17:46:30.830Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-27T17:46:30.996Z] [SUCCESS] Welcome Page verification successful (Role buttons visible)
+[2026-11-27T17:46:30.996Z] [STEP] Selecting path: Explore Support Groups
+[2026-11-27T17:46:30.997Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-27T17:46:31.129Z] [INFO] Clicked Explore support groups
+[2026-11-27T17:46:31.142Z] [SUCCESS] Explore Support Groups path selected
+[2026-11-27T17:46:31.142Z] [STEP] Clicking Welcome Continue button
+[2026-11-27T17:46:31.144Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-27T17:46:31.247Z] [SUCCESS] Welcome Continue clicked
+[2026-11-27T17:46:31.248Z] [SUCCESS] Role selection completed
+[2026-11-27T17:46:31.248Z] [STEP] Completing Member onboarding via SKIP path
+[2026-11-27T17:46:31.258Z] [STEP] Completing Member onboarding via SKIP
+[2026-11-27T17:46:31.258Z] [STEP] Clicking Onboarding Skip button
+[2026-11-27T17:46:31.258Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-27T17:46:33.292Z] [SUCCESS] Redirected to Dashboard via Skip
+[2026-11-27T17:46:33.292Z] [SUCCESS] Member onboarding (Skip) completed
+[2026-11-27T17:46:33.292Z] [SUCCESS] [MEMBER] "refund-recovery" member ready: pw_auto_mh_27174546wzop@mentalhappy.com
+[2026-11-27T17:46:33.293Z] [STEP] Opening dashboard
+[2026-11-27T17:46:36.044Z] [STEP] Searching for "PW_Group_20261127_174236_w13r0348d7h" — up to 5 attempts (fresh groups index slowly)
+[2026-11-27T17:46:36.045Z] [STEP] Searching for group: PW_Group_20261127_174236_w13r0348d7h
+[2026-11-27T17:46:38.439Z] [INFO] Search "PW_Group_20261127_174236_w13r0348d7h" settled: explore-grid data-state="ready"
+[2026-11-27T17:46:38.461Z] [SUCCESS] Group "PW_Group_20261127_174236_w13r0348d7h" found in Explore search (attempt 1/5)
+[2026-11-27T17:46:38.461Z] [STEP] Verifying group card content for: PW_Group_20261127_174236_w13r0348d7h
+[2026-11-27T17:46:38.532Z] [SUCCESS] Group card content verified: PW_Group_20261127_174236_w13r0348d7h
+[2026-11-27T17:46:38.547Z] [INFO] Side panel not open — clicking card to open: PW_Group_20261127_174236_w13r0348d7h
+[2026-11-27T17:46:38.547Z] [STEP] Clicking group card: PW_Group_20261127_174236_w13r0348d7h
+[2026-11-27T17:46:39.596Z] [SUCCESS] Group card clicked: PW_Group_20261127_174236_w13r0348d7h
+[2026-11-27T17:46:39.905Z] [INFO] [CTA PANEL BUTTONS] [{"text":"","aria":"Close"},{"text":"","aria":"Close"},{"text":"","aria":"Share group"},{"text":"","aria":"Show price details"},{"text":"Join Group","aria":"Join Group"}]
+[2026-11-27T17:46:39.928Z] [INFO] [CTA] Monthly $5: button "Join Group", price "$5/month"
+[2026-11-27T17:46:45.652Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-11-27T17:46:47.274Z] [INFO] [STRIPE] Stripe's script files are served from the shared cache (storage/stripe-cache)
+[2026-11-27T17:46:50.403Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-11-27T17:46:51.135Z] [INFO] Group cards on Plan & Billing: ["PW_Group_20261127_174236_w13r0348d7h","AM Test Group of Free"]
+[2026-11-27T17:46:51.136Z] [STEP] Clicking "Cancel & Delete Group" for group "PW_Group_20261127_174236_w13r0348d7h"
+[2026-11-27T17:46:51.136Z] [STEP] Opening "Group options" menu for group "PW_Group_20261127_174236_w13r0348d7h"
+[2026-11-27T17:46:51.497Z] [INFO] Popover wait fell through — proceeding to item lookup
+[2026-11-27T17:46:51.881Z] [ASSERT] Outer Cancel & Delete modal (2-button) is visible
+[2026-11-27T17:46:52.135Z] [STEP] Outer modal: clicking "Delete Group" to open Reason modal
+[2026-11-27T17:46:52.283Z] [ASSERT] Reason-selection modal is visible
+[2026-11-27T17:46:52.565Z] [STEP] Selecting first reason checkbox to enable Continue to Delete
+[2026-11-27T17:46:52.639Z] [STEP] Clicking "Continue to Delete" — confirming destructive delete
+[2026-11-27T17:46:52.812Z] [ASSERT] "PW_Group_20261127_174236_w13r0348d7h" is deleted ("The group has been deleted." toast, or gone from Plan & Billing)
+[2026-11-27T17:47:23.795Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-11-27T17:47:26.179Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-11-27T17:47:26.250Z] [INFO] Group cards on Plan & Billing: ["AM Test Group of Free"]
+[2026-11-27T17:47:26.251Z] [SUCCESS] [CLEANUP] Deleted "PW_Group_20261127_174236_w13r0348d7h".

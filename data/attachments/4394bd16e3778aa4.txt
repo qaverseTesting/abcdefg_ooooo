@@ -1,0 +1,3 @@
+[2026-11-27T17:46:22.803Z] [WARN] [KNOWN APP ISSUE] KI-18: staging did not answer the sign-up for pw_auto_mh_27174546wzop@mentalhappy.com. The account exists, so logging in to reach the email code screen.
+[2026-11-27T17:46:33.292Z] [WARN] [MEMBER] No member survived from PG-02 — an earlier block failed and this worker was restarted. Registered a fresh one so the refund chain can still run. Check the earlier failure; this test is not the problem.
+[2026-11-27T17:47:26.251Z] [WARN] [KNOWN APP ISSUE] KI-18: staging did not answer the delete of "PW_Group_20261127_174236_w13r0348d7h" and the app showed "That did not work. Nothing has changed. Please try again.", but the group IS deleted — it is gone from Plan & Billing.
