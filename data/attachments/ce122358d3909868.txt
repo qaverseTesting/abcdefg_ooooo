@@ -1,0 +1,67 @@
+[2026-11-28T16:25:43.147Z] [INFO] [MEMBER] Registering "refund-recovery" member: pw_auto_mh_28162542rlm6@mentalhappy.com
+[2026-11-28T16:25:43.148Z] [STEP] Submitting member registration form for: pw_auto_mh_28162542rlm6@mentalhappy.com
+[2026-11-28T16:25:43.148Z] [STEP] Navigating to Registration Page
+[2026-11-28T16:25:45.481Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-28T16:25:45.974Z] [SUCCESS] Registration Page loaded
+[2026-11-28T16:25:45.975Z] [STEP] Filling registration form for: pw_auto_mh_28162542rlm6@mentalhappy.com
+[2026-11-28T16:25:47.848Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-28T16:25:47.881Z] [STEP] Submitting registration form
+[2026-11-28T16:25:48.256Z] [SUCCESS] Registration form submitted
+[2026-11-28T16:25:48.257Z] [STEP] Waiting for OTP entry page to be ready
+[2026-11-28T16:25:52.778Z] [SUCCESS] OTP entry page is ready — registration email was sent
+[2026-11-28T16:25:52.778Z] [SUCCESS] Registration form submitted, OTP page reached
+[2026-11-28T16:25:52.778Z] [STEP] Verifying email for: pw_auto_mh_28162542rlm6@mentalhappy.com
+[2026-11-28T16:25:52.778Z] [INFO] [OTP] Bypass active for pw_auto_mh_28162542rlm6@mentalhappy.com. Returning fixed validation code: 456321
+[2026-11-28T16:25:52.798Z] [STEP] Entering OTP: 456321
+[2026-11-28T16:25:52.798Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-28T16:25:53.161Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-28T16:25:53.444Z] [SUCCESS] OTP entered
+[2026-11-28T16:25:53.444Z] [STEP] Submitting OTP and syncing Parallel UI Events
+[2026-11-28T16:25:53.449Z] [ASSERT] Verifying toast message matching: /Email Verified Successfully/i
+[2026-11-28T16:25:55.113Z] [SUCCESS] Email verification (OTP) successful
+[2026-11-28T16:25:55.113Z] [STEP] Selecting Member role on Welcome page
+[2026-11-28T16:25:55.113Z] [STEP] Verifying Welcome Page is displayed
+[2026-11-28T16:25:55.113Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-28T16:25:55.599Z] [SUCCESS] Welcome Page verification successful (Role buttons visible)
+[2026-11-28T16:25:55.599Z] [STEP] Selecting path: Explore Support Groups
+[2026-11-28T16:25:55.599Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-28T16:25:55.933Z] [INFO] Clicked Explore support groups
+[2026-11-28T16:25:55.981Z] [SUCCESS] Explore Support Groups path selected
+[2026-11-28T16:25:55.981Z] [STEP] Clicking Welcome Continue button
+[2026-11-28T16:25:55.981Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-28T16:25:56.546Z] [SUCCESS] Welcome Continue clicked
+[2026-11-28T16:25:56.546Z] [SUCCESS] Role selection completed
+[2026-11-28T16:25:56.546Z] [STEP] Completing Member onboarding via SKIP path
+[2026-11-28T16:25:56.609Z] [STEP] Completing Member onboarding via SKIP
+[2026-11-28T16:25:56.609Z] [STEP] Clicking Onboarding Skip button
+[2026-11-28T16:25:56.609Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-28T16:25:58.936Z] [SUCCESS] Redirected to Dashboard via Skip
+[2026-11-28T16:25:58.936Z] [SUCCESS] Member onboarding (Skip) completed
+[2026-11-28T16:25:58.936Z] [SUCCESS] [MEMBER] "refund-recovery" member ready: pw_auto_mh_28162542rlm6@mentalhappy.com
+[2026-11-28T16:25:58.945Z] [STEP] Opening dashboard
+[2026-11-28T16:26:01.080Z] [STEP] Searching for "PW_Group_20261128_162318_w12r01034ax" — up to 5 attempts (fresh groups index slowly)
+[2026-11-28T16:26:01.080Z] [STEP] Searching for group: PW_Group_20261128_162318_w12r01034ax
+[2026-11-28T16:26:03.522Z] [INFO] Search "PW_Group_20261128_162318_w12r01034ax" settled: explore-grid data-state="ready"
+[2026-11-28T16:26:03.560Z] [SUCCESS] Group "PW_Group_20261128_162318_w12r01034ax" found in Explore search (attempt 1/5)
+[2026-11-28T16:26:03.560Z] [STEP] Verifying group card content for: PW_Group_20261128_162318_w12r01034ax
+[2026-11-28T16:26:03.702Z] [SUCCESS] Group card content verified: PW_Group_20261128_162318_w12r01034ax
+[2026-11-28T16:26:03.859Z] [INFO] Side panel not open — clicking card to open: PW_Group_20261128_162318_w12r01034ax
+[2026-11-28T16:26:03.860Z] [STEP] Clicking group card: PW_Group_20261128_162318_w12r01034ax
+[2026-11-28T16:26:04.958Z] [SUCCESS] Group card clicked: PW_Group_20261128_162318_w12r01034ax
+[2026-11-28T16:26:05.385Z] [INFO] [CTA PANEL BUTTONS] [{"text":"","aria":"Close"},{"text":"","aria":"Close"},{"text":"","aria":"Share group"},{"text":"","aria":"Show price details"},{"text":"Join Group","aria":"Join Group"}]
+[2026-11-28T16:26:05.436Z] [INFO] [CTA] Monthly $5: button "Join Group", price "$5/month"
+[2026-11-28T16:26:09.540Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-11-28T16:26:11.319Z] [INFO] [STRIPE] Stripe's script files are served from the shared cache (storage/stripe-cache)
+[2026-11-28T16:26:13.547Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-11-28T16:26:14.146Z] [INFO] Group cards on Plan & Billing: ["PW_Group_20261128_162518_w12r0185e25","PW_Group_20261128_162318_w12r01034ax","AM Test Group of Free"]
+[2026-11-28T16:26:14.146Z] [STEP] Clicking "Cancel & Delete Group" for group "PW_Group_20261128_162318_w12r01034ax"
+[2026-11-28T16:26:14.147Z] [STEP] Opening "Group options" menu for group "PW_Group_20261128_162318_w12r01034ax"
+[2026-11-28T16:26:14.292Z] [INFO] Popover wait fell through — proceeding to item lookup
+[2026-11-28T16:26:14.544Z] [ASSERT] Outer Cancel & Delete modal (2-button) is visible
+[2026-11-28T16:26:14.806Z] [STEP] Outer modal: clicking "Delete Group" to open Reason modal
+[2026-11-28T16:26:15.281Z] [ASSERT] Reason-selection modal is visible
+[2026-11-28T16:26:15.840Z] [STEP] Selecting first reason checkbox to enable Continue to Delete
+[2026-11-28T16:26:15.968Z] [STEP] Clicking "Continue to Delete" — confirming destructive delete
+[2026-11-28T16:26:16.314Z] [ASSERT] "PW_Group_20261128_162318_w12r01034ax" is deleted ("The group has been deleted." toast, or gone from Plan & Billing)
+[2026-11-28T16:26:17.879Z] [SUCCESS] "The group has been deleted." toast confirmed
+[2026-11-28T16:26:17.883Z] [SUCCESS] [CLEANUP] Deleted "PW_Group_20261128_162318_w12r01034ax".

@@ -1,0 +1,84 @@
+[2026-11-28T16:27:10.793Z] [INFO] [LIFECYCLE] Shared context initialised — Multi-Group ($49) + 3 groups starting state
+[2026-11-28T16:27:10.832Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-11-28T16:27:14.209Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-11-28T16:27:14.209Z] [STEP] Verifying Plan & Billing page content
+[2026-11-28T16:27:14.374Z] [SUCCESS] Plan & Billing page verified
+[2026-11-28T16:27:14.374Z] [STEP] Verifying subscription with price $49 is visible
+[2026-11-28T16:27:14.388Z] [SUCCESS] Subscription details verified
+[2026-11-28T16:27:14.482Z] [INFO] Next billing date: December 28, 2026
+[2026-11-28T16:27:14.482Z] [SUCCESS] MGD-01 PASSED: $49 Multi-Group, next billing December 28, 2026
+[2026-11-28T16:27:14.487Z] [STEP] Clicking Change Plan → navigating to Hosting Plan page
+[2026-11-28T16:27:14.835Z] [SUCCESS] Redirected to Hosting Plan page
+[2026-11-28T16:27:14.835Z] [STEP] Verifying Hosting Plan page content
+[2026-11-28T16:27:15.113Z] [SUCCESS] Hosting Plan page verification successful
+[2026-11-28T16:27:15.113Z] [STEP] Verifying current plan card shows "Current Plan" (disabled state)
+[2026-11-28T16:27:15.135Z] [SUCCESS] "Current Plan" label verified
+[2026-11-28T16:27:15.135Z] [SUCCESS] MGD-02 PASSED: Multi-Group is the current plan
+[2026-11-28T16:27:15.135Z] [STEP] Verifying "Downgrade" CTA is visible on the Active Group ($19) card (user is on Multi-Group)
+[2026-11-28T16:27:15.155Z] [SUCCESS] "Downgrade" CTA on Active Group card verified visible
+[2026-11-28T16:27:15.155Z] [STEP] Clicking Downgrade on the Active Group card — expecting group-selection page
+[2026-11-28T16:27:15.184Z] [SUCCESS] Downgrade (to Active) clicked — expecting group-selection page
+[2026-11-28T16:27:15.184Z] [STEP] Verifying the "Move to Active Group" page loaded
+[2026-11-28T16:27:16.048Z] [SUCCESS] "Move to Active Group" page verified
+[2026-11-28T16:27:16.073Z] [INFO] Plan changes on: December 28, 2026
+[2026-11-28T16:27:16.073Z] [STEP] Verifying the page says what happens on that date
+[2026-11-28T16:27:16.082Z] [SUCCESS] Consequences (sessions canceled, members stop paying) are stated
+[2026-11-28T16:27:16.082Z] [SUCCESS] MGD-03 PASSED: change scheduled for December 28, 2026; nothing charged today
+[2026-11-28T16:27:16.083Z] [ASSERT] The page asks for 1 group to keep and says nothing is deleted
+[2026-11-28T16:27:16.147Z] [INFO] Groups offered: ["PW_Group_20261128_161527_w6r0548fuj","PW_Group_20261128_161510_w6r0268lo2","PW_Group_20261128_161456_w6r032893l"]
+[2026-11-28T16:27:16.233Z] [SUCCESS] MGD-04 PASSED: keep prompt and statuses verified
+[2026-11-28T16:27:16.233Z] [ASSERT] Downgrade is disabled until a group is chosen
+[2026-11-28T16:27:16.241Z] [SUCCESS] MGD-05 PASSED: Downgrade disabled with no group chosen
+[2026-11-28T16:27:16.242Z] [STEP] Ticking/unticking "PW_Group_20261128_161527_w6r0548fuj"
+[2026-11-28T16:27:16.351Z] [ASSERT] Only "PW_Group_20261128_161527_w6r0548fuj" can be chosen — the other boxes are locked
+[2026-11-28T16:27:16.433Z] [ASSERT] Downgrade is enabled once a group is chosen
+[2026-11-28T16:27:16.462Z] [SUCCESS] MGD-06 PASSED: "PW_Group_20261128_161527_w6r0548fuj" stays active; only one group can be kept
+[2026-11-28T16:27:16.463Z] [STEP] Ticking/unticking "PW_Group_20261128_161527_w6r0548fuj"
+[2026-11-28T16:27:16.630Z] [ASSERT] Downgrade is disabled until a group is chosen
+[2026-11-28T16:27:16.646Z] [STEP] Ticking/unticking "PW_Group_20261128_161527_w6r0548fuj"
+[2026-11-28T16:27:16.718Z] [ASSERT] Downgrade is enabled once a group is chosen
+[2026-11-28T16:27:16.738Z] [SUCCESS] MGD-07 PASSED: choice toggles the action
+[2026-11-28T16:27:16.739Z] [STEP] Clicking Downgrade — expecting the "Downgrade Plan" confirmation
+[2026-11-28T16:27:16.943Z] [STEP] Verifying the "Downgrade Plan" dialog (2 group(s) to Listing on December 28, 2026)
+[2026-11-28T16:27:17.122Z] [SUCCESS] "Downgrade Plan" dialog verified
+[2026-11-28T16:27:17.198Z] [SUCCESS] MGD-08 PASSED: dialog lists every group with its outcome
+[2026-11-28T16:27:17.199Z] [STEP] Clicking Cancel on the "Downgrade Plan" dialog
+[2026-11-28T16:27:17.370Z] [SUCCESS] Dialog dismissed via Cancel
+[2026-11-28T16:27:17.396Z] [ASSERT] Downgrade is enabled once a group is chosen
+[2026-11-28T16:27:17.410Z] [STEP] Clicking Downgrade — expecting the "Downgrade Plan" confirmation
+[2026-11-28T16:27:17.484Z] [STEP] Verifying the "Downgrade Plan" dialog (2 group(s) to Listing on December 28, 2026)
+[2026-11-28T16:27:17.632Z] [SUCCESS] "Downgrade Plan" dialog verified
+[2026-11-28T16:27:17.632Z] [SUCCESS] MGD-09 PASSED: cancel keeps the choice
+[2026-11-28T16:27:17.633Z] [STEP] Clicking Downgrade — scheduling the plan change
+[2026-11-28T16:27:19.975Z] [SUCCESS] Plan change scheduled — back on Plan & Billing
+[2026-11-28T16:27:22.486Z] [SUCCESS] MGD-10 PASSED: plan change scheduled
+[2026-11-28T16:27:22.487Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-11-28T16:27:25.659Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-11-28T16:27:25.660Z] [STEP] Verifying Plan & Billing page content
+[2026-11-28T16:27:25.752Z] [SUCCESS] Plan & Billing page verified
+[2026-11-28T16:27:25.752Z] [STEP] Verifying subscription with price $49 is visible
+[2026-11-28T16:27:25.762Z] [SUCCESS] Subscription details verified
+[2026-11-28T16:27:25.762Z] [ASSERT] Plan card reads "Your plan changes to Active Group monthly on December 28, 2026."
+[2026-11-28T16:27:25.780Z] [ASSERT] "PW_Group_20261128_161527_w6r0548fuj" reads "Active" on Plan & Billing
+[2026-11-28T16:27:25.791Z] [ASSERT] "PW_Group_20261128_161510_w6r0268lo2" reads "Active" on Plan & Billing
+[2026-11-28T16:27:25.799Z] [ASSERT] "PW_Group_20261128_161456_w6r032893l" reads "Active" on Plan & Billing
+[2026-11-28T16:27:25.807Z] [ASSERT] "Subscription options" lists ["Keep My Plan"]
+[2026-11-28T16:27:26.334Z] [SUCCESS] MGD-11 PASSED: nothing changes before the date
+[2026-11-28T16:27:26.335Z] [STEP] Verifying 3 group(s) are still on My Groups
+[2026-11-28T16:27:26.335Z] [STEP] Navigating to My Groups page
+[2026-11-28T16:27:26.881Z] [STEP] Waiting for My Groups page content
+[2026-11-28T16:27:27.539Z] [STEP] Waiting for group list to settle
+[2026-11-28T16:27:28.466Z] [SUCCESS] Group list settled — 3 card(s) on the active tab
+[2026-11-28T16:27:28.485Z] [SUCCESS] Confirmed: every group is still on My Groups
+[2026-11-28T16:27:28.485Z] [SUCCESS] MGD-12 PASSED: all groups kept
+[2026-11-28T16:27:28.486Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-11-28T16:27:33.414Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-11-28T16:27:33.414Z] [STEP] Verifying Plan & Billing page content
+[2026-11-28T16:27:33.785Z] [SUCCESS] Plan & Billing page verified
+[2026-11-28T16:27:33.785Z] [STEP] "Subscription options" → "Keep My Plan"
+[2026-11-28T16:27:36.190Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-11-28T16:27:38.909Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-11-28T16:27:38.909Z] [STEP] Verifying Plan & Billing page content
+[2026-11-28T16:27:38.998Z] [SUCCESS] Plan & Billing page verified
+[2026-11-28T16:27:39.025Z] [INFO] Next billing date: December 28, 2026
+[2026-11-28T16:27:39.025Z] [SUCCESS] MGD-13 PASSED: scheduled downgrade undone

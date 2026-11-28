@@ -1,0 +1,26 @@
+[2026-11-28T16:24:34.216Z] [INFO] Attempting login for user: pw_auto_mh_leader@mailinator.com | Password: [hidden, 8 chars] (expectSuccess: true)
+[2026-11-28T16:24:37.507Z] [SUCCESS] Login successful. Landed on: https://staging.mentalhappy.com/groups
+[2026-11-28T16:24:37.507Z] [SUCCESS] [RECOVERY] Leader session rebuilt
+[2026-11-28T16:24:37.522Z] [STEP] Opening group Settings tab for: pw_group_20261128_162318_w12r01034ax
+[2026-11-28T16:24:43.817Z] [SUCCESS] Group Settings tab loaded
+[2026-11-28T16:24:43.817Z] [STEP] Clicking "Change Pricing Model"
+[2026-11-28T16:24:43.951Z] [SUCCESS] "Change Pricing Model" clicked
+[2026-11-28T16:24:43.951Z] [STEP] Verifying Update Group Pricing page loaded
+[2026-11-28T16:24:45.046Z] [SUCCESS] Update Group Pricing page loaded
+[2026-11-28T16:24:45.046Z] [STEP] Selecting "Monthly Subscription" pricing model
+[2026-11-28T16:24:45.212Z] [SUCCESS] Monthly Subscription selected
+[2026-11-28T16:24:45.213Z] [STEP] Entering monthly price: $5
+[2026-11-28T16:24:45.394Z] [SUCCESS] Monthly price set to $5
+[2026-11-28T16:24:45.394Z] [STEP] Clicking "Update Pricing"
+[2026-11-28T16:24:45.617Z] [SUCCESS] "Update Pricing" clicked — confirmation dialog opened
+[2026-11-28T16:24:45.618Z] [STEP] Clicking "Apply Changes"
+[2026-11-28T16:24:49.055Z] [SUCCESS] "Apply Changes" clicked — confirmation dialog closed
+[2026-11-28T16:24:49.062Z] [STEP] Opening group Settings tab for: pw_group_20261128_162318_w12r01034ax
+[2026-11-28T16:24:54.449Z] [SUCCESS] Group Settings tab loaded
+[2026-11-28T16:24:54.451Z] [STEP] Setting the group's free trial ON
+[2026-11-28T16:24:55.342Z] [SUCCESS] Free trial is ON
+[2026-11-28T16:24:55.342Z] [STEP] Opening group Settings tab for: pw_group_20261128_162318_w12r01034ax
+[2026-11-28T16:24:59.084Z] [SUCCESS] Group Settings tab loaded
+[2026-11-28T16:24:59.171Z] [SUCCESS] Free trial is ON
+[2026-11-28T16:24:59.172Z] [ASSERT] Verifying monthly pricing summary: Monthly Paid $5/Month
+[2026-11-28T16:24:59.248Z] [SUCCESS] Monthly pricing summary verified: $5/Month

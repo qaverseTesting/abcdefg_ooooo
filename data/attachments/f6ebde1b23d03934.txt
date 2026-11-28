@@ -1,0 +1,4 @@
+[2026-11-28T16:19:49.931Z] [STEP] Pressing Register on the group page: PW_Session_20261128_161549_w0r0453smh
+[2026-11-28T16:19:50.448Z] [ASSERT] Verifying toast message matching: Join this group first, then you can register for its sessions.
+[2026-11-28T16:19:52.910Z] [STEP] Pressing Register on the group page: PW_Session_20261128_161549_w0r0453n9n
+[2026-11-28T16:19:55.924Z] [ASSERT] Verifying toast message matching: Join this group first, then you can register for its sessions.

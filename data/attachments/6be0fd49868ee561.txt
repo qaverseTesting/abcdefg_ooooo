@@ -1,0 +1,28 @@
+[2026-11-28T16:18:36.917Z] [STEP] Opening group room "pw_group_20261128_161549_w0r04532pn" on tab=sessions
+[2026-11-28T16:18:38.288Z] [SUCCESS] Group room open on tab=sessions
+[2026-11-28T16:18:38.288Z] [STEP] Starting Session Creation flow for: PW_Session_20261128_161836_w10r0917wf9
+[2026-11-28T16:18:38.288Z] [STEP] Opening Schedule Session modal
+[2026-11-28T16:18:41.707Z] [STEP] Waiting for Create Session modal
+[2026-11-28T16:18:42.029Z] [SUCCESS] Create Session modal visible
+[2026-11-28T16:18:42.029Z] [STEP] Filling Create Session form
+[2026-11-28T16:18:42.029Z] [STEP] Setting session date to next day
+[2026-11-28T16:18:44.233Z] [INFO] Session date set to 29 November, 2026
+[2026-11-28T16:18:44.233Z] [STEP] Ensuring timezone is selected
+[2026-11-28T16:18:44.667Z] [INFO] Searching for timezone "Pacific"
+[2026-11-28T16:18:45.602Z] [INFO] Timezone selection attempted via keyboard
+[2026-11-28T16:18:45.602Z] [STEP] Setting session time
+[2026-11-28T16:18:47.337Z] [INFO] Session time set to 10:00 AM – 11:00 AM
+[2026-11-28T16:18:47.392Z] [INFO] Filling description editor
+[2026-11-28T16:18:48.640Z] [STEP] Setting session visibility: Private
+[2026-11-28T16:18:48.859Z] [STEP] Setting session price: Free
+[2026-11-28T16:18:49.135Z] [SUCCESS] Form filling completed
+[2026-11-28T16:18:49.136Z] [STEP] Making the session recurring: Bi-weekly, never ending
+[2026-11-28T16:18:49.851Z] [STEP] Submitting session
+[2026-11-28T16:18:50.237Z] [STEP] Verifying session creation (modal closed)
+[2026-11-28T16:18:52.276Z] [SUCCESS] Session "PW_Session_20261128_161836_w10r0917wf9" submitted.
+[2026-11-28T16:18:52.276Z] [STEP] Opening session details: PW_Session_20261128_161836_w10r0917wf9
+[2026-11-28T16:18:52.276Z] [STEP] Navigating to Sessions tab
+[2026-11-28T16:18:52.365Z] [SUCCESS] Sessions tab active
+[2026-11-28T16:18:52.365Z] [STEP] Waiting for session list to settle
+[2026-11-28T16:18:52.423Z] [SUCCESS] Session list settled — 3 session(s)
+[2026-11-28T16:18:53.010Z] [SUCCESS] Session details opened

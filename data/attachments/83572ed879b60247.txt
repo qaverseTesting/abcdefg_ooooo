@@ -1,0 +1,5 @@
+[2026-11-28T16:22:31.331Z] [STEP] Opening group room "pw_group_20261128_161549_w0r04532pn" on tab=conversations
+[2026-11-28T16:22:34.006Z] [SUCCESS] Group room open on tab=conversations
+[2026-11-28T16:22:36.989Z] [STEP] Opening session details from feed: PW_Session_20261128_161549_w0r045313e
+[2026-11-28T16:22:38.007Z] [STEP] Verifying session details page: PW_Session_20261128_161549_w0r045313e
+[2026-11-28T16:22:41.650Z] [ASSERT] Verifying the session page says "For members of PW_Group_20261128_161549_w0r04532pn. Membership is a $3/month platform fee."

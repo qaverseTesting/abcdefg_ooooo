@@ -1,0 +1,44 @@
+[2026-11-28T16:26:29.337Z] [INFO] [LIFECYCLE] Shared context initialised — Active Plan ($19) starting state
+[2026-11-28T16:26:29.498Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-11-28T16:26:31.191Z] [INFO] [STRIPE] Stripe's script files are served from the shared cache (storage/stripe-cache)
+[2026-11-28T16:26:32.847Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-11-28T16:26:32.847Z] [STEP] Verifying Plan & Billing page content
+[2026-11-28T16:26:32.949Z] [SUCCESS] Plan & Billing page verified
+[2026-11-28T16:26:32.949Z] [STEP] Verifying subscription with price $19 is visible
+[2026-11-28T16:26:32.961Z] [SUCCESS] Subscription details verified
+[2026-11-28T16:26:32.996Z] [INFO] Next billing date: December 28, 2026
+[2026-11-28T16:26:32.996Z] [SUCCESS] D-01 PASSED: $19 Active Plan, next billing December 28, 2026
+[2026-11-28T16:26:32.997Z] [STEP] Clicking Change Plan → navigating to Hosting Plan page
+[2026-11-28T16:26:33.447Z] [SUCCESS] Redirected to Hosting Plan page
+[2026-11-28T16:26:33.447Z] [STEP] Verifying Hosting Plan page content
+[2026-11-28T16:26:33.713Z] [SUCCESS] Hosting Plan page verification successful
+[2026-11-28T16:26:33.713Z] [SUCCESS] D-02 PASSED: Redirected to Hosting Plan page
+[2026-11-28T16:26:33.714Z] [STEP] Verifying current plan card shows "Current Plan" (disabled state)
+[2026-11-28T16:26:33.733Z] [SUCCESS] "Current Plan" label verified
+[2026-11-28T16:26:33.733Z] [STEP] Verifying Downgrade CTA is visible on Free plan card
+[2026-11-28T16:26:33.760Z] [SUCCESS] Downgrade CTA verified visible
+[2026-11-28T16:26:33.761Z] [SUCCESS] D-03 PASSED: Active is current; Downgrade offered
+[2026-11-28T16:26:33.761Z] [STEP] Clicking Downgrade on Free plan card
+[2026-11-28T16:26:33.808Z] [SUCCESS] Downgrade clicked — expecting confirmation page
+[2026-11-28T16:26:33.808Z] [STEP] Verifying the "Move to Group Listing" page loaded
+[2026-11-28T16:26:34.161Z] [SUCCESS] "Move to Group Listing" page verified
+[2026-11-28T16:26:34.186Z] [INFO] Plan changes on: December 28, 2026
+[2026-11-28T16:26:34.187Z] [STEP] Verifying the page says what happens on that date
+[2026-11-28T16:26:34.196Z] [SUCCESS] Consequences (sessions canceled, members stop paying) are stated
+[2026-11-28T16:26:34.196Z] [SUCCESS] D-04 PASSED: change scheduled for December 28, 2026; nothing charged today
+[2026-11-28T16:26:34.196Z] [STEP] Clicking Downgrade — expecting the "Downgrade Plan" confirmation
+[2026-11-28T16:26:34.281Z] [STEP] Verifying the "Downgrade Plan" dialog (1 group(s) to Listing on December 28, 2026)
+[2026-11-28T16:26:34.459Z] [SUCCESS] "Downgrade Plan" dialog verified
+[2026-11-28T16:26:34.459Z] [SUCCESS] D-05 PASSED: confirmation dialog verified
+[2026-11-28T16:26:34.460Z] [STEP] Clicking Downgrade — scheduling the plan change
+[2026-11-28T16:26:36.220Z] [SUCCESS] Plan change scheduled — back on Plan & Billing
+[2026-11-28T16:26:38.827Z] [SUCCESS] D-06 PASSED: plan end scheduled
+[2026-11-28T16:26:38.828Z] [STEP] Navigating to Profile → Plan & Billing
+[2026-11-28T16:26:42.001Z] [SUCCESS] Profile Plan & Billing page loaded
+[2026-11-28T16:26:42.001Z] [STEP] Verifying Plan & Billing page content
+[2026-11-28T16:26:42.073Z] [SUCCESS] Plan & Billing page verified
+[2026-11-28T16:26:42.073Z] [STEP] Verifying subscription with price $19 is visible
+[2026-11-28T16:26:42.082Z] [SUCCESS] Subscription details verified
+[2026-11-28T16:26:42.082Z] [ASSERT] Plan card reads "Your plan ends on December 28, 2026. You will not be charged again."
+[2026-11-28T16:26:42.101Z] [ASSERT] "Subscription options" lists ["Keep My Plan"]
+[2026-11-28T16:26:42.609Z] [SUCCESS] D-07 PASSED: plan runs to the period end, then ends

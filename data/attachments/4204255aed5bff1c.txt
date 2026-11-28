@@ -1,0 +1,43 @@
+[2026-11-28T16:23:18.257Z] [INFO] [PAID GROUP INIT] group="PW_Group_20261128_162318_w12r01034ax"
+[2026-11-28T16:23:20.988Z] [INFO] Attempting login for user: pw_auto_mh_leader@mailinator.com | Password: [hidden, 8 chars] (expectSuccess: true)
+[2026-11-28T16:23:25.159Z] [SUCCESS] Login successful. Landed on: https://staging.mentalhappy.com/groups
+[2026-11-28T16:23:25.162Z] [STEP] Navigating to Profile → Earnings
+[2026-11-28T16:23:28.966Z] [SUCCESS] Earnings page loaded
+[2026-11-28T16:23:29.343Z] [INFO] Earnings — available: $3492.29, pending: $239.51
+[2026-11-28T16:23:29.343Z] [INFO] [REFUND] Pending balance before the test: $239.51
+[2026-11-28T16:23:29.363Z] [INFO] Stripe connected for this leader: true
+[2026-11-28T16:23:29.364Z] [INFO] [LEDGER] Recorded "PW_Group_20261128_162318_w12r01034ax" for cleanup.
+[2026-11-28T16:23:29.364Z] [STEP] Initializing Group Creation
+[2026-11-28T16:23:29.371Z] [STEP] Opening Profile → Earnings and clicking Create Group
+[2026-11-28T16:23:33.836Z] [ASSERT] Create Group page is loaded
+[2026-11-28T16:23:33.837Z] [STEP] Clearing 3rd-party overlays for clean interaction
+[2026-11-28T16:23:36.102Z] [SUCCESS] Group Creation page loaded
+[2026-11-28T16:23:36.103Z] [STEP] Tab 1: Filling Basic Details for group: PW_Group_20261128_162318_w12r01034ax
+[2026-11-28T16:23:36.107Z] [STEP] Filling Group Name
+[2026-11-28T16:23:36.508Z] [STEP] Filling Group Description
+[2026-11-28T16:23:37.654Z] [STEP] Uploading Cover Image
+[2026-11-28T16:23:37.819Z] [SUCCESS] Cover image uploaded
+[2026-11-28T16:23:37.819Z] [STEP] Choosing the main topic (first option)
+[2026-11-28T16:23:38.115Z] [STEP] Choosing a tag of that topic (first option)
+[2026-11-28T16:23:38.590Z] [SUCCESS] Main topic and tag chosen
+[2026-11-28T16:23:38.592Z] [STEP] Clicking Continue
+[2026-11-28T16:23:38.751Z] [SUCCESS] Tab 1 (Basic Details) completed
+[2026-11-28T16:23:38.751Z] [STEP] Tab 2: Checking for Optional Professional Background
+[2026-11-28T16:23:43.776Z] [INFO] Optional Tab: Professional Background not presented - Skipping
+[2026-11-28T16:23:43.776Z] [STEP] Tab 3: Setting Group Pricing (Mandatory)
+[2026-11-28T16:23:43.802Z] [STEP] Selecting "Free" Pricing Model
+[2026-11-28T16:23:43.987Z] [SUCCESS] Free pricing model selected
+[2026-11-28T16:23:43.987Z] [STEP] Clicking Continue
+[2026-11-28T16:23:44.486Z] [SUCCESS] Tab 3 (Pricing) completed
+[2026-11-28T16:23:44.486Z] [STEP] Tab 4: Finalizing Group Creation (Launch)
+[2026-11-28T16:23:44.486Z] [STEP] Clicking Launch Group
+[2026-11-28T16:23:44.702Z] [ASSERT] Verifying redirect to Group Details
+[2026-11-28T16:23:44.938Z] [SUCCESS] Group Lifecycle: Launch successful, redirected to details
+[2026-11-28T16:23:44.943Z] [STEP] Verifying Group Details page loaded for: PW_Group_20261128_162318_w12r01034ax
+[2026-11-28T16:23:47.064Z] [SUCCESS] Group Details page verified
+[2026-11-28T16:23:47.065Z] [INFO] Group slug resolved from URL: pw_group_20261128_162318_w12r01034ax
+[2026-11-28T16:23:47.076Z] [STEP] Opening group Settings tab for: pw_group_20261128_162318_w12r01034ax
+[2026-11-28T16:23:51.559Z] [SUCCESS] Group Settings tab loaded
+[2026-11-28T16:23:51.559Z] [ASSERT] Verifying group pricing model summary is: Free
+[2026-11-28T16:23:51.660Z] [SUCCESS] Pricing model summary verified: Free
+[2026-11-28T16:23:51.660Z] [SUCCESS] [COVERED] Group created and confirmed Free on the leader side
